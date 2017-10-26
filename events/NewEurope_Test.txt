@@ -2,6 +2,8 @@
 
 add_namespace = netest
 
+##This file is owned by SkelSa
+
 #OP- Event/Test purposes
 country_event = {
 
