@@ -1,5 +1,7 @@
 ﻿#testing stuff
 
+##The Green Elephant (Russian: Зеленый Слоник, translit. Zelyonyy slonik, also known as Green Elephant Calf) is a 1999 Russian art-house and splatter gore film directed by Svetlana Baskova
+
 add_namespace = netest
 
 #OP- Event/Test purposes
