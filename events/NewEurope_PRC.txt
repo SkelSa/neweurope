@@ -1,0 +1,1207 @@
+﻿############################################
+# Chinese Events - Additions by New Europe!#
+############################################
+add_namespace = ne_prc
+
+
+
+
+#Ultimatum to Tibet and Sinkiang
+country_event = {
+	id = ne_prc.8
+	title = ne_prc.8.t
+	desc =  ne_prc.8.d
+	picture = GFX_report_event_chinese_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+	
+		TAG = PRC
+			
+		OR {	
+		
+			AND {
+		
+				NOT = { country_exists = CHI }
+				country_exists = PRC
+				country_exists = SIK
+				
+				}
+			
+			AND {
+		
+				NOT = { country_exists = CHI }
+				country_exists = PRC
+				country_exists = TIB
+				
+				}
+		}
+	
+	}
+
+	mean_time_to_happen = {
+		days = 40
+	}
+
+	
+	option = { # SIK
+		name = ne_prc.8.a
+		ai_chance = { factor = 2 }
+		
+			trigger = {		
+				country_exists = SIK		
+			}
+		
+		SIK = {
+			country_event = { id = ne_prc.1 }
+		}
+		
+	}
+	option = { # TIB
+		name = ne_prc.8.b
+		ai_chance = { factor = 2 }
+		
+			trigger = {		
+				country_exists = TIB		
+			}
+		
+		TIB = {
+			country_event = { days = 1 id = ne_prc.5 }
+		}
+	}
+	
+	option = { # TIB
+	ai_chance = { factor = 100 }
+		name = ne_prc.8.c #BOTH
+		
+			trigger = {		
+				country_exists = TIB
+				country_exists = SIK
+			}
+			
+		SIK = {
+			country_event = { id = ne_prc.1 }
+		}
+		TIB = {
+			country_event = { days = 1 id = ne_prc.5 }
+		}
+	}
+	
+	option = { # 
+	ai_chance = { factor = 0 }
+
+		name = ne_prc.8.e #NOTHING
+		add_political_power = -10
+	}
+            
+            	
+	
+}
+
+
+#Proclamation of the PRC
+country_event = {
+	id = ne_prc.2
+	title = ne_prc.2.t
+	desc = ne_prc.2.d
+	picture = GFX_report_event_chinese_soldiers
+
+	#is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = PRC
+		NOT = {
+			country_exists = CHI
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	
+	option = {
+		name = ne_prc.2.a
+           
+		drop_cosmetic_tag = yes 
+
+		hidden_effect = {
+	
+			news_event = { id = ne_news.2 }
+		}
+            
+		
+	
+	}
+	
+	
+}
+
+#Annex Sinkiang
+country_event = {
+	id = ne_prc.1
+	title = ne_prc.1.t
+	desc =  ne_prc.1.d
+	picture = GFX_report_event_chinese_soldiers
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Accept
+		name = ne_prc.1.a
+		ai_chance = { factor = 98 }
+		add_political_power = -25
+		
+		PRC = {
+			country_event = { id = ne_prc.3 }
+		}
+		
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { # Refuse
+		name = ne_prc.1.b
+		ai_chance = { factor = 2 }
+		add_political_power = 25
+		
+		PRC = {
+			country_event = { days = 1 id = ne_prc.4 }
+		}
+	}
+            
+            	
+	
+}
+
+# Sinkiang declines the offer
+country_event = {
+	id = ne_prc.4
+	title = ne_prc.4.t
+	desc = ne_prc.4.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {
+	ai_chance = { factor = 50 }
+		name = ne_prc.4.a
+		create_wargoal = {
+			type = take_state
+			target = SIK
+			generator = { 287 }
+		}
+	}
+	
+	option = {
+	ai_chance = { factor = 50 }
+		name = ne_prc.4.b
+		add_political_power = -50 
+		}
+}
+
+
+# Sinkiang accepts the offer
+country_event = {
+	id = ne_prc.3
+	title = ne_prc.3.t
+	desc = ne_prc.3.d
+	picture = GFX_report_event_stalin_propaganda
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {
+		name = ne_prc.3.a
+		annex_country = { target = SIK transfer_troops = yes}
+		
+	}
+	
+	
+}
+
+#Annex Tibet
+country_event = {
+	id = ne_prc.5
+	title = ne_prc.5.t
+	desc =  ne_prc.5.d
+	picture = GFX_report_event_chinese_soldiers
+
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = ne_prc.5.a
+		ai_chance = { factor = 40 }
+		PRC = {
+			country_event = { id = ne_prc.6 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { # Refuse
+		name = ne_prc.5.b
+		ai_chance = { factor = 60 }
+		PRC = {
+			country_event = { days = 1 id = ne_prc.7 }
+		}
+	}
+            
+            	
+	
+}
+	
+# Tibet accepts the offer
+country_event = {
+	id = ne_prc.6
+	title = ne_prc.6.t
+	desc = ne_prc.6.d
+	picture = GFX_report_event_stalin_propaganda
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {
+		name = ne_prc.6.a
+		annex_country = { target = TIB transfer_troops = yes}
+		
+	}
+	
+	
+}	
+	
+# Tibet declines the offer
+country_event = {
+	id = ne_prc.7
+	title = ne_prc.7.t
+	desc = ne_prc.7.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {
+		ai_chance = { factor = 95 }
+		name = ne_prc.7.a
+		declare_war_on = { target = TIB type = annex_everything } 
+	}
+	
+	option = {
+		ai_chance = { factor = 5 }
+		name = ne_prc.7.b
+		add_political_power = -40 
+		}
+}
+
+
+###########################################
+##Lease of Port Arthur (Soviets to China)##
+###########################################
+
+
+country_event = {
+	id = ne_prc.9
+	title = ne_prc.9.t
+	desc =  ne_prc.9.d
+	picture = GFX_report_event_stalin_02
+
+	fire_only_once = yes
+
+	trigger = {
+	
+		tag = SOV
+		
+		country_exists = SOV
+		country_exists = PRC
+		
+		PRC = {is_subject = no}	
+		SOV = {is_subject = no}	
+		
+		NOT = {SOV = { has_war_with = PRC } }
+		NOT = {SOV = { owns_state = 766 }}
+		
+		PRC = { owns_state = 766 }
+		PRC = { controls_state = 766 }
+		
+		OR ={
+		has_global_flag = germany_divided
+		has_global_flag = germany_unified
+		}
+	
+	}
+
+	
+	mean_time_to_happen = {
+	##mtth
+		days = 80
+	}
+
+	
+	option = { # option one
+	ai_chance = { factor = 98}
+		name = ne_prc.9.a
+		
+		
+		#following country gets event
+		PRC = {
+			country_event = { days = 1 id = ne_prc.10}
+		}
+		
+	}
+
+
+	option = { #DO NOTHING 
+		name = ne_prc.9.b
+		add_political_power = -15
+	}
+            	
+}
+
+##China gets ultimatum; can decide
+country_event = {
+	id = ne_prc.10
+	title = ne_prc.10.t
+	desc =  ne_prc.10.d
+	picture = GFX_report_event_stalin_02
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Accept
+		name = ne_prc.10.a
+		ai_chance = { factor = 60 }
+		
+		add_political_power = -10
+		
+		SOV = {
+			country_event = { days = 1 id = ne_prc.11 }
+		}
+
+		
+	}
+	option = { # Refuse
+		name = ne_prc.10.b
+		ai_chance = { factor = 40 }
+		
+		add_political_power = -10
+		
+		SOV = {
+			country_event = { days = 5 id = ne_prc.12 }
+		}
+	}
+
+}
+
+#Aggressor gets response, here it is YES, leads to annexation/state transfer
+country_event = {
+	id = ne_prc.11
+	title = ne_prc.11.t
+	desc = ne_prc.11.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+	## either annex command or transfer_state
+		name = ne_prc.11.a
+		
+		add_political_power = 30
+		SOV = {transfer_state = 766}
+		
+		set_global_flag = dalian_leased
+		
+		add_opinion_modifier = { target = PRC modifier =  leased_dalian}
+		reverse_add_opinion_modifier = { target = PRC modifier = leased_dalian}
+
+		
+	}
+	
+}
+
+#Aggressor gets response, here it is NO
+country_event = {
+	id = ne_prc.12
+	title = ne_prc.12.t
+	desc = ne_prc.12.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	
+	
+	#damn
+	option = {
+	ai_chance = { factor = 50 }
+		name = ne_prc.12.a
+		
+		add_national_unity = 0.05
+		##China hates SOV and SOV hates China
+		add_opinion_modifier = { target = PRC modifier =  refused_dalian}
+		reverse_add_opinion_modifier = { target = PRC modifier = refused_dalian}
+
+
+		}
+
+}
+
+
+
+
+##Ultimatum for Port Arthur (China to foreign power/not soviets)
+
+country_event = {
+	id = ne_prc.13
+	title = ne_prc.13.t
+	desc =  ne_prc.13.d
+	picture = GFX_report_event_stalin_02
+
+	fire_only_once = yes
+
+	trigger = {
+	
+		tag = PRC
+		
+		country_exists = PRC
+		
+		PRC = {
+			is_subject = no
+			has_war = no
+			is_major = yes
+		}		
+		
+		
+		NOT = { PRC = { owns_state = 766 } }
+		NOT = { PRC = { controls_state = 766 } }
+		
+		
+		OR = {
+		has_global_flag = germany_divided
+		has_global_flag = germany_unified
+		}
+		
+		NOT = { has_global_flag = dalian_leased }
+	
+	
+	}
+
+	
+	mean_time_to_happen = {
+	##mtth
+		days = 45
+	}
+
+	
+	option = { 
+	ai_chance = { factor = 98}
+		name = ne_prc.13.a
+			
+		#following country gets event
+		every_country = {		
+			limit = {	
+				controls_state = 766
+				owns_state = 766	
+			}
+		
+		country_event = { days = 1 id = ne_prc.14}
+	
+		}
+	
+	}
+	
+	option = { #DO NOTHING 
+		name = ne_prc.13.b
+		add_political_power = -15
+		
+	}
+
+}
+	
+       
+##Victim gets ultimatum; can decide
+country_event = {
+	id = ne_prc.14
+	title = ne_prc.14.t
+	desc =  ne_prc.14.d
+	picture = GFX_report_event_stalin_02
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Accept
+		name = ne_prc.14.a
+		ai_chance = { factor = 98 }
+		
+		add_political_power = -10
+		
+		PRC = {
+			country_event = { days = 1 id = ne_prc.15 }
+		}
+		
+	}
+	option = { # Refuse
+		name = ne_prc.14.b
+		ai_chance = { factor = 2 }
+		
+		add_political_power = -10
+		
+		PRC = {
+			country_event = { days = 5 id = ne_prc.16 }
+		}
+	}         		
+}
+
+#PRC gets response, here it is YES, leads to annexation/state transfer
+country_event = {
+	id = ne_prc.15
+	title = ne_prc.15.t
+	desc = ne_prc.15.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+	## either annex command or transfer_state
+		name = ne_prc.15.a
+		
+		add_political_power = 25
+		ROOT = {transfer_state = 766}
+		
+		add_opinion_modifier = { target = FROM modifier =  returned_dalian}
+		
+	}
+}
+
+
+#PRC gets response, here it is NO
+country_event = {
+	id = ne_prc.16
+	title = ne_prc.16.t
+	desc = ne_prc.16.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	##war or dalian!
+	option = {
+	ai_chance = { factor = 50 }
+		name = ne_prc.16.a
+		
+		add_political_power = 5
+		create_wargoal = { type = take_state target = FROM generator = {766} } 
+		
+		add_opinion_modifier = { target = FROM modifier =  refused_dalian}
+		reverse_add_opinion_modifier = { target = FROM modifier = asked_return_territory}
+		
+	}
+	
+	
+	#back down, no war
+	option = {
+	ai_chance = { factor = 50 }
+		name = ne_prc.16.b
+		
+		add_national_unity = 0.05
+		
+		add_opinion_modifier = { target = FROM modifier =  refused_dalian}
+		reverse_add_opinion_modifier = { target = FROM modifier = asked_return_territory}
+
+	}
+}
+
+
+##Soviet return of Port Arthur
+##Soviet gets event -> PRC gets then event either yes or no
+
+country_event = {
+	id = ne_prc.17
+	title = ne_prc.17.t
+	desc =  ne_prc.17.d
+	picture = GFX_report_event_stalin_02
+
+	fire_only_once = yes
+
+	trigger = {
+	
+	tag = SOV
+	
+	PRC = {
+			exists = yes
+			has_government = communism
+			has_war = no
+	}
+	
+	NOT = {
+	
+		PRC = { 
+			owns_state = 766 
+			controls_state = 766				
+		} 
+		
+	}
+
+	has_global_flag = dalian_leased
+	
+	OR = {
+	has_global_flag = germany_divided
+	has_global_flag = germany_unified
+	}
+	
+	
+	}
+
+	##takes 10 years
+	mean_time_to_happen = {	
+		days = 3650
+	}
+
+	
+	option = { 
+	
+	##PRC gets its harbour back
+	
+	ai_chance = { factor = 98}
+		name = ne_prc.17.a
+		
+
+	PRC = {
+		country_event = { days = 4 id = ne_prc.18}
+	}
+
+	
+	}
+	
+	option = {
+
+		#DALIAN STAYS RUSSIAN
+		name = ne_prc.17.b
+		add_political_power = 20
+		add_national_unity = -0.05
+		
+		PRC = {
+		country_event = { days = 4 id = ne_prc.19}
+		add_opinion_modifier = { target = SOV modifier =  fooled_us}
+		}
+		
+	}
+
+}
+
+
+#PRC gets response, here it is YES, leads to annexation/state transfer
+country_event = {
+	id = ne_prc.18
+	title = ne_prc.18.t
+	desc = ne_prc.18.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+	## either annex command or transfer_state
+		name = ne_prc.18.a
+		
+		add_political_power = 50
+		transfer_state = 766
+		
+		
+		add_opinion_modifier = { target = SOV modifier =  returned_dalian}
+		clr_global_flag = dalian_leased
+		
+	}
+	
+	
+}
+
+
+#PRC gets response, here it is NO
+country_event = {
+	id = ne_prc.19
+	title = ne_prc.19.t
+	desc = ne_prc.19.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+	ai_chance = { factor = 90 }
+		name = ne_prc.19.a
+		
+		add_political_power = 150
+		create_wargoal = { type = take_state target = SOV generator = {766} } 
+		
+		add_opinion_modifier = { target = SOV modifier =  refused_dalian}
+		reverse_add_opinion_modifier = { target = SOV modifier = asked_return_territory}
+		
+	}
+	
+	#back down
+	option = {
+	ai_chance = { factor = 10 }
+		name = ne_prc.19.b
+		
+		add_national_unity = 0.05
+		
+		add_opinion_modifier = { target = SOV modifier =  refused_dalian}
+		reverse_add_opinion_modifier = { target = SOV modifier = asked_return_territory}
+
+		}
+}
+
+
+
+##China ultimatum for Japanese territory
+##Same structure as for Port Arthur!
+
+country_event = {
+	id = ne_prc.20
+	title = ne_prc.20.t
+	desc =  ne_prc.20.d
+	picture = GFX_report_event_stalin_02
+
+	fire_only_once = yes
+
+	trigger = {
+	
+	tag = PRC
+	
+	PRC = {
+			exists = yes
+			has_war = no
+			num_of_factories > 50 
+			num_divisions > 30
+			
+		}
+	
+	NOT = { country_exists = CHI }
+	
+	OR = {
+	
+		NOT = {
+	
+			PRC = {
+					controls_state = 609
+				}
+				
+			PRC = {
+					controls_state = 611
+				}
+				
+			PRC = {
+					controls_state = 328
+				}
+			
+				AND = {
+				
+				NOT = {MAN = { is_subject_of = PRC } }
+				MAN = { has_war = yes} 
+		
+				
+				}
+				
+				AND = {
+				 	
+				NOT = {MEN = { is_subject_of = PRC } }
+				MEN = { has_war = yes} 
+				
+				}
+	
+		}
+
+	}
+	
+	
+	
+	}
+
+	
+	mean_time_to_happen = {
+	##mtth
+		days = 10
+	}
+
+	
+	option = { 
+	ai_chance = { factor = 98}
+		name = ne_prc.20.a
+	
+	
+	hidden_effect = {
+	
+	every_country = {
+	
+		
+	
+		if = {
+		limit = {	
+			controls_state = 609
+			owns_state = 609
+			
+				NOT = {				
+					tag = PRC
+					tag = MEN
+					tag = MAN				
+				}
+			
+		}
+		country_event = { days = 1 id = ne_prc.21}
+		}
+		
+		if = {
+		limit = {	
+			controls_state = 328
+			owns_state = 328
+				NOT = {
+				
+				tag = PRC
+				tag = MEN
+				tag = MAN
+				
+				}
+			
+		}
+		country_event = { days = 1 id = ne_prc.21}
+		}
+		
+		if = {
+		limit = {	
+			controls_state = 611
+			owns_state = 611
+				NOT = {
+				
+				tag = PRC
+				tag = MEN
+				tag = MAN
+				
+				}
+			
+		}
+		country_event = { days = 1 id = ne_prc.21}
+		}
+
+		}
+
+		
+		MAN = {
+		
+			if = {
+				limit = {
+
+					is_subject = yes 
+					
+				}
+			
+			OVERLORD = {country_event = { days = 1 id = ne_prc.21} }
+			}
+			
+			if = {
+				limit = {
+				
+					exists = yes
+					is_subject = no 
+			
+				}
+			country_event = { days = 1 id = ne_prc.21}
+			}
+			
+		}
+
+	
+		MEN = {
+		
+			if = {
+				limit = {
+				
+					is_subject = yes 
+					
+				}
+			
+			OVERLORD = {country_event = { days = 1 id = ne_prc.21} }
+			}
+			
+			if = {
+				limit = {
+				
+					exists = yes
+					is_subject = no
+			
+				}
+			country_event = { days = 1 id = ne_prc.21}
+			}
+			
+		}
+	
+	}
+	
+	
+	
+	custom_effect_tooltip = ne_prc_demand_nechina
+	
+	}	
+
+	
+	
+	
+	
+	
+	#DO NOTHING 
+	option = { 
+		name = ne_prc.20.b
+		add_political_power = -15
+		
+	}
+
+}
+	         
+
+##Occupier gets ultimatum; can decide
+#Fill out id, title, desc and picture
+country_event = {
+	id = ne_prc.21
+	title = ne_prc.21.t
+	desc =  ne_prc.21.d
+	picture = GFX_report_event_stalin_02
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+
+	option = { # Accept
+		name = ne_prc.21.a
+		ai_chance = {
+			factor = 98
+			
+			modifier = {
+				factor = 10
+
+				OR = {
+				
+				NOT = {
+				
+					AND = {
+						has_war = no
+						has_full_control_of_state = 609
+					}
+					AND = {
+						has_war = no
+						has_full_control_of_state = 610
+					}
+					AND = {
+						has_war = no
+						has_full_control_of_state = 611
+					}
+					AND = {
+						has_war = no
+						has_full_control_of_state = 612
+					}
+					AND = {
+						has_war = no
+						has_full_control_of_state = 714
+					}
+					AND = {
+						has_war = no
+						has_full_control_of_state = 715
+					}
+					AND = {
+						has_war = no
+						has_full_control_of_state = 716
+					}
+					AND = {
+						has_war = no
+						has_full_control_of_state = 717
+					}
+					AND = {
+						has_war = no
+						has_full_control_of_state = 328
+					}
+				
+				}
+				
+				}
+				
+				}
+			}
+			
+		
+		add_political_power = -20
+		
+		PRC = {
+			country_event = { days = 4 id = ne_prc.22 }
+		}
+		
+	}
+	option = { # Refuse
+		name = ne_prc.21.b
+		ai_chance = { factor = 2 }
+		
+		add_political_power = 20
+		
+		PRC = {
+			country_event = { days = 4 id = ne_prc.23 }
+		}
+	}
+            
+            	
+	
+}
+
+
+#PRC gets response, here it is YES, leads to annexation/state transfer
+country_event = {
+	id = ne_prc.22
+	title = ne_prc.22.t
+	desc = ne_prc.22.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+	## either annex command or transfer_state
+		name = ne_prc.22.a
+		
+		add_political_power = 25
+		
+		if = {
+					limit = { FROM = { controls_state = 609
+							   	       has_full_control_of_state = 609
+							   }
+					}
+					transfer_state = 609
+				}
+				
+		if = {
+					limit = { FROM = { controls_state = 611 
+							   	       has_full_control_of_state = 611
+							   }
+					}
+					transfer_state = 611
+				}
+				
+		if = {
+					limit = { FROM = { controls_state = 612
+							   	       has_full_control_of_state = 612
+							   }
+					}
+					transfer_state = 612
+				}
+				
+		if = {
+					limit = { FROM = { controls_state = 610 
+							   	       has_full_control_of_state = 610
+							   }
+					}
+					transfer_state = 610
+				}
+				
+		if = {
+					limit = { FROM = { controls_state = 714 
+							   	       has_full_control_of_state = 714
+							   }
+					}
+					transfer_state = 714
+				}
+				
+		if = {
+					limit = { FROM = { controls_state = 715 
+							   	       has_full_control_of_state = 715
+							   }
+					}
+					transfer_state = 715
+				}
+				
+		if = {
+					limit = { FROM = { controls_state = 716 
+							   	       has_full_control_of_state = 76
+							   }
+					}
+					transfer_state = 716
+				}
+		
+		
+		if = {
+					limit = { FROM = { controls_state = 328 
+							   	       has_full_control_of_state = 328 
+							   }
+					}
+					transfer_state = 328 
+				}
+		
+		
+		if = {
+					limit = { FROM = { controls_state = 717 
+							   	       has_full_control_of_state = 717 
+							   }
+					}
+					transfer_state = 717 
+				}
+
+		if = {
+					limit = {  	MAN = { is_subject_of = FROM}  }
+					annex_country = { target = MAN } 
+				}
+				
+		if = {
+					limit = { 	MEN = { is_subject_of = FROM} }
+					annex_country = { target = MEN } 
+				}
+		
+		
+		
+		add_opinion_modifier = { target = FROM modifier =  return_territory}
+		
+	}
+	
+	
+}
+
+
+#PRC gets response, here it is NO
+country_event = {
+	id = ne_prc.23
+	title = ne_prc.23.t
+	desc = ne_prc.23.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	
+	##war or puppets!
+	option = {
+	ai_chance = { factor = 50 }
+		name = ne_prc.23.a
+		
+		add_political_power = 5
+		create_wargoal = { type = annex_everything target = FROM } 
+		
+		add_opinion_modifier = { target = FROM modifier =  refuse_territory}
+		reverse_add_opinion_modifier = { target = FROM modifier = asked_return_territory}
+		
+	}
+	
+	
+	#back down, no war
+	option = {
+	ai_chance = { factor = 50 }
+		name = ne_prc.23.b
+		
+		add_political_power = -10
+		add_national_unity = -0.05
+		
+		add_opinion_modifier = { target = FROM modifier =  refused_dalian}
+		reverse_add_opinion_modifier = { target = FROM modifier = asked_return_territory}
+
+		}
+}
+
+

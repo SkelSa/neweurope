@@ -1,0 +1,27 @@
+state={
+	id=753
+	name="STATE_753"
+	
+	history={
+		owner = GER
+		victory_points = {
+			3522 5 
+		}
+		buildings = {
+			infrastructure = 8
+			
+			air_base = 6
+
+		}
+		add_core_of = GER
+		
+
+	}
+	
+	provinces={
+		3522 6487 6582 9238 9375 9456 9560 11359 11468 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

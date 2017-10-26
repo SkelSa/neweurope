@@ -1,0 +1,3898 @@
+﻿add_namespace = ne_intro
+add_namespace = ne
+
+
+##Intro to manager:
+country_event = {
+	id = ne_intro.1   		#Restoration of Europe             
+	title = ne_intro.1.t  	#Start Manager
+	desc =  ne_intro.1.d   	#Go to manager or not
+	picture = GFX_report_event_soviet_invasion_map
+
+	fire_only_once = yes
+	
+	trigger = {
+	
+		is_ai = no
+
+		NOT {
+		
+			SOV = {		
+				has_war_with = FRA
+				has_war_with = USA
+				has_war_with = ENG
+				has_war_with = CAN			
+			}
+
+		}
+		
+		OR {		
+			SOZ = { exists = yes } 
+			FOZ = { exists = yes } 
+			AOZ = { exists = yes } 
+			BOZ = { exists = yes }
+			GER = { exists = no }
+		}
+	}
+	
+	mean_time_to_happen = {	days = 40 }
+	
+	option = {
+		name = ne_intro.1.a        #start
+		hidden_effect = {
+			country_event = ne.1
+		}
+	}
+	option = {
+		name = ne_intro.1.b         #close		
+	}
+	
+}
+
+
+country_event = {
+	id = ne.1   #                    
+	title = ne.1.t #Manager Europe
+	desc =  ne.1.d  #Talk about mod stuff
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.1.a         #Axis Powers
+		hidden_effect = {
+			country_event = ne.2
+		}
+	}
+	option = {                #victorious powers + conquered nations of the axis
+		name = ne.1.b
+		hidden_effect = {
+			country_event = ne.3
+		}
+	}
+	option = {                #Fuck it! Descend the Iron Curtain now!
+		name = ne.1.c
+		hidden_effect = {
+			country_event = ne.4
+		}
+	}
+	
+	option = {             #Exit
+		name = ne.1.e
+		hidden_effect = {
+			country_event = ne_setup.2
+		}
+	}
+	
+}
+
+##AXIS MENU
+
+country_event = {
+	id = ne.2                     
+	title = ne.2.t 
+	desc =  ne.2.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.2.a         #Germany
+		hidden_effect = {
+			country_event = ne.20
+		}
+	}
+	option = {                #Italy
+		name = ne.2.b
+		hidden_effect = {
+			country_event = ne.21
+		}
+	}
+	option = {                #Minor axis nations
+		name = ne.2.c
+		hidden_effect = {
+			country_event = ne.22
+		}
+	}
+	
+	option = {
+		name = ne.2.e #Exit
+		country_event = ne.1
+						
+			
+		
+	}
+	
+}
+
+#GERMANY
+
+country_event = {
+	id = ne.20                      
+	title = ne.20.t 
+	desc =  ne.20.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.20.a         #Historical partion
+		
+		SAA = { 		
+			transfer_state = 764
+			
+		}
+		
+		
+		FOZ = { 		
+			transfer_state = 42
+			transfer_state = 754
+			transfer_state = 775
+		}
+		
+		BOZ = { 
+			transfer_state = 51
+			transfer_state = 750
+			transfer_state = 56
+			transfer_state = 59
+			transfer_state = 58
+			transfer_state = 57
+			transfer_state = 778
+		}
+		
+		AOZ = { 		
+			transfer_state = 54
+			transfer_state = 53
+			transfer_state = 52
+			transfer_state = 772
+			transfer_state = 50
+			transfer_state = 749
+			transfer_state = 55
+		}
+		
+		SOZ = { 			
+			transfer_state = 744
+			transfer_state = 60
+			transfer_state = 753
+			transfer_state = 64
+			transfer_state = 65
+			transfer_state = 61
+			transfer_state = 62
+		}
+
+		
+	hidden_effect = {
+			country_event = ne.2
+			set_global_flag = germany_partitioned
+			clr_global_flag = germany_divided
+			clr_global_flag = germany_roosevelt
+			clr_global_flag = germany_morgenthau
+		}
+
+	set_province_name = { id = 13206 name = "west_berlin"}
+	set_province_name = { id = 13207 name = "east_berlin"}
+		
+	}
+	
+	option = {                #Other Plans...
+		name = ne.20.b
+		hidden_effect = {
+			country_event = ne.201
+		}
+	}
+	option = {                #WGR/DDR
+		name = ne.20.c
+		
+		WGR = { 
+			
+			transfer_state = 42
+			transfer_state = 50
+			transfer_state = 51
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 54
+			transfer_state = 55
+			transfer_state = 56
+			transfer_state = 57
+			transfer_state = 58
+			transfer_state = 59
+			transfer_state = 749
+			transfer_state = 750
+			transfer_state = 772
+			transfer_state = 754
+			transfer_state = 764
+			transfer_state = 775
+			transfer_state = 778
+			
+
+		}
+		
+		DDR = { 
+			
+			transfer_state = 60
+			transfer_state = 61
+			transfer_state = 62
+			transfer_state = 64
+			transfer_state = 65
+			transfer_state = 744
+			transfer_state = 753
+
+		}
+
+		hidden_effect = {
+			country_event = ne.2
+			set_global_flag = germany_divided
+			clr_global_flag = germany_partitioned
+			clr_global_flag = germany_roosevelt
+			clr_global_flag = germany_morgenthau
+		}
+		
+		set_province_name = { id = 13206 name = "west_berlin"}
+		set_province_name = { id = 13207 name = "east_berlin"}
+		
+	}
+	
+	option = {
+		name = ne.20.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.2
+		}
+	}
+	
+}
+
+
+country_event = {
+	id = ne.201  #  Morgenthau and Roosevelt Plan                  
+	title = ne.201.t #
+	desc =  ne.201.d  #
+
+	picture = GFX_report_event_soviet_invasion_map 
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.201.a    #Morgenthau
+
+    FRA = { 
+			
+			transfer_state = 764
+			transfer_state = 42
+
+		}
+		
+    SGR = { 		
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 54
+			transfer_state = 50
+			transfer_state = 754
+		}
+	
+	NGR = { 
+			
+			transfer_state = 68
+			transfer_state = 62
+			transfer_state = 63
+			transfer_state = 744
+			transfer_state = 749
+			transfer_state = 743
+			transfer_state = 753
+			transfer_state = 65
+			transfer_state = 60
+			transfer_state = 57
+			transfer_state = 56
+			transfer_state = 746
+			transfer_state = 64
+			transfer_state = 61
+			transfer_state = 772
+			transfer_state = 58
+			transfer_state = 59			
+
+		}
+
+    INT = { 
+			
+			transfer_state = 58
+			transfer_state = 51
+			transfer_state = 55
+			transfer_state = 772
+			transfer_state = 750
+			transfer_state = 55
+			transfer_state = 56
+			transfer_state = 57
+			transfer_state = 775
+			transfer_state = 778
+			
+
+		}
+		
+    POL = { 
+			
+			transfer_state = 66
+			transfer_state = 743
+			transfer_state = 67
+
+		}
+		
+    SOV = { 
+			
+			transfer_state = 5
+
+
+		}
+
+	set_province_name = { id = 13207 name = " "}
+	set_province_name = { id = 13206 name = "berlin"}	
+
+
+		
+		hidden_effect = {
+			country_event = ne.2
+			set_global_flag = germany_morgenthau
+			clr_global_flag = germany_partitioned
+			clr_global_flag = germany_divided
+			clr_global_flag = germany_roosevelt
+			
+		}
+	}
+	option = {   	#Roosevelt
+	name = ne.201.b
+	
+	INT = { 
+			
+			transfer_state = 764
+			transfer_state = 51
+			transfer_state = 750
+
+	}
+		
+    BAV = { 
+			
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 54
+			transfer_state = 50
+			transfer_state = 754
+
+	}
+	
+	PRS = { 
+			
+			transfer_state = 68
+			transfer_state = 62
+			transfer_state = 63
+			transfer_state = 744
+			transfer_state = 749
+			transfer_state = 743
+			transfer_state = 59
+			transfer_state = 753
+			transfer_state = 66
+			transfer_state = 65
+			transfer_state = 64
+			transfer_state = 62
+			transfer_state = 746
+			transfer_state = 61
+			transfer_state = 67
+			
+
+	}
+	
+	HAN = { transfer_state = 58
+	        transfer_state = 772
+			transfer_state = 57
+			transfer_state = 56
+			transfer_state = 59
+			transfer_state = 778
+			
+			
+			
+
+	}
+	
+
+	SAX = { 
+			
+			transfer_state = 60
+			transfer_state = 65
+
+	}	
+		
+    HES = { 
+			
+			transfer_state = 55
+			transfer_state = 42
+			transfer_state = 775
+
+
+	}
+		
+    POL = { 
+			
+			transfer_state = 743
+
+
+		}
+		
+    SOV = { 
+			
+			transfer_state = 5
+
+
+		}
+
+	set_province_name = { id = 13207 name = " "}
+	set_province_name = { id = 13206 name = "berlin"}	
+
+	
+		
+		hidden_effect = {
+			country_event = ne.2
+			set_global_flag = germany_roosevelt
+			clr_global_flag = germany_partitioned
+			clr_global_flag = germany_divided
+			clr_global_flag = germany_morgenthau
+		}
+	}
+	
+	option = {                #Exit
+		name = ne.201.c
+		hidden_effect = {
+			country_event = ne.20
+		}
+	}
+	
+}
+
+##ITALY
+
+country_event = {
+	id = ne.21                      
+	title = ne.21.t 
+	desc =  ne.21.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.21.a         #Historical partition + free colonies + Trieste + istria
+		
+		ENG = { 
+		
+			transfer_state = 273
+			transfer_state = 559
+			transfer_state = 663
+			transfer_state = 451
+			transfer_state = 450
+			transfer_state = 449
+			transfer_state = 448
+			transfer_state = 661
+			transfer_state = 662
+				
+		
+		}
+		
+		
+		FRA = { 
+			
+			transfer_state = 773	
+			transfer_state = 735
+			transfer_state = 1
+			
+
+		}
+		
+		ITA = { 
+			
+			transfer_state = 114
+			transfer_state = 115
+			transfer_state = 156
+			transfer_state = 117
+			transfer_state = 2
+			transfer_state = 157
+			transfer_state = 162
+			transfer_state = 160
+			transfer_state = 161
+			transfer_state = 158
+			transfer_state = 39
+			transfer_state = 159
+
+		}
+		
+		GRE = { 
+			
+			transfer_state = 164
+			
+		}
+		
+		TRI = { 
+			
+			transfer_state = 736
+			
+		}
+		
+		ETH = { 
+			
+			transfer_state = 271
+			transfer_state = 550
+			
+		}
+		
+		YUG = { 
+			
+			transfer_state = 747
+			transfer_state = 767
+			transfer_state = 163
+			
+		}
+		
+		
+	hidden_effect = {
+			country_event = ne.2
+		}	
+	}
+	
+	option = {                #status quo
+		name = ne.21.b
+		
+		FRA = { 
+				
+			transfer_state = 735
+			transfer_state = 1
+		}
+		
+		ITA = { 
+			
+			transfer_state = 114
+			transfer_state = 115
+			transfer_state = 156
+			transfer_state = 117
+			transfer_state = 2
+			transfer_state = 157
+			transfer_state = 162
+			transfer_state = 160
+			transfer_state = 161
+			transfer_state = 158
+			transfer_state = 39
+			transfer_state = 273
+			transfer_state = 559
+			transfer_state = 663
+			transfer_state = 451
+			transfer_state = 450
+			transfer_state = 449
+			transfer_state = 448
+			transfer_state = 661
+			transfer_state = 550
+			transfer_state = 736
+			transfer_state = 747
+			transfer_state = 767
+			transfer_state = 662
+			transfer_state = 773
+			transfer_state = 163
+			transfer_state = 164
+
+		}
+		
+		ETH = { 
+			
+			transfer_state = 271
+				
+		}
+		
+
+		
+		hidden_effect = {
+			country_event = ne.2
+		}
+	}
+	option = {                #cut down to size
+		name = ne.21.c
+		
+			
+		FRA = { 
+			
+				
+			transfer_state = 735
+			transfer_state = 1
+			transfer_state = 114 #Sardinia
+			
+
+		}
+		
+		ITA = { 
+			
+			
+			transfer_state = 115
+			transfer_state = 156
+			transfer_state = 117
+			transfer_state = 2
+			transfer_state = 157
+			transfer_state = 162
+			transfer_state = 160
+			transfer_state = 161
+			transfer_state = 158
+			transfer_state = 163
+			
+
+		}
+		
+		GRE = { 
+			
+			transfer_state = 164
+			
+		}
+		
+		AUS = { 
+			
+			transfer_state = 39
+			
+		}
+			
+		ETH = { 
+			
+			transfer_state = 271
+			transfer_state = 550
+			transfer_state = 559
+			
+		}
+		
+		LBA = { 
+			
+			transfer_state = 273
+			transfer_state = 662
+			transfer_state = 663
+			transfer_state = 451
+			transfer_state = 450
+			transfer_state = 449
+			transfer_state = 448
+			transfer_state = 661
+			transfer_state = 773
+			
+			
+		}
+		
+		YUG = { 
+			
+			transfer_state = 747
+			transfer_state = 767
+			transfer_state = 736
+			transfer_state = 163
+			
+		}
+		
+		hidden_effect = {
+			country_event = ne.2
+		}
+	}
+	
+	option = {
+		name = ne.21.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.2
+		}
+	}
+	
+}
+
+##Smaller Axis Powers
+
+country_event = {
+	id = ne.22       #id               
+	title = ne.22.t  #title
+	desc =  ne.22.d  #description
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.22.a         #Hungary
+		hidden_effect = {
+			country_event = ne.221
+		}
+	}
+	option = {                #Romania
+		name = ne.22.b
+		hidden_effect = {
+			country_event = ne.222
+		}
+	}
+	option = {                #Bulgaria
+		name = ne.22.c
+		hidden_effect = {
+			country_event = ne.223
+		}
+	}
+	
+	option = {             #Finland
+		name = ne.22.e
+		hidden_effect = {      
+			country_event = ne.224
+		}
+	}
+	
+	option = {             #Exit
+		name = ne.22.f
+		hidden_effect = {      
+			country_event = ne.2
+		}
+	}
+	
+}
+
+
+##HUNGARY
+
+country_event = {
+	id = ne.221                      
+	title = ne.221.t 
+	desc =  ne.221.d  
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ne.221.a         #1937 + Burgenland
+		
+		HUN = { 
+		
+			transfer_state = 155
+			transfer_state = 154
+			transfer_state = 43
+			transfer_state = 757
+			drop_cosmetic_tag = yes
+				
+		}
+			
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	option = {
+		name = ne.221.b         #1937
+		
+		HUN = { 
+		
+			transfer_state = 155
+			transfer_state = 154
+			transfer_state = 43
+			drop_cosmetic_tag = yes
+				
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	
+	option = {
+		name = ne.221.c        #2nd vienna award
+		
+		HUN = { 
+		
+			transfer_state = 155
+			transfer_state = 154
+			transfer_state = 43
+			transfer_state = 757
+			transfer_state = 664
+			transfer_state = 73
+			transfer_state = 76
+				
+		}
+
+		
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	option = {
+		name = ne.221.e        #unrealistic bullshit, Austro-Hungary
+		
+		HUN = { 
+		
+			transfer_state = 155 ##normal Hungary
+			transfer_state = 154
+			transfer_state = 43
+			transfer_state = 757 ## Austria + Tyrol
+			transfer_state = 4
+			transfer_state = 758
+			transfer_state = 153
+			transfer_state = 152
+			transfer_state = 39
+			transfer_state = 73 ## CZE
+			transfer_state = 71
+			transfer_state = 70
+			transfer_state = 664
+			transfer_state = 75
+			transfer_state = 74
+			transfer_state = 72
+			transfer_state = 9
+			transfer_state = 69 ## YUG 
+			transfer_state = 748
+			transfer_state = 45
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 103
+			transfer_state = 767
+			transfer_state = 747
+			transfer_state = 736
+			transfer_state = 163
+			transfer_state = 102 ##Romania
+			transfer_state = 80
+			transfer_state = 76
+			transfer_state = 84
+			transfer_state = 82
+			transfer_state = 83 ##Poland, Ukraine
+			transfer_state = 88
+			transfer_state = 89
+			transfer_state = 91
+			
+			
+			set_cosmetic_tag = HUN_EMPIRE
+			set_capital = 4	
+		}
+		
+		
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	option = {
+		name = ne.221.f
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.22
+		}
+	}
+	
+}
+
+
+##ROMANIA
+
+country_event = {
+	id = ne.222                      
+	title = ne.222.t 
+	desc =  ne.222.d  
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.222.a         #historical 
+		
+		ROM = { 
+		
+			transfer_state = 46
+			transfer_state = 81
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 76
+			transfer_state = 79
+				
+		}
+		
+		SOV = { 
+	
+			transfer_state = 78
+			transfer_state = 752
+			transfer_state = 80
+
+			
+				
+		}
+		
+		#BUL = { 
+		#
+		#	transfer_state = 77
+		##	
+		#	
+		#		
+		#}
+
+				
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	
+	option = {
+		name = ne.222.b         #1937
+		
+		ROM = { 
+		
+			transfer_state = 46
+			transfer_state = 81
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 76
+			transfer_state = 79
+			transfer_state = 78
+			transfer_state = 752
+			transfer_state = 80
+			transfer_state = 77
+			
+				
+		}
+		
+		
+		
+				
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	
+	option = {
+		name = ne.222.c        #no territory 1914
+		
+		ROM = { 
+		
+			transfer_state = 46
+			transfer_state = 81
+			transfer_state = 79
+				
+		}
+		
+		
+		
+				
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	option = {
+		name = ne.222.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.22
+		}
+	}
+	
+}
+
+
+##Bulgaria
+
+country_event = {
+	id = ne.223                     
+	title = ne.223.t 
+	desc =  ne.223.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.223.a         #only Dobrudja
+		
+		BUL = { 
+		
+			transfer_state = 77
+			transfer_state = 211
+			transfer_state = 212
+			transfer_state = 48
+				
+		}
+	
+				
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	option = {
+		name = ne.223.b         #no craicova
+		
+		BUL = { 
+		
+			transfer_state = 211
+			transfer_state = 212
+			transfer_state = 48
+				
+		}
+			
+				
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	
+	option = {
+		name = ne.223.c        #all claims + tessaloniki
+		
+		BUL = { 
+		
+			transfer_state = 77
+			transfer_state = 211
+			transfer_state = 212
+			transfer_state = 48
+			transfer_state = 760
+			transfer_state = 106
+			transfer_state = 731
+			transfer_state = 184
+				
+		}
+		
+		
+		
+		
+				
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	option = {
+		name = ne.223.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.22
+		}
+	}
+	
+}
+
+
+
+##Finland
+
+country_event = {
+	id = ne.224                      
+	title = ne.224.t 
+	desc =  ne.224.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.224.a         #1937
+		
+		FIN = { 
+		
+			transfer_state = 145
+			transfer_state = 150
+			transfer_state = 149
+			transfer_state = 148
+			transfer_state = 722
+			transfer_state = 147
+			transfer_state = 146
+			transfer_state = 111
+				
+		}
+
+		
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	option = {
+		name = ne.224.b         #historical
+		
+		FIN = { 
+		
+			transfer_state = 145
+			transfer_state = 150
+			transfer_state = 149
+			transfer_state = 148
+			transfer_state = 111
+			
+				
+		}
+		
+		SOV = { 
+		
+			transfer_state = 146
+			transfer_state = 147
+			transfer_state = 722
+							
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	
+	option = {
+		name = ne.224.c        #FULL COMMUNISM
+		
+		SOV = { 
+		
+			transfer_state = 145
+			transfer_state = 150
+			transfer_state = 149
+			transfer_state = 148
+			transfer_state = 722
+			transfer_state = 147
+			transfer_state = 146
+			transfer_state = 111
+				
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.22
+		}	
+	}
+	
+	option = {
+		name = ne.224.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.22
+		}
+	}
+	
+}
+
+#########################################HERE ENDS THE AXIS PART#####################################################################################################################################################################
+
+###HERE ARE THE ALLIES
+
+##Smaller Allies Powers
+
+country_event = {
+	id = ne.3                     
+	title = ne.3.t 
+	desc =  ne.3.d 
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ne.3.a         #UK FRA SOV
+		hidden_effect = {
+			country_event = ne.30
+		}
+	}
+	option = {                #Conquered nations
+		name = ne.3.b
+		hidden_effect = {
+			country_event = ne.31
+		}
+	}
+	option = {                #neutral nations
+		name = ne.3.c
+		hidden_effect = {
+			country_event = ne.34
+		}
+	}
+	
+	option = {             #Exit
+		name = ne.3.e
+		hidden_effect = {      
+			country_event = ne.1
+		}
+	}
+	
+	
+}
+
+###Big THREE#########################################################################################################################################################################################################################
+
+
+country_event = {
+	id = ne.30       #id               
+	title = ne.30.t  #title
+	desc =  ne.30.d  #description
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.30.a         #Britain
+		hidden_effect = {
+			country_event = ne.301
+		}
+	}
+	option = {                #USSR
+		name = ne.30.b
+		hidden_effect = {
+			country_event = ne.302
+		}
+	}
+	option = {                #FRA
+		name = ne.30.c
+		hidden_effect = {
+			country_event = ne.303
+		}
+	}
+	
+	option = {             #Exit
+		name = ne.30.e
+		hidden_effect = {      
+			country_event = ne.3
+		}
+	}
+
+}
+
+
+##BIG THREE/BRITAIN##################################################################################################################################################################################################################
+
+country_event = {
+	id = ne.301                      
+	title = ne.301.t 
+	desc =  ne.301.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.301.a         #restore british isles
+		
+		ENG = { 
+		
+			transfer_state = 122
+			transfer_state = 123
+			transfer_state = 127
+			transfer_state = 126
+			transfer_state = 125
+			transfer_state = 338
+			transfer_state = 122
+			transfer_state = 119
+			transfer_state = 133
+			transfer_state = 120
+			transfer_state = 136
+			transfer_state = 128
+			transfer_state = 130
+			transfer_state = 131
+			transfer_state = 133
+			transfer_state = 132
+			transfer_state = 121
+			transfer_state = 128
+			transfer_state = 129
+	
+		}
+	
+	
+	hidden_effect = {
+			country_event = ne.30
+		}	
+	}
+	
+	option = {
+		name = ne.301.b         #NI to IRE, Labrador NFL to Canada 
+		
+		ENG = { 
+		
+			transfer_state = 122
+			transfer_state = 123
+			transfer_state = 127
+			transfer_state = 126
+			transfer_state = 125
+			transfer_state = 338
+			transfer_state = 122
+			transfer_state = 119
+			transfer_state = 133
+			transfer_state = 120
+			transfer_state = 136
+			transfer_state = 128
+			transfer_state = 130
+			transfer_state = 131
+			transfer_state = 133
+			transfer_state = 132
+			transfer_state = 121
+			transfer_state = 128
+			transfer_state = 129
+			
+		}
+		
+		CAN = { 
+		
+			transfer_state = 331
+			transfer_state = 332
+			
+		}
+		
+		IRE = { 
+		
+			transfer_state = 119
+	
+		}
+			
+	hidden_effect = {
+			country_event = ne.30
+		}	
+	}
+	
+	#Carve the Empire up
+	option = {                  
+		name = ne.301.c 		
+		ENG = { 
+		
+			transfer_state = 122
+			transfer_state = 123
+			transfer_state = 127
+			transfer_state = 126
+			transfer_state = 125
+			transfer_state = 338
+			transfer_state = 122
+			transfer_state = 119
+			transfer_state = 133
+			transfer_state = 120
+			transfer_state = 136
+			transfer_state = 128
+			transfer_state = 130
+			transfer_state = 131
+			transfer_state = 133
+			transfer_state = 132
+			transfer_state = 121
+			transfer_state = 128
+			transfer_state = 129		
+	
+		}
+		
+		CAN = { 
+		
+			transfer_state = 331
+			transfer_state = 332
+			
+		}
+		
+		IRE = { 
+		
+			transfer_state = 119
+	
+		}
+		
+		EGY = { 
+		
+			transfer_state = 549
+	
+		}
+		
+		IRQ = { 
+		
+			transfer_state = 656
+	
+		}
+		
+		SAU = { 
+		
+			transfer_state = 658
+	
+		}
+		
+		##change to D01 if test is negative
+		SPR = { 
+		
+			transfer_state = 118
+	
+		}
+		
+		GUA = { 
+		
+			transfer_state = 311
+	
+		}
+		
+		FRA = { 
+		
+			transfer_state = 701
+			transfer_state = 274
+			transfer_state = 558
+			transfer_state = 707
+	
+		}
+		
+		LIB = { 
+		
+			transfer_state = 700
+			transfer_state = 703
+	
+		}
+		
+		CHI = { 
+		
+			transfer_state = 326
+	
+		}
+		
+		YEM = { 
+		
+			transfer_state = 659
+	
+		}
+		
+		GRE = { 
+		
+			transfer_state = 183
+	
+		}
+		
+		ITA = { 
+		
+			transfer_state = 116
+	
+		}
+		
+		##more to come
+		
+		ETH = { 
+		
+			transfer_state = 269
+	
+		}
+		
+		KEN = { 
+		
+			transfer_state = 709
+	
+		}
+		
+		VEN = { 
+
+			transfer_state = 691
+			transfer_state = 687
+
+	
+		}
+		
+		ARG = { 
+
+			transfer_state = 299
+			transfer_state = 720
+
+	
+		}
+		
+		RAJ = { 
+		
+			transfer_state = 422
+			transfer_state = 733
+			transfer_state = 281
+			transfer_state = 710
+	
+		}
+		
+		POR = { 
+		
+			transfer_state = 704
+	
+		}
+		
+		AST = { 
+		
+			transfer_state = 725
+			transfer_state = 711
+			transfer_state = 712
+			
+	
+		}
+		
+		USA = {
+		
+			transfer_state = 689
+			transfer_state = 690
+			transfer_state = 696
+			transfer_state = 693
+			transfer_state = 692
+			transfer_state = 308
+			transfer_state = 270
+			transfer_state = 636
+			transfer_state = 643
+			transfer_state = 639
+		
+		
+		}
+		
+		##release all releasables
+		ENG = {release = KEN}
+		ENG = {release = PAL}
+		ENG = {release = JOR}
+		ENG = {release = EGY}
+		ENG = {release = ZIM}
+		ENG = {release = BOT}
+		ENG = {release = JOR}
+		ENG = {release = MAL}
+		
+		##end puppetry
+		ENG = {end_puppet = RAJ}
+		ENG = {end_puppet = SAF}
+		ENG = {end_puppet = CAN}
+		ENG = {end_puppet = AST}
+		ENG = {end_puppet = NZL}
+		ENG = {end_puppet = EGY}
+		ENG = {end_puppet = MAL}
+		
+		##destroy allies and give RAJ their tag!
+		RAJ = {set_cosmetic_tag = IND}
+		MAL = {drop_cosmetic_tag = yes}
+		ENG = { dismantle_faction = yes }
+		
+				
+	hidden_effect = {
+			country_event = ne.30
+		}	
+	}
+	
+	option = {
+		name = ne.301.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.30
+		}
+	}
+	
+}
+
+##Soviets############################################################################################################################################################################################################################
+
+country_event = {
+	id = ne.302                      
+	title = ne.302.t 
+	desc =  ne.302.d  
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	
+	#Historical
+	option = {
+	name = ne.302.a         
+		
+		SOV = { 
+		
+			transfer_state = 752
+			transfer_state = 78
+			transfer_state = 80
+			transfer_state = 73
+			transfer_state = 722
+			transfer_state = 147
+			transfer_state = 146
+			transfer_state = 13   ##baltic States
+			transfer_state = 191
+			transfer_state = 190
+			transfer_state = 12
+			transfer_state = 11
+			transfer_state = 189
+			transfer_state = 188  ##end of baltic states
+			transfer_state = 5    ##Kaliningrad
+			transfer_state = 751
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 745
+			transfer_state = 94
+			transfer_state = 93
+			transfer_state = 751
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 209   ##territory from PLC
+			transfer_state = 198
+			transfer_state = 201
+			transfer_state = 202
+			transfer_state = 198
+			transfer_state = 210    
+			transfer_state = 207
+			transfer_state = 242
+			transfer_state = 226 
+			transfer_state = 203
+			transfer_state = 259
+			transfer_state = 225
+			transfer_state = 193
+			transfer_state = 224
+			transfer_state = 243
+			
+			annex_country = { target = EST } 	
+			annex_country = { target = LAT }
+			annex_country = { target = LIT } 	
+			annex_country = { target = BLR }  
+			annex_country = { target = UKR } 	
+			annex_country = { target = MOL }  
+			annex_country = { target = AZR } 	
+			annex_country = { target = GEO }  
+			annex_country = { target = ARM } 	
+			annex_country = { target = KAZ }  
+			annex_country = { target = KGZ }					
+			annex_country = { target = TRK }
+			annex_country = { target = UZB }
+			annex_country = { target = TAJ }
+			
+			add_popularity = { ideology = communism popularity = 0.6 } 
+			set_politics = { ruling_party = communism elections_allowed = no }
+			dismantle_faction = yes 
+			create_faction = "comintern"
+		
+		}
+		
+		if = {
+		limit = {
+			has_global_flag = SSR_chosen
+		}
+			LIT = { drop_cosmetic_tag = yes  }
+			LAT = { drop_cosmetic_tag = yes }
+			EST = { drop_cosmetic_tag = yes  }
+			BLR = { drop_cosmetic_tag = yes  }
+			UKR = { drop_cosmetic_tag = yes  }
+			GEO = { drop_cosmetic_tag = yes  }
+			ARM = { drop_cosmetic_tag = yes  }
+			AZR = { drop_cosmetic_tag = yes  }
+			KAZ = { drop_cosmetic_tag = yes  }
+			UZB = { drop_cosmetic_tag = yes  }
+			TAJ = { drop_cosmetic_tag = yes  }
+			TRK = { drop_cosmetic_tag = yes  }
+			KGZ = { drop_cosmetic_tag = yes  }
+			MOL = { drop_cosmetic_tag = yes  }
+			
+			LAT = {set_cosmetic_tag = NE_LAT_SSR_1}
+			LIT = {set_cosmetic_tag = NE_LIT_SSR_1}
+			EST = {set_cosmetic_tag = NE_EST_SSR_1}
+			UKR = {set_cosmetic_tag = NE_UKR_SSR_1}
+			BLR = {set_cosmetic_tag = NE_BLR_SSR_1}
+			GEO = {set_cosmetic_tag = NE_GEO_SSR_1}
+			AZR = {set_cosmetic_tag = NE_AZR_SSR_1}
+			ARM = {set_cosmetic_tag = NE_ARM_SSR_1}
+			KAZ = {set_cosmetic_tag = NE_KAZ_SSR_1}
+			UZB = {set_cosmetic_tag = NE_UZB_SSR_1}
+			TAJ = {set_cosmetic_tag = NE_TAJ_SSR_1}
+			TRK = {set_cosmetic_tag = NE_TRK_SSR_1}
+			KGZ = {set_cosmetic_tag = NE_KGZ_SSR_1}
+			MOL = {set_cosmetic_tag = NE_MOL_SSR_1}
+
+		}
+		
+		POL = { 
+		
+			transfer_state = 97
+			transfer_state = 743
+				
+		}
+		
+		if = {
+			limit = {
+				SOV = { has_country_flag = NE_USS_option }		
+			}	
+			SOV = { set_cosmetic_tag = NE_USS }
+		}
+		
+		if = {
+			limit = {
+				SOV = { has_country_flag = NE_USS_1_option }		
+			}	
+			SOV = { set_cosmetic_tag = NE_USS_1 }
+		}
+		
+
+	hidden_effect = {
+			country_event = ne.30
+		}	
+	}
+	
+	#Nullify every territorial gain!
+	option = {
+		name = ne.302.b         
+		
+	##also add states from the PLC
+	
+	FIN = { 
+		
+			transfer_state = 722
+			transfer_state = 147
+			transfer_state = 146			
+	}
+	
+	
+	EST = { 
+		
+			transfer_state = 13
+			transfer_state = 191
+			
+	}
+	
+	LIT = { 
+		
+			transfer_state = 189
+			transfer_state = 11
+			transfer_state = 188
+			
+			
+			
+	}
+	
+	LAT = { 
+		
+			transfer_state = 190
+			transfer_state = 12
+			
+	}
+	
+	ROM = { 
+		
+			transfer_state = 80
+			transfer_state = 78
+			transfer_state = 752
+			
+	}
+	
+	CZE = { 
+		
+			transfer_state = 73
+			
+	}
+	
+	POL = { 
+		
+		transfer_state = 751
+		transfer_state = 96
+		transfer_state = 95
+		transfer_state = 745
+		transfer_state = 97
+		transfer_state = 94
+		transfer_state = 93
+		transfer_state = 91
+		transfer_state = 89
+			
+	}
+	
+	GER = { 
+		
+		transfer_state = 5		
+	}
+	
+	SOV = {
+		add_popularity = { ideology = communism popularity = 0.6 }
+		set_politics = { ruling_party = communism elections_allowed = no }
+		dismantle_faction = yes 
+		create_faction = "comintern"
+		
+		
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = SSR_chosen
+		}
+			LIT = { drop_cosmetic_tag = yes  }
+			LAT = { drop_cosmetic_tag = yes }
+			EST = { drop_cosmetic_tag = yes  }
+			BLR = { drop_cosmetic_tag = yes  }
+			UKR = { drop_cosmetic_tag = yes  }
+			GEO = { drop_cosmetic_tag = yes  }
+			ARM = { drop_cosmetic_tag = yes  }
+			AZR = { drop_cosmetic_tag = yes  }
+			KAZ = { drop_cosmetic_tag = yes  }
+			UZB = { drop_cosmetic_tag = yes  }
+			TAJ = { drop_cosmetic_tag = yes  }
+			TRK = { drop_cosmetic_tag = yes  }
+			KGZ = { drop_cosmetic_tag = yes  }
+			MOL = { drop_cosmetic_tag = yes  }
+			
+			LAT = {set_cosmetic_tag = NE_LAT_SSR_1}
+			LIT = {set_cosmetic_tag = NE_LIT_SSR_1}
+			EST = {set_cosmetic_tag = NE_EST_SSR_1}
+			UKR = {set_cosmetic_tag = NE_UKR_SSR_1}
+			BLR = {set_cosmetic_tag = NE_BLR_SSR_1}
+			GEO = {set_cosmetic_tag = NE_GEO_SSR_1}
+			AZR = {set_cosmetic_tag = NE_AZR_SSR_1}
+			ARM = {set_cosmetic_tag = NE_ARM_SSR_1}
+			KAZ = {set_cosmetic_tag = NE_KAZ_SSR_1}
+			UZB = {set_cosmetic_tag = NE_UZB_SSR_1}
+			TAJ = {set_cosmetic_tag = NE_TAJ_SSR_1}
+			TRK = {set_cosmetic_tag = NE_TRK_SSR_1}
+			KGZ = {set_cosmetic_tag = NE_KGZ_SSR_1}
+			MOL = {set_cosmetic_tag = NE_MOL_SSR_1}
+
+			
+	}
+
+	
+
+	reset_province_name = 6332 
+	reset_province_name = 3392 
+	reset_province_name = 3320
+
+	if = {
+			limit = {
+				SOV = { has_country_flag = NE_USS_option }		
+			}	
+			SOV = { set_cosmetic_tag = NE_USS }
+		}
+		
+	if = {
+		limit = {
+			SOV = { has_country_flag = NE_USS_1_option }		
+		}	
+		SOV = { set_cosmetic_tag = NE_USS_1 }
+	}
+	
+	
+	
+						
+	hidden_effect = {
+			country_event = ne.30
+		}	
+	}
+	
+	
+	option = {
+		name = ne.302.c        #Dissolve + stay communist; create faction
+		
+	SOV = { 
+		
+		dismantle_faction = yes 
+		
+		transfer_state = 752
+		transfer_state = 78
+		transfer_state = 80
+		transfer_state = 73
+		transfer_state = 722
+		transfer_state = 147
+		transfer_state = 146
+		transfer_state = 13   ##baltic States
+		transfer_state = 191
+		transfer_state = 190
+		transfer_state = 12
+		transfer_state = 11
+		transfer_state = 189
+		transfer_state = 188  ##end of baltic states
+		transfer_state = 5    ##Kaliningrad
+		transfer_state = 751
+		transfer_state = 96
+		transfer_state = 95
+		transfer_state = 745
+		transfer_state = 94
+		transfer_state = 93
+		transfer_state = 751
+		transfer_state = 91
+		transfer_state = 89
+	
+		
+		release = LIT
+		release = LAT
+		release = EST
+		release = BLR
+		release = UKR
+		release = AZR
+		release = ARM
+		release = GEO
+		release = KAZ
+		release = TRK
+		release = TAJ
+		release = KGZ
+		release = UZB
+		release = FIN
+		release = MOL
+		
+		}
+	
+	##change idelogy to communism
+	LIT = { add_popularity = { ideology = communism popularity = 1 } }
+	LAT = { add_popularity = { ideology = communism popularity = 1 } }
+	EST = { add_popularity = { ideology = communism popularity = 1 } }
+	BLR = { add_popularity = { ideology = communism popularity = 1 } }
+	UKR = { add_popularity = { ideology = communism popularity = 1 } }
+	GEO = { add_popularity = { ideology = communism popularity = 1 } }
+	ARM = { add_popularity = { ideology = communism popularity = 1 } }
+	AZR = { add_popularity = { ideology = communism popularity = 1 } }
+	KAZ = { add_popularity = { ideology = communism popularity = 1 } }
+	UZB = { add_popularity = { ideology = communism popularity = 1 } }
+	TAJ = { add_popularity = { ideology = communism popularity = 1 } }
+	TRK = { add_popularity = { ideology = communism popularity = 1 } }
+	KGZ = { add_popularity = { ideology = communism popularity = 1 } }
+	MOL = { add_popularity = { ideology = communism popularity = 1 } }
+	SOV = { add_popularity = { ideology = communism popularity = 1 } }
+	
+	SOV = { set_politics = { ruling_party = communism elections_allowed = no } }
+	LIT = { set_politics = { ruling_party = communism elections_allowed = no } }
+	LAT = { set_politics = { ruling_party = communism elections_allowed = no } }
+	EST = { set_politics = { ruling_party = communism elections_allowed = no } }
+	BLR = { set_politics = { ruling_party = communism elections_allowed = no } }
+	UKR = { set_politics = { ruling_party = communism elections_allowed = no } }
+	GEO = { set_politics = { ruling_party = communism elections_allowed = no } }
+	ARM = { set_politics = { ruling_party = communism elections_allowed = no } }
+	AZR = { set_politics = { ruling_party = communism elections_allowed = no } }
+	KAZ = { set_politics = { ruling_party = communism elections_allowed = no } }
+	UZB = { set_politics = { ruling_party = communism elections_allowed = no } }
+	TAJ = { set_politics = { ruling_party = communism elections_allowed = no } }
+	TRK = { set_politics = { ruling_party = communism elections_allowed = no } }
+	KGZ = { set_politics = { ruling_party = communism elections_allowed = no } }
+	MOL = { set_politics = { ruling_party = communism elections_allowed = no } }
+	
+	
+	##cosmetic colors
+	if = {
+		limit = {
+			has_global_flag = SSR_chosen
+		}
+		
+		LIT = { drop_cosmetic_tag = yes  }
+		LAT = { drop_cosmetic_tag = yes }
+		EST = { drop_cosmetic_tag = yes  }
+		BLR = { drop_cosmetic_tag = yes  }
+		UKR = { drop_cosmetic_tag = yes  }
+		GEO = { drop_cosmetic_tag = yes  }
+		ARM = { drop_cosmetic_tag = yes  }
+		AZR = { drop_cosmetic_tag = yes  }
+		KAZ = { drop_cosmetic_tag = yes  }
+		UZB = { drop_cosmetic_tag = yes  }
+		TAJ = { drop_cosmetic_tag = yes  }
+		TRK = { drop_cosmetic_tag = yes  }
+		KGZ = { drop_cosmetic_tag = yes  }
+		MOL = { drop_cosmetic_tag = yes  }
+	
+		LAT = {set_cosmetic_tag = NE_LAT_SSR}
+		LIT = {set_cosmetic_tag = NE_LIT_SSR}
+		EST = {set_cosmetic_tag = NE_EST_SSR}
+		UKR = {set_cosmetic_tag = NE_UKR_SSR}
+		BLR = {set_cosmetic_tag = NE_BLR_SSR}
+		GEO = {set_cosmetic_tag = NE_GEO_SSR}
+		AZR = {set_cosmetic_tag = NE_AZR_SSR}
+		ARM = {set_cosmetic_tag = NE_ARM_SSR}
+		KAZ = {set_cosmetic_tag = NE_KAZ_SSR}
+		UZB = {set_cosmetic_tag = NE_UZB_SSR}
+		TAJ = {set_cosmetic_tag = NE_TAJ_SSR}
+		TRK = {set_cosmetic_tag = NE_TRK_SSR}
+		KGZ = {set_cosmetic_tag = NE_KGZ_SSR}
+		MOL = {set_cosmetic_tag = NE_MOL_SSR}		
+	}
+
+	LIT = {set_capital = 751}
+	
+	if = {
+			limit = { 
+				NOT = { has_global_flag = SSR_chosen }
+			}
+		SOV = { set_cosmetic_tag = RUS }
+		
+		}
+
+	if = {
+		limit = { 
+			has_global_flag = SSR_chosen
+		}
+	SOV = { set_cosmetic_tag = NE_RUS_SSR_1 }
+		
+	}
+	
+	SOV = {
+	
+	create_faction = "soviet_union" 
+	add_to_faction = LIT
+	add_to_faction = LAT
+	add_to_faction = EST
+	add_to_faction = BLR
+	add_to_faction = UKR
+	add_to_faction = AZR
+	add_to_faction = GEO
+	add_to_faction = ARM
+	add_to_faction = KAZ
+	add_to_faction = UZB
+	add_to_faction = TRK
+	add_to_faction = TAJ
+	add_to_faction = KGZ
+	add_to_faction = MOL
+	
+	}	
+				
+	hidden_effect = {
+			country_event = ne.30
+		}	
+	}
+	
+	option = {
+		name = ne.302.e        #Democratic + new faction
+		
+	##this is a copy-paste of the event above	
+			
+
+		SOV = { 
+		
+		dismantle_faction = yes 
+		
+		transfer_state = 752
+		transfer_state = 78
+		transfer_state = 80
+		transfer_state = 73
+		transfer_state = 722
+		transfer_state = 147
+		transfer_state = 146
+		transfer_state = 13   ##baltic States
+		transfer_state = 191
+		transfer_state = 190
+		transfer_state = 12
+		transfer_state = 11
+		transfer_state = 189
+		transfer_state = 188  ##end of baltic states
+		transfer_state = 5    ##Kaliningrad
+		transfer_state = 751
+		transfer_state = 96
+		transfer_state = 95
+		transfer_state = 745
+		transfer_state = 94
+		transfer_state = 93
+		transfer_state = 751
+		transfer_state = 91
+		transfer_state = 89
+	
+		
+		release = LIT
+		release = LAT
+		release = EST
+		release = BLR
+		release = UKR
+		release = AZR
+		release = ARM
+		release = GEO
+		release = KAZ
+		release = TRK
+		release = TAJ
+		release = KGZ
+		release = UZB
+		release = FIN
+		release = MOL
+		
+		}
+	
+	##change idelogy to democratic
+	
+	SOV = { add_popularity = { ideology = democratic popularity = 1 } }
+	LIT = { add_popularity = { ideology = democratic popularity = 1 } }
+	LAT = { add_popularity = { ideology = democratic popularity = 1 } }
+	EST = { add_popularity = { ideology = democratic popularity = 1 } }
+	BLR = { add_popularity = { ideology = democratic popularity = 1 } }
+	UKR = { add_popularity = { ideology = democratic popularity = 1 } }
+	GEO = { add_popularity = { ideology = democratic popularity = 1 } }
+	ARM = { add_popularity = { ideology = democratic popularity = 1 } }
+	AZR = { add_popularity = { ideology = democratic popularity = 1 } }
+	KAZ = { add_popularity = { ideology = democratic popularity = 1 } }
+	UZB = { add_popularity = { ideology = democratic popularity = 1 } }
+	TAJ = { add_popularity = { ideology = democratic popularity = 1 } }
+	TRK = { add_popularity = { ideology = democratic popularity = 1 } }
+	KGZ = { add_popularity = { ideology = democratic popularity = 1 } }
+	MOL = { add_popularity = { ideology = democratic popularity = 1 } }
+	
+	SOV = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	LIT = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	LAT = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	EST = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	BLR = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	UKR = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	GEO = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	ARM = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	AZR = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	KAZ = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	UZB = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	TAJ = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	TRK = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	KGZ = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+	MOL = { set_politics = { ruling_party = democratic elections_allowed = yes } }
+
+	
+	##cosmetic tags are dropped when democratic, colorless ones are again adopted
+	if = {
+		limit = {
+			has_global_flag = SSR_chosen
+		}
+			LIT = { drop_cosmetic_tag = yes  }
+			LAT = { drop_cosmetic_tag = yes }
+			EST = { drop_cosmetic_tag = yes  }
+			BLR = { drop_cosmetic_tag = yes  }
+			UKR = { drop_cosmetic_tag = yes  }
+			GEO = { drop_cosmetic_tag = yes  }
+			ARM = { drop_cosmetic_tag = yes  }
+			AZR = { drop_cosmetic_tag = yes  }
+			KAZ = { drop_cosmetic_tag = yes  }
+			UZB = { drop_cosmetic_tag = yes  }
+			TAJ = { drop_cosmetic_tag = yes  }
+			TRK = { drop_cosmetic_tag = yes  }
+			KGZ = { drop_cosmetic_tag = yes  }
+			MOL = { drop_cosmetic_tag = yes  }
+			
+			LAT = {set_cosmetic_tag = NE_LAT_SSR_1}
+			LIT = {set_cosmetic_tag = NE_LIT_SSR_1}
+			EST = {set_cosmetic_tag = NE_EST_SSR_1}
+			UKR = {set_cosmetic_tag = NE_UKR_SSR_1}
+			BLR = {set_cosmetic_tag = NE_BLR_SSR_1}
+			GEO = {set_cosmetic_tag = NE_GEO_SSR_1}
+			AZR = {set_cosmetic_tag = NE_AZR_SSR_1}
+			ARM = {set_cosmetic_tag = NE_ARM_SSR_1}
+			KAZ = {set_cosmetic_tag = NE_KAZ_SSR_1}
+			UZB = {set_cosmetic_tag = NE_UZB_SSR_1}
+			TAJ = {set_cosmetic_tag = NE_TAJ_SSR_1}
+			TRK = {set_cosmetic_tag = NE_TRK_SSR_1}
+			KGZ = {set_cosmetic_tag = NE_KGZ_SSR_1}
+			MOL = {set_cosmetic_tag = NE_MOL_SSR_1}
+
+			
+	}
+	
+	SOV = { 
+	
+	create_faction = "cis" 	
+	add_to_faction = LIT
+	add_to_faction = LAT
+	add_to_faction = EST
+	add_to_faction = BLR
+	add_to_faction = UKR
+	add_to_faction = AZR
+	add_to_faction = GEO
+	add_to_faction = ARM
+	add_to_faction = KAZ
+	add_to_faction = UZB
+	add_to_faction = TRK
+	add_to_faction = TAJ
+	add_to_faction = KGZ
+	add_to_faction = MOL
+	
+	}
+
+	##Only change is the color
+	SOV ={ set_cosmetic_tag = NE_RUS }
+
+	LIT = {set_capital = 751}
+	KAZ = {set_capital = 590}
+		
+	hidden_effect = {
+			country_event = ne.30
+		}	
+	}
+	
+	option = {
+		name = ne.302.f
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.30
+		}
+	}
+	
+}
+
+
+##French plans
+
+country_event = {
+	id = ne.303                      
+	title = ne.303.t 
+	desc =  ne.303.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.303.a         #historical (metropolitan)
+		
+		FRA = { 
+		
+			transfer_state = 29
+			transfer_state = 15
+			transfer_state = 14
+			transfer_state = 30
+			transfer_state = 23
+			transfer_state = 19
+			transfer_state = 16
+			transfer_state = 24
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 21
+			transfer_state = 735
+			transfer_state = 32
+			transfer_state = 20
+			transfer_state = 1
+			transfer_state = 28
+			transfer_state = 17
+			transfer_state = 27
+			transfer_state = 26
+			transfer_state = 18
+
+				
+		}
+	
+	
+	hidden_effect = {
+			country_event = ne.30
+		}	
+	}
+	
+	option = {
+		name = ne.303.b         #free colonies (SE Asia)
+		
+		
+		FRA = {release = CAM}
+		FRA = {release = VIN}
+		FRA = {release = LAO}
+		
+		
+						
+	hidden_effect = {
+			country_event = ne.30
+		}	
+	}
+	
+	
+	option = {
+		name = ne.303.c        #annex LUX and part of Belgium, Zaire
+		
+		
+	FRA = { 
+		
+			transfer_state = 8
+			transfer_state = 34
+			transfer_state = 718
+			transfer_state = 538
+			transfer_state = 295
+
+				
+		}	
+		
+		
+		
+		
+		
+				
+	hidden_effect = {
+			country_event = ne.30
+		}	
+	}
+	
+	option = {
+		name = ne.303.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.30
+		}
+	}
+	
+}
+
+
+
+##conquered nations, page 1 POL YUG ALB #############################################################################################################################################################################################
+
+
+country_event = {
+                   
+	id = ne.31                     
+	title = ne.31.t 
+	desc =  ne.31.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.31.a         #pol
+	
+	hidden_effect = {
+			country_event = ne.311
+		}	
+	}
+	
+	option = {
+		name = ne.31.b         #yug
+
+						
+	hidden_effect = {
+			country_event = ne.312
+		}	
+	}
+	
+	
+	option = {
+		name = ne.31.c        #alb
+	
+			
+	hidden_effect = {
+			country_event = ne.313
+		}	
+	}
+	
+	option = {
+		name = ne.31.e       #next page -> 2
+	
+			
+	hidden_effect = {
+			country_event = ne.32
+		}	
+	}
+	
+	option = {
+		name = ne.31.f
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.3
+		}
+	}
+	
+}
+
+##Poland#############################################################################################################################################################################################################################
+
+country_event = {
+	id = ne.311                      
+	title = ne.311.t 
+	desc =  ne.311.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.311.a         #historical
+		
+		POL = { 
+		
+			transfer_state = 743
+			transfer_state = 98
+			transfer_state = 85
+			transfer_state = 10
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 746
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 88
+			transfer_state = 90
+			transfer_state = 97
+			transfer_state = 765
+			transfer_state = 92
+			transfer_state = 87
+			transfer_state = 86
+
+				
+		}
+		
+	
+	
+	hidden_effect = {
+			country_event = ne.31
+		}	
+	}
+	
+	option = {
+		name = ne.311.b         #pre-war
+		POL = { 
+		
+			transfer_state = 743
+			transfer_state = 98
+			transfer_state = 85
+			transfer_state = 10
+			transfer_state = 88
+			transfer_state = 90
+			transfer_state = 97
+			transfer_state = 765
+			transfer_state = 92
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 93
+			transfer_state = 93
+			transfer_state = 94
+			transfer_state = 95
+			transfer_state = 96
+			transfer_state = 751
+			transfer_state = 745
+			transfer_state = 87
+			transfer_state = 86
+			
+			
+		}
+		
+		reset_province_name = 362 
+		reset_province_name = 6282
+		reset_province_name = 9570 
+		
+		
+		##This territory should temporarily go to germany to create prewar poland
+		GER = { 
+		
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 67
+			transfer_state = 66
+			transfer_state = 746
+			transfer_state = 743
+			transfer_state = 5
+			
+			
+			
+		}
+		
+		
+		
+						
+	hidden_effect = {
+			country_event = ne.31
+		}	
+	}
+	
+	
+	option = {
+		name = ne.311.c        #PLC - ahistorical bullshit ahead
+		
+		POL = { 
+		
+		
+			transfer_state = 87
+			transfer_state = 86
+			transfer_state = 98
+			transfer_state = 85
+			transfer_state = 10
+			transfer_state = 88
+			transfer_state = 90
+			transfer_state = 97
+			transfer_state = 765
+			transfer_state = 92
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 93
+			transfer_state = 93
+			transfer_state = 94
+			transfer_state = 95
+			transfer_state = 96
+			transfer_state = 751
+			transfer_state = 745
+			transfer_state = 5    ##East Prussia
+			transfer_state = 743 
+			transfer_state = 188
+			transfer_state = 189
+			transfer_state = 11
+			transfer_state = 190
+			transfer_state = 12
+			transfer_state = 191
+			transfer_state = 241
+			transfer_state = 206
+			transfer_state = 207
+			transfer_state = 204
+			transfer_state = 194
+			transfer_state = 199
+			transfer_state = 209   ##Russian/Ukrainian territory V PLS CHECK
+			transfer_state = 198
+			transfer_state = 201
+			transfer_state = 202
+			transfer_state = 198
+			transfer_state = 210    
+			transfer_state = 207
+			transfer_state = 242
+			transfer_state = 226 
+			transfer_state = 203
+			transfer_state = 259
+			transfer_state = 225
+			transfer_state = 193
+			transfer_state = 224
+			transfer_state = 243
+			
+			
+			set_cosmetic_tag = PLC
+				
+		}
+		
+			
+	hidden_effect = {
+			country_event = ne.31
+		}	
+	}
+	
+	option = {
+		name = ne.311.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.31
+		}
+	}
+	
+}
+
+
+##Yugoslavia#########################################################################################################################################################################################################################
+
+country_event = {
+	id = ne.312                      
+	title = ne.312.t 
+	desc =  ne.312.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.312.a         #historical 
+		
+		YUG = { 
+		
+			transfer_state = 108
+			transfer_state = 103
+			transfer_state = 109
+			transfer_state = 767
+			transfer_state = 747
+			transfer_state = 102
+			transfer_state = 163
+			transfer_state = 107
+			transfer_state = 105
+			transfer_state = 759
+			transfer_state = 106
+			transfer_state = 760
+			transfer_state = 748
+			transfer_state =  45
+			transfer_state = 104
+			transfer_state = 761
+			transfer_state = 776
+			
+		}
+	
+	
+	hidden_effect = {
+			country_event = ne.31
+		}	
+	}
+	
+	option = {
+		name = ne.312.b         #balkanize, heh
+		
+		
+		SVN = { 
+		
+			transfer_state = 102
+			transfer_state = 747
+
+				
+		}
+		
+		CRO = { 
+		
+			transfer_state = 163
+			transfer_state = 103
+			transfer_state = 109
+			transfer_state = 767
+				
+		}
+		
+		BOS = { 
+		
+			transfer_state = 104
+
+				
+		}
+		
+		SER = { 
+		
+			transfer_state = 45
+			transfer_state = 748
+			transfer_state = 107
+			transfer_state = 108
+			transfer_state = 760
+			transfer_state = 761
+			transfer_state = 776
+
+				
+		}
+		
+		MNT = { 
+		
+			transfer_state = 105
+
+				
+		}
+		
+		MAC = { 
+		
+			transfer_state = 106
+			transfer_state = 759
+
+				
+		}
+		
+						
+	hidden_effect = {
+			country_event = ne.31
+		}	
+	}
+	
+	
+	option = {
+		name = ne.312.c        #UNITY WITH BULGARIA
+		
+	YUG = { 
+		
+			transfer_state = 108
+			transfer_state = 103
+			transfer_state = 109
+			transfer_state = 767
+			transfer_state = 747
+			transfer_state = 102
+			transfer_state = 163
+			transfer_state = 107
+			transfer_state = 105
+			transfer_state = 759
+			transfer_state = 106
+			transfer_state = 760
+			transfer_state = 748
+			transfer_state =  45
+			transfer_state = 212
+			transfer_state = 211
+			transfer_state =  77
+			transfer_state =  48
+			
+
+			#annex_country = { target = BUL } 
+			
+		}
+
+	
+				
+	hidden_effect = {
+			country_event = ne.31
+		}	
+	}
+	
+	option = {
+		name = ne.312.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.31
+		}
+	}
+	
+}
+
+
+##Albania############################################################################################################################################################################################################################
+
+country_event = {
+	id = ne.313                      
+	title = ne.313.t 
+	desc =  ne.313.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.313.a         #historical
+		
+		ALB = { 
+		
+			transfer_state = 44
+			
+				
+		}
+	
+	
+	hidden_effect = {
+			country_event = ne.31
+		}	
+	}
+	
+	option = {
+		name = ne.313.b         #kosovo
+		
+		ALB = { 
+		
+			transfer_state = 44
+			transfer_state = 761
+			transfer_state = 776
+			
+				
+		}
+		
+		761 = { add_core_of = ALB } 
+		776 = { add_core_of = ALB } 
+		
+						
+	hidden_effect = {
+			country_event = ne.31
+		}	
+	}
+	
+	
+	option = {
+		name = ne.313.c        #italy
+		
+		ITA = { 
+		
+			transfer_state = 44
+			
+				
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.31
+		}	
+	}
+	
+	option = {
+		name = ne.313.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.31
+		}
+	}
+	
+}
+
+##conquered nations, page 2 GRE SPR BENELUX #########################################################################################################################################################################################
+
+country_event = {
+	id = ne.32      #id               
+	title = ne.32.t  #title
+	desc =  ne.32.d  #description
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.32.a         #Gre
+		hidden_effect = {
+			country_event = ne.321
+		}
+	}
+	option = {                #SPR
+		name = ne.32.b
+		hidden_effect = {
+			country_event = ne.322
+		}
+	}
+	option = {                #Benelux
+		name = ne.32.c
+		hidden_effect = {
+			country_event = ne.323
+		}
+	}
+	
+	option = {             #next page -> 3
+		name = ne.32.e
+		hidden_effect = {      
+			country_event = ne.33
+		}
+	}
+	
+	option = {             #Exit
+		name = ne.32.f
+		hidden_effect = {      
+			country_event = ne.3
+		}
+	}
+	
+}
+
+
+##Greece#############################################################################################################################################################################################################################
+
+country_event = {
+	id = ne.321                      
+	title = ne.321.t 
+	desc =  ne.321.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.321.a         #historical
+		
+	GRE = { 
+		
+			transfer_state = 182
+			transfer_state = 164
+			transfer_state = 186
+			transfer_state = 185
+			transfer_state = 47
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 187
+			transfer_state = 164
+			
+		}
+		
+	
+	hidden_effect = {
+			country_event = ne.32
+		}	
+	}
+	
+	option = {
+		name = ne.321.b         #prewar, rhodes to uk
+		
+		GRE = { 
+		
+			transfer_state = 182
+			transfer_state = 164
+			transfer_state = 186
+			transfer_state = 185
+			transfer_state = 47
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 187
+				
+		}
+		
+		ENG = { 
+		
+			transfer_state = 164
+				
+		}
+		
+						
+	hidden_effect = {
+			country_event = ne.32
+		}	
+	}
+	
+	
+	option = {
+		name = ne.321.c        #megali- idea
+		
+		GRE = { 
+		
+			transfer_state = 182
+			transfer_state = 164
+			transfer_state = 186
+			transfer_state = 185
+			transfer_state = 47
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 187
+			transfer_state = 183
+			transfer_state = 339
+			transfer_state = 184
+			transfer_state = 341
+			transfer_state = 340
+			
+			
+			
+				
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.32
+		}	
+	}
+	
+	option = {
+		name = ne.321.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.32
+		}
+	}
+	
+}
+
+
+##Spanish Republic#############################################################################################################################################################################################################################
+
+country_event = {
+	id = ne.322                      
+	title = ne.322.t 
+	desc =  ne.322.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.322.a         #historical
+		
+		SPR = { 
+		
+			transfer_state = 41
+			transfer_state = 165
+			transfer_state = 166
+			transfer_state = 167
+			transfer_state = 168
+			transfer_state = 169
+			transfer_state = 170
+			transfer_state = 171
+			transfer_state = 172
+			transfer_state = 173
+			transfer_state = 174
+			transfer_state = 175
+			transfer_state = 176
+			transfer_state = 177
+			transfer_state = 297
+			transfer_state = 290
+			transfer_state = 699
+			transfer_state = 178
+			
+			
+		}
+	
+	
+	hidden_effect = {
+			country_event = ne.32
+		}	
+	}
+	
+	option = {
+		name = ne.322.b         #optional
+		SPR = { 
+		
+			transfer_state = 118
+
+				
+		}
+		
+						
+	hidden_effect = {
+			country_event = ne.32
+		}	
+	}
+	
+	
+	option = {
+		name = ne.322.c        #historical
+		
+		D01 = { 
+		
+			transfer_state = 41
+			transfer_state = 165
+			transfer_state = 166
+			transfer_state = 167
+			transfer_state = 168
+			transfer_state = 169
+			transfer_state = 170
+			transfer_state = 171
+			transfer_state = 172
+			transfer_state = 173
+			transfer_state = 174
+			transfer_state = 175
+			transfer_state = 176
+			transfer_state = 177
+			transfer_state = 297
+			transfer_state = 290
+			transfer_state = 699
+			transfer_state = 178
+				
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.32
+		}	
+	}
+	
+	option = {
+		name = ne.322.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.32
+		}
+	}
+	
+}
+
+
+##BENELUX#############################################################################################################################################################################################################################
+
+country_event = {
+	id = ne.323                      
+	title = ne.323.t 
+	desc =  ne.323.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.323.a         #Historical
+		
+		HOL = { 
+		
+			transfer_state = 36
+			transfer_state = 35
+			transfer_state = 7
+			transfer_state = 695  ##Venezuelan islands
+			transfer_state = 309
+				
+		}
+		
+		BEL = { 
+		
+			transfer_state = 6
+			transfer_state = 34
+				
+		}
+		
+		LUX = { 
+		
+			transfer_state = 8
+
+
+				
+		}
+	
+	
+	hidden_effect = {
+			country_event = ne.32
+		}	
+	}
+	
+	option = {
+		name = ne.323.b         #independent dei, zaire
+		
+		BEL = {release = COG}
+		HOL ={end_puppet = INS}
+
+		INS ={drop_cosmetic_tag = yes}
+		
+						
+	hidden_effect = {
+			country_event = ne.32
+		}	
+	}
+	
+	
+	option = {
+		name = ne.323.c        #luxemburg rulez
+		
+		LUX = { 
+		
+			transfer_state = 8
+			transfer_state = 34
+			transfer_state = 6
+			transfer_state = 35
+			transfer_state = 6
+			transfer_state = 7
+			transfer_state = 36
+			
+			
+			add_state_core = 34
+			add_state_core = 6 
+			add_state_core = 35 
+			add_state_core = 7	
+			add_state_core = 6
+			add_state_core = 36
+			
+				
+		}
+		
+		VEN = { 
+		
+			transfer_state = 695
+			
+		}
+		
+		BRA = { 
+		
+			transfer_state = 309
+			
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.32
+		}	
+	}
+	
+	option = {
+		name = ne.323.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.32
+		}
+	}
+	
+}
+
+
+
+##conquered nations, page 3 Denmark, Norway, Austria and Czechoslovakia##############################################################################################################################################################
+
+country_event = {
+	id = ne.33      #id               
+	title = ne.33.t  #title
+	desc =  ne.33.d  #description
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.33.a         #den
+		hidden_effect = {
+			country_event = ne.331
+		}
+	}
+	option = {                #nor
+		name = ne.33.b
+		hidden_effect = {
+			country_event = ne.332
+		}
+	}
+	option = {                #austria
+		name = ne.33.c
+		hidden_effect = {
+			country_event = ne.333
+		}
+	}
+	
+	option = {                #czechoslovakia
+		name = ne.33.e
+		hidden_effect = {
+			country_event = ne.334
+		}
+	}
+	
+	option = {             #next page -> 1
+		name = ne.33.f
+		hidden_effect = {      
+			country_event = ne.31
+		}
+	}
+	
+	option = {             #Exit to vp menu
+		name = ne.33.g
+		hidden_effect = {      
+			country_event = ne.3
+		}
+	}
+	
+}
+
+
+##Denmark##
+
+country_event = {
+	id = ne.331                     
+	title = ne.331.t 
+	desc =  ne.331.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.331.a         #historical
+		
+		DEN = { 
+		
+			transfer_state = 37
+			transfer_state = 99
+			transfer_state = 101
+			transfer_state = 337			
+			release = ICE			
+		}
+					
+	hidden_effect = {
+			country_event = ne.33
+		}	
+	}
+	
+	option = {
+		name = ne.331.b         #status quo
+		
+		DEN = { 		
+			transfer_state = 37
+			transfer_state = 99
+			transfer_state = 100
+			transfer_state = 101
+			transfer_state = 337				
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.33
+		}	
+	}
+	
+	
+	option = {
+		name = ne.331.c        #schleswig to them, greenland to canada,
+		
+		DEN = { 		
+			transfer_state = 58				
+		}
+		
+		CAN = { 		
+			transfer_state = 101				
+		}
+		
+	
+	hidden_effect = {
+			country_event = ne.33
+		}	
+	}
+	
+	option = {
+		name = ne.331.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.33
+		}
+	}	
+}
+
+
+##Norway
+
+country_event = {
+	id = ne.332                     
+	title = ne.332.t 
+	desc =  ne.332.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.332.a         #Historical
+		
+		NOR = { 		
+			transfer_state = 142
+			transfer_state = 110 
+			transfer_state = 143
+			transfer_state = 144		
+		}
+		
+					
+		hidden_effect = {
+			country_event = ne.33
+		}	
+	}
+	
+	option = {
+		name = ne.332.b         #Denmark-Norway
+		
+		NOR = { 	
+			transfer_state = 142 ##Norway
+			transfer_state = 110 
+			transfer_state = 143
+			transfer_state = 144	
+			transfer_state = 37  ##Denmark
+			transfer_state = 99
+			transfer_state = 100
+			transfer_state = 101
+			transfer_state = 337
+			transfer_state = 337 ##Schleswig-Holstein
+			
+			set_cosmetic_tag = DMN			
+		}
+		
+				
+		hidden_effect = {
+			country_event = ne.33
+		}	
+	}
+	
+	
+	option = {
+		name = ne.332.c        #Scandinavia
+		
+		NOR = { 
+		
+			transfer_state = 142 ##Norway
+			transfer_state = 110 
+			transfer_state = 143
+			transfer_state = 144	
+			transfer_state = 37  ##Denmark
+			transfer_state = 99
+			transfer_state = 100
+			transfer_state = 337
+			transfer_state = 145 ##Finland
+			transfer_state = 150
+			transfer_state = 149
+			transfer_state = 148
+			transfer_state = 111
+			transfer_state = 666 ##Sweden
+			transfer_state = 38
+			transfer_state = 139
+			transfer_state = 140
+			transfer_state = 141
+			transfer_state = 138
+			transfer_state = 124
+			
+			annex_country = {target =  FIN }
+			
+			set_cosmetic_tag = SCA
+				
+		}
+		
+	
+	hidden_effect = {
+			country_event = ne.33
+		}	
+	}
+	
+	option = {
+		name = ne.332.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.33
+		}
+	}
+	
+}
+
+
+##Austria
+
+country_event = {
+	id = ne.333                     
+	title = ne.333.t 
+	desc =  ne.333.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = ne.333.a         #Historical
+		
+		FRA = { 		
+			transfer_state = 153	#tyrol				
+		}
+		
+		USA = { 		
+			transfer_state = 152					
+		}
+		
+		SOV = { 		
+			transfer_state = 4
+			transfer_state = 757							
+		}
+		
+		ENG = { 		
+			transfer_state = 758					
+		}
+		
+					
+	hidden_effect = {
+			country_event = ne.33
+			set_global_flag = austria_partitioned
+			clr_global_flag = austria_independent
+		}	
+	}
+	
+	
+	option = {
+		name = ne.333.b         #neutral, independent
+		
+		AUS = { 		
+			transfer_state = 153
+			transfer_state = 152	
+			transfer_state = 4
+			transfer_state = 757
+			transfer_state = 758				
+		}
+		
+		ENG = {remove_from_faction = AUS}
+		SOV = {remove_from_faction = AUS}		
+		AUS = {add_ideas = NE_neutrality}
+		
+				
+	hidden_effect = {
+			country_event = ne.33
+			clr_global_flag = austria_partitioned
+			set_global_flag = austria_independent
+		}	
+	}
+	
+	
+	option = {
+		name = ne.333.c        #south tyrol + independence
+		
+		AUS = { 		
+			transfer_state = 39					
+		}
+		
+		
+		ENG = {remove_from_faction = AUS}
+		SOV = {remove_from_faction = AUS}	
+		AUS = {add_ideas = NE_neutrality}
+		
+	
+	hidden_effect = {
+			country_event = ne.33
+		}	
+	}
+	
+	
+	option = {
+		name = ne.331.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.33
+		}
+	}
+	
+	
+}
+
+
+##Czechoslovakia
+
+country_event = {
+	id = ne.334                     
+	title = ne.334.t 
+	desc =  ne.334.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.334.a         #historical
+		
+		CZE = { 
+		
+			transfer_state = 69
+			transfer_state = 74
+			transfer_state = 72
+			transfer_state = 75
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 664
+			transfer_state = 9		
+				
+		}
+		
+					
+	hidden_effect = {
+			country_event = ne.33
+		}	
+	}
+	
+	option = {
+		name = ne.334.b         #1937
+		
+		CZE = { 
+		
+			transfer_state = 69
+			transfer_state = 74
+			transfer_state = 72
+			transfer_state = 75
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 664
+			transfer_state = 9
+			transfer_state = 73		
+				
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.33
+		}	
+	}
+	
+	
+	option = {
+		name = ne.334.c        #two states
+		
+		CZE = { 
+		
+			transfer_state = 69
+			transfer_state = 74
+			transfer_state = 72
+			transfer_state = 75	
+			transfer_state = 9
+				
+		}
+		
+		SLO = { 
+		
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 664
+			transfer_state = 73		
+		
+		add_popularity = { ideology = neutrality popularity = 0.7 } 
+		set_politics = { ruling_party = neutrality elections_allowed = yes } 
+		
+		}
+		
+		
+		
+		
+	
+	hidden_effect = {
+			country_event = ne.33
+		}	
+	}
+	
+	option = {
+		name = ne.334.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.33
+		}
+	}
+	
+}
+
+
+##neutral nations##########################################################################################################################################################################################
+
+country_event = {
+	id = ne.34      #id               
+	title = ne.34.t  #title
+	desc =  ne.34.d  #description
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.34.a         #sweden
+		hidden_effect = {
+			country_event = ne.341
+		}
+	}
+	option = {                #switzerland
+		name = ne.34.b
+		hidden_effect = {
+			country_event = ne.342
+		}
+	}
+	option = {                #turkey
+		name = ne.34.c
+		hidden_effect = {
+			country_event = ne.343
+		}
+	}
+	
+	option = {             #exit
+		name = ne.34.e
+		hidden_effect = {      
+			country_event = ne.3
+		}
+	}
+	
+	
+	
+}
+
+
+##SWEDEN
+
+country_event = {
+	id = ne.341                      
+	title = ne.341.t 
+	desc =  ne.341.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.341.a         #Historical
+		
+		SWE = { 
+		
+			transfer_state = 666
+			transfer_state = 38
+			transfer_state = 139
+			transfer_state = 140
+			transfer_state = 141
+			transfer_state = 138
+			transfer_state = 124
+				
+		}
+		
+					
+	hidden_effect = {
+			country_event = ne.34
+		}	
+	}
+	
+	option = {
+		name = ne.341.b         #Territory to NOR/DEN
+		
+		DEN = { 
+		
+			transfer_state = 138
+				
+		}
+		
+		NOR = { 
+		
+			transfer_state = 140
+				
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.34
+		}	
+	}
+	
+	
+	option = {
+		name = ne.341.c        #give them Aland
+		
+		SWE = { 
+		
+			transfer_state = 145
+				
+		}
+		
+		
+		
+				
+	hidden_effect = {
+			country_event = ne.34
+		}	
+	}
+	
+	option = {
+		name = ne.341.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.34
+		}
+	}
+	
+}
+
+
+##Switzerland
+
+country_event = {
+	id = ne.342                     
+	title = ne.342.t 
+	desc =  ne.342.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.342.a         #historical
+		
+		SWI = { 
+		
+			transfer_state = 755
+			transfer_state = 756
+			transfer_state = 3
+			transfer_state = 151
+			
+				
+		}
+		
+					
+	hidden_effect = {
+			country_event = ne.34
+		}	
+	}
+	
+	option = {
+		name = ne.342.b         #ITA GER FRA
+		
+		GER = { 
+		
+			transfer_state = 3
+			transfer_state = 151
+				
+		}
+		
+		FRA = { 
+		
+			transfer_state = 755
+				
+		}
+		
+		ITA = { 
+		
+			transfer_state = 756
+				
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.34
+		}	
+	}
+	
+	
+	option = {
+		name = ne.342.c        # ITA FRA
+		
+		ITA = { 	
+			transfer_state = 756
+			transfer_state = 151				
+		}
+		
+		
+		FRA = { 		
+			transfer_state = 755
+			transfer_state = 3			
+		}
+		
+		
+		
+				
+	hidden_effect = {
+			country_event = ne.34
+		}	
+	}
+	
+	option = {
+		name = ne.342.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.34
+		}
+	}
+	
+}
+
+
+##Turkey
+
+country_event = {
+	id = ne.343                     
+	title = ne.343.t 
+	desc =  ne.343.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne.343.a         #Nothing (Historical)
+		
+		TUR = { 	
+			transfer_state = 341
+			transfer_state = 347
+			transfer_state = 340
+			transfer_state = 339
+			transfer_state = 344
+			transfer_state = 350
+			transfer_state = 348
+			transfer_state = 354
+			transfer_state = 353
+			transfer_state = 349
+			transfer_state = 355
+			transfer_state = 352
+			transfer_state = 345
+			transfer_state = 346				
+		}
+		
+					
+	hidden_effect = {
+			country_event = ne.34
+		}	
+	}
+	
+	option = {
+		name = ne.343.b         #Straits Soviet focus
+		
+		SOV = { 		
+			transfer_state = 341
+			transfer_state = 347
+			transfer_state = 340
+			transfer_state = 339	
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.34
+		}	
+	}
+	
+	
+	option = {
+		name = ne.343.c        #Partition Turkey
+		
+		FRA = { 	
+			transfer_state = 344
+			transfer_state = 350
+			transfer_state = 348				
+		}
+		
+		SOV = { 		
+			transfer_state = 354
+			transfer_state = 353
+			transfer_state = 349
+			transfer_state = 355	
+		}
+		
+		IRQ = { 		
+			transfer_state = 352				
+		}
+		
+		ENG = { 		
+			transfer_state = 345
+			transfer_state = 346			
+		}
+		
+		
+		##Greece gets a lot
+		GRE = { 	
+			transfer_state = 341
+			transfer_state = 347
+			transfer_state = 340
+			transfer_state = 339
+			transfer_state = 342
+			transfer_state = 343
+			transfer_state = 356
+			transfer_state = 49
+		}
+		
+				
+	hidden_effect = {
+			country_event = ne.34
+		}	
+	}
+	
+	option = {
+		name = ne.343.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.34
+		}
+	}
+	
+}

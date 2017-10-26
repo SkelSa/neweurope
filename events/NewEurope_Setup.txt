@@ -1,0 +1,703 @@
+﻿#setup stuff triggered by on_startup
+
+add_namespace = ne_setup
+
+
+news_event = {
+	id = ne_setup.1
+	hidden = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	immediate = {
+		
+		##Stuff for game
+		KOR = {set_cosmetic_tag = NE_KOR }
+		PRC = {set_cosmetic_tag = CSR }
+		GER = {set_capital = 749 }
+		KAZ = {set_capital = 589 }
+
+		WGR = {
+			#set_capital = 750 
+			set_research_slots = 3
+		}
+
+		DDR = {
+			#set_capital = 744 
+			set_research_slots = 3
+		}
+		
+		##Soviet puppets
+		SOV = {	
+			puppet = TAN
+			puppet = MON		
+		}
+		
+		##American puppet Liberia
+		USA = {	
+			puppet = LIB	
+		}
+		
+		##EGY puppet				
+		ENG = {		
+			if = {			
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				
+				set_autonomy = {
+					target = EGY
+					autonomous_state = autonomy_integrated_puppet
+				}
+			}
+
+			puppet = EGY
+			
+		}
+		
+		##DAN puppet	
+		POL = {		
+			if = {			
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				
+				set_autonomy = {
+					target = DAN
+					autonomous_state = autonomy_integrated_puppet
+				}
+
+			}
+			
+			puppet = DAN								
+		}
+		
+
+		
+		##Enver Hoxha, Albania
+		ALB = {
+		
+			create_country_leader = {
+				name = "Enver Hoxha"
+				desc = ""
+				picture = "gfx/leaders/ALb/Portrait_Enver_Hoxha.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+				traits = {
+					fortification_engineer
+				}
+			}
+		}
+		
+		##Borat, Kazakhstan
+		KAZ = {
+		
+			create_country_leader = {
+				name = "Borat Sagdiyev"
+				desc = ""
+				picture = "Portrait_Borat.dds"
+				expire = "1975.3.1"
+				ideology = conservatism
+				traits = {
+					
+				}
+			}
+		}
+		
+		POL = {
+		
+			create_country_leader = {
+				name = "Bolesław Bierut"
+				desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
+				picture = "POL_Boleslaw_Bierut.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+				traits = {
+					#
+				}
+			}	
+		}
+		
+		ROM = {
+		
+			create_country_leader = {
+				name = "Gheorghe Gheorghiu-Dej"
+				desc = "POLITICS_CONSTANTIN_PARHON_DESC"
+				picture = "ROM_Gheorghe_Gheorghiu-Dej.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					#
+				}
+			}
+
+		}	
+
+	}
+	
+	option = {
+		#name = news.54.a
+	}
+}
+
+
+##Exit europe manager menu; adding cores
+country_event = {
+	id = ne_setup.2
+
+	is_triggered_only = yes	
+	hidden = yes
+
+	
+	immediate = {
+	
+		##set capitals:	
+		if = {
+			limit = {
+				country_exists = WGR
+				750 = { is_owned_by = WGR }
+			}
+					
+		WGR = { set_capital = 750 }			
+				
+		}
+		
+		if = {
+			limit = {
+				country_exists = DDR
+				744 = { is_owned_by = DDR }
+			}
+					
+		DDR = { set_capital = 744 }			
+				
+		}
+		
+		##ADDING CORES, occupation zones don't get cores
+		if = {
+			limit = {
+				country_exists = WGR
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = WGR
+						is_owned_by = DDR
+						is_owned_by = SAA
+					}					
+				}
+			add_core_of = WGR			
+			}
+		
+		}
+		
+		if = {
+			limit = {
+				country_exists = DDR
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = WGR
+						is_owned_by = DDR
+						is_owned_by = SAA
+					}
+					
+				}
+			add_core_of = DDR			
+			}
+		
+		}
+
+		if = {
+			limit = {
+				country_exists = SAA
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						#is_owned_by = WGR
+						#is_owned_by = DDR
+						is_owned_by = SAA	
+					}
+				}
+			add_core_of = SAA			
+			}
+		
+		}
+		
+		##Morgenthau cores
+		
+		if = {
+			limit = {
+				OR = {
+					country_exists = SGR
+					country_exists = NGR
+					country_exists = INT
+				}
+				
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = SGR
+						is_owned_by = NGR
+						is_owned_by = INT
+					}
+					
+				}
+			add_core_of = SGR
+			add_core_of = NGR
+			}
+		
+		}
+		
+		##Roosevelt cores
+		
+		if = {
+			limit = {
+				OR = {
+					country_exists = BAV
+					country_exists = PRS
+					country_exists = INT
+					country_exists = HAN
+					country_exists = SAX
+					country_exists = HES
+					
+				}
+				
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = BAV
+						is_owned_by = PRS
+						is_owned_by = INT
+						is_owned_by = HAN
+						is_owned_by = SAX
+						is_owned_by = HES
+					}
+					
+				}
+			add_core_of = BAV
+			add_core_of = PRS
+			add_core_of = HAN
+			add_core_of = SAX
+			add_core_of = HES
+			
+			}
+		
+		}
+
+		##guarantee INT = Internationl Zone
+		
+		if = {
+			limit = {
+				country_exists = INT
+			}
+		
+			every_country = {
+				limit = {
+					is_major = yes
+					NOT = { tag = INT }
+					NOT = { has_government = fascism }
+				}
+			
+			give_guarantee = INT 
+			
+			}
+
+		}
+
+	
+		##remove unnneccessary cores	
+		if = {
+			limit = {
+				NOT = { country_exists = WGR }					
+			}
+				
+			every_state = {
+				limit = {
+					is_core_of = DDR				
+				}
+			remove_core_of = DDR		
+			}
+			
+		}
+
+		if = {
+			limit = {
+				NOT = { country_exists = WGR }					
+			}
+				
+			every_state = {
+				limit = {
+					is_core_of = WGR				
+				}
+			remove_core_of = WGR		
+			}
+			
+		}
+		
+		if = {
+			limit = {
+				NOT = { country_exists = SAA }					
+			}
+				
+			every_state = {
+				limit = {
+					is_core_of = SAA				
+				}
+			remove_core_of = SAA		
+			}
+			
+		}
+		
+		if = {
+			limit = {
+				NOT = { country_exists = SGR }					
+			}
+				
+			every_state = {
+				limit = {
+					is_core_of = SGR				
+				}
+			remove_core_of = SGR		
+			}
+			
+		}
+		
+		if = {
+			limit = {
+				NOT = { country_exists = NGR }					
+			}
+				
+			every_state = {
+				limit = {
+					is_core_of = NGR				
+				}
+			remove_core_of = NGR		
+			}
+			
+		}
+		
+		
+		##roosevelt cores	
+		if = {
+			limit = {
+				NOT = { country_exists = HES }					
+			}
+				
+			every_state = {
+				limit = {
+					is_core_of = HES				
+				}
+			remove_core_of = HES		
+			}
+			
+		}
+
+		if = {
+		limit = {
+			NOT = { country_exists = BAV }					
+		}
+			
+		every_state = {
+			limit = {
+				is_core_of = BAV				
+			}
+		remove_core_of = BAV		
+		}
+		
+		}
+
+		if = {
+			limit = {
+				NOT = { country_exists = SAX }					
+			}
+				
+				every_state = {
+					limit = {
+						is_core_of = SAX				
+					}
+				remove_core_of = SAX		
+				}
+		
+		}
+		
+		
+		if = {
+			limit = {
+				NOT = { country_exists = HAN }					
+			}
+			
+				every_state = {
+					limit = {
+						is_core_of = HAN				
+					}
+				remove_core_of = HAN		
+				}
+		
+		}
+		
+		if = {
+			limit = {
+				NOT = { country_exists = PRS }					
+			}
+				
+			every_state = {
+				limit = {
+					is_core_of = PRS				
+				}
+			remove_core_of = PRS		
+			}		
+		}
+		
+		
+		##setting the flags		
+		if = {
+			limit = {
+				country_exists = DDR
+				country_exists = WGR
+				NOT = { country_exists = GER }
+				
+			}
+				
+			set_global_flag = germany_divided	
+		}
+		
+		if = {
+			limit = {
+				NOT = { country_exists = DDR }
+				NOT = { country_exists = WGR }			
+			}
+				
+			clr_global_flag = germany_divided	
+		}
+		
+		if = {
+			limit = {
+				NOT = { country_exists = DDR }
+				NOT = { country_exists = WGR }
+				NOT = { country_exists = GER }
+				
+				OR = {
+					country_exists = FOZ
+					country_exists = AOZ
+					country_exists = BOZ
+					country_exists = SOZ
+				}	
+			}
+				
+			set_global_flag = germany_partitioned	
+		}
+		
+		if = {
+			limit = {
+			
+				NOT = {
+					
+					OR = {
+						country_exists = FOZ
+						country_exists = AOZ
+						country_exists = BOZ
+						country_exists = SOZ
+					}
+
+				}
+			
+			}
+				
+			clr_global_flag = germany_partitioned	
+		}
+		
+		##morgenthau		
+		if = {
+			limit = {
+				NOT = { country_exists = DDR }
+				NOT = { country_exists = WGR }
+				NOT = { country_exists = GER }
+				
+				country_exists = NGR
+				country_exists = SGR
+				country_exists = INT					
+			}
+				
+			set_global_flag = germany_morgenthau	
+		}
+		
+		if = {
+			limit = {
+				
+				NOT = { country_exists = NGR }
+				NOT = { country_exists = SGR }
+				NOT = { country_exists = INT }
+					
+			}
+				
+			clr_global_flag = germany_morgenthau	
+		}
+		
+		
+		##roosevelt		
+		if = {
+			limit = {
+				NOT = { country_exists = DDR }
+				NOT = { country_exists = WGR }
+				NOT = { country_exists = GER }
+				
+				country_exists = BAV
+				country_exists = HES
+				country_exists = INT
+				country_exists = HAN
+				country_exists = PRS
+				country_exists = SAX
+					
+			}
+				
+			set_global_flag = germany_roosevelt	
+		}
+		
+		if = {
+			limit = {				
+				NOT = { country_exists = BAV }
+				NOT = { country_exists = HES }
+				NOT = { country_exists = INT }
+				NOT = { country_exists = HAN }
+				NOT = { country_exists = PRS }
+				NOT = { country_exists = SAX }				
+			}
+				
+			clr_global_flag = germany_roosevelt	
+		}
+		
+		##austria exists	
+		if = {
+			limit = {				
+				country_exists = AUS
+				AUS = { is_subject = no }
+			}
+			
+			
+			set_global_flag = austria_independent
+			
+			if = {
+				limit = {
+					has_global_flag = austria_partitioned
+				}
+				clr_global_flag = austria_partitioned
+			}
+			
+		}
+		
+		##Austria doesn't exist
+		if = {
+			limit = {
+			
+				NOT = { country_exists = AUS }
+				NOT = { country_exists = GER }	
+				
+				FRA = { 		
+					owns_state = 153				
+				}
+				
+				USA = { 		
+					owns_state = 152					
+				}
+				
+				SOV = { 		
+					owns_state = 4
+					owns_state = 757							
+				}
+				
+				ENG = { 	
+					owns_state = 758				
+				}	
+			}
+				
+			set_global_flag = austria_partitioned
+			
+			if = {
+				limit = {
+					has_global_flag = austria_independent
+				}
+				clr_global_flag = austria_independent
+			}
+		}
+		
+		
+	}
+
+
+	option = {
+		#placeholder
+	}
+		
+            	
+}
+
+
+##Exit asia manager menu; adding cores
+country_event = {
+	id = ne_setup.3
+
+	is_triggered_only = yes	
+	hidden = yes
+
+	
+	immediate = {
+	
+		##SRJ
+		if = {
+			limit = {
+				country_exists = SRJ
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = SRJ
+						is_owned_by = JAP
+					}
+					
+				}
+			add_core_of = SRJ			
+			}
+		}
+		
+		##Generic Japan
+		if = {
+			limit = {
+				country_exists = JAP
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = SRJ
+						is_owned_by = JAP
+					}
+					
+				}
+			add_core_of = JAP			
+			}		
+		}
+	}
+	
+	
+	option = {
+		#placeholder
+	}
+	
+	
+}
+
+
+
+

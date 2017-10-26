@@ -1,0 +1,1548 @@
+﻿##this event file is for the event "Descend the Iron Curtain". Moved from NewEurope_Enhanced to ease the work of improving the whole thing.
+
+add_namespace = ne
+
+#####################################################################################################################################################################################################################################
+##DESCEND THE IRON CURTAIN###########################################################################################################################################################################################################
+#####################################################################################################################################################################################################################################
+
+country_event = {
+	id = ne.4                      
+	title = ne.4.t 
+	desc =  ne.4.d  
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+	
+	
+	option = {
+		name = ne.4.a         #1945	
+		
+	
+
+		##Germany
+
+		SAA = { 		
+			transfer_state = 764
+		}
+		
+		
+		FOZ = { 		
+			transfer_state = 42
+			transfer_state = 754
+			transfer_state = 775
+		}
+		
+		BOZ = { 			
+			transfer_state = 51
+			transfer_state = 750
+			transfer_state = 56
+			transfer_state = 59
+			transfer_state = 58
+			transfer_state = 57
+			transfer_state = 778
+		}
+		
+		AOZ = { 			
+			transfer_state = 54
+			transfer_state = 53
+			transfer_state = 52
+			transfer_state = 772
+			transfer_state = 50
+			transfer_state = 749
+			transfer_state = 55
+		}
+		
+		SOZ = { 			
+			transfer_state = 744
+			transfer_state = 60
+			transfer_state = 753
+			transfer_state = 64
+			transfer_state = 65
+			transfer_state = 61
+			transfer_state = 62
+		}
+		
+				
+		FRA = {	
+			puppet = SAA
+			puppet = FOZ
+		}
+		
+				
+		USA = {	
+			puppet = AOZ
+		}
+		
+				
+		ENG = {	
+			puppet = BOZ
+		}
+		
+				
+		SOV = {	
+			puppet = SOZ
+		}
+		
+		
+		##Italy 
+		
+		ENG = { 	
+			transfer_state = 273
+			transfer_state = 559
+			transfer_state = 663
+			transfer_state = 451
+			transfer_state = 450
+			transfer_state = 449
+			transfer_state = 448
+			transfer_state = 661
+			transfer_state = 662
+		}
+		
+		
+		FRA = { 			
+			transfer_state = 773	
+			transfer_state = 735
+			transfer_state = 1
+		}
+		
+		ITA = { 			
+			transfer_state = 114
+			transfer_state = 115
+			transfer_state = 156
+			transfer_state = 117
+			transfer_state = 2
+			transfer_state = 157
+			transfer_state = 162
+			transfer_state = 160
+			transfer_state = 161
+			transfer_state = 158
+			transfer_state = 39
+			transfer_state = 159
+		}
+		
+		GRE = { 			
+			transfer_state = 164			
+		}
+		
+		TRI = { 			
+			transfer_state = 736			
+		}
+		
+		ETH = { 			
+			transfer_state = 271
+			transfer_state = 550			
+		}
+		
+		YUG = { 			
+			transfer_state = 747
+			transfer_state = 767
+			transfer_state = 163			
+		}
+		
+		##hungary		
+		HUN = { 		
+			transfer_state = 155
+			transfer_state = 154
+			transfer_state = 43
+			transfer_state = 757			
+		}
+		
+		
+		##romania
+		
+		ROM = { 		
+			transfer_state = 46
+			transfer_state = 81
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 76
+			transfer_state = 79				
+		}
+		
+
+		
+		##bulgaria
+		
+		BUL = { 	
+			transfer_state = 77
+			transfer_state = 211
+			transfer_state = 212
+			transfer_state = 48				
+		}
+		
+	
+		##finland
+		
+		
+		FIN = { 	
+			transfer_state = 145
+			transfer_state = 150
+			transfer_state = 149
+			transfer_state = 148
+			transfer_state = 111	
+		}
+		
+		##england (fight bordergore on the isles)
+		
+		
+		ENG = { 		
+			transfer_state = 122
+			transfer_state = 123
+			transfer_state = 127
+			transfer_state = 126
+			transfer_state = 125
+			transfer_state = 338
+			transfer_state = 122
+			transfer_state = 119
+			transfer_state = 133
+			transfer_state = 120
+			transfer_state = 136
+			transfer_state = 128
+			transfer_state = 130
+			transfer_state = 131
+			transfer_state = 133
+			transfer_state = 132
+			transfer_state = 121
+			transfer_state = 128
+			transfer_state = 129
+		}
+		
+		##soviets
+		
+		SOV = { 		
+			transfer_state = 752
+			transfer_state = 78
+			transfer_state = 80
+			transfer_state = 73
+			transfer_state = 722
+			transfer_state = 147
+			transfer_state = 146
+			transfer_state = 13   ##baltic States
+			transfer_state = 191
+			transfer_state = 190
+			transfer_state = 12
+			transfer_state = 11
+			transfer_state = 189
+			transfer_state = 188  ##end of baltic states
+			transfer_state = 5    ##Kaliningrad
+			transfer_state = 751
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 745
+			transfer_state = 94
+			transfer_state = 93
+			transfer_state = 751
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 209   ##territory from PLC
+			transfer_state = 198
+			transfer_state = 201
+			transfer_state = 202
+			transfer_state = 198
+			transfer_state = 210    
+			transfer_state = 207
+			transfer_state = 242
+			transfer_state = 226 
+			transfer_state = 203
+			transfer_state = 259
+			transfer_state = 225
+			transfer_state = 193
+			transfer_state = 224
+			transfer_state = 243
+			
+			annex_country = { target = EST } 	
+			annex_country = { target = LAT }
+			annex_country = { target = LIT } 	
+			annex_country = { target = BLR }  
+			annex_country = { target = UKR } 	
+			annex_country = { target = MOL }  
+			annex_country = { target = AZR } 	
+			annex_country = { target = GEO }  
+			annex_country = { target = ARM } 	
+			annex_country = { target = KAZ }  
+			annex_country = { target = KGZ }					
+			annex_country = { target = TRK }
+			annex_country = { target = UZB }
+			annex_country = { target = TAJ }		
+		}
+		
+		##France (again, fight bordergore)
+		FRA = { 		
+			transfer_state = 29
+			transfer_state = 15
+			transfer_state = 14
+			transfer_state = 30
+			transfer_state = 23
+			transfer_state = 19
+			transfer_state = 16
+			transfer_state = 24
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 21
+			transfer_state = 735
+			transfer_state = 32
+			transfer_state = 20
+			transfer_state = 1
+			transfer_state = 28
+			transfer_state = 17
+			transfer_state = 27
+			transfer_state = 26
+			transfer_state = 18	
+		}
+		
+		##Poland
+		
+		
+		POL = { 
+			transfer_state = 743
+			transfer_state = 98
+			transfer_state = 85
+			transfer_state = 10
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 746
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 88
+			transfer_state = 90
+			transfer_state = 97
+			transfer_state = 765
+			transfer_state = 92
+			transfer_state = 87
+			transfer_state = 86	
+		}
+		
+		##yugoslavia		
+		YUG = { 
+			transfer_state = 108
+			transfer_state = 103
+			transfer_state = 109
+			transfer_state = 767
+			transfer_state = 747
+			transfer_state = 102
+			transfer_state = 163
+			transfer_state = 107
+			transfer_state = 105
+			transfer_state = 759
+			transfer_state = 106
+			transfer_state = 760
+			transfer_state = 748
+			transfer_state =  45
+			transfer_state = 104
+			transfer_state = 761
+			transfer_state = 776		
+		}
+		
+		##albania		
+		ALB = { 		
+			transfer_state = 44	
+		}
+		
+		
+		##greece		
+		GRE = { 	
+			transfer_state = 182
+			transfer_state = 164
+			transfer_state = 186
+			transfer_state = 185
+			transfer_state = 47
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 187
+			transfer_state = 164			
+		}
+				
+		##spain is left out
+				
+		##benelux
+		
+		HOL = { 		
+			transfer_state = 36
+			transfer_state = 35
+			transfer_state = 7
+			transfer_state = 695  ##Venezuelan islands
+			transfer_state = 309				
+		}
+		
+		BEL = { 		
+			transfer_state = 6
+			transfer_state = 34				
+		}
+		
+		LUX = { 	
+			transfer_state = 8			
+		}
+		
+		
+		##denmark	
+		DEN = { 		
+			transfer_state = 37
+			transfer_state = 99
+			transfer_state = 101
+			transfer_state = 337	
+		}
+		
+		ICE = {
+			transfer_state = 100	
+		}
+		
+		##norway	
+		NOR = { 	
+			transfer_state = 142
+			transfer_state = 110 
+			transfer_state = 143
+			transfer_state = 144	
+		}
+		
+		##austria
+		
+		FRA = { 		
+			transfer_state = 153	#tyrol				
+		}
+		
+		USA = { 	
+			transfer_state = 152					
+		}
+		
+		SOV = { 		
+			transfer_state = 4
+			transfer_state = 757							
+		}
+		
+		ENG = { 		
+			transfer_state = 758				
+		}
+
+		##czecho
+		CZE = { 		
+			transfer_state = 69
+			transfer_state = 74
+			transfer_state = 72
+			transfer_state = 75
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 664
+			transfer_state = 9						
+		}
+		
+		
+		##sweden
+		
+		SWE = { 	
+			transfer_state = 666
+			transfer_state = 38
+			transfer_state = 139
+			transfer_state = 140
+			transfer_state = 141
+			transfer_state = 138
+			transfer_state = 124			
+		}
+		
+		##switzerland
+		
+		SWI = { 
+		
+			transfer_state = 755
+			transfer_state = 756
+			transfer_state = 3
+			transfer_state = 151		
+		}
+		
+		
+		##turkey
+		TUR = { 
+		
+			transfer_state = 341
+			transfer_state = 347
+			transfer_state = 340
+			transfer_state = 339
+			transfer_state = 344
+			transfer_state = 350
+			transfer_state = 348
+			transfer_state = 354
+			transfer_state = 353
+			transfer_state = 349
+			transfer_state = 355
+			transfer_state = 352
+			transfer_state = 345
+			transfer_state = 346			
+		}	
+		
+
+		
+	####names for cities
+
+	#set_province_name = { id = 13205 name = "Bonn"}
+	set_province_name = { id = 13206 name = "west_berlin"}
+	set_province_name = { id = 13207 name = "east_berlin"}
+
+	
+	
+	##party popularity
+	ITA = {add_popularity = { ideology = democratic popularity = 60} }
+	ITA = { set_politics = { ruling_party = democratic elections_allowed = yes }  }
+		
+	##
+	hidden_effect = {
+			country_event = ne.1
+		}	
+	}
+	
+	option = {                #1949
+		name = ne.4.b
+
+	
+		##Germany
+
+		SAA = { 		
+			transfer_state = 764
+		}
+		
+		FRA = {
+			puppet = SAA
+		}
+		
+		WGR = { 
+			
+			transfer_state = 42
+			transfer_state = 50
+			transfer_state = 51
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 54
+			transfer_state = 55
+			transfer_state = 56
+			transfer_state = 57
+			transfer_state = 58
+			transfer_state = 59
+			transfer_state = 749
+			transfer_state = 750
+			transfer_state = 772
+			transfer_state = 754
+			transfer_state = 775
+			transfer_state = 778		
+
+		}
+		
+		DDR = { 
+			
+			transfer_state = 60
+			transfer_state = 61
+			transfer_state = 62
+			transfer_state = 64
+			transfer_state = 65
+			transfer_state = 744
+			transfer_state = 753
+		}
+
+		ENG = { 
+		
+			transfer_state = 273
+			transfer_state = 559
+			transfer_state = 663
+			transfer_state = 451
+			transfer_state = 450
+			transfer_state = 449
+			transfer_state = 448
+			transfer_state = 661
+			transfer_state = 662
+				
+		
+		}
+		
+		
+		FRA = { 
+			
+			transfer_state = 773	
+			transfer_state = 735
+			transfer_state = 1
+			
+
+		}
+		
+		ITA = { 
+			
+			transfer_state = 114
+			transfer_state = 115
+			transfer_state = 156
+			transfer_state = 117
+			transfer_state = 2
+			transfer_state = 157
+			transfer_state = 162
+			transfer_state = 160
+			transfer_state = 161
+			transfer_state = 158
+			transfer_state = 39
+			transfer_state = 159
+
+		}
+		
+		GRE = { 
+			
+			transfer_state = 164
+			
+		}
+		
+		TRI = { 
+			
+			transfer_state = 736
+			
+		}
+		
+		ETH = { 
+			
+			transfer_state = 271
+			transfer_state = 550
+			
+		}
+		
+		YUG = { 
+			
+			transfer_state = 747
+			transfer_state = 767
+			transfer_state = 163
+			
+		}
+		
+		##hungary		
+		HUN = { 
+		
+			transfer_state = 155
+			transfer_state = 154
+			transfer_state = 43
+			transfer_state = 757
+				
+		}
+		
+		
+		##romania
+		
+		ROM = { 	
+			transfer_state = 46
+			transfer_state = 81
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 76
+			transfer_state = 79			
+		}
+		
+
+		
+		##bulgaria	
+		BUL = { 	
+			transfer_state = 77
+			transfer_state = 211
+			transfer_state = 212
+			transfer_state = 48				
+		}
+		
+	
+		##finland
+		FIN = { 
+		
+			transfer_state = 145
+			transfer_state = 150
+			transfer_state = 149
+			transfer_state = 148
+			transfer_state = 111
+			
+				
+		}
+		
+		##england (fight bordergore on the isles)
+		
+		
+		ENG = { 
+		
+			transfer_state = 122
+			transfer_state = 123
+			transfer_state = 127
+			transfer_state = 126
+			transfer_state = 125
+			transfer_state = 338
+			transfer_state = 122
+			transfer_state = 119
+			transfer_state = 133
+			transfer_state = 120
+			transfer_state = 136
+			transfer_state = 128
+			transfer_state = 130
+			transfer_state = 131
+			transfer_state = 133
+			transfer_state = 132
+			transfer_state = 121
+			transfer_state = 128
+			transfer_state = 129
+			
+		
+		}
+		
+		##CANADA get NFL and Labrador
+		
+		CAN = { 
+		
+			transfer_state = 331
+			transfer_state = 332
+			
+		}
+		
+		
+		##soviets
+		
+		SOV = { 
+		
+			transfer_state = 752
+			transfer_state = 78
+			transfer_state = 80
+			transfer_state = 73
+			transfer_state = 722
+			transfer_state = 147
+			transfer_state = 146
+			transfer_state = 13   ##baltic States
+			transfer_state = 191
+			transfer_state = 190
+			transfer_state = 12
+			transfer_state = 11
+			transfer_state = 189
+			transfer_state = 188  ##end of baltic states
+			transfer_state = 5    ##Kaliningrad
+			transfer_state = 751
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 745
+			transfer_state = 94
+			transfer_state = 93
+			transfer_state = 751
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 209   ##territory from PLC
+			transfer_state = 198
+			transfer_state = 201
+			transfer_state = 202
+			transfer_state = 198
+			transfer_state = 210    
+			transfer_state = 207
+			transfer_state = 242
+			transfer_state = 226 
+			transfer_state = 203
+			transfer_state = 259
+			transfer_state = 225
+			transfer_state = 193
+			transfer_state = 224
+			transfer_state = 243
+			
+			annex_country = { target = EST } 	
+			annex_country = { target = LAT }
+			annex_country = { target = LIT } 	
+			annex_country = { target = BLR }  
+			annex_country = { target = UKR } 	
+			annex_country = { target = MOL }  
+			annex_country = { target = AZR } 	
+			annex_country = { target = GEO }  
+			annex_country = { target = ARM } 	
+			annex_country = { target = KAZ }  
+			annex_country = { target = KGZ }					
+			annex_country = { target = TRK }
+			annex_country = { target = UZB }
+			annex_country = { target = TAJ }
+			
+				
+		}
+		
+		##France (again, fight bordergore)
+		FRA = { 
+		
+			transfer_state = 29
+			transfer_state = 15
+			transfer_state = 14
+			transfer_state = 30
+			transfer_state = 23
+			transfer_state = 19
+			transfer_state = 16
+			transfer_state = 24
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 21
+			transfer_state = 735
+			transfer_state = 32
+			transfer_state = 20
+			transfer_state = 1
+			transfer_state = 28
+			transfer_state = 17
+			transfer_state = 27
+			transfer_state = 26
+			transfer_state = 18
+
+				
+		}
+		
+		##Poland
+		
+		
+		POL = { 		
+			transfer_state = 743
+			transfer_state = 98
+			transfer_state = 85
+			transfer_state = 10
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 746
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 88
+			transfer_state = 90
+			transfer_state = 97
+			transfer_state = 765
+			transfer_state = 92
+			transfer_state = 87
+			transfer_state = 86	
+		}
+		
+		
+		##yugoslavia
+		YUG = { 		
+			transfer_state = 108
+			transfer_state = 103
+			transfer_state = 109
+			transfer_state = 767
+			transfer_state = 747
+			transfer_state = 102
+			transfer_state = 163
+			transfer_state = 107
+			transfer_state = 105
+			transfer_state = 759
+			transfer_state = 106
+			transfer_state = 760
+			transfer_state = 748
+			transfer_state =  45
+			transfer_state = 104
+			transfer_state = 761
+			transfer_state = 776			
+		}
+		
+		##albania
+		
+		ALB = { 		
+			transfer_state = 44	
+		}
+		
+		
+		##greece
+		
+		GRE = { 	
+			transfer_state = 182
+			transfer_state = 164
+			transfer_state = 186
+			transfer_state = 185
+			transfer_state = 47
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 187
+			transfer_state = 164			
+		}
+		
+		
+		##spain is left out
+		
+		
+		##benelux
+		
+		HOL = { 		
+			transfer_state = 36
+			transfer_state = 35
+			transfer_state = 7
+			transfer_state = 695  ##Venezuelan islands
+			transfer_state = 309				
+		}
+		
+		BEL = { 		
+			transfer_state = 6
+			transfer_state = 34			
+		}
+		
+		LUX = { 
+	
+			transfer_state = 8	
+		}
+		
+		
+		##denmark
+		
+		DEN = { 
+		
+			transfer_state = 37
+			transfer_state = 99
+			transfer_state = 101
+			transfer_state = 337
+			
+			release = ICE
+				
+		}
+		
+		ICE = {
+			transfer_state = 100		
+		}
+		
+		##norway		
+		NOR = { 		
+			transfer_state = 142
+			transfer_state = 110 
+			transfer_state = 143
+			transfer_state = 144		
+		}
+		
+		##austria
+		
+		FRA = { 		
+			transfer_state = 153	#tyrol				
+		}
+		
+		USA = { 		
+			transfer_state = 152					
+		}
+		
+		SOV = { 		
+			transfer_state = 4
+			transfer_state = 757							
+		}
+		
+		ENG = { 	
+			transfer_state = 758				
+		}
+		
+		
+		##czecho
+		
+		CZE = { 		
+			transfer_state = 69
+			transfer_state = 74
+			transfer_state = 72
+			transfer_state = 75
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 664
+			transfer_state = 9						
+		}
+		
+		
+		##sweden
+		
+		SWE = { 
+		
+			transfer_state = 666
+			transfer_state = 38
+			transfer_state = 139
+			transfer_state = 140
+			transfer_state = 141
+			transfer_state = 138
+			transfer_state = 124
+				
+		}
+		
+		##switzerland
+		
+		SWI = { 
+		
+			transfer_state = 755
+			transfer_state = 756
+			transfer_state = 3
+			transfer_state = 151
+			
+				
+		}
+		
+		
+		##turkey
+		TUR = { 
+		
+			transfer_state = 341
+			transfer_state = 347
+			transfer_state = 340
+			transfer_state = 339
+			transfer_state = 344
+			transfer_state = 350
+			transfer_state = 348
+			transfer_state = 354
+			transfer_state = 353
+			transfer_state = 349
+			transfer_state = 355
+			transfer_state = 352
+			transfer_state = 345
+			transfer_state = 346
+				
+		}	
+		
+	
+		
+		
+		
+		
+	####names for cities
+	set_province_name = { id = 13206 name = "west_berlin"}
+	set_province_name = { id = 13207 name = "east_berlin"}
+	
+	
+	##party popularity
+	ITA = {add_popularity = { ideology = democratic popularity = 60} }
+	ITA = { set_politics = { ruling_party = democratic elections_allowed = yes }  }
+	
+	#
+	hidden_effect = {
+		country_event = ne.1
+	}
+	
+	
+	}
+	option = {                #1949 puppets
+		name = ne.4.c
+		
+		
+		##Germany
+
+		SAA = { 		
+			transfer_state = 764
+		}
+		
+		FRA = {
+			puppet = SAA	
+		}
+
+		WGR = { 
+			
+			transfer_state = 42
+			transfer_state = 50
+			transfer_state = 51
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 54
+			transfer_state = 55
+			transfer_state = 56
+			transfer_state = 57
+			transfer_state = 58
+			transfer_state = 59
+			transfer_state = 749
+			transfer_state = 750
+			transfer_state = 772
+			transfer_state = 754
+			transfer_state = 775
+			transfer_state = 778
+			
+
+		}
+		
+		DDR = { 
+			
+			transfer_state = 60
+			transfer_state = 61
+			transfer_state = 62
+			transfer_state = 64
+			transfer_state = 65
+			transfer_state = 744
+			transfer_state = 753
+
+		}
+		
+		
+		##Italy 
+		
+		ENG = { 
+		
+			transfer_state = 273
+			transfer_state = 559
+			transfer_state = 663
+			transfer_state = 451
+			transfer_state = 450
+			transfer_state = 449
+			transfer_state = 448
+			transfer_state = 661
+			transfer_state = 662
+				
+		
+		}
+		
+		
+		FRA = { 
+			
+			transfer_state = 773	
+			transfer_state = 735
+			transfer_state = 1
+			
+
+		}
+		
+		ITA = { 
+			
+			transfer_state = 114
+			transfer_state = 115
+			transfer_state = 156
+			transfer_state = 117
+			transfer_state = 2
+			transfer_state = 157
+			transfer_state = 162
+			transfer_state = 160
+			transfer_state = 161
+			transfer_state = 158
+			transfer_state = 39
+			transfer_state = 159
+
+		}
+		
+		GRE = { 
+			
+			transfer_state = 164
+			
+		}
+		
+		TRI = { 
+			
+			transfer_state = 736
+			
+		}
+		
+		ETH = { 
+			
+			transfer_state = 271
+			transfer_state = 550
+			
+		}
+		
+		YUG = { 
+			
+			transfer_state = 747
+			transfer_state = 767
+			transfer_state = 163
+			
+		}
+		
+		##hungary
+		
+		
+		HUN = { 
+		
+			transfer_state = 155
+			transfer_state = 154
+			transfer_state = 43
+			transfer_state = 757
+				
+		}
+		
+		
+		##romania
+		
+		ROM = { 
+		
+			transfer_state = 46
+			transfer_state = 81
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 76
+			transfer_state = 79
+				
+		}
+		
+
+		
+		##bulgaria
+		
+		BUL = { 
+		
+			transfer_state = 77
+			transfer_state = 211
+			transfer_state = 212
+			transfer_state = 48
+				
+		}
+		
+	
+		##finland
+		
+		
+		FIN = { 
+		
+			transfer_state = 145
+			transfer_state = 150
+			transfer_state = 149
+			transfer_state = 148
+			transfer_state = 111
+			
+				
+		}
+		
+		##england (fight bordergore on the isles)
+		
+		
+		ENG = { 
+		
+			transfer_state = 122
+			transfer_state = 123
+			transfer_state = 127
+			transfer_state = 126
+			transfer_state = 125
+			transfer_state = 338
+			transfer_state = 122
+			transfer_state = 119
+			transfer_state = 133
+			transfer_state = 120
+			transfer_state = 136
+			transfer_state = 128
+			transfer_state = 130
+			transfer_state = 131
+			transfer_state = 133
+			transfer_state = 132
+			transfer_state = 121
+			transfer_state = 128
+			transfer_state = 129
+			
+		
+		}
+		
+		##CANADA gets newfoundland/labrador
+		
+		CAN = { 
+		
+			transfer_state = 331
+			transfer_state = 332
+			
+		}
+		
+		
+		##soviets
+		
+		SOV = { 
+		
+			transfer_state = 752
+			transfer_state = 78
+			transfer_state = 80
+			transfer_state = 73
+			transfer_state = 722
+			transfer_state = 147
+			transfer_state = 146
+			transfer_state = 13   ##baltic States
+			transfer_state = 191
+			transfer_state = 190
+			transfer_state = 12
+			transfer_state = 11
+			transfer_state = 189
+			transfer_state = 188  ##end of baltic states
+			transfer_state = 5    ##Kaliningrad
+			transfer_state = 751
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 745
+			transfer_state = 94
+			transfer_state = 93
+			transfer_state = 751
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 209   ##territory from PLC
+			transfer_state = 198
+			transfer_state = 201
+			transfer_state = 202
+			transfer_state = 198
+			transfer_state = 210    
+			transfer_state = 207
+			transfer_state = 242
+			transfer_state = 226 
+			transfer_state = 203
+			transfer_state = 259
+			transfer_state = 225
+			transfer_state = 193
+			transfer_state = 224
+			transfer_state = 243
+			
+			annex_country = { target = EST } 	
+			annex_country = { target = LAT }
+			annex_country = { target = LIT } 	
+			annex_country = { target = BLR }  
+			annex_country = { target = UKR } 	
+			annex_country = { target = MOL }  
+			annex_country = { target = AZR } 	
+			annex_country = { target = GEO }  
+			annex_country = { target = ARM } 	
+			annex_country = { target = KAZ }  
+			annex_country = { target = KGZ }					
+			annex_country = { target = TRK }
+			annex_country = { target = UZB }
+			annex_country = { target = TAJ }
+			
+				
+		}
+		
+		##France (again, fight bordergore)
+		
+		
+		FRA = { 
+		
+			transfer_state = 29
+			transfer_state = 15
+			transfer_state = 14
+			transfer_state = 30
+			transfer_state = 23
+			transfer_state = 19
+			transfer_state = 16
+			transfer_state = 24
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 21
+			transfer_state = 735
+			transfer_state = 32
+			transfer_state = 20
+			transfer_state = 1
+			transfer_state = 28
+			transfer_state = 17
+			transfer_state = 27
+			transfer_state = 26
+			transfer_state = 18
+			
+		}
+		
+		##Poland
+		
+		
+		POL = { 
+		
+			transfer_state = 743
+			transfer_state = 98
+			transfer_state = 85
+			transfer_state = 10
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 746
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 88
+			transfer_state = 90
+			transfer_state = 97
+			transfer_state = 765
+			transfer_state = 92
+			transfer_state = 87
+			transfer_state = 86
+
+				
+		}
+		
+		
+		##yugoslavia
+		
+		
+		YUG = { 
+		
+			transfer_state = 108
+			transfer_state = 103
+			transfer_state = 109
+			transfer_state = 767
+			transfer_state = 747
+			transfer_state = 102
+			transfer_state = 163
+			transfer_state = 107
+			transfer_state = 105
+			transfer_state = 759
+			transfer_state = 106
+			transfer_state = 760
+			transfer_state = 748
+			transfer_state =  45
+			transfer_state = 104
+			transfer_state = 761
+			transfer_state = 776
+			
+		}
+		
+		##albania
+		
+		ALB = { 
+		
+			transfer_state = 44
+			
+				
+		}
+		
+		
+		##greece
+		
+		GRE = { 
+		
+			transfer_state = 182
+			transfer_state = 164
+			transfer_state = 186
+			transfer_state = 185
+			transfer_state = 47
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 187
+			transfer_state = 164
+			
+		}
+		
+		
+		##spain is left out
+		
+		
+		##benelux
+		
+		HOL = { 
+		
+			transfer_state = 36
+			transfer_state = 35
+			transfer_state = 7
+			transfer_state = 695  ##Venezuelan islands
+			transfer_state = 309
+				
+		}
+		
+		BEL = { 
+		
+			transfer_state = 6
+			transfer_state = 34
+				
+		}
+		
+		LUX = { 
+		
+			transfer_state = 8
+
+
+				
+		}
+		
+		
+		##denmark
+		
+		DEN = { 
+		
+			transfer_state = 37
+			transfer_state = 99
+			transfer_state = 101
+			transfer_state = 337
+			
+			release = ICE
+				
+		}
+		
+		##norway
+		
+		NOR = { 	
+			transfer_state = 142
+			transfer_state = 110 
+			transfer_state = 143
+			transfer_state = 144				
+		}
+		
+		##austria
+		
+		FRA = { 		
+			transfer_state = 153	#tyrol				
+		}
+		
+		USA = { 	
+			transfer_state = 152					
+		}
+		
+		SOV = { 		
+			transfer_state = 4
+			transfer_state = 757							
+		}
+		
+		ENG = { 		
+			transfer_state = 758				
+		}
+			
+		##czecho
+		CZE = { 	
+			transfer_state = 69
+			transfer_state = 74
+			transfer_state = 72
+			transfer_state = 75
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 664
+			transfer_state = 9					
+		}
+		
+		
+		##sweden
+		
+		SWE = { 	
+			transfer_state = 666
+			transfer_state = 38
+			transfer_state = 139
+			transfer_state = 140
+			transfer_state = 141
+			transfer_state = 138
+			transfer_state = 124				
+		}
+		
+		##switzerland
+		
+		SWI = { 	
+			transfer_state = 755
+			transfer_state = 756
+			transfer_state = 3
+			transfer_state = 151					
+		}
+		
+		
+		##turkey
+		TUR = { 		
+			transfer_state = 341
+			transfer_state = 347
+			transfer_state = 340
+			transfer_state = 339
+			transfer_state = 344
+			transfer_state = 350
+			transfer_state = 348
+			transfer_state = 354
+			transfer_state = 353
+			transfer_state = 349
+			transfer_state = 355
+			transfer_state = 352
+			transfer_state = 345
+			transfer_state = 346			
+		}
+		
+		
+		SOV = {puppet = ALB}
+		SOV = {puppet = BUL}
+		SOV = {puppet = ROM}
+		SOV = {puppet = HUN}
+		SOV = {puppet = DDR}
+		SOV = {puppet = POL}
+		SOV = {puppet = CZE}
+		
+		YUG = {add_popularity = { ideology = communism popularity = 100} }
+		YUG = { set_politics = { ruling_party = communism elections_allowed = no }  }
+		
+		ITA = {add_popularity = { ideology = democratic popularity = 60} }
+		ITA = { set_politics = { ruling_party = democratic elections_allowed = yes }  }
+		
+		
+	##names for cities
+	
+	set_province_name = { id = 13206 name = "west_berlin"}
+	set_province_name = { id = 13207 name = "east_berlin"}	
+	
+	#	
+		hidden_effect = {
+			country_event = ne.1
+		}
+	}
+	
+	option = {
+		name = ne.4.e
+		hidden_effect = {      #Exit to Main Menu
+			country_event = ne.1
+			
+		}
+	}
+	
+}

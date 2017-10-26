@@ -1,0 +1,21 @@
+on_actions = {
+
+	#BPWE activated for every player
+	on_startup = {
+		effect = {		
+		#Intro Event
+			every_country = {
+				limit = { is_ai = no }
+				news_event = { id = ne_news.1 }
+				
+			}
+		
+		#setup
+			every_country = {
+				limit = { tag = DAN }
+				country_event = { id = ne_setup.1 }				
+			}
+		}
+	}
+
+}

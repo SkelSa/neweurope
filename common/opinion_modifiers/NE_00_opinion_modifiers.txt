@@ -1,0 +1,170 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	##NewEurope MODIFIERS
+	
+	refused_hatay_transfer = {
+		value = -10
+	}
+	
+	accepted_hatay_transfer = {
+		value = 10
+	}
+	
+	refused_warsaw_pact = {
+		value = -25
+	}
+	
+	dissolved_allies = {
+		value = 10
+	}
+	
+	refused_nato_founding = {
+		value = -40
+	}
+	
+	refused_nato = {
+		value = -25
+	}
+	
+	accepted_austrian_reunification = {
+		value = 25
+	}
+	
+	refused_austrian_reunification = {
+		value = -25
+	}
+	
+	accepted_westgerman_reunification = {
+		value = 30
+	}
+	
+	refused_westgerman_reunification = {
+		value = -30
+	}
+
+	controls_saarland = {
+		value = -15
+	}
+	
+	western_german_puppet = {
+		value = -30
+	}
+	
+	eastern_german_puppet = {
+		value = -30
+	}
+	
+	not_invited = {
+		value = -5
+	}
+	
+	accepted_japanese_reunification = {
+		value = 30
+	}
+	
+	refused_japanese_reunification = {
+		value = -30
+	}
+	
+	western_japanese_puppet = {
+		value = -30
+	}
+	
+	eastern_japanese_puppet = {
+		value = -30
+	}
+	
+	leased_dalian = {
+		value = 5
+	}
+	
+	returned_dalian = {
+		value = 5
+	}
+	
+	refused_dalian = {
+		value = -5
+	}
+	
+	accepted_nfl = {
+		value = 5
+	}
+	
+	refused_nfl = {
+		value = -5
+	}
+	
+	accepted_notes = {
+		value = 20
+	}
+	
+	refused_notes = {
+		value = -20
+	}
+	
+	asked_return_territory = {
+		value = -20
+	}
+	
+	return_territory = {
+		value = 20
+	}
+	
+	refuse_territory = {
+		value = -20
+	}
+	
+	fooled_us = {
+		value = -10
+	}
+	
+	sided_americans = {
+		value = -20
+	}
+	
+	sided_soviets = {
+		value = -20
+	}
+	
+	returned_shikoku = {
+		value = 40
+	}
+	
+	peace_treaty = {
+		value = 15
+	}
+	
+	found_solution_korea = {
+		value = 20
+	}
+	
+	occupies_korea = {
+		value = -20
+	}
+	
+	freed_us = {
+		value = 30
+	}
+	
+	NE_lend_lease = {
+		value = 35
+	}
+	
+	NE_denied_lend_lease = {
+		value = -40
+	}
+	
+	
+	
+	
+}	

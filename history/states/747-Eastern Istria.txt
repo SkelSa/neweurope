@@ -1,0 +1,24 @@
+
+state={
+	id=747
+	name="STATE_747"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = YUG
+		add_core_of = SVN
+		buildings = {
+			infrastructure = 2
+			
+		}
+
+	}
+
+	provinces={
+		599 11595 
+	}
+	manpower=756980
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,41 @@
+﻿l_russian:
+
+ kaliningrad:0 "Калининград"
+ stpetersburg:0 "Санкт-Петербург"
+ trotskygrad:0 "Троцкоград"
+ volgograd:0 "Волгоград"
+ titograd:0 "Титоград"
+ tsaritsyn:0 "Царицын"
+ donetsk:0 "Донецк"
+ gdansk:0 "Гданьск"
+ szczecin:0 "Щецине"
+ tajikistan:0 "Таджикистан"
+ dushanbe:0 "Душанбе" 
+ wroclaw:0 "Вроцлав"
+ brest:0 "Брест"
+ vilnius:0 "Вильнюс"
+ berlin:0 "Берлин"
+ west_berlin:0 "З. Берлин"
+ east_berlin:0 "В. Берлин"
+
+ VICTORY_POINTS_TOOLTIP:0 "§G$NAME$§! победных очков = §Y$POINTS$§!"
+ VICTORY_POINTS_13205:0 "Бонн"
+ VICTORY_POINTS_13206:0 "Берлин"
+ VICTORY_POINTS_13207:0 " "      #has to be empty
+ VICTORY_POINTS_3707:0 "Кишенев"
+ VICTORY_POINTS_405:0 "Бад-Эйнхаузен"
+ VICTORY_POINTS_6542:0 "Баден-Баден"
+ VICTORY_POINTS_12583:0 "Бишкек"
+ VICTORY_POINTS_7376:0 "Пномпень"
+ VICTORY_POINTS_1464:0 "Вьентьян"
+ VICTORY_POINTS_12333:0 "Ашхабад"
+ VICTORY_POINTS_12250:0 "Сталинабад"
+ VICTORY_POINTS_9809:0 "Подгорица"
+ VICTORY_POINTS_11531:0 "Саарбрюккен"
+ 
+ 
+
+
+ 
+ 
+ 

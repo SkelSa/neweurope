@@ -1,0 +1,682 @@
+﻿#ASIA
+
+add_namespace = ne_asia
+add_namespace = ne_intro
+
+
+###Japan defeated, now what? STARTING ASIA MANAGER
+
+country_event = {
+	id = ne_intro.3               
+	title = ne_intro.3.t   
+	desc =  ne_intro.3.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	#is_triggered_only = yes
+
+	fire_only_once = yes
+	
+
+	trigger = {
+	
+		is_ai = no
+
+		NOT {
+		
+		ENG = {
+			has_war_with = SOV
+		}
+		
+		CHI = {
+			has_war_with = SOV
+		}
+		
+		USA = {
+			has_war_with = SOV
+		}
+		
+		PRC = {
+			has_war_with = SOV
+		}
+		
+		}
+		
+		OR = {
+		
+			NOT = {JAP = {has_government = fascism} }
+			NOT = { country_exists = JAP }
+		
+		}
+		
+		
+		NOT = {
+
+			OR = {
+				JAP = {has_war_with = CHI}
+				CHI = { is_subject_of = JAP }
+			}
+
+		}
+		
+		date > 1941.6.1 
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = ne_intro.3.a        #start
+		hidden_effect = {
+			country_event = ne_asia.1
+		}
+	}
+	
+	option = {
+		name = ne_intro.3.b         #close
+		
+	}
+	
+}
+
+country_event = {
+	id = ne_asia.1   #                    
+	title = ne_asia.1.t #Manager Asia
+	desc =  ne_asia.1.d  #Talk 
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne_asia.1.a         #Japan
+		hidden_effect = {
+			country_event = ne_asia.2
+		}
+	}
+	#option = {                #Colonies/will be done
+	#	name = ne_asia.1.b
+	#	hidden_effect = {
+	#		country_event = ne_asia.3
+	#	}
+	#}
+	option = {                #Korea
+		name = ne_asia.1.c
+		hidden_effect = {
+			country_event = ne_asia.4
+		}
+	}
+	
+	option = {             #Exit
+		name = ne_asia.1.e
+		hidden_effect = {
+			country_event = ne_setup.3
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+######################################################################################################################################################################################################################################
+##Japan###############################################################################################################################################################################################################################
+######################################################################################################################################################################################################################################
+
+country_event = {
+	id = ne_asia.2                   
+	title = ne_asia.2.t 
+	desc =  ne_asia.2.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = ne_asia.2.a 
+		
+	trigger = {
+	
+	CHI = {exists = yes}
+	
+	}
+	
+
+	CHI = {
+	
+	transfer_state = 524
+	transfer_state = 609
+	transfer_state = 766
+	transfer_state = 530
+	
+	}
+	
+	ENG = {
+	
+	transfer_state = 528
+	transfer_state = 529
+	transfer_state = 526
+	
+	}
+	
+	USA = {
+	
+	transfer_state = 531
+	transfer_state = 535
+	transfer_state = 532
+	transfer_state = 282
+	transfer_state = 645
+	transfer_state = 648
+	transfer_state = 647
+	transfer_state = 684
+	transfer_state = 633
+	transfer_state = 646
+	transfer_state = 534
+
+	
+	
+	}
+	
+	SOV = {
+	
+	transfer_state = 655
+	transfer_state = 537
+	transfer_state = 555
+	transfer_state = 536
+	transfer_state = 533
+	
+	
+	}
+	
+	
+	
+	hidden_effect = {
+			country_event = ne_asia.1
+			set_global_flag = japan_partitioned
+			clr_global_flag = japan_divided
+		}
+	
+	
+	
+}
+
+
+	###SRJ and JAP; CHI exists
+	option = {
+	name =  ne_asia.2.b
+	
+	trigger = {
+	
+		CHI = {exists = yes}
+	
+	}
+
+			SRJ = {			
+			transfer_state = 536
+			transfer_state = 533
+			}
+			
+			JAP = {
+			
+			transfer_state = 528
+			transfer_state = 529
+			transfer_state = 526
+			transfer_state = 531
+			transfer_state = 535
+			transfer_state = 532
+			transfer_state = 282
+			transfer_state = 645
+			transfer_state = 648
+			transfer_state = 530
+			transfer_state = 534
+	
+			
+			add_popularity = { ideology = democratic popularity = 1 }  
+			set_politics = { ruling_party = democratic elections_allowed = yes } 
+
+			}
+			
+			
+			SRJ = {
+				
+				add_state_core = 536
+				add_state_core = 533
+				add_state_core = 530
+				add_state_core = 528
+				add_state_core = 529
+				add_state_core = 526
+				add_state_core = 531
+				add_state_core = 535
+				add_state_core = 532
+				add_state_core = 282
+				add_state_core = 645
+				add_state_core = 648
+				add_state_core = 534
+					
+			}
+		
+			JAP = {
+					
+				add_state_core = 536
+				add_state_core = 533
+				add_state_core = 530
+				add_state_core = 528
+				add_state_core = 529
+				add_state_core = 526
+				add_state_core = 531
+				add_state_core = 535
+				add_state_core = 532
+				add_state_core = 282
+				add_state_core = 645
+				add_state_core = 648
+				add_state_core = 534
+					
+			}
+			
+			##China gets Taiwan
+			CHI = {
+			
+			transfer_state = 524
+				
+			}
+			
+			##SOV gets Sakhalin and Kuril
+			SOV = {
+			
+			transfer_state = 537
+			transfer_state = 555
+			transfer_state = 655
+				
+			}
+			
+			##USA gets all Japanese islands, except Marcus and Iwo
+			USA = {
+			
+			transfer_state = 647
+			transfer_state = 684
+			transfer_state = 633
+			transfer_state = 646
+			
+				
+			}
+	
+	hidden_effect = {
+			country_event = ne_asia.1
+			set_global_flag = japan_divided
+			clr_global_flag = japan_partitioned
+		}
+	
+	
+	
+	}
+	
+	###partition Japan (PRC)
+	option = {
+	name = ne_asia.2.c
+
+	trigger = {
+	
+	OR = {
+	
+		CHI = {exists = no}
+		CHI = {owns_state = 524}
+	
+	}
+	
+
+	PRC = {		
+			exists = yes 
+			
+	}
+	
+	}
+	
+		PRC = {
+		
+			transfer_state = 524
+			transfer_state = 609
+			transfer_state = 766
+			transfer_state = 530
+		
+		}
+		
+		ENG = {
+		
+			transfer_state = 528
+			transfer_state = 529
+			transfer_state = 526
+		
+		}
+		
+		USA = {
+		
+			transfer_state = 531
+			transfer_state = 535
+			transfer_state = 532
+			transfer_state = 282
+			transfer_state = 645
+			transfer_state = 648
+			transfer_state = 647
+			transfer_state = 684
+			transfer_state = 633
+			transfer_state = 646
+			transfer_state = 534
+
+		
+		
+		}
+		
+		SOV = {
+		
+			transfer_state = 655
+			transfer_state = 537
+			transfer_state = 555
+			transfer_state = 536
+			transfer_state = 533
+		
+		
+		}
+		
+	hidden_effect = {
+			country_event = ne_asia.1
+			set_global_flag = japan_partitioned_ne_prc
+			clr_global_flag = japan_divided_ne_prc
+	
+	}
+}		
+	
+	###SRJ and JAP
+	option = {
+	name =  ne_asia.2.e
+	
+	trigger = {
+	
+		CHI = {exists = no}
+
+		PRC = {		exists = yes
+					#num_divisions > 30
+					#num_of_factories > 40 
+		
+		}
+	
+	}
+
+	SRJ = {
+			
+		transfer_state = 536
+		transfer_state = 533
+		transfer_state = 530
+			
+			
+	}
+			
+	JAP = {
+	
+		transfer_state = 528
+		transfer_state = 529
+		transfer_state = 526
+		transfer_state = 531
+		transfer_state = 535
+		transfer_state = 532
+		transfer_state = 282
+		transfer_state = 645
+		transfer_state = 648
+		transfer_state = 534
+		
+		
+	
+	}
+	
+	##Adding cores
+	
+	SRJ = {
+			
+		add_state_core = 536
+		add_state_core = 533
+		add_state_core = 530
+		add_state_core = 528
+		add_state_core = 529
+		add_state_core = 526
+		add_state_core = 531
+		add_state_core = 535
+		add_state_core = 532
+		add_state_core = 282
+		add_state_core = 645
+		add_state_core = 648
+		add_state_core = 534
+				
+	}
+	
+	JAP = {
+			
+		add_state_core = 536
+		add_state_core = 533
+		add_state_core = 530
+		add_state_core = 528
+		add_state_core = 529
+		add_state_core = 526
+		add_state_core = 531
+		add_state_core = 535
+		add_state_core = 532
+		add_state_core = 282
+		add_state_core = 645
+		add_state_core = 648
+		add_state_core = 534
+				
+	}
+	
+	JAP = {
+
+	add_popularity = { ideology = democratic popularity = 1 }  
+	set_politics = { ruling_party = democratic elections_allowed = yes } 
+
+	}
+	
+	##Red China gets Taiwan, East Hebei, Dalian
+	
+	PRC = {
+	
+		transfer_state = 524
+		#transfer_state = 609
+		#transfer_state = 766
+		
+	}
+	
+	##SOV gets Sakhalin and Kuril
+	
+	SOV = {
+	
+		transfer_state = 537
+		transfer_state = 555
+		transfer_state = 655
+		
+	}
+	
+	##USA gets all Japanese islands, except Marcus and Iwo
+	
+	USA = {
+	
+		transfer_state = 647
+		transfer_state = 684
+		transfer_state = 633
+		transfer_state = 646
+	
+		
+	}
+	
+	hidden_effect = {
+			country_event = ne_asia.1
+			set_global_flag = japan_divided_ne_prc
+			clr_global_flag = japan_partitioned_ne_prc
+		}
+		
+	}
+	
+
+	option = {
+	name = ne_asia.2.f
+	country_event = ne_asia.1
+
+
+	}
+	
+}
+	
+
+##########
+#Korea####
+#########
+
+country_event = {
+	id = ne_asia.4                       
+	title = ne_asia.4.t 
+	desc =  ne_asia.4.d  
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	
+	##1950 border, divided peninsula 
+	option = {
+			name = ne_asia.4.a
+			
+
+				DPR = {
+
+				transfer_state = 527
+				transfer_state = 763
+				transfer_state = 770 
+				transfer_state = 771
+
+
+				}
+
+				KOR = {
+
+				transfer_state = 525
+				transfer_state = 762
+				transfer_state = 768
+				transfer_state = 769
+		
+				}
+					
+	
+		
+				hidden_effect = {
+						country_event = ne_asia.1
+						set_global_flag = korea_divided
+						clr_global_flag = korea_partitioned
+						clr_global_flag = korea_dmz
+				}	
+		
+		
+		
+	}
+
+	##Historical; SOV and USA 1950 border partition
+	option = {
+			name = ne_asia.4.b
+
+				SOV = {
+
+				transfer_state = 527
+				transfer_state = 763
+				transfer_state = 770 
+				transfer_state = 771
+
+
+				}
+
+				USA = {
+
+				transfer_state = 525
+				transfer_state = 762
+				transfer_state = 768
+				transfer_state = 769
+		
+				}
+				
+				hidden_effect = {
+				country_event = ne_asia.1
+				set_global_flag = korea_partitioned
+				clr_global_flag = korea_divided
+				clr_global_flag = korea_dmz
+				
+				}
+		
+		
+	}
+
+	
+	##1953 border + demilitarization
+	option = {
+			name = ne_asia.4.c
+
+				DPR = {
+					transfer_state = 527
+					transfer_state = 762
+					transfer_state = 769
+					transfer_state = 770
+				}
+
+				KOR = {
+					transfer_state = 525
+					transfer_state = 763
+					transfer_state = 768
+					transfer_state = 771	
+				}
+		
+		
+				##the DMZ gets a DMZ
+				768 = { set_demilitarized_zone = yes } 
+				769 = { set_demilitarized_zone = yes } 
+				770 = { set_demilitarized_zone = yes } 
+				771 = { set_demilitarized_zone = yes } 
+		
+				hidden_effect = {
+				country_event = ne_asia.1
+				set_global_flag = korea_dmz
+				clr_global_flag = korea_partitioned
+				clr_global_flag = korea_divided
+				
+				}
+		
+		
+		
+	}
+	
+	##Exit
+	option = {
+		name = ne_asia.4.e 
+		country_event = ne_asia.1
+				
+	}
+	
+	
+	
+	
+}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+	

@@ -1,0 +1,11 @@
+﻿start_equipment_factor = 0.2
+division_template = {
+	name = "Moldavian Division"	# Army was a single infantry regiment of militia	
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+

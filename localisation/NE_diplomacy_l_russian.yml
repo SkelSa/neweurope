@@ -1,0 +1,63 @@
+﻿l_russian:
+ 
+ ##Generic
+ asked_return_territory:0 "Они попросили нас уступить территорию!"
+ return_territory:0 "Наша законная территория была возвращена!"
+ refuse_territory:0 "Они отказываются передать нам территорию!"
+ fooled_us:0 "Они пытаются нас обмануть!"
+ peace_treaty:0 "Был подписан мирный договор!"
+ freed_us:0 "Они освободили нас!"
+ NE_lend_lease:0 "Они дали нам ленд-лиз!"
+ NE_denied_lend_lease:0 "Они отказались помочь нам!"
+ ##Hatay transfer
+ hatay_transfer_refused:0 "Отказались передать территорию"
+ hatay_transfer_accepted:0 "Хатай отделяется"
+ ##Warsaw Pact
+ refused_warsaw_pact:0 "Отказался присоединиться к Варшавскому договору"
+ ##NATO
+ dissolved_allies:0 "Разворачиваются союзники, чтобы освободить место для нового союза!"
+ refused_nato_founding:0 "Отказались создать новую фракцию"
+ refused_nato:0 "Отказался от вступления в НАТО"
+ ##Unification of Austria
+ accepted_austrian_reunification:0 "Покончил с оккупацией Австрии"
+ refused_austrian_reunification:0 "Отказался от законной австрийской территории"
+ 
+ ##Division of Germany
+ accepted_westgerman_reunification:0 "Помогли в создании ФРГ"
+ refused_westgerman_reunification:0 "Отказались от оккупации (Германии)"
+ controls_saarland:0 "У них все еще есть Саар как марионетка!"
+ western_german_puppet:0 "Капиталисты создали немецкую марионетку!"
+ eastern_german_puppet:0 "Коммунисты создали немецкую марионетку!"
+ 
+ ##Unification of Japan
+ accepted_japanese_reunification:0 "Помогли создать новую Японию"
+ refused_japanese_reunification:0 "Отказались от оккупации (Японии)"
+ western_japanese_puppet:0 "Капиталисты создали японскую марионетку!"
+ eastern_japanese_puppet:0 "Коммунисты создали японскую марионетку!"
+ returned_shikoku:0 "Сикоку был возвращен"
+ not_invited:0 "Американцы не приглашали нас!"
+ sided_soviets:0 "Они встали на сторону Советов!"
+ sided_americans:0 "Они встали на сторону американцев!"
+ ##Stalin Notes
+ accepted_notes:0 "Приняты требования"
+ refused_notes:0 "Отказался от переговоров и, таким образом, воссоединения Германии!"
+ ##Port Arthur
+ leased_dalian:0 "Порт-Артур был арендован"
+ returned_dalian:0 "Порт-Артур был возвращен!"
+ refused_dalian:0 "Они отказались вернуть Порт-Артур!"
+ ##NFL and Labrador
+ accepted_nfl:0 "Принято возвращение НФЛ и Лабрадора"
+ refused_nfl:0 "Отказано в возврате НФЛ и Лабрадора!"
+ 
+ ##Korea stuff
+ found_solution_korea:0 "Решила проблему в Корее"
+ occupies_korea:0 "Решил занять Корею"
+ 
+ 
+ ##################################################
+ ##THREATS---------------------------------------##
+ ##################################################
+ 
+ threat_ne_korean_war:0 "Война в Корее"
+ threat_ne_korea_cf:0 "Прекращение огня в Корее"
+ 

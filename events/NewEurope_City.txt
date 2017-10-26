@@ -1,0 +1,640 @@
+﻿##This event files renames all cities if they are owned by a foreign power
+
+add_namespace = ne_city
+
+
+# City rename events
+
+
+
+
+##Kaliningrad
+country_event = {
+	id = ne_city.1
+	title = ne_city.1.t
+	desc = ne_city.1.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = SOV
+		owns_state = 5
+		NOT = { has_global_flag = renamed_kaliningrad }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.1.a
+		5 = { set_state_name = "kaliningrad" } 
+		set_province_name = { id = 6332 name = "kaliningrad"}
+		set_global_flag = renamed_kaliningrad
+	}
+	
+}
+
+##Brest 
+country_event = {
+	id = ne_city.4
+	title = ne_city.1.t
+	desc = ne_city.1.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = SOV
+		owns_state = 94
+		NOT = { has_global_flag = renamed_brest }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.1.a
+		set_province_name = { id = 3392 name = "brest"}
+		set_global_flag = renamed_brest
+	}
+	
+	
+}
+
+##Vilnius, Soviets
+country_event = {
+	id = ne_city.5
+	title = ne_city.1.t
+	desc = ne_city.1.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = SOV
+		owns_state = 751
+		NOT = { has_global_flag = renamed_vilnius }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.1.a
+		751 = { set_state_name = "vilnius" } 
+		set_province_name = { id = 3320 name = "vilnius"}
+		set_global_flag = renamed_vilnius
+	}
+	
+	
+}
+
+##Vilnius, LIT
+country_event = {
+	id = ne_city.6
+	title = ne_city.1.t
+	desc = ne_city.1.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = LIT
+		owns_state = 751
+		NOT = { has_global_flag = renamed_vilnius }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.1.a
+		751 = { set_state_name = "vilnius" } 
+		set_province_name = { id = 3320 name = "vilnius"}
+		set_capital = 751
+		set_global_flag = renamed_vilnius
+	}
+	
+	
+}
+
+##Wroclaw
+country_event = {
+	id = ne_city.7
+	title = ne_city.1.t
+	desc = ne_city.1.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = POL
+		owns_state = 66
+		NOT = { has_global_flag = renamed_wroclaw }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.1.a
+		66 = { set_state_name = "wroclaw" } 
+		set_province_name = { id = 9570 name = "wroclaw"}
+		set_global_flag = renamed_wroclaw
+	}
+	
+	
+}
+
+##Danzig
+country_event = {
+	id = ne_city.8
+	title = ne_city.1.t
+	desc = ne_city.1.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = POL
+		owns_state = 765
+		NOT = { has_global_flag = renamed_gdansk }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.1.a
+		765 = { set_state_name = "gdansk" } 
+		set_province_name = { id = 362 name = "gdansk"}
+		set_global_flag = renamed_gdansk
+	}
+	
+	
+}
+
+##Szczecin
+country_event = {
+	id = ne_city.9
+	title = ne_city.1.t
+	desc = ne_city.1.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = POL
+		owns_state = 63
+		NOT = { has_global_flag = renamed_szczecin}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.1.a
+		set_province_name = { id = 6282 name = "szczecin"}
+		set_global_flag = renamed_szczecin
+	}
+	
+	
+}
+
+##Donetsk
+country_event = {
+	id = ne_city.10
+	title = ne_city.1.t
+	desc = ne_city.1.d1
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = UKR
+		NOT = { has_government = communism} 
+		owns_state = 227
+		NOT = { has_global_flag = renamed_donetsk}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.1.a1
+		227 = { set_state_name = "donetsk" } 
+		set_province_name = { id = 6474 name = "donetsk"}
+		set_global_flag = renamed_donetsk
+	}
+	
+	
+}
+
+##No communism
+country_event = {
+	id = ne_city.2
+	title = ne_city.2.t
+	desc = ne_city.2.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = SOV
+		
+		SOV = {
+			exists = yes
+			has_government = democratic	
+		}
+		
+		OR = {
+		owns_state = 227 # Donetsk
+		owns_state = 195 # Leningrad
+		owns_state = 217 # Stalingrad
+		owns_state = 742 # Stalinabad
+		}
+		
+		NOT = { has_global_flag = ne_no_communism}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.2.a
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 227}
+			SOV = { controls_state = 227}
+			}
+			set_province_name = { id = 6474 name = "donetsk"}
+			227 = { set_state_name = "donetsk" }
+			set_global_flag = renamed_dontesk
+			
+		}
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 195}
+			SOV = { controls_state = 195}
+			}
+			set_province_name = { id = 3151 name = "stpetersburg"}
+			195 = { set_state_name = "stpetersburg" }
+			
+		}
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 217}
+			SOV = { controls_state = 217}
+			}
+			set_province_name = { id = 3529 name = "volgograd"}
+			217 = { set_state_name = "volgograd" }
+			
+		}
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 742}
+			SOV = { controls_state = 742}
+			}
+			742 = { set_state_name = "tajikistan" }
+			set_province_name = { id = 12250 name = "dushanbe"}
+			
+		}
+		
+		
+		set_global_flag = ne_no_communism
+	}
+	
+	##option b tsaritsyn
+	
+	option = {
+		name = ne_city.2.b
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 227}
+			SOV = { controls_state = 227}
+			}
+			set_province_name = { id = 6474 name = "donetsk"}
+			227 = { set_state_name = "donetsk" }
+			set_global_flag = renamed_dontesk
+			
+		}
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 195}
+			SOV = { controls_state = 195}
+			}
+			set_province_name = { id = 3151 name = "stpetersburg"}
+			195 = { set_state_name = "stpetersburg" }
+			
+		}
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 217}
+			SOV = { controls_state = 217}
+			}
+			set_province_name = { id = 3529 name = "tsaritsyn"}
+			217 = { set_state_name = "tsaritsyn" }
+			
+		}
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 742}
+			SOV = { controls_state = 742}
+			}
+			742 = { set_state_name = "tajikistan" }
+			set_province_name = { id = 12250 name = "dushanbe"}
+			
+		}
+		
+		
+		set_global_flag = ne_no_communism
+	}
+	
+	
+}
+
+
+##Kill Stalin, Hail trotsky
+country_event = {
+	id = ne_city.3
+	title = ne_city.3.t
+	desc = ne_city.3.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = SOV
+		
+		SOV = {
+			exists = yes
+			has_completed_focus = SOV_permanent_revolution
+			
+	}
+		
+		OR = {
+		owns_state = 227 # Donetsk
+		owns_state = 195 #Leningrad
+		owns_state = 217 # Stalingrad
+		owns_state = 742 # Stalinabad
+		}
+		
+		NOT = { has_global_flag = ne_no_stalin}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.2.a
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 227}
+			SOV = { controls_state = 227}
+			}
+			set_province_name = { id = 6474 name = "donetsk"}
+			227 = { set_state_name = "donetsk" }
+			set_global_flag = renamed_dontesk
+			
+		}
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 217}
+			SOV = { controls_state = 217}
+			}
+			set_province_name = { id = 3529 name = "trotskygrad"}
+			217 = { set_state_name = "trotskygrad" }
+			
+		}
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 742}
+			SOV = { controls_state = 742}
+			}
+			742 = { set_state_name = "tajikistan" }
+			set_province_name = { id = 12250 name = "dushanbe"}
+			
+		}
+		
+		
+		set_global_flag =  ne_no_stalin
+	}
+	
+	##option b tsaritsyn
+	
+	option = {
+		name = ne_city.2.b
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 227}
+			SOV = { controls_state = 227}
+			}
+			set_province_name = { id = 6474 name = "donetsk"}
+			227 = { set_state_name = "donetsk" }
+			set_global_flag = renamed_dontesk
+			
+		}
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 217}
+			SOV = { controls_state = 217}
+			}
+			set_province_name = { id = 3529 name = "tsaritsyn"}
+			217 = { set_state_name = "tsaritsyn" }
+			
+		}
+		
+		if = {
+			limit = {
+			SOV = { owns_state = 742}
+			SOV = { controls_state = 742}
+			}
+			742 = { set_state_name = "tajikistan" }
+			set_province_name = { id = 12250 name = "dushanbe"}
+			
+		}
+		
+		
+		set_global_flag =  ne_no_stalin
+	}
+	
+	
+}
+
+##Titograd
+country_event = {
+	id = ne_city.11
+	title = ne_city.11.t
+	desc = ne_city.11.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = YUG
+		has_government = communism 
+		owns_state = 105
+		OR = {
+			NOT = { has_country_flag = renamed_titograd}
+			has_country_flag = removed_titograd
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 17
+	}
+
+
+	option = {
+		name = ne_city.11.a
+		ai_chance = { factor = 100 }
+		set_province_name = { id = 9809 name = "titograd"}
+		set_country_flag = renamed_titograd
+	}
+	
+	option = {
+		name = ne_city.11.b
+		set_country_flag = renamed_titograd
+	}
+	
+	
+}
+
+##Titograd removed when fascism
+country_event = {
+	id = ne_city.12
+	title = ne_city.12.t
+	desc = ne_city.12.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = YUG
+		NOT = { has_government = communism }
+		owns_state = 105
+		has_country_flag = renamed_titograd
+		NOT = { has_country_flag = renamed_titograd } 
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+
+	option = {
+		name = ne_city.12.a
+		ai_chance = { factor = 100 }
+		
+		reset_province_name = 9809
+		set_country_flag = removed_titograd
+		clr_country_flag = renamed_titograd
+	}
+	
+	option = {
+		name = ne_city.12.b
+		
+	}
+	
+	
+}
+
+
+
+##Renaming east and west berlin (hidden), WGR wins
+country_event = {
+	id = ne_city.13
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+	
+		tag = WGR
+		controls_state = 744
+		owns_state = 744
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		#name = ne_city.1.a
+		reset_province_name = 744 
+		reset_province_name = 749 
+	}
+	
+}
+
+##Renaming east and west berlin (hidden), DDR wins
+country_event = {
+	id = ne_city.14
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+	
+		tag = DDR
+		controls_state = 749
+		owns_state = 749
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		#name = ne_city.1.a
+		reset_province_name = 744 
+		reset_province_name = 749 
+	}
+	
+}

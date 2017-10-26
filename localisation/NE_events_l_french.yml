@@ -1,0 +1,1126 @@
+﻿l_french:
+
+
+
+ #################
+ ###NEWS-EVENTS###
+ #################
+ 
+ 
+ ##INTRO FOR MOD##
+ ne_news.1.t:0 "Better Post-War Europe"
+ ne_news.1.d:0 "Salut et merci de vous abonner à mon mod. BPWE améliore et garantit une Europe plus réaliste d'une manière historique. En plus de quelques corrections comme des drapeaux et des noms, ce mod ajoute également une trentaine d'états différents afin de pouvoir recréer les frontières de l'Europe après la défaite nazie. \n En outre, j'ai inclus plusieurs événements pour corriger n'importe quel bordergore et quelques autres réglages. Tous les événements sont maintenant dynamiques et se déclencheront sans aucun problème lors d'un jeu historique. De plus, le puissant manager d'après-guerre est optionnel et vous pouvez toujours les écarter et laisser des frontières horribles vous hanter. \n Et maintenant, amusez-vous, j'ai déjà trop parlé ..."
+ ne_news.1.a:0 "Merci pour l'info!"
+ 
+ ##PRC-PROCLAMATION##
+ ne_news.2.t:0 "La proclamation de la République Populaire de Chine"
+ ne_news.2.d:0 "Aujourd'hui Mao Zedong, président de la République populaire de Chine, a annoncé la fondation officielle de la République populaire de Chine. Après plusieurs années de combats violents contre le Kuomintang et l'horrible Seconde guerre sino-japonaise, la paix est finalement revenue à la nation et la reconstruction est en cours. Alors que des millions de familles enterrent leurs proches, le président Mao a promis à son peuple un avenir prospère et une nouvelle ère pour la Chine, avec les principes d'égalité, de justice et de socialisme.\n Alors que ce développement va sûrement influencer la politique des voisins de la Chine, c'est encore une question de savoir comment et où Mao Zedong dirigera sa nation. "
+ ne_news.2.a:0 "Après des décennies, la Chine a été de nouveau réunie!"
+ ne_news.2.b:0 "Nous devons intervenir ou l'Asie sera rouge aussi!"
+ ne_news.2.c:0 "La révolution s'est étendue à l'Asie ..."
+ 
+ ##HITLER IS DEAD##
+ ne_news.3.t:0 "Hitler est mort!"
+ ne_news.3.d:0 "Tout à l'heure, Karl Dönitz a annoncé dans une importante émission que le Führer, Adolf Hitler, "est mort en défendant son Vaterland" et lui-même, Dönitz, est maintenant aux commandes des restes du Reich. Il n'y avait pas beaucoup d'informations, mais on suppose que Hitler s'est suicidé dans son bunker à Berlin pour éviter la captivité de l'ennemi qui entoure le Reichshauptstadt. On ignore où se trouvent les autres politiciens du NSDAP ou Eva Braun, mais on suppose qu'ils sont morts ou qu'ils fuient. \n Comme la plus grande partie du Reich est occupée et que la Wehrmacht est proche de l'effondrement, la mort d'Hitler est probablement le dernier clou au cercueil du moral allemand. "
+ ne_news.3.a:0 "Le Reich de 1000 ans va tomber!"
+ ne_news.3.b:0 "Qu'il brûle en enfer!"
+ ne_news.3.c:0 "Donc, ce salopard est mort? Dommage que nous ne l'ayons pas attrapé vivant!"
+ ne_news.3.e:0 "Nous ne vous oublierons jamais et gagnerons cette guerre! Ruhe à Frieden, ewiger Führer!"
+ 
+ ##HITLER IS IN RAGE##
+ ne_news.4.t:0 "Hitler est en RAGE!"
+ ne_news.4.d:0 "Plusieurs rapports venant du Führerbunker indiquent que le Führer est devenu complètement fou. Prétendument après avoir entendu que Steiner ne pouvait pas mener une offensive pour soulager Berlin, Hitler devint furieux. Peu de temps après, le Führer accusa tout le monde, même le peuple allemand, de lâches et de traîtres et cassa des crayons en criant à Fegelein, qui sera exécuté comme un traître lorsqu'il sera trouvé. Plusieurs généraux allemands sont convaincus qu'Adolf Hitler a vraiment perdu tout contact avec la réalité et continue de commander autour de divisions qui n'existent plus. Ce n'est qu'une question de temps jusqu'à ce que son Reich s'effondre et que les Alliés le trouvent."
+ ne_news.4.a:0 "Dingue!"
+ ne_news.4.b:0 "On peut dire qu'il est ... FÜHRIEUX!"
+ ne_news.4.c:0 "Ses jours sont comptés. Nous devons l'attraper!"
+ ne_news.4.e:0 "C'est juste temporaire ..."
+ 
+ ##FATE OF GERMANY
+ ##Germany is partitioned!##
+ ne_news.5.t:0 "L'occupation de l'Allemagne"
+ ne_news.5.d:0 "Le destin de l'Allemagne était déjà scellé à Yalta, quand[SOV.GetLeader], Winston Churchill et Franklin D. Roosevelt on convenu de la façon dont la "nouvelle Europe" devrait ressembler. Les quatre puissances victorieuses, à savoir[USA.GetName], [FRA.GetName], [SOV.GetName] et [ENG.GetName], obtiendrons une zone d'occupation chacun, ce qui est à peu près la zone qu'ils contrôlent maintenant. Pendant l'occupation, un processus appelé «dénazification» suivra pour éradiquer les pensées sur une renaissance du fascisme et du militarisme. Finalement, plusieurs procès contre des criminels de guerre comme Goering, Speer et d'autres membres nazis seront tenus. \nActuellement, on ne sait pas combien de temps durera l'occupation, bien que la plupart des gens s'attendent à une nouvelle Allemagne neutre en moins de 5 ans."
+ ne_news.5.a:0 "L'Allemagne ne sera plus jamais la même ..."
+ ne_news.5.b:0 "Nous aurions dû faire cela après la première guerre ..."
+ ne_news.5.c:0 "Un prix amer pour eux ..."
+ ne_news.5.e:0 "Des temps sombres pour notre nation ..."
+ 
+ ##Germany is divided!##
+ ne_news.6.t:0 "L'Allemagne est divisée!"
+ ne_news.6.d:0 "Même si les relations entre les alliés de la guerre, à savoir le[USA.GetName] et [SOV.GetName], était toujours froid, c'est maintenant officiel: l'Allemagne restera divisée.\nAprès la création de la "République Fédérale d'Allemagne", il n'a pas fallu longtemps à son voisin de l'Est pour émerger comme une nation. À mesure que le temps passera, les deux pays dériveront lentement vers leur idéologie correspondante et développeront leur propre identité. Les différences entre le socialisme et le capitalisme empêcheront la réunification allemande tant qu'une superpuissance est encore debout."
+ ne_news.6.a:0 "Une nation divisée ..."
+ ne_news.6.b:0 "Sales communistes!"
+ ne_news.6.c:0 "Nous étions pour la réunification! Sales impérialistes!"
+ ne_news.6.e:0 "Nous ne serons plus jamais les mêmes personnes!"
+ 
+ ##Germany is unified (Stalin Notes)!##
+ ne_news.7.t:0 "La note de Staline a été acceptée!"
+ ne_news.7.d:0 "Après une longue série de négociations, [USA.GetLeader] convenu au nom des puissances occidentales d'accepter la proposition [SOV.GetAdjective] concernant la note de Staline. La proposition russe suggère une réunification des deux États allemands pour permettre une Allemagne neutre et indépendante, qui servira également d'État tampon pour réduire les tensions le long du "rideau de fer".\nAprès les négociations fructueuses, la réunification sera probablement imminente et le peuple allemand ne sera plus séparé. De plus, l'Allemagne ne pourra plus jamais jeter le monde dans le chaos, car elle est entourée des deux blocs les plus puissants de l'histoire."
+ ##Trotsky Notes
+ ne_news.7.tt:0 "La note de Trotsky a été acceptée!!"
+ ne_news.7.dt:0 "Après une longue série de négociations, [USA.GetLeader] convenu au nom des puissances occidentales d'accepter la proposition [SOV.GetAdjective] concernant la note de Trotsky. La proposition russe suggère une réunification des deux États allemands pour permettre une Allemagne neutre et indépendante, qui servira également d'État tampon pour réduire les tensions le long du "rideau de fer".\nAprès les négociations fructueuses, la réunification sera probablement imminente et le peuple allemand ne sera plus séparé. De plus, l'Allemagne ne pourra plus jamais jeter le monde dans le chaos, car elle est entourée des deux blocs les plus puissants de l'histoire."
+ ne_news.7.a:0 "Une victoire pour le peuple Allemand!"
+ ne_news.7.b:0 "Un front possible en moins..."
+ ne_news.7.c:0 "Tant qu'ils restent neutres..."
+ ne_news.7.e:0 "Enfin!"
+ 
+ ##Germany is denied reunification! (Stalin Notes)##
+ ne_news.7.t1:0 "L'Allemagne reste divisée"
+ ne_news.7.d1:0 "Sans surprise, les Alliés occidentaux viennent de rejeter une offre unique de[SOV.GetName] appelé la "Note de Staline". En résumé, [SOV.GetLeader] a offert aux alliés occidentaux d'unir finalement la nation allemande, qui a été divisée depuis la seconde guerre mondiale, et de créer une zone tampon entre les deux blocs. Cependant, en raison de la méfiance occidentale envers les Soviétiques, la note fut finalement rejetée. [WGR.GetLeader] a déclaré, qu'une éventuelle réunification est impensable et tôt ou tard, en raison des activités subversives par les Soviétiques, se terminent dans une Allemagne communiste de toute façon.\nNéanmoins, le sujet a suscité des débats houleux en Occident. Certains experts critiquent maintenant sévèrement cette décision, affirmant qu'une excellente occasion d'apaiser les tensions avec les Soviétiques est désormais révolue pour toujours."
+ #Trotsky description
+ ne_news.7.dt1:0 "Sans surprise, les Alliés occidentaux viennent de rejeter une offre unique de[SOV.GetName] appelé la "Note de Trotsky". En résumé, [SOV.GetLeader] a offert aux alliés occidentaux d'unir finalement la nation allemande, qui a été divisée depuis la seconde guerre mondiale, et de créer une zone tampon entre les deux blocs. Cependant, en raison de la méfiance occidentale envers les Soviétiques, la note fut finalement rejetée. [WGR.GetLeader] a déclaré, qu'une éventuelle réunification est impensable et tôt ou tard, en raison des activités subversives par les Soviétiques, se terminent dans une Allemagne communiste de toute façon.\nNéanmoins, le sujet a suscité des débats houleux en Occident. Certains experts critiquent maintenant sévèrement cette décision, affirmant qu'une excellente occasion d'apaiser les tensions avec les Soviétiques est désormais révolue pour toujours."
+ ne_news.7.a1:0 "Imaginez si cela avait réussi ..."
+ ne_news.7.b1:0 "Les Rouges les auraient influencés plus tard de toute façon."
+ ne_news.7.c1:0 "Cela valait la peine d'essayer..."
+ ne_news.7.e1:0 "Notre peuple ne fera plus jamais qu'un ..."
+ 
+ 
+ ##FATE OF KOREA##
+ ##Korea divided 1950
+ ne_news.8.t:0 "La Division de Corée"
+ ne_news.8.d:0 "Après la défaite du Japon, [SOV.GetAdjective] et [USA.GetAdjective] on brièvement occupé la Corée, qui a été annexée par le Japon en 1910. Depuis deux semaines, plusieurs pourparlers entre les deux superpuissances devraient définir un avenir pour la péninsule coréenne et son peuple, mais en raison de la relation glaciale entre les anciens alliés, il n'y a pas eu de succès.\nHier, une solution simple a été élaborée, qui suggère une division le long de la 38e parallèle pour donner à chaque nation une part égale de territoire.\nEn raison des tensions actuelles, les deux parties ont finalement accepté de diviser la péninsule le long du 38e parallèle, mais ont rejeté toute idée d'une Corée neutre et unie. Au lieu de cela, le Nord et le Sud auront chacun leur propre pays avec une mentalité idéologique différente."
+ ne_news.8.a:0 "Est-ce qu'une division est maintenant la solution à tout ?!"
+ ne_news.8.b:0 "Ça va marcher."
+ ne_news.8.c:0 "Mieux que pas de solution ..."
+ ne_news.8.e:0 "Nous ne voulons pas être la balle de jeu des nations étrangères!"
+ 
+ ##Korea divided 1953
+ ne_news.9.t:0 "La Division de Corée"
+ ne_news.9.d:0 "Après la défaite du Japon, [SOV.GetAdjective] et [USA.GetAdjective] on brièvement occupé la Corée, qui a été annexée par le Japon en 1910. Depuis deux semaines, plusieurs pourparlers entre les deux superpuissances devraient définir un avenir pour la péninsule coréenne et son peuple, mais en raison de la relation glaciale entre les anciens alliés, il n'y a pas eu de succès.\nHier, une solution simple a été élaborée, qui suggère une frontière démilitarisée aléatoire le long de la 38e parallèle pour donner à chaque nation une part égale de territoire.\nEn raison des tensions actuelles, les deux parties ont finalement accepté de diviser la péninsule le long du 38e parallèle, mais ont rejeté toute idée d'une Corée neutre et unie. Au lieu de cela, le Nord et le Sud auront chacun leur propre pays avec une mentalité idéologique différente."
+ ne_news.9.a:0 "Est-ce qu'une division est maintenant la solution à tout ?!"
+ ne_news.9.b:0 "Ça va marcher."
+ ne_news.9.c:0 "Mieux que pas de solution ..."
+ ne_news.9.e:0 "Nous ne voulons pas être la balle de jeu des nations étrangères!"
+ 
+ ##Korea remains occupied!
+ ne_news.10.t:0 "La Corée reste occupée!"
+ ne_news.10.d:0 "Après d'innombrables tentatives infructueuses pour trouver une solution au problème coréen, les [USA.GetName] on annoncé la fin des réunions et le maintien de la péninsule jusqu'à nouvel ordre. Plusieurs dirigeants à travers le monde ont exprimé leur choc et exprimé leur sympathie pour le peuple coréen, tout en condamnant les deux superpuissances. Le plus notable était [YUG.GetLeader], qui a notamment critiqué le manque de coopération et de compromis entre les deux puissances et les a encouragées à entamer de nouvelles négociations.\nL'avenir de la Corée reste incertain, même si la péninsule ne sera pas occupée pour toujours. De nouvelles négociations possibles se produiront dans un avenir lointain, la plupart des experts croient."
+ ne_news.10.a:0 "Quelle blague!"
+ ne_news.10.b:0 "Vous ne pouvez pas travailler avec les communistes!"
+ ne_news.10.c:0 "Un autre exemple d'oppression occidentale ..."
+ 
+ ##Korea is unified!
+ ne_news.11.t:0 "La Corée est réunifiée!"
+ ne_news.11.d:0 "Après de nombreux entretiens et réunions, [SOV.GetLeader] et [USA.GetLeader] finalement mis de côté leurs différences et de méfiance pour trouver une solution pour la Corée. Comme les deux parties contrôlent la péninsule depuis la capitulation du Japon, le temps est venu d'accorder aux Coréens un état propre.\nDe nombreux experts ont prédit la création de deux Corées dans leur zone d'occupation respective, mais aucune idée de ce genre n'a été réellement envisagée. Au lieu de cela, la Corée sera une nation indépendante dans un monde bipolaire et gardera une distance avec les États-Unis ou la Russie.\nAlors que personne ne sait si l'indépendance et la neutralité de la Corée ne seront pas violées à un moment donné, l'unification peut permettre à la "péninsule choisie" de lutter et de prospérer."
+ ne_news.11.a:0 "Espérons la paix sur la péninsule ..."
+ ne_news.11.b:0 "Espérons que les communistes restent à l'accord ..."
+ ne_news.11.c:0 "Tant qu'ils restent neutres ..."
+ ne_news.11.e:0 "Notre nouvelle nation va remercier les deux pays!"
+ 
+ 
+ ##KOREAN WAR##
+ ##Korean War Start!
+ ne_news.12.t:0 "La guerre en Corée!"
+ ne_news.12.d:0 "Plusieurs rapports en provenance de Corée font état de tir d'artillerie le long de la frontière entre la Corée du Nord et la Corée du Sud. Selon le ministère sud-coréen de la Défense, la RPDC a lancé une vaste offensive à travers la 38e parallèle pour «libérer ses frères du sud».. \nDes défenses multiples ont été construites à la hâte près de la frontière, mais la plupart des troupes de la garnison sont apparemment déjà encerclées. On ne sait pas si la [KOR.GetName] peut arrêter l'invasion, bien que l'ONU ait déjà annoncé son soutien et que les troupes américaines et britanniques arrivent dans quelques semaines. Cependant, on ne sait pas comment se déroulera la guerre sur la péninsule ..."
+ ne_news.12.a:0 "La guerre ne finira jamais ..."
+ ne_news.12.b:0 "Nous allons arrêter les communistes et les rejeter!"
+ ne_news.12.c:0 "Espérons que les Nord-Coréens auront du succès ..."
+ ne_news.12.e:0 "Pour Kim Il-sung!"
+ ne_news.12.f:0 "Nous devons aider le Sud!"
+ 
+ ##Korean War Cease-Fire
+ ne_news.13.t:0 "Trêve temporaire en Corée!"
+ ne_news.13.d:0 "Ce matin, les ministres des Affaires étrangères des [DPR.GetName] et [KOR.GetName] ce sont rencontré à Busan et signé une trêve temporaire entre leurs pays respectifs. Après plusieurs mois de guerre, les deux camps sont épuisés et manquent d'hommes, de matériel et de moral. On s'attend à ce que les deux pays utilisent le temps à leur avantage et reconstituent leurs pertes, dessinent de nouveaux plans et reconstruisent l'infrastructure. Tous les pays ayant des forces volontaires dans la région ont déjà embarqué sur les navires pour rentrer chez eux, bien que plusieurs conseillers chinois, américains et soviétiques restent.\nPersonne ne sait combien de temps durera la paix, mais la plupart des experts peuvent s'entendre sur plusieurs mois au moins."
+ ne_news.13.a:0 "Combien de temps durera la trêve?"
+ ne_news.13.b:0 "Nous devons les regarder chaque minute!"
+ ne_news.13.c:0 "Kim devrait utiliser la trêve à son avantage ..."
+ ne_news.13.e:0 "Nous les écraserons assez tôt!"
+ ne_news.13.f:0 "La trêve sera essentielle pour la victoire de la République ..."
+ 
+ ##Korean War Continues
+ ne_news.14.t:0 "Pas de cessez-le-feu en Corée!"
+ ne_news.14.d:0 "Après de nombreuses tentatives ratées pour négocier une paix en Corée, il est désormais officiel qu'il n'y aura pas de paix entre le Nord et le Sud. Même si la population civile souffre gravement et que les deux camps ont désespérément besoin de soldats et de matériel, [DPR.GetLeader] et [KOR.GetLeader] sont convaincus de continuer la guerre à tout prix, déclarant qu'une paix ne donnerait à l'ennemi le temps de se réorganiser.\nLa plupart des experts militaires s'attendent à une victoire décisive dans les mois à venir des deux côtés, mais le gagnant sera probablement affaibli pendant une décennie, car la plupart des infrastructures et des villes sont déjà détruites."
+ ne_news.14.a:0 "Idiots."
+ ne_news.14.b:0 "Nous ne perdront jamais!"
+ ne_news.14.c:0 "Espèrons que sa ne finisse pas en guerre mondiale..."
+ ne_news.14.e:0 "Propagande! Nous sommes aussi bons que victorieux!"
+ ne_news.14.f:0 "Incroyable!"
+ 
+ ##Korean War Victory DPRK
+ ne_news.15.t:0 "La guerre de Corée est terminée!"
+ ne_news.15.d:0 "Après de nombreuses batailles sanglantes, le[DPR.GetName] a finalement écrasé la "poche de Busan" et capturé le port. Au cours du dernier assaut final, de nombreuses troupes étrangères de plusieurs nations de l'ONU ont subi des pertes horribles et seulement quelques-unes ont pu échapper à la tuerie à la dernière minute.\nLe gouvernement communiste a déjà célébré sa victoire avec un défilé militaire massif. Dans un discours[DPR.GetLeader] promis plus tard au peuple coréen un avenir prospère sous la direction du marxisme et du socialisme.\n Une chose est sûre: les pays occidentaux ont perdu un emplacement stratégique important en Asie de l'Est et[USA.GetLeader] va descendre dans l'histoire comme "l'homme, qui a perdu la Corée"."
+ ne_news.15.a:0 "La Corée est enfin unie..."
+ ne_news.15.b:0 "C'est un désastre!"
+ ne_news.15.c:0 "Le socialisme ne connait pas la défaite!"
+ ne_news.15.e:0 "Faisons honneur à nos morts."
+ 
+ 
+ ##check
+ ##Korean War Victory ROK
+ ne_news.16.t:0 "La guerre de Corée est terminée!"
+ ne_news.16.d:0 "Après une guerre brutale et longue, les forces de [KOR.GetName] on finalement pris d'assaut la ville encerclée de Pyongyang, écrasant toutes les forces communistes restantes. Quelques petits bataillons d'infanterie se sont repliés vers les montagnes et continuent les combats de guerillas, bien que la situation leur paraisse sombre.\n Il n'y a pas de déclaration officielle de [SOV.GetName] ou [PRC.GetName], mais plusieurs sources indiquent que leurs forces de volontaires rentrent chez eu. Plusieurs armes seraient passées clandestinement en contrebande pour soutenir des guérilleros, mais le gouvernement coréen a déjà annoncé de nombreuses opérations anti-partisanes.\nSelon certaines agences de renseignement étrangères,[KOR.GetLeader] a en outre déjà commencé des purges anti-communistes massives, mais a également enfermé des milliers de libéraux."
+ ne_news.16.a:0 "La Corée est enfin unie..."
+ ne_news.16.b:0 "A la fin la libértée et la démocracie gagne toujours!"
+ ne_news.16.c:0 "C'est un désastre!"
+ ne_news.16.e:0 "Maintenant nous avons besoin de reconstruire le pays..."
+ 
+ 
+ ##Founding of the new blocs
+ ##NATO
+ ne_news.17.t:0 "La fondation de l'OTAN"
+ ne_news.17.d:0 "Hier, plusieurs nations démocratiques se sont réunies à Washington D.C., pour discuter de la création d'une nouvelle alliance de défense militaire contre la "menace rouge". Craignant une éventuelle invasion de l'Europe occidentale, plusieurs pays cherchent à se protéger avec les Etats-Unis, comme [ENG.GetName] encore dévasté par la dernière grande guerre. En fin de compte, 12 États ont accepté d'être membre de cette nouvelle alliance occidentale, appelée «OTAN», pour travailler ensemble dans un cas de conflit avec le [SOV.GetName].\nAvec la fondation de cette nouvelle alliance anti-communiste, [SOV.GetLeader] a montré son désintérêt et a simplement déclaré que l'OTAN dans son ensemble n'était qu'un geste symbolique de la part des Alliés occidentaux pour dissuader une "agression soviétique" inventée.\nLa plupart des experts attendent une contrepartie orientale et des membres supplémentaires pour l'alliance occidentale, mais cela reste à voir."
+ ne_news.17.a:0 "L'ouest reste déterminé..."
+ ne_news.17.b:0 ""Defensive", bien sûre..."
+ ne_news.17.c:0 "Unis nous somme fort!"
+ ne_news.17.e:0 "Rien de préoccopant..."
+ ne_news.17.f:0 "Peut-être que nous devrions demander l'adhésion..."
+ 
+ ##Warsaw Pact
+ ne_news.18.t:0 "La fondation du Pacte de Varsovie!"
+ ne_news.18.d:0 "Sans surprise pour la plupart des experts étrangers, l'URSS a fondé hier sa propre alliance défensive à Varsovie en réponse à l'OTAN. Le «Pacte de Varsovie», formellement le «Traité d'amitié, de coopération et d'assistance mutuelle», compte huit États membres et s'étend à travers l'Europe centrale et orientale. Selon [SOV.GetLeader], son objectif est la "protection du socialisme en Europe et la dissuasion de l'impérialisme américain".\nAlors que de nombreux dirigeants occidentaux sont maintenant préoccupés par l'avenir de leur pays, [USA.getLeader] et [ENG.GetLeader] promis d'augmenter leurs dépenses de défense et de stationner de nouvelles troupes en Europe.\nTandis qu'une troisième guerre mondiale détruira certainement la planète, les deux puissances nucléaires se contrôleront maintenant."
+ ne_news.18.a:0 "Le monde est divisé..."
+ ne_news.18.b:0 "Peut-être que nous devrions demander l'adhésion..."
+ ne_news.18.c:0 "Nous n'allons pas les attaquer de toutes façon!"
+ ne_news.18.e:0 "Personne ne peut nous arrêter maintenant!"
+ ne_news.18.f:0 "Peut être devrions nous joindre l'OTAN MAINTENANT..."
+
+
+ 
+ ##POSSIBLE NEWS EVENT IDEAS: , Division of Japan (North/South) Unification of Japan Hatay, NFL to Canada, Hitler captured as alternative to dead!, WW3 start
+ #Done
+ ##ADD rewards and remove neutrality idea for finishing peace (Korea war!)
+ 
+ 
+ ###################
+ ###CHINESE STUFF###
+ ###################
+ 
+ 
+ ##Sinkiang gets answer
+ ne_prc.1.t:0 "La RPC veut notre intégartion"
+ ne_prc.1.d:0 "Après la défaite du Kuomintang dans la guerre civile chinoise, Mao nous a aujourd'hui fait une offre. Nous devrions faire partie de la République populaire de Chine et partager la gloire du socialisme chinois ou faire face à des conséquences désastreuses. Que devrions nous faire?"
+ ne_prc.1.a:0 "Nous allons les rejoindre bien sûr! Longue vie au président Mao!"
+ ne_prc.1.b:0 "Comment osent-ils même manquer de respect à notre souveraineté!"
+ 
+ ##PROCLAMATION OF THE PRC - EVENT##
+ ne_prc.2.t:0 "Proclamation de la République populaire de Chine"
+ ne_prc.2.d:0 "Après notre victoire dans la guerre civile, la République populaire de Chine a uni tous les Chinois sous le communisme. Un brillant avenir nous attend!"
+ ne_prc.2.a:0 "Nous sommes unis!"
+ 
+ ##Sinkiang folds
+ ne_prc.3.t:0 "Le Sinkiang accepte nos demandes"
+ ne_prc.3.d:0 "Les dirigeants du Sinkiang ont annoncé qu'ils étaient prêts à rejoindre notre patrie!"
+ ne_prc.3.a:0 "Une autre victoire pour notre Chine unie!"
+ ##Sinkiang doesn't fold
+ ne_prc.4.t:0 "Le Uyghuristan ne s'incline pas devant nous"
+ ne_prc.4.d:0 "Sheng Shicai a annoncé aujourd'hui que son pays ne fera jamais partie de notre nouvelle Chine et a donc refusé notre offre généreuse. Que devrions nous faire? "
+ ne_prc.4.a:0 "Mobilisons nos forces, c'est l'heure des vacances!"
+ ne_prc.4.b:0 "Turkestan oriental n'a pas d'importance stratégique de toute façon, se retirer"
+ ##Tibet gets answer
+ ne_prc.5.t:0 "La RPC nous demande de nous annexer"
+ ne_prc.5.d:0 "Les Chinois nationalistes ont été vaincus et Mao cherche maintenant à réintégrer notre pays dans le leur. Cela nous amènerait un avenir incertain, mais résister serait probablement pire. Quel est notre plan?"
+ ne_prc.5.a:0 "Nous n'avons aucune chance. La résistance est inutile ..."
+ ne_prc.5.b:0 "Ils n'entreront jamais dans le sol tibétain! Préparez les armes, NOUS allons à la guerre!"
+ ##Tibet folds
+ ne_prc.6.t:0 "Le Tibet ce plis"
+ ne_prc.6.d:0 "Le gouvernement du Tibet a annoncé qu'il se plierait à notre ultimatum et qu'il ferait désormais partie de notre glorieuse République!"
+ ne_prc.6.a:0 "Les Tibétains ne regretteront pas leur décision!"
+ ##Tibet refuses
+ ne_prc.7.t:0 "Le Tibet refuse"
+ ne_prc.7.d:0 "Ces Tibétains stupides ont osé résister à notre offre généreuse. Devrions-nous les amener dans notre République populaire en déclarant la guerre ou y a-t-il déjà eu assez de sang versé?"
+ ne_prc.7.a:0 "Ils n'auront même pas de pierres à nous jeter!"
+ ne_prc.7.b:0 "La guerre est inutile, les relations amicales sont également précieuses"
+ 
+ ##INTEGRATING TIBET AND SINKIANG##
+ ne_prc.8.t:0 "Intégrer le Tibet et le Xinjiang"
+ ne_prc.8.d:0 "Avec la défaite de la Chine de Chiang Kai-Shek, le Sinkiang et le Tibet sont désormais seuls, sans être protégés des puissances étrangères. Devrions-nous leur envoyer une offre généreuse de faire partie de notre patrie victorieuse et de récupérer le territoire perdu ou de les laisser rester indépendants en tant qu'État tampon pour l'Occident?"
+ ne_prc.8.a:0 "Seul le Turkestan oriental est intéressant pour nous"
+ ne_prc.8.b:0 "Nous devons avoir accès à l'Himalaya"
+ ne_prc.8.c:0 "Envoyez nos ambassadeurs dans les deux pays!"
+ ne_prc.8.e:0 "Laissez-les rester indépendants"
+ 
+ ##LEASE OF PORT ARTHUR##
+ ne_prc.9.t:0 "Le bail de Port Arthur / Dalian"
+ ne_prc.9.d:0 "Les ports d'eau chaude sont très précieux pour l'Union Soviétique car la plupart de nos ports gèlent pendant l'hiver et, en conclusion, entravent notre commerce. Bien que nous ayons maintenant les ports de la Baltique et Königsberg avec la défaite de l'Allemagne, il nous manque encore un port approprié en Asie de l'Est, car Vladivostok se bloque parfois aussi. Les Chinois sous Mao contrôlent Port Arthur, que nous avons perdu en 1904 lorsque les Japonais nous ont attaqués.\Nos cammarades chinois nous loueraient sûrement ce port, n'est-ce pas? "
+ ne_prc.9.a:0 "Envoyer une demande à Mao!"
+ ne_prc.9.b:0 "Nous n'avons pas besoin de Dalian pour être honnête ..."
+ ##PRC gets request from SOV
+ ne_prc.10.t:0 "L'URSS veut louer Dalian"
+ ne_prc.10.d:0 "Les Soviétiques nous ont récemment envoyé une demande de location de Port Arthur, également connu sous le nom de Dalian. Ils veulent l'avoir pendant environ 10 ans pour maintenir un port d'eau chaude. Sommes-nous d'accord sur ce problème?"
+ ne_prc.10.a:0 "Ils nous ont aidés à combattre les nationalistes, bien sûr!"
+ ne_prc.10.b:0 "Non, nous en avons assez du colonialisme"
+ ##China grants PA; SOV answer
+ ne_prc.11.t:0 "Les Chinois ont acceptés!"
+ ne_prc.11.d:0 "Le président Mao Zedong a annoncé son accord pour un bail de Port Arthur. Dans 10 ans c'est à nouveau le leur ..."
+ ne_prc.11.a:0 "Vive la République Populaire!"
+ ##China denies PA; SOV answer
+ ne_prc.12.t:0 "Mao ne nous donnera pas Port Arthur!"
+ ne_prc.12.d:0 "Our ambassadors, who returned from Beijing, told us that the CPC won't let us lend Dalian from them. From now on, Vladivostok has to suffice..."
+ ne_prc.12.a:0 "Merde les Chinois!"
+ 
+ ##ULTIMATUM FOR DALIAN##
+ ne_prc.13.t:0 "Ultimatum pour Dalian"
+ ne_prc.13.d:0 "Une puissance étrangère occupe le territoire chinois légitime et maintenant le temps est venu de mettre fin au colonialisme une fois pour toutes. Les empires appartiennent au passé et il est de notre devoir de réunir tous les citoyens chinois dans la République populaire. Envoyez un ultimatum à l'occupant de Dalian et forcez-les à partir!"
+ ne_prc.13.a:0 "Ils nous le retourneront volontiers!"
+ ne_prc.13.b:0 "Ils peuvent le garder, nous n'avons plus besoin de sang versé ..."
+ ##Foreign power gets Chinese request; can choose here
+ ne_prc.14.t:0 "La RPC veut récupérer Port Arthur!"
+ ne_prc.14.d:0 "Les autorités chinoises viennent de nous envoyer un ultimatum en indiquant qu'elles sont les propriétaires légitimes de Dalian et que nous devrions donc céder le port à Mao pour une fois pour toutes. Quelle est notre réponse?"
+ ne_prc.14.a:0 "Nous avons de meilleurs ports, rendez Dalian"
+ ne_prc.14.b:0 "Ce port est trop important pour nous!"
+ ##Dalian is returned, Feedback for PRC
+ ne_prc.15.t:0 "[From.GetName] a accepté notre ultimatum pour Dalian"
+ ne_prc.15.d:0 "[From.GetName] a accepté et retourné la réclamation chinoise légitime."
+ ne_prc.15.a:0 "Vive le PCC!"
+ ##Dalian stays occupied, Feedback for PRC
+ ne_prc.16.t:0 "[From.GetName] a décliné notre ultimatum pour Dalian"
+ ne_prc.16.d:0 "Nos ambassadeurs, qui sont revenus de [From.GetCapital], ils disent que l'occupant actuel ne rendra pas volontairement Dalian. C'est scandaleux!..."
+ ne_prc.16.a:0 "Ils paieront pour ça!"
+ ne_prc.16.b:0 "Nous avons mieux à faire. Faites marche arrière"
+ 
+ ##SOVIETS RETURN PA##
+ ne_prc.17.t:0 "Le retour de Port Arthur"
+ ne_prc.17.d:0 "Il y a dix ans, nous avons loué Port Arthur, également connu sous le nom de Dalian aux Chinois pour soulager Vladivostok. Maintenant, les Chinois réclament le retour depuis que le contrat a expiré et que leur armée réclame un port vital. Nous pouvons soit le rendre, comme nous l'avions promis, soit le garder sous contrôle militaire. Il serait stupide de leur part de nous attaquer, mais nous pourrions perdre nos bonnes relations avec le PCC."
+ ne_prc.17.a:0 "Une promesse est une promesse!"
+ ne_prc.17.b:0 "Port Arthur sera russe à partir de maintenant. Pour toujours!"
+ ##Feedback China; Soviets agree
+ ne_prc.18.t:0 "[From.GetName] rend Dalian!
+ ne_prc.18.d:0 "Après dix ans de location, Dalian est enfin à nouveau chinois et le sera pour les siècles à venir! [From.GetName] a tenu ses promesses du contrat et a rendu le port hier, bien que plusieurs installations, qui ont été construites pendant l'époque, ont été démontés et ramenés à [From.GetNameDef].\n Néanmoins, [From.GetAdjective] le gouvernement s'est avéré digne de confiance et il y aura sûrement plus de commerce et de coopération à l'avenir!"
+ ne_prc.18.a:0 "Dalian est à nouveau a nous!"
+ ##Feedback China; SOV keeps Dalian
+ ne_prc.19.t:0 "[From.GetName] a rejeté le retour de Dalian!"
+ ne_prc.19.d:0 "Il y a 10 ans, nous avons loué le port d'eau chaude vital Dalian, ou Port Arthur, à [From.GetNamedef]. Selon le contrat, nous aurions dû le contrôler depuis la fin du mois dernier, mais les navires de guerre [From.GetName] sont toujours là et ils refusent de reconnaître notre accord. Il semble que notre voisin socialiste nous a bernés et que seule la guerre puisse résoudre ce différend maintenant. Un conflit armé entre nos nations est-il vraiment le seul choix?"
+ ne_prc.19.a:0 "Dalian belongs to us!"
+ ne_prc.19.b:0 "Nous ne pouvons pas nous permetre une guerre maintenant..."
+ 
+ ##PRC DEMANDS FORMER JAPANESE TERRITORY##
+ ne_prc.20.t:0 "Demander les territoires Japonais"
+ ne_prc.20.d:0 "Le Manchukuo, le Mengjiang et l'East Hebei ont tous été perdus pendant la première guerre sino-japonaise en 1931. Bien que le Japon soit aujourd'hui vaincu, d'autres empires pourraient prendre le contrôle des traités de paix et plusieurs millions de Chinois seront à nouveau pris sous le despotisme des régimes étrangers En tant que Chine unique et véritable, nous devons unifier tous les citoyens chinois sous un même drapeau.\nIl est temps de mettre fin à l'administration étrangère. Envoyons des demandes écrites pour récupérer notre territoire!"
+ ne_prc.20.a:0 "Nous avons attendu trop longtemps!"
+ ne_prc.20.b:0 "Nous pourrions être entraînés dans une guerre ..."
+ ##Foreign power gets ultimatum
+ ne_prc.21.t:0 "Mao Zedong exige des terres chinoises!"
+ ne_prc.21.d:0 "Depuis la défaite du Japon et les innombrables conférences de paix qui ont suivi, nous avons réussi à prendre le contrôle de certains territoires de l'ancienne région de Mandchourie et de Menjiang, ce qui nous a permis de prendre pied en Asie de l'Est. Malheureusement, les gens ne sont pas vraiment heureux de notre règle et, peu de temps après, la République populaire de Chine a émis des revendications sur les territoires perdus contre les Japonais. La plupart de nos ministres soutiennent le retour de la Mandchourie mais, en fait, cela mettrait fin à notre présence sur la mer Jaune. D'un point de vue diplomatique, cela pourrait s'avérer être une chance d'un nouvel allié, que ce soit dans le commerce ou les alliances ..."
+ ne_prc.21.a:0 "La Chine a raison; nous n'avons aucune raison d'être là"
+ ne_prc.21.b:0 "Nous nous sommes battus dur pour cela. Jamais!"
+ ##Foreign power returns territory; feedback for PRC
+ ne_prc.22.t:0 "[From.GetName] cède sa partie du nord de la Chine"
+ ne_prc.22.d:0 "Hier [From.GetName] à annoncé de rendre ses possessions territoriales des anciennes fantoche japonaises au Manchukuo, Mengjiang et East Hebei. Alors qu'ils vont perdre des bases et l'accès à la plupart de l'Asie de l'Est, [From.GetName] à convenu que la réunification des personnes a la priorité sur la sécurisation d'une présence autour du globe."
+ ne_prc.22.a:0 "C'était une histoire de temps"
+ ##Foreign power denies return; feedback for PRC
+ ne_prc.23.t:0 "[From.GetName] continuera l'occupation!"
+ ne_prc.23.d:0 "Bien que nous ayons fait plusieurs efforts pour convaincre le gouvernement étranger de réunir la Chine avec son peuple [From.GetNameDef] à refusé notre ultimatum, citant que l'Asie de l'Est est trop importante stratégiquement et des milliers de soldats [From.GetAdjective] sont mort pour.\nLa force militaire est apparemment notre seule option pour libérer notre peuple ..."
+ ne_prc.23.a:0 "Redéployez l'ALP, nous allons à la guerre!"
+ ne_prc.23.b:0 "Nous sommes trop faibles contre [From.GetNameDef]"
+ 
+ 
+ 
+ #################
+ ###OTHER STUFF###
+ #################
+ 
+ 
+ hitler_enraged_desc:0 "Le Führer est maintenant complètement fou et dans RAGE. Steiner n'a pas effectué sa contre-offensive et maintenant le Führer est assis dans son bunker à Berlin. Va-t-il magiquement renverser la faveur de cette guerre ou échouer misérablement?"
+ enraged_hitler:0 "Hitler a vu des jours meilleurs"
+
+ 
+ 
+ ###################
+ ###EVENT MANAGER###
+ ###################
+ 
+ 
+ ne_intro.1.t:0 "La création d'une nouvelle Europe"
+ ne_intro.1.d:0 "Après la défaite de la menace fasciste en Europe, les puissances victorieuses doivent maintenant redessiner les frontières d'un continent dévasté. \n Si vous entrez dans le gestionnaire d'après-guerre, plusieurs options sont disponibles pour créer une Europe historique ou dériver de l'histoire.\nJe suggère fortement de PAUSE le jeu tout en modifiant les frontières du pays!"
+ ne_intro.1.a:0 "Emmenez moi!"
+ ne_intro.1.b:0 "Non merci! Laissez la conférence faire..."
+ ##Manager for Asia
+ ne_intro.3.t:0 "Redessiner la carte de l'Asie"
+ ne_intro.3.d:0 "Les ambitions japonaises dans le Pacifique ont finalement été arrêtées et l'île principale occupées. Maintenant, un nouveau sort attend la Corée, le Siam, plusieurs colonies et le Japon lui-même."
+ ne_intro.3.a:0 "Démmarer le Pacific-Manager "
+ ne_intro.3.b:0 "Non Merci!..."
+ 
+ 
+ 
+ ######################
+ ###SETTINGS###########
+ ######################
+ 
+ 
+ ##Flags and names (file is in NewEurope_Enhanced)
+ ne_settings.1.t:0 "BPWE: Permettre les drapeaux historique et les noms ?"
+ ne_settings.1.d:0 "Grâce à cet événement, vous pouvez activer les drapeaux historiques précis et les noms de pays comme l'Allemagne ou le Japon. De plus, vous pouvez maintenant changer les noms communistes des 14 Républiques Soviétiques pour commencer par République Socialiste Soviétique (RSS). Survoler juste les boutons pour voir la liste complète des changements!"
+ ne_settings.1.a:0 "Améliorez mon gameplay avec les noms et les drapeaux seulement!"
+ ne_settings.1.b:0 "Activez seulement les RSS!"
+ ne_settings.1.c:0 "Les deux!"
+ ne_settings.1.e:0 "Meh, gardez les noms du jeux de base..."
+ 
+ ##OPTIONS: Neutrality settings (file is in NewEurope_Misc)
+ ne_settings.2.t:0 "BPWE: Forcer les pays a être neutre ?"
+ ne_settings.2.d:0 "Actuellement, dans la plupart des jeux, les nations neutres comme la Turquie ou le Japon n'ont aucune difficulté à rejoindre une faction et à cause de cela, il y a maintenant une option de neutralité pour les forcer à rester en dehors. De plus, le Japon créera sa propre faction et attaquera ainsi les Alliés par ses propres moyens.\nJe suggère vraiment de les activer et garder le jeu plus historique pour résoudre quelques problèmes d'IA comme les combats de la Wehrmacht en Asie ..."
+ ne_settings.2.a:0 "Faire des pays neutre!"
+ ne_settings.2.b:0 "Je ne veut pas ces changements!"
+ 
+ ##OPTIONS: Neutrality settings (file is in NewEurope_Misc)
+ ne_settings.3.t:0 "BPWE: URSS et USA"
+ ne_settings.3.d:0 "En raison de l'indécision du créateur du mod envers les noms de pays, vous pouvez maintenant choisir les noms de pays pour les États-Unis et l'URSS. Passez la souris sur les boutons pour voir ce que fait chaque bouton. Gardez à l'esprit que les noms de pays longs peuvent se chevaucher dans les événements des nouvelles, tandis que les versions courtes peuvent sembler étranges sur la map.\nC'est votre choix!"
+ ne_settings.3.a:0 "Les Abbreviations sont meilleurs!"
+ ne_settings.3.b:0 "Les noms long!"
+ ne_settings.3.c:0 "Ne rien changer!"
+ 
+ 
+ 
+ #############################
+ ###EVENT MANAGER MAIN MENU###
+ #############################
+ 
+ 
+ ne.1.t:0 "Post-War Manager"
+ ne.1.d:0 "Vous pouvez maintenant créer une Europe historique ou utiliser certaines des méthodes alternatives de certains pays. Il est possible d'éditer tous les pays impliqués dans la seconde guerre mondiale. \nIMPORTANT: Si vous cliquez sur 'fermer', vous ne pouvez revenir à ce menu qu'avec "event ne.1"!"
+ ne.1.a:0 "Ce charger de ses chiens de fasciste"
+ ne.1.b:0 "Réorganiser le reste de l'Europe" # Récompences de guerre pour les pays victorieux + Récompense pour les pays qui on souffert
+ ne.1.c:0 "Descendez le rideau de fer MAINTENANT!"
+ ne.1.e:0 "Fermer et retourner au jeu"
+ 
+ 
+ 
+ 
+ ##################################
+ ###EVENT MANAGER - AXIS NATIONS###
+ ##################################
+ 
+ 
+ ne.2.t:0 "Les puissances de l'AXE"
+ ne.2.d:0 "Avec Hitler et Mussolini morts, l'Allemagne et l'Italie devront faire face à de graves conséquences pour avoir tué des millions de personnes, un génocide contre les "indésirables" et avoir brutalement occupé tout un continent de Bordeaux à la périphérie de Moscou. Néanmoins, leur population a déjà suffisamment souffert et a besoin de toute urgence de l'aide étrangère. C'est maintenant notre mission d'extirper le fascisme et de faire en sorte que l'Allemagne ou l'Italie ne perturbe plus jamais la paix mondiale ..."
+ ne.2.a:0 "Partition Krautland"
+ ne.2.b:0 "La chute du "Novus Imperium Romanum""   
+ ne.2.c:0 "S'occuper des alliés de l'Allemagne à l'est"
+ ne.2.e:0 "Retour au menu principal"
+ 
+ ne.20.t:0 "Allemagne nazie"
+ ne.20.d:0 "Le Führer est mort et les troupes américaines et soviétiques occupent maintenant chaque centimètre du sol allemand. Plusieurs plans ont été élaborés pour restructurer l'Allemagne. Lequel devrait être utilisé?"
+ ne.20.a:0 "(Historique) La France, le Royaume-Uni, les États-Unis et les Soviétiques méritent tous un bout!"
+ ne.20.b:0 "Les idées de Morgenthau et Roosevelt seraient optimales"
+ ne.20.c:0 "Il devrait y avoir deux Allemagnes pour s'adapter à la division idéologique de l'Europe! (1949)"
+ ne.20.e:0 "Retour au menu de l'AXE"
+ 
+ ne.201.t:0 "Les plans de Morgenthau et Roosevelt"
+ ne.201.d:0 "Le ministre des Finances américain Henry Morgenthau et Franklin Roosevelt ont tous deux publié des plans pour affaiblir l'Allemagne dans un avenir imprévisible. Le «plan Morgenthau» divise l'Allemagne en deux États et une zone internationale, tandis que certains territoires seront cédés à ses voisins. Roosevelt veut diviser l'ancien Troisième Reich en plus d'États comme la Prusse, la Bavière et la Saxe. Quel plan est le plus idéal?"
+ ne.201.a:0 "L'idée de Morgenthau sonne bien"
+ ne.201.b:0 "Le plan de Roosevelt garantira la paix en Europe"
+ ne.201.c:0 "Au diable ces plans (retour au menu de l'Allemagne) ..."
+ 
+ ne.21.t:0 "Royaume d'Italie"
+ ne.21.d:0 "Les Italiens se sont avérés être un fardeau pour l'Allemagne d'Hitler et l'ont entraîné dans plusieurs autres conflits. Dans les derniers jours de la guerre, le propre peuple de Mussolini l'a tué et la domination fasciste sur la péninsule a finalement pris fin. Certaines nations ont déjà exprimé leurs revendications sur le territoire italien, mais nous avons le dernier mot. Que devrait-il arriver en Italie?"
+ ne.21.a:0 "(Historique) Occuper leurs colonies, laissez les Nations Unies gérer Trieste et donner leurs revendications à la Yougoslavie"
+ ne.21.b:0 "Restaurer le territoire et les colonies d'avant-guerre de l'Italie, mais libérer l'Éthiopie"
+ ne.21.c:0 "Réduisez leur taille; Donnez à chaque pays sa revendication!"
+ ne.21.e:0 "Retour au menu de l'AXE"
+ 
+ ne.22.t:0 "Les petites nations de l'Axe"
+ ne.22.d:0 "Les petits pays d'Europe de l'Est rejoignirent l'Axe en 1940 et 1941 pour échapper à la menace soviétique grandissante à l'Est. Au cours des dernières années de la guerre, ils tombèrent très rapidement après que leur sol fut finalement atteint et, en fin de compte, poignardèrent les Allemands en passant du côté des Alliés. \n Plusieurs traités ont été conclus concernant des concessions territoriales. Nous, en tant que vainqueurs de la guerre, pouvons maintenant soit les déclarer nulles et non avenues, les accepter ou faire appliquer nos propres plans ..."
+ ne.22.a:0 "Occupons nous de la Hongrie!"
+ ne.22.b:0 "Les Roumains ont dû abandonner beaucoup de territoire; nous devons jeter un coup d'oeil!"
+ ne.22.c:0 "Redessinez les frontières de la Bulgarie!"
+ ne.22.e:0 "Parlons de l'avenir de la Finlande!"
+ ne.22.f:0 "Retour au menu de l'AXE"
+ 
+ 
+ 
+ ##########################################
+ ###EVENT MANAGER - SMALLER AXIS NATIONS###
+ ##########################################
+ 
+ 
+ ne.221.t:0 "Traiter avec la Hongrie"
+ ne.221.d:0 "La Hongrie a regagné beaucoup de territoire ancien pendant la guerre comme Voïvodine en Serbie, la Transylvanie en Roumanie pendant le deuxième arbitrage de Vienne et quelques territoires du sud quand la Tchécoslovaquie a été découpée par l'Allemagne. Nous décidons maintenant de leurs frontières ..."
+ ne.221.a:0 "Donnez-leur leurs frontières de 1937 et le Burgenland de l'Autriche!"
+ ne.221.b:0 "(Historique) Réduisez leurs taille, les frontières de 1937 seulement!"
+ ne.221.c:0 "Déclarer le 2ème arbitrage de Vienne officiel!"
+ ne.221.e:0 "Pourquoi pas l'Autriche-Hongrie? Cela ne conduira certainement pas à des tensions éthiques ..."
+ ne.221.f:0 "Retour au menu de l'AXE"
+ 
+ ne.222.t:0 "Le destin de la Roumanie"
+ ne.222.d:0 "La Roumanie a perdu, contrairement à la Hongrie, de nombreux États après la Première Guerre mondiale. Nous pouvons soit les laisser garder leurs frontières actuelles ou déclarer plusieurs traités allemands nuls et les refaçonner ..."
+ ne.222.a:0 "(Historique) Ils devraient seulement obtenir la Transylvanie de la Hongrie, rien d'autre!"
+ ne.222.b:0 "Restaurer les frontières d'avant-guerre de la Roumanie à partir de 1937!"
+ ne.222.c:0 "Nous ne leur donnerons aucun territoire"
+ ne.222.e:0 "Retour au menu de l'AXE"
+ 
+ ne.223.t:0 "Une nouvelle Bulgarie"
+ ne.223.d:0 "Les Bulgares ont rejoint l'Axe mais ont seulement participé à l'invasion de la Grèce et ont été plus ou moins forcés de le faire. Cependant, le traité de Craiova leur a donné la Dobrudja de Roumanie, qu'ils ont perdu dans la deuxième guerre balkanique il y a plusieurs décennies. Plusieurs options sont maintenant disponibles: Maintenir le statut quo, redonner Dobrudja aux Roumains ou les laisser même garder la Thrace et la Macédoine ..."
+ ne.223.a:0 "(Historique) Laissez-les garder Dobrudja, rien d'autre"
+ ne.223.b:0 "Déclarez Craiova nul et non avenu!"
+ ne.223.c:0 "La Bulgarie peut conserver les territoires qu'elle revendique"
+ ne.223.e:0 "Retour au menu de l'AXE"
+ 
+ ne.224.t:0 "Négocier l'avenir de la Finlande"
+ ne.224.d:0 "Alors que les Finlandais ont défendu avec succès leur patrie pendant la guerre d'hiver et impressionné le monde, ils ont cependant perdu du terrain dans le Traité de Moscou. Pendant la guerre de continuation, la Finlande a regagné ses territoires perdus mais les a finalement perdus avec l'échec de l'Allemagne à conquérir l'Union soviétique. Tout récemment, plusieurs discussions et débats ont eu lieu pour discuter de la nouvelle position de Fnnland dans ce monde ..."
+ ne.224.a:0 "Les frontières de 1937 devraient les garder heureux"
+ ne.224.b:0 "(Historique) La Finlande reste indépendante, mais doit céder Petsamo, Salla et la Carélie!"
+ ne.224.c:0 "Les Soviétiques peuvent l'avoir. Toute entière"
+ ne.224.e:0 "Retour au menu de l'AXE"
+
+ 
+ 
+ #####################################################
+ ###EVENT MANAGER - VP POWERS AND CONQUERED NATIONS###
+ #####################################################
+ 
+ 
+ ne.3.t:0 "Redessiner le reste de l'Europe"
+ ne.3.d:0 "Au cours de la guerre, plusieurs nations se sont battues jusqu'à la fin et ont dû finalement subir l'occupation. Nous pouvons maintenant les récompenser avec un territoire pour affaiblir les anciens de l'Axe, laissez-les annexer le territoire sur lequel ils ont une revendication ou simplement les libérer. Les puissances victorieuses pourraient aussi être récompensées ..."
+ ne.3.a:0 "Les Britanniques, les Français et les Soviétiques ont le premier mot"
+ ne.3.b:0 "Les nations européennes occupées méritent notre attention"
+ ne.3.c:0 "(Facultatif) Certaines nations neutres n'étaient pas neutres du tout"
+ ne.3.e:0 "Retour au menu principal"
+ 
+ ne.30.t:0 "Les trois grands européens"
+ ne.30.d:0 "Le Royaume-Uni a résisté pendant des années en combattant la Luftwaffe et la Kriegsmarine. Les Français pensaient que les Allemands ne toucheraient plus jamais la Belgique ce qui leurs a coûté une capitulation en 28 jours. Les Soviétiques ont perdu des millions d'hommes et ont énormément souffert en repoussant les envahisseurs Allemands en leur infligeant des coups violents. \n La machine de guerre allemande est après toutes ces années finalement détruite et donc tout espoir pour l'impérialisme Allemand. L'Europe est maintenant un continent libéré mais dévasté. Beaucoup de pays ont besoin d'une aide financière et économique pour revitaliser leur économie et l'aide américaine et soviétique serait reconnaissante. Le nouveau visage de l'Europe, que ce soit dans les frontières, l'idéologie ou l'économie, est maintenant entre les mains de quatre dirigeants ..."
+ ne.30.a:0 "Les Britanniques devraient être récompensés pour leur courage"
+ ne.30.b:0 "La Russie contrôle de larges pans de l'Europe de l'Est, négocions!"
+ ne.30.c:0 "La France pourrait utiliser un certain territoire, en particulier les colonies"
+ ne.30.e:0 "Retourner au menu précédent"
+ 
+ ne.31.t:0 "Le sort des nations occupées par l'Axe Page 1"
+ ne.31.d:0 "La Pologne a été envahie en 1939 parce qu'elle a refusé d'abandonner Dantzig. Les pays du Benelux étaient occupés à contourner la ligne Maginot. L'Autriche devint une partie du Reich en 1938 et la Tchécoslovaquie fut victime de la politique d'apaisement de Chamberlain. Le Danemark a été écrasé en raison de son contrôle entre le nord et la mer Baltique, tandis que la Norvège a été envahie plus tard pour sécuriser le commerce de fer allemand de la Suède. Mussolini a échoué à mener la guerre contre la Grèce et par conséquent forcé l'Allemagne à l'envahir aussi. L'Albanie a été envahie après que le roi Zog ait refusé l'ultimatum italien. Et la Yougoslavie a rejoint à l'origine l'Axe, mais un coup d'Etat a conduit à une coupure diplomatique et donc à une déclaration de guerre allemande. \n Pendant l'occupation, plusieurs troupes de partisans se sont battues courageusement pour chasser l'occupant hors de leur patrie. Avec la défaite de l'Axe, nous pouvons enfin aider à créer un nouvel avenir pour eux."
+ ne.31.a:0 "Nous devons compenser les Polonais!"
+ ne.31.b:0 "Tito et ses hommes se sont battus pour regagner la Yougoslavie, ne les faisons pas attendre!"
+ ne.31.c:0 "L'Albanie sera à nouveau indépendante!"
+ ne.31.e:0 "Page 1/3"
+ ne.31.f:0 "Retourner au menu précédent"
+ 
+ ne.32.t:0 "Le sort des nations occupées par l'Axe 2"
+ ne.32.d:0 "Ceci est la deuxième page présentant la Grèce, l'Espagne Républicaine et le Benelux"
+ ne.32.a:0 ""Les soldats grec, surtout, se sont battu avec le plus de courage!""
+ ne.32.b:0 "Les Espagnols méritent la paix une fois pour toutes ..."
+ ne.32.c:0 "La Belgique, le Luxembourg et les Pays-Bas ne seront pas oubliés"
+ ne.32.e:0 "Page 2/3"
+ ne.32.f:0 "Retourner au menu précédent"
+ 
+ ne.33.t:0 "Le sort des nations occupées par l'Axe 3"
+ ne.33.d:0 "Ceci est la dernière page à traiter avec les Danois, les Norvégiens, les Autrichiens et les Tchèques + Slovaques"
+ ne.33.a:0 "Le Danemark va d'abord attirer notre attention"
+ ne.33.b:0 "La Norvège mérite également la liberté"
+ ne.33.c:0 "Nous devons jeter un oeil en Autriche"
+ ne.33.e:0 "L'avenir de la Tchécoslovaquie est également très important"
+ ne.33.f:0 "Page 3/3"
+ ne.33.g:0 "Retourner au menu précédent"
+ 
+ ne.34.t:0 "Traiter avec les nations neutres"
+ ne.34.d:0 "Les pays suivants sont restés neutres, mais notre puissance à travers une guerre mondiale gagnée nous permet d'ajuster un peu leurs frontières. Bien sûr, ces négociations n'ont pas besoin d'être réalisées, elles sont complètement optionnelles ..."
+ ne.34.a:0 "La Suède a livré du fer à Hitler, punissons-les pour cela!"
+ ne.34.b:0 "La Suisse est restée neutre pendant trop longtemps, cela ne les sauvera pas de notre colère ..."
+ ne.34.c:0 "La Turquie contrôle les Bosphores et nous aussi!"
+ ne.34.e:0 "Retourner au menu précédent"
+ 
+ 
+ 
+ ##################################################
+ ###EVENT MANAGER - THE BIG THREE: ENG, SOV, FRA###
+ ##################################################
+ 
+ 
+ ne.301.t:0 "Le Royaume-Uni"
+ ne.301.d:0 "Le peuple britannique a connu des bombardements, des attaques à la roquette et la crainte d'un éventuel parachutage Allemand. Maintenant que la guerre est enfin terminée, l'Empire britannique est sorti victorieux mais affaibli comme l'une des puissances victorieuses. /n Est-il temps de laisser le soleil se coucher sur l'Empire ou devrait-il étendre encore plus ses territoires d'outre-mer ..."
+ ne.301.a:0 "Juste restaurer les îles britanniques"
+ ne.301.b:0 "L'Irlande du nord devrait retourener a l'Irlande, labrador et terre-neuve au Canada!"
+ ne.301.c:0 "Les Empires sont terminée. Libérez toutes les colonies!"
+ ne.301.e:0 "Retourner au menu précédent"
+ 
+ ne.302.t:0 "Traités avec les Soviétiques"
+ ne.302.d:0 "Tandis que l'Occident était rapidement envahi, le peuple soviétique fut contraint de se battre pour survivre dans une lutte de quatre ans contre les envahisseurs fascistes, un an plus tard. Perdre n'a jamais été une option car cela aurait été votre mort certaine. Après des millions de victimes et des milliers de villages et de villes détruits, les Soviétiques ont fini par renverser la vapeur dans cette guerre d'extermination et ont finalement conduit les Allemands à Berlin. Ils occupent maintenant la Pologne et les Balkans et ont émergé comme une superpuissance avec une armée terrestre géante, une force aérienne efficace et une redoutable production industrielle. Les négociations pourraient venir en leur faveur ..."
+ ne.302.a:0 "(Historique) Donnez aux Soviétiques les territoires qu'ils désirent!"
+ ne.302.b:0 "Chaque territoire qu'ils ont gagné à travers le Pacte est nul!"
+ ne.302.c:0 "Le pays entier est en proie à la corruption et à l'instabilité. Dissoudre l'URSS!"
+ ne.302.e:0 "Démocratiser l'URSS et trouver une nouvelle faction pour tous!"
+ ne.302.f:0 "Retourner au menu précédent"
+ 
+ ne.303.t:0 "Concessions en France"
+ ne.303.d:0 "Alors que tout le monde supposait que la France et l'Allemagne se battraient jusqu'au bout avec des millions de victimes, l'Armée française capitula en 28 jours seulement. Juste en 1944, la France a été libérée par le pouvoir combiné des Alliés, principalement les États-Unis, le Royaume-Uni et le Canada. Après quatre ans d'occupation nazie, il est temps de reconstruire cette nation autrefois prospère. Devrait-il y avoir des changements territoriaux? ..."
+ ne.303.a:0 "(Historique) Assurez-vous de restaurer la France métropolitaine!"
+ ne.303.b:0 "Les Indochinois se révoltent, accordez l'indépendance à l'Asie du Sud-Est!"
+ ne.303.c:0 "Annexer une partie de la Belgique et le Luxembourg, annexer également le Zaïre!"
+ ne.303.e:0 "Retourner au menu précédent"
+ 
+ 
+ 
+ ##############################################
+ ###EVENT MANAGER - CONQUERED NATIONS PAGE 1###
+ ##############################################
+ 
+ 
+ ne.311.t:0 "L'avenir de la Pologne"
+ ne.311.d:0 "Même si les Polonais ont été vaincus en un mois et ont perdu 17% de leur population pendant la guerre, plusieurs d'entre eux se sont rendus au Royaume-Uni et ont combattu les Allemands et les Italiens aux côtés des Britanniques, Français et Américains. Après que les Soviétiques eurent atteint le sol polonais, plusieurs nouvelles armées furent formées pour renforcer le Front de l'Est. L'Etat polonais est maintenant sous la sphère d'influence soviétique et les Russes sont prêts à les indemniser pour la perte humaine et territoriale. Le territoire allemand pourrait être divisé pour cela ..."
+ ne.311.a:0 "(Historique) Créer des frontières artificielles"
+ ne.311.b:0 "Restaurer la Pologne d'avant-guerre, ignorer les Soviets!"
+ ne.311.c:0 "Peut-être une sorte de Commonwealth polonais-lituanien?"
+ ne.311.e:0 "Retourner au menu précédent"
+ 
+ ne.312.t:0 "La nation Yougoslave"
+ ne.312.d:0 "Cet État multiethnique a été défait en une semaine et a finalement connu une politique d'occupation sévère. Au cours de la guerre, les partisans communistes yougoslaves dirigés par Josip Broz Tito entreront dans l'histoire comme les forces souterraines les plus efficaces de la Seconde Guerre mondiale. Avec peu d'aide, Tito a réussi à libérer presque tout le pays et bien qu'ils soient dans la sphère soviétique, la Yougoslavie ne s'est pas soumise à l'URSS. Devraient-ils recevoir un territoire en récompense de leur courage?"
+ ne.312.a:0 "(Historique) Recréez cet état multinational et donnez-leur l'Istrie orientale et Zara!"
+ ne.312.b:0 "Balkanisez-les!"
+ ne.312.c:0 "Unissez-les avec la Bulgarie!"
+ ne.312.e:0 "Retourner au menu précédent"
+ 
+ ne.313.t:0 "Albanie"
+ ne.313.d:0 "Les Albanais sont devenus des victimes de l'impérialisme Italien avant le début de la Seconde Guerre mondiale et ont été occupés assez rapidement après que le roi Zog ait nié l'ultimatum. Maintenant, avec la défaite de l'Italie, le sort de l'Albanie est entre nos mains. Que devrait-il leur arriver?"
+ ne.313.a:0 "(Historique) Accordez-leur l'indépendance ..."
+ ne.313.b:0 "Donnons-leur le Kosovo en récompense de leur courage"
+ ne.313.c:0 "L'annexion italienne est maintenant officielle!"
+ ne.313.e:0 "Retourner au menu précédent"
+ 
+ 
+ 
+ ##############################################
+ ###EVENT MANAGER - CONQUERED NATIONS PAGE 2###
+ ##############################################
+ 
+ 
+ ne.321.t:0 "Négocier avec les Grecs"
+ ne.321.d:0 "La première nation à avoir vaincu un pouvoir de l'Axe était ... la Grèce! Même après que les Italiens aient planifié à fond une offensive massive, Mussolini fut à nouveau repoussé en Albanie. Ce n'est que lorsque l'Allemagne et la Bulgarie ont également déclaré la guerre que cette nation minuscule et courageuse est tombée.\n Ils sont maintenant finalement libérés et attendent une décision de notre part ..."
+ ne.321.a:0 "(Historique) Donnons-leur Rhodes et le Dodécanèse"
+ ne.321.b:0 "L'avant-guerre suffit, le Royaume-Uni prend Rhodes comme base"
+ ne.321.c:0 "Laissez-les réaliser l'idée de Megali et donnez-leur aussi Chypre!"
+ ne.321.e:0 "Retourner au menu précédent"
+ 
+ ne.322.t:0 "Nouvelles frontières pour l'Espagne?"
+ ne.322.d:0 "L'Espagne a déjà énormément souffert dans sa guerre civile de trois ans et la guerre contre les Allemands les a forcés à s'effondrer. Maintenant que nos troupes ont débarqué à Bilbao et sauvé les Espagnols de l'occupation nazie, il est temps de déterminer la nouvelle place de l'Espagne dans ce monde ..."
+ ne.322.a:0 "(Historique) Gardez le Status Quo / fight bordergore (pour l'Espagne républicaine)"
+ ne.322.b:0 "(Facultatif) Donnez-leur Gibraltar"
+ ne.322.c:0 "(Historique) Restaurer l'Espagne franquiste (Ne fonctionne que si Franco a gagné et que l'GCE a été la 1. guerre civile!)"
+ ne.322.e:0 "Retourner au menu précédent"
+ 
+ ne.323.t:0 "Traiter avec les pays du Benelux"
+ ne.323.d:0 "La ligne maginot Française était une condamnation à mort pour ces trois petits pays d'Europe occidentale. Cependant, ils sont libres maintenant et méritent notre jugement pour un nouveau départ juste dans ce monde ..."
+ ne.323.a:0 "(Historique) Ne  rien changer"
+ ne.323.b:0 "Le Zaïre et les Indes Orientales Néerlandaise seront indépendants (pourraient entrer en conflit avec le fait que le Japon les occupe!)"
+ ne.323.c:0 "Unissez-les sous le gouvernement de Luxembourg!"
+ ne.323.e:0 "Retourner au menu précédent"
+ 
+ 
+ 
+ ##############################################
+ ###EVENT MANAGER - CONQUERED NATIONS PAGE 3###
+ ##############################################
+ 
+ 
+ ne.331.t:0 "Un petit pays nommé Danemark"
+ ne.331.d:0 "Pour atteindre la Norvège et fermer la mer Baltique, les Allemands devaient capturer le Danemark et sécuriser Copenhague. Alors que les Danois n'étaient pas de taille pour la machine de guerre allemande, ils ont fait preuve de résistance même si cette guerre n'a duré que quelques heures. Maintenant, ils tiennent encore des colonies comme le Groenland ou l'Islande et il est peut-être temps de leur accorder l'indépendance ..."
+ ne.331.a:0 "(Historique) Libérer le Danemark et accorder l'indépendance à l'Islande!"
+ ne.331.b:0 "Gardez le statu quo"
+ ne.331.c:0 "Donne-leur le Schleswig-Holstein mais cèdez le Groenland au Canada!"
+ ne.331.e:0 "Retourner au menu précédent"
+ 
+ ne.332.t:0 "Petite Suède (Norvège)"
+ ne.332.d:0 "Hitler n'a jamais vraiment voulu attaquer la Norvège comme il voyait en eux d'autres alliés, surtout si l'on considère les pensées racistes du NSDAP. Le minerai de fer livré par Narvik depuis la Suède et une éventuelle invasion britannique modifièrent les plans de la Heeresleitung. L'invasion était coûteuse, surtout pour la Kriegsmarine et obligea 600 000 Allemands à rester là jusqu'à la chute de Berlin.\n SLe gouvernement en exil devrait-il revenir ou y a-t-il d'autres plans pour la Scandinavie?"
+ ne.332.a:0 "(Historique) Il suffit de les libérer"
+ ne.332.b:0 "Créez Danemark-Norvège, juste pour le plaisir!"
+ ne.332.c:0 "Danemark-Norvège est encore trop petit, unisez toute la Scandinavie!"
+ ne.332.e:0 "Retourner au menu précédent"
+ 
+ ne.333.t:0 "L'avenir de l'Autriche"
+ ne.333.d:0 "Même si le Traité de Versailles interdisait strictement une unification entre l'Autriche et l'Allemagne, Hitler a simplement intégré son pays d'origine juste 20 ans plus tard. Plusieurs têtes intelligentes ont déjà dressé quelques plans, on propose même de les diviser comme des plans pour le grand frère. Quel plan devrait être appliqué?"
+ ne.333.a:0 "(Historique) Divisez-les en quatre zones d'occupation!"
+ ne.333.b:0 "Il suffit de les libérer comme un pays neutre, l'Allemagne doit être puni!"
+ ne.333.c:0 "Donnez-leur le Tyrol du Sud et leur accorder l'indépendance"
+ ne.333.e:0 "Retourner au menu précédent"
+ 
+ ne.334.t:0 "Libérer les Tchèques"
+ ne.334.d:0 "Cette foutue guerre aurait pu être terminée en seulement deux ans si les Français et les Britanniques n'avait pas laisser l'Allemagne nazie de prendre ce qu'elle voulait. C'est encore plus fâcheux si l'on considère le fait que les nazis ont pleinement exploité cette dite nation pour nourrir leurs propres demandes. Malheureusement, il n'est pas possible de changer le passé, nous devons maintenant décider très bien pour que la Tchécoslovaquie reste stable ..."
+ ne.334.a:0 "(Historique) Les restaurer, à l'exception de la Ruthénie des Carpates"
+ ne.334.b:0 "Restaurer leurs frontières d'avant-guerre de 1937"
+ ne.334.c:0 "Fondez deux nouvelles nations: la République tchèque et la Slovaquie"
+ ne.334.e:0 "Retourner au menu précédent"
+ 
+ 
+ 
+ #####################################
+ ###EVENT MANAGER - NEUTRAL NATIONS###
+ #####################################
+ 
+ 
+ ne.341.t:0 "Et la Suède?"
+ ne.341.d:0 "Bien que la nation suédoise n'ait rejoint ni les Alliés ni l'Axe, ils ont quand même livré du minerai de fer crucial à l'Allemagne et ont ainsi aidé la machine de guerre allemande. Il n'est pas nécessaire de les toucher mais nous pourrions utiliser cet argument pour remettre en question la neutralité suédoise ..."
+ ne.341.a:0 "(Historique) Ne pas interférer"
+ ne.341.b:0 "Forcez-les à céder un territoire à la Norvège et au Danemark!"
+ ne.341.c:0 "Unissez la Suède avec Aland!"
+ ne.341.e:0 "Retourner au menu précédent"
+ 
+ ne.342.t:0 "Partitionnement de la Suisse?"
+ ne.342.d:0 "Bien que les Suisses auraient certainement dû faire face à une visite du Reich allemand si les Alliés et les Soviétiques étaient partis, cela aurait été très sanglant pour la Wehrmacht. Face à des armes à feu derrière chaque brin d'herbe, des forteresses de montagne et des problèmes d'infrastructure / d'approvisionnement massifs, «l'opération Tannenbaum» se serait avérée être un embarras pour la Wehrmacht «imparable». La Suisse, cependant, a survécu à cette guerre et a maintenu sa neutralité, mais peut-être vaudrait-il mieux les partager entre l'Allemagne, la France et l'Italie? Ce serait une décision radicale sans aucun doute ..."
+ ne.342.a:0 "(Historique) Oubliez TOUTES ces idées!"
+ ne.342.b:0 "Oui, partitionnez-la entre l'Allemagne, la France et l'Italie"
+ ne.342.c:0 "Partitionnez-les, mais laissez les Allemands"
+ ne.342.e:0 "Retourner au menu précédent"
+ 
+ ne.343.t:0 "Demande de territoire de la Turquie?"
+ ne.343.d:0 "Istanbul se trouve sur le détroit de Bosphore et quiconque le contrôle, contrôle la mer Noire et l'accès à des pays comme la Russie, la Bulgarie ou la Roumanie. En ces temps turbulents, des "preuves" pourraient être portées à la charge du gouvernement turc avec des réclamations par ex. collaborationavec l'Axe et éventuellement les forcer à céder le territoire.\nDevrait-on créer ce genre de «preuve» ou le statu quo est-il plus important?"
+ ne.343.a:0 "(Historique) Non, de telles idées ne correspondent pas à nos principes!"
+ ne.343.b:0 "Laissez les Soviétiques avoir leurs revendications sur leurs quatre états autour du détroit!"
+ ne.343.c:0 "Nous n'avons pas besoin de "preuves"! Forcez-les à se soumettre à notre puissance! Partitionnez-les complètement!"
+ ne.343.e:0 "Oubliez!"
+ 
+
+ 
+ ne.4.t:0 "Partition historique de l'Europe"
+ ne.4.d:0 "Bien que les Alliés occidentaux et les Soviétiques aient travaillé ensemble pour vaincre les nazis, il y a toujours eu des relations difficiles depuis la guerre civile russe. Depuis que l'ennemi commun est maintenant vaincu, les premiers signes de «froid» sont de nouveau apparus entre les alliés de la guerre. Au cours des dernières années, la démocratie et le communisme ont libéré l'Europe du fascisme et se sont récemment rencontrés sur l'Elbe. Les Etats-Unis et l'URSS sont désormais les nations les plus puissantes de la planète, alors que le Royaume-Uni doit faire face à d'énormes problèmes économiques et que la France doit reconstruire sa nation déchirée par la guerre. Alors que la France, la Grande-Bretagne et les États-Unis contrôlent encore de vastes pans de l'Europe, la présence des Soviétiques en Europe centrale et orientale est pour eux comme une épine dans le pied. On ne sait pas comment la situation va se développer dans les années à venir, mais il est très probable que l'Europe sera divisée entre deux idéologies ...\n ("Descendez le rideau de fer" ajoute tous les changements de neweurope.1 - neweurope.3 - Si vous ne voulez pas regarder tous les pays. C'est encore plus historique quand vous sélectionnez la "version états-fantoche"!"
+ ne.4.a:0 "Descendez le rideau de fer MAINTENANT (1945)!"
+ ne.4.b:0 "Descendez le Rideau de Fer! (1949 RFA/RDA)"
+ ne.4.c:0 "Descendez le Rideau de Fer! (1949/ fantoches historique)"
+ ne.4.e:0 "Retourner au menu principal"
+ 
+ 
+ 
+ #############################
+ ###MISC EVENTS (E.G. HATAY)###
+ #############################
+ 
+ 
+ 
+ ##HATAY TO TURKEY##
+ ne_misc.1.t:0 "Hatay jeu rejoindre la Turquie"
+ ne_misc.1.d:0 "Une petite province du nord de la Syrie a annoncé son intention de quitter notre colonie. Devrions-nous leur permettre de faire sécession?"
+ ne_misc.1.a:0 "Bien sur!"
+ ne_misc.1.b:0 "Ne les laisser pas partir!"
+ ne_misc.2.t:0 "Hatay nous demande d'être intégré"
+ ne_misc.2.d:0 "Une petite province près de notre frontière en Syrie française veut rejoindre [TUR.GetName] et [FRA.GetNameDef] a déjà donné son feu vert. Que devrions-nous dire à leurs officiels?"
+ ne_misc.2.a:0 "Bienvenue Hatay à bras ouverts!"
+ ne_misc.2.b:0 "Nous n'avons pas besoin d'eux ..."
+ 
+ ##NFL AND LABRADOR TO CANADA##
+ ne_misc.3.t:0 "Retour de Labrador et de Terre-Neuve au Canada"
+ ne_misc.3.d:0 "Nous contrôlons Terre-Neuv et Labrador depuis un certain temps, mais les gens de ces deux territoires nous ont demandé de faire partie du Canada."
+ ne_misc.3.a:0 "Bon, laissez-nous céder Terre-Neuve et Labrador au Canada"
+ ne_misc.3.b:0 "Non, Terre-Neuve et Labrador ne partirons jamais!"
+ ##Return is allowed
+ ne_misc.4.t:0 "[From.GetName] nous rend Labrador et Terre-Neuve!"
+ ne_misc.4.d:0 "[From.GetNameDef] nous a cédé Labrador et Terre-Neuve. Les gens seront maintenant pleinement intégrés à la culture canadienne!"
+ ne_misc.4.a:0 "Des bâtons de hockey pour tout le monde!"
+ ##Return is denied!
+ ne_misc.5.t:0 "[From.GetName] refuse de laisser Terre-Neuve-et-Labrador partir!"
+ ne_misc.5.d:0 "Bien que Terre-Neuve et Labrador détienne une importante minorité canadienne, le gouvernement de [From.GetAdjective] les a forcés à rester contre la volonté du peuple. Leurs actions ne seront jamais justifiées. "
+ ne_misc.5.a:0 "Nous sommes désolés pour vous les gars!"
+ 
+ ##LEND LEASE REQUEST##WORK
+ ne_misc.6.t:0 "Demander un prêt-bail?"
+ ne_misc.6.d:0 "Nous sommes maintenant en guerre depuis plusieurs semaines et notre stock est négatif. Des milliers d'armes manquent, nous devons passer à des chars plus vieux et plus vulnérables et il n'y a pas assez de camions pour transporter notre approvisionnement.\nBref, notre situation est sombre mais beaucoup de nos conseillers suggèrent de demander de l'aide à l'un des grands pouvoirs, certains supposent même que nous pourrions perdre sans leur aide! Puisque nous partageons une idéologie similaire, ils pourraient voir en nous un allié potentiel et n'hésiteraient pas à nous armer et à envoyer des missions militaires. De plus, il semble n'y avoir aucun inconvénient et nous pourrions avoir l'avantage après que les navires [From.getAdjective] soit arrivé..."
+ ne_misc.6.a:0 "L'aide est toujours appréciée!"
+ ne_misc.6.b:0 "Nous pouvons finir comme etat satellite par la suite ..."
+ ##Major gets event
+ ne_misc.7.t:0 "[From.GetName] nous demande de fournir prêt-bail"
+ ne_misc.7.d:0 "Un autre pays, à savoir le [From.GetName]"
+ ne_misc.7.a:0 "Nous pouvons mettre de coté quelque chose à coup sûr!"
+ ne_misc.7.b:0 "Donnez-leur une bonne quantité d'armes à feu!"
+ ne_misc.7.c:0 "Ils doivent gagner la guerre; soutien maximal!"
+ ne_misc.7.e:0 "Nous ne sommes pas en mesure d'aider ..."
+ 
+ ##tag = MINOR, you get ll
+ ne_misc.8.t:0 "[From.GetName] a accepté!"
+ ne_misc.8.d:0 "[From.GetLeader] vient d'accepter notre demande de nous donner un prêt-bail! Cela peut être un tournant et notre clé pour la victoire sur notre ennemi, mais nous ne sommes pas autorisés à nous reposer encore.\nPour remercier les [From.GetName], nous devrions travailler pour une coopération plus étroite avec eux une fois la guerre gagnée et peut-être devenir leurs alliés!"
+ ne_misc.8.a:0 "Nous serons toujours reconnaissant, [From.GetLeader]!"
+ ##tag = MINOR, You are screwed
+ ne_misc.9.t:0 "[From.GetName] refuse de nous aider!"
+ ne_misc.9.d:0 "Même si [From.GetName] est l'une des nations les plus riches et les plus fortes du monde, apparemment ils ne peuvent pas épargner des armes pour nous pour vaincre notre ennemi mortel. Maintenant il est temps d'exécuter le «Plan B», autrement dit nous devons tout faire seul: Convertir chaque partie de l'industrie en production militaire, permettre seulement des opérations défensives, réduire l'âge du recrutement et laisser nos machines de propagande fonctionner 24 heures sur 24.\nNous sommes seuls et c'est un moment crucial dans l'histoire de notre pays ..."
+ ne_misc.9.a:0 "[From.GetLeader] devrait aller en enfer!"
+ 
+ ##SOVIET PUPPETS GET SSR##
+ ne_misc.10.t:0 "Coopération plus étroite avec l'URSS"
+ ne_misc.10.d:0 "Cet événement déclenche l'ensemble des 14 RSS, qui sont aussi fantoche de l'URSS. Si vous acceptez, la couleur de votre pays passera à une tonalité similaire à l'URSS et votre nom deviendra "RSS 'adjectif de pays'", écrasant ainsi le paramètre de configuration de ce mod. C'est ce que vous voulez?"
+ ne_misc.10.a:0 "Oui"
+ ne_misc.10.b:0 "Non"
+ ##Soviet response
+ ne_misc.11.t:0 "[From.GetName] veut travailler avec nous!"
+ ne_misc.11.d:0 "Un de nos satellite a dit à nos ambassadeurs qu'ils voulaient travailler plus étroitement avec nous. Beaucoup de nos experts y voient un pas vers l'intégration dans notre Union, même si cela pourrait être encore loin.\n\nEXPLICATION: Un de vos satellite RSS vous a envoyé cet événement et si vous l'acceptez, sa couleur sera similaire à la vôtre et son nom deviendra "RSS -adjectif de pays-". Vos réglages concernant les noms SSR seront ainsi écrasés."
+ ne_misc.11.a:0 "Nous leur souhaitons la bienvenue!"
+ ne_misc.11.b:0 "Nous leur souhaitons la bienvenue! (Change le nom en RSFSR)"
+ ne_misc.11.c:0 "Cela n'arrivera pas!"
+ 
+ ##FOUNDING OF WARSAW PACT##
+ ne_wp.1.t:0 "Fondation d'une nouvelle alliance?"
+ ne_wp.1.d:0 "Avec la défaite des fascistes, ce n'est qu'une question de temps avant que les capitalistes essaient aussi de nous abattre. Nous avons libéré plusieurs pays sur notre chemin vers Berlin et montré à leurs peuples la véritable voie du communisme. Maintenant, il serait sage de fonder un nouveau bloc de puissance oriental pour dissuader quiconque d'attaquer la mère patrie. Laissez-nous fonder le "Pacte de Varsovie"!"
+ ne_wp.1.a:0 "Pour la gloire du Socialisme!"
+ ne_wp.1.b:0 "Le Komintern suffira ..."
+ ##Invitation for WP
+ ne_wp.2.t:0 "Le Pacte de Varsovie"
+ ne_wp.2.d:0 "En tant que nation communiste, les Soviétiques nous ont proposé de rejoindre leur nouvelle faction. Si nous acceptons, ils nous protégeront de toute invasion et déclaration de guerre. Cependant, nous sommes également tenus d'aider si Mère Russie est attaquée ..."
+ ne_wp.2.a:0 "Les travailleurs du monde s'unissent!"
+ ne_wp.2.b:0 "Nous devrions rester neutre"
+ ##Country says yes to WP
+ ne_wp.3.t:0 "[From.GetName] rejoint le Pacte!"
+ ne_wp.3.d:0 "[From.GetNameDef] à annoncé qu'il rejoingnait notre cause!"
+ ne_wp.3.a:0 "Bon choix..."
+ ##Country says no to WP
+ ne_wp.4.t:0 "[From.GetName] refuse de rejoindre le Pacte"
+ ne_wp.4.d:0 "[From.GetNameDef] à annoncer vouloir rester seul!"
+ ne_wp.4.a:0 "Nous t'enterrerons!"
+ 
+ ##FOUNDING OF NATO##
+ ne_nato.1.t:0 "L'Organisation du Traité de l'Atlantique Nord"
+ ne_nato.1.d:0 "Les Rouges occupent l'Europe de l'Est et ont sans aucun doute l'ambition de marcher vers l'ouest jusqu'au Portugal. Nous devons de toute urgence protéger nos alliés qui ne sont pas encore tombés sous la terreur du communisme et éventuellement préparer une croisade contre les bolcheviks. Nos ministres soutiennent l'idée d'une nouvelle faction dirigée par les Etats-Unis pour protéger le reste du monde contre la Menace Rouge. Que dites-vous, Monsieur le Président?"
+ ne_nato.1.a:0 "Nous arrêterons la marée rouge!"
+ ne_nato.1.b:0 "Laissez le Royaume-Uni diriger les Alliés; notre alliance actuelle est bien ..."
+ ##FOUNDING OF NATO - UK event/ they're asked##
+ ne_nato.11.t:0 "L'Organisation du Traité de l'Atlantique Nord - Dissoudre les Alliés"
+ ne_nato.11.d:0 "Les États-Unis ont partagé une idée avec nous lors d'une réunion hier. Ils proposent de dissoudre les Alliés et ont plutôt trouvé une nouvelle faction appelée "OTAN" pour combattre la menace du communisme. Si nous sommes d'accord, nous ne serons plus le leader des nations démocratiques dans le monde entier et nous devons accepter le rôle de l'Amérique en tant que superpuissance. Depuis que nous nous sommes battus ensemble contre Hitler, cela a-t-il vraiment de l'importance maintenant?"
+ ne_nato.11.a:0 "Les États-Unis peuvent mener le monde libre"
+ ne_nato.11.b:0 "Jamais. Nous n'abandonnerons aucun pouvoir"
+ ##FOUNDING OF NATO - UK agrees NATO proposal##
+ ne_nato.12.t:0 "Dissoudre les Alliés - Le Royaume-Uni accepte"
+ ne_nato.12.d:0 "Le Royaume-Uni a annoncé la dissolution des Alliés et rejoint notre faction à la place. Ensemble, rien ne peut nous arrêter!"
+ ne_nato.12.a:0 "C'est un grand pas"
+ ##FOUNDING OF NATO - UK refuses US bid##
+ ne_nato.13.t:0 "Dissoudre les Alliés - Le Royaume-Uni refuse"
+ ne_nato.13.d:0 "Les Britanniques corrompus et brisés ne peuvent plus accepter le fait qu'ils ne sont plus capables d'être un Empire et perdront leur pouvoir toutes les heures. Ils ont refusé de dissoudre la faction des «alliés» et nous ont ainsi empêchés de mener le monde libre. Peut-être qu'il est temps d'échapper au bâtiment pourri avant qu'il ne s'effondre ..."
+ ne_nato.13.a:0 "Ces buveur de thé!"
+ ##Invitation for NATO
+ ne_nato.2.t:0 "L'Amérique veut que nous rejoignions l'OTAN"
+ ne_nato.2.d:0 "En tant que démocracie, les Etats-Unis nous ont proposé de rejoindre leur nouvelle faction. Si nous acceptons, ils nous protégeront contre toute invasion communiste et déclaration de guerre. Cependant, nous sommes également tenus d'aider si l'Amérique est attaquée."
+ ne_nato.2.a:0 "Nous avons besoin de la protection de l'Amérique!"
+ ne_nato.2.b:0 "Les communistes ne nous dérangent pas, laissent seules les guerres mondiales ..."
+ ##Country says yes to NATO
+ ne_nato.3.t:0 "[From.GetName] rejoint l'OTAN!"
+ ne_nato.3.d:0 "[From.GetNameDef] a annoncé de rester à nos côtés!"
+ ne_nato.3.a:0 "Nous allons vous protéger!"
+ ##Country says no to NATO
+ ne_nato.4.t:0 "[From.GetName] ne veut pas joindre notre faction"
+ ne_nato.4.d:0 "Les ambassadeurs [From.GetNameDef] nous a aujourd'hui dit que leur pays ne veut pas être entraîné dans un conflit mondial. Ils ont poliment refusé."
+ ne_nato.4.a:0 "Fous. Ils vont pleurer pour notre aide assez tôt!"
+ 
+ ##CITY RENAMING##
+ ne_city.1.t:0 "Renommer notre nouvelle ville"
+ ne_city.1.d:0 "Nous avons réussi à capturer une ville de notre ancien ennemi et l'avons gagnée pendant la conférence de paix. Pour l'intégrer pleinement dans notre culture, nous devons y installer plus de gens, déporter l'ancienne population et relier la ville à notre réseau économique.\nCommençons avec un nouveau nom!"
+ ne_city.1.a:0 "Bonne idée!"
+ ne_city.1.d1:0 "Nous sommes enfin libérés du communisme, mais il y a une ville dans notre pays, qui porte le nom d'un meurtrier de masse. Renommons cette ville!"
+ ne_city.1.a1:0 "Enfin!"
+ ##Soviets rename after switch to democracy
+ ne_city.2.t:0 "Éliminer le communisme"
+ ne_city.2.d:0 "Nous avons maintenant fait passer notre Russie bien-aimée à une démocratie libérale et libre avec des droits pour chaque homme et chaque femme. Malheureusement, l'héritage du communisme nous hante plus ou moins et maintenant il sera difficile de renverser ses influences viles. Cela prendra du temps, mais nous pouvons déjà commencer et renommer nos villes importantes pour quelque chose de plus approprié ..."
+ ne_city.2.a:0 "Nous avons manqué nos vieux noms de villes ..."
+ ne_city.2.b:0 "Faisons-le mais revenons au nom de Stalingrad!" 
+ ##Kill Stalin, hail Trotsky!
+ ne_city.3.t:0 "Détruire l'héritage de Staline"
+ ne_city.3.d:0 "Avec la défaite des contre-révolutionnaires staliniens, il est temps de nettoyer notre patrie socialiste de tout ce que Staline a créé. Plusieurs officiers et généraux ont été purgés, plusieurs procès ont lieu et des statues de bâtards sont en train d'être détruites. Nous rappellerons à notre pays et au monde entier les dommages qu'un seul homme peut faire à son peuple et veillons ainsi à ne plus jamais le laisser se reproduire.\n De plus, les villes de Stalingrad, Stalinabad et Stalino attendent un nouveau nom ..."
+ ne_city.3.a:0 "Que les gens comme lui ne se lèvent plus jamais!" 
+ ne_city.3.b:0 "Changer le nom de Stalingrad à Tsaritsyn!" 
+ ##Titograd
+ ne_city.11.t:0 "Renommer Podgorica"
+ ne_city.11.d:0 "Plusieurs membres de notre assemblée générale ont proposé de renommer la capitale actuelle du Monténégro, Podgorica, en «Titograd», en l'honneur du maréchal Tito.\nEst-ce que nous transformons cela en réalité?"
+ ne_city.11.a:0 "Uz Maršala Tita!" 
+ ne_city.11.b:0 "Cela ne sera pas nécessaire ..." 
+ ##Titograd to Podgorica
+ ne_city.12.t:0 "Rétablir le nom d'une de nos villes"
+ ne_city.12.d:0 "Nous avons toujours une ville portant le nom du leader du KPJ, Josip Broz Tito. Cette situation dérange encore plusieurs membres de notre propre parti qui demandent un changement de nom.\nQu'en dites-vous? Est-il temps maintenant de détruire définitivement l'héritage de notre passé communiste et de revenir sur ce nom? Ou un tel changement serait-il inutile?"
+ ne_city.12.a:0 "Tito n'a plus sa place dans notre pays!" 
+ ne_city.12.b:0 "Les noms ne veulent rien dire ..." 
+
+
+ 
+ ########################
+ ###UNIFICATION EVENTS###
+ ########################
+ 
+ 
+ ##UNIFICATION OF AUSTRIA##
+ ne_uni_austria.1.t:0 "L'unification de l'Autriche"
+ ne_uni_austria.1.d:0 "Depuis la fin de la guerre, l'Autriche est toujours occupée par la France, les États-Unis, l'URSS et nous. Nous et nos alliés avons réussi à dénazifier le pays et sommes convaincus que l'heure est à la réunification et à l'établissement d'une Autriche indépendante et neutre."
+ ne_uni_austria.1.a:0 "D'accord, demandez à nos alliés de participer"
+ ne_uni_austria.1.b:0 "Vaut mieux pas!"
+ ##France gets event
+ ne_uni_austria.2.t:0 "La Grande-Bretagne nous demande de réunifier l'Autriche"
+ ne_uni_austria.2.d:0 "Les Britanniques proposent l'unification de l'Autriche et nous devrions donc céder le Tyrol au nouvel État Autrichien."
+ ne_uni_austria.2.a:0 "Oui!"
+ ne_uni_austria.2.b:0 "Refuser l'offre"
+ ##USA gets event
+ ne_uni_austria.3.t:0 "Le Royaume-Uni veut mettre fin à l'occupation de l'Autriche"
+ ne_uni_austria.3.d:0 "L'Autriche est occupée par les troupes soviétiques et alliées, le Royaume-Uni a annoncé la fin de l'occupation et la création d'un nouvel Etat Autrichien. Nous perdrions ainsi la Haute-Autriche dans le processus, mais restituerions la terre Autrichienne à son peuple. Sommes-nous d'accord?"
+ ne_uni_austria.3.a:0 "Let's do this!"
+ ne_uni_austria.3.b:0 "Nous garderons la Haute-Autriche"
+ ##SOV gets event
+ ne_uni_austria.4.t:0 "Les Britanniques veulent établir l'Autriche"
+ ne_uni_austria.4.d:0 "Depuis la défaite de l'Allemagne, l'Autriche est toujours divisée entre les superpuissances et les vainqueurs de la Seconde Guerre mondiale. Maintenant, les Britanniques veulent créer une Autriche indépendante et neutre pour mettre fin à l'occupation. L'Union soviétique possède encore le Burgenland et la Basse-Autriche. Est-ce qu'on accepte d'abandonner ces états?"
+ ne_uni_austria.4.a:0 "Tant qu'il reste neutre ...!"
+ ne_uni_austria.4.b:0 "Nous ne pouvons pas leur faire confiance pour garder leur mot"
+ ##Occupier gives up territory
+ ne_uni_austria.5.t:0 "[From.GetName] accepte d'abandonner le territoire autrichien!"
+ ne_uni_austria.5.d:0 "[From.GetNameDef] abandonne sa zone d'occupation et la confie à la nouvelle nation autrichienne!"
+ ne_uni_austria.5.a:0 "Splendide!"
+ ##Occupier keeps territory
+ ne_uni_austria.6.t:0 "[From.GetName] ignore notre proposition"
+ ne_uni_austria.6.d:0 "[From.GetNameDef] vient d'annoncer le maintien du sol autrichien sur lequel ils ont actuellement des troupes et ne le rendra donc pas à son propriétaire légitime!"
+ ne_uni_austria.6.a:0 "Mais pourquoi?!"
+ 
+ ##STALIN/TROTSKY NOTES##
+ ne_notes.1.t:0 "La note de [SOV.Getleader]"
+ ne_notes.1.d:0 "L'Allemagne est divisée entre l'Est et l'Ouest. Un rideau de fer est descendu et sépare les familles, les amis et les voisins. La capitale a connu le même sort mais un vrai mur au lieu de la clôture typique se trouve maintenant là. Certains de nos dirigeants ont eu une idée géniale: que se passerait-il si nous pouvions convaincre l'Occident d'unir l'Allemagne de la même manière qu'en Autriche? En tant que zone tampon neutre, l'Allemagne n'a plus aucune chance d'attaquer ses voisins et nos chars ne feront plus face aux ennemis chaque minute! Bien sûr, le peuple allemand serait réuni.\nIl y a juste un problème: Et si les Américains essayaient d'influencer cette Allemagne neutre dans leur zone. La haine pour nous est encore énorme en Allemagne après la dernière guerre. Peu importe, devrions-nous envoyer notre proposition aux puissances occidentales? "
+ ne_notes.1.a:0 "Ça vaut le coup d'essayer ..."
+ ne_notes.1.b:0 "Ils vont décliner malgré tout"
+ ##USA gets event
+ ne_notes.2.t:0 "L'Union Soviétique nous demande de réunir l'Allemagne"
+ ne_notes.2.d:0 "Les ambassadeurs de Moscou nous ont offert l'opportunité de réunir la nation allemande et de la garder neutre en tant que zone tampon entre nos deux blocs. Cela permettrait d'une part d'atténuer la guerre froide et de réunir les familles et les amis, mais nous risquons aussi de perdre une influence complète de l'Allemagne sur l'Union soviétique et, dans le pire des cas, le Pacte de Varsovie. Acceptez-vous cette proposition, Monsieur le Président?"
+ ne_notes.2.a:0 "Je pense que nous pouvons faire confiance à notre ancien allié pour une fois ..."
+ ne_notes.2.b:0 "L'Allemagne est trop importante pour nous!"
+ ##Feedback SOV; USA accepts
+ ne_notes.3.t:0 "[From.GetName] accepte notre offre"
+ ne_notes.3.d:0 "Les ambassadeurs [From.GetNameDef] nous on dit que le président ne voit aucun problème concernant notre idée d'une Allemagne réunifiée!"
+ ne_notes.3.a:0 "Très bien!"
+ ##Feedback SOV; USA declines
+ ne_notes.4.t:0 "[From.GetName] ignore notre offre généreuse"
+ ne_notes.4.d:0 "Tout à l'heure, les Alliés occidentaux ont respectueusement rejeté notre projet de réunir l'Allemagne en tant que zone tampon neutre. L'Allemagne restera divisée comme il semble ..."
+ ne_notes.4.a:0 "Ces capitalistes!"
+ 
+ 
+ 
+ ######################
+ ###PARTITION EVENTS###
+ ######################
+ 
+ 
+ ##FOUNDING OF WEST GERMANY##
+ ne_division_frg.1.t:0 "La fondation de la République fédérale d'Allemagne"
+ ne_division_frg.1.d:0 "L'Allemagne est occupée depuis que nous y avons mis les pieds et, au fil des ans, nos alliés et les États-Unis ont réussi à dénazifier le peuple allemand et à exécuter plusieurs criminels de guerre.\nParce que les Soviétiques n'accepteront jamais une Allemagne unifiée, nous ne pouvons que demander à la France et à la Grande-Bretagne de nous aider à créer une nouvelle nation démocratique pour le peuple allemand ..."
+ ne_division_frg.1.a:0 "Commençons!"
+ ne_division_frg.1.b:0 "L'Allemagne doit encore être occupée"
+ 
+ ##France gets event
+ ne_division_frg.2.t:0 "La fondation de l'Allemagne de l'Ouest"
+ ne_division_frg.2.d:0 "Les Américains nous ont demandé hier d'intégrer notre zone d'occupation actuelle dans la leur et ensuite de créer un allié allemand commun. Apparemment, les Soviétiques ne sont pas intéressés par de telles idées. Nous devons maintenant décider s'il faut laisser cela se produire ou non ..."
+ ne_division_frg.2.a:0 "Je ne vois aucun problème concernant cette idée!"
+ ne_division_frg.2.b:0 "Oui, mais nous gardons la Sarre"
+ ne_division_frg.2.c:0 "C'est scandaleux!"
+ 
+ ##Britsh gets event
+ ne_division_frg.3.t:0 "La fondation de la République Fédérale d'Allemagne"
+ ne_division_frg.3.d:0 "Les Etats-Unis ont annoncé qu'ils abandonneraient leur zone d'occupation et créeraient un Etat allemand loyal pour contrer toute influence soviétique. En conclusion, cela signifie également que la France et notre splendide nation devraient céder le territoire allemand à son peuple légitime. Cependant nous pouvons refuser mais cela ne serait pas rentable ..."
+ ne_division_frg.3.a:0 "Bien sûr, nous accepterons!"
+ ne_division_frg.3.b:0 "Décliner. Nous garderons l'Allemagne du Nord-Est"
+ 
+ ##Feedback USA; positive
+ ne_division_frg.4.t:0 "[From.GetName] accepte d'abandonner sa zone d'occupation allemande!"
+ ne_division_frg.4.d:0 "[From.GetNameDef] abandonne sa zone d'occupation et la remet à la nouvelle République Fédérale!"
+ ne_division_frg.4.a:0 "Très bien!"
+ 
+ ##Feedback USA; France keeps Saarland
+ ne_division_frg.5.t:0 "France est en partie d'accord, mais gardera la Sarre"
+ ne_division_frg.5.d:0 "La République Française vient d'annoncer le maintien de la Sarre mais le retour de la Moselle et du sud du Bade-Wurtemberg en Allemagne"
+ ne_division_frg.5.a:0 "Bien..."
+ 
+ ##Feedback USA; negative
+ ne_division_frg.6.t:0 "[From.GetName] ignore notre proposition"
+ ne_division_frg.6.d:0 "[From.GetNameDef] vient d'annoncer pour garder leur zone d'occupation et a nié tout processus d'unification!"
+ ne_division_frg.6.a:0 "Ils seront tôt ou tard d'accord!"
+ 
+ ##SOV will found the gdr here!
+ ne_division_frg.7.t:0 "Fondation de la "République Démocratique Allemande"""
+ ne_division_frg.7.d:0 "Les puissances occidentales ont, après un long débat, mis fin à leur occupation et créé un État fantoche allemand, la «République Fédérale d'Allemagne». Le Politburo avait aussi des plans pour un satellite allemand depuis un moment et la plupart des gens croient qu'il est temps de créer une nouvelle nation allemande socialiste. Alors, établissons-nous enfin la "République Démocratique Allemande"?"
+ ne_division_frg.7.a:0 "Oui, un autre allié est toujours le bienvenu!"
+ ne_division_frg.7.b:0 "Oui, mais installez un gouvernement loyal!"
+ ne_division_frg.7.c:0 "L'Allemagne de l'Est doit rester occupée ..."
+ 
+ ##Saarland return
+ ne_saar.1.t:0 "Le retour de la Sarre"
+ ne_saar.1.d:0 "Le gouvernement des États-Unis et du Royaume-Uni nous a exhortés à finalement rendre la Sarre. Est-il vraiment temps de rendre notre petit satellite aux Allemands?"
+ ne_saar.1.a:0 "Bien, ils peuvent l'avoir ..."
+ ne_saar.1.b:0 "Non! La Sarre restera française!"
+ 
+ ##Creating the Saarland (if not already) (NEEDS LOC)
+ ne_saar.2.t:0 "Faire de la Sarre un état fantoche"
+ ne_saar.2.d:0 "La Sarre, une petite zone autour de la Sarre, est une position essentielle en Allemagne et appartient actuellement à notre zone d'occupation. Plusieurs ministres ont exprimé leur opinion sur la création d'un État fantoche séparé pour faciliter le travail d'administration des autres États que nous avons actuellement. Monsieur, quelle est votre opinion?"
+ ne_saar.2.a:0 "Pourquoi pas?"
+ ne_saar.2.b:0 "Ils restent une partie de notre zone d'occupation."
+ 
+ ##DIVISION OF JAPAN##
+ ##USA asks other occupiers to give up occupation. SOV can decline or not be invited. They can then found their own Japan and ask PRC, or PRC can give up territory voluntarily
+ ne_division_jap.1.t:0 "Un Japon démocratique?"
+ ne_division_jap.1.d:0 "Nous occupons le Japon depuis plusieurs mois et nous avons réussi à libérer les Japonais de leur fanatisme. Nos ministres pensent qu'un nouveau Japon est attendu depuis longtemps et nous devons recréer l'îles. Demandons à nos alliés de participer!"
+ ne_division_jap.1.a:0 "Envoyez les lettres!"
+ ne_division_jap.1.b:0 "Demandez seulement à nos alliés démocratiques, nous ne pouvons pas faire confiance aux Soviétiques"
+ ne_division_jap.1.c:0 "Ils ne méritent pas la liberté pour ce qu'ils ont fait"
+ 
+ #SOV gets response (option a)
+ ne_division_jap.2.t:0 "Un Japon neutre et libre?"
+ ne_division_jap.2.d:0 "Les États-Unis ont offert à chaque occupant des îles Home japonaises de mettre fin définitivement à l'occupation et de contribuer à la libération d'un nouveau Japon démocratique, libéré du fanatisme et de l'impérialisme. A notre tour, la partie nord de Honshu et tout Hokkaido feront partie de ce Japon, bien que nous puissions garder les îles Kouriles et Sakhaline. Est-ce que nous assistons à la table de négociation?"
+ ne_division_jap.2.a:0 "Il n'y a aucune raison de continuer l'occupation. Rejoignez le plan américain!"
+ ne_division_jap.2.b:0 "Nous ne pouvons pas faire confiance aux capitalistes. Pourquoi ne pas simplement créer notre propre Japon ...."
+ ne_division_jap.2.c:0 "Nous établissons une nouvelle maison pour les Japonais (demander a la République populaire de Chine) ..."
+ ne_division_jap.2.e:0 "Un Japon neutre et démocratique? Quelle blague! Continuez l'occupation!"
+ 
+ #ask the other allies+USSR
+ ne_division_jap.3.t:0 "La fondation d'un nouveau Japon"
+ ne_division_jap.3.d:0 "Les États-Unis ont offert aux occupants des îles Home japonaises de mettre fin définitivement à l'occupation et de contribuer à la libération d'un nouveau Japon démocratique, libéré du fanatisme et de l'impérialisme. Sommes-nous d'accord sur cette proposition et cédons ainsi les morceaux de Japon que nous détenons actuellement au nouveau gouvernement à Tokyo?"
+ ne_division_jap.3.a:0 "Oui, laissez nos soldats rentrer chez eux!"
+ ne_division_jap.3.b:0 "Non, cela n'arrivera pas"
+ 
+ ##PRC is asked
+ ne_division_jap.3.t1:0 "Le sort de Shikoku"
+ ne_division_jap.3.d1:0 "Après le sommet d'hier, il était clair qu'il y avait un malaise entre l'Union et les États-Unis. [SOV.Getleader] a maintenant décidé de proclamer un nouveau Japon socialiste, basé sur leur zone d'occupation. Notre gouvernement est à la croisée des chemins: nous pouvons soit donner Shikoku au satellite américain, au satellite soviétique ou éviter le dilemme et garder le territoire. Nos actions vont maintenant déterminer les relations futures ou les alliances possibles ..."
+ ne_division_jap.3.a1:0 "Avec le plan américain!"
+ ne_division_jap.3.b1:0 "L'occupation va continuer"
+ ne_division_jap.3.c:0 "Renforçons la nouvelle République socialiste!"
+ 
+ ##SOV gets response (option b)
+ ne_division_jap.4.t:0 "Les Américains ne nous font pas confiance!"
+ ne_division_jap.4.d:0 "Hier, toutes les nations qui détiennent un morceau du Japon ont été invitées à discuter de l'avenir d'une nouvelle nation japonaise. Tout sauf nous. Puisque nous aurions bien accepté leur offre, c'est une autre preuve de manque de confiance chez les capitalistes.\nNous avons seulement deux options maintenant: Créer notre propre Japon ou continuer l'occupation ..."
+ ne_division_jap.4.a:0 "Nous avons besoin d'un satellite Japonais!"
+ ne_division_jap.4.b:0 "Nous avons besoin d'un satellite Japonais (demander a la RPC)!"
+ ne_division_jap.4.c:0 "L'occupation va continuer"
+ 
+ ##feedback for the usa (positive)
+ ne_division_jap.5.t:0 "[From.GetName] accepte d'abandonner leur occupation du Japon"
+ ne_division_jap.5.d:0 "Le gouvrnement de [From.GetNameDef] a annoncé l'abandon de sa zone d'occupation sur les îles Home et sa livraison au nouvel Etat japonais!"
+ ne_division_jap.5.a:0 "Grande nouvelle!"
+ 
+ ##feedback for usa, soviets establish own puppet
+ ne_division_jap.6.t:0 "Les Soviétiques créent leur propre fantoche!"
+ ne_division_jap.6.d:0 "[From.GetLeader] vient d'établir un état fantoche hors de leur zone d'occupation. La "République socialiste japonaise" dirigée par Kyuichi Tokuda sera un obstacle majeur à une possible réunification. Une chose est sûre: le Japon sera un champ de bataille sanglant si la troisième guerre mondiale éclate ..."
+ ne_division_jap.6.a:0 "Un rideau de fer est descendu à travers l'Asie"
+ 
+ ##feedback for usa, negative
+ ne_division_jap.7.t:0 "[From.GetName] refuse avec respect notre offre"
+ ne_division_jap.7.d:0 "[From.GetNameDef] a annoncé de garder sa zone d'occupation et a nié tout processus d'unification!"
+ ne_division_jap.7.a:0 "Mince!"
+ 
+ ##feedback for usa, china sides with soviets!
+ ne_division_jap.8.t:0 "La Chine rouge a pris le parti des Soviétiques"
+ ne_division_jap.8.d:0 "Hier, [PRC.GetLeader] et [SOV.GetLeader] ce sont rencontré à Khabarovsk et on décidé d'ajouter Shikoku au Japon du Nord. C'est un désastre et nous avons maintenant une autre frontière à garder sur les îles du Japon!"
+ ne_division_jap.8.a:0 "Damn Chinese!"
+ 
+ ##feedback for ussr, china sides with americans!
+ ne_division_jap.9.t:0 "Communist China cedes territory to the capitalists!"
+ ne_division_jap.9.d:0 "Yesterday, [PRC.GetLeader] and [USA.GetLeader] met in Tokyo and decided to add Shikoku to South Japan. We really have to be worried now about our Asian neighbour..."
+ ne_division_jap.9.a:0 "Camarades?"
+ 
+ ##feedback USSR China gives Shikoku to SRJ
+ ne_division_jap.10.t:0 "Shikoku a été rendu!"
+ ne_division_jap.10.d:0 "Nos ambassadeurs sont de retour avec de bonnes nouvelles. [PRC.GetLeader] vient de signer une déclaration pour rendre leur zone d'occupation, Shikoku, sur les îles à notre République japonaise alliée. Cette étape permettra non seulement de renforcer nos relations, mais aussi de renforcer la RSJ et de créer une autre frontière pour les capitalistes.\nCe ne sera pas long avant que le Japon soit réuni!"
+ ne_division_jap.10.a:0 "C'est bien. Levez nos verres à nos frères chinois!"
+ 
+ 
+ ##DIVSION OF KOREA
+ ##Not implemented yet: Korea division, when global flag korea_partitioned  USA asks -> USSR can decline or accept, when declining: remove previous option and try again
+ ne_division_kor.1.t:0 "Le destin de la Corée"
+ ne_division_kor.1.d:0 "La Corée, une colonie japonaise depuis 1910, est enfin libérée et peut maintenant émerger en tant que nation pour servir son peuple. Il y a juste un petit problème: l'URSS et les USA contrôlent respectivement le Nord et le Sud et tandis que les Rouges veulent voir une nation socialiste qui lutte, les Américains préfèrent avoir un allié en Asie pour arrêter la propagation du communisme. Pour trouver une solution appropriée, nous devrons peut-être diviser la péninsule puisque les deux parties se sont battues dur pour regagner leur morceau de terre ..."
+ ne_division_kor.1.a:0 "Proposer une Corée unie, démocratique et neutre!"
+ ne_division_kor.1.b:0 "Partitionner la Corée le long du 38e parallèle (1950)!"
+ ne_division_kor.1.c:0 "Créer une nouvelle frontière pour les deux Corées (1953)!"
+ ne_division_kor.1.e:0 "Nous ne pouvons pas négocier avec les communistes, garder la péninsule occupée!"
+
+ ##USSR gets event; USA wants united, neutral Korea
+ ne_division_kor.2.t:0 "Une Corée unie et neutre?"
+ ne_division_kor.2.d:0 "Les Etats-Unis viennent de nous envoyer une offre dans laquelle le gouvernement américain propose une Corée neutre et démocratique. Les deux zones d'occupation iront à un nouveau gouvernement à Séoul et promettent également de rester à l'écart des affaires internationales entre nos deux blocs de pouvoir.\nAcceptons-nous cette idée?"
+ ne_division_kor.2.a:0 "Tant que la Corée reste non-alignée ..."
+ ne_division_kor.2.b:0 "Ils finiront par retourner aux capitalistes, non!"
+ 
+ ##USSR gets event; USA wants 1950 border
+ ne_division_kor.3.t:0 "Destin de la Corée - le 38e parallèle"
+ ne_division_kor.3.d:0 "Alors que nos intérêts et ceux des américains s'entrechoquent en Corée, les États-Unis nous présentent une solution formidable pour satisfaire les plans des deux pays. La Corée sera divisée le long du 38e parallèle et créera ainsi deux pays distincts puisque les deux superpuissances ne pourront pas occuper la péninsule pour toujours. Sommes-nous d'accord sur le plan de [USA.GetLeader]?"
+ ne_division_kor.3.a:0 "C'est une bonne solution!"
+ ne_division_kor.3.b:0 "C'est inacceptable"
+ 
+ ##USSR gets event; USA wants 1953 border
+ ne_division_kor.4.t:0 "Le destin de la Corée - deux Corées"
+ ne_division_kor.4.d:0 "La Corée est toujours occupée et de multiples plans ont été conçus pour faire face au pays et à son peuple. À présent les diplomates de [USA.GetLeader] et nos responsables se sont rencontrés à Vladivostok pour discuter d'un nouveau plan proposé par les Alliés occidentaux. L'idée suggérée transformera fondamentalement la péninsule en deux nouveaux pays, une nation socialiste au nord et une Corée du sud de principes capitalistes et «démocratiques» sous la direction américaine. La frontière sera à peu près au 38e parallèle, mais pas une ligne droite, comme ce fut le cas en Syrie et en Irak.\nQuelle sera notre réponse à ce plan de partition?"
+ ne_division_kor.4.a:0 "Cela sonne vraiment bien"
+ ne_division_kor.4.b:0 "Pas question!"
+ 
+ ##USSR gets event; USA wants occupation
+ ne_division_kor.5.t:0 "Destin de la Corée - Les États-Unis continueront l'occupation"
+ ne_division_kor.5.d:0 "Les bellicistes américains viennent d'annoncer de poursuivre leur occupation de la Corée pour l'avenir. Cela va piéger le peuple coréen dans cette partie de la péninsule sous un régime répressif et malheureusement nous ne pouvons pas aider. Devrions-nous au moins fonder une nouvelle nation pour le Nord?"
+ ne_division_kor.5.a:0 "Donnez l'exemple et libérez notre Corée!"
+ ne_division_kor.5.b:0 "Merde les capitalistes!"
+ 
+ ##USA gets response; SOV agrees
+ ne_division_kor.6.t:0 "Destin de la Corée - Les communistes acceptent!"
+ ne_division_kor.6.d:0 "Des nouvelles merveilleuses! [SOV.GetLeader] vient d'annoncer d'être d'accord sur notre idée de quoi faire avec la péninsule coréenne. Notre dernier plan sera maintenant transformé en réalité ..."
+ ne_division_kor.6.a:0 "Un problème de moins..."
+ 
+ ##USA gets response; SOV denies
+ ne_division_kor.7.t:0 "Destin de la Corée - les Soviétiques déclinent notre proposition!"
+ ne_division_kor.7.d:0 "Moscou vient de dire à nos ambassadeurs que notre plan actuel pour la péninsule coréenne est inacceptable pour eux."
+ ne_division_kor.7.a:0 "Peut-être qu'une autre idée correspondra aux intérêts du Kremlin ..."
+
+ 
+ 
+ 
+
+ 
+ #################
+ ###ASIA EVENTS###
+ #################
+ 
+ ##MANAGER FOR ASIA##
+ ne_asia.1.t:0 "Manager pour le Japon et l'Asie"
+ ne_asia.1.d:0 "Il est maintenant possible pour vous de déterminer comment l'Asie devrait ressembler. Rappelez-vous que la plupart des événements chinois vont ce déclencher pour le pays lui-même\nIMPORTANT: Si vous cliquez sur 'fermer', vous ne pouvez revenir à ce menu qu'avec 'event ne_asia.1'!"
+ ne_asia.1.a:0 "Les Japonais doivent payer pour leurs crimes!"
+ ##"The people in the colonies saw that we couldn't protect them; they're revolting!"
+ ne_asia.1.b:0 "PLACEHOLDER, NE CLIQUEZ PAS [MENU FERMER]"
+ ne_asia.1.c:0 "Le peuple coréen a été réprimé pendant trop longtemps ..."
+ ne_asia.1.e:0 "Fermez et revenez au jeu"
+ 
+ ##Fate of Japan
+ ne_asia.2.t:0 "L'avenir du Japon"
+ ne_asia.2.d:0 "Le Japon a capitulé sous la puissance des États-Unis, de l'URSS, de la Grande-Bretagne et de la Chine. Avec leur défaite, les Japonais perdront tous leurs acquis territoriaux depuis l'annexion de la Corée en 1910. Que faire pour s'assurer que les Japonais ne menacent plus jamais l'Asie?"
+ ne_asia.2.a:0 "La République de Chine, l'Union Soviétique, le Royaume-Uni et les Etats-Unis obtiennent tous un morceau à contrôler!"
+ ne_asia.2.b:0 "Il vaut mieux diviser le Japon en un Etat communiste et démocratique ..."
+ ne_asia.2.c:0 "La République populaire de Chine, l'URSS, le Royaume-Uni et les États-Unis les occupent pour l'instant!"
+ ne_asia.2.e:0 "Il vaut mieux diviser le Japon en un Etat communiste et démocratique ..."
+ ne_asia.2.f:0 "Retour au menu principal"
+ 
+ ##Fate of Colonies
+ ##not implemented yet! -> ne_asia.3 is colonies and will be done in the future
+ 
+ ##Fate of Korea
+ ne_asia.4.t:0 "Plans pour la Corée"
+ ne_asia.4.d:0 "La Corée est enfin libérée de la dépendance et de l'occupation japonaises, mais leur indépendance pourrait alimenter un nouveau conflit. Dans les derniers mois de la guerre, les Soviétiques ont occupé la partie nord de la péninsule et avec la capitulation japonaise, l'Amérique a demandé la même chose pour le sud. Cette division idéologique à travers la péninsule doit être résolue d'une manière ou d'une autre."
+ ne_asia.4.a:0 "Divisez la péninsule le long du 38ème parallèle!"
+ ne_asia.4.b:0 "(Historique) L'URSS et les USA devraient continuer le contrôle"
+ ne_asia.4.c:0 "Diminuez les tensions en créant une frontière aléatoire et appliquez la démilitarisation!"
+ ne_asia.4.e:0 "Retour au menu principal"
+
+ 
+ ##1. DPR gets event to declare war on south 2. South is then in panic; make sure to include whitepeace and division check for north
+ 
+ ##KOREAN WAR##
+ ne_korean_war.1.t:0 "Réunir la péninsule"
+ ne_korean_war.1.d:0 "Notre belle nation est divisée en deux et les traîtres américains ont mis en place un Etat fantoche pour prendre le contrôle de la région. Notre nation est jeune et maintenant le moment est venu de réunir le peuple coréen avant qu'il ne soit trop tard et nos frères du sud subiront un lavage de cerveau par la propagande américaine. Nous devons frapper maintenant ... ou jamais!"
+ ne_korean_war.1.a:0 "Libérons nos camarades dans le sud!"
+ ne_korean_war.1.b:0 "La guerre n'a jamais été une option et fait empirer les choses"
+ 
+ ##Event for SK to get prepared
+ ne_korean_war.2.t:0 "Le Nord nous envahit!"
+ ne_korean_war.2.d:0 "Nos observateurs à proximité de la zone démilitarisée signalent des divisions ennemies sur notre territoire! Nous avons déjà perdu quelques petits villages et il ne faudra pas longtemps avant que de gros combats aient lieu! Nos généraux ont mobilisé à la hâte plusieurs bataillons pour retarder l'ennemi aussi longtemps que possible tandis que nos maigres troupes de première ligne tentent de mettre en place des défenses dans les villes et les barrages routiers.\n C'est notre heure la plus sombre et le peuple coréen doit maintenant se tenir dans l'unité pour dissuader les envahisseurs communistes. Montrons à ces bâtards à quel point nous sommes prêts à défendre notre liberté et nos familles!"
+ ne_korean_war.2.a:0 "Evacuez Séoul immédiatement!"
+ 
+ ##Cease fire event: NEEDS GERMAN LOCALISATION
+ ne_korean_war.3.t:0 "La guerre est une impasse!"
+ ne_korean_war.3.d:0 "Il y a quelques mois, nous avons commencé notre offensive dans la moitié sud de la péninsule, mais nous avons finalement été repoussés. Grâce à l'aide chinoise, le front s'est stabilisé autour de l'ancienne frontière et il semble que les deux camps soient épuisés et las de la guerre. Devrions-nous demander un cessez-le-feu pour reconstituer nos forces et planifier de nouvelles offensives? En général, ces choses ne durent pas très longtemps ..."
+ ne_korean_war.3.a:0 "Proposer un cessez-le-feu"
+ ne_korean_war.3.b:0 "La guerre peut encore être gagnée!"
+ 
+ ##South can either accept or deny this proposal
+ ne_korean_war.4.t:0 "Proposition de cessez-le-feu du Nord!"
+ ne_korean_war.4.d:0 "Les deux Corée se battent maintenant depuis des mois et ni nous ni eux n'avons obtenu d'avantages significatifs. Le front ressemble à la Première Guerre mondiale et notre pays est dans la pauvreté; détruit par la guerre. [DPR.GetLeader] nous a envoyé une offre pour un simple cessez-le-feu afin que le peuple coréen puisse probablement échapper à la souffrance pendant quelques semaines. Acceptons-nous?"
+ ne_korean_war.4.a:0 "Nos gens nous remercieront ..."
+ ne_korean_war.4.b:0 "Ils sont presque détruits, pas moyen!"
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

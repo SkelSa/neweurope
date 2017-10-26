@@ -1,0 +1,109 @@
+##neweurope
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_new_europe"
+		texturefile = "gfx/event_pictures/new_europe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_prc_proclamation"
+		texturefile = "gfx/event_pictures/PRC_proclamation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_hitler_dead"
+		texturefile = "gfx/event_pictures/hitler_dead.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Fuhrious"
+		texturefile = "gfx/event_pictures/fuhrious.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_auschwitz"
+		texturefile = "gfx/event_pictures/auschwitz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_germany_partitioned"
+		texturefile = "gfx/event_pictures/germany_partitioned.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_germany_divided"
+		texturefile = "gfx/event_pictures/germany_divided.dds"
+	}
+	
+	##Stalin Notes successful and not both use the same picture!
+	spriteType = {
+		name = "GFX_stalin_notes"
+		texturefile = "gfx/event_pictures/stalin_notes.dds"
+	}
+	
+	##Korea - Summit
+	
+	spriteType = {
+		name = "GFX_korea_1950"
+		texturefile = "gfx/event_pictures/korea_1950.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_korea_1953"
+		texturefile = "gfx/event_pictures/korea_1953.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_korea_occupation"
+		texturefile = "gfx/event_pictures/korea_occupation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_korea_unified"
+		texturefile = "gfx/event_pictures/korea_unified.dds"
+	}
+	
+	
+	##Korean War
+	
+	spriteType = {
+		name = "GFX_korea_war_start"
+		texturefile = "gfx/event_pictures/korea_war_start.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_korea_war_ceasefire"
+		texturefile = "gfx/event_pictures/korea_war_ceasefire.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_korea_war_continues"
+		texturefile = "gfx/event_pictures/korea_war_continues.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_korea_war_dprk"
+		texturefile = "gfx/event_pictures/korea_war_dprk.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_korea_war_rok"
+		texturefile = "gfx/event_pictures/korea_war_rok.dds"
+	}
+	
+	##Warsaw Pact and NATO
+	
+	spriteType = {
+		name = "GFX_nato"
+		texturefile = "gfx/event_pictures/nato.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_warsaw_pact"
+		texturefile = "gfx/event_pictures/warsaw_pact.dds"
+	}
+	
+
+	
+	

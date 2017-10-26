@@ -1,0 +1,574 @@
+﻿#this event will be fleshed out in the future and contain the reunification of austria, korea, germany and japan from both sides. 
+
+add_namespace = ne_uni_austria
+add_namespace = ne_notes
+
+
+#date > 1936.2.1   
+
+##unification of austria: 1. England gets event -> sends to other members and they can agree or decline -> England gets response
+
+
+###AUSTRIA###
+
+##1. England gets an event 
+
+country_event = {
+	id = ne_uni_austria.1
+	title = ne_uni_austria.1.t
+	desc =  ne_uni_austria.1.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger {
+	
+	tag = ENG
+	
+	date > 1942.6.1
+	
+	country_exists = SOV
+	country_exists = ENG
+	country_exists = USA
+	country_exists = FRA
+	
+	NOT {
+		
+		ENG = {
+			has_war_with = SOV
+		}
+		
+		FRA = {
+			has_war_with = SOV
+		}
+		
+		USA = {
+			has_war_with = SOV
+		}
+		
+		}
+		
+	has_global_flag = austria_partitioned	
+		
+	NOT = { country_exists = AUS}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 360
+	}
+
+	option = { # New independent austria
+		name = ne_uni_austria.1.a
+		ai_chance = { factor = 98 }
+		
+		add_political_power = 10
+
+		AUS = { 
+			
+			transfer_state = 758
+						  	
+		}
+
+		
+	FRA = {
+			country_event = {id = ne_uni_austria.2 }
+		}
+		
+	USA = {
+			country_event = {id = ne_uni_austria.3 }
+		}
+		
+	SOV = {
+			country_event = {id = ne_uni_austria.4 }
+		}
+		
+
+		
+	}
+	option = { # NO
+		name = ne_uni_austria.1.b
+		ai_chance = { factor = 2 }
+
+	}
+            
+            	
+	
+}
+
+
+####France response
+
+country_event = {
+	id = ne_uni_austria.2
+	title = ne_uni_austria.2.t
+	desc =  ne_uni_austria.2.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# accept
+	option = { 
+		name = ne_uni_austria.2.a
+		ai_chance = {factor = 98}
+		
+		add_political_power = 20
+		
+	AUS = { 
+			
+			transfer_state = 153
+						  	
+		}	
+		
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.5 }
+		}
+
+	}
+		
+		
+	
+	option = { # Refuse
+		name = ne_uni_austria.2.b
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.6  }
+		}
+
+	}
+            	
+}
+
+
+####USA response
+
+country_event = {
+	id = ne_uni_austria.3
+	title = ne_uni_austria.3.t
+	desc =  ne_uni_austria.3.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# accept
+	option = { 
+		name = ne_uni_austria.3.a
+		ai_chance = {factor = 98}
+		
+		add_political_power = 20
+		
+	AUS = { 
+			
+			transfer_state = 152
+						  	
+		}	
+		
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.5 }
+		}
+
+	}
+		
+		
+	
+	option = { # Refuse
+		name = ne_uni_austria.3.b
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.6  }
+		}
+
+	}
+            	
+}
+
+####Soviet response
+
+country_event = {
+	id = ne_uni_austria.4
+	title = ne_uni_austria.4.t
+	desc =  ne_uni_austria.4.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# accept
+	option = { 
+		name = ne_uni_austria.4.a
+		ai_chance = {factor = 98}
+		
+		add_political_power = 20
+		
+		AUS = { 
+			
+			transfer_state = 4
+			transfer_state = 757
+
+		add_ideas = NE_neutrality
+			
+		}
+		
+		
+		
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.5 }
+		}
+
+	}
+		
+		
+	
+	option = { # Refuse
+		name = ne_uni_austria.4.b
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.6  }
+		}
+
+	}
+            	
+}
+
+##############Feedback for the British
+
+country_event = {
+	id = ne_uni_austria.5
+	title = ne_uni_austria.5.t
+	desc =  ne_uni_austria.5.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Great
+	option = { 
+		name = ne_uni_austria.5.a
+		ENG = {add_opinion_modifier = { target = FROM modifier = accepted_austrian_reunification} } 
+		ENG = {reverse_add_opinion_modifier = { target = FROM modifier = accepted_austrian_reunification} }
+		AUS = {add_opinion_modifier = { target = FROM modifier = accepted_austrian_reunification} } 
+		AUS = {reverse_add_opinion_modifier = { target = FROM modifier = accepted_austrian_reunification} }
+		
+	}
+		
+            	
+}
+
+country_event = {
+	id = ne_uni_austria.6
+	title = ne_uni_austria.6.t
+	desc =  ne_uni_austria.6.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Shit
+	option = { 
+		name = ne_uni_austria.6.a
+		#ROOT = {reverse_add_opinion_modifier = { target = USA modifier = refused_nato} } 
+		ENG = {add_opinion_modifier = { target = FROM modifier = refused_austrian_reunification} }
+		AUS = {add_opinion_modifier = { target = FROM modifier = refused_austrian_reunification} } 		
+
+		
+	}
+		
+            	
+}
+
+
+
+
+
+############STALIN-NOTES##############################################################################################################################################################################################################
+
+##Stalin/Trotsky can ask to reunite Germany. USA will usually deny
+
+##1. SOV can send an event
+
+country_event = {
+	id = ne_notes.1
+	title = ne_notes.1.t
+	desc =  ne_notes.1.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger {
+	
+		tag = SOV
+		
+		date > 1942.6.1
+		
+		SOV = {
+				exists = yes
+				is_puppet = no
+				OR = {
+				has_government = communism
+				has_government = democratic
+				}
+			}
+			
+		USA = {
+				exists = yes
+				is_puppet = no
+				
+				OR = {
+				has_government = democratic
+				has_government = communism
+				}
+				
+				OR = {
+				is_faction_leader = yes 
+				is_in_faction = yes 
+				}
+				
+			}
+
+		NOT {
+			
+			ENG = {
+				has_war_with = SOV
+			}
+			
+			FRA = {
+				has_war_with = SOV
+			}
+			
+			USA = {
+				has_war_with = SOV
+			}
+			
+		}
+			
+		has_global_flag = germany_divided	
+			
+		WGR = {exists = yes}
+		DDR = {exists = yes}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 80
+	}
+
+	option = { # united germany
+		name = ne_notes.1.a
+		ai_chance = { factor = 98 }
+		
+		add_political_power = 25
+
+		
+	USA = {
+			country_event = { days = 2 id = ne_notes.2 }
+		}
+	
+	}
+	
+	option = { # doesn't matter; the capitalists will decline regardless
+		name = ne_notes.1.b
+		ai_chance = { factor = 2 }
+
+
+	}
+            
+            	
+	
+}
+
+###USA gets event and can decide
+
+country_event = {
+	id = ne_notes.2
+	title = ne_notes.2.t
+	desc =  ne_notes.2.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+
+	option = { # united germany
+		name = ne_notes.2.a
+		ai_chance = { factor = 10 
+		modifier = {
+				factor = 100
+				USA = { has_government = communism }
+			}
+		}
+			
+		add_political_power = 30
+
+		
+	SOV = {
+			country_event = { days = 2 id = ne_notes.3 }
+		}
+		
+
+		
+	}
+	option = { # fuck the soviets
+		name = ne_notes.2.b
+		ai_chance = { factor = 90 }
+
+		add_political_power = -40
+		
+	SOV = {
+			country_event = { days = 2 id = ne_notes.4 }
+		}	
+		
+		
+	}
+            
+            	
+	
+}
+
+
+
+
+###############SOV gets response; here it is yes
+
+
+country_event = {
+	id = ne_notes.3
+	title = ne_notes.3.t
+	desc =  ne_notes.3.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = { # united germany is fullfiled
+	
+		name = ne_notes.3.a
+		
+		
+		WGR = { 
+			annex_country = { target = DDR }
+			annex_country = { target = GER }
+			set_capital = 749
+
+			##ensure neutrality	
+			add_ideas = NE_neutrality
+
+
+
+			if = {
+				limit = { is_in_faction_with = ENG}
+				ENG = {remove_from_faction = WGR }
+			}
+
+			if = {
+				limit = { is_in_faction_with = FRA}
+				FRA = {remove_from_faction = WGR }
+			}
+			
+			if = {
+				limit = { is_in_faction_with = SOV}
+				SOV = {remove_from_faction = WGR }
+			}
+			
+			if = {
+				limit = { is_in_faction_with = USA}
+				USA = {remove_from_faction = WGR }
+			}
+
+		}
+
+		add_political_power = 40
+
+		add_opinion_modifier = { target = USA modifier =  accepted_notes}
+		reverse_add_opinion_modifier = { target = USA modifier = accepted_notes}
+		
+		add_opinion_modifier = { target = FRA modifier =  accepted_notes}
+		reverse_add_opinion_modifier = { target = FRA modifier = accepted_notes}
+		
+		add_opinion_modifier = { target = ENG modifier =  accepted_notes}
+		reverse_add_opinion_modifier = { target = ENG modifier = accepted_notes}
+		
+		add_opinion_modifier = { target = WGR modifier =  accepted_notes}
+		reverse_add_opinion_modifier = { target = WGR modifier = accepted_notes}
+		
+		hidden_effect = {
+			news_event = { id = ne_news.7 }
+		}
+		
+
+	}
+		
+}
+         
+
+
+
+#####SOV gets response, here it is NO
+
+country_event = {
+	id = ne_notes.4
+	title = ne_notes.4.t
+	desc =  ne_notes.4.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+
+	option = { # united germany is fullfiled
+	
+		name = ne_notes.4.a
+		
+		
+		add_political_power = -10
+
+		add_opinion_modifier = { target = USA modifier =  refused_notes}
+		reverse_add_opinion_modifier = { target = USA modifier = fooled_us}
+		
+		add_opinion_modifier = { target = FRA modifier =  refused_notes}
+		reverse_add_opinion_modifier = { target = FRA modifier = fooled_us}
+		
+		add_opinion_modifier = { target = ENG modifier =  refused_notes}
+		reverse_add_opinion_modifier = { target = ENG modifier = fooled_us}
+		
+		add_opinion_modifier = { target = WGR modifier =  refused_notes}
+		reverse_add_opinion_modifier = { target = WGR modifier = fooled_us}
+		
+		DDR = {		
+			add_opinion_modifier = { target = USA modifier =  refused_notes}
+			add_opinion_modifier = { target = FRA modifier =  refused_notes}
+			add_opinion_modifier = { target = ENG modifier =  refused_notes}
+			add_opinion_modifier = { target = WGR modifier =  refused_notes}			
+		}
+		
+		hidden_effect = {
+			news_event = { id = ne_news.70 }
+		}
+		
+	}
+
+            
+}

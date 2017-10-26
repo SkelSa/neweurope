@@ -1,0 +1,10 @@
+
+
+#graphical_culture = eastern_european_gfx
+#graphical_culture_2d = eastern_european_2d
+
+graphical_culture = middle_eastern_gfx
+graphical_culture_2d = middle_eastern_2d
+
+color = rgb { 125 90 60 }
+color_ui = rgb { 125 90 60 } #light blue/teal?

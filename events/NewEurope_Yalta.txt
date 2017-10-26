@@ -1,0 +1,994 @@
+﻿#contains the Yalta conference for easier editing
+
+add_namespace = germany
+
+#The Yalta Conference
+
+country_event = {
+	id = germany.118
+	title = germany.118.t
+	desc = germany.118.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	trigger = {
+	
+		#A democratic faction leader whose faction holds at least one German core state while SOV holds another can get this.
+		has_war_with = GER
+		GER = {
+			surrender_progress > 0.85
+		}
+		is_faction_leader = yes
+		#any_state = {
+		#	is_core_of = GER
+		#	controller = {
+		#		is_in_faction_with = ROOT
+		#	}
+		#}
+		has_government = democratic
+		NOT = {
+			tag = SOV
+		}
+		NOT = {
+			has_war_with = SOV
+		}
+		SOV = {
+			is_faction_leader = yes
+		}
+		#any_state = {
+		#	is_core_of = GER
+		#	is_controlled_by = SOV
+		#}
+		NOT = {
+			has_global_flag = had_yalta_conference
+		}
+		##analyze this section
+		NOT = {
+			any_state = {
+				is_core_of = GER
+				controller = {
+					NOT = {
+						tag = GER
+					}
+					is_in_faction = yes
+					NOT = {
+						OR = {
+							is_in_faction_with = ROOT
+							is_in_faction_with = SOV
+						}
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	immediate = {
+		set_global_flag = had_yalta_conference
+		SOV = {
+			save_event_target_as = yalta_partner
+		}
+		ROOT = {
+			save_event_target_as = yalta_origin
+		}
+	}
+
+	option = {
+		name = germany.118.a
+		hidden_effect = {
+			event_target:yalta_partner = {
+				country_event = { days = 1 id = germany.119 }
+			}
+		}
+		effect_tooltip = {
+		
+		##every occupation zone can span over Germany, except Saarland
+		
+		SAA = { 
+	
+			add_state_core = 764	
+		
+		}
+		
+		
+		FOZ = { 
+			
+			add_state_core = 42
+			add_state_core = 754
+			add_state_core = 775
+			add_state_core = 51
+			add_state_core = 750
+			add_state_core = 56
+			add_state_core = 59
+			add_state_core = 58
+			add_state_core = 57
+			add_state_core = 778
+			add_state_core = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 772
+			add_state_core = 50
+			add_state_core = 749
+			add_state_core = 55
+			add_state_core = 744
+			add_state_core = 60
+			add_state_core = 753
+			add_state_core = 64
+			add_state_core = 65
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 764
+			
+			#adding historical claims
+			add_state_claim = 754
+			add_state_claim = 42
+			add_state_claim = 775
+			add_state_claim = 764 #saarland
+				
+
+		}
+		
+		BOZ = { 
+		
+			add_state_core = 42
+			add_state_core = 754
+			add_state_core = 775
+			add_state_core = 51
+			add_state_core = 750
+			add_state_core = 56
+			add_state_core = 59
+			add_state_core = 58
+			add_state_core = 57
+			add_state_core = 778
+			add_state_core = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 772
+			add_state_core = 50
+			add_state_core = 749
+			add_state_core = 55
+			add_state_core = 744
+			add_state_core = 60
+			add_state_core = 753
+			add_state_core = 64
+			add_state_core = 65
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 764
+			
+			#adding historical claims
+			add_state_claim = 750
+			add_state_claim =  51
+			add_state_claim =  57
+			add_state_claim =  56
+			add_state_claim =  59
+			add_state_claim =  58
+			add_state_claim =  778
+
+		}
+		
+		AOZ = { 
+		
+			add_state_core = 42
+			add_state_core = 754
+			add_state_core = 775
+			add_state_core = 51
+			add_state_core = 750
+			add_state_core = 56
+			add_state_core = 59
+			add_state_core = 58
+			add_state_core = 57
+			add_state_core = 778
+			add_state_core = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 772
+			add_state_core = 50
+			add_state_core = 749
+			add_state_core = 55
+			add_state_core = 744
+			add_state_core = 60
+			add_state_core = 753
+			add_state_core = 64
+			add_state_core = 65
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 764
+			
+			#adding historical claims
+			add_state_claim = 52
+			add_state_claim = 53
+			add_state_claim = 50
+			add_state_claim = 54
+			add_state_claim = 55
+			add_state_claim = 772
+			add_state_claim = 749
+			
+			
+
+		}
+		
+		SOZ = { 
+		
+			add_state_core = 42
+			add_state_core = 754
+			add_state_core = 775
+			add_state_core = 51
+			add_state_core = 750
+			add_state_core = 56
+			add_state_core = 59
+			add_state_core = 58
+			add_state_core = 57
+			add_state_core = 778
+			add_state_core = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 772
+			add_state_core = 50
+			add_state_core = 749
+			add_state_core = 55
+			add_state_core = 744
+			add_state_core = 60
+			add_state_core = 753
+			add_state_core = 64
+			add_state_core = 65
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 764
+			
+			##adding historical claims
+			add_state_claim = 62
+			add_state_claim = 61
+			add_state_claim = 64
+			add_state_claim = 753
+			add_state_claim = 65
+			add_state_claim = 60
+			add_state_claim = 744
+
+		}
+		
+		POL = {
+		
+			add_state_core = 66
+			add_state_core = 67
+			add_state_core = 68
+			add_state_core = 63
+			add_state_core = 743
+			add_state_core = 746
+			add_state_core = 765
+			
+		}
+		
+		GER = {
+		
+			remove_state_core  = 66
+			remove_state_core  = 67
+			remove_state_core  = 68
+			remove_state_core  = 63
+			remove_state_core  = 743
+			remove_state_core  = 746
+			remove_state_core  = 765
+		
+		}
+			
+
+		}
+		event_target:yalta_partner = {
+			custom_effect_tooltip = needs_approval
+		}
+	}
+
+	option = {
+		name = germany.118.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+
+#Yalta Conference Follow-up; tag = SOV
+country_event = {
+	id = germany.119
+	title = germany.119.t
+	desc = germany.119.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.119.a
+		
+		##copied over the stuff from the first event
+		
+		SAA = { 
+	
+			add_state_core = 764	
+		
+		}
+			
+		FOZ = { 
+			
+			add_state_core = 42
+			add_state_core = 754
+			add_state_core = 775
+			add_state_core = 51
+			add_state_core = 750
+			add_state_core = 56
+			add_state_core = 59
+			add_state_core = 58
+			add_state_core = 57
+			add_state_core = 778
+			add_state_core = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 772
+			add_state_core = 50
+			add_state_core = 749
+			add_state_core = 55
+			add_state_core = 744
+			add_state_core = 60
+			add_state_core = 753
+			add_state_core = 64
+			add_state_core = 65
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 764
+			
+			#adding historical claims
+			add_state_claim = 754
+			add_state_claim = 42
+			add_state_claim = 775
+			add_state_claim = 764 #saarland
+				
+
+		}
+		
+		BOZ = { 
+		
+			add_state_core = 42
+			add_state_core = 754
+			add_state_core = 775
+			add_state_core = 51
+			add_state_core = 750
+			add_state_core = 56
+			add_state_core = 59
+			add_state_core = 58
+			add_state_core = 57
+			add_state_core = 778
+			add_state_core = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 772
+			add_state_core = 50
+			add_state_core = 749
+			add_state_core = 55
+			add_state_core = 744
+			add_state_core = 60
+			add_state_core = 753
+			add_state_core = 64
+			add_state_core = 65
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 764
+			
+			#adding historical claims
+			add_state_claim = 750
+			add_state_claim =  51
+			add_state_claim =  57
+			add_state_claim =  56
+			add_state_claim =  59
+			add_state_claim =  58
+			add_state_claim =  778
+
+		}
+		
+		AOZ = { 
+		
+			add_state_core = 42
+			add_state_core = 754
+			add_state_core = 775
+			add_state_core = 51
+			add_state_core = 750
+			add_state_core = 56
+			add_state_core = 59
+			add_state_core = 58
+			add_state_core = 57
+			add_state_core = 778
+			add_state_core = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 772
+			add_state_core = 50
+			add_state_core = 749
+			add_state_core = 55
+			add_state_core = 744
+			add_state_core = 60
+			add_state_core = 753
+			add_state_core = 64
+			add_state_core = 65
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 764
+			
+			#adding historical claims
+			add_state_claim = 52
+			add_state_claim = 53
+			add_state_claim = 50
+			add_state_claim = 54
+			add_state_claim = 55
+			add_state_claim = 772
+			add_state_claim = 749
+			
+			
+
+		}
+		
+		SOZ = { 
+		
+			add_state_core = 42
+			add_state_core = 754
+			add_state_core = 775
+			add_state_core = 51
+			add_state_core = 750
+			add_state_core = 56
+			add_state_core = 59
+			add_state_core = 58
+			add_state_core = 57
+			add_state_core = 778
+			add_state_core = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 772
+			add_state_core = 50
+			add_state_core = 749
+			add_state_core = 55
+			add_state_core = 744
+			add_state_core = 60
+			add_state_core = 753
+			add_state_core = 64
+			add_state_core = 65
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 764
+			
+			##adding historical claims
+			add_state_claim = 62
+			add_state_claim = 61
+			add_state_claim = 64
+			add_state_claim = 753
+			add_state_claim = 65
+			add_state_claim = 60
+			add_state_claim = 744
+
+		}
+		
+		POL = {
+		
+			add_state_core = 66
+			add_state_core = 67
+			add_state_core = 68
+			add_state_core = 63
+			add_state_core = 743
+			add_state_core = 746
+			add_state_core = 765
+			
+		}
+		
+		GER = {
+		
+			remove_state_core  = 66
+			remove_state_core  = 67
+			remove_state_core  = 68
+			remove_state_core  = 63
+			remove_state_core  = 743
+			remove_state_core  = 746
+			remove_state_core  = 765
+		
+		}
+
+		hidden_effect = {
+			news_event = { days = 1 id = news.236 }
+		}
+	}
+
+	#soviets decline; other countries gain the possibility to liberate
+	option = {
+		name = germany.119.b
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			create_wargoal = {
+				type = liberate_wargoal
+				target = SOV
+			}
+		}
+		event_target:yalta_origin = {
+			country_event = {
+				id = germany.120
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = liberate_wargoal
+					target = FOZ
+					target = AOZ
+					target = BOZ
+					target = SAA
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = germany.120
+	title = germany.120.t
+	desc = germany.120.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.120.a
+	}
+}
+
+country_event = {
+	id = germany.121
+	title = germany.121.t
+	desc = germany.121.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	trigger = {
+		#Fires for one of the new German states to transfer old German territory.
+		country_exists = GER
+		OR = {
+			country_exists = FOZ
+			country_exists = BOZ
+			country_exists = AOZ
+			country_exists = SOZ
+			
+		}
+		OR = {
+			tag = FOZ
+			tag = BOZ
+			tag = AOZ
+			tag = SOZ
+			
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option ={
+		if = {
+			limit = {
+				country_exists = POL
+			}
+			#Return Polish territory + new cores if they exist
+			every_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_and_controlled_by = GER
+				}
+				POL = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					country_exists = POL
+				}
+			}
+			#Otherwise give SOV Polish cores, if POL doesn't exist
+			every_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_and_controlled_by = GER
+				}
+				SOV = {
+					transfer_state = PREV
+				}
+			}
+		}
+		
+		##BOZ 
+		if = {
+			limit = {
+				country_exists = BOZ
+			}
+			#Give BOZ their cores
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					is_core_of = BOZ
+					is_claimed_by = BOZ 
+				}
+				BOZ = {
+					transfer_state = PREV
+				}
+			}
+		}
+		
+		##AOZ 
+		if = {
+			limit = {
+				country_exists = AOZ
+			}
+			#Give AOZ their cores
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					is_core_of = AOZ
+					is_claimed_by = AOZ 
+				}
+				AOZ = {
+					transfer_state = PREV
+				}
+			}
+		}
+		
+		##FOZ 
+		if = {
+			limit = {
+				country_exists = FOZ
+			}
+			#Give FOZ their cores
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					is_core_of = FOZ
+					is_claimed_by = FOZ 
+				}
+				FOZ = {
+					transfer_state = PREV
+				}
+			}
+		}
+		
+		##SOZ
+		if = {
+			limit = {
+				country_exists = SOZ
+			}
+			#Give SOZ their cores
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					is_core_of = SOZ
+					is_claimed_by = SOZ 
+				}
+				SOZ = {
+					transfer_state = PREV
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						is_puppet_of = SOV
+					}
+				}
+				#If SOV decided to puppet GER in peace, they now get SOZ instead.
+				SOV = {
+					puppet = SOZ
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					is_core_of = CZE
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+							is_core_of = POL
+						}
+					}
+				}
+			}
+			#Give CZE any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+			every_state = {
+				limit = {
+					is_core_of = CZE
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+							is_core_of = POL
+						}
+					}
+				}
+				CZE = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					is_core_of = YUG
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+							is_core_of = POL
+						}
+					}
+				}
+			}
+			#Give YUG any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+			every_state = {
+				limit = {
+					is_core_of = YUG
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+							is_core_of = POL
+						}
+					}
+				}
+				YUG = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = LIT
+				any_state = {
+					is_core_of = LIT
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+							is_core_of = POL
+						}
+					}
+				}
+			}
+			#Give LIT any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+			every_state = {
+				limit = {
+					is_core_of = LIT
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+							is_core_of = POL
+						}
+					}
+				}
+				LIT = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					country_exists = LIT
+				}
+				any_state = {
+					is_core_of = LIT
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+							is_core_of = POL
+						}
+					}
+				}
+			}
+			#Give any LIT cores to SOV if they have been taken in a previous war/focus
+			every_state = {
+				limit = {
+					is_core_of = LIT
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+							is_core_of = POL
+						}
+					}
+				}
+				SOV = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				SOZ = {
+					GER = {
+						has_government = PREV
+					}
+				}
+			}
+			#If GER has changed government, remaining territory is passed to the corresponding new state (WGR or DDR)
+			#SOZ gets rest territory, if GER = communism
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+							is_core_of = POL
+						}
+					}
+				}
+				SOZ = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				BOZ = {
+					GER = {
+						has_government = PREV
+					}
+				}
+			}
+			#See above; BOZ gets rest German territory, if democracy
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+							is_core_of = POL
+						}
+					}
+				}
+				BOZ = {
+					transfer_state = PREV
+				}
+			}
+		}
+		
+		##last remaining territory
+		if = {
+			limit = {
+				any_state = {
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+						}
+					}
+				}
+			}
+			#Any remaining cores go to SOZ, because communism is fun, I pray for no bordergore
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = BOZ
+							is_core_of = AOZ
+							is_core_of = SOZ
+							is_core_of = FOZ
+							is_core_of = SAA
+						}
+					}
+				}
+				SOZ = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+			
+				OR = {
+					country_exists = FOZ
+					country_exists = AOZ
+					country_exists = BOZ
+					country_exists = SOZ
+					country_exists = SAA				
+				}
+	
+			}
+			
+			#Remove GER cores and replace them with claims
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = GER
+					}
+					add_claim_by = GER
+					remove_core_of = GER
+				}
+				
+				if = {				
+					limit = {				
+						5 = { is_claimed_by = GER }					
+					}
+				
+				GER = { remove_state_claim = 5 }			
+				}
+				
+				if = {				
+					limit = {				
+						188 = { is_claimed_by = GER }					
+					}
+				
+				GER = { remove_state_claim = 188 }			
+				}
+				
+			}
+		}
+		
+		##BPWE: set flags for partitioned Germany
+		if = {		
+		limit = {		
+			NOT = { has_global_flag = germany_partitioned }		
+		}
+		
+		set_global_flag = germany_partitioned
+
+		}
+	}
+}

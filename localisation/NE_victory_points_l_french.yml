@@ -1,0 +1,36 @@
+﻿l_french:
+
+ kaliningrad:0 "Kaliningrad"
+ stpetersburg:0 "Saint-Pétersbourg"
+ trotskygrad:0 "Trotskygrad"
+ volgograd:0 "Volgograd"
+ titograd:0 "Titograd"
+ tsaritsyn:0 "Tsaritsyn"
+ donetsk:0 "Donetsk"
+ gdansk:0 "Gdańsk"
+ szczecin:0 "Szczecin"
+ tajikistan:0 "Tadjikistan"
+ dushanbe:0 "Douchanbé" 
+ wroclaw:0 "Wrocław"
+ brest:0 "Brest"
+ vilnius:0 "Vilnius"
+ berlin:0 "Berlin"
+ bonn:0 "Bonn"
+ west_berlin:0 "Berlin Ouest"
+ east_berlin:0 "Berlin Est"
+
+ VICTORY_POINTS_TOOLTIP:0 "§G$NAME$§! victory points = §Y$POINTS$§!"
+ VICTORY_POINTS_13205:0 "Bonn"
+ VICTORY_POINTS_13206:0 "Berlin"
+ VICTORY_POINTS_13207:0 " " ##HAS TO BE EMPTY; IS EAST BERLIN
+ VICTORY_POINTS_3707:0 "Chisinau"
+ VICTORY_POINTS_405:0 "Bad Oeynhausen"
+ VICTORY_POINTS_6542:0 "Baden-Baden"
+ VICTORY_POINTS_12583:0 "Bichkek"
+ VICTORY_POINTS_7376:0 "Phnom Penh"
+ VICTORY_POINTS_1464:0 "Vientiane"
+ VICTORY_POINTS_12333:0 "Achgabat"
+ VICTORY_POINTS_12250:0 "Stalinabad"
+ VICTORY_POINTS_9809:0 "Podgorica"
+ 
+ 

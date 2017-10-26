@@ -1,0 +1,24 @@
+state={
+	id=755
+	name="STATE_755"
+	
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		
+		add_core_of = SWI
+		add_core_of = FRA
+
+	}
+	
+	provinces={
+		3612 6666 6683 9622 11590 
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

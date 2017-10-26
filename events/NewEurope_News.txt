@@ -1,0 +1,1774 @@
+﻿add_namespace = ne_news
+
+
+#startup news event
+news_event = {
+	id = ne_news.1
+	title = ne_news.1.t  #BPWE: Introduction
+	desc = ne_news.1.d
+	picture = GFX_new_europe
+	
+	##experimenting with those two; no need to works as intended!
+	
+	is_triggered_only = yes
+	#fire_only_once = yes
+	
+	major = yes
+
+	immediate = {
+		#	
+	}
+	
+	
+	option = {
+		name = ne_news.1.a  #I understand
+
+		hidden_effect = {			
+			country_event = ne_settings_intro.0
+		}
+		
+	}
+	
+}
+
+news_event = {
+	id = ne_news.2
+	title = ne_news.2.t  #PRC Proclamation
+	desc = ne_news.2.d
+	picture = GFX_prc_proclamation
+	
+	major = yes
+	
+	is_triggered_only = yes
+	#fire_only_once = yes
+	
+	option = {
+		name = ne_news.2.a
+		trigger = { 
+		
+		AND = {	
+		has_government = fascism
+		has_government = neutrality
+		}
+		
+		NOT = {	
+		has_government = communism
+		has_government = democratic
+		}
+			
+		}
+		
+	}
+	
+	option = {
+		name = ne_news.2.b
+
+		trigger {
+		
+		has_government = democratic
+
+		}
+
+		
+	}
+	option = {
+		name = ne_news.2.c
+			
+		trigger {
+		
+		has_government = communism
+
+		}
+
+	}
+	
+	
+	
+	
+}
+
+news_event = {
+	id = ne_news.3
+	title = ne_news.3.t  #Nazi dead
+	desc = ne_news.3.d
+	picture = GFX_hitler_dead
+	
+	major = yes
+	
+	#is_triggered_only = yes
+	#fire_only_once = yes
+	
+	trigger = {
+	
+	
+	NOT = { has_global_flag = hitler_dead}
+	
+	OR {	
+			
+		GER = { has_war_with = SOV }
+		GER = { has_war_with = ENG }
+		GER = { has_war_with = USA }
+		GER = { has_war_with = FRA }
+	
+	}
+	
+	OR {
+		
+		AND {
+		
+		GER = {surrender_progress > 0.60}				
+		749 = { is_controlled_by = SOV }
+		
+		}
+
+		AND {
+		
+		GER = {surrender_progress > 0.60}				
+		749 = { is_controlled_by = USA }
+		
+		}
+
+		AND {
+		
+		GER = {surrender_progress > 0.60}				
+		749 = { is_controlled_by = FRA }
+		
+		}
+		
+		AND {
+		
+		GER = {surrender_progress > 0.60}				
+		749 = { is_controlled_by = ENG }
+		
+		}
+	
+	
+	}
+
+
+		
+	}
+	
+	immediate {
+	
+		hidden_effect = { GER = {  	kill_country_leader = yes 
+					create_country_leader = { name = "Karl Dönitz" desc = "" picture = "Portrait_Germany_Karl_Donitz.dds" expire = "1975.1.1" ideology = nazism traits = { } } 			
+		}
+		
+		set_global_flag = hitler_dead
+	
+	}		
+	
+	}
+	
+	option = {
+		name = ne_news.3.a
+		trigger = { 
+		 
+			OR {	
+				has_government = neutrality
+				has_government = fascism
+			}	
+			
+		}
+	}
+	option = {
+		name = ne_news.3.b
+		
+	trigger = {
+		
+			OR {
+				has_government = democratic
+				has_government = communism
+			}	
+				
+			NOT = {TAG = SOV}
+	}
+		
+	}
+	option = {
+		name = ne_news.3.c
+
+		trigger {	
+			TAG = SOV
+		}
+
+	}
+	
+	option = {
+		name = news.3.e
+		
+		trigger {
+		
+		TAG = GER
+
+		}
+	}
+}
+
+##Führer is in RAGE
+
+news_event = {
+	id = ne_news.4
+	title = ne_news.4.t 
+	desc = ne_news.4.d
+	picture = GFX_Fuhrious
+	
+	major = yes
+	
+	#is_triggered_only = yes
+	#fire_only_once = yes
+	
+	trigger = {
+	
+	NOT = { has_global_flag = hitler_rage}
+		
+	GER = {has_government = fascism}	
+		
+	OR {	
+			
+		GER = { has_war_with = SOV }
+		GER = { has_war_with = ENG }
+		GER = { has_war_with = FRA }
+		GER = { has_war_with = USA }
+
+	}
+	
+	GER = {surrender_progress > 0.35}				
+
+		
+	}
+	
+	immediate {
+	
+		hidden_effect = { GER = {  	kill_country_leader = yes 
+					create_country_leader = { name = "Enraged Hitler" desc = "hitler_enraged_desc" picture = "Portrait_Enraged_Hitler.dds" expire = "1999.1.1" ideology = nazism traits = { enraged_hitler } } 
+
+						}
+		
+			set_global_flag = hitler_rage
+		
+		}		
+	
+	}
+	
+	##rest of the world
+	option = {
+		name = ne_news.4.a
+		trigger = { 
+		 
+		OR {	
+			has_government = neutrality
+			has_government = fascism
+
+		}	
+			
+		}
+	}
+	##Other communists
+	option = {
+		name = ne_news.4.b
+		
+		trigger = {
+		
+		OR {
+			has_government = democratic
+			has_government = communism
+		}	
+			
+		NOT = {TAG = SOV}
+		}
+	}
+	
+	##Soviets
+	option = {
+		name = ne_news.4.c
+
+		trigger {
+		
+		TAG = SOV
+
+		}
+
+	}
+	
+	##Germans
+	option = {
+		name = news.4.e
+		
+		trigger {
+		
+		TAG = GER
+
+		}
+	}
+}
+
+
+
+#Occupation of Germany
+news_event = {
+	id = ne_news.5
+	title = ne_news.5.t  
+	desc = ne_news.5.d
+	picture = GFX_germany_partitioned
+	
+	major = yes
+	
+	trigger = {
+	
+		OR = {		
+			country_exists = SOZ
+			country_exists = AOZ
+			country_exists = FOZ
+			country_exists = BOZ		
+		}
+		
+		#has_global_flag = germany_partitioned
+	
+		NOT = { has_global_flag = occupation_germany}
+	
+	
+	}
+
+	immediate = {
+	
+		set_global_flag = occupation_germany
+	
+	}
+	
+	##generic
+	option = {
+		name = ne_news.5.a
+		trigger = { 
+		
+		#OR = {
+		#	has_government = fascism
+		#	has_government = neutrality
+		#	has_government = communism
+		#	has_government = democratic
+		#}
+		
+		
+		NOT = {
+		
+			tag = WGR
+			tag = DDR
+			tag = SOZ
+			tag = BOZ
+			tag = AOZ
+			tag = FOZ
+			tag = SAA
+			tag = GER
+			tag = SOV
+			tag = USA
+			tag = FRA
+			tag = ENG
+			tag = CAN
+			
+		}
+			
+		}
+		
+	}
+	
+	##capitalist VP
+	option = {
+		name = ne_news.5.b
+
+		trigger {
+		
+			OR = {
+			tag = USA
+			tag = ENG
+			tag = ENG
+			tag = CAN
+			
+			}
+
+		}
+
+		
+	}
+	##soviets
+	option = {
+		name = ne_news.5.c
+			
+		trigger {
+		
+			OR = {
+			tag = SOV					
+			}
+
+		}
+
+	}
+	
+	##germans
+	option = {
+		name = ne_news.5.e
+			
+		trigger {
+		
+			OR = {
+			tag = WGR
+			tag = DDR
+			tag = SOZ
+			tag = BOZ
+			tag = AOZ
+			tag = FOZ
+			tag = SAA					
+			}
+
+		}
+
+	}
+	
+	
+}
+
+
+#Germany is divided
+news_event = {
+	id = ne_news.6
+	title = ne_news.6.t  
+	desc = ne_news.6.d
+	picture = GFX_germany_divided
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	##generic
+	option = {
+		name = ne_news.6.a
+		trigger = { 
+		
+		#OR = {
+		#	has_government = fascism
+		#	has_government = neutrality
+		#	has_government = communism
+		#	has_government = democratic
+		#}
+		
+		
+		NOT = {
+		
+			tag = WGR
+			tag = DDR
+			tag = SOZ
+			tag = BOZ
+			tag = AOZ
+			tag = FOZ
+			tag = SAA
+			tag = GER
+			tag = SOV
+			tag = USA
+			tag = FRA
+			tag = ENG
+			tag = CAN
+			
+		}
+			
+		}
+		
+	}
+	
+	##capitalist VP
+	option = {
+		name = ne_news.6.b
+
+		trigger {
+		
+			OR = {
+			tag = USA
+			tag = ENG
+			tag = ENG
+			tag = CAN
+			
+			}
+
+		}
+
+		
+	}
+	##soviets
+	option = {
+		name = ne_news.6.c
+			
+		trigger {
+		
+			OR = {
+			tag = SOV					
+			}
+
+		}
+
+	}
+	
+	##germans
+	option = {
+		name = ne_news.6.e
+			
+		trigger {
+		
+			OR = {
+			tag = WGR
+			tag = DDR
+			tag = SOZ
+			tag = BOZ
+			tag = AOZ
+			tag = FOZ
+			tag = SAA					
+			}
+
+		}
+
+	}
+	
+	
+}
+
+#Stalin Notes (succeed)
+news_event = {
+	id = ne_news.7
+	title = ne_news.7.t  
+	desc = ne_news.7.d
+	
+	##Alternative description for Trotsky
+	title = {
+		text = ne_news.7.tt
+		trigger = {
+			SOV = {has_completed_focus = SOV_permanent_revolution} }
+		}
+		
+	desc = {
+		text = ne_news.7.dt
+		trigger = {
+			SOV = {has_completed_focus = SOV_permanent_revolution} }
+		}
+	
+	picture = GFX_stalin_notes
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.7.a
+		trigger = { 
+		
+		#OR = {
+		#	has_government = fascism
+		#	has_government = neutrality
+		#	has_government = communism
+		#	has_government = democratic
+		#}
+		
+		
+		NOT = {
+		
+			tag = WGR
+			tag = DDR
+			tag = SOZ
+			tag = BOZ
+			tag = AOZ
+			tag = FOZ
+			tag = SAA
+			tag = GER
+			tag = SOV
+			tag = USA
+			tag = FRA
+			tag = ENG
+			tag = CAN
+			
+		}
+			
+		}
+		
+	}
+	
+	##capitalist VP
+	option = {
+		name = ne_news.7.b
+
+		trigger {
+		
+			OR = {
+			tag = USA
+			tag = ENG
+			tag = ENG
+			tag = CAN
+			
+			}
+
+		}
+
+		
+	}
+	##soviets
+	option = {
+		name = ne_news.7.c
+			
+		trigger {
+		
+			OR = {
+			tag = SOV					
+			}
+
+		}
+
+	}
+	
+	##germans
+	option = {
+		name = ne_news.7.e
+			
+		trigger {
+		
+			OR = {
+			tag = WGR
+			tag = DDR
+			tag = SOZ
+			tag = BOZ
+			tag = AOZ
+			tag = FOZ
+			tag = SAA					
+			}
+
+		}
+
+	}
+	
+	
+}
+
+
+#Stalin Notes (declined)
+#Due to localisation mistakes, this is event ne_news 7.5!
+news_event = {
+	id = ne_news.70
+	title = ne_news.7.t1 
+	desc = ne_news.7.d1
+	picture = GFX_stalin_notes
+	
+	desc = {
+		text = ne_news.7.dt1
+		trigger = {
+			SOV = {has_completed_focus = SOV_permanent_revolution} }
+		}
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.7.a1
+		trigger = { 
+		
+		#OR = {
+		#	has_government = fascism
+		#	has_government = neutrality
+		#	has_government = communism
+		#	has_government = democratic
+		#}
+		
+		
+		NOT = {
+		
+			tag = WGR
+			tag = DDR
+			tag = SOZ
+			tag = BOZ
+			tag = AOZ
+			tag = FOZ
+			tag = SAA
+			tag = GER
+			tag = SOV
+			tag = USA
+			tag = FRA
+			tag = ENG
+			tag = CAN
+			
+		}
+			
+		}
+		
+	}
+	
+	##capitalist VP
+	option = {
+		name = ne_news.7.b1
+
+		trigger {
+		
+			OR = {
+			tag = USA
+			tag = ENG
+			tag = ENG
+			tag = CAN
+			
+			}
+
+		}
+
+		
+	}
+	##soviets
+	option = {
+		name = ne_news.7.c1
+			
+		trigger {
+		
+			OR = {
+			tag = SOV					
+			}
+
+		}
+
+	}
+	
+	##germans
+	option = {
+		name = ne_news.7.e1
+			
+		trigger {
+		
+			OR = {
+			tag = WGR
+			tag = DDR
+			tag = SOZ
+			tag = BOZ
+			tag = AOZ
+			tag = FOZ
+			tag = SAA					
+			}
+
+		}
+
+	}
+	
+	
+}
+
+#################
+##Korea events###
+#################
+
+news_event = {
+	id = ne_news.8
+	title = ne_news.8.t
+	desc = ne_news.8.d
+	picture = GFX_korea_1950
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.8.a
+		trigger = { 
+		
+		#OR = {
+		#	has_government = fascism
+		#	has_government = neutrality
+		#	has_government = communism
+		#	has_government = democratic
+		#}
+		
+		
+		NOT = {
+		
+			
+			tag = DPR
+			tag = KOR
+			tag = SOV
+			tag = USA
+			tag = FRA
+			tag = ENG
+			tag = CAN
+			
+		}
+			
+		}
+		
+	}
+	
+	##capitalist VP
+	option = {
+		name = ne_news.8.b
+
+		trigger {
+		
+			OR = {
+			tag = USA
+			tag = ENG
+			tag = ENG
+			tag = CAN
+			
+			}
+
+		}
+
+		
+	}
+	##soviets
+	option = {
+		name = ne_news.8.c
+			
+		trigger {
+		
+			OR = {
+			tag = SOV					
+			}
+
+		}
+
+	}
+	
+	##koreans
+	option = {
+		name = ne_news.8.e
+			
+		trigger {
+		
+			OR = {
+			tag = KOR
+			tag = DPR
+			}
+
+		}
+
+	}
+	
+}
+
+##1953
+news_event = {
+	id = ne_news.9
+	title = ne_news.9.t
+	desc = ne_news.9.d
+	picture = GFX_korea_1953
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.9.a
+		trigger = { 
+		
+		#OR = {
+		#	has_government = fascism
+		#	has_government = neutrality
+		#	has_government = communism
+		#	has_government = democratic
+		#}
+		
+		
+		NOT = {
+		
+			
+			tag = DPR
+			tag = KOR
+			tag = SOV
+			tag = USA
+			tag = FRA
+			tag = ENG
+			tag = CAN
+			
+		}
+			
+		}
+		
+	}
+	
+	##capitalist VP
+	option = {
+		name = ne_news.9.b
+
+		trigger {
+		
+			OR = {
+			tag = USA
+			tag = ENG
+			tag = ENG
+			tag = CAN
+			
+			}
+
+		}
+
+		
+	}
+	##soviets
+	option = {
+		name = ne_news.9.c
+			
+		trigger {
+		
+			OR = {
+			tag = SOV					
+			}
+
+		}
+
+	}
+	
+	##koreans
+	option = {
+		name = ne_news.9.e
+			
+		trigger {
+		
+			OR = {
+			tag = KOR
+			tag = DPR
+			}
+
+		}
+
+	}
+	
+}
+
+
+##reunified
+news_event = {
+	id = ne_news.11
+	title = ne_news.11.t
+	desc = ne_news.11.d
+	picture = GFX_korea_unified
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.11.a
+		trigger = { 
+		
+		#OR = {
+		#	has_government = fascism
+		#	has_government = neutrality
+		#	has_government = communism
+		#	has_government = democratic
+		#}
+		
+		
+		NOT = {
+
+			tag = DPR
+			tag = KOR
+			tag = SOV
+			tag = USA
+			tag = FRA
+			tag = ENG
+			tag = CAN
+			
+		}
+			
+		}
+		
+	}
+	
+	##capitalist VP
+	option = {
+		name = ne_news.11.b
+
+		trigger {
+		
+			OR = {
+			tag = USA
+			tag = ENG
+			tag = ENG
+			tag = CAN
+			
+			}
+
+		}
+
+		
+	}
+	##soviets
+	option = {
+		name = ne_news.11.c
+			
+		trigger {
+		
+			OR = {
+			tag = SOV					
+			}
+
+		}
+
+	}
+	
+	##koreans
+	option = {
+		name = ne_news.11.e
+			
+		trigger {
+		
+			OR = {
+			tag = DPR
+			tag = KOR
+			}
+
+		}
+
+	}
+	
+}
+
+##STAYS OCCUPIED
+news_event = {
+	id = ne_news.10
+	title = ne_news.10.t
+	desc = ne_news.10.d
+	picture = GFX_korea_occupation
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.10.a
+		trigger = { 
+		
+		#OR = {
+		#	has_government = fascism
+		#	has_government = neutrality
+		#	has_government = communism
+		#	has_government = democratic
+		#}
+		
+			NOT = { tag = KOR }
+			NOT = { tag = DPR }
+			NOT = { tag = SOV }
+			NOT = { is_in_faction_with = SOV }
+			NOT = { tag = ENG }
+			NOT = { is_in_faction_with = ENG }
+
+				
+			
+			
+		}
+		
+	}
+	
+	##capitalist VP
+	option = {
+		name = ne_news.10.b
+
+		trigger {
+		
+			OR = {
+	
+				tag = ENG
+				is_in_faction_with = ENG
+			
+			}
+
+		}
+
+		
+	}
+	##soviets + brother nations
+	option = {
+		name = ne_news.10.c
+			
+		trigger {
+		
+			OR = {
+			tag = SOV
+			is_in_faction_with = SOV
+			}
+
+		}
+
+	}
+	
+	
+}
+
+
+##################
+##korean war######
+#################
+
+##WAR START
+news_event = {
+	id = ne_news.12
+	title = ne_news.12.t
+	desc = ne_news.12.d
+	picture = GFX_korea_war_start
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.12.a
+		trigger = { 
+		
+		NOT = { has_government = communism }
+		NOT = { has_government = democratic}
+		
+		NOT = { tag = KOR }
+		NOT = { tag = DPR }
+		#NOT = { tag = SOV }
+		#NOT = { is_in_faction_with = SOV }
+		#NOT = { tag = ENG }
+		#NOT = { is_in_faction_with = ENG }
+			
+		}
+		
+	}
+	
+	##south koreans
+	option = {
+		name = ne_news.12.b
+			
+		trigger {
+
+			tag = KOR				
+
+		}
+
+	}
+	
+	##communists
+	option = {
+		name = ne_news.12.c
+			
+		trigger {
+		
+			has_government = communism
+
+		}
+
+	}
+	
+	## north koreans
+	option = {
+		name = ne_news.12.e
+			
+		trigger {
+		
+			tag = DPR
+
+		}
+
+	}
+	
+	##capitalist powers
+	option = {
+		name = ne_news.12.f
+
+		trigger {
+		
+			has_government = democratic
+
+		}
+
+		
+	}
+	
+}
+
+
+
+##cease fire successful!
+news_event = {
+	id = ne_news.13
+	title = ne_news.13.t
+	desc = ne_news.13.d
+	picture = GFX_korea_war_ceasefire
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.13.a
+		trigger = { 
+	
+		NOT = { has_government = communism }
+		NOT = { has_government = democratic}
+		
+		NOT = { tag = KOR }
+		NOT = { tag = DPR }
+		#NOT = { tag = SOV }
+		#NOT = { is_in_faction_with = SOV }
+		#NOT = { tag = ENG }
+		#NOT = { is_in_faction_with = ENG }
+			
+		}
+		
+	}
+	
+	##south koreans
+	option = {
+		name = ne_news.13.b
+			
+		trigger {
+
+			tag = KOR
+
+		}
+		
+		KOR = {
+			
+				if = {
+					limit = {
+						KOR = { has_idea = NE_neutrality }
+					}
+				KOR = { remove_ideas = NE_neutrality }
+				}
+			
+			}
+
+	}
+	
+	##communists
+	option = {
+		name = ne_news.13.c
+			
+		trigger {
+		
+			has_government = communism
+
+		}
+
+	}
+	
+	## north koreans
+	option = {
+		name = ne_news.13.e
+			
+		trigger {
+		
+			tag = DPR
+		}
+		
+		DPR = {
+			
+			if = {
+				limit = {
+					DPR = { has_idea = NE_neutrality }
+				}
+			DPR = { remove_ideas = NE_neutrality }
+			}
+
+		}
+
+	}
+	
+	##capitalist powers
+	option = {
+		name = ne_news.13.f
+
+		trigger {
+		
+			has_government = democratic
+
+		}
+
+		
+	}
+	
+}
+
+
+##cease fire failed!
+news_event = {
+	id = ne_news.14
+	title = ne_news.14.t
+	desc = ne_news.14.d
+	picture = GFX_korea_war_continues
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.14.a
+		trigger = { 
+	
+		NOT = { has_government = communism }
+		NOT = { has_government = democratic}
+		
+		NOT = { tag = KOR }
+		NOT = { tag = DPR }
+		#NOT = { tag = SOV }
+		#NOT = { is_in_faction_with = SOV }
+		#NOT = { tag = ENG }
+		#NOT = { is_in_faction_with = ENG }
+			
+		}
+		
+	}
+	
+	##south koreans
+	option = {
+		name = ne_news.14.b
+			
+		trigger {
+
+			tag = KOR				
+
+		}
+
+	}
+	
+	##communists
+	option = {
+		name = ne_news.14.c
+			
+		trigger {
+		
+			has_government = communism
+
+		}
+
+	}
+	
+	## north koreans
+	option = {
+		name = ne_news.14.e
+			
+		trigger {
+		
+			tag = DPR
+
+		}
+
+	}
+	
+	##capitalist powers
+	option = {
+		name = ne_news.14.f
+
+		trigger {
+		
+			has_government = democratic
+
+		}
+
+		
+	}
+	
+}
+
+
+##Korean war end DPRK!
+news_event = {
+	id = ne_news.15
+	title = ne_news.15.t
+	desc = ne_news.15.d
+	picture = GFX_korea_war_dprk
+	
+	major = yes
+	
+	trigger = {
+	
+		has_global_flag = korean_war_dprk
+		
+		NOT = { has_global_flag = news_event_dprk_victory }
+		
+		DPR = {
+		
+			exists = yes
+			controls_state = 525
+		}
+		
+		KOR = {
+		
+			OR = {
+				exists = no
+				has_capitulated = yes
+			}
+			
+		}
+	
+	}
+	
+	immediate = {
+	
+		set_global_flag = news_event_dprk_victory
+	
+	}
+
+	##generic
+	option = {
+		name = ne_news.15.a
+		trigger = { 
+	
+		NOT = { has_government = communism }
+		NOT = { has_government = democratic}
+		
+		NOT = { tag = DPR }
+		#NOT = { tag = SOV }
+		#NOT = { is_in_faction_with = SOV }
+		#NOT = { tag = ENG }
+		#NOT = { is_in_faction_with = ENG }
+			
+		}
+		
+	}
+	
+	##democratic nations
+	option = {
+		name = ne_news.15.b
+			
+		trigger {
+
+			has_government = democratic				
+
+		}
+
+	}
+	
+	##communists
+	option = {
+		name = ne_news.15.c
+			
+		trigger {
+		
+			has_government = communism
+
+		}
+
+	}
+	
+	## north koreans
+	option = {
+		name = ne_news.15.e
+			
+		trigger {
+		
+			tag = DPR
+
+		}
+
+		DPR = {
+			
+				if = {
+					limit = {
+						DPR = { has_idea = NE_neutrality }
+					}
+				DPR = { remove_ideas = NE_neutrality }
+				}
+			
+
+			}
+
+	}
+
+	
+}
+
+
+
+##Korean war end ROK!
+news_event = {
+	id = ne_news.16
+	title = ne_news.16.t
+	desc = ne_news.16.d
+	picture = GFX_korea_war_rok
+	
+	major = yes
+	
+	trigger = {
+	
+		has_global_flag = korean_war_kor
+		
+		NOT = { has_global_flag = news_event_kor_victory }
+		
+		KOR = {
+		
+			exists = yes
+			controls_state = 525
+		}
+		
+		DPR = {
+		
+			OR = {
+				exists = no
+				has_capitulated = yes
+			}
+			
+		}
+	
+	}
+	
+	immediate = {
+	
+		set_global_flag = news_event_kor_victory
+	
+	}
+
+	##generic
+	option = {
+		name = ne_news.16.a
+		trigger = { 
+	
+		NOT = { has_government = communism }
+		NOT = { has_government = democratic}
+		
+		NOT = { tag = KOR }
+		#NOT = { tag = SOV }
+		#NOT = { is_in_faction_with = SOV }
+		#NOT = { tag = ENG }
+		#NOT = { is_in_faction_with = ENG }
+			
+		}
+		
+	}
+	
+	##democratic nations
+	option = {
+		name = ne_news.16.b
+			
+		trigger {
+
+			has_government = democratic				
+
+		}
+
+	}
+	
+	##communists
+	option = {
+		name = ne_news.16.c
+			
+		trigger {
+		
+			has_government = communism
+
+		}
+
+	}
+	
+	## south koreans
+	option = {
+		name = ne_news.16.e
+			
+		trigger {
+		
+			tag = KOR
+
+		}
+		
+		KOR = {
+			
+			if = {
+				limit = {
+					KOR = { has_idea = NE_neutrality }
+				}
+			KOR = { remove_ideas = NE_neutrality }
+			}
+			
+
+		}
+
+	}
+
+	
+}
+
+
+##FOUNDING NATO
+news_event = {
+	id = ne_news.17
+	title = ne_news.17.t
+	desc = ne_news.17.d
+	picture = GFX_nato
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.17.a
+		trigger = { 
+		
+		NOT = { has_government = democratic }
+		NOT = { has_government = communism }
+		
+		}
+		
+	}
+	
+	##communist nations
+	option = {
+		name = ne_news.17.b
+			
+		trigger {
+
+			has_government = communism
+			NOT = { tag = SOV }
+			NOT = { is_in_faction_with = SOV}
+
+		}
+
+	}
+	
+	##NATO members
+	option = {
+		name = ne_news.17.c
+			
+		trigger {
+		
+			OR = {
+				tag = USA
+				is_in_faction_with = USA
+			}
+			
+
+		}
+
+	}
+	
+	## Soviets
+	option = {
+		name = ne_news.17.e
+			
+		trigger {
+		
+			OR = {
+				tag = SOV
+				is_in_faction_with = SOV
+			}
+
+		}
+
+	}
+	
+	## democratic nations
+	option = {
+		name = ne_news.17.e
+			
+		trigger {
+		
+			has_government = democratic
+			NOT = { tag = USA }
+			NOT = { is_in_faction_with = USA}
+
+		}
+
+	}
+
+	
+}
+
+
+
+#FOUNDING WP
+news_event = {
+	id = ne_news.18
+	title = ne_news.18.t
+	desc = ne_news.18.d
+	picture = GFX_warsaw_pact
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	##generic
+	option = {
+		name = ne_news.18.a
+		trigger = { 
+		
+		NOT = { has_government = democratic }
+		NOT = { has_government = communism }
+		
+		}
+		
+	}
+	
+	##communist nations
+	option = {
+		name = ne_news.18.b
+			
+		trigger {
+
+			has_government = communism
+			NOT = { tag = SOV }
+			NOT = { is_in_faction_with = SOV}
+
+		}
+
+	}
+	
+	##NATO members
+	option = {
+		name = ne_news.18.c
+			
+		trigger {
+		
+			OR = {
+				tag = USA
+				is_in_faction_with = USA
+			}
+			
+
+		}
+
+	}
+	
+	## Soviets
+	option = {
+		name = ne_news.18.e
+			
+		trigger {
+		
+			OR = {
+				tag = SOV
+				is_in_faction_with = SOV
+			}
+
+		}
+
+	}
+	
+	## democratic nations
+	option = {
+		name = ne_news.18.e
+			
+		trigger {
+		
+			has_government = democratic
+			NOT = { tag = USA }
+			NOT = { is_in_faction_with = USA}
+
+		}
+
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,1674 @@
+﻿add_namespace = ne_misc
+add_namespace = ne_wp
+add_namespace = ne_nato
+
+
+####################Hatay###################################################################################################################################################################################
+
+##France gets bid from Hatay, can now either allow or deny
+#Fill out id, title, desc and picture
+country_event = {
+	id = ne_misc.1
+	title = ne_misc.1.t
+	desc =  ne_misc.1.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	#is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	trigger {
+	
+	tag = FRA
+	country_exists = FRA 
+	country_exists = TUR
+	
+	NOT { country_exists = SYR }
+	
+	NOT { FRA = { has_war_with = TUR }  }
+	
+	date > 1939.6.6
+	
+	}
+	
+	
+	option = { # Accept
+		name = ne_misc.1.a
+		ai_chance = { factor = 98 }
+		add_political_power = 10
+
+		TUR = {
+			country_event = {days = 1 id = ne_misc.2 }
+		}
+		
+		
+	}
+	option = { # Refuse
+		name = ne_misc.1.b
+		ai_chance = { factor = 2 }
+		add_political_power = -25
+		add_national_unity = -0.05 
+		FRA = { reverse_add_opinion_modifier = { target = TUR modifier = refused_hatay_transfer } }
+
+	}
+            
+            	
+	
+}
+
+##Turkey gets event if france says yes
+country_event = {
+	id = ne_misc.2
+	title = ne_misc.2.t
+	desc =  ne_misc.2.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Accept
+		name = ne_misc.2.a
+		ai_chance = { factor = 98 }
+		add_political_power = 15
+		add_national_unity = 0.02 
+
+		TUR = { 
+			
+			transfer_state = 774
+			
+			 	add_state_core = 774 
+			
+		}
+		
+	##Country (TUR) to me
+	TUR = { reverse_add_opinion_modifier = { target = FRA modifier = accepted_hatay_transfer } }
+		
+	##I (TUR) to country
+	TUR = {add_opinion_modifier = { target = FRA modifier = accepted_hatay_transfer} }	
+		
+		
+	}
+	option = { # Refuse
+		name = ne_misc.2.b
+		ai_chance = { factor = 2 }
+		add_political_power = -25
+		add_national_unity = -0.05 
+
+	}
+            
+            	
+	
+}
+
+
+
+##Event for forming Warsaw Pact#######################################################################################################################################################################################################
+country_event = {
+	id = ne_wp.1
+	title = ne_wp.1.t
+	desc =  ne_wp.1.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	#is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	trigger {
+	
+	date > 1943.8.1
+	
+	tag = SOV
+	
+	SOV = { has_war = no}
+	
+	SOV = { is_faction_leader = yes  }
+	SOV = {has_government = communism}
+	
+	OR {
+	
+		NOT { GER = {has_government = fascism}}
+		
+		GER = { exists = no}
+		
+		
+	}
+
+	}
+	
+	# Found WP
+	option = { 
+		name = ne_wp.1.a
+		ai_chance = { factor = 98 }
+		
+		add_political_power = 20
+		add_national_unity = 0.02 
+
+		SOV = { 
+			
+			create_faction = "warsaw_pact"
+						  
+			
+		}
+		
+		##Only send invitations to historical members of the pact + guarantee Mongolia/Tannu: 
+		
+		
+		if = {
+				limit = { 
+				
+					MON = {
+					
+					OR = {
+						has_government = communism
+						exists = yes
+						is_puppet_of = SOV
+					} 
+					
+					}
+				}
+			SOV = { give_guarantee = MON }
+			
+		}
+		
+		if = {
+				limit = { 
+				
+				TAN = {
+				
+					AND = {
+						has_government = communism} 
+						exists = yes
+						is_puppet_of = SOV
+					}
+				}
+			SOV = { give_guarantee = TAN }
+			
+		}
+		
+		if = {
+			limit = { 
+			
+			FIN = {
+			
+				OR = {
+					has_government = communism 
+					exists = yes					
+					is_puppet_of = SOV
+				}
+			}
+			
+			}
+			
+			FIN = {country_event = { days = 4 id = ne_wp.2 } }
+			
+		}
+		
+		
+		
+		if = {
+				limit = { CZE = {
+				
+				OR = {
+				has_government = communism 
+				is_puppet_of = SOV
+				}
+			}
+			
+			}
+			
+			CZE = { country_event = { days = 4 id = ne_wp.2 } }
+			
+		}
+			
+		if = {
+			limit = { 
+			
+				HUN = {	
+				
+					OR = {
+						has_government = communism 
+						is_puppet_of = SOV
+					}
+				}
+				
+			}									
+			HUN = { country_event = { days = 4 id = ne_wp.2 } }
+			
+		}
+		
+		if = {
+				limit = { 
+				
+				ROM = {
+				
+				OR = {
+				has_government = communism 
+				is_puppet_of = SOV
+				}
+			}
+			
+			}
+			
+			ROM = { country_event = { days = 4 id = ne_wp.2 } }
+			
+		}
+		
+		if = {
+				limit = { BUL = {
+				
+				OR = {
+				has_government = communism 
+				is_puppet_of = SOV
+				}
+			}
+			
+			}
+			BUL = {country_event = { days = 4 id = ne_wp.2 } }
+			
+		}
+		
+		if = {
+				limit = { YUG = {
+				
+				OR = {
+				has_government = communism 
+				is_puppet_of = SOV
+				}
+			}
+			
+			}
+			YUG = {country_event = { days = 4 id = ne_wp.2 } }
+			
+		}
+		
+		if = {
+				limit = { DDR = {
+				
+				OR = {
+				has_government = communism
+				is_puppet_of = SOV
+				}
+			}
+			
+			}
+			DDR = {country_event = { days = 4 id = ne_wp.2 } }
+			
+		}
+		
+		if = {
+				limit = { POL = {
+				
+				OR = {
+				has_government = communism
+				is_puppet_of = SOV
+				}
+			}
+			
+			}
+			POL = { country_event = { days = 5 id = ne_wp.2 } }
+			
+		}
+		
+		if = {
+			limit = { 
+				
+				ALB = {				
+					OR = {
+						has_government = communism 
+						is_puppet_of = SOV
+					}
+				}		
+			}
+			ALB = { country_event = { days = 5 id = ne_wp.2 } }			
+		}
+		
+		hidden_effect = {
+	
+			news_event = { days = 4 id = ne_news.18 }
+	
+		}
+		
+	}
+	
+	option = { # NO
+		name = ne_wp.1.b
+		ai_chance = { factor = 2 }
+
+	}
+            
+            	
+	
+}
+
+
+####Asked countries can answer here!
+####communism
+country_event = {
+	id = ne_wp.2
+	title = ne_wp.2.t
+	desc =  ne_wp.2.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Join
+	option = { 
+		name = ne_wp.2.a
+		ai_chance = {
+			factor = 98
+			modifier = {
+				factor = 30
+				OR = {
+				has_idea = NE_neutrality
+				is_in_faction = yes
+				
+				AND = {
+					tag = YUG
+					#has_country_leader = { id = 17 ruling_only = yes name = "Leon Trotsky" }
+					SOV = { NOT = {has_completed_focus = SOV_permanent_revolution} }		
+				}
+				
+				
+				}
+			}
+		}
+		
+		add_political_power = 40
+		add_national_unity = 0.02 
+
+		SOV = {add_to_faction = ROOT }
+		
+		SOV = {
+			country_event = {id = ne_wp.3 }
+		}
+		
+	}
+		
+		
+	
+	option = { # NO
+		name = ne_wp.2.b
+		ai_chance = { factor = 2 }
+		
+		SOV = {
+			country_event = {id = ne_wp.4 }
+		}
+
+	}
+            
+            	
+	
+}
+
+
+##############Feedback for the USSR
+
+country_event = {
+	id = ne_wp.3
+	title = ne_wp.3.t
+	desc =  ne_wp.3.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#disabled, otherwise only one country gets the event
+	#fire_only_once = yes
+
+	
+	# Great
+	option = { 
+		name = ne_wp.3.a
+		add_political_power = 1
+		
+	}
+		
+            	
+}
+
+country_event = {
+	id = ne_wp.4
+	title = ne_wp.4.t
+	desc =  ne_wp.4.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	
+	# Idiots
+	option = { 
+		name = ne_wp.4.a
+			ROOT = {add_opinion_modifier = { target = SOV modifier = refused_warsaw_pact} } 		
+	}
+		
+            	
+}
+
+
+##Event for forming NATO####################################################################################################################################################################################
+country_event = {
+	id = ne_nato.1
+	title = ne_nato.1.t
+	desc =  ne_nato.1.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger {
+	
+	tag = USA
+	
+	date > 1943.6.1
+	
+	USA = {
+			exists = yes
+			is_puppet = no
+			is_faction_leader = no 
+			has_war = no
+			has_government = democratic
+	}
+	
+	ENG = {
+			exists = yes
+			is_puppet = no
+			is_faction_leader = yes 
+			has_war = no
+			has_government = democratic
+	}
+	
+	
+	OR {
+	
+		NOT { GER = {has_government = fascism}}
+		
+		GER = { exists = no}
+		
+		
+	}
+
+	}
+
+	option = { # Found NATO
+		name = ne_nato.1.a
+		ai_chance = { factor = 98 }
+		
+		ENG = {
+		country_event = { days = 10  id = ne_nato.11}
+		}
+		
+
+		
+	}
+	option = { # NO
+		name = ne_nato.1.b
+		ai_chance = { factor = 2 }
+
+	}
+            
+            	
+	
+}
+
+
+##UK is asked here!
+
+country_event = {
+	id = ne_nato.11
+	title = ne_nato.11.t
+	desc =  ne_nato.11.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+	# yes
+	option = { 
+		name = ne_nato.11.a
+		ai_chance = {
+			factor = 100
+			
+			modifier = {
+				factor = 10
+
+				ENG = {has_opinion = { target = USA value < -100 } }
+			}
+		}
+		
+		add_political_power = -5
+		add_national_unity = -0.05 
+
+		USA = {
+			country_event = {id = ne_nato.12 }
+		}
+		
+		
+		
+	}
+		
+		
+	
+	option = { # NO
+		name = ne_nato.11.b
+		
+		add_political_power = 5
+
+		USA = {
+			country_event = {id = ne_nato.13 }
+		}
+
+	}
+            
+            	
+	
+}
+
+
+##UK says yes, EVENT USA
+
+country_event = {
+	id = ne_nato.12
+	title = ne_nato.12.t
+	desc =  ne_nato.12.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+	# great, found nato
+	option = { 
+		name = ne_nato.12.a
+		
+		add_political_power = -10
+
+		USA = {
+			 	add_opinion_modifier = { target = ENG modifier = dissolved_allies } 
+		}
+		
+		add_political_power = 20
+		add_national_unity = 0.02 
+
+		USA = { 
+			
+			create_faction = "nato"
+						  	
+		}
+		
+		
+		ENG = { 
+			
+			dismantle_faction = yes
+						  	
+		}
+		
+		
+	
+	if = {
+				limit = {
+					CAN = {
+						has_government = democratic
+					} 
+				}
+			
+			CAN = { country_event = { days = 4 id = ne_nato.2 } }
+		}
+		
+	if = {
+				limit = { ENG = {
+				has_government = democratic} 
+				}
+			
+			ENG = { country_event = { days = 4 id = ne_nato.2 } }
+		}
+		
+	if = {
+				limit = { DEN = {
+				has_government = democratic} 
+				}
+			
+			DEN = { country_event = { days = 4 id = ne_nato.2 } }
+		}
+		
+	if = {
+				limit = { BEL = {
+				has_government = democratic} 
+				}
+			
+			BEL = {country_event = { days = 4 id = ne_nato.2 } }
+		}
+		
+	if = {
+				limit = { LUX = {
+				has_government = democratic} 
+				}
+			
+			LUX = {country_event = { days = 4 id = ne_nato.2 } }	
+		}
+		
+	if = {
+				limit = {
+					HOL = {
+						has_government = democratic
+					} 
+				}
+			
+			HOL = {country_event = { days = 5 id = ne_nato.2 } }	
+		}
+		
+	if = {
+				limit = { ICE = {
+				has_government = democratic
+				exists = yes				
+				} 
+				}
+			
+			ICE = {country_event = { days = 5 id = ne_nato.2 } }	
+		}
+		
+	##Portgual usually never goes democratic	
+	if = {
+				limit = { 
+					POR = {
+					
+						OR ={
+						has_government = democratic 
+						has_government = neutrality 
+						}
+						
+					}
+				}
+			
+			POR = {country_event = { days = 5 id = ne_nato.2 } }	
+		}
+		
+	if = {
+				limit = { NOR = {
+				has_government = democratic} 
+				}
+			
+			NOR = {country_event = { days = 5 id = ne_nato.2 } }	
+		}
+		
+	if = {
+				limit = { FRA = {
+				has_government = democratic} 
+				}
+			
+			FRA = {country_event = { days = 5 id = ne_nato.2 } }	
+		}
+		
+	if = {
+				limit = { ITA = {
+				has_government = democratic} 
+				}
+			
+			ITA = {country_event = { days = 5 id = ne_nato.2 } }	
+		}
+		
+	hidden_effect = {
+	
+		news_event = { days = 4 id = ne_news.17 }
+	
+	}
+	
+	}
+		
+
+}
+
+
+##UK says NO!, EVENT USA
+
+country_event = {
+	id = ne_nato.13
+	title = ne_nato.13.t
+	desc =  ne_nato.13.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+	option = { 
+		name = ne_nato.13.a
+
+		add_political_power = -10
+
+		add_opinion_modifier = { target = ENG modifier = refused_nato_founding } 
+		
+		
+		
+	}
+       	
+	
+}
+
+
+####Asked countries can answer here!
+####democracies
+
+country_event = {
+	id = ne_nato.2
+	title = ne_nato.2.t
+	desc =  ne_nato.2.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Join
+	option = { 
+		name = ne_nato.2.a
+		ai_chance = {
+			factor = 98
+			
+			modifier = {
+				factor = 30
+				
+				OR = {
+				has_idea = NE_neutrality
+				is_in_faction = yes
+				}
+			}
+		}
+		
+		add_political_power = 20
+		add_national_unity = 0.02 
+
+		USA = {add_to_faction = ROOT }
+		
+		USA = {
+			country_event = {id = ne_nato.3 }
+		}
+		
+		
+		
+	}
+		
+		
+	
+	option = { # NO
+		name = ne_nato.2.b
+		
+		USA = {
+			country_event = {id = ne_nato.4 }
+		}
+
+	}
+            
+            	
+	
+}
+
+##############Feedback for the USA
+
+country_event = {
+	id = ne_nato.3
+	title = ne_nato.3.t
+	desc =  ne_nato.3.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Great
+	option = { 
+		name = ne_nato.3.a
+		add_political_power = 1
+		
+	}
+		
+            	
+}
+
+country_event = {
+	id = ne_nato.4
+	title = ne_nato.4.t
+	desc =  ne_nato.4.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Shit
+	option = { 
+		name = ne_nato.4.a
+		#ROOT = {reverse_add_opinion_modifier = { target = USA modifier = refused_nato} } 
+		USA = {add_opinion_modifier = { target = FROM modifier = refused_nato} } 
+
+		
+	}
+		
+            	
+}
+
+####################NFl/Labrador######################################################################################################################################################################################################
+
+##England/USA gets bid from NFL/Labrador, can now either allow or deny
+#Fill out id, title, desc and picture
+country_event = {
+	id = ne_misc.3
+	title = ne_misc.3.t
+	desc =  ne_misc.3.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	#is_triggered_only = yes	
+	#fire_only_once = yes
+
+	trigger = {
+
+		is_puppet = no
+		NOT = { tag = CAN }
+		
+		OR = {
+	
+			AND = {
+	
+			controls_state = 331
+			owns_state = 331
+		
+			}
+
+			AND = {
+		
+				controls_state = 332
+				owns_state = 332
+			
+				}
+				
+		}
+		
+		NOT = {  has_war_with = CAN  }
+		NOT = {  has_country_flag = labrador_question  }
+
+	
+	CAN = {
+			exists = yes
+		}
+		
+
+	OR = {
+	
+		NOT = {	CAN = {
+				controls_state = 331
+				owns_state = 331
+				}
+		
+		}
+		
+		
+		NOT = {	CAN = {
+				controls_state = 332
+				owns_state = 332
+				}
+		
+		}
+
+	}
+
+
+	OR = {
+	
+	has_global_flag = germany_partitioned
+	has_global_flag = germany_divided
+	has_global_flag = germany_unified
+	
+	}
+	
+	}
+	
+	mean_time_to_happen = {
+	days = 5
+	
+	}
+	
+	immediate = {
+	
+	set_country_flag = labrador_question
+	
+	}
+	
+	
+	option = { # Accept
+		name = ne_misc.3.a
+		ai_chance = { factor = 98 }
+		add_political_power = 15
+
+		CAN = {
+			country_event = {days = 1 id = ne_misc.4 }
+		}
+		
+		add_opinion_modifier = { target = CAN modifier =  accepted_nfl}
+		reverse_add_opinion_modifier = { target = CAN modifier = accepted_nfl}
+		
+		
+	}
+	option = { # Refuse
+		name = ne_misc.3.b
+		ai_chance = { factor = 2 }
+		add_political_power = -20
+		add_national_unity = -0.05 
+		
+		CAN = {
+			country_event = {days = 1 id = ne_misc.5 }
+		}
+		
+		add_opinion_modifier = { target = CAN modifier =  asked_return_territory}
+		reverse_add_opinion_modifier = { target = CAN modifier = refused_nfl}
+
+	}
+            
+            	
+	
+}
+
+##Canada gets event if England/USA says yes
+
+country_event = {
+	id = ne_misc.4
+	title = ne_misc.4.t
+	desc =  ne_misc.4.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+
+	option = { # Accept
+		name = ne_misc.4.a
+		ai_chance = { factor = 98 }
+		add_political_power = 15
+
+
+	##in theory ROOT should work, but i doesn't...very strange
+		
+	if = {
+					limit = { FROM = { controls_state = 331 } }
+					transfer_state = 331
+					add_state_core = 331
+				}
+				
+	if = {
+					limit = { FROM = { controls_state = 332 } }
+					transfer_state = 332
+					add_state_core = 332
+				}
+
+	}
+
+                   		
+}
+
+##Owner says NO
+
+country_event = {
+	id = ne_misc.5
+	title = ne_misc.5.t
+	desc =  ne_misc.5.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#ok
+	option = { 
+		name = ne_misc.5.a
+		ai_chance = { factor = 100 }
+	
+
+    }        
+            	
+	
+}
+
+
+#Any puppets of the USSR (only the historical 14 ) "ask" the USSR to gain their cosmetic tag and USSR can also gain theirs 
+country_event = {
+	id = ne_misc.10
+	title = ne_misc.10.t
+	desc = ne_misc.10.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+	
+		SOV = { has_government = communism }	
+		is_subject_of = SOV
+		NOT = { has_country_flag = ssr_puppetry }
+
+		OR = {
+		
+			tag = EST
+			tag = LAT
+			tag = LIT
+			tag = BLR
+			tag = UKR
+			tag = MOL
+			tag = ARM
+			tag = GEO
+			tag = AZR
+			tag = KAZ
+			tag = TAJ
+			tag = KGZ
+			tag = TRK
+			tag = UZB
+		
+		}
+		
+		
+	}
+	
+	immediate = {
+		set_country_flag = ssr_puppetry
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = { # YES
+		name =ne_misc.10.a
+		ai_chance = { factor = 100 }
+			
+		SOV = { country_event = { days = 1 id = ne_misc.11} }
+	}
+	
+	option = { # NO
+		name = ne_misc.10.b
+		ai_chance = { factor = 0 }
+	}
+
+	
+}
+
+#SOV gets response
+country_event = {
+	id = ne_misc.11
+	title = ne_misc.11.t
+	desc = ne_misc.11.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+	
+	option = { # YES
+		name = ne_misc.11.a
+		ai_chance = { factor = 20 }
+			
+		if = {
+			limit = { 
+				FROM = { tag = LIT }
+			}
+		LIT = { set_cosmetic_tag = NE_LIT_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = LAT }
+			}
+		LAT = { set_cosmetic_tag = NE_LAT_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = EST }
+			}
+		EST = { set_cosmetic_tag = NE_EST_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = BLR }
+			}
+		BLR = { set_cosmetic_tag = NE_BLR_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = UKR }
+			}
+		UKR = { set_cosmetic_tag = NE_UKR_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = MOL }
+			}
+		MOL = { set_cosmetic_tag = NE_MOL_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = ARM }
+			}
+		ARM = { set_cosmetic_tag = NE_ARM_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = GEO }
+			}
+		GEO = { set_cosmetic_tag = NE_GEO_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = AZR }
+			}
+		AZR = { set_cosmetic_tag = NE_AZR_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = KAZ }
+			}
+		KAZ = { set_cosmetic_tag = NE_KAZ_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = UZB }
+			}
+		UZB = { set_cosmetic_tag = NE_UZB_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = TRK }
+			}
+		TRK = { set_cosmetic_tag = NE_TRK_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = KGZ }
+			}
+		KGZ = { set_cosmetic_tag = NE_KGZ_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = TAJ }
+			}
+		TAJ = { set_cosmetic_tag = NE_TAJ_SSR }
+		
+		}
+
+		if = {
+			limit = { 
+				NOT = { has_global_flag = SSR_chosen }
+			}
+		SOV = { set_cosmetic_tag = RUS }
+		
+		}
+
+		if = {
+			limit = { 
+				has_global_flag = SSR_chosen
+			}
+		SOV = { set_cosmetic_tag = NE_RUS_SSR_1 }
+		
+		}
+			
+		if = {
+			limit = { 
+				LIT = { owns_state = 751 } 
+			}
+		LIT = {set_capital = 751}
+		
+		}
+	}
+	
+	
+	#YES, also change name to RFSR
+	option = { 
+		name = ne_misc.11.b
+		ai_chance = { factor = 100 }
+		
+		trigger = {
+		
+			NOT = { has_country_flag = NE_RFSFR }
+		
+		}
+
+		if = {
+			limit = { 
+				FROM = { tag = LIT }
+			}
+		LIT = { set_cosmetic_tag = NE_LIT_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = LAT }
+			}
+		LAT = { set_cosmetic_tag = NE_LAT_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = EST }
+			}
+		EST = { set_cosmetic_tag = NE_EST_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = BLR }
+			}
+		BLR = { set_cosmetic_tag = NE_BLR_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = UKR }
+			}
+		UKR = { set_cosmetic_tag = NE_UKR_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = MOL }
+			}
+		MOL = { set_cosmetic_tag = NE_MOL_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = ARM }
+			}
+		ARM = { set_cosmetic_tag = NE_ARM_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = GEO }
+			}
+		GEO = { set_cosmetic_tag = NE_GEO_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = AZR }
+			}
+		AZR = { set_cosmetic_tag = NE_AZR_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = KAZ }
+			}
+		KAZ = { set_cosmetic_tag = NE_KAZ_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = UZB }
+			}
+		UZB = { set_cosmetic_tag = NE_UZB_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = TRK }
+			}
+		TRK = { set_cosmetic_tag = NE_TRK_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = KGZ }
+			}
+		KGZ = { set_cosmetic_tag = NE_KGZ_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				FROM = { tag = TAJ }
+			}
+		TAJ = { set_cosmetic_tag = NE_TAJ_SSR }
+		
+		}
+		
+		if = {
+			limit = { 
+				NOT = { has_global_flag = SSR_chosen }
+			}
+		SOV = { set_cosmetic_tag = RUS }
+		
+		}
+
+		if = {
+			limit = { 
+				has_global_flag = SSR_chosen
+			}
+		SOV = { set_cosmetic_tag = NE_RUS_SSR_1 }
+		
+		}
+		
+		SOV = { set_country_flag = NE_RFSFR }
+		
+		
+	}
+	
+	option = { #NO
+		name = ne_misc.11.c
+		ai_chance = { factor = 0 }
+	}
+
+	
+}
+
+
+##LEND-LEASE EVENTS (ne_misc.6 - .9)
+
+##country in civil war can ask for assistance in a war, can either ask PRC/SOV or USA/ENG
+##democracies ask democracies, communists ask communists, neutrality asks no one, fascist gets no support
+country_event = {
+	id = ne_misc.6
+	title = ne_misc.6.t
+	desc =  ne_misc.6.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	trigger = {
+	
+		NOT = { has_government = fascism }
+		NOT = { has_government = neutrality }
+		NOT = { has_country_flag = ne_asked_lend_lease }
+		has_war = yes
+		is_in_faction = no
+		
+		OR = {
+			has_idea = war_economy
+			has_idea = tot_economic_mobilisation
+		}
+
+		OR = {
+
+			has_idea = service_by_requirement
+			has_idea = all_adults_serve
+			has_idea = scraping_the_barrel
+		
+		}
+		
+	
+	
+	}
+
+	mean_time_to_happen = {	
+		days = 80	
+	}
+	
+	
+	option = { # We could use some help
+		name = ne_misc.6.a
+		ai_chance = { factor = 98 }
+		add_political_power = -5
+		add_national_unity = 0.03
+		
+		if = {
+			limit = {
+				has_government = democratic
+			}
+		
+			every_country = {
+				limit = {
+				is_major = yes
+				has_government = democratic
+				surrender_progress < 0.20
+				}
+			
+			country_event = { days = 4 id = ne_misc.7 }
+			
+			}
+		}
+		
+		if = {
+			limit = {
+				has_government = communism
+			}
+		
+		every_country = {
+			limit = {
+			is_major = yes
+			has_government = communism
+			surrender_progress < 0.20
+			}
+		
+		country_event = { days = 4 id = ne_misc.7 }
+		
+		}
+
+		}
+		
+	}
+	
+	option = { # We can do it on our own
+		name = ne_misc.6.b
+		ai_chance = { factor = 98 }
+		add_political_power = 5
+                   		
+	}
+	
+}
+
+
+##major gets event
+
+country_event = {
+	id = ne_misc.7
+	title = ne_misc.7.t
+	desc =  ne_misc.7.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	
+	
+	option = { # little help
+		name = ne_misc.7.a
+		ai_chance = {
+			factor = 0		
+			modifier = {
+				factor = 100	
+					has_opinion = { target = FROM value < 25 } 
+			}    		
+		}
+		add_political_power = 5
+		
+		##send equipment, dont forget if check
+		
+		
+		FROM = { country_event = { id = ne_misc.8 } }
+
+	}
+	
+	option = { # medium help
+		name = ne_misc.7.b
+		ai_chance = {
+			factor = 0		
+			modifier = {
+				factor = 100
+					has_opinion = { target = FROM value > 25 } 
+			}    		
+		}
+		
+		add_political_power = 10
+		
+		##overhaul
+		#FROM = { add_equipment_to_stockpile = { type = infantry_equipment amount = 8000 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = artillery_equipment amount = 5000 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = support_equipment amount = 4500 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = anti_tank_equipment amount = 3000 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = medium_tank_equipment amount = 2500 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = fighter_equipment amount = 2500 producer = ROOT } }
+		#add_equipment_to_stockpile = { type = infantry_equipment amount = -8000 producer = ROOT } 
+		#add_equipment_to_stockpile = { type = artillery_equipment amount = -5000 producer = ROOT } 
+		#add_equipment_to_stockpile = { type = support_equipment amount = -4500 producer = ROOT } 
+		#add_equipment_to_stockpile = { type = anti_tank_equipment amount = -3000 producer = ROOT } 
+		#add_equipment_to_stockpile = { type = medium_tank_equipment amount = -2500 producer = ROOT } 
+		#add_equipment_to_stockpile = { type = fighter_equipment amount = -2500 producer = ROOT } 
+
+		
+		FROM = { country_event = { id = ne_misc.8 } }
+		
+	}
+
+	
+	option = { # take our guns and win the war
+		name = ne_misc.7.c
+		ai_chance = {
+			factor = 0		
+			modifier = {
+				factor = 100	
+					has_opinion = { target = FROM value > 75 } 
+			}    		
+		}
+		add_political_power = 15
+		
+		##overhaul
+		#FROM = { add_equipment_to_stockpile = { type = infantry_equipment amount = 12000 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = artillery_equipment amount = 7000 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = support_equipment amount = 5000 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = anti_tank_equipment amount = 4000 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = medium_tank_equipment amount = 2600 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = fighter_equipment amount = 3000 producer = ROOT } }
+		#FROM = { add_equipment_to_stockpile = { type = cas_equipment amount = 1200 producer = ROOT } }
+		#add_equipment_to_stockpile = { type = infantry_equipment amount = 12000 producer = ROOT } 
+		#add_equipment_to_stockpile = { type = artillery_equipment amount = 7000 producer = ROOT } 
+		#add_equipment_to_stockpile = { type = support_equipment amount = 5000 producer = ROOT } 
+		#add_equipment_to_stockpile = { type = anti_tank_equipment amount = 4000 producer = ROOT } 
+		#add_equipment_to_stockpile = { type = medium_tank_equipment amount = 2600 producer = ROOT } 
+		#add_equipment_to_stockpile = { type = fighter_equipment amount = 3000 producer = ROOT }
+		#add_equipment_to_stockpile = { type = fighter_equipment amount = 1200 producer = ROOT }
+		
+		
+		FROM = { country_event = { id = ne_misc.8 } }
+                   		
+	}
+	
+	option = { # fuck off...cunt
+		name = ne_misc.7.e
+		ai_chance = {
+			factor = 0		
+			modifier = {
+				factor = 100	
+					has_opinion = { target = FROM value < -25 } 
+			}    		
+		}	
+		FROM = { country_event = { id = ne_misc.9 } }
+                   		
+	}
+	
+}
+
+
+##Minor gets response, here it's YES
+country_event = {
+	id = ne_misc.8
+	title = ne_misc.8.t
+	desc =  ne_misc.8.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	
+	
+	option = { # YAY
+		name = ne_misc.8.a
+		ai_chance = { factor = 98 }
+		add_political_power = 15
+		add_national_unity = 0.01
+		
+		##opinion modifier
+		add_opinion_modifier = { target = FROM modifier = NE_lend_lease }	
+		
+	}
+
+}
+
+
+##Minor gets response, here it's NO
+country_event = {
+	id = ne_misc.9
+	title = ne_misc.9.t
+	desc =  ne_misc.9.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	
+	
+	option = { # Shit
+		name = ne_misc.9.a
+		ai_chance = { factor = 98 }
+			
+		##opinion modifier
+		add_opinion_modifier = { target = FROM modifier = NE_denied_lend_lease }
+		reverse_add_opinion_modifier = { target = FROM modifier = fooled_us}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1128 @@
+﻿##This file is for temporary things which needs an assignment to a better file
+
+
+##Division of Japan
+add_namespace = ne_division_jap
+
+
+######################################################################################################################################################################################################################################
+##DIVISION OF JAPAN###################################################################################################################################################################################################################
+##USA is asked to found JAP/Grant them independence; send events to FRA, CHI (no CHI if PRC aligns with the Soviets), SOV and ENG. If they agree their occupation becomes part of JAP. SOV can start their own puppet when not invited or choosing herself. Can also ask PRC
+#######################################################################################################################################################################################################################################
+
+##1. USA gets an event 
+country_event = {
+	id = ne_division_jap.1
+	title = ne_division_jap.1.t
+	desc =  ne_division_jap.1.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger {
+	
+	tag = USA
+	
+	date > 1942.6.1
+	
+	AND = {
+		country_exists = ENG
+		country_exists = USA
+		country_exists = SOV
+	}
+	
+	OR = {
+		country_exists = PRC
+		country_exists = CHI
+	}
+	
+	JAP = { exists = no } 
+	
+	NOT {
+		
+		ENG = {
+			has_war_with = SOV
+		}
+		
+		FRA = {
+			has_war_with = SOV
+		}
+		
+		USA = {
+			has_war_with = SOV
+		}
+		
+		CHI = {
+			has_war_with = SOV
+		}
+		
+		PRC = {
+			has_war_with = SOV
+		}
+		
+		}
+	
+	OR = {
+	has_global_flag = japan_partitioned	
+	has_global_flag = japan_partitioned_ne_prc	
+	}
+		
+		
+	NOT = {has_global_flag = japan_divided	}
+	NOT = {has_global_flag = japan_divided_ne_prc	}
+	
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 190
+	}
+
+	option = { # yes
+		name = ne_division_jap.1.a
+		ai_chance = { factor = 49 }
+		
+		add_political_power = 15
+
+		JAP = { 
+			
+			##american occupaton plus marcus and iwo jima
+			transfer_state = 531
+			transfer_state = 535
+			transfer_state = 532
+			transfer_state = 282
+			transfer_state = 645
+			transfer_state = 648
+			transfer_state = 534
+			
+			add_state_core = 531
+			add_state_core = 535
+			add_state_core = 532
+			add_state_core = 282
+			add_state_core = 645
+			add_state_core = 648
+			add_state_core = 534
+			
+			
+			add_popularity = { ideology = democratic popularity = 1 } 	
+			set_politics = { ruling_party = democratic elections_allowed = yes } 		
+						  	
+		}
+
+		
+	
+	
+	ENG = {
+			country_event = {days = 3 id = ne_division_jap.3 }
+		}
+
+
+	#PRC = {
+	#
+	#	if = {
+	#		
+	#		limit = {
+	#		
+	#		OR = {
+	#		PRC = {owns_state = 530 }
+	#		has_global_flag = japan_partitioned_ne_prc
+	#		}
+	#		
+	#		
+	#		}
+	#		
+	#		country_event = {days = 40 id = ne_division_jap.3 }
+	#	}
+	#}
+		
+		
+	CHI = {
+	
+		if = {			
+			limit = {
+			
+			OR = {
+				CHI = {owns_state = 530 }
+				has_global_flag = japan_partitioned
+			}
+			}
+			
+		}
+
+			country_event = {days = 3 id = ne_division_jap.3 }
+		}	
+		
+	SOV = {
+			country_event = {days = 3 id = ne_division_jap.2 }
+		}
+
+	}	
+		
+	
+
+	
+	# yes, but leave out soviets
+	
+	option = { 
+		name = ne_division_jap.1.b
+		ai_chance = { factor = 49 }
+		
+		add_political_power = 20
+
+		JAP = { 		
+			##american occupaton plus marcus and owi
+			transfer_state = 531
+			transfer_state = 535
+			transfer_state = 532
+			transfer_state = 282
+			transfer_state = 645
+			transfer_state = 648
+			transfer_state = 534
+			
+			add_state_core = 531
+			add_state_core = 535
+			add_state_core = 532
+			add_state_core = 282
+			add_state_core = 645
+			add_state_core = 648
+			add_state_core = 534
+			
+			
+			set_political_party = { ideology = democratic popularity = 100 } 
+			set_politics = { ruling_party = democratic elections_allowed = yes } 					  	
+		}
+
+		
+	
+	
+	ENG = {
+			country_event = {days = 3 id = ne_division_jap.3 }
+		}
+
+
+	#PRC = {
+	#
+	#	if = {
+	#		
+	#		limit = {
+	#		
+	#		OR = {
+	#		PRC = {owns_state = 530 }
+	#		has_global_flag = japan_partitioned_ne_prc
+	#		}
+	#		
+	#		
+	#		}
+	#		
+	#		country_event = {days = 40 id = ne_division_jap.3 }
+	#	}
+	#}
+		
+		
+	CHI = {
+	
+		if = {			
+			limit = {
+			
+				OR = {
+					CHI = {owns_state = 530 }
+					has_global_flag = japan_partitioned
+				}
+			}	
+		}
+
+		
+		
+			country_event = {days = 3 id = ne_division_jap.3 }
+		}		
+	
+
+	SOV = { 
+	
+			add_opinion_modifier = { target = USA modifier =  not_invited}
+			add_opinion_modifier = { target = USA modifier =  western_japanese_puppet}
+			
+			country_event = {days = 2 id = ne_division_jap.4 }
+	
+	}
+	
+	set_global_flag = soviets_not_invited
+	
+	}
+	
+	
+	option = { # continue occupation
+		name = ne_division_jap.1.c
+		ai_chance = { factor = 2 }
+		
+		reverse_add_opinion_modifier = { target = ENG modifier = refused_japanese_reunification}
+		reverse_add_opinion_modifier = { target = CHI modifier = refused_japanese_reunification}
+		reverse_add_opinion_modifier = { target = PRC modifier = refused_japanese_reunification}
+		reverse_add_opinion_modifier = { target = SOV modifier = refused_japanese_reunification}
+
+	}
+}
+
+############################################
+##GENERIC RESPONSE##########################
+##This event goes to England, China, (PRC)##
+############################################
+
+
+country_event = {
+	id = ne_division_jap.3
+	#title = ne_division_jap.3.t
+	#desc =  ne_division_jap.3.d
+
+	title = {
+		text = ne_division_jap.3.t
+		trigger = {
+		
+		NOT = {	tag = PRC }
+
+		}
+	}
+	
+	title = {
+		text = ne_division_jap.3.d
+		trigger = {	
+			NOT = {	tag = PRC }
+		}
+	}
+	
+	
+	title = {
+		text = ne_division_jap.3.t1
+		trigger = {
+		
+			tag = PRC
+
+		}
+	}
+		
+	desc = {
+		text = ne_division_jap.3.d1
+		trigger = {
+
+			tag = PRC
+
+		}
+	}
+	
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	
+	# accept to give up occupation (british)
+	option = {
+	
+	trigger = {
+	tag = ENG
+	}
+	
+		name = ne_division_jap.3.a
+		ai_chance = {factor = 98}
+				
+				
+		add_political_power = 20
+		
+		JAP = { 
+				
+				transfer_state = 526
+				transfer_state = 528
+				transfer_state = 529
+				
+				add_state_core = 526
+				add_state_core = 528
+				add_state_core = 529
+				
+			}	
+		
+		
+		USA = {
+			country_event = {id = ne_division_jap.5 }
+		}
+		
+
+	}
+	
+	
+	# accept to give up occupation (china)
+	option = {
+	
+	trigger = {
+		tag = CHI
+	}
+	
+		name = ne_division_jap.3.a
+		ai_chance = {factor = 95}
+				
+				
+		add_political_power = 25
+		
+		JAP = { 
+				
+				transfer_state = 530
+				add_state_core = 530
+				
+			}	
+		
+		
+		USA = {
+			country_event = {id = ne_division_jap.5 }
+		}
+		
+
+	}
+	
+	# accept to give up occupation (ne_prc) (side with americans)
+	option = {
+
+	
+	trigger = {
+	
+		tag = PRC
+		
+	}
+	
+	name = ne_division_jap.3.a1
+	ai_chance = {factor = 98
+			
+			modifier = {
+				factor = 10
+				PRC = { has_opinion = { target = USA value > 90 } }
+			}
+			
+			modifier = {
+				factor = 98
+				has_global_flag = no_srj
+			}
+		}
+		
+		add_political_power = 40
+		
+		JAP = { 				
+			transfer_state = 530
+			add_state_core = 530								
+		}	
+		
+		
+		
+		if = { limit = {has_global_flag = no_srj}
+		
+		SOV = {
+			country_event = {id = ne_division_jap.5 }
+		}
+		
+		}
+		
+		if = { 
+			limit = { 
+				NOT = {has_global_flag = no_srj} 
+			}
+		
+		SOV = {
+			country_event = {id = ne_division_jap.9 }
+		}
+		
+		}
+		
+
+	}
+	
+	# keep occupation
+	option = { 
+	name = ne_division_jap.3.b
+	ai_chance = {factor = 2}
+	
+	trigger = {
+		
+	NOT = {	tag = PRC }
+		
+	}
+		
+	add_political_power = -40
+
+		
+	USA = {
+		country_event = {id = ne_division_jap.7  }
+	}
+
+	}
+	
+
+	##keep occupation (PRC)
+	
+	
+	option = { 
+	name = ne_division_jap.3.b1
+	ai_chance = { factor = 10 }
+	
+		trigger = {
+		
+			tag = PRC	
+		
+		}
+		
+		add_political_power = -40
+		
+		USA = {
+			country_event = {id = ne_division_jap.7  }
+		}
+	}
+	
+		
+	#side with the soviets (other countries don't get this event)
+	
+	option = {
+		name = ne_division_jap.3.c
+	
+		trigger = {
+			tag = PRC
+			NOT = {has_global_flag = no_srj}
+		}
+		
+		ai_chance = {
+			factor = 80
+			
+			modifier = {
+				factor = 10
+			
+			OR = {
+			PRC = { has_opinion = { target = SOV value < -90 } }
+			SRJ = {exists = no}
+			}
+			
+			}
+		}
+		
+		add_political_power = 25
+
+		SRJ = {		
+			transfer_state = 530
+			add_state_core = 530		
+		}
+
+		USA = {
+			country_event = {id = ne_division_jap.8  }
+		}
+		
+	}
+            	
+}
+
+
+####Soviet ne_division_jap.2 ###SOV is asked
+
+country_event = {
+	id = ne_division_jap.2
+	title = ne_division_jap.2.t
+	desc =  ne_division_jap.2.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# side with american plan
+	option = { 
+	name = ne_division_jap.2.a
+	ai_chance = {factor = 40}
+		
+		add_political_power = 40
+		
+	JAP = { 
+			
+			transfer_state = 536
+			transfer_state = 533
+			
+			add_state_core = 536
+			add_state_core = 533
+						  	
+		}	
+		
+		set_global_flag = no_srj 
+		
+		USA = {
+			country_event = {id = ne_division_jap.5 }
+		}
+
+	}
+		
+		
+######OWN JAPANESE PUPPET
+	option = { 
+	
+		name = ne_division_jap.2.b
+		
+			ai_chance = {
+			factor = 58
+			
+			modifier = {
+				factor = 0
+
+				OR = {
+				
+					PRC = {owns_state = 530 }
+					has_global_flag = japan_partitioned_ne_prc
+					
+				}
+				
+				}
+			}
+		
+		
+		add_political_power = 50
+		
+	SRJ = { 
+			
+			transfer_state = 536
+			transfer_state = 533
+			
+			add_state_core = 536
+			add_state_core = 533
+			add_state_core = 530
+			add_state_core = 528
+			add_state_core = 529
+			add_state_core = 526
+			add_state_core = 531
+			add_state_core = 535
+			add_state_core = 532
+			add_state_core = 282
+			add_state_core = 645
+			add_state_core = 648
+			add_state_core = 534
+						  	
+		}	
+		
+		
+		USA = {
+			country_event = {id = ne_division_jap.6 }
+		}
+
+	}
+	
+	option = { # own Japan with PRC (only if PRC exists!)
+	
+		trigger = {
+		
+			OR = {
+				
+					PRC = {owns_state = 530 }
+					has_global_flag = japan_partitioned_ne_prc
+					
+				}
+			
+		}
+	
+	name = ne_division_jap.2.c
+		ai_chance = { factor = 98 }
+		
+			SRJ = { 
+			
+			transfer_state = 536
+			transfer_state = 533
+			
+			add_state_core = 536
+			add_state_core = 533
+			add_state_core = 530
+			add_state_core = 528
+			add_state_core = 529
+			add_state_core = 526
+			add_state_core = 531
+			add_state_core = 535
+			add_state_core = 532
+			add_state_core = 282
+			add_state_core = 645
+			add_state_core = 648
+			add_state_core = 534
+						  	
+			}
+			
+			PRC = {
+				country_event = {id = ne_division_jap.3  }
+			}
+
+	}
+		
+	
+	# Refuse
+	option = { 
+		name = ne_division_jap.2.e
+		ai_chance = { factor = 2 }
+		
+		USA = {
+			country_event = {id = ne_division_jap.7  }
+		}
+	}          	
+}
+
+###############################################################
+####Soviet ne_division_jap.4 ###SOV is NOT asked#######################
+###############################################################
+
+
+
+country_event = {
+	id = ne_division_jap.4
+	title = ne_division_jap.4.t
+	desc =  ne_division_jap.4.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	
+	
+	immediate = {
+		hidden_effect = {
+		add_opinion_modifier = { target = USA modifier = not_invited}
+		}
+	}
+	
+	# japanese puppet
+	option = { 
+		name = ne_division_jap.4.a
+		ai_chance = {factor = 49}
+		
+		add_political_power = 40
+		
+	SRJ = { 
+			
+			transfer_state = 536
+			transfer_state = 533
+			
+			add_state_core = 536
+			add_state_core = 533
+						  	
+		}	
+	
+		
+		USA = {
+			country_event = {id = ne_division_jap.6 }
+		}
+
+	}
+		
+		
+	# japanese puppet with PRC
+	option = { 
+		name = ne_division_jap.4.b
+		
+			ai_chance = {
+			factor = 49
+			
+			modifier = {
+				factor = 98
+
+				PRC = {owns_state = 530}
+				
+			}
+			
+			}
+		
+		SRJ = { 
+			
+			transfer_state = 536
+			transfer_state = 533
+			
+			add_state_core = 536
+			add_state_core = 533
+						  	
+		}
+
+		
+		add_political_power = 50
+		
+	
+		PRC = {
+				country_event = {days = 5 id = ne_division_jap.3  }
+			}
+		
+		USA = {
+			country_event = {id = ne_division_jap.6 }
+		}
+
+	}
+	
+
+
+		
+	# Refuse, continue occupation
+	option = { 
+		name = ne_division_jap.4.c
+		ai_chance = { factor = 2 }
+		
+		USA = {
+			country_event = {id = ne_division_jap.7  }
+		}
+
+	}
+            	
+}
+
+
+##############Feedback for the Americans
+
+##positive
+country_event = {
+	id = ne_division_jap.5
+	title = ne_division_jap.5.t
+	desc =  ne_division_jap.5.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Great
+	option = { 
+		name = ne_division_jap.5.a
+			
+		##opinion stuff
+		
+		add_opinion_modifier = { target = FROM modifier =  accepted_japanese_reunification}
+		reverse_add_opinion_modifier = { target = FROM modifier = accepted_japanese_reunification}
+		
+		JAP = {
+		
+		add_opinion_modifier = { target = FROM modifier =  accepted_japanese_reunification}
+		reverse_add_opinion_modifier = { target = FROM modifier = accepted_japanese_reunification}
+		
+		}
+		
+		PRC = {
+		add_opinion_modifier = { target = FROM modifier =  accepted_japanese_reunification}
+		}
+		
+		SOV = {
+		add_opinion_modifier = { target = FROM modifier =  accepted_japanese_reunification}
+		}
+		
+		CHI = {
+		add_opinion_modifier = { target = FROM modifier =  accepted_japanese_reunification}
+		}
+		
+		ENG = {
+		add_opinion_modifier = { target = FROM modifier =  accepted_japanese_reunification}
+		}
+				
+		clr_global_flag = japan_partitioned
+	}
+		         	
+}
+
+##soviet puppet
+country_event = {
+	id = ne_division_jap.6
+	title = ne_division_jap.6.t
+	desc =  ne_division_jap.6.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+
+	
+	option = { 
+		name = ne_division_jap.6.a
+		
+		clr_global_flag = japan_partitioned
+		
+		##opinion stuff
+	
+		add_opinion_modifier = { target = SOV modifier =  eastern_japanese_puppet}
+		reverse_add_opinion_modifier = { target = SOV modifier = western_japanese_puppet}
+		
+		JAP = {
+		
+		add_opinion_modifier = { target = SOV modifier =  eastern_japanese_puppet}
+		reverse_add_opinion_modifier = { target = SOV modifier = western_japanese_puppet}
+		
+		}
+		
+		SRJ = {
+		
+		add_opinion_modifier = { target = JAP modifier =  western_japanese_puppet}
+		reverse_add_opinion_modifier = { target = JAP modifier = eastern_japanese_puppet}
+		
+		}
+		
+		ENG = {
+		
+		add_opinion_modifier = { target = SOV modifier =  eastern_japanese_puppet}
+		reverse_add_opinion_modifier = { target = SOV modifier = western_japanese_puppet}
+		
+		}
+		
+		CHI = {
+		
+		add_opinion_modifier = { target = SOV modifier =  eastern_japanese_puppet}
+		reverse_add_opinion_modifier = { target = SOV modifier = western_japanese_puppet}
+		
+		}
+		
+		PRC = {
+		
+		add_opinion_modifier = { target = SOV modifier =  eastern_japanese_puppet}
+		reverse_add_opinion_modifier = { target = SOV modifier = western_japanese_puppet}
+	
+		}
+		}
+	
+	
+		
+}
+		
+
+
+##negative
+country_event = {
+	id = ne_division_jap.7
+	title = ne_division_jap.7.t
+	desc =  ne_division_jap.7.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	#SHIT
+	option = { 
+		name = ne_division_jap.7.a
+		
+		##opinion stuff
+		add_opinion_modifier = { target = FROM modifier =  refused_japanese_reunification}
+		
+		JAP = {
+		add_opinion_modifier = { target = FROM modifier =  refused_japanese_reunification}	
+		}	
+		
+		PRC = {
+		add_opinion_modifier = { target = FROM modifier =  refused_japanese_reunification}
+		}
+		
+		SOV = {
+		add_opinion_modifier = { target = FROM modifier =  refused_japanese_reunification}
+		}
+		
+		CHI = {
+		add_opinion_modifier = { target = FROM modifier =  refused_japanese_reunification}
+		}
+		
+		ENG = {
+		add_opinion_modifier = { target = FROM modifier =  refused_japanese_reunification}
+		}
+		
+		clr_global_flag = japan_partitioned
+					
+		
+	}		
+          	
+}
+
+##PRC sides with Soviets
+country_event = {
+	id = ne_division_jap.8
+	title = ne_division_jap.8.t
+	desc =  ne_division_jap.8.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Great
+	option = { 
+		name = ne_division_jap.8.a
+		
+		
+		##opinion stuff
+		add_opinion_modifier = { target = PRC modifier =  sided_soviets}
+		add_opinion_modifier = { target = PRC modifier =  eastern_japanese_puppet}
+		reverse_add_opinion_modifier = { target = PRC modifier = western_japanese_puppet}
+		
+		JAP = {
+		
+		add_opinion_modifier = { target = PRC modifier =  sided_soviets}
+		add_opinion_modifier = { target = PRC modifier =  eastern_japanese_puppet}
+		reverse_add_opinion_modifier = { target = PRC modifier = western_japanese_puppet}
+		
+		}
+		
+		ENG = {
+		add_opinion_modifier = { target = PRC modifier =  sided_soviets}
+		add_opinion_modifier = { target = PRC modifier =  eastern_japanese_puppet}
+		reverse_add_opinion_modifier = { target = PRC modifier = western_japanese_puppet}
+		}
+		
+
+		PRC = {
+
+		reverse_add_opinion_modifier = { target = SOV modifier = returned_shikoku}
+		reverse_add_opinion_modifier = { target = SRJ modifier = returned_shikoku}
+		}
+		
+		clr_global_flag = japan_partitioned
+					
+		
+	}
+		
+          	
+}
+
+##USSR feedback, PRC sides with Americans
+country_event = {
+	id = ne_division_jap.9
+	title = ne_division_jap.9.t
+	desc =  ne_division_jap.9.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Great
+	option = { 
+		name = ne_division_jap.9.a
+		
+		##opinion stuff
+		
+		if = {	
+		
+		limit = { NOT = {has_global_flag = no_srj} }
+		
+
+			add_opinion_modifier = { target = PRC modifier =  sided_americans}
+			add_opinion_modifier = { target = PRC modifier =  western_japanese_puppet}
+			reverse_add_opinion_modifier = { target = PRC modifier = eastern_japanese_puppet}
+
+			
+			SRJ = {
+			
+			add_opinion_modifier = { target = PRC modifier =  sided_americans}
+			add_opinion_modifier = { target = PRC modifier =  western_japanese_puppet}
+			reverse_add_opinion_modifier = { target = PRC modifier = eastern_japanese_puppet}
+			
+			}
+
+			
+			JAP = {
+			
+			add_opinion_modifier = { target = PRC modifier = accepted_japanese_reunification}
+			reverse_add_opinion_modifier = { target = PRC modifier = returned_shikoku}
+			}
+			
+			USA = {
+
+			add_opinion_modifier = { target = PRC modifier = accepted_japanese_reunification}
+			add_opinion_modifier = { target = PRC modifier = returned_shikoku}
+			}
+			
+			ENG = {
+
+			add_opinion_modifier = { target = PRC modifier = accepted_japanese_reunification}
+			add_opinion_modifier = { target = PRC modifier = returned_shikoku}
+			}
+			
+					
+			}
+			
+			
+	clr_global_flag = japan_partitioned
+	
+	}
+		
+          	
+}
+
+
+##USSR feedback, PRC sides with them
+country_event = {
+	id = ne_division_jap.10
+	title = ne_division_jap.10.t
+	desc =  ne_division_jap.10.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Great
+	option = { 
+		name = ne_division_jap.9.a
+		
+		##opinion stuff
+		
+		if = {	
+		
+			
+			##SOV loves PRC because accepted jap reunification and returned shikoku
+			
+			add_opinion_modifier = { target = PRC modifier = accepted_japanese_reunification}
+			add_opinion_modifier = { target = PRC modifier = returned_shikoku}
+
+			
+			SRJ = {
+			
+			add_opinion_modifier = { target = PRC modifier = accepted_japanese_reunification}
+			reverse_add_opinion_modifier = { target = PRC modifier = returned_shikoku}
+			
+			}
+
+			
+			JAP = {
+			
+			add_opinion_modifier = { target = PRC modifier =  sided_soviets}
+			add_opinion_modifier = { target = PRC modifier =  eastern_japanese_puppet}
+			reverse_add_opinion_modifier = { target = PRC modifier = western_japanese_puppet}
+			
+			}
+			
+			USA = {
+
+			add_opinion_modifier = { target = PRC modifier =  sided_soviets}
+			add_opinion_modifier = { target = PRC modifier =  eastern_japanese_puppet}
+			reverse_add_opinion_modifier = { target = PRC modifier = western_japanese_puppet}
+			
+			}
+			
+			ENG = {
+
+			##ENG is angry at PRC, because sided with soviets and created SRJ
+			##PRC is angry at PRC because ENG helped create western puppet
+			
+			add_opinion_modifier = { target = PRC modifier =  sided_soviets}
+			add_opinion_modifier = { target = PRC modifier =  eastern_japanese_puppet}
+			reverse_add_opinion_modifier = { target = PRC modifier = western_japanese_puppet}
+			
+			}
+			
+			
+			}
+			
+			
+	clr_global_flag = japan_partitioned
+	
+	}
+		
+          	
+}

@@ -1,0 +1,21 @@
+﻿##This Garrison is for W. Berlin - activated once Germany joins Nato
+
+division_template = {
+	name = "Erjinzhi Juntuán"			# Binary Infantry Corps
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "1 Su jun Zhiyuanjun"
+		location = 10629
+		division_template = "Erjinzhi Juntuán"
+	}
+}

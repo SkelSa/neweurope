@@ -1,0 +1,10 @@
+##neweurope
+
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_staff_of_sameness"
+		texturefile = "gfx/interface/ideas/staff_of_sameness.dds"
+	}		
+	
+}

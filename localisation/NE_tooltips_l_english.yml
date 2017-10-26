@@ -1,0 +1,8 @@
+﻿l_english:
+ prc_demand_nechina:0 "Every country who controls territory in NE China will get an ultimatum to return it. If Manchuria resembles however a battlefield, countries are less likely to accept..."
+ historical_settings_a:0 "If you enable this, following changes will happen:\n\nGermany is renamed to "Deutsches Reich" and gets their correct flag\n\nJapan is renamed to "Empire of Japan" and gets their historical flag\n\nGreece is renamed to "Kingdom of Greece" and gets their historical flag\n\nWest Germany is renamed to "Federal Republic of Germany" instead of "FRG"\n\nEast Germany is renamed to "German Democratic Republic" instead of "GDR""
+ historical_settings_b:0 "All communist Soviet Republics plus the Baltics gain a cosmetic tag, which changes their name to end with "SSR".\n\nExamples:\nLithuanian People's Republic -> Lithuanian SSR\nKazakh Soviet Socialist Republic -> Kazakh SSR"
+ historical_settings_c:0 "Hover over the two buttons above this one to see all changes"
+ ussr_usa_settings_a:0 "Soviet Union is renamed to "USSR"\n\nUnited States is renamed to "USA""
+ ussr_usa_settings_b:0 "Soviet Union is renamed to "Union of Soviet Socialist Republics"\n\nUnited States is renamed to "United States of America""
+ ussr_usa_settings_c:0 "The country names stay as they are"

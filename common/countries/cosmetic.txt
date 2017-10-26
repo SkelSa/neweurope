@@ -1,0 +1,115 @@
+
+MAL_UK = {
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
+
+INS_HOL = {
+    color = rgb { 203 138 74 }
+    color_ui = rgb { 255 179 96 }
+}
+
+HUN_EMPIRE = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
+
+AUS_NOT_WHITE = {	
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 255 164 127 }
+}
+
+##New Europe additions
+
+NE_WGR = {
+    color = rgb { 104  153  126 }#{ 120 140 120 }
+    color_ui = rgb { 120 140 120 }
+}
+
+NE_DDR = {
+    color = rgb { 119  130  145 }#{ 130 135 140 }
+    color_ui = rgb { 130 135 140 }
+}
+
+NE_KOR = {
+	color = rgb { 10 15 125 }
+	color_ui = rgb { 10 15 125 }
+}
+
+NE_RUS = {
+	color = rgb { 0 80 20 }
+	color_ui = rgb {  0 80 20 }
+}
+
+
+##ssr (SOV has 125  13  24  )
+NE_LIT_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_LAT_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_EST_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_BLR_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_UKR_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_MOL_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_AZR_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_ARM_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_GEO_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_KAZ_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_TAJ_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_UZB_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_TRK_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_KGZ_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+

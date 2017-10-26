@@ -1,0 +1,65 @@
+﻿l_french:
+ 
+ ##Generic
+ asked_return_territory:0 "Ils nous on demander de céder du territoire!"
+ return_territory:0 "Notre terrain a été rendu!"
+ refuse_territory:0 "Ils ont refusé notre territoire!"
+ fooled_us:0 "Ils ont essayé de nous tromper!"
+ peace_treaty:0 "Un traité de paix a été signé!"
+ freed_us:0 "Ils nous on libéré!"
+ NE_lend_lease:0 "Ils nous on accordé un prêt-bail!"
+ NE_denied_lend_lease:0 "Ils on refusé de nous aidé!"
+ ##Hatay transfer
+ hatay_transfer_refused:0 "Refusé d'abandonné Hatay"
+ hatay_transfer_accepted:0 "Cedé Hatay"
+ ##Warsaw Pact
+ refused_warsaw_pact:0 "Refusé de rejoindre le Pacte de Varsovie"
+ ##NATO
+ dissolved_allies:0 "Dissous les Alliés pour faire place à une nouvelle alliance!"
+ refused_nato_founding:0 "Refusé de crée une nouvelle faction"
+ refused_nato:0 "Refusé de joindre l'OTAN"
+ ##Unification of Austria
+ accepted_austrian_reunification:0 "A abandonné l'occupation de l'Autriche"
+ refused_austrian_reunification:0 "Refusé d'abandonner les territoires autrichien légitime"
+ 
+ ##Division of Germany
+ accepted_westgerman_reunification:0 "Aidé à fonder la RFA"
+ refused_westgerman_reunification:0 "Refus d'abandonner l'occupation (Allemagne)"
+ controls_saarland:0 "Ils ont encore la Sarre comme état-fantoche!"
+ western_german_puppet:0 "Les capitalistes ont créé un état-fantoche allemand!"
+ eastern_german_puppet:0 "Les communistes ont créé un état-fantoche allemand!"
+ 
+ ##Unification of Japan
+ accepted_japanese_reunification:0 "Aidé à fonder un nouveau Japon"
+ refused_japanese_reunification:0 "Refus d'abandonner l'occupation (Japon)"
+ western_japanese_puppet:0 "Les capitalistes ont créé un état-fantoche japonnais!"
+ eastern_japanese_puppet:0 "Les communistes ont créé un état-fantoche japonnais!"
+ returned_shikoku:0 "Shikoku a été rendu"
+ not_invited:0 "Les Américains ne nous ont pas invités!"
+ sided_soviets:0 "Ils ont pris le parti des Soviétiques!"
+ sided_americans:0 "Ils ont pris le parti des Américains!"
+ ##Stalin Notes
+ accepted_notes:0 "Accepté les notes"
+ refused_notes:0 "Refusé les notes et donc la réunification allemande!"
+ ##Port Arthur
+ leased_dalian:0 "Port Arthur a été cédé"
+ returned_dalian:0 "Port Arthur a été retourné!"
+ refused_dalian:0 "Ils ont refusé de retourner à Port Arthur!"
+ ##NFL and Labrador
+ accepted_nfl:0 "Accepté le retour de Terre-Neuve et Labrador"
+ refused_nfl:0 "Refusé le retour de Terre-Neuve et Labrador!"
+ 
+ ##Korea stuff
+ found_solution_korea:0 "A résolu le problème coréen"
+ occupies_korea:0 "Décidé d'occuper la Corée"
+ 
+ 
+ ##################################################
+ ##THREATS---------------------------------------##
+ ##################################################
+ 
+ threat_ne_korean_war:0 "Guerre en Corée"
+ threat_ne_korea_cf:0 "Cessez-le-feu en Corée"
+ 
+ 
+ 
