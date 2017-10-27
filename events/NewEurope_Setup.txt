@@ -20,12 +20,12 @@ news_event = {
 		KAZ = {set_capital = 589 }
 
 		WGR = {
-			#set_capital = 750 
+			set_capital = 750 
 			set_research_slots = 3
 		}
 
 		DDR = {
-			#set_capital = 744 
+			set_capital = 744 
 			set_research_slots = 3
 		}
 		
@@ -133,7 +133,17 @@ news_event = {
 				}
 			}
 
-		}	
+		}
+
+		##Determine China's personality
+		if = {
+			limit = {
+				PRC = { is_ai = yes}
+			}
+			
+			random_list = { 60 = { set_global_flag = PRC_USA } 40 = { set_global_flag = PRC_SOV } } 
+		}
+
 
 	}
 	
@@ -160,7 +170,7 @@ country_event = {
 				750 = { is_owned_by = WGR }
 			}
 					
-		WGR = { set_capital = 750 }			
+			WGR = { set_capital = 750 }			
 				
 		}
 		
@@ -170,7 +180,7 @@ country_event = {
 				744 = { is_owned_by = DDR }
 			}
 					
-		DDR = { set_capital = 744 }			
+			DDR = { set_capital = 744 }			
 				
 		}
 		

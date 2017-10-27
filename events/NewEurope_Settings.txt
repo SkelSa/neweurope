@@ -15,13 +15,13 @@ country_event = {
 	trigger {
 	
 		is_ai = no	
-		NOT = { has_country_flag = ne_settings }	
+		NOT = { has_global_flag = ne_settings }	
 		date > 1936.1.2
 
 	}
 	
 	immediate = { 		
-		set_country_flag = ne_settings 
+		set_global_flag = ne_settings 
 	}
 	
 	
