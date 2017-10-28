@@ -1,10 +1,5 @@
 ﻿#testing stuff
-
-##The Green Elephant (Russian: Зеленый Слоник, translit. Zelyonyy slonik, also known as Green Elephant Calf) is a 1999 Russian art-house and splatter gore film directed by Svetlana Baskova
-
 add_namespace = netest
-
-##This file is owned by SkelSa
 
 #OP- Event/Test purposes
 country_event = {
@@ -12,32 +7,25 @@ country_event = {
 	id = netest.1                       
 	title = "Are you ready for a miracle?"
 	desc =  "Are you?"  
-
 	picture = GFX_report_event_soviet_invasion_map
 
 	is_triggered_only = yes
-
 	#fire_only_once = yes
 	
-	trigger = {
+	trigger = {	
 	
-	is_ai = no
-	
-	NOT = {has_global_flag = miracle}
-	
+		is_ai = no
+		NOT = {has_global_flag = miracle}	
+		
 	}
 	
-	immediate = {
-	
-	set_global_flag = miracle
-	
+	immediate = {	
+		set_global_flag = miracle	
 	}
 	
 	option = {
 		name = netest.1.a 
-
-	add_ideas = staff_of_sameness
-
+			add_ideas = staff_of_sameness
 	}
 	
 }

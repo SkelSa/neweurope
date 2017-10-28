@@ -9471,7 +9471,7 @@ news_event = {
 	id = news.236
 	title = news.236.t
 	desc = news.236.d
-	picture = GFX_news_event_generic_sign_treaty1
+	picture = GFX_yalta_conference
 
 	is_triggered_only = yes
 

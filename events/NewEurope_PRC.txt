@@ -121,14 +121,13 @@ country_event = {
 	option = {
 		name = ne_prc.2.a
            
-		drop_cosmetic_tag = yes 
+			drop_cosmetic_tag = yes
+			add_political_power = 200
+			add_national_unity = 0.15
 
 		hidden_effect = {	
 			news_event = { id = ne_news.2 }
 		}
-            
-		
-	
 	}
 	
 	

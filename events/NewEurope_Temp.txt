@@ -22,55 +22,54 @@ country_event = {
 	
 	trigger {
 	
-	tag = USA
-	
-	date > 1942.6.1
-	
-	AND = {
-		country_exists = ENG
-		country_exists = USA
-		country_exists = SOV
-	}
-	
-	OR = {
-		country_exists = PRC
-		country_exists = CHI
-	}
-	
-	JAP = { exists = no } 
-	
-	NOT {
+		tag = USA		
+		date > 1942.6.1
 		
-		ENG = {
-			has_war_with = SOV
+		AND = {
+			country_exists = ENG
+			country_exists = USA
+			country_exists = SOV
 		}
 		
-		FRA = {
-			has_war_with = SOV
+		OR = {
+			country_exists = PRC
+			country_exists = CHI
 		}
 		
-		USA = {
-			has_war_with = SOV
+		JAP = { exists = no } 
+		
+		NOT {
+			
+			ENG = {
+				has_war_with = SOV
+			}
+			
+			FRA = {
+				has_war_with = SOV
+			}
+			
+			USA = {
+				has_war_with = SOV
+			}
+			
+			CHI = {
+				has_war_with = SOV
+			}
+			
+			PRC = {
+				has_war_with = SOV
+			}
+			
 		}
 		
-		CHI = {
-			has_war_with = SOV
+		OR = {
+			has_global_flag = japan_partitioned	
+			has_global_flag = japan_partitioned_ne_prc	
 		}
-		
-		PRC = {
-			has_war_with = SOV
-		}
-		
-		}
-	
-	OR = {
-	has_global_flag = japan_partitioned	
-	has_global_flag = japan_partitioned_ne_prc	
-	}
-		
-		
-	NOT = {has_global_flag = japan_divided	}
-	NOT = {has_global_flag = japan_divided_ne_prc	}
+			
+			
+		NOT = {has_global_flag = japan_divided	}
+		NOT = {has_global_flag = japan_divided_ne_prc	}
 	
 		
 	}

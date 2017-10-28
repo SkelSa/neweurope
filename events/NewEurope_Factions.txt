@@ -1,4 +1,4 @@
-##WP and NATO only
+﻿##WP and NATO only
 
 
 add_namespace = ne_wp

@@ -36,7 +36,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/germany_divided.dds"
 	}
 	
-	##Stalin Notes successful and not both use the same picture!
+	spriteType = {
+		name = "GFX_yalta_conference"
+		texturefile = "gfx/event_pictures/yalta_conference.dds"
+	}
+	
+	##Stalin Notes successful and both use the same picture!
 	spriteType = {
 		name = "GFX_stalin_notes"
 		texturefile = "gfx/event_pictures/stalin_notes.dds"
