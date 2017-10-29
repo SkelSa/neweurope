@@ -245,6 +245,9 @@ country_event = {
 			has_government = democratic
 		}
 		
+		NOT = { USA = { has_war_with = SOV } }
+		NOT = { ENG = { has_war_with = SOV } }
+		
 		tag = DPR
 		
 		DPR = { 		
@@ -340,8 +343,8 @@ country_event = {
 			add_opinion_modifier = { target = DPR modifier =  peace_treaty}
 			reverse_add_opinion_modifier = { target = DPR modifier = peace_treaty}
 			
-			KOR = { add_timed_idea = { idea = NE_neutrality days = 100 }  }
-			KOR = { add_timed_idea = { idea = NE_neutrality days = 100 }  }
+			DPR = { add_timed_idea = { idea = NE_neutrality days = 170 }  }
+			KOR = { add_timed_idea = { idea = NE_neutrality days = 170 }  }
 		
 			
 			##Whitepeace event, needs testing in case faction war still exists	
@@ -379,7 +382,7 @@ country_event = {
 
 ##ne_korean_war.5 sets the DMZ and state changes
 country_event = {
-	id = ne_korean_war.1
+	id = ne_korean_war.5
 
 	hidden = yes
 	is_triggered_only = yes
