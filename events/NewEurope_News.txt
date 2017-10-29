@@ -1138,9 +1138,7 @@ news_event = {
 		name = ne_news.12.b
 			
 		trigger {
-
 			tag = KOR				
-
 		}
 
 	}
@@ -1149,10 +1147,8 @@ news_event = {
 	option = {
 		name = ne_news.12.c
 			
-		trigger {
-		
+		trigger {		
 			has_government = communism
-
 		}
 
 	}

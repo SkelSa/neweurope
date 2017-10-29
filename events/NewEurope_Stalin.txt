@@ -1,0 +1,259 @@
+﻿add_namespace = ne_stalinu_pizdec
+add_namespace = ne_stalinews
+
+country_event = {
+	id = ne_stalinu_pizdec.1
+	title = ne_stalinu_pizdec.1.t
+	desc = ne_stalinu_pizdec.1.d
+	picture = GFX_report_event_stalinrip
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		has_country_leader = { name = "Joseph Stalin" }
+		has_global_flag = germany_divided
+		NOT = {
+			has_global_flag = stalin_rip_a
+			has_country_leader = { name = "Leon Trotsky" }
+		}
+	}
+	
+	mean_time_to_happen = { days = 1095 }
+
+	option = {
+		name = ne_stalinu_pizdec.1.a
+		SOV = {
+			set_political_power = -150
+			add_ideas = stalins_death
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Georgy Malenkov"
+			picture = "Portrait_Malenkov.dds"
+			ideology = marxism
+		}
+		custom_effect_tooltip = stalins_death_soc_countries_relations_worse.1.tt
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_government = communism
+					NOT = { tag = SOV }
+				}
+				add_national_unity = -0.15
+				add_opinion_modifier = { target = SOV modifier = communism_leanings_bad }
+			}
+		}
+		set_global_flag = stalin_rip_a
+		hidden_effect = {
+			news_event = { id = ne_stalinews.1 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = ne_stalinu_pizdec.2
+	title = ne_stalinu_pizdec.2.t
+	desc = ne_stalinu_pizdec.2.d
+	picture = GFX_powerstruggle_stalin
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		has_global_flag = stalin_rip_a
+		has_country_leader = { name = "Georgy Malenkov" }
+		NOT = {
+			has_global_flag = the_choose_accepted
+		}
+	}
+
+	mean_time_to_happen = { days = 115 }
+
+	option = {
+		name = ne_stalinu_pizdec.2.a
+		country_event = { days = 60 id = ne_stalinu_pizdec.3 }
+		set_country_flag = beria_evidence
+		set_country_flag = the_choose_accepted
+	}
+	option = {
+		name = ne_stalinu_pizdec.2.b
+		custom_effect_tooltip = berias_conspiracy_chance.1.tt
+		hidden_effect = {
+			random_list = {
+				80 = {
+					SOV = { country_event = { days = 65 id = ne_stalinu_pizdec.4 } }
+					set_country_flag = berias_conspiracy }
+				20 = {
+				}
+			}
+			set_country_flag = the_choose_accepted
+		}
+	}
+}
+
+
+
+country_event = {
+	id = ne_stalinu_pizdec.3
+	title = ne_stalinu_pizdec.3.t
+	desc = ne_stalinu_pizdec.3.d
+	picture = GFX_powerstruggle_stalin
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+		has_global_flag = stalin_rip_a
+		has_country_flag = beria_evidence
+		NOT = {
+			has_country_leader = { name = "Lavrentiy Beria" }
+		} 
+	}
+	option = {
+		name = ne_stalinu_pizdec.3.a
+		set_country_flag = beria_sel
+		remove_ideas = SOV_lavrentiy_beria
+	}
+}
+
+country_event = {
+	id = ne_stalinu_pizdec.4
+	title = ne_stalinu_pizdec.4.t
+	desc = ne_stalinu_pizdec.4.d
+	picture = GFX_powerstruggle_stalin
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+		has_global_flag = stalin_rip_a
+		has_country_flag = berias_conspiracy
+		NOT = {
+			has_country_leader = { name = "Lavrentiy Beria" } 
+			has_country_flag = beria_evidence
+			has_country_flag = beria_sel 
+		} 
+	}
+
+	option = {
+		name = ne_stalinu_pizdec.4.a
+		kill_country_leader = yes
+		remove_ideas = nikita_khrushchev
+		create_country_leader = {
+			name = "Lavrentiy Beria"
+			picture = "Portrait_Beria.dds"
+			ideology = marxism
+			traits = {
+				berias_ideas
+			}
+		}
+		set_country_flag = beria_won
+	}
+}
+
+country_event = {
+	id = ne_stalinu_pizdec.5
+	title = ne_stalinu_pizdec.5.t
+	desc = ne_stalinu_pizdec.5.d
+	picture = GFX_powerstruggle_stalin
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		has_global_flag = stalin_rip_a
+		has_country_flag = the_choose_accepted
+		has_country_leader = { name = "Georgy Malenkov" }
+		NOT = {
+			has_country_leader = { name = "Lavrentiy Beria" }
+			has_country_leader = { name = "Nikita Khrushchev" }
+		}
+	}
+
+	mean_time_to_happen = { days = 590 }
+
+	option = {
+		name = ne_stalinu_pizdec.5.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Nikita Khrushchev"
+			picture = "Portrait_Khrushchev.dds"
+			ideology = marxism
+			traits = {
+			}
+		}
+		set_country_flag = khrushchev_is_leader
+	}
+}
+
+country_event = {
+	id = ne_stalinu_pizdec.6
+	title = ne_stalinu_pizdec.6.t
+	desc = ne_stalinu_pizdec.6.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		SOV = {
+			has_global_flag = stalin_rip_a
+		}
+	}
+
+	mean_time_to_happen = { days = 105 }
+
+	immediate = {
+		hidden_effect = {
+			SOV = { remove_ideas = stalins_death }
+		}
+	}
+
+    option = {
+        name = ne_stalinu_pizdec.6.a
+    }
+	
+}
+
+news_event = {
+	id = ne_stalinews.1
+	title = ne_stalinews.1.t
+	desc = ne_stalinews.1.d
+	picture = GFX_news_stalin_rip
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ne_stalinews.1.a
+		trigger = {
+			has_government = communism
+			AND = {
+				NOT = { tag = SOV } }
+		}
+	}
+	option = {
+		name = ne_stalinews.1.b
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = ne_stalinews.1.c
+		trigger = {
+			has_government = neutrality
+		}
+	}
+	option = {
+		name = ne_stalinews.1.e
+		trigger = {
+			has_government = fascism
+		}
+	}
+}

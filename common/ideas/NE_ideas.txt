@@ -18,8 +18,7 @@ ideas = {
 		}
 		
 
-	#staff_of_sameness
-	
+	#staff_of_sameness	
 		staff_of_sameness = {
 	
 			picture = staff_of_sameness
@@ -74,10 +73,26 @@ ideas = {
 				}
             }
 
-            
-	
-	}	
-	
+	}
+
+	##Done by takee
+	stalins_death = {
+			
+			allowed = {
+				always = no
+			}
+			available = { has_global_flag = stalin_rip_a }
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				unity_factor = -0.25
+				conscription = -0.008
+				political_power_factor = -0.5
+			}
+	}
+
+
 		
 	}
 

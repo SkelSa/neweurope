@@ -109,6 +109,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/warsaw_pact.dds"
 	}
 	
+	##Stalin's death 
+	
+	spriteType = {
+		name = "GFX_report_event_stalinrip"
+		texturefile = "gfx/event_pictures/report_event_stalin_50.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_stalin_rip"
+		texturefile = "gfx/event_pictures/news_stalin_rip.dds"
+	}
+	
 
 	
 	
