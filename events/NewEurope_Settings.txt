@@ -61,8 +61,6 @@ country_event = {
 		hidden_effect = {
 			country_event = ne_settings.2
 		}
-
-
 	}
 	
 	##ne_settings.3 is together with ne_settings.1 !
@@ -73,13 +71,11 @@ country_event = {
 		hidden_effect = {
 			country_event = ne_settings.4
 		}
-
 	}
 	
 	
 	option = { # exit
-		name = ne_settings_intro.1.e
-		
+		name = ne_settings_intro.1.e		
 	}
 	
 	
@@ -102,8 +98,7 @@ country_event = {
 		
 		hidden_effect = {			
 			country_event = ne_settings.1			
-		}
-		
+		}		
 	}
 	
 	
@@ -113,8 +108,6 @@ country_event = {
 		hidden_effect = {
 			country_event = ne_settings.3
 		}
-
-
 	}
 	
 	
@@ -124,8 +117,6 @@ country_event = {
 		hidden_effect = {
 			country_event = ne_settings_intro.1
 		}
-
-
 	}
 
 	
@@ -246,7 +237,7 @@ country_event = {
 	
 	
 	#option = {
-	#	name = ne_settings.1.c        #both
+	#	name = ne_settings.1.c        #both; probably redundant
 	#	custom_effect_tooltip = historical_settings_c
 	#	
 	#	trigger = {
@@ -381,7 +372,7 @@ country_event = {
 	
 	option = { # Disable the names!
 		name = ne_settings.3.e
-		##NEW TOOLTIP
+		##NEW TOOLTIP NEEDED
 		#custom_effect_tooltip = ussr_usa_settings_c
 		
 		trigger = {
@@ -515,7 +506,7 @@ country_event = {
 	}
 
 	option = { # Return to menu
-	name = ne_settings.2.b
+	name = ne_settings.2.c
 	
 	
 		hidden_effect = {
