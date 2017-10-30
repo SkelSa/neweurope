@@ -1752,6 +1752,45 @@ news_event = {
 }
 
 
+news_event = {
+	id = ne_news.19
+	title = ne_news.19.t
+	desc = ne_news.19.d
+	picture = GFX_news_stalin_rip
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ne_news.19.a
+		trigger = {
+			has_government = communism
+			AND = {
+				NOT = { tag = SOV } }
+		}
+	}
+	option = {
+		name = ne_news.19.b
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = ne_news.19.c
+		trigger = {
+			has_government = neutrality
+		}
+	}
+	option = {
+		name = ne_news.19.e
+		trigger = {
+			has_government = fascism
+		}
+	}
+}
+
+
 
 
 
