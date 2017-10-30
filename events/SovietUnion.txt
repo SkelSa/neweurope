@@ -1052,7 +1052,7 @@ country_event = {
 	}
 	##REMOVE THIS OPTION SOON
 	option = {
-		name = CIRCUMVENT BUG
+		name = "CIRCUMVENT BUG"
 	#
 	}
 }
