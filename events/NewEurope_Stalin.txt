@@ -62,8 +62,10 @@ country_event = {
 		tag = SOV
 		has_global_flag = stalin_rip_a
 		has_country_leader = { name = "Georgy Malenkov" }
-		NOT = {
-			has_global_flag = the_choose_accepted
+		SOV = {
+			NOT = {
+				has_country_flag = the_choose_accepted
+			}
 		}
 	}
 
@@ -71,10 +73,11 @@ country_event = {
 
 	option = {
 		name = ne_stalin.2.a
-		country_event = { days = 60 id = ne_stalin.3 }
+		SOV = { country_event = { days = 60 id = ne_stalin.3 } }
 		set_country_flag = beria_evidence
 		set_country_flag = the_choose_accepted
 	}
+
 	option = {
 		name = ne_stalin.2.b
 		custom_effect_tooltip = berias_conspiracy_chance.1.tt
