@@ -4,7 +4,7 @@ ideas = {
 
 		NE_neutrality = {
 
-			picture = FRA_matignon_agreements
+			picture = neutrality_idea
 
 			allowed = {
 				always = no # Triggered via event
@@ -13,7 +13,7 @@ ideas = {
 			modifier = {
 				ai_call_ally_desire_factor = -150
 				ai_get_ally_desire_factor = -150
-				join_faction_tension = 0.75
+				join_faction_tension = 1.00
 			}
 		}
 		

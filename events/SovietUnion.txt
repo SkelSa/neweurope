@@ -225,9 +225,11 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
+	option = {    ##NewEurope: adding cores
 		name = soviet.6.a
 		annex_country = { target = EST }
+		add_state_core = 13
+		add_state_core = 191
 	}
 }
 
@@ -258,9 +260,11 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
+	option = {	##NewEurope: adding cores
 		name = soviet.8.a
 		annex_country = { target = LAT }
+		add_state_core = 12
+		add_state_core = 190
 	}
 }
 
@@ -294,6 +298,9 @@ country_event = {
 	option = {
 		name = soviet.10.a
 		annex_country = { target = LIT }
+		add_state_core = 11
+		add_state_core = 189
+		add_state_core = 188
 	}
 }
 
@@ -956,8 +963,13 @@ country_event = {
 	trigger = {
 		has_country_flag = SOV_soviet.48_trotsky
 		tag = SOV
+		NOT = { has_country_flag = NE_trotsky }
 	}
 
+	immediate = {
+		set_country_flag = NE_trotsky
+	}
+	
 	mean_time_to_happen = {
 		days = 90
 		#modifier = {
@@ -1037,6 +1049,11 @@ country_event = {
 			}
 			news_event = { hours = 6 id = news.221 }
 		}
+	}
+	##REMOVE THIS OPTION SOON
+	option = {
+		name = CIRCUMVENT BUG
+	#
 	}
 }
 

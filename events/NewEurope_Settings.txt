@@ -470,15 +470,17 @@ country_event = {
 			TUR = {add_ideas = NE_neutrality}
 			SWE = {add_ideas = NE_neutrality}
 			SWI = {add_ideas = NE_neutrality}
-			IRE = {add_ideas = NE_neutrality}			
+			IRE = {add_ideas = NE_neutrality}
+			SPR = {add_ideas = NE_neutrality}
+			JAP = {add_ideas = NE_neutrality}
 			##Can not join factions during winter war; but during Barbarossa
 			FIN = {add_timed_idea = { idea = NE_neutrality days = 1400} }
 			
 			
-		hidden_effect = {
-			set_global_flag = Neutrality_chosen
-			country_event = ne_settings_intro.1
-		}	
+			hidden_effect = {
+				set_global_flag = Neutrality_chosen
+				country_event = ne_settings_intro.1
+			}	
 	
 	}
 	
@@ -495,8 +497,9 @@ country_event = {
 		SWI = {remove_ideas = NE_neutrality}
 		IRE = {remove_ideas = NE_neutrality}			
 		FIN = {remove_ideas = NE_neutrality}
-		
-		
+		SPR = {remove_ideas = NE_neutrality}
+		JAP = {remove_ideas = NE_neutrality}
+
 		
 		hidden_effect = {
 			clr_global_flag = Neutrality_chosen

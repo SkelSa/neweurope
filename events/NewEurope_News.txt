@@ -46,15 +46,15 @@ news_event = {
 		name = ne_news.2.a
 		trigger = { 
 		
-		AND = {	
-		has_government = fascism
-		has_government = neutrality
-		}
-		
-		NOT = {	
-		has_government = communism
-		has_government = democratic
-		}
+			AND = {	
+				has_government = fascism
+				has_government = neutrality
+			}
+			
+			NOT = {	
+				has_government = communism
+				has_government = democratic
+			}
 			
 		}
 		
@@ -65,7 +65,7 @@ news_event = {
 
 		trigger {
 		
-		has_government = democratic
+			has_government = democratic
 
 		}
 
@@ -76,7 +76,7 @@ news_event = {
 			
 		trigger {
 		
-		has_government = communism
+			has_government = communism
 
 		}
 
@@ -198,10 +198,8 @@ news_event = {
 	option = {
 		name = news.3.e
 		
-		trigger {
-		
-		TAG = GER
-
+		trigger {		
+			TAG = GER
 		}
 	}
 }
@@ -225,13 +223,11 @@ news_event = {
 		
 	GER = {has_government = fascism}	
 		
-	OR {	
-			
+	OR {				
 		GER = { has_war_with = SOV }
 		GER = { has_war_with = ENG }
 		GER = { has_war_with = FRA }
 		GER = { has_war_with = USA }
-
 	}
 	
 	GER = {surrender_progress > 0.35}				
@@ -257,11 +253,10 @@ news_event = {
 		name = ne_news.4.a
 		trigger = { 
 		 
-		OR {	
-			has_government = neutrality
-			has_government = fascism
-
-		}	
+			OR {	
+				has_government = neutrality
+				has_government = fascism
+			}	
 			
 		}
 	}
@@ -331,10 +326,8 @@ news_event = {
 	
 	}
 
-	immediate = {
-	
-		set_global_flag = occupation_germany
-	
+	immediate = {	
+		set_global_flag = occupation_germany	
 	}
 	
 	##generic
@@ -537,16 +530,20 @@ news_event = {
 	
 	##Alternative description for Trotsky
 	title = {
-		text = ne_news.7.tt
+		text =  ne_news.7.tt
 		trigger = {
-			SOV = {has_completed_focus = SOV_permanent_revolution} }
+			SOV = { has_country_leader = { name = "Leon Trotsky" } }
+			NOT = { SOV = { has_country_leader = { name = "Joseph Stalin" } } }
 		}
+	}
 		
 	desc = {
 		text = ne_news.7.dt
 		trigger = {
-			SOV = {has_completed_focus = SOV_permanent_revolution} }
-		}
+			SOV = {has_country_leader = { name = "Leon Trotsky" }}
+			NOT = { SOV = { has_country_leader = { name = "Joseph Stalin" } } }
+			}
+	}
 	
 	picture = GFX_stalin_notes
 	
@@ -567,23 +564,21 @@ news_event = {
 		#}
 		
 		
-		NOT = {
-		
-			tag = WGR
-			tag = DDR
-			tag = SOZ
-			tag = BOZ
-			tag = AOZ
-			tag = FOZ
-			tag = SAA
-			tag = GER
-			tag = SOV
-			tag = USA
-			tag = FRA
-			tag = ENG
-			tag = CAN
-			
-		}
+			NOT = {		
+				tag = WGR
+				tag = DDR
+				tag = SOZ
+				tag = BOZ
+				tag = AOZ
+				tag = FOZ
+				tag = SAA
+				tag = GER
+				tag = SOV
+				tag = USA
+				tag = FRA
+				tag = ENG
+				tag = CAN			
+			}
 			
 		}
 		
@@ -656,7 +651,7 @@ news_event = {
 	desc = {
 		text = ne_news.7.dt1
 		trigger = {
-			SOV = {has_completed_focus = SOV_permanent_revolution} }
+			SOV = {has_country_leader = { name = "Leon Trotsky" }} }
 		}
 	
 	major = yes

@@ -695,8 +695,7 @@ country_event = {
 				
 				AND = {
 					tag = YUG
-					#has_country_leader = { id = 17 ruling_only = yes name = "Leon Trotsky" }, sultion beneath is better!
-					SOV = { NOT = {has_completed_focus = SOV_permanent_revolution} }		
+					SOV = { NOT = {has_country_leader = { name = "Leon Trotsky" }} }		
 				}
 				
 				

@@ -142,6 +142,7 @@ X  = In Work
 
 [list]
 [*][i]Finn Furwolf[/i], for the German translation! (in works)
+[*][i]Alfactor29[/i], for the French translation!
 [*][i]ghaussst[/i] and [i]Teymur Bagir-zade[/i], for the Russian translation! 
 [/list]
 

@@ -565,8 +565,7 @@ country_event = {
 			tag = FOZ
 			tag = BOZ
 			tag = AOZ
-			tag = SOZ
-			
+			tag = SOZ			
 		}
 	}
 

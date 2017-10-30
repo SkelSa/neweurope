@@ -405,7 +405,7 @@ country_event = {
 		
 		SOV = {
 			exists = yes
-			has_completed_focus = SOV_permanent_revolution
+			has_country_leader = { name = "Leon Trotsky" }
 			
 	}
 		

@@ -412,7 +412,7 @@ country_event = {
 
 	option = { # united germany
 		name = ne_notes.2.a
-		ai_chance = { factor = 10 
+		ai_chance = { factor = 5 
 		modifier = {
 				factor = 100
 				USA = { has_government = communism }
@@ -423,15 +423,20 @@ country_event = {
 
 		
 	SOV = {
-			country_event = { days = 2 id = ne_notes.3 }
-		}
+		country_event = { days = 2 id = ne_notes.3 }
+	}
 		
 
 		
 	}
 	option = { # fuck the soviets
 		name = ne_notes.2.b
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 95 
+		modifier = {
+				factor = 0
+				USA = { has_government = communism }
+			}
+		}
 
 		add_political_power = -40
 		

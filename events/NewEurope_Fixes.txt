@@ -268,28 +268,22 @@ country_event = {
 		has_idea = NE_neutrality
 		has_war = yes
 		
-		NOT = {
-		
-		tag = JAP
-		tag = DPR
-		tag = KOR
-
+		NOT = {		
+			tag = JAP
+			tag = DPR
+			tag = KOR
 		}
 		
 		NOT = { has_country_flag = NE_neutrality_removed }
 
 	}
 	
-	immediate = {
-	
-	set_country_flag = NE_neutrality_removed
-	
+	immediate = {	
+		set_country_flag = NE_neutrality_removed	
 	}
 	
-	option = {
-	
-	remove_ideas = NE_neutrality
-		
+	option = {	
+		remove_ideas = NE_neutrality		
 	}
 }
 
@@ -476,10 +470,8 @@ country_event = {
 
 	}
 	
-	option = {
-	
-	set_global_flag = korean_war_dprk
-	
+	option = {	
+		set_global_flag = korean_war_dprk	
 	}
 
 }
@@ -509,10 +501,8 @@ country_event = {
 
 	}
 	
-	option = {
-	
-	set_global_flag = korean_war_kor
-	
+	option = {	
+		set_global_flag = korean_war_kor	
 	}
 
 }
@@ -584,7 +574,7 @@ country_event = {
 				
 				AND = {			
 					has_government = fascism 
-					fascism > 0.60 		
+					fascism > 0.51 		
 				}
 				
 			}
@@ -599,12 +589,12 @@ country_event = {
 				
 					AND = {
 						has_government = fascism 
-						fascism > 0.60			
+						fascism > 0.51			
 					}
 					
 					AND = {
 						has_government = communism
-						communism > 0.60			
+						communism > 0.51			
 					}
 
 				}

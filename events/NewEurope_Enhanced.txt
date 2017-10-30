@@ -32,6 +32,14 @@ country_event = {
 			AOZ = { exists = yes } 
 			BOZ = { exists = yes }
 			GER = { exists = no }
+			
+			AND = {				
+				GER = {
+					exists = yes
+					NOT = { has_government = fascism }
+					is_subject = yes
+				}
+			}
 		}
 	}
 	
