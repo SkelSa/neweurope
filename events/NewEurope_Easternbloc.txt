@@ -78,7 +78,7 @@ country_event = {
 				instant_build = no
 			}
 			add_extra_state_shared_building_slots = 4
-    #zalupa add_state_modifier = pacani_siebivayut
+	#zalupa add_state_modifier = pacani_siebivayut
 		}
 
 	}

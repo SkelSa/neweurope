@@ -1,4 +1,12 @@
-ï»¿l_english:
+l_english:
+
+##Crimea is Ukraine
+ ne_ssrwb.1.t:0 "The transfer of the Crimean Oblast."
+ ne_ssrwb.1.d:0 "Taking into account the commonality of the economy, the territorial proximity and close economic and cultural ties between the Crimean region and the Ukrainian SSR, the Presidium of the Supreme Soviet of the Union of Soviet Socialist Republics decides: Approve the joint presentation of the Presidium of the Supreme Soviet of the RSFSR and the Presidium of the Supreme Soviet of the Ukrainian SSR on the transfer of the Crimean region from the Russian Soviet Federated Socialist Republic to the Ukrainian Soviet Socialist Republic."
+ ne_ssrwb.1.a:0 "Approve the decree."
+ ne_ssrwb.1.b:0 "Change your mind about this and cancel it."
+
+##Stalin events
 
  ne_stalin.1.t:0 "The great leader is dead!"
  ne_stalin.1.d:0 "The heart of the comrade-in-arms and the genius continuer of the cause of Lenin, the wise leader and teacher of the Communist Party and the Soviet people, Joseph Vissarionovich Stalin, ceased to beat. The name STALIN is infinitely expensive for our party, for the Soviet people, for the working people of the whole world. Together with Lenin, Comrade Stalin created a powerful Communist Party, educated and tempered it; Together with Lenin, Comrade Stalin was the inspiration and leader of the Great October Socialist Revolution, the founder of the world's first socialist state. Continuing Lenin's immortal cause, Comrade STALIN led the Soviet people to the world-historic victory of socialism in our country. Comrade STALIN led our country to victory over fascism in the Second World War, which radically changed the entire international situation. Comrade STALIN armed the party and all the people with a great and clear program of building communism in the USSR."
@@ -24,8 +32,8 @@
 ######################################################################################################################################
 ############################################################TOOLTIPS##################################################################
 
-stalins_death_soc_countries_relations_worse.1.tt:0 "Â§R\nAfter Stalin's death, the opinion of the countries of the Socialist camp about us and the stability of these countries will become worse.Â§!\n"
-berias_conspiracy_chance.1.tt:0 "Â§YWith some probability, this decision can be of great importance.Â§!\n"
+stalins_death_soc_countries_relations_worse.1.tt:0 "§R\nAfter Stalin's death, the opinion of the countries of the Socialist camp about us and the stability of these countries will become worse.§!\n"
+berias_conspiracy_chance.1.tt:0 "§YWith some probability, this decision can be of great importance.§!\n"
 
 ######################################################################################################################################
 ############################################################IDEAS#####################################################################
