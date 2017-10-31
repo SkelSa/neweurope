@@ -17,7 +17,9 @@ l_english:
  
  ##Slots##
  ne_diplo:0 "Additional Diplomatic Actions"
- ne_diplomacy_slot:0 "Select a diplomatic option"
- ne_invite_nato:0 ""
+ ne_diplomacy_slot:0 "Select a Diplomatic Option"
+ ne_join_nato:0 "Invite new Countries"
+ ne_join_wp:0 "Invite new Countries"
+ ne_idle:0 "No Current Action"
  
  

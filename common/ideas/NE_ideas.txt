@@ -306,11 +306,11 @@ ideas = {
 		
 		
 		##IDLE, steal things from MPNW
-		swp_idle = {
+		ne_idle = {
 			default = yes
 			cost = 0
 			
-			picture = invite_idle
+			picture = idle
 
 			ai_will_do = {
 				factor = 0
