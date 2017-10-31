@@ -1,6 +1,142 @@
 ideas = {
 
 	country = {
+	
+	
+		NE_reparations = {		##reparations for loser country
+
+			picture = can_wartime_prices_and_trade_board
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+			
+				consumer_goods_factor = 0.20
+				conscription_factor = -0.10 
+				army_morale_factor = -0.15
+				#political_advisor_cost_factor = 0.25 #
+				#trade_laws_cost_factor = 0.25        #
+				#mobilization_laws_cost_factor = 0.25 #
+				#economy_cost_factor = 0.25           #
+				industrial_capacity_factory = -0.20
+				production_factory_efficiency_gain_factor = -0.25
+				production_speed_arms_factory_factor = -0.5 
+			}
+		}
+		
+		
+		NE_align_west = {
+
+			picture = align_west
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+			
+				democratic_acceptance = 90
+				democratic_drift = 0.02
+				drift_defence_factor = 0.05
+				opinion_gain_monthly_same_ideology_factor = 5
+				##only capitalists
+				trade_opinion_factor = 0.5
+				##only communists
+				unity_weekly = 0.001
+				
+			}
+		}
+		
+		NE_align_east = {
+
+			picture = align_east
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+			
+				communism_acceptance = 90
+				communism_drift = 0.02
+				drift_defence_factor = 0.05
+				opinion_gain_monthly_same_ideology_factor = 5
+				##only capitalists
+				trade_opinion_factor = 0.5
+				##only communists
+				unity_weekly = 0.001
+				
+			}
+		}
+		
+		NE_ready_nato = {
+
+			picture = ready_nato
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+			
+				communism_acceptance = 90
+				communism_drift = 0.02
+				drift_defence_factor = 0.05
+				opinion_gain_monthly_same_ideology_factor = 5
+				##only capitalists
+				trade_opinion_factor = 0.5
+				##only communists
+				unity_weekly = 0.001
+				
+			}
+		}
+		
+		
+		NE_ready_wp = {
+
+			picture = ready_wp
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+			
+				democratic_acceptance = 90
+				democratic_drift = 0.02
+				drift_defence_factor = 0.05
+				opinion_gain_monthly_same_ideology_factor = 5
+				##only capitalists
+				trade_opinion_factor = 0.5
+				##only communists
+				unity_weekly = 0.001
+				
+			}
+		}
+		
+		
+		NE_titos_partisans = {
+
+			picture = titos_partisans
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+			
+				democratic_drift = 0.10
+				unity_weekly = 0.001
+				conscription_factor = 0.05  
+				every_enemy_country = {
+					enemy_partisan_effect = 0.1
+				}
+				
+			}
+		}
+	
 
 		NE_neutrality = {
 
@@ -11,9 +147,20 @@ ideas = {
 			}
 
 			modifier = {
-				ai_call_ally_desire_factor = -150
-				ai_get_ally_desire_factor = -150
+				#ai_call_ally_desire_factor = -150
+				#ai_get_ally_desire_factor = -150
+				#opinion_gain_monthly_same_ideology_factor = 0.5
+				#join_faction_tension = 1.00
+				
+				generate_wargoal_tension = 1.00
 				join_faction_tension = 1.00
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_get_ally_desire_factor = -100
+				
+				
 			}
 		}
 		
@@ -78,21 +225,99 @@ ideas = {
 	##Done by takee
 	stalins_death = {
 			
-			allowed = {
-				always = no
-			}
-			available = { has_global_flag = stalin_rip_a }
+		allowed = {
+			always = no
+		}
+		available = { has_global_flag = stalin_rip_a }
 
-			picture = generic_communism_drift_bonus
-			
-			modifier = {
-				unity_factor = -0.25
-				conscription = -0.008
-				political_power_factor = -0.5
-			}
+		picture = generic_communism_drift_bonus
+		
+		modifier = {
+			unity_factor = -0.25
+			conscription = -0.008
+			political_power_factor = -0.5
+		}
 	}
-}
 
+	
+	}
+	
+	ne_diplomacy_slot = {
+	
+	
+		#JOIN NATO
+		ne_join_nato = { 
+			default = no
+			cost = 250
+			picture = invite_nato
+			
+			available = {
+				
+				##system is enabled, check for flag
+				##Player is either UK, FRA, USA, WGR and in nato faction
+				##any democratic country needs idea: ready for nato
+				
+			}
+			
+
+			on_add = {
+		
+				#execute event for countries				
+					#country_event = { id =  }
+											
+				#}			
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+
+		}
+			
+		
+		##JOIN WP
+		ne_join_wp = { 
+			default = no
+			cost = 250
+			picture = invite_wp
+			
+			available = {
+				
+				##system is enabled, check for flag
+				##Player is either SOV, POL, PRC, GDR and in wp faction
+				##any commie country needs idea: ready for warsaw pact
+				
+			}
+			
+
+			on_add = {
+		
+				#execute event for countries				
+					#country_event = { id = }
+											
+				#}			
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+
+		}
+		
+		
+		##IDLE, steal things from MPNW
+		swp_idle = {
+			default = yes
+			cost = 0
+			
+			picture = invite_idle
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+	}
 }
 
 

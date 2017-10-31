@@ -1,0 +1,10 @@
+idea_categories = {
+
+	ne_diplo = {
+		slot = ne_diplomacy_slot
+        
+		cost = 30
+		removal_cost = -1
+	}
+	
+}

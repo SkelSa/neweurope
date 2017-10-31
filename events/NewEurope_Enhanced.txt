@@ -33,13 +33,22 @@ country_event = {
 			BOZ = { exists = yes }
 			GER = { exists = no }
 			
-			AND = {				
+			AND = {		##GER is puppet ( usually of SOV )		
 				GER = {
 					exists = yes
 					NOT = { has_government = fascism }
 					is_subject = yes
 				}
 			}
+			
+			AND = {		##GER is liberated, not played by player		
+				GER = {
+					exists = yes
+					has_government = democratic
+					is_ai = yes
+				}
+			}
+			
 		}
 	}
 	
