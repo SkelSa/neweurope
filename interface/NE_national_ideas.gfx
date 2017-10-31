@@ -5,6 +5,31 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_staff_of_sameness"
 		texturefile = "gfx/interface/ideas/staff_of_sameness.dds"
-	}		
+	}
+
+	spriteType = {
+		name = "GFX_idea_align_west"
+		texturefile = "gfx/interface/ideas/align_west.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_align_east"
+		texturefile = "gfx/interface/ideas/align_east.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ready_nato"
+		texturefile = "gfx/interface/ideas/ready_nato.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ready_wp"
+		texturefile = "gfx/interface/ideas/ready_wp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_titos_partisans"
+		texturefile = "gfx/interface/ideas/titos_partisans.dds"
+	}
 	
 }
