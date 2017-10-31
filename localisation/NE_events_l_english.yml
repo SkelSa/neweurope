@@ -957,71 +957,7 @@
  ne_saar.2.a:0 "Why not?"
  ne_saar.2.b:0 "They stay part of our occupation zone."
  
- ##DIVISION OF JAPAN##
- ##USA asks other occupiers to give up occupation. SOV can decline or not be invited. They can then found their own Japan and ask PRC, or PRC can give up territory voluntarily
- ne_division_jap.1.t:0 "A new Japan?"
- ne_division_jap.1.d:0 "We occupy Japan now for several months and we managed to free the Japanese from their fanaticism. Our ministers think that a new Japan is long overdue and we need to recreate the Isles. Let's ask our allies to participate!"
- ne_division_jap.1.a:0 "Send the letters!"
- ne_division_jap.1.b:0 "Only ask our democratic Allies, we can't trust the Soviets..."
- ne_division_jap.1.c:0 "They don't deserve freedom for what they did!"
- 
- #SOV gets response (option a)
- ne_division_jap.2.t:0 "A neutral and free Japan?"
- ne_division_jap.2.d:0 "The United States offered every occupier of the Japanese Home islands to finally end occupation and help to liberate a new democratic Japan, free of fanaticism and imperialism. In our turn the northern part of Honshu and all of Hokkaido would be part of this Japan, though we can keep the Kuril islands and Sakhalin. Do we attend the negotiation table?"
- ne_division_jap.2.a:0 "There's no reason to continue occupation. Join the American plan! "
- ne_division_jap.2.b:0 "We can't trust the capitalists. Why don't we just setup our own Japan.... "
- ne_division_jap.2.c:0 "We establish a new home for the Japanese (ask PRC)... "
- ne_division_jap.2.e:0 "A neutral and democratic Japan? What a joke! Continue occupation!"
- 
- #ask the other allies+USSR
- ne_division_jap.3.t:0 "The Founding of a new Japan"
- ne_division_jap.3.d:0 "The United States offered the occupiers of the Japanese Home islands to finally end occupation and help to liberate a new democratic Japan, free of fanaticism and imperialism. Do we agree on this proposal and thus cede the bits of Japan we currently hold to the new government in Tokyo?"
- ne_division_jap.3.a:0 "Yes, let our soldiers return home!"
- ne_division_jap.3.b:0 "No, this won't happen"
- 
- ##PRC is asked
- ne_division_jap.3.t1:0 "The Fate of Shikoku"
- ne_division_jap.3.d1:0 "Ater the summit yesterday it was clear that there's an unease between the Union and the United States. [SOV.Getleader] has now finally decided to proclaim a new socialist Japan, based from their zone of occupation. Our government is at a crossroads: We can either give Shikoku to the American puppet, Soviet puppet or avoid the dilemma and keep the territory. Our actions now will determine future relations or possible alliances..."
- ne_division_jap.3.a1:0 "Side with the American plan!"
- ne_division_jap.3.b1:0 "The occupation will continue"
- ne_division_jap.3.c:0 "Let's strengthen the new Socialist Republic!"
- 
- ##SOV gets response (option b)
- ne_division_jap.4.t:0 "The Americans don't trust us!"
- ne_division_jap.4.d:0 "Yesterday all nations which hold a piece of Japan were invited to discuss the future of a new Japanese nation. All except us. Since we would have gladly accepted their offer this is another evidence of lacking trust in capitalists.\nWe only have two options now: Create our own Japan or continue occupation..."
- ne_division_jap.4.a:0 "We need a Japanese puppet!"
- ne_division_jap.4.b:0 "We need a Japanese puppet (also ask PRC)!"
- ne_division_jap.4.c:0 "The occupation will continue"
- 
- ##feedback for the usa (positive)
- ne_division_jap.5.t:0 "[From.GetName] agrees to give up their occupation of Japan!"
- ne_division_jap.5.d:0 "[From.GetNameDef]'s government has announced to give up their occupation zone on the Home Islands and hands it over to the new Japanese State!"
- ne_division_jap.5.a:0 "Great news!"
- 
- ##feedback for usa, soviets establish own puppet
- ne_division_jap.6.t:0 "The Soviets create their own puppet!"
- ne_division_jap.6.d:0 "[From.GetLeader] has just established a puppet state out of their occupation zone. The "Japanese Socialist Republic" led by Kyuichi Tokuda will be a major obstacle in a possible reunification. One thing is sure: Japan will be a bloody battlefield should WW3 break out... "
- ne_division_jap.6.a:0 "An Iron Curtain has descended across Asia"
- 
- ##feedback for usa, negative
- ne_division_jap.7.t:0 "[From.GetName] respectfully refuses our offer"
- ne_division_jap.7.d:0 "[From.GetNameDef] has announced to keep their occupation zone and denied any unification process!"
- ne_division_jap.7.a:0 "Damn!"
- 
- ##feedback for usa, china sides with soviets!
- ne_division_jap.8.t:0 "Red China has sided with the Soviets"
- ne_division_jap.8.d:0 "Yesterday, [PRC.GetLeader] and [SOV.GetLeader] met in Kabharovsk and decided to add Shikoku to North Japan. This is a disaster and we now have another border to guard on the Home Islands!"
- ne_division_jap.8.a:0 "Damn Chinese!"
- 
- ##feedback for ussr, china sides with americans!
- ne_division_jap.9.t:0 "Communist China cedes territory to the capitalists!"
- ne_division_jap.9.d:0 "Yesterday, [PRC.GetLeader] and [USA.GetLeader] met in Tokyo and decided to add Shikoku to South Japan. We really have to be worried now about our Asian neighbour..."
- ne_division_jap.9.a:0 "Comrades?"
- 
- ##feedback USSR China gives Shikoku to SRJ
- ne_division_jap.10.t:0 "Shikoku was returned!"
- ne_division_jap.10.d:0 "Our ambassadors have returned with great news. [PRC.GetLeader] has just signed a declaration to return their occupation zone,Shikoku, on the Home Islands to our allied Japanese Republic. This step will not only bolster our relationships but also strengthen the SRJ and create another border to gaurd for the capitalists.\nIt won't be long until Japan is reunited!"
- ne_division_jap.10.a:0 "This is great. Let us to drink to our Chinese brothers!"
+ ###JUMP###
  
  
  ##DIVSION OF KOREA

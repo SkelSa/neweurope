@@ -1,14 +1,23 @@
 ﻿##IDEAS
+l_english:
 
-NE_reparations:0 "War Reparations"
-NE_reparations_desc:0 "Europe is still a continent in ruins. To repair and rebuild the damage the Germans caused from Bordeaux to Rzhev, heavy war reparations against Germany were imposed by the Victorious Powers. Additionally, they will also guarantee that the Germans will never be able to disturb the peace of the world..."
-NE_align_west:0 "Aligned with the West"
-NE_align_west_desc:0 "Good relations and trade with the West are key aspects in this country' foreign policy."
-NE_align_east:0 "Aligned with the East"
-NE_align_west_desc:0 "This nation prefers to work together with the USSR and its allies instead of the West and thus aligns itself with the "Second World"."
-NE_ready_nato:0 "Ready to join NATO"
-NE_ready_nato_desc:0 "Just a few more talks are needed and an entry into the North Atlantic Treaty Organisation could become reality"
-NE_ready_wp:0 "Ready to join the Warsaw Pact"
-NE_ready_wp:0 ""
-NE_titos_partisans:0 "Yugoslavian Partisans"
-NE_titos_partisans_desc:0 "Though the nation itself fell rather quick, the Yugoslavian people are still fighting against the German and Italian fascists. Especially the communist partisan forces under the command of Josip Broz Tito cause nightmares for the occupiers."
+ NE_reparations:0 "War Reparations"
+ NE_reparations_desc:0 "Europe is still a continent in ruins. To repair and rebuild the damage the Germans caused from Bordeaux to Rzhev, heavy war reparations against Germany were imposed by the Victorious Powers. Additionally, they will also guarantee that the Germans will never be able to disturb the peace of the world..."
+ NE_align_west:0 "Aligned with the West"
+ NE_align_west_desc:0 "Good relations and trade with the West are key aspects in this country' foreign policy."
+ NE_align_east:0 "Aligned with the East"
+ NE_align_east_desc:0 "Despising Western imperialism and capitalism, this nation prefers to work together with the USSR and its allies and thus aligns itself with the "Second World"."
+ NE_ready_nato:0 "Ready to join NATO"
+ NE_ready_nato_desc:0 "Just a few more talks are needed and an entry into the North Atlantic Treaty Organisation could become reality."
+ NE_ready_wp:0 "Ready to join the Warsaw Pact"
+ NE_ready_wp_desc:0 "A revolution has turned this nation socialist some time ago. Excellent relations with Moscow and the common vision of a socialist planet could lead to an entry into the Warsaw Pact..."
+ NE_titos_partisans:0 "Yugoslavian Partisans"
+ NE_titos_partisans_desc:0 "Though the nation itself fell rather quick, the Yugoslavian people are still fighting against the German and Italian fascists. Especially the communist partisan forces under the command of Josip Broz Tito cause nightmares for the occupiers."
+
+ 
+ ##Slots##
+ ne_diplo:0 "Additional Diplomatic Actions"
+ ne_diplomacy_slot:0 "Select a diplomatic option"
+ ne_invite_nato:0 ""
+ 
+ 
