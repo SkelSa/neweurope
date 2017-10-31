@@ -125,5 +125,10 @@ spriteTypes = {
 		name = "GFX_powerstruggle_stalin"
 		texturefile = "gfx/event_pictures/powerstruggle_stalin.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ukrainian_crimea"
+		texturefile = "gfx/event_pictures/ukrainian_crimea.dds"
+	}
 	
 	

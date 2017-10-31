@@ -45,6 +45,9 @@ country_event = {
 		}
 		set_global_flag = stalin_rip_a
 		hidden_effect = {
+				limit = {
+					NOT = { tag = SOV }
+				}
 			news_event = { id = ne_news.19 days = 1 }
 		}
 	}
