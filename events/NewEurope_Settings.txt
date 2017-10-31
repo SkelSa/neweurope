@@ -533,16 +533,33 @@ country_event = {
 	##TO-DO
 	##NATO/Wp stricter rules
 	##make it hard, give every democratic/communist nation not intended for NATO/WP under 60% support, 
-	#option = {
-	#	name = ne_settings.4.a
-	#	custom_effect_tooltip = tooltip 
-	#	
-	#	
-	#	hidden_effect = {
-	#		country_event = ne_settings_intro.1
-	#	}
-	#
-	#}
+	option = {
+		name = ne_settings.4.a
+		#custom_effect_tooltip = tooltip 
+		
+			set_global_flag = ne_strict_faction
+		
+		hidden_effect = {
+			country_event = ne_settings_intro.1
+		}
+	
+	}
+	
+	option = {
+		name = ne_settings.4.a1
+		#custom_effect_tooltip = tooltip 
+		
+		trigger = {
+			has_global_flag = ne_strict_faction		
+		}
+		
+		clr_global_flag = ne_strict_faction
+		
+		hidden_effect = {
+			country_event = ne_settings_intro.1
+		}
+	
+	}
 	
 	
 	option = { ##just co-properity

@@ -389,10 +389,11 @@
  ##OPTIONS: Faction Settings 
  ne_settings.4.t:0 "BPWE: Factions"
  ne_settings.4.d:0 "Faction changes - Currently you can only create the Co-Prosperity Sphere for Japan. More content will follow."
- #ne_settings.4.a:0 "Enact stricter rules for joining NATO/PACT"
+ ne_settings.4.a:0 "Enable historical NATO/PACT"
+ ne_settings.4.a1:0 "Disable any special rules about NATO/WP"
  ne_settings.4.b:0 "Create the Co-Prosperity Sphere"
  ne_settings.4.b1:0 "Dissolve Japan's faction!"
- ne_settings.4.c:0 "Both options"
+ #ne_settings.4.c:0 "Both options"
  ne_settings.4.e:0 "Exit to Main Menu"
  
  
