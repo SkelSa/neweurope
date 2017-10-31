@@ -9,5 +9,10 @@ spriteTypes = {
 		name = "GFX_idea_invite_wp"
 		texturefile = "gfx/slot icons/invite_wp.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_idle"
+		texturefile = "gfx/slot icons/NE_idle.dds"
+	}
 
 }

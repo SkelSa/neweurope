@@ -25,12 +25,12 @@ country_event = {
 	
 	option = {
 		name = netest.1.a 
-			add_ideas = staff_of_sameness
+			#add_ideas = staff_of_sameness
 			add_ideas = NE_align_west
 			add_ideas = NE_align_east
 			add_ideas = NE_ready_nato
 			add_ideas = NE_ready_wp
-			add_ideas = NE_tito_partisans
+			add_ideas = NE_titos_partisans
 			add_ideas = NE_neutrality
 	}
 	

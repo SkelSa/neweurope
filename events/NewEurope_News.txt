@@ -1187,6 +1187,18 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
+	
+	immediate = {
+	
+		hidden_effect = {		
+			##the DMZ gets a DMZ
+			768 = { set_demilitarized_zone = yes } 
+			769 = { set_demilitarized_zone = yes } 
+			770 = { set_demilitarized_zone = yes } 
+			771 = { set_demilitarized_zone = yes } 		
+		}
+	
+	}
 
 	##generic
 	option = {

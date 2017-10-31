@@ -355,7 +355,22 @@ country_event = {
 			add_named_threat = { threat = -5 name = threat_ne_korea_cf }
 			
 			hidden_effect = {
-				FROM = { country_event = {  days = 1 id = ne_korean_war.5 } }
+			
+				##switch to 1953 border
+			DPR = {
+				transfer_state = 762
+				transfer_state = 769
+				transfer_state = 770
+			}
+
+			KOR = {
+				transfer_state = 763
+				transfer_state = 768
+				transfer_state = 771	
+			}
+			
+			
+				#FROM = { country_event = {  days = 1 id = ne_korean_war.5 } }
 				news_event = { days = 2 id = ne_news.13 }	
 			}
 
@@ -372,8 +387,7 @@ country_event = {
 			add_national_unity =  -0.2
 			add_popularity = { ideology = democratic popularity = -0.3 }
 
-			hidden_effect = {
-	
+			hidden_effect = {	
 				news_event = { days = 2 id = ne_news.14 }
 			}
 
@@ -392,26 +406,9 @@ country_event = {
 	fire_only_once = yes
 
 	immediate = { 
-	
-		##switch to 1953 border
-		DPR = {
-			transfer_state = 762
-			transfer_state = 769
-			transfer_state = 770
-		}
 
-		KOR = {
-			transfer_state = 763
-			transfer_state = 768
-			transfer_state = 771	
-		}
 	
-	
-		##the DMZ gets a DMZ
-		768 = { set_demilitarized_zone = yes } 
-		769 = { set_demilitarized_zone = yes } 
-		770 = { set_demilitarized_zone = yes } 
-		771 = { set_demilitarized_zone = yes } 
+		
 
 	}
 	

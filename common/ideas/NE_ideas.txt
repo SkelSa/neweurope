@@ -127,12 +127,12 @@ ideas = {
 
 			modifier = {
 			
-				democratic_drift = 0.10
-				unity_weekly = 0.001
-				conscription_factor = 0.05  
-				every_enemy_country = {
-					enemy_partisan_effect = 0.1
-				}
+				communism_drift = 0.10
+				unity_weekly = 0.005
+				conscription_factor = 0.05
+				##IDEA: Boost to own partisans
+				
+				
 				
 			}
 		}
