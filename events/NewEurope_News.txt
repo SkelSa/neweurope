@@ -1766,8 +1766,6 @@ news_event = {
 		name = ne_news.19.a
 		trigger = {
 			has_government = communism
-			AND = {
-				NOT = { tag = SOV } }
 		}
 	}
 	option = {

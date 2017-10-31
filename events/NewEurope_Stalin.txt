@@ -69,7 +69,7 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = { days = 115 }
+	mean_time_to_happen = { days = 100 }
 
 	option = {
 		name = ne_stalin.2.a
