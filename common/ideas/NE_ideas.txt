@@ -297,7 +297,6 @@ ideas = {
 											
 				#}			
 			}
-<<<<<<< HEAD
 
 			ai_will_do = {
 				factor = 0
@@ -312,10 +311,6 @@ ideas = {
 			cost = 0
 			
 			picture = invite_idle
-=======
-	}
-}
->>>>>>> 540e62d99a9313aacd433331f70d477a4adb3e8f
 
 			ai_will_do = {
 				factor = 0
