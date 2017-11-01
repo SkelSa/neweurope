@@ -26,8 +26,7 @@ country_event = {
 			}
 	}
 	
-	# mean_time_to_happen = { days = 290 }
-	mean_time_to_happen = { days = 20 }
+	mean_time_to_happen = { days = 265 }
 
 	option = {
 		name = ne_ssrwb.1.a
