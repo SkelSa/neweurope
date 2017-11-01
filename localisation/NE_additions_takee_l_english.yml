@@ -29,42 +29,42 @@
  ne_stalin.5.d:0 "Having heard the report of Comrade. Khrushchev NS about Comrade. Malenkov GM and fully approving the proposals of the Presidium of the Central Committee on this issue, the Plenum of the Central Committee of the CPSU believes that Comrade Malenkov does not ensure the proper performance of the duties of the Chairman of the Council of Ministers of the USSR. Not having the necessary knowledge and experience of economic activity, as well as the experience of local Soviet bodies, Comrade Malenkov poorly organizes the work of the Council of Ministers, does not ensure serious and timely preparation of questions for meetings of the Council of Ministers. When considering many acute questions, Comrade Malenkov shows indecision, without taking a definite position. These shortcomings in the business qualities of Comrade Malenkov are extremely detrimental to the work of the Council of Ministers."
  ne_stalin.5.a:0 "Khrushchev becomes Chairman of the Council of Ministers of the USSR"
 
-######################################################################################################################################
-############################################################TOOLTIPS##################################################################
+ ######################################################################################################################################
+ ############################################################TOOLTIPS##################################################################
 
-stalins_death_soc_countries_relations_worse.1.tt:0 "§R\nAfter Stalin's death, the opinion of the countries of the Socialist camp about us and the stability of these countries will become worse.§!\n"
-berias_conspiracy_chance.1.tt:0 "§YWith some probability, this decision can be of great importance.§!\n"
+ stalins_death_soc_countries_relations_worse.1.tt:0 "§R\nAfter Stalin's death, the opinion of the countries of the Socialist camp about us and the stability of these countries will become worse.§!\n"
+ berias_conspiracy_chance.1.tt:0 "§YWith some probability, this decision can be of great importance.§!\n"
 
-######################################################################################################################################
-############################################################IDEAS#####################################################################
+ ######################################################################################################################################
+ ############################################################IDEAS#####################################################################
 
-stalins_death:0 "The Influence of Stalin's Death"
+ stalins_death:0 "The Influence of Stalin's Death"
 
-<<<<<<< HEAD
+
 
 ########################################################################################################################################
 ############################################################NEWS EVENT##################################################################
 
-##Stalin's Death
+ ##Stalin's Death
  ne_news.19.t:0 "Joseph Stalin died"
  ne_news.19.d:0 "Joseph Stalin, leader of the Soviet Union since 1924, died in Moscow. Like his right-wing counterpart, Hitler, who was born in Austria, Joseph Stalin was not a native of the country he ruled with an iron fist. Isoeb Dzhugashvili was born in 1889 in Georgia, then part of the old Russian empire. The son of a drunk who beat him mercilessly and a pious washerwoman mother, Stalin learned Russian, which he spoke with a heavy accent all his life, in an Orthodox Church-run school. While studying to be a priest at Tiflis Theological Seminary, he began secretly reading Karl Marx and other left-wing revolutionary thinkers. The “official” communist story is that he was expelled from the seminary for this intellectual rebellion; in reality, it may have been because of poor health."
  ne_news.19.a:0 "This is a huge mourning for our entire socialist camp!"
  ne_news.19.b:0 "Russians mourn for the man who killed millions of his own people..."
  ne_news.19.c:0 "We hope that this will discharge the tense situation in the world"
  ne_news.19.e:0 "We do not care about the death of this vile animal"
-=======
-######################################################################################################################################
-#########################################################NEW STATES###################################################################
 
-STATE_779:0 "North Shan"
-STATE_780:0 "Sagaing"
-STATE_781:0 "Kengtung & Yawnghwe"
-STATE_782:0 "Tenasserim"
-STATE_783:0 "Pegu"
-STATE_784:0 "Irrawaddy"
-STATE_785:0 "Arakan"
-STATE_786:0 "Magwe"
-STATE_787:0 "East Central And Careni Shan States"
+ ######################################################################################################################################
+ #########################################################NEW STATES###################################################################
+
+ STATE_779:0 "North Shan"
+ STATE_780:0 "Sagaing"
+ STATE_781:0 "Kengtung & Yawnghwe"
+ STATE_782:0 "Tenasserim"
+ STATE_783:0 "Pegu"
+ STATE_784:0 "Irrawaddy"
+ STATE_785:0 "Arakan"
+ STATE_786:0 "Magwe"
+ STATE_787:0 "East Central And Careni Shan States"
 
 ######################################################################################################################################
 #########################################################NEW COUNTRIES################################################################
@@ -88,4 +88,4 @@ STATE_787:0 "East Central And Careni Shan States"
  BUR_ENG_autonomy_colony_DEF:0 "The British Burma"
  BUR_ENG_autonomy_puppet_DEF:0 "The British Burma"
  BUR_ENG_autonomy_integrated_puppet_DEF:0 "The British Burma"
->>>>>>> 6c16d8c3448fb611362547e53c3f5ff7a1854daf
+
