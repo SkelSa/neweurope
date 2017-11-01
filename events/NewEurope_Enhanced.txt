@@ -1716,7 +1716,7 @@ country_event = {
 		
 		if = {
 			limit = {
-				set_global_flag = USA_USSR_Short	
+				has_global_flag = USA_USSR_Short	
 			}	
 			SOV = { set_cosmetic_tag = NE_USS }
 		}
@@ -1846,7 +1846,7 @@ country_event = {
 
 	if = {
 		limit = {
-			set_global_flag = USA_USSR_Short	
+			has_global_flag = USA_USSR_Short	
 		}
 		
 		SOV = { set_cosmetic_tag = NE_USS }	
@@ -1854,7 +1854,7 @@ country_event = {
 		
 	if = {
 		limit = {
-			set_global_flag = USA_USSR_Long		
+			has_global_flag = USA_USSR_Long		
 		}
 		
 		SOV = { set_cosmetic_tag = NE_USS_1 }

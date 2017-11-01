@@ -144,13 +144,13 @@ country_event = {
 				is_owned_by = WGR
 				any_country = {
 				owns_state = PREV
-				is_in_faction-with = ENG
+				is_in_faction_with = ENG
 			
 			}
 			}
 			any_country = {
 				controls_state = PREV
-				is_in_faction-with = SOV
+				is_in_faction_with = SOV
 			
 			}
 		}

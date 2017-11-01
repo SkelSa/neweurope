@@ -232,13 +232,13 @@ country_event = {
 		
 		}
 		
-		NOT = { has_country_event = OZ_puppeted }
+		NOT = { has_country_flag = OZ_puppeted }
 
 
 	}
 	
 	immediate = { 
-		set_country_event = OZ_puppeted 
+		set_country_flag = OZ_puppeted 
 	}
 	
 	option = {
