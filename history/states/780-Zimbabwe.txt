@@ -1,0 +1,20 @@
+state={
+	id=780
+	name="STATE_780"
+	provinces={
+		1874 2216 10929 7842 4851 2151
+	}
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = ZIM
+
+	}
+
+	manpower=2155400
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
