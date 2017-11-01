@@ -107,6 +107,7 @@ country_event = {
 	trigger = {
 	
 		tag = PRC
+		
 		NOT = {
 			country_exists = CHI
 		}
