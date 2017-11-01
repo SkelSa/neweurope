@@ -40,6 +40,7 @@ berias_conspiracy_chance.1.tt:0 "§YWith some probability, this decision can be 
 
 stalins_death:0 "The Influence of Stalin's Death"
 
+<<<<<<< HEAD
 
 ########################################################################################################################################
 ############################################################NEWS EVENT##################################################################
@@ -51,3 +52,40 @@ stalins_death:0 "The Influence of Stalin's Death"
  ne_news.19.b:0 "Russians mourn for the man who killed millions of his own people..."
  ne_news.19.c:0 "We hope that this will discharge the tense situation in the world"
  ne_news.19.e:0 "We do not care about the death of this vile animal"
+=======
+######################################################################################################################################
+#########################################################NEW STATES###################################################################
+
+STATE_779:0 "North Shan"
+STATE_780:0 "Sagaing"
+STATE_781:0 "Kengtung & Yawnghwe"
+STATE_782:0 "Tenasserim"
+STATE_783:0 "Pegu"
+STATE_784:0 "Irrawaddy"
+STATE_785:0 "Arakan"
+STATE_786:0 "Magwe"
+STATE_787:0 "East Central And Careni Shan States"
+
+######################################################################################################################################
+#########################################################NEW COUNTRIES################################################################
+
+ BUR_fascism:0 "The State of Burma"
+ BUR_democratic:0 "Republic of the Union of Myanmar"
+ BUR_communism:0 "Burmese People's Socialist Republic"
+ BUR_neutrality:0 "Burma"
+ BUR_fascism_ADJ:0 "Burmese"
+ BUR_democratic_ADJ:0 "Burmese"
+ BUR_communism_ADJ:0 "Burmese"
+ BUR_neutrality_ADJ:0 "Burmese"
+
+ BUR_ENG_autonomy_satellite:0 "British Burma"
+ BUR_ENG_autonomy_satellite_DEF:0 "British Burma"
+ BUR_ENG_autonomy_dominion:0 "British Burma"
+ BUR_ENG_autonomy_colony:0 "British Burma"
+ BUR_ENG_autonomy_puppet:0 "British Burma"
+ BUR_ENG_autonomy_integrated_puppet:0 "British Burma"
+ BUR_ENG_autonomy_dominion_DEF:0 "The British Burma"
+ BUR_ENG_autonomy_colony_DEF:0 "The British Burma"
+ BUR_ENG_autonomy_puppet_DEF:0 "The British Burma"
+ BUR_ENG_autonomy_integrated_puppet_DEF:0 "The British Burma"
+>>>>>>> 6c16d8c3448fb611362547e53c3f5ff7a1854daf

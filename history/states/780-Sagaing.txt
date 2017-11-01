@@ -1,0 +1,19 @@
+state={
+	id=780
+	name="STATE_780"
+	provinces={
+		4318 1197 4996 1934 8063 4425 4087 4588 1082 7469 10386 10486 12335 12464 12492 
+	}
+	manpower = 1150000
+	
+	state_category =  rural
+
+	history={
+		owner = RAJ
+		add_core_of = BUR
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+}

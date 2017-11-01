@@ -1,0 +1,16 @@
+state={
+	id=787
+	name="STATE_787"
+	provinces={
+		1607 4585 4626 4654 7647 12317 
+	}
+	manpower = 1150000
+	state_category = rural
+	history={
+		owner = RAJ
+		add_core_of = BUR
+		buildings = {
+			infrastructure = 3
+		}
+	}
+}
