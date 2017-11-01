@@ -1,6 +1,6 @@
 ﻿l_english:
 
-##Crimea is Ukraine
+##Crimea is Ukraine (not anymore)
  ne_ssrwb.1.t:0 "The transfer of the Crimean Oblast."
  ne_ssrwb.1.d:0 "Taking into account the commonality of the economy, the territorial proximity and close economic and cultural ties between the Crimean region and the Ukrainian SSR, the Presidium of the Supreme Soviet of the Union of Soviet Socialist Republics decides: Approve the joint presentation of the Presidium of the Supreme Soviet of the RSFSR and the Presidium of the Supreme Soviet of the Ukrainian SSR on the transfer of the Crimean region from the Russian Soviet Federated Socialist Republic to the Ukrainian Soviet Socialist Republic."
  ne_ssrwb.1.a:0 "Approve the decree."
@@ -39,3 +39,15 @@ berias_conspiracy_chance.1.tt:0 "§YWith some probability, this decision can be 
 ############################################################IDEAS#####################################################################
 
 stalins_death:0 "The Influence of Stalin's Death"
+
+
+########################################################################################################################################
+############################################################NEWS EVENT##################################################################
+
+##Stalin's Death
+ ne_news.19.t:0 "Joseph Stalin died"
+ ne_news.19.d:0 "Joseph Stalin, leader of the Soviet Union since 1924, died in Moscow. Like his right-wing counterpart, Hitler, who was born in Austria, Joseph Stalin was not a native of the country he ruled with an iron fist. Isoeb Dzhugashvili was born in 1889 in Georgia, then part of the old Russian empire. The son of a drunk who beat him mercilessly and a pious washerwoman mother, Stalin learned Russian, which he spoke with a heavy accent all his life, in an Orthodox Church-run school. While studying to be a priest at Tiflis Theological Seminary, he began secretly reading Karl Marx and other left-wing revolutionary thinkers. The “official” communist story is that he was expelled from the seminary for this intellectual rebellion; in reality, it may have been because of poor health."
+ ne_news.19.a:0 "This is a huge mourning for our entire socialist camp!"
+ ne_news.19.b:0 "Russians mourn for the man who killed millions of his own people..."
+ ne_news.19.c:0 "We hope that this will discharge the tense situation in the world"
+ ne_news.19.e:0 "We do not care about the death of this vile animal"

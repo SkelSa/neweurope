@@ -23,3 +23,72 @@ l_english:
  ne_idle:0 "No Current Action"
  
  
+ ##News Events
+ 
+ ##WW3 Start## --> Soviets declare war first
+ ne_news.20.t:0 "United States are at War! Soviet and American tanks clash!"
+ ne_news.20.d:0 "Even though humanity has experienced the horrors of two world wars, this apparently didn't deter some leaders to plunge the world into suffering again. According to various sources, Soviet and American tanks clashed along the West and East German border, multiple cities like Bonn, Paris, Munich, W. Berlin "
+ ne_news.20.a:0 "Communists are as disgusting as fascists..."
+ ne_news.20.b:0 "Will the world ever recover from this?"
+ ne_news.20.c:0 "The World Revolution must not fail!"
+ ne_news.20.e:0 "We will CRUSH them!"
+ ne_news.20.f:0 "United we stand! Let's teach the Reds a lesson!"
+ 
+ ##WW3 Start## --> Capitalists declare war first
+ ne_news.21.t:0 "US and Allies declare War! Soviet and American tanks clash! "
+ ne_news.21.d:0 "Even though humanity has experienced the horrors of two world wars, this apparently didn't deter some leaders to plunge the world into suffering again. According to various sources, Soviet and American tanks clashed along the West and East German border, multiple cities like Bonn, Paris, Munich, W. Berlin "
+ ne_news.21.a:0 "Let's see how successful they are..."
+ ne_news.21.b:0 "We maybe should support the US..."
+ ne_news.21.c:0 "Cease all contact with the Western world!"
+ ne_news.21.e:0 "We defeated fascism, now we shall end imperialism!"
+ ne_news.21.f:0 "Now or never!"
+ 
+ ##Battle of Berlin## --> Two versions: Garrison unprepared and prepared
+ ##Prepared
+ ne_news.22.t:0 "West-Berlin Garrison has surrendered!"
+ ne_news.22.d:0 "The garrison of West Berlin surrendered this morning after a heavy air bombardment and tank assault of East German, Polish and Soviet forces. While several American and British commanders expected the enclave to fall within a day, the West German, British, French and American divisions, some the size of brigades, offered heavy resistance and could delay the Eastern forces longer than initially expected. Thanks to several recon units who reported a build up of troops outside of West Berlin, the units of W. Berlin were already on high alert. Nevertheless, the mass of Soviet forces forced them to abandon several poistions like the Moltke Bridge early on.\nSome buildings like the Reichstag were heavily damaged but most of the city could escape the destruction.\n[SOV.GetLeader] announced to reunite Berlin once and for all and said that "Soviet tanks won't stop until they reached the Atlantic"."
+ ne_news.22.a:0 "Berlin has been united again..."
+ ne_news.22.b:0 "This is a severe blow to the free world..."
+ ne_news.22.c:0 "Now the rest of Germany needs to be reunited!"
+ ne_news.22.e:0 "To Victory!"
+ ne_news.22.f:0 "They defended Berlin like true heroes!"
+ 
+ ##Unprepared
+ ne_news.23.t:0 "West-Berlin Garrison has surrendered!"
+ ne_news.23.d:0 "The garrison of West Berlin surrendered this morning after a heavy air bombardment and tank assault of East German, Polish and Soviet forces. Due to the sheer mass of Communist forces, no preparation and the element of surprise on the Soviet side, several American and British commanders were shocked as they heard that most divisions in Berlin, mostly West German, British, French and American, offered no to little resistance and surrendered in mere hours. According to some eyewitnesses, the wall seperating the two Berlins was blown up after an intense air and artillery bombardment. While the loss of West Berlin was in a way unavoidable, it is still a huge blow to the West.\nSome buildings like the Reichstag were heavily damaged but most of the city could escape the destruction.\n[SOV.GetLeader] announced to reunite Berlin once and for all and said that "Soviet tanks won't stop until they reached the Atlantic"."
+ ne_news.23.a:0 "Berlin has been united again..."
+ ne_news.23.b:0 "This is a catastrophe!"
+ ne_news.23.c:0 "An easy victory!"
+ ne_news.23.e:0 "We have crushed them!"
+ ne_news.23.f:0 "They defended Berlin like true heroes!"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ##Soviet Victory
+ ne_news.2.t:0 "The Western Powers have surrendered!"
+ ne_news.2.d:0 ""
+ ne_news.2.a:0 ""
+ ne_news.2.b:0 ""
+ ne_news.2.c:0 ""
+ ne_news.2.e:0 ""
+ 
+ ##American Victory
+ ne_news.2.t:0 "Soviet Union and Allies surrender!"
+ ne_news.2.d:0 "While many foreign powers tried to conquer Russia, none of them was really successful and suffered a crushing defeat in the end. Until today. The Soviet authorities have agreed to terms of unconditional surrender"
+ ne_news.2.a:0 ""
+ ne_news.2.b:0 ""
+ ne_news.2.c:0 ""
+ ne_news.2.e:0 ""
+ 
+ 
+ 

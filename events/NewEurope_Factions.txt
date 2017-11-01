@@ -20,33 +20,33 @@ country_event = {
 	
 	trigger {
 	
-	tag = USA
-	
-	date > 1943.6.1
-	
-	USA = {
-			exists = yes
-			is_puppet = no
-			is_faction_leader = no 
-			has_war = no
-			has_government = democratic
-	}
-	
-	ENG = {
-			exists = yes
-			is_puppet = no
-			is_faction_leader = yes 
-			has_war = no
-			has_government = democratic
-	}
-	
-	
-	OR {
-	
-		NOT { GER = {has_government = fascism}}		
-		GER = { exists = no}
-				
-	}
+		tag = USA
+		
+		date > 1943.6.1
+		
+		USA = {
+				exists = yes
+				is_puppet = no
+				is_faction_leader = no 
+				has_war = no
+				has_government = democratic
+		}
+		
+		ENG = {
+				exists = yes
+				is_puppet = no
+				is_faction_leader = yes 
+				has_war = no
+				has_government = democratic
+		}
+		
+		
+		OR {
+		
+			NOT { GER = {has_government = fascism}}		
+			GER = { exists = no}
+					
+		}
 
 	}
 

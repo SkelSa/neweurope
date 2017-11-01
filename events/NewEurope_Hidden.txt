@@ -1,4 +1,4 @@
-﻿##This file will is used for some hidden events. Only a few are here.
+﻿##This file will is used for some hidden events. 
 add_namespace = ne_hidden
 
 country_event = {
@@ -25,7 +25,140 @@ country_event = {
 	}
 
     option = {
-        name = ne_hidden.1.a
+		#
     }
 	
 }
+
+
+
+##KOREA flag event (HIDDEN)
+country_event = {
+	id = ne_hidden.2
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		
+		set_global_flag = ne_korean_war
+		
+	}
+}
+
+
+
+##MERGE EVENTS (HIDDEN) Best Korea is more democratic than usual
+
+
+country_event = {
+	id = ne_hidden.3
+	
+	fire_only_once = yes	
+	hidden = yes
+	
+	trigger = {
+	
+		tag = KOR
+		
+		DPR = {
+				exists = yes
+				NOT = { has_war_with = KOR }
+				has_government = democratic
+		}
+		
+		KOR = {
+				exists = yes
+				NOT = { has_war_with = DPR }
+				has_war = no
+				has_government = democratic
+		}
+		
+	}
+	
+	option = {		
+		KOR = {annex_country = { target = DPR } }		
+	}
+}
+
+
+##KOR has found the true path to communism
+country_event = {
+	id = ne_hidden.4
+	
+	hidden = yes	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = DPR
+		
+		DPR = {
+			exists = yes
+			NOT = { has_war_with = KOR }
+			has_government = communism
+		}
+		
+		KOR = {
+			exists = yes
+			NOT = { has_war_with = DPR }
+			has_war = no
+			has_government = communism
+		}
+
+	}
+	
+	option = {	
+		DPR = {annex_country = { target = KOR } }		
+	}
+}
+
+
+##NEWS EVENT: Battle of Berlin (WW3) two outcomes
+country_event = {
+	id = ne_hidden.5
+	
+	hidden = yes	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = DDR
+		
+		country_exists = DDR
+
+		SOV = {
+			exists = yes
+			OR = {
+				has_war_with = USA
+				has_war_with = ENG
+				has_war_with = FRA
+				has_war_with = WGR
+			}
+			has_government = communism
+		}
+		
+		749 = {
+			OR = {
+				is_owned_by = WGR
+				any_country = {
+				owns_state = PREV
+				is_in_faction-with = ENG
+			
+			}
+			}
+			any_country = {
+				controls_state = PREV
+				is_in_faction-with = SOV
+			
+			}
+		}
+
+	}
+	
+	option = {		##first option is NATO heavy resistance, second option is little resistance
+		random_list = { 40 = { news_event = { id = ne_news.22 }  } 60 = { news_event = { id = ne_news.23 }  } } 	
+	}
+}
+

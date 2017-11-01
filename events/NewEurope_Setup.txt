@@ -230,8 +230,8 @@ country_event = {
 			every_state = {
 				limit = {
 					OR = {
-						#is_owned_by = WGR
-						#is_owned_by = DDR
+						#is_owned_by = WGR	#####In case of
+						#is_owned_by = DDR  #####Saarland World Conquest
 						is_owned_by = SAA	
 					}
 				}

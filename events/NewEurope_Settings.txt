@@ -55,7 +55,7 @@ country_event = {
 	}
 	
 	
-	option = { # neutrality settings
+	option = { # neutrality and faction settings
 		name = ne_settings_intro.1.b
 
 		hidden_effect = {
@@ -123,6 +123,46 @@ country_event = {
 }
 
 
+##Neutraliyt settings and faction settings
+country_event = {
+	id = ne_settings_intro.3
+	title = ne_settings_intro.3.t
+	desc =  ne_settings_intro.3.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	
+	option = { # Neutrality
+		name = ne_settings_intro.3.a	
+		
+		hidden_effect = {			
+			country_event = ne_settings.2			
+		}		
+	}
+	
+	
+	option = { # faction
+		name = ne_settings_intro.3.b
+
+		hidden_effect = {
+			country_event = ne_settings.4
+		}
+	}
+	
+	
+	option = { # Return to main menu
+		name = ne_settings_intro.3.c
+
+		hidden_effect = {
+			country_event = ne_settings_intro.1
+		}
+	}
+
+	
+}
+
+
 
 ##############Historical Options#####################
 country_event = {
@@ -175,7 +215,7 @@ country_event = {
 	}
 	
 	
-	option = {	 #only ssrs
+	option = {	 #ssrs WITHOUT color
 		name = ne_settings.1.b       
 		custom_effect_tooltip = historical_settings_b
 		
@@ -205,6 +245,38 @@ country_event = {
 		}
 	}
 	
+	option = {	 #ssrs but WITH color
+		name = ne_settings.1.b       
+		custom_effect_tooltip = historical_settings_b
+		
+		trigger = {
+			NOT = { has_global_flag = SSR_chosen }	
+		}
+		
+			##_1 is the version without color!
+			LAT = { set_cosmetic_tag = NE_LAT_SSR }
+			LIT = { set_cosmetic_tag = NE_LIT_SSR }
+			EST = { set_cosmetic_tag = NE_EST_SSR }
+			UKR = { set_cosmetic_tag = NE_UKR_SSR }
+			BLR = { set_cosmetic_tag = NE_BLR_SSR }
+			GEO = { set_cosmetic_tag = NE_GEO_SSR }
+			AZR = { set_cosmetic_tag = NE_AZR_SSR }
+			ARM = { set_cosmetic_tag = NE_ARM_SSR }
+			KAZ = { set_cosmetic_tag = NE_KAZ_SSR }
+			UZB = { set_cosmetic_tag = NE_UZB_SSR }
+			TAJ = { set_cosmetic_tag = NE_TAJ_SSR }
+			TRK = { set_cosmetic_tag = NE_TRK_SSR }
+			KGZ = { set_cosmetic_tag = NE_KGZ_SSR }
+			MOL = { set_cosmetic_tag = NE_MOL_SSR }
+		
+		hidden_effect = {
+			##might change the global flag 
+			set_global_flag = SSR_chosen
+			country_event = ne_settings_intro.2
+		}
+		
+	}
+	
 	option = {	 #DISABLE THE SSRS
 		name = ne_settings.1.b1       
 		custom_effect_tooltip = historical_settings_b
@@ -212,8 +284,6 @@ country_event = {
 		trigger = {
 			has_global_flag = SSR_chosen		
 		}
-		
-			##_1 is the version without color!
 			LAT = {drop_cosmetic_tag = yes }
 			LIT = {drop_cosmetic_tag = yes }
 			EST = {drop_cosmetic_tag = yes }
@@ -234,46 +304,7 @@ country_event = {
 			country_event = ne_settings_intro.2
 		}
 	}
-	
-	
-	#option = {
-	#	name = ne_settings.1.c        #both; probably redundant
-	#	custom_effect_tooltip = historical_settings_c
-	#	
-	#	trigger = {
-	#		has_global_flag = SSR_chosen		
-	#	}
-	#	
-	#		GER = {set_cosmetic_tag = DEU}
-	#		JAP = {set_cosmetic_tag = EOJ}
-	#		GRE = {set_cosmetic_tag = NE_GRE}
-	#		WGR = {set_cosmetic_tag = NE_WGR}
-	#		DDR = {set_cosmetic_tag = NE_DDR}
-	#		##SSR
-	#		LAT = {set_cosmetic_tag = NE_LAT_SSR_1}
-	#		LIT = {set_cosmetic_tag = NE_LIT_SSR_1}
-	#		EST = {set_cosmetic_tag = NE_EST_SSR_1}
-	#		UKR = {set_cosmetic_tag = NE_UKR_SSR_1}
-	#		BLR = {set_cosmetic_tag = NE_BLR_SSR_1}
-	#		GEO = {set_cosmetic_tag = NE_GEO_SSR_1}
-	#		AZR = {set_cosmetic_tag = NE_AZR_SSR_1}
-	#		ARM = {set_cosmetic_tag = NE_ARM_SSR_1}
-	#		KAZ = {set_cosmetic_tag = NE_KAZ_SSR_1}
-	#		UZB = {set_cosmetic_tag = NE_UZB_SSR_1}
-	#		TAJ = {set_cosmetic_tag = NE_TAJ_SSR_1}
-	#		TRK = {set_cosmetic_tag = NE_TRK_SSR_1}
-	#		KGZ = {set_cosmetic_tag = NE_KGZ_SSR_1}
-	#		MOL = {set_cosmetic_tag = NE_MOL_SSR_1}
-    #
-	#		
-	#		
-	#		hidden_effect = {
-	#			set_global_flag = SSR_chosen
-	#			set_global_flag = names_chosen
-	#			
-	#			country_event = ne_settings_intro.2
-	#		}
-	#}
+
 	
 	option = {
 		name = ne_settings.1.e        #go back to the menu (no changes done)
@@ -295,7 +326,6 @@ country_event = {
 
 	option = {
 		name = ne_settings.1.e1        #leave the menu,changes done
-		#add_political_power = -1
 		
 		trigger = {
 		
@@ -324,8 +354,8 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	##short versions
-	option = {
+	
+	option = {	##short versions
 		name = ne_settings.3.a
 		custom_effect_tooltip = ussr_usa_settings_a
 		
@@ -334,10 +364,8 @@ country_event = {
 			NOT = { has_global_flag = USA_USSR_Short }
 		}
 		
-		SOV = {set_cosmetic_tag = NE_USS}
-		USA = {set_cosmetic_tag = NE_USA}
-		
-		SOV = { set_country_flag = NE_USS_option }
+		SOV = { set_cosmetic_tag = NE_USS }
+		USA = { set_cosmetic_tag = NE_USA }
 		
 		hidden_effect = {
 			set_global_flag = USA_USSR_Short
@@ -347,7 +375,7 @@ country_event = {
 	}
 	
 	
-	option = { ##long versions
+	option = { 	##long versions
 		name = ne_settings.3.b
 		custom_effect_tooltip = ussr_usa_settings_b
 		
@@ -356,10 +384,8 @@ country_event = {
 			NOT = { has_global_flag = USA_USSR_Short }
 		}
 		
-		SOV = {set_cosmetic_tag = NE_USS_1}
-		USA = {set_cosmetic_tag = NE_USA_1}
-		
-		SOV = { set_country_flag = NE_USS_1_option }
+		SOV = { set_cosmetic_tag = NE_USS_1 }
+		USA = { set_cosmetic_tag = NE_USA_1 }
 		
 		hidden_effect = {
 			set_global_flag = USA_USSR_Long
@@ -370,7 +396,7 @@ country_event = {
 	}
 	
 	
-	option = { # Disable the names!
+	option = { 	# Disable the names!
 		name = ne_settings.3.e
 		##NEW TOOLTIP NEEDED
 		#custom_effect_tooltip = ussr_usa_settings_c
@@ -382,27 +408,26 @@ country_event = {
 			}		
 		}
 		
-		if = {
-			limit = {
-				has_global_flag = USA_USSR_Short		
+			if = {
+				limit = {
+					has_global_flag = USA_USSR_Short		
+				}
+				clr_global_flag = USA_USSR_Short
+				SOV = { clr_country_flag = NE_USS_option }
 			}
-			clr_global_flag = USA_USSR_Short
-			SOV = { clr_country_flag = NE_USS_option }
-		}
+				
+			if = {
+				limit = {
+					has_global_flag = USA_USSR_Long		
+				}
+				clr_global_flag = USA_USSR_Long
+				SOV = { clr_country_flag = NE_USS_1_option }
+			}
 			
-		if = {
-			limit = {
-				has_global_flag = USA_USSR_Long		
-			}
-			clr_global_flag = USA_USSR_Long
-			SOV = { clr_country_flag = NE_USS_1_option }
-		}
-		
-		
-		SOV = {drop_cosmetic_tag = yes } 
-		USA = {drop_cosmetic_tag = yes }
+			
+			SOV = {drop_cosmetic_tag = yes } 
+			USA = {drop_cosmetic_tag = yes }
 
-		
 		hidden_effect = {
 			country_event = ne_settings_intro.2
 		}
@@ -431,25 +456,25 @@ country_event = {
 		name = ne_settings.3.c1
 		custom_effect_tooltip = ussr_usa_settings_c
 	
-		trigger = {
-				OR = {
-					has_global_flag = USA_USSR_Short
-					has_global_flag = USA_USSR_Long		
-				}		
+			trigger = {
+					OR = {
+						has_global_flag = USA_USSR_Short
+						has_global_flag = USA_USSR_Long		
+					}		
+				}
+			
+				hidden_effect = {
+					country_event = ne_settings_intro.2
+				}
+			
 			}
-		
-			hidden_effect = {
-				country_event = ne_settings_intro.2
-			}
-		
-	}
 
 	   
 }
 
 
 
-##############Neutrality Settings#####################
+##############Neutrality Settings and Faction Settings#####################
 
 country_event = {
 	id = ne_settings.2
@@ -479,7 +504,7 @@ country_event = {
 			
 			hidden_effect = {
 				set_global_flag = Neutrality_chosen
-				country_event = ne_settings_intro.1
+				country_event = ne_settings_intro.3
 			}	
 	
 	}
@@ -492,18 +517,18 @@ country_event = {
 			has_global_flag = Neutrality_chosen 		
 		}
 		
-		TUR = {remove_ideas = NE_neutrality}
-		SWE = {remove_ideas = NE_neutrality}
-		SWI = {remove_ideas = NE_neutrality}
-		IRE = {remove_ideas = NE_neutrality}			
-		FIN = {remove_ideas = NE_neutrality}
-		SPR = {remove_ideas = NE_neutrality}
-		JAP = {remove_ideas = NE_neutrality}
+			TUR = {remove_ideas = NE_neutrality}
+			SWE = {remove_ideas = NE_neutrality}
+			SWI = {remove_ideas = NE_neutrality}
+			IRE = {remove_ideas = NE_neutrality}			
+			FIN = {remove_ideas = NE_neutrality}
+			SPR = {remove_ideas = NE_neutrality}
+			JAP = {remove_ideas = NE_neutrality}
 
 		
 		hidden_effect = {
 			clr_global_flag = Neutrality_chosen
-			country_event = ne_settings_intro.1
+			country_event = ne_settings_intro.3
 		}
 		
 	}
@@ -513,7 +538,7 @@ country_event = {
 	
 	
 		hidden_effect = {
-			country_event = ne_settings_intro.1
+			country_event = ne_settings_intro.3
 		}
 	} 
 
@@ -529,18 +554,22 @@ country_event = {
 	picture = GFX_report_event_soviet_invasion_map
 	
 	is_triggered_only = yes
-	
-	##TO-DO
-	##NATO/Wp stricter rules
-	##make it hard, give every democratic/communist nation not intended for NATO/WP under 60% support, 
+
 	option = {
 		name = ne_settings.4.a
 		#custom_effect_tooltip = tooltip 
 		
+		trigger = {
+			NOT = { has_global_flag = ne_strict_faction	}	
+		}
+		
 			set_global_flag = ne_strict_faction
+			
+			##reduce popularity support in some countries
+			##event to remove american guarantee when guaranteed country is communist with 80% support
 		
 		hidden_effect = {
-			country_event = ne_settings_intro.1
+			country_event = ne_settings_intro.3
 		}
 	
 	}
@@ -577,7 +606,7 @@ country_event = {
 		
 		hidden_effect = {
 			set_global_flag = CPS_created
-			country_event = ne_settings_intro.1		
+			country_event = ne_settings_intro.3		
 		}
 
 	}
@@ -598,7 +627,7 @@ country_event = {
 		
 		hidden_effect = {
 			clr_global_flag = CPS_created
-			country_event = ne_settings_intro.1		
+			country_event = ne_settings_intro.3		
 		}
 
 	}
@@ -607,6 +636,199 @@ country_event = {
 	
 	option = { ##don't change anything, return to menu
 		name = ne_settings.4.e
+		
+		hidden_effect = {
+			country_event = ne_settings_intro.3
+		}
+		
+	}
+			
+                  
+}
+
+
+##Misc-Settings
+country_event = {
+	id = ne_settings.5
+	title = ne_settings.5.t
+	desc =  ne_settings.5.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+	
+	##CHECK
+	option = {		##Enable puppet SSRs
+		name = ne_settings.5.a
+		#custom_effect_tooltip = tooltip 
+		
+			trigger = {
+				NOT = { has_global_flag = ne_puppet_ssr	}	
+			}
+			
+			
+			##release SSRs			
+			SOV = {
+
+				if = {			
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					
+					set_autonomy = {
+						target = BLR
+						autonomous_state = autonomy_integrated_puppet
+					}
+					
+					set_autonomy = {
+						target = UKR
+						autonomous_state = autonomy_integrated_puppet
+					}
+					
+					set_autonomy = {
+						target = MOL
+						autonomous_state = autonomy_integrated_puppet
+					}
+					
+					set_autonomy = {
+						target = ARM
+						autonomous_state = autonomy_integrated_puppet
+					}
+					
+					set_autonomy = {
+						target = GEO
+						autonomous_state = autonomy_integrated_puppet
+					}
+					
+					set_autonomy = {
+						target = AZR
+						autonomous_state = autonomy_integrated_puppet
+					}
+					
+					set_autonomy = {
+						target = KAZ
+						autonomous_state = autonomy_integrated_puppet
+					}
+					
+					set_autonomy = {
+						target = UZB
+						autonomous_state = autonomy_integrated_puppet
+					}
+					
+					set_autonomy = {
+						target = TAJ
+						autonomous_state = autonomy_integrated_puppet
+					}
+					
+					set_autonomy = {
+						target = KGZ
+						autonomous_state = autonomy_integrated_puppet
+					}
+					
+					set_autonomy = {
+						target = TRK
+						autonomous_state = autonomy_integrated_puppet
+					}
+				}
+
+				puppet = BLR
+				puppet = UKR
+				puppet = MOL
+				puppet = ARM
+				puppet = AZR
+				puppet = GEO
+				puppet = KAZ
+				puppet = UZB
+				puppet = TRK
+				puppet = KGZ
+				puppet = TAJ
+			
+			}
+			
+			dismantle_faction = yes
+			give_guarantee = TAN
+			give_guarantee = MON
+			
+			create_faction = "soviet_union"
+			add_to_faction = BLR
+			add_to_faction = UKR
+			add_to_faction = AZR
+			add_to_faction = GEO
+			add_to_faction = ARM
+			add_to_faction = KAZ
+			add_to_faction = UZB
+			add_to_faction = TRK
+			add_to_faction = TAJ
+			add_to_faction = KGZ
+			add_to_faction = MOL
+			
+			
+			set_global_flag = ne_puppet_ssr
+			
+		hidden_effect = {
+			country_event = ne_settings_intro.1
+		}
+	
+	}
+	
+	option = {		##Disable SSRs
+		name = ne_settings.5.a1
+		#custom_effect_tooltip = tooltip 
+		
+		trigger = {
+			has_global_flag = ne_puppet_ssr		
+		}
+
+		
+			clr_global_flag = ne_puppet_ssr
+			
+			SOV = {
+			
+				##annex	
+				annex_country = { target = BLR } 
+				annex_country = { target = UKR } 	
+				annex_country = { target = MOL }  
+				annex_country = { target = AZR } 	
+				annex_country = { target = GEO }  
+				annex_country = { target = ARM } 	
+				annex_country = { target = KAZ }  
+				annex_country = { target = KGZ }					
+				annex_country = { target = TRK }
+				annex_country = { target = UZB }
+				annex_country = { target = TAJ }
+				
+				create_faction = "comintern"
+				add_to_faction = TAN
+				add_to_faction = MON
+				
+				drop_cosmetic_tag = yes
+				
+				if = {
+					limit = {
+						has_global_flag = USA_USSR_Short
+					}
+				set_cosmetic_tag = NE_USS
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = USA_USSR_Long
+					}
+				set_cosmetic_tag = NE_USS_1
+				}
+				
+				
+			}
+			
+			
+		hidden_effect = {
+			country_event = ne_settings_intro.1
+		}
+	
+	}
+
+	
+	option = { ##don't change anything, return to menu
+		name = ne_settings.5.e
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.1

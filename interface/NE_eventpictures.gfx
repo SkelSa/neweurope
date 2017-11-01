@@ -41,7 +41,13 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/yalta_conference.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_potsdam_conference"
+		texturefile = "gfx/event_pictures/potsdam_conference.dds"
+	}
+	
 	##Stalin Notes successful and both use the same picture!
+	
 	spriteType = {
 		name = "GFX_stalin_notes"
 		texturefile = "gfx/event_pictures/stalin_notes.dds"
@@ -126,9 +132,50 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/powerstruggle_stalin.dds"
 	}
 
+	##Ukraine gets Crimea
 	spriteType = {
 		name = "GFX_ukrainian_crimea"
 		texturefile = "gfx/event_pictures/ukrainian_crimea.dds"
+	}
+	
+	##WW3 HAS STARTED##
+	
+	spriteType = {
+		name = "GFX_ww3_start"
+		texturefile = "gfx/event_pictures/ww3_start.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_battle_berlin"
+		texturefile = "gfx/event_pictures/battle_berlin.dds"
+	}
+	
+	##Soviet victory
+	spriteType = {
+		name = "GFX_ww3_soviet_victory"
+		texturefile = "gfx/event_pictures/ww3_soviet_victory.dds"
+	}
+	
+	##American victory
+	spriteType = {
+		name = "GFX_ww3_american_victory"
+		texturefile = "gfx/event_pictures/ww3_american_victory.dds"
+	}
+	
+	##UNUSED
+	spriteType = {
+		name = "GFX_battlefield_germany"
+		texturefile = "gfx/event_pictures/battlefield_germany.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_battlefield_europe"
+		texturefile = "gfx/event_pictures/battlefield_europe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tensions"
+		texturefile = "gfx/event_pictures/ne_tensions.dds"
 	}
 	
 	

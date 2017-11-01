@@ -21,7 +21,7 @@
  
  ##HITLER IS DEAD##
  ne_news.3.t:0 "Hitler is Dead!"
- ne_news.3.d:0 "Just now, Karl Dönitz announced in an important broadcast that the Führer, Adolf Hitler, "died defending his Vaterland" and he himself ,Dönitz, is now in command of the remains of the Reich. There wasn't much information else, however it's assumed that Hitler comitted suicide in his bunker in Berlin to avoid captivity by the enemy surrounding the Reichshauptstadt. The whereabouts of the other NSDAP politicians or Eva Braun is unknown, though it is assumed they're either dead or fleeing. \n Since most of the Reich is occupied and the Wehrmacht is near collapse, the death of Hitler is probably the last nail to the coffin of German morale. "
+ ne_news.3.d:0 "Just now, Karl Dönitz announced in an important broadcast that the Führer, Adolf Hitler, "died defending his Vaterland" and he himself, Dönitz, is now in command of the remains of the Reich. There wasn't much information else, however it's assumed that Hitler comitted suicide in his bunker in Berlin to avoid captivity by the enemy surrounding the Reichshauptstadt. The whereabouts of the other NSDAP politicians or Eva Braun is unknown, though it is assumed they're either dead or fleeing. \n Since most of the Reich is occupied and the Wehrmacht is near collapse, the death of Hitler is probably the last nail to the coffin of German morale. "
  ne_news.3.a:0 "The 1000-year Reich will fall!"
  ne_news.3.b:0 "May he burn in hell!"
  ne_news.3.c:0 "So the bastard's dead? Too bad we didn't catch him alive!"
@@ -29,7 +29,7 @@
  
  ##HITLER IS IN RAGE##
  ne_news.4.t:0 "Hitler is in RAGE!"
- ne_news.4.d:0 "Several reports coming from the Führerbunker indicate that the Führer went completely insane. Allegedly after he heard that Steiner couldn't conduct an offensive to relieve Berlin, Hitler became enraged. Shortly afterwards the Führer accused everyone, even the German people, as cowards and traitors and broke pencils while shouting for Fegelein, who will be executed as a traitor when found. Several German generals are convinced that Adolf Hitler has really lost any contact with the reality and still commands around divisions which no longer exist. It's just a matter of time now until his Reich will collapse and the Allies find him."
+ ne_news.4.d:0 "Several reports coming from the Führerbunker indicate that the Führer went completely insane. Allegedly after he heard that Steiner couldn't conduct an offensive to relieve Berlin, Hitler became furious. Shortly afterwards the Führer accused everyone, even the German people, as cowards and traitors and broke pencils while shouting for Fegelein, who will be executed as a traitor when found. Several German generals are convinced that Adolf Hitler has really lost any contact with the reality and still commands around divisions which no longer exist. Most experts are sure that it's just a matter of time now until his Reich will collapse and the Allies find him."
  ne_news.4.a:0 "Crazy!"
  ne_news.4.b:0 "You could say he...is...Führious!"
  ne_news.4.c:0 "His days are numbered. We need to catch him!"
@@ -57,7 +57,7 @@
  ne_news.7.d:0 "After a long series of negotiations, [USA.GetLeader] agreed on behalf of the Western powers to accept the [SOV.GetAdjective] proposal concerning the Stalin Note. The Russian proposal suggests a reunification of both German states to allow a neutral and independent Germany, which also will act as a buffer state to decrease tensions along the "Iron Curtain".\nFollowing the successful negotiations, the reunification will probably be imminent and thus the German people will no longer be apart. Additionally, Germany will never again to able to throw the world into chaos, as it's surrounded by the two most powerful blocs in history."
  ##Trotsky Notes
  ne_news.7.tt:0 "Trotsky Note was accepted, German reunification imminent!"
- ne_news.7.dt:0 "After a long series of negotiations, [USA.GetLeader] agreed on behalf of the Western powers to accept the [SOV.GetAdjective] proposal concerning the Trotsky Note. The Russian proposal suggests a reunification of both German states to allow a neutral and independent Germany, which also will act as a buffer state to decrease tensions along the "Iron Curtain".\nFollowing the successful negotiations, the reunification will probably be imminent and thus the German people will no longer be apart. Additionally, Germany will never again to able to throw the world into chaos, as it's surrounded by the two most powerful blocs in history."
+ ne_news.7.dt:0 "\nAfter a long series of negotiations, [USA.GetLeader] agreed on behalf of the Western powers to accept the [SOV.GetAdjective] proposal concerning the Trotsky Note. The Russian proposal suggests a reunification of both German states to allow a neutral and independent Germany, which also will act as a buffer state to decrease tensions along the "Iron Curtain".\nFollowing the successful negotiations, the reunification will probably be imminent and thus the German people will no longer be apart. Additionally, Germany will never again to able to throw the world into chaos, as it's surrounded by the two most powerful blocs in history."
  ne_news.7.a:0 "A victory for the German people!"
  ne_news.7.b:0 "One possible front less..."
  ne_news.7.c:0 "As long as they stay neutral..."
@@ -65,9 +65,9 @@
  
  ##Germany is denied reunification! (Stalin Notes)##
  ne_news.7.t1:0 "Germany remains divided"
- ne_news.7.d1:0 "To no one's surprise, the Western Allies have just rejected a unique offer from the [SOV.GetName] called the "Stalin Note". In summary, [SOV.GetLeader] offered the Western allies to finally unite the German nation, which has been split since WW2, and create a buffer zone between both power blocs. However, due to Western distrust of the Soviets, the note was eventually dismissed. [WGR.GetLeader] stated, that a possible reunification is unthinkable and would sooner or later, due to subversive activities by the Soviets, end in a communist Germany anyways.\nNevertheless, the topic has caused heated debates in the West. Some experts now harshly criticize this decision, claiming that an excellent chance to ease tensions towards the Soviets is now gone forever."
+ ne_news.7.d1:0 "To no one's surprise, the Western Allies have just rejected a unique offer from the [SOV.GetName] called the "Stalin Note". In summary, [SOV.GetLeader] offered the Western allies to finally unite the German nation, which has been split since WW2, and create a buffer zone between both power blocs. However, due to Western distrust of the Soviets, the note was eventually dismissed. [WGR.GetLeader] stated that a possible reunification is, as long as the Soviet Union still stands, unthinkable and would sooner or later, due to subversive activities by the Soviets, end in a communist Germany anyways.\nNevertheless, the topic has caused heated debates in the West. Some experts now harshly criticize this decision, claiming that an excellent chance to ease tensions towards the Soviets is now gone forever."
  #Trotsky description
- ne_news.7.dt1:0 "To no one's surprise, the Western Allies have just rejected a unique offer from the [SOV.GetName] called the "Trotsky Note" . In short, [SOV.GetLeader] offered the Western allies to finally unite the German nation, which has been split since WW2, and create a buffer zone between both power blocs. However, due to Western distrust of the Soviets, the note was eventually dismissed. [WGR.GetLeader] stated, that a possible reunification is unthinkable and would sooner or later, because of subversive activities by the Soviets, end in a communist Germany anyways.\nNevertheless, the topic has caused heated debates in the West. Some experts now harshly criticize this decision, claiming that an excellent chance to ease tensions towards the Soviets is now gone forever."
+ ne_news.7.dt1:0 "To no one's surprise, the Western Allies have just rejected a unique offer from the [SOV.GetName] called the "Trotsky Note" . In short, [SOV.GetLeader] offered the Western allies to finally unite the German nation, which has been split since WW2, and create a buffer zone between both power blocs. However, due to Western distrust of the Soviets, the note was eventually dismissed. [WGR.GetLeader] stated that a possible reunification is, as long as the Soviet Union still stands, unthinkable and would sooner or later, because of subversive activities by the Soviets, end in a communist Germany anyways.\nNevertheless, the topic has caused heated debates in the West. Some experts now harshly criticize this decision, claiming that an excellent chance to ease tensions towards the Soviets is now gone forever."
  ne_news.7.a1:0 "Imagine if this had succeeded..."
  ne_news.7.b1:0 "The Reds would have influenced them later anyways."
  ne_news.7.c1:0 "It was worth a try..."
@@ -173,14 +173,9 @@
  ne_news.18.e:0 "No one can stop us now!"
  ne_news.18.f:0 "Maybe, NOW we should join NATO..."
 
- ##Stalin's Death
- ne_news.19.t:0 "Joseph Stalin died"
- ne_news.19.d:0 "Joseph Stalin, leader of the Soviet Union since 1924, died in Moscow. Like his right-wing counterpart, Hitler, who was born in Austria, Joseph Stalin was not a native of the country he ruled with an iron fist. Isoeb Dzhugashvili was born in 1889 in Georgia, then part of the old Russian empire. The son of a drunk who beat him mercilessly and a pious washerwoman mother, Stalin learned Russian, which he spoke with a heavy accent all his life, in an Orthodox Church-run school. While studying to be a priest at Tiflis Theological Seminary, he began secretly reading Karl Marx and other left-wing revolutionary thinkers. The “official” communist story is that he was expelled from the seminary for this intellectual rebellion; in reality, it may have been because of poor health."
- ne_news.19.a:0 "This is a huge mourning for our entire socialist camp!"
- ne_news.19.b:0 "Russians mourn for the man who killed millions of his own people..."
- ne_news.19.c:0 "We hope that this will discharge the tense situation in the world"
- ne_news.19.e:0 "We do not care about the death of this vile animal"
-
+ ##Stalin's death (ne_news.19)
+ 
+ 
  ##ADD rewards and remove neutrality idea for finishing peace (Korea war!)
  
  
@@ -344,28 +339,36 @@
  ne_settings_intro.1.t:0 "BPWE: Settings"
  ne_settings_intro.1.d:0 "Since some things I really wanted to add are not suited or liked by everyone, "Better Post-War Europe" offers you a possibility to adjust the mod to your liking. Currently, there are only a handful of options though this might change in the future. All settings have a tooltip when you hover with the mouse over them in addition to the event descriptions so there should be no problem to know what each one does.\nIt's recommended to check out the following settings as they will be permanent throughout your game and could make your game more enjoyable..."
  ne_settings_intro.1.a:0 "Flavor Settings"
- ne_settings_intro.1.b:0 "Neutrality Settings"
- ne_settings_intro.1.c:0 "Faction Settings"
+ ne_settings_intro.1.b:0 "Neutrality and Faction Settings"
+ ne_settings_intro.1.c:0 "Misc. Settings"
  ne_settings_intro.1.e:0 "Skip and return to the Game!"
  
  #Choose between historical Names and USA/USSR
- ne_settings_intro.2.t:0 "BPWE: Historical names and Flags and Alternative Names for the USA/USSR"
- ne_settings_intro.2.d:0 "Which one do you want to change first?"
+ ne_settings_intro.2.t:0 "BPWE: Historical Names and Flags and Alternative Names for the USA/USSR"
+ ne_settings_intro.2.d:0 "Welcome to the submenu of flavor settings! You can now choose between name changes for the USA/USSR or historical names/flags for some countries. Which one do you want to change first?"
  ne_settings_intro.2.a:0 "Historical flags and names"
  ne_settings_intro.2.b:0 "Names of the USSR/USA"
  ne_settings_intro.2.c:0 "Return to the menu"
+ 
+ #Third menu; choose between neutrality and factions
+ ne_settings_intro.3.t:0 "BPWE: Neutrality and Faction Settings"
+ ne_settings_intro.3.d:0 "Welcome to the submenu of the neutrality and faction settings! Which one do you want to change first? "
+ ne_settings_intro.3.a:0 "Historical flags and names"
+ ne_settings_intro.3.b:0 "Names of the USSR/USA"
+ ne_settings_intro.3.c:0 "Return to the menu"
  
  
  
  
  ##OPTIONS: Flags and names
  ne_settings.1.t:0 "BPWE: Allow Historical Flags and Names?"
- ne_settings.1.d:0 "Through this event you can activate the historical accurate flags and country names of some countries like Germany or Japan. Additionally, you are also able now to change the communist names of the 14 Soviet Republics to end with SSR (Soviet Socialist Republic). Just hover over the buttons to see a the full list of changes!"
+ ne_settings.1.d:0 "Through this event you can activate the historical accurate flags, country names and sometimes the color of some countries like Germany or Japan. Additionally, you are also able now to change the communist names of the 14 Soviet Republics to end with SSR (Soviet Socialist Republic) either with their standard color or a reddish tone similar to that of the motherland. Just hover over the buttons to see a the full list of changes!"
  ne_settings.1.a:0 "Enhance my gameplay with better names and flags!"
  ne_settings.1.a1:0 "Revert my change about the flags and names!"
- ne_settings.1.b:0  "Enable the SSR endings!"
+ ne_settings.1.b:0  "Enable the SSR endings (without reddish color)!"
+ ne_settings.1.b0:0  "Enable the SSR endings (with reddish color)!"
  ne_settings.1.b1:0 "Disable the SSR endings!"
- ne_settings.1.c:0 "I want both!"
+ #ne_settings.1.c:0 "I want both!"
  ne_settings.1.c1:0 "Disable both settings!"
  ne_settings.1.e:0 "Meh, let me keep the vanilla names and flags..."
  ne_settings.1.e1:0 "Return to the main menu"
@@ -388,13 +391,19 @@
  
  ##OPTIONS: Faction Settings 
  ne_settings.4.t:0 "BPWE: Factions"
- ne_settings.4.d:0 "Faction changes - Currently you can only create the Co-Prosperity Sphere for Japan. More content will follow."
+ ne_settings.4.d:0 "With the options below you can create an own faction for Japan but also enable stricter join rules for NATO or the Warsaw Pact. I highly recommend to create the "Co-Properity Sphere" as this helps the Axis AI immensely. Additionally, Japan will not join the war against the USSR when Germany does.\nThe stricter rules for NATO/WP mean that not every democratic country can join NATO, for instance, instantly. Instead, they would have to achieve a lot of party popularity. Several national spirits help you to see when a country would be ready to join. If they are a great power, Players can invite some countries earlier into their faction via the diplomacy slots while any AI-only faction requires any potential new members to have a really high party popularity among some other minor conditions. Historical invitations are done via event however.\nChoose now what you want."
  ne_settings.4.a:0 "Enable historical NATO/PACT"
  ne_settings.4.a1:0 "Disable any special rules about NATO/WP"
  ne_settings.4.b:0 "Create the Co-Prosperity Sphere"
  ne_settings.4.b1:0 "Dissolve Japan's faction!"
- #ne_settings.4.c:0 "Both options"
  ne_settings.4.e:0 "Exit to Main Menu"
+ 
+ ##OPTIONS: Misc Settings 
+ ne_settings.5.t:0 "BPWE: Miscellaneous Settings"
+ ne_settings.5.d:0 "Here you can find some things to change which don't belong to a specific category. The current selection is rather small and more content can be expected in the future.\nHover over the buttons to see what exactly each does!"
+ ne_settings.5.a:0 "Let the SSRs be independent puppets!"
+ ne_settings.5.a1:0 "Revert the change, implement direct rule from Moscow again!"
+ ne_settings.5.e:0 "Exit to Main Menu"
  
  
  
@@ -885,10 +894,10 @@
  ne_notes.1.a:0 "It is worth a try..."
  ne_notes.1.b:0 "They will decline regardless"
  ##USA gets event
- ne_notes.2.t:0 "The Soviet Union asks us to reunite Germany"
- ne_notes.2.d:0 "The ambassadors from Moscow have offered us an opportunity to reunite the German nation and keep them neutral as a buffer zone between our blocs. This would on one hand mitigate the Cold War and also reunite families and friends but we also take the risk of losing a complete Germany to Soviet influence and in the worst case, to the Warsaw Pact. Do you accept to this proposal, Mr. President?"
+ ne_notes.2.t:0 "The Soviet Union asks us to reunite Germany?!"
+ ne_notes.2.d:0 "The ambassadors from Moscow have offered us an opportunity to reunite the German nation and keep them neutral as a buffer zone between our blocs. This would on one hand mitigate the Cold War and also finally reunite families and friends seperated by the Iron Curtain but we would also take the risk of losing a complete Germany to Soviet influence and in the worst case, to the Warsaw Pact. It's a difficult decision but the Soviets want an answer soon. Do you accept or decline this proposal, Mr. President?"
  ne_notes.2.a:0 "I think we can trust our former ally for once..."
- ne_notes.2.b:0 "Germany is too important for us!"
+ ne_notes.2.b:0 "Germany is way too important for us!"
  ##Feedback SOV; USA accepts
  ne_notes.3.t:0 "[From.GetName] accepted our offer"
  ne_notes.3.d:0 "[From.GetNameDef]'s ambassadors told us that the President sees no problems regarding our idea of a reunited Germany!"
@@ -1049,7 +1058,7 @@
  ne_korean_war.1.t:0 "Reuniting the Peninsula"
  ne_korean_war.1.d:0 "Our beautiful nation is split into two and the traitorous Americans have set up a puppet state to gain control over the region. Our nation is young and now the time has come to reunite the Korean people before it's too late and our southern brothers will be brainwashed by American propaganda. We need to strike now...or never! "
  ne_korean_war.1.a:0 "Let's free our comrades in the south!"
- ne_korean_war.1.b:0 "War was never an option and makes things worse"
+ ne_korean_war.1.b:0 "This war would have no winner!"
  
  ##Event for SK to get prepared
  ne_korean_war.2.t:0 "The North is invading us!"

@@ -351,12 +351,7 @@ country_event = {
 			
 			##Whitepeace event, needs testing in case faction war still exists	
 			KOR = { white_peace = DPR }
-
-			add_named_threat = { threat = -5 name = threat_ne_korea_cf }
 			
-			hidden_effect = {
-			
-				##switch to 1953 border
 			DPR = {
 				transfer_state = 762
 				transfer_state = 769
@@ -368,9 +363,14 @@ country_event = {
 				transfer_state = 768
 				transfer_state = 771	
 			}
+
+			add_named_threat = { threat = -5 name = threat_ne_korea_cf }
 			
+			hidden_effect = {
 			
-				#FROM = { country_event = {  days = 1 id = ne_korean_war.5 } }
+				##switch to 1953 border
+
+				
 				news_event = { days = 2 id = ne_news.13 }	
 			}
 
@@ -394,29 +394,5 @@ country_event = {
 	}
 
 
-}
-
-
-##ne_korean_war.5 sets the DMZ and state changes
-country_event = {
-	id = ne_korean_war.5
-
-	hidden = yes
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	immediate = { 
-
-	
-		
-
-	}
-	
-	
-	option = { #placeholder
-		#		
-	}
-
-	
 }
 

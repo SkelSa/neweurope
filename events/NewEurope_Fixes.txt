@@ -84,104 +84,6 @@ country_event = {
 }
 
 
-##KOREA flag event (hidden)
-
-country_event = {
-	id = ne_fix.4
-	
-	hidden = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		
-		set_global_flag = ne_korean_war
-		
-	}
-}
-
-
-
-##MERGE EVENTS (HIDDEN) Best Korea is more democratic than usual
-
-
-country_event = {
-	id = ne_fix.5
-	
-	fire_only_once = yes	
-	hidden = yes
-	
-	trigger = {
-	
-	tag = KOR
-	
-	DPR = {
-			exists = yes
-			NOT = { has_war_with = KOR }
-			has_government = democratic
-	}
-	
-	KOR = {
-			exists = yes
-			NOT = { has_war_with = DPR }
-			has_war = no
-			has_government = democratic
-	}
-	
-
-	
-	
-	}
-	
-	option = {
-		
-	KOR = {annex_country = { target = DPR } }	
-		
-		
-	}
-}
-
-
-##KOR has found the true path to communism
-country_event = {
-	id = ne_fix.6
-	
-	hidden = yes	
-	fire_only_once = yes
-	
-	trigger = {
-	
-	tag = DPR
-	
-	DPR = {
-			exists = yes
-			NOT = { has_war_with = KOR }
-			has_government = communism
-	}
-	
-	KOR = {
-			exists = yes
-			NOT = { has_war_with = DPR }
-			has_war = no
-			has_government = communism
-	}
-	
-
-	
-	
-	}
-	
-	option = {
-		#name = 
-		
-	DPR = {annex_country = { target = KOR } }	
-		
-		
-	}
-}
-
-
-
 
 #Renaming Cities (East, WestGermany)
 
@@ -248,15 +150,13 @@ country_event = {
 	reset_province_name = 13207 
 	
 	set_capital = 749
-		
-		
+
 	}
 }
 
 
 
 ##delete neutrality flags, if at war (exception for KOR, DPR, JAP)
-
 country_event = {
 	id = ne_fix.9
 	
@@ -289,128 +189,93 @@ country_event = {
 
 
 ##puppet the occupation zones
-
 country_event = {
 	id = ne_fix.10
 	
 	hidden = yes	
-	fire_only_once = yes
 	
 	trigger = {
 	
-	tag = ENG
-	
-		ENG = {
-			exists = yes
-			is_puppet = no
+		OR = {		
+			tag = ENG
+			tag = USA
+			tag = FRA
+			tag = SOV		
 		}
+	
+	
+		exists = yes
+		is_puppet = no
+
 		
-		BOZ = {
-			exists = yes
-			is_puppet = no
-		}
-
-
-	}
-	
-	option = {	
-		ENG = { puppet = BOZ  }	
-	}
-
-}
-
-country_event = {
-	id = ne_fix.11
-	
-	hidden = yes	
-	fire_only_once = yes
-	
-	trigger = {
-	
-	tag = USA
-	
-		USA = {
-			exists = yes
-			is_puppet = no			
-		}
+		OR = {
 		
-		AOZ = {
-			exists = yes
-			is_puppet = no
-		}
-	
-	
-
-	}
-	
-	option = {
-		USA = { puppet = AOZ  }	
-	}
-
-}
-
-country_event = {
-	id = ne_fix.12
-	
-	hidden = yes	
-	fire_only_once = yes
-	
-	trigger = {
-	
-	tag = FRA
-	
-		FRA = {
-			exists = yes
-			is_puppet = no
+			BOZ = {
+				exists = yes
+				is_puppet = no
+			}
 			
+			AOZ = {
+				exists = yes
+				is_puppet = no
+			}
+			
+			FOZ = {
+				exists = yes
+				is_puppet = no
+			}
+			
+			SOZ = {
+				exists = yes
+				is_puppet = no
+			}
+		
 		}
 		
-		FOZ = {
-			exists = yes
-			is_puppet = no
-		}
+		NOT = { has_country_event = OZ_puppeted }
+
+
+	}
+	
+	immediate = { 
+		set_country_event = OZ_puppeted 
 	}
 	
 	option = {
-	
-	FRA = { puppet = FOZ  }
-	
+
+		if = {
+			limit = {
+				tag = ENG
+			}			
+			puppet = BOZ
+		}
+		
+		if = {
+			limit = {
+				tag = FRA
+			}			
+			puppet = FOZ
+		}
+		
+		if = {
+			limit = {
+				tag = USA
+			}			
+			puppet = AOZ
+		}
+		
+		if = {
+			limit = {
+				tag = SOV
+			}			
+			puppet = SOZ
+		}
+
 	}
 
 }
 
-country_event = {
-	id = ne_fix.13
-	
-	hidden = yes	
-	fire_only_once = yes
-	
-	trigger = {
-	
-	tag = SOV
-	
-		SOV = {
-			exists = yes
-			is_puppet = no
-		}
-		
-		SOZ = {
-			exists = yes
-			is_puppet = no
-		}
-	
-	
-
-	}
-	
-	option = {
-	
-	SOV = { puppet = SOZ  }
-	
-	}
-
-}
-
+##puppet saarland when saarland is independent
 country_event = {
 	id = ne_fix.14
 	
@@ -419,7 +284,7 @@ country_event = {
 	
 	trigger = {
 	
-	tag = FRA
+		tag = FRA
 	
 		FRA = {
 			exists = yes
@@ -430,22 +295,17 @@ country_event = {
 			exists = yes
 			is_puppet = no
 		}
-	
-	
 
 	}
 	
-	option = {
-	
-	FRA = { puppet = SAA  }
-	
+	option = {	
+		FRA = { puppet = SAA  }	
 	}
 
 }
 
 
 ##Korean war end news events (DPR wins)
-
 country_event = {
 	id = ne_fix.15
 	
@@ -454,7 +314,7 @@ country_event = {
 	
 	trigger = {
 	
-	tag = DPR
+		tag = DPR
 	
 		DPR = {
 			exists = yes
@@ -485,7 +345,7 @@ country_event = {
 	
 	trigger = {
 	
-	tag = KOR
+		tag = KOR
 	
 		KOR = {
 			exists = yes
@@ -496,8 +356,6 @@ country_event = {
 			exists = yes
 			surrender_progress > 0.98
 		}
-	
-	
 
 	}
 	
@@ -509,8 +367,6 @@ country_event = {
 
 ##Add cores for FRG/DDR
 ##redundant? Cores were already added, right?
-
-
 country_event = {
 	id = ne_fix.17
 	
@@ -520,27 +376,19 @@ country_event = {
 	trigger = {
 	
 		tag = WGR
-
 		WGR = {exists = yes}
 		DDR = {exists = yes}
 
 	}
 	
-	mean_time_to_happen = {
-	
-	days = 5
-	
-	}
-	
+	mean_time_to_happen = { days = 5 }
 
 	option = {
 	
 	every_state = {
 			
-				limit = {
-				
-					is_claimed_by = GER
-				
+				limit = {				
+					is_claimed_by = GER				
 				}
 				
 			WGR = { add_state_core = PREV}	
@@ -554,7 +402,6 @@ country_event = {
 
 
 ##Remove influences once fascism has been defeated
-
 country_event = {
 	id = ne_fix.18
 	
@@ -596,11 +443,8 @@ country_event = {
 						has_government = communism
 						communism > 0.51			
 					}
-
 				}
-
 			}
-
 		}
 
 			
