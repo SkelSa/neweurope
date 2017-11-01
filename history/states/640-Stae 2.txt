@@ -1,0 +1,28 @@
+
+state={
+	id=640
+	name="STATE_640" # Mandalay
+	manpower = 459231
+	
+	state_category = town
+
+	history={
+		owner = RAJ
+		add_core_of = BUR
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+		}
+		victory_points = {
+			1492 1 
+		}
+		victory_points = {
+			4425 1 
+		}
+
+	}
+	
+	provinces={
+		4202 12404 1492 12449 
+	}
+}

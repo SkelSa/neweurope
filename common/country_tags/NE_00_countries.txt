@@ -24,4 +24,5 @@ AOZ = "countries/AmericanOccupationZone.txt"
 BOZ = "countries/BritishOccupationZone.txt"
 FOZ = "countries/FrenchOccupationZone.txt"
 SOZ = "countries/SovietOccupationZone.txt"
+BUR = "countries/Burma.txt"
 
