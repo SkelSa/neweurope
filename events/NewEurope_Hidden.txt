@@ -1,13 +1,34 @@
 ﻿##This file will is used for some hidden events. 
 add_namespace = ne_hidden
 
+##Switch to better India color when free
 country_event = {
-	id = ne_hidden.1
-	title = ne_hidden.1.t
-	desc = ne_hidden.1.d
+	id = ne_hidden.0
 
 	hidden = yes
+	fire_only_once = yes
 
+	trigger = {
+		RAJ = {
+			is_subject = no
+		}
+	}
+
+	immediate = {
+		RAJ = { set_cosmetic_tag = NE_INDIA }
+	}
+
+    option = {
+		#
+    }
+	
+}
+
+##stalin is dead
+country_event = {
+	id = ne_hidden.1
+
+	hidden = yes
 	fire_only_once = yes
 
 	trigger = {
@@ -19,9 +40,7 @@ country_event = {
 	mean_time_to_happen = { days = 105 }
 
 	immediate = {
-		hidden_effect = {
-			SOV = { remove_ideas = stalins_death }
-		}
+		SOV = { remove_ideas = stalins_death }
 	}
 
     option = {
@@ -40,10 +59,8 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
-		
-		set_global_flag = ne_korean_war
-		
+	option = {		
+		set_global_flag = ne_korean_war		
 	}
 }
 
@@ -63,16 +80,16 @@ country_event = {
 		tag = KOR
 		
 		DPR = {
-				exists = yes
-				NOT = { has_war_with = KOR }
-				has_government = democratic
+			exists = yes
+			NOT = { has_war_with = KOR }
+			has_government = democratic
 		}
 		
 		KOR = {
-				exists = yes
-				NOT = { has_war_with = DPR }
-				has_war = no
-				has_government = democratic
+			exists = yes
+			NOT = { has_war_with = DPR }
+			has_war = no
+			has_government = democratic
 		}
 		
 	}

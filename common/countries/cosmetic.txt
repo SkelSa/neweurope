@@ -4,10 +4,10 @@ MAL_UK = {
     color_ui = rgb { 255 73 121 }
 }
 
-INS_HOL = {
-    color = rgb { 203 138 74 }
-    color_ui = rgb { 255 179 96 }
-}
+#INS_HOL = {
+#    color = rgb { 203 138 74 }
+#    color_ui = rgb { 255 179 96 }
+#}
 
 HUN_EMPIRE = {
 	color = rgb { 194 198 215 }
@@ -21,6 +21,27 @@ AUS_NOT_WHITE = {
 
 ##New Europe additions
 
+NE_PAK = {
+	color = rgb { 90  170  90 }
+	color_ui = rgb { 90  170  90 }
+}
+
+NE_INDIA = {
+    color = rgb { 255 100 0 }
+    color_ui = rgb { 255 110 0 }
+}
+
+
+NE_KOR = {
+	color = rgb { 10 15 125 }
+	color_ui = rgb { 10 15 125 }
+}
+
+RAJ_UK = {
+	color = rgb { 170  10  10 }
+	color_ui = rgb { 200  10  10 }
+}
+
 NE_WGR = {
     color = rgb { 104  153  126 }#{ 120 140 120 }
     color_ui = rgb { 120 140 120 }
@@ -29,11 +50,6 @@ NE_WGR = {
 NE_DDR = {
     color = rgb { 119  130  145 }#{ 130 135 140 }
     color_ui = rgb { 130 135 140 }
-}
-
-NE_KOR = {
-	color = rgb { 10 15 125 }
-	color_ui = rgb { 10 15 125 }
 }
 
 NE_RUS = {

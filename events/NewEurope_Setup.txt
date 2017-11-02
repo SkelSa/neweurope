@@ -16,6 +16,7 @@ news_event = {
 		##Stuff for game
 		KOR = {set_cosmetic_tag = NE_KOR }
 		PRC = {set_cosmetic_tag = CSR }
+		PAK = {set_cosmetic_tag = NE_PAK }
 		GER = {set_capital = 749 }
 		KAZ = {set_capital = 589 }
 
