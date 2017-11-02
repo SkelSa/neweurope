@@ -30,6 +30,7 @@ country_event = {
 
 	option = {
 		name = ne_ssrwb.1.a
+		ai_chance = { factor = 100 } 
 			if = {
 				limit = {
 					UKR = {
