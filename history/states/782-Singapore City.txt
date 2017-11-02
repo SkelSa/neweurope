@@ -1,7 +1,7 @@
 state={
 	id=782
 	name="STATE_782"
-	manpower = 104200
+	manpower = 603200
 	provinces={
 		12299 
 	}
@@ -12,10 +12,7 @@ state={
 		}	
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 1
 			air_base = 4
-			naval_base = 8
-			coastal_bunker = 3
 		}
 		add_core_of = MAL
 	}
