@@ -22,6 +22,7 @@ country_event = {
 
 	option = {
 		name = ne_stalin.1.a
+		ai_chance = { factor = 100 }
 		SOV = {
 			set_political_power = -150
 			add_ideas = stalins_death
@@ -73,6 +74,7 @@ country_event = {
 
 	option = {
 		name = ne_stalin.2.a
+		ai_chance = { factor = 100 }
 		SOV = { country_event = { days = 60 id = ne_stalin.3 } }
 		set_country_flag = beria_evidence
 		set_country_flag = the_choose_accepted
@@ -116,6 +118,7 @@ country_event = {
 	}
 	option = {
 		name = ne_stalin.3.a
+		ai_chance = { factor = 100 }
 		set_country_flag = beria_sel
 		remove_ideas = SOV_lavrentiy_beria
 	}
@@ -144,6 +147,7 @@ country_event = {
 
 	option = {
 		name = ne_stalin.4.a
+		ai_chance = { factor = 100 }
 		kill_country_leader = yes
 		remove_ideas = nikita_khrushchev
 		create_country_leader = {
@@ -181,6 +185,7 @@ country_event = {
 
 	option = {
 		name = ne_stalin.5.a
+		ai_chance = { factor = 100 }
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Nikita Khrushchev"

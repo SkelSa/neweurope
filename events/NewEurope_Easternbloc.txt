@@ -30,6 +30,7 @@ country_event = {
 
 	option = {
 		name = ne_ssrwb.1.a
+		ai_chance = { factor = 100 } 
 			if = {
 				limit = {
 					UKR = {
@@ -102,4 +103,64 @@ country_event = {
 		SOV = { set_country_flag = ukrainians_will_be_offended }
 	}
 
+}
+
+country_event = {
+	id = ne_ssrwb.2
+	title = ne_ssrwb.2.t
+	desc = ne_ssrwb.2.d
+	picture = GFX_berlin_wall
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 560 }
+	
+	trigger = {
+		tag = SOV
+		AND = {
+			WGR = { exists = yes }
+			DDR = { exists = yes }
+			SOV = { 
+				has_government = communism
+				has_country_leader = { name = "Nikita Khrushchev" }	
+			}
+			749 = { is_controlled_by = WGR }
+		}
+		has_global_flag = germany_divided
+	}
+
+	option = {
+		name = ne_ssrwb.2.a
+		ai_chance = { factor = 100 }
+		744 = { 
+			add_building_construction = {
+				type = bunker
+				province = 13207
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 13207
+				level = 6
+				instant_build = no
+			}
+		}
+		every_country = {
+			limit = {
+				AND = {
+					has_government = communism
+					is_puppet_of = SOV
+				}
+				NOT = { tag = DDR }
+			}
+			any_country = {
+				limit = { has_government = democracy }
+				add_opinion_modifier = { target = FROM modifier = west_east_high_tension_relations }
+			}
+		}
+		DDR = {
+			add_opinion_modifier = { target = WGR modifier = west_east_very_high_tension_relations }
+		}
+	}
 }

@@ -163,6 +163,18 @@ opinion_modifiers = {
 	NE_denied_lend_lease = {
 		value = -40
 	}
+
+	west_east_medium_tension_relations = {
+		value = -50
+	}
+
+	west_east_high_tension_relations = {
+		value = -85
+	}
+
+	west_east_very_high_tension_relations = {
+		value = -100
+	}
 	
 	
 	

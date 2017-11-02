@@ -1,0 +1,20 @@
+state={
+	id=782
+	name="STATE_782"
+	manpower = 603200
+	provinces={
+		12299 
+	}
+	history={
+		owner = MAL
+		victory_points = {
+			12299 5
+		}	
+		buildings = {
+			infrastructure = 8
+			air_base = 4
+		}
+		add_core_of = MAL
+	}
+
+}
