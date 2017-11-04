@@ -69,14 +69,14 @@
  ne_news.24.f:0 "We will protect our people from harmful influence!"
 
  ##The Trieste event
- ne_misc.12.t:0 "The transfer of the city of Trieste after the war"
- ne_misc.12.d:0 "Since 1382, Trieste and the surrounding territories were part of Austria and had a mixed population, consisting mainly of Italians in the city and Slovenes and Croats in rural suburbs. In 1921, Italy annexed Trieste, where, after the establishment of the fascist regime, repression began against the Slavic population, triggering a terrorist response from the TIGR organization. In 1943, after the capitulation of Italy, the city was occupied by Germany, and on May 1, 1945 it was liberated simultaneously by parts of the Yugoslav and British armies."
- ne_misc.12.a:0 "Return Trieste Italy"
- ne_misc.12.b:0 "Give Trieste to Yugoslavia"
+ ne_misc.14.t:0 "The transfer of the city of Trieste after the war"
+ ne_misc.14.d:0 "Since 1382, Trieste and the surrounding territories were part of Austria and had a mixed population, consisting mainly of Italians in the city and Slovenes and Croats in rural suburbs. In 1921, Italy annexed Trieste, where, after the establishment of the fascist regime, repression began against the Slavic population, triggering a terrorist response from the TIGR organization. In 1943, after the capitulation of Italy, the city was occupied by Germany, and on May 1, 1945 it was liberated simultaneously by parts of the Yugoslav and British armies."
+ ne_misc.14.a:0 "Return Trieste Italy"
+ ne_misc.14.b:0 "Give Trieste to Yugoslavia"
 
- ne_misc.13.t:0 "The transfer of the city of Trieste after the war"
- ne_misc.13.d:0 "The city of Trieste is now under the control of our state"
- ne_misc.13.a:0 "Welcome!"
+ ne_misc.15.t:0 "The transfer of the city of Trieste after the war"
+ ne_misc.15.d:0 "The city of Trieste is now under the control of our state"
+ ne_misc.15.a:0 "Welcome!"
 
  ######################################################################################################################################
  #########################################################NEW STATES###################################################################

@@ -22,8 +22,14 @@ news_event = {
 	option = {	#I understand
 		name = ne_news.1.a  
 
-		hidden_effect = {			
-			country_event = ne_settings_intro.0
+		hidden_effect = {
+			random_country = {
+				limit = {
+					is_ai = no						
+				}
+				
+			country_event = { days = 1 id = ne_settings_intro.1 }	
+			}			
 		}		
 	}
 
@@ -1768,7 +1774,7 @@ news_event = {
 		USA = {
 			exists = yes
 			has_government = democratic
-			is_in_faction_with ENG
+			is_in_faction_with = ENG
 			has_defensive_war_with = SOV
 		
 		}
@@ -1843,7 +1849,7 @@ news_event = {
 		USA = {
 			exists = yes
 			has_government = democratic
-			is_in_faction_with ENG
+			is_in_faction_with = ENG
 			has_offensive_war_with = SOV
 		
 		}

@@ -6,30 +6,31 @@ add_namespace = ne_settings
 
 
 ##HIDDEN event to start the settings menu
-country_event = {
-	id = ne_settings_intro.0
-
-	hidden = yes
-	is_triggered_only = yes
-	
-	immediate = { 		
-		set_global_flag = ne_settings 
-	}
-	
-	
-	option = { 
-		hidden_effect = {
-				random_country = {
-					limit = {
-						is_ai = no						
-					}
-				}
-			country_event = { days = 1 id = ne_settings_intro.1 }
-		}
-	}
-
-	
-}
+#country_event = {
+#	id = ne_settings_intro.0
+#
+#	hidden = yes
+#	is_triggered_only = yes
+#	
+#	immediate = { 		
+#		set_global_flag = ne_settings 
+#	}
+#	
+#	
+#	option = { 
+#		hidden_effect = {
+#				random_country = {
+#					limit = {
+#						is_ai = no						
+#					}
+#					
+#				country_event = { days = 1 id = ne_settings_intro.1 }	
+#				}			
+#		}
+#	}
+#
+#	
+#}
 
 
 ##Settings Menu
@@ -665,6 +666,19 @@ country_event = {
 			##release SSRs			
 			SOV = {
 
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					
+					set_autonomy = {
+						target = BLR
+						autonomous_state = autonomy_integrated_puppet
+					}
+				
+				}
+			
+			
 				if = {			
 					limit = {
 						has_dlc = "Together for Victory"
@@ -737,25 +751,27 @@ country_event = {
 				puppet = TRK
 				puppet = KGZ
 				puppet = TAJ
-			
+				
+				dismantle_faction = yes
+				give_guarantee = TAN
+				give_guarantee = MON
+				
+				create_faction = "soviet_union"
+				add_to_faction = BLR
+				add_to_faction = UKR
+				add_to_faction = AZR
+				add_to_faction = GEO
+				add_to_faction = ARM
+				add_to_faction = KAZ
+				add_to_faction = UZB
+				add_to_faction = TRK
+				add_to_faction = TAJ
+				add_to_faction = KGZ
+				add_to_faction = MOL
+
 			}
 			
-			dismantle_faction = yes
-			give_guarantee = TAN
-			give_guarantee = MON
 			
-			create_faction = "soviet_union"
-			add_to_faction = BLR
-			add_to_faction = UKR
-			add_to_faction = AZR
-			add_to_faction = GEO
-			add_to_faction = ARM
-			add_to_faction = KAZ
-			add_to_faction = UZB
-			add_to_faction = TRK
-			add_to_faction = TAJ
-			add_to_faction = KGZ
-			add_to_faction = MOL
 			
 			
 			set_global_flag = ne_puppet_ssr
@@ -811,8 +827,7 @@ country_event = {
 					}
 				set_cosmetic_tag = NE_USS_1
 				}
-				
-				
+								
 			}
 			
 			

@@ -1740,19 +1740,16 @@ country_event = {
 		
 	##also add states from the PLC
 	
-	FIN = { 
-		
-			transfer_state = 722
-			transfer_state = 147
-			transfer_state = 146			
+	FIN = { 		
+		transfer_state = 722
+		transfer_state = 147
+		transfer_state = 146			
 	}
 	
 	
-	EST = { 
-		
-			transfer_state = 13
-			transfer_state = 191
-			
+	EST = { 		
+		transfer_state = 13
+		transfer_state = 191			
 	}
 	
 	LIT = { 		
