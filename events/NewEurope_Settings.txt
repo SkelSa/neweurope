@@ -8,17 +8,9 @@ add_namespace = ne_settings
 ##HIDDEN event to start the settings menu
 country_event = {
 	id = ne_settings_intro.0
-	picture = GFX_report_event_soviet_invasion_map
 
 	hidden = yes
-
-	trigger {
-	
-		is_ai = no	
-		NOT = { has_global_flag = ne_settings }	
-		date > 1936.1.2
-
-	}
+	is_triggered_only = yes
 	
 	immediate = { 		
 		set_global_flag = ne_settings 
@@ -27,7 +19,12 @@ country_event = {
 	
 	option = { 
 		hidden_effect = {
-			country_event = ne_settings_intro.1
+				random_country = {
+					limit = {
+						is_ai = no						
+					}
+				}
+			country_event = { days = 1 id = ne_settings_intro.1 }
 		}
 	}
 

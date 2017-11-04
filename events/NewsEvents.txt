@@ -3275,8 +3275,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		336 = { is_controlled_by = JAP }
-		336 = { is_owned_by = ENG }
+		782 = { is_controlled_by = JAP }
+		782 = { is_owned_by = ENG }
 		JAP = { has_war_with = ENG }
 		NOT = { has_global_flag = fall_of_singapore }
 	}
