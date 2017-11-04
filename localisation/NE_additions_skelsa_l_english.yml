@@ -13,7 +13,9 @@ l_english:
  NE_ready_wp_desc:0 "A revolution has turned this nation socialist some time ago. Excellent relations with Moscow and the common vision of a socialist planet could lead to an entry into the Warsaw Pact..."
  NE_titos_partisans:0 "Yugoslavian Partisans"
  NE_titos_partisans_desc:0 "Though the nation itself fell rather quick, the Yugoslavian people are still fighting against the German and Italian fascists. Especially the communist partisan forces under the command of Josip Broz Tito cause nightmares for the occupiers."
-
+ NE_sfr_yugoslavia:0 "A Socialist Republic"
+ NE_sfr_yugoslavia_desc:0 "We are not Croats, Serbs or Slovenes anymore. We are all Yugoslavs. Together we shall create a socialist welfare state in which no one has to live in poverty or be hungry. "
+ 
  
  ##Slots##
  ne_diplo:0 "Additional Diplomatic Actions"
@@ -21,6 +23,19 @@ l_english:
  ne_join_nato:0 "Invite new Countries"
  ne_join_wp:0 "Invite new Countries"
  ne_idle:0 "No Current Action"
+ 
+ 
+ 
+ ##News events
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  ##News Events

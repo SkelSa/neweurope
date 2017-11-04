@@ -897,6 +897,76 @@ country_event = {
 }
 
 
+##YUG has capitulated, Tito and partisans cause havoc
+country_event = {
+	id = ne_misc.10
+	title = ne_misc.10.t
+	desc =  ne_misc.10.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	fire_only_once = yes
+
+	trigger = {
+	
+		tag = YUG
+		
+		YUG = { 
+			has_capitulated = yes
+			NOT = { has_government = communism }
+		}
+
+	}
+	
+	
+	mean_time_to_happen = {	days = 10 }
+
+	
+	option = { # gain spirit
+		name = ne_misc.10.a
+
+		add_ideas = titos_partisans
+	}
+
+		
+}
+
+
+##YUG is socialist, lose spirit
+country_event = {
+	id = ne_misc.11
+	title = ne_misc.11.t
+	desc =  ne_misc.11.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	fire_only_once = yes
+
+	trigger = {
+	
+		tag = YUG
+		
+		YUG = { 
+			has_war = no
+			has_government = communism 
+			communism > 0.7 
+		}
+
+	}
+	
+	
+	mean_time_to_happen = {	days = 30 }
+
+	
+	option = { # lose spirit, add new one
+		name = ne_misc.11.a
+
+		remove_ideas = NE_titos_partisans
+		add_ideas = NE_sfr_yugoslavia
+	}
+
+		
+}
+
+
 
 
 

@@ -136,6 +136,27 @@ ideas = {
 				
 			}
 		}
+		
+		
+		NE_sfr_yugoslavia = {
+
+			picture = titos_partisans
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+			
+				unity_factor = 0.20  
+				communism_acceptance = 70
+				production_speed_industrial_complex_factor = 0.10
+				political_power_gain = 0.10
+				
+				
+				
+			}
+		}
 	
 
 		NE_neutrality = {

@@ -47,8 +47,7 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.2
-		}
-		
+		}	
 	}
 	
 	
@@ -56,17 +55,17 @@ country_event = {
 		name = ne_settings_intro.1.b
 
 		hidden_effect = {
-			country_event = ne_settings.2
+			country_event = ne_settings_intro.3
 		}
 	}
 	
 	##ne_settings.3 is together with ne_settings.1 !
 	
-	option = { # faction settings
+	option = { # misc settings
 		name = ne_settings_intro.1.c
 
 		hidden_effect = {
-			country_event = ne_settings.4
+			country_event = ne_settings.5
 		}
 	}
 	
@@ -542,7 +541,7 @@ country_event = {
 }
 
 
-##############Stricter Rules for NATO/WarSaw Pact#####################//NOT IMPLEMENTED
+##############Stricter Rules for NATO/WARSAW PACT#####################//NOT FULLY IMPLEMENTED
 
 country_event = {
 	id = ne_settings.4
