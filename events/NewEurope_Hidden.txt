@@ -160,10 +160,9 @@ country_event = {
 			OR = {
 				is_owned_by = WGR
 				any_country = {
-				owns_state = PREV
-				is_in_faction_with = ENG
-			
-			}
+					owns_state = PREV
+					is_in_faction_with = ENG		
+				}
 			}
 			any_country = {
 				controls_state = PREV

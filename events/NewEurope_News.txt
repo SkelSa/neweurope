@@ -1747,7 +1747,7 @@ news_event = {
 }
 
 
-##WW3 has started! (Soviet started War)
+##WW3 has started! (Soviets started War)
 news_event = {
 	id = ne_news.20
 	title = ne_news.20.t
@@ -1756,7 +1756,32 @@ news_event = {
 	
 	major = yes
 	
-	is_triggered_only = yes
+	trigger = {
+	
+		SOV = {
+			exists = yes
+			has_government = communism
+			has_offensive_war_with = USA					
+				
+		}
+		
+		USA = {
+			exists = yes
+			has_government = democratic
+			is_in_faction_with ENG
+			has_defensive_war_with = SOV
+		
+		}
+		
+		OR = {
+			has_global_flag = germany_divided
+			has_global_flag = germany_partitioned
+		}
+	}
+	
+	immediate = {
+		set_global_flag = ww3_soviets
+	}
 	
 	option = {	##neutrality and fascists
 		name = ne_news.20.a
@@ -1807,8 +1832,32 @@ news_event = {
 	
 	major = yes
 	
-	is_triggered_only = yes
+	trigger = {
 	
+		SOV = {
+			exists = yes
+			has_government = communism
+			has_defensive_war_with = USA									
+		}
+		
+		USA = {
+			exists = yes
+			has_government = democratic
+			is_in_faction_with ENG
+			has_offensive_war_with = SOV
+		
+		}
+		
+		OR = {
+			has_global_flag = germany_divided
+			has_global_flag = germany_partitioned
+		}
+	}
+	
+	immediate = {
+		set_global_flag = ww3_americans
+	}
+		
 	option = {	##neutrality and fascists
 		name = ne_news.21.a
 		trigger = {
@@ -1942,6 +1991,7 @@ news_event = {
 	}
 }
 
+##Berlin Wall now stands!
 news_event = {
 	id = ne_news.24
 	title = ne_news.24.t
@@ -1986,6 +2036,236 @@ news_event = {
 		name = ne_news.24.f
 		trigger = {
 			tag = DDR
+		}
+	}
+
+}
+
+
+##End of WWE (communism won)
+news_event = {
+	id = ne_news.25
+	title = ne_news.25.t
+	desc = ne_news.25.d
+	#picture = GFX_news_berlin_wall
+	
+	major = yes	
+	
+	trigger = {		##those conditions might need another look
+
+		OR = {
+			has_global_flag = ww3_soviets
+			has_global_flag = ww3_americans
+		}
+		
+		SOV = {
+			OR = {
+				exists = yes
+				has_government = communism
+			}
+			is_faction_leader = yes
+		}
+		
+		USA = {
+			OR = {
+				exists = no
+				has_government = communism
+			}
+			is_faction_leader = no
+		}
+		
+		ENG = {
+			OR = {
+				exists = no
+				has_government = communism				
+			}
+			is_faction_leader = no
+		}
+
+	}
+	
+	
+	option = {	##neutrality and fascists
+		name = ne_news.25.a
+		trigger = {
+			has_government = neutrality
+			has_government = fascism
+		}
+	}
+	option = {	##democracies
+		name = ne_news.25.b
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {	##communists
+		name = ne_news.25.c
+		trigger = {
+			has_government = neutrality
+		}
+	}
+	option = {	##communists at war
+		name = ne_news.25.e
+		trigger = {
+			has_government = communism
+			has_war_with = USA
+			has_war_with = ENG
+		}
+	}
+	option = { ##democracies at war
+		name = ne_news.25.f 
+		trigger = {
+			has_government = democratic
+			has_war_with = SOV
+		}
+	}
+
+}
+
+
+##End of WWE (democracy won)
+news_event = {
+	id = ne_news.26
+	title = ne_news.26.t
+	desc = ne_news.26.d
+	#picture = GFX_news_berlin_wall
+	
+	major = yes	
+	
+	trigger = {		##those conditions might need another look
+
+		OR = {
+			has_global_flag = ww3_soviets
+			has_global_flag = ww3_americans
+		}
+		
+		SOV = {
+			OR = {
+				exists = no
+				has_government = communism
+			}
+			is_faction_leader = no
+		}
+		
+		USA = {
+			OR = {
+				exists = yes
+				has_government = democratic			
+			}
+		}
+		
+		ENG = {
+			OR = {
+				exists = yes
+				has_government = democratic			
+			}
+		}
+	
+	}
+	
+	option = {	##neutrality and fascists
+		name = ne_news.26.a
+		trigger = {
+			has_government = neutrality
+			has_government = fascism
+		}
+	}
+	option = {	##democracies
+		name = ne_news.26.b
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {	##communists
+		name = ne_news.26.c
+		trigger = {
+			has_government = neutrality
+		}
+	}
+	option = {	##communists at war
+		name = ne_news.26.e
+		trigger = {
+			has_government = communism
+			has_war_with = USA
+			has_war_with = ENG
+		}
+	}
+	option = { ##democracies at war
+		name = ne_news.26.f 
+		trigger = {
+			has_government = democratic
+			has_war_with = SOV
+		}
+	}
+
+}
+
+
+##Soviets enter German soil
+news_event = {
+	id = ne_news.27
+	title = ne_news.27.t
+	desc = ne_news.27.d
+	#picture = GFX_news_berlin_wall
+	
+	major = yes	
+	
+	trigger = {		
+
+		
+		SOV = {			
+			exists = yes
+			has_government = communism
+			has_defensive_war_with = GER			
+		}
+		
+		GER = {			
+			exists = yes
+			has_government = fascism
+			has_offensive_war_with = GER			
+		}
+		
+		any_state = {
+			is_core_of = GER
+			is_controlled_by = SOV
+			#SOV = { has_full_control_of_state = PREV }
+			#divisions_in_state = { state = 605 size > 0 } 
+		}
+	
+	}
+	
+	option = {	##neutrality and fascists
+		name = ne_news.27.a
+		trigger = {
+			has_government = neutrality
+			has_government = fascism
+		}
+	}
+	option = {	##democracies
+		name = ne_news.27.b
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {	##communists
+		name = ne_news.27.c
+		trigger = {
+			has_government = neutrality
+		}
+	}
+	option = {	##communists at war
+		name = ne_news.27.e
+		trigger = {
+			has_government = communism
+			has_war_with = USA
+			has_war_with = ENG
+		}
+	}
+	option = { ##democracies at war
+		name = ne_news.27.f 
+		trigger = {
+			has_government = democratic
+			has_war_with = SOV
 		}
 	}
 
