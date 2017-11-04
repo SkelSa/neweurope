@@ -165,15 +165,16 @@ opinion_modifiers = {
 	}
 
 	west_east_medium_tension_relations = {
-		value = -50
+		value = -45
+		years = 4
 	}
 
 	west_east_high_tension_relations = {
-		value = -85
+		value = -65
 	}
 
 	west_east_very_high_tension_relations = {
-		value = -100
+		value = -80
 	}
 	
 	
