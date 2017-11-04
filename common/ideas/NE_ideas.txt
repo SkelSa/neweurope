@@ -239,7 +239,6 @@ ideas = {
 		}
 	}
 
-	
 	}
 	
 	ne_diplomacy_slot = {

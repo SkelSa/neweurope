@@ -177,5 +177,8 @@ spriteTypes = {
 		name = "GFX_tensions"
 		texturefile = "gfx/event_pictures/ne_tensions.dds"
 	}
-	
-	
+
+	spriteType = {
+		name = "GFX_news_berlin_wall"
+		texturefile = "gfx/event_pictures/news_berlin_wall.dds"
+	}

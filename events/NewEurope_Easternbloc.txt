@@ -148,19 +148,29 @@ country_event = {
 		}
 		every_country = {
 			limit = {
-				AND = {
-					has_government = communism
-					is_puppet_of = SOV
-				}
-				NOT = { tag = DDR }
+				has_government = democratic
+				is_in_faction_with = WGR
 			}
-			any_country = {
-				limit = { has_government = democracy }
-				add_opinion_modifier = { target = FROM modifier = west_east_high_tension_relations }
-			}
+			every_country = { limit = { is_in_faction_with = SOV } }
+			add_opinion_modifier = { target = PREV modifier = west_east_medium_tension_relations }
 		}
 		DDR = {
-			add_opinion_modifier = { target = WGR modifier = west_east_very_high_tension_relations }
+			add_opinion_modifier = { target = WGR modifier = west_east_high_tension_relations }
+			add_national_unity = -0.15
+		}
+		hidden_effect = {
+			news_event = { id = ne_news.24 days = 1 }
+		}
+	}
+	option = {
+		name = ne_ssrwb.2.b
+		every_country = {
+			limit = {
+				has_government = communism
+				is_in_faction_with = SOV
+			}
+			add_opinion_modifier = { target = SOV modifier = communism_leanings_bad }
+			hidden_effect = { random_list = { 94 = { add_popularity = { ideology = democratic popularity = 0.08 } } 6 = { add_popularity = { ideology = democratic popularity = 0.85 } } } }
 		}
 	}
 }

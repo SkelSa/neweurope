@@ -1934,12 +1934,61 @@ news_event = {
 		}
 	}
 	option = { ##democracies at war
-		name = ne_news.23.e
+		name = ne_news.23.f ##there was a defect here (dublicate 23.e)
 		trigger = {
 			has_government = democratic
 			has_war_with = SOV
 		}
 	}
+}
+
+news_event = {
+	id = ne_news.24
+	title = ne_news.24.t
+	desc = ne_news.24.d
+	picture = GFX_news_berlin_wall
+	
+	major = yes	
+	is_triggered_only = yes
+	
+	option = {
+		name = ne_news.24.a
+		trigger = {
+			has_government = communism
+			NOT = { tag = DDR }
+		}
+	}
+
+	option = {
+		name = ne_news.24.b
+		trigger = {
+			has_government = democratic
+			NOT = { tag = WGR }
+		}
+	}
+
+	option = {
+		name = ne_news.24.c
+		trigger = {
+			has_government = neutrality
+			has_government = fascism
+		}
+	}
+
+	option = {
+		name = ne_news.24.e
+		trigger = {
+			tag = WGR
+		}
+	}
+
+	option = {
+		name = ne_news.24.f
+		trigger = {
+			tag = DDR
+		}
+	}
+
 }
 
 
