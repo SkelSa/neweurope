@@ -162,6 +162,7 @@ country_event = {
 			news_event = { id = ne_news.24 days = 1 }
 		}
 	}
+
 	option = {
 		name = ne_ssrwb.2.b
 		every_country = {
