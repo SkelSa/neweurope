@@ -5,34 +5,6 @@ add_namespace = ne_settings
 ##############BPWE: Options/Settings Menu#####################
 
 
-##HIDDEN event to start the settings menu
-#country_event = {
-#	id = ne_settings_intro.0
-#
-#	hidden = yes
-#	is_triggered_only = yes
-#	
-#	immediate = { 		
-#		set_global_flag = ne_settings 
-#	}
-#	
-#	
-#	option = { 
-#		hidden_effect = {
-#				random_country = {
-#					limit = {
-#						is_ai = no						
-#					}
-#					
-#				country_event = { days = 1 id = ne_settings_intro.1 }	
-#				}			
-#		}
-#	}
-#
-#	
-#}
-
-
 ##Settings Menu
 country_event = {
 	id = ne_settings_intro.1
@@ -662,23 +634,22 @@ country_event = {
 				NOT = { has_global_flag = ne_puppet_ssr	}	
 			}
 			
+			##release SSRs
+			release = BLR
+			release = UKR
+			release = AZR
+			release = ARM
+			release = GEO
+			release = KAZ
+			release = TRK
+			release = TAJ
+			release = KGZ
+			release = UZB
+
 			
-			##release SSRs			
+			##puppet SSRs
 			SOV = {
 
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					
-					set_autonomy = {
-						target = BLR
-						autonomous_state = autonomy_integrated_puppet
-					}
-				
-				}
-			
-			
 				if = {			
 					limit = {
 						has_dlc = "Together for Victory"
@@ -738,21 +709,29 @@ country_event = {
 						target = TRK
 						autonomous_state = autonomy_integrated_puppet
 					}
+					
+					else = {
+						puppet = BLR
+						puppet = UKR
+						puppet = MOL
+						puppet = ARM
+						puppet = AZR
+						puppet = GEO
+						puppet = KAZ
+						puppet = UZB
+						puppet = TRK
+						puppet = KGZ
+						puppet = TAJ
+					}
+					
 				}
+			
 
-				puppet = BLR
-				puppet = UKR
-				puppet = MOL
-				puppet = ARM
-				puppet = AZR
-				puppet = GEO
-				puppet = KAZ
-				puppet = UZB
-				puppet = TRK
-				puppet = KGZ
-				puppet = TAJ
-				
 				dismantle_faction = yes
+				
+				end_puppet = TAN
+				end_puppet = MON 
+				
 				give_guarantee = TAN
 				give_guarantee = MON
 				
@@ -767,7 +746,6 @@ country_event = {
 				add_to_faction = TRK
 				add_to_faction = TAJ
 				add_to_faction = KGZ
-				add_to_faction = MOL
 
 			}
 			

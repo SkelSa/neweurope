@@ -11,7 +11,6 @@ news_event = {
 	##experimenting with those two; no need to works as intended!
 	
 	is_triggered_only = yes
-	#fire_only_once = yes	
 	major = yes
 
 	immediate = {
@@ -22,10 +21,12 @@ news_event = {
 	option = {	#I understand
 		name = ne_news.1.a  
 
+		##TO DO: Only the first clicker gets the settings
+		
 		hidden_effect = {
-			random_country = {
+			every_country = {
 				limit = {
-					is_ai = no						
+					NOT = { has_country_flag = NE_settings }		
 				}
 				
 			country_event = { days = 1 id = ne_settings_intro.1 }	
