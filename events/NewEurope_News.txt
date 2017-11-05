@@ -2277,6 +2277,122 @@ news_event = {
 
 }
 
+####The Hatai transferring event####
+#####Btw, Skelsa, could you maybe add to the main event some global or country flags? Would be great!#####
+news_event = {
+	id = ne_news.28
+	title = ne_news.28.t
+	desc = ne_news.28.d
+	# picture = GFX_hatai_transfer
+	
+	major = yes	
+	is_triggered_only = yes
+	
+	option = {
+		name = ne_news.28.a
+		trigger = {
+			OR = { 
+				has_government = communism
+				has_government = fascism
+				has_government = democratic
+				has_government = neutrality
+			}
+			AND = {
+				NOT = { tag = FRA }
+				NOT = { tag = TUR }
+			}
+		}
+	}
+
+	option = {
+		name = ne_news.28.b
+		trigger = {
+			tag = TUR
+		}
+	}
+
+	option = {
+		name = ne_news.28.c
+		trigger = {
+			tag = FRA
+		}
+	}
+}
+
+####Elbe Day####
+news_event = {
+	id = ne_news.29
+	title = ne_news.29.t
+	desc = ne_news.29.d
+	# picture = GFX_elbe_day
+	
+	major = yes	
+
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			USA = { has_war_with = GER }
+			USA = { NOT = { has_war_with = SOV } }
+			SOV = { has_war_with = GER }
+			SOV = { NOT = { has_war_with = USA } }
+		}
+		AND = { 
+			USA = { has_opinion = { target = SOV value > 10 } }
+			SOV = { has_opinion = { target = USA value > 10 } }
+		}
+		OR = {
+			USA = { is_neighbor_of = SOV }
+			SOV = { is_neighbor_of = USA }
+		}
+	}
+
+	option = {
+		name = ne_news.29.a
+		trigger = {
+			has_government = democratic
+			NOT = { tag = USA }
+		}
+	}
+
+	option = {
+		name = ne_news.29.b
+		trigger = {
+			has_government = communism
+			NOT = { tag = SOV }
+		}
+	}
+
+	option = {
+		name = ne_news.29.c
+		trigger = {
+			tag = USA
+		}
+	}
+
+	option = {
+		name = ne_news.29.e
+		trigger = {
+			tag = SOV
+		}
+	}
+
+	option = {
+		name = ne_news.29.f
+		trigger = {
+			has_government = fascism
+		}
+	}
+
+	option = {
+		name = ne_news.29.g
+		trigger = {
+			has_government = neutrality
+		}
+	}
+
+}
+
 
 
 
