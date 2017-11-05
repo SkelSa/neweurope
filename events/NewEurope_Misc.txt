@@ -15,17 +15,17 @@ country_event = {
 	fire_only_once = yes
 
 	trigger {
-	
-	tag = FRA
-	country_exists = FRA 
-	country_exists = TUR
-	
-	NOT { country_exists = SYR }
-	
-	NOT { FRA = { has_war_with = TUR }  }
-	
-	date > 1939.6.6
-	
+		
+		tag = FRA
+		country_exists = FRA 
+		country_exists = TUR
+		
+		NOT = { country_exists = SYR }
+		
+		NOT = { FRA = { has_war_with = TUR }  }
+		
+		date > 1939.6.6
+		
 	}
 	
 	
@@ -35,7 +35,7 @@ country_event = {
 		add_political_power = 10
 
 		TUR = {
-			country_event = {days = 1 id = ne_misc.2 }
+			country_event = { days = 1 id = ne_misc.2 }
 		}
 		
 		
@@ -48,8 +48,8 @@ country_event = {
 		FRA = { reverse_add_opinion_modifier = { target = TUR modifier = refused_hatay_transfer } }
 
 	}
-            
-            	
+	
+	
 	
 }
 
@@ -75,15 +75,15 @@ country_event = {
 			
 			transfer_state = 774
 			
-			 	add_state_core = 774 
+			add_state_core = 774 
 			
 		}
 		
-	##Country (TUR) to me
-	TUR = { reverse_add_opinion_modifier = { target = FRA modifier = accepted_hatay_transfer } }
+		##Country (TUR) to me
+		TUR = { reverse_add_opinion_modifier = { target = FRA modifier = accepted_hatay_transfer } }
 		
-	##I (TUR) to country
-	TUR = {add_opinion_modifier = { target = FRA modifier = accepted_hatay_transfer} }	
+		##I (TUR) to country
+		TUR = { add_opinion_modifier = { target = FRA modifier = accepted_hatay_transfer } }	
 		
 		
 	}
@@ -94,8 +94,8 @@ country_event = {
 		add_national_unity = -0.05 
 
 	}
-            
-            	
+	
+	
 	
 }
 
@@ -124,71 +124,71 @@ country_event = {
 		NOT = { tag = CAN }
 		
 		OR = {
-	
+			
 			AND = {
-	
-			controls_state = 331
-			owns_state = 331
-		
+				
+				controls_state = 331
+				owns_state = 331
+				
 			}
 
 			AND = {
-		
+				
 				controls_state = 332
 				owns_state = 332
-			
-				}
 				
+			}
+			
 		}
 		
 		NOT = {  has_war_with = CAN  }
 		NOT = {  has_country_flag = labrador_question  }
 
-	
-	CAN = {
+		
+		CAN = {
 			exists = yes
 		}
 		
 
-	OR = {
-	
-		NOT = {	CAN = {
-				controls_state = 331
-				owns_state = 331
+		OR = {
+			
+			NOT = {	CAN = {
+					controls_state = 331
+					owns_state = 331
 				}
-		
+				
+			}
+			
+			
+			NOT = {	CAN = {
+					controls_state = 332
+					owns_state = 332
+				}
+				
+			}
+
+		}
+
+
+		OR = {
+			
+			has_global_flag = germany_partitioned
+			has_global_flag = germany_divided
+			has_global_flag = germany_unified
+			
 		}
 		
-		
-		NOT = {	CAN = {
-				controls_state = 332
-				owns_state = 332
-				}
-		
-		}
-
-	}
-
-
-	OR = {
-	
-	has_global_flag = germany_partitioned
-	has_global_flag = germany_divided
-	has_global_flag = germany_unified
-	
-	}
-	
 	}
 	
 	mean_time_to_happen = {
-	days = 5
-	
+		days = 5
+		
 	}
 	
 	immediate = {
-	
-	set_country_flag = labrador_question
-	
+		
+		set_country_flag = labrador_question
+		
 	}
 	
 	
@@ -220,8 +220,8 @@ country_event = {
 		reverse_add_opinion_modifier = { target = CAN modifier = refused_nfl}
 
 	}
-            
-            	
+	
+	
 	
 }
 
@@ -244,7 +244,7 @@ country_event = {
 		add_political_power = 15
 
 
-	##in theory ROOT should work, but i doesn't...very strange
+		##in theory ROOT should work, but i doesn't...very strange
 		
 	if = {
 					limit = { FROM = { controls_state = 331 } }
@@ -260,7 +260,7 @@ country_event = {
 
 	}
 
-                   		
+						
 }
 
 ##Owner says NO
@@ -279,8 +279,8 @@ country_event = {
 		ai_chance = { factor = 100 }
 	
 
-    }        
-            	
+	}        
+				
 	
 }
 
@@ -372,7 +372,7 @@ country_event = {
 		name = ne_misc.6.b
 		ai_chance = { factor = 98 }
 		add_political_power = 5
-                   		
+						
 	}
 	
 }
@@ -467,7 +467,7 @@ country_event = {
 		
 		
 		FROM = { country_event = { id = ne_misc.8 } }
-                   		
+						
 	}
 	
 	option = { # fuck off...cunt
@@ -480,34 +480,34 @@ country_event = {
 			}    		
 		}	
 		FROM = { country_event = { id = ne_misc.9 } }
-                   		
+						
 	}
 	
 }
 
 
 ##Minor gets response, here it's YES
-country_event = {
-	id = ne_misc.8
-	title = ne_misc.8.t
-	desc =  ne_misc.8.d
-	picture = GFX_report_event_soviet_invasion_map
+		country_event = {
+			id = ne_misc.8
+			title = ne_misc.8.t
+			desc =  ne_misc.8.d
+			picture = GFX_report_event_soviet_invasion_map
 
-	is_triggered_only = yes
-	
-	
-	option = { # YAY
-		name = ne_misc.8.a
-		ai_chance = { factor = 98 }
-		add_political_power = 15
-		add_national_unity = 0.01
-		
-		##opinion modifier
-		add_opinion_modifier = { target = FROM modifier = NE_lend_lease }	
-		
-	}
+			is_triggered_only = yes
+			
+			
+			option = { # YAY
+				name = ne_misc.8.a
+				ai_chance = { factor = 98 }
+				add_political_power = 15
+				add_national_unity = 0.01
+				
+				##opinion modifier
+				add_opinion_modifier = { target = FROM modifier = NE_lend_lease }	
+				
+			}
 
-}
+		}
 
 
 ##Minor gets response, here it's NO
@@ -967,69 +967,69 @@ country_event = {
 
 
 ##TRIESTE'S FATE##
-country_event = {
-	id = ne_misc.14
-	title = ne_misc.14.t
-	desc =  ne_misc.14.d
-	picture = GFX_report_a_trieste_choice
+		country_event = {
+			id = ne_misc.14
+			title = ne_misc.14.t
+			desc =  ne_misc.14.d
+			picture = GFX_report_a_trieste_choice
 
-	fire_only_once = yes
+			fire_only_once = yes
 
-	mean_time_to_happen = { days = 365 }
+			mean_time_to_happen = { days = 365 }
 
-	trigger = {
-		FROM = { owns_state = 736 }
-		NOT = { tag = ITA }
-		has_global_flag = germany_divided
-	}
-	
-	
-	mean_time_to_happen = {	days = 365 }
+			trigger = {
+				FROM = { owns_state = 736 }
+				NOT = { tag = ITA }
+				has_global_flag = germany_divided
+			}
+			
+			
+			mean_time_to_happen = {	days = 365 }
 
-	
-	option = {
-		name = ne_misc.14.a
-		ai_chance = { factor = 95 }
-		736 = { 
-			add_core_of = ITA
-			add_claim_by = ITA
+			
+			option = {
+				name = ne_misc.14.a
+				ai_chance = { factor = 95 }
+				736 = { 
+					add_core_of = ITA
+					add_claim_by = ITA
+				}
+				ITA = { transfer_state = 736 }
+				hidden_effect = { ITA = { country_event = { days = 1 id = ne_misc.15 } } }
+				set_global_flag	= triest_was_moved
+			}
+
+			option = {
+				name = ne_misc.14.b
+				ai_chance = { factor = 5 }
+				736 = { 
+					add_core_of = YUG
+					add_claim_by = YUG
+				}
+				YUG = { transfer_state = 736 }
+				hidden_effect = { YUG = { country_event = { days = 1 id = ne_misc.15 } } }
+				set_global_flag	= triest_was_moved
+			}
 		}
-		ITA = { transfer_state = 736 }
-		hidden_effect = { ITA = { country_event = { days = 1 id = ne_misc.15 } } }
-		set_global_flag	= triest_was_moved
-	}
 
-	option = {
-		name = ne_misc.14.b
-		ai_chance = { factor = 5 }
-		736 = { 
-			add_core_of = YUG
-			add_claim_by = YUG
+		country_event = { 
+			id = ne_misc.15	
+			title = ne_misc.15.t
+			desc = ne_misc.15.d
+			picture	= GFX_report_a_trieste_choice
+
+			fire_only_once = yes
+			
+			is_triggered_only = yes
+
+			trigger	= {
+				has_global_flag = triest_was_moved
+			}
+
+			option = {
+				name = ne_misc.15.a
+			}
 		}
-		YUG = { transfer_state = 736 }
-		hidden_effect = { YUG = { country_event = { days = 1 id = ne_misc.15 } } }
-		set_global_flag	= triest_was_moved
-	}
-}
-
-country_event = { 
-	id = ne_misc.15	
-	title = ne_misc.15.t
-	desc = ne_misc.15.d
-	picture	= GFX_report_a_trieste_choice
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	trigger	= {
-		has_global_flag = triest_was_moved
-	}
-
-	option = {
-		name = ne_misc.15.a
-	}
-}
 
 
 
