@@ -37,6 +37,9 @@ country_event = {
 		TUR = {
 			country_event = { days = 1 id = ne_misc.2 }
 		}
+		hidden_effect = {
+			news_event = { id = ne_news.28 days = 1 }
+		}
 		
 		
 	}
@@ -198,12 +201,14 @@ country_event = {
 		add_political_power = 15
 
 		CAN = {
-			country_event = {days = 1 id = ne_misc.4 }
+			country_event = { days = 1 id = ne_misc.4 }
 		}
 		
 		add_opinion_modifier = { target = CAN modifier =  accepted_nfl}
 		reverse_add_opinion_modifier = { target = CAN modifier = accepted_nfl}
-		
+		hidden_effect = {
+			news_event = { id = ne_news.30 days = 1 }
+		}
 		
 	}
 	option = { # Refuse
@@ -1012,22 +1017,27 @@ country_event = {
 			}
 		}
 
+####Soviet research slot####
 		country_event = { 
-			id = ne_misc.15	
-			title = ne_misc.15.t
-			desc = ne_misc.15.d
-			picture	= GFX_report_a_trieste_choice
+			id = ne_misc.16	
+			title = ne_misc.16.t
+			desc = ne_misc.16.d
+		  # picture = GFX_soviet_research_slot
 
 			fire_only_once = yes
 			
 			is_triggered_only = yes
 
+			mean_time_to_happen	= { days = 365 }
+
 			trigger	= {
-				has_global_flag = triest_was_moved
+				tag = SOV
+				has_global_flag	= germany_divided
 			}
 
 			option = {
-				name = ne_misc.15.a
+				add_research_slot = 1
+				name = ne_misc.16.a
 			}
 		}
 

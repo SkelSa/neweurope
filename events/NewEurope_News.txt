@@ -2394,6 +2394,34 @@ news_event = {
 
 }
 
+####Newfoundland####
+####"ne_misc.3" is the main event####
+news_event = {
+	id = ne_news.30
+	title = ne_news.30.t
+	desc = ne_news.30.d
+	# picture = GFX_newfoundland_transfer
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ne_news.30.a
+		trigger = {
+			tag = CAN
+		}
+	}
+
+	option = {
+		name = ne_news.30.b
+		trigger = {
+			OR = { 
+				tag = ENG
+				tag = USA
+			}
+		}
+	}
+}
+
 
 
 
