@@ -320,20 +320,16 @@ country_event = {
 				value = 85
 			}
 		}
-		USA = {
-			limit = { is_in_faction_with = WGR }
-			add_ai_strategy = {
-				type = protect
-				id = "WGR"
-				value = 65
+		every_country = {
+			limit = {
+				has_government = democratic
+				is_in_faction_with = WGR
+				NOT = { any_owned_state = { is_on_continent = europe } }
 			}
-		}
-		CAN = {
-			limit = { is_in_faction_with = WGR }
 			add_ai_strategy = {
 				type = protect
 				id = "WGR"
-				value = 65
+				value = 50
 			}
 		}
 		hidden_effect = { 749 = { damage_building = { type = infrastructure damage = 0.8 } } }
