@@ -305,8 +305,8 @@ country_event = {
 				is_in_faction_with = SOV
 				any_owned_state = { is_on_continent = europe }
 			}
-				add_opinion_modifier = { target = WGR modifier = west_east_very_high_tension_relations }
-				add_opinion_modifier = { target = WGR modifier = embargo }
+			add_opinion_modifier = { target = WGR modifier = west_east_very_high_tension_relations }
+			add_opinion_modifier = { target = WGR modifier = embargo }
 		}
 		every_country = {
 			limit = {
