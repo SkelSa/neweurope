@@ -21,16 +21,9 @@ news_event = {
 	option = {	#I understand
 		name = ne_news.1.a  
 
-		##TO DO: Only the first clicker gets the settings
 		
-		hidden_effect = {
-			every_country = {
-				limit = {
-					NOT = { has_country_flag = NE_settings }		
-				}
-				
-			country_event = { days = 1 id = ne_settings_intro.1 }	
-			}			
+		hidden_effect = {				
+			country_event = { days = 1 id = ne_settings_intro.0 }							
 		}		
 	}
 
@@ -1630,8 +1623,7 @@ news_event = {
 }
 
 
-
-#FOUNDING WP
+#FOUNDING WARSAW PACT
 news_event = {
 	id = ne_news.18
 	title = ne_news.18.t
@@ -2049,7 +2041,7 @@ news_event = {
 }
 
 
-##End of WWE (communism won)
+##End of WW3 (communism won)
 news_event = {
 	id = ne_news.25
 	title = ne_news.25.t
@@ -2130,7 +2122,7 @@ news_event = {
 }
 
 
-##End of WWE (democracy won)
+##End of WW3 (democracy won)
 news_event = {
 	id = ne_news.26
 	title = ne_news.26.t
@@ -2278,7 +2270,7 @@ news_event = {
 
 }
 
-####The Hatai transferring event####
+####The Hatay transferring event####
 #####Btw, Skelsa, could you maybe add to the main event some global or country flags? Would be great!#####
 news_event = {
 	id = ne_news.28
@@ -2406,6 +2398,7 @@ news_event = {
 	
 	option = {
 		name = ne_news.30.a
+		
 		trigger = {
 			tag = CAN
 		}
@@ -2413,6 +2406,7 @@ news_event = {
 
 	option = {
 		name = ne_news.30.b
+		
 		trigger = {
 			OR = { 
 				tag = ENG
@@ -2420,6 +2414,18 @@ news_event = {
 			}
 		}
 	}
+	
+	option = {
+		name = ne_news.30.c
+		
+		trigger = {
+			NOT = { tag = ENG }
+			NOT = { tag = USA }
+			NOT = { tag = CAN }
+		}
+	}
+	
+	
 }
 
 

@@ -5,7 +5,7 @@ add_namespace = ne_korean_war
 
 
 
-##DPRK/ROK get free factories
+##DPRK/ROK get free factories, pp and army experience
 country_event = {
 	id = ne_korea.1
 	title = ne_korea.1.t
@@ -19,12 +19,28 @@ country_event = {
 	
 	trigger = {
 	
+		OR = {
+			tag = KOR
+			tag = DPR		
+		}
+		
+		KOR = {
+			exists = yes
+			has_government = democratic
+		}
+		
+		DPR = {
+			exists = yes
+			has_government = communism
+		}
+		
+	
 		
 
 	}
 	
 	
-	mean_time_to_happen = {	days = 1 }
+	mean_time_to_happen = {	days = 20 }
 	
 	immediate = { 
 		set_country_flag = flag_settings 
@@ -33,7 +49,8 @@ country_event = {
 	
 	option = { # option one
 		name = ne_korea.1.a
-		ai_chance = { factor = 100 }	
+		ai_chance = { factor = 100 }
+
 		
 		
 		
@@ -41,11 +58,6 @@ country_event = {
 
 	
 }
-
-
-
-
-
 
 
 
@@ -155,8 +167,8 @@ country_event = {
 		ai_chance = { factor = 2}
 
 			add_political_power = -50
-			add_national_unity = -0.05
-			add_popularity = { ideology = communism popularity = -0.2 } 			
+			add_national_unity = -0.10
+			add_popularity = { ideology = communism popularity = -0.25 } 			
 			army_experience = -10 
 			air_experience = -10 
 			navy_experience = -10 			
@@ -180,10 +192,10 @@ country_event = {
 	option = {
 			name = ne_korean_war.2.a 
 			add_political_power = 100
-			add_national_unity =  0.2
-			add_popularity = { ideology = democratic popularity = 0.5 } 
+			add_national_unity =  0.25
+			add_popularity = { ideology = democratic popularity = 0.4 } 
 			add_popularity = { ideology = communism popularity = -0.3 } 
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 producer = USA } 
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 producer = KOR } 
 			add_manpower = 80000
 			
 
@@ -344,11 +356,7 @@ country_event = {
 			
 			add_opinion_modifier = { target = DPR modifier =  peace_treaty}
 			reverse_add_opinion_modifier = { target = DPR modifier = peace_treaty}
-			
-			DPR = { add_timed_idea = { idea = NE_neutrality days = 170 }  }
-			KOR = { add_timed_idea = { idea = NE_neutrality days = 170 }  }
-		
-			
+
 			##Whitepeace event, needs testing in case faction war still exists	
 			KOR = { white_peace = DPR }
 			
@@ -364,13 +372,13 @@ country_event = {
 				transfer_state = 771	
 			}
 
+			DPR = { add_timed_idea = { idea = NE_neutrality days = 170 }  }
+			KOR = { add_timed_idea = { idea = NE_neutrality days = 170 }  }
+			
 			add_named_threat = { threat = -5 name = threat_ne_korea_cf }
 			
 			hidden_effect = {
-			
-				##switch to 1953 border
-
-				
+				##news event contains DMZ
 				news_event = { days = 2 id = ne_news.13 }	
 			}
 
@@ -387,6 +395,8 @@ country_event = {
 			add_national_unity =  -0.2
 			add_popularity = { ideology = democratic popularity = -0.3 }
 
+			add_named_threat = { threat = -5 name = threat_ne_korea_no_cf }
+			
 			hidden_effect = {	
 				news_event = { days = 2 id = ne_news.14 }
 			}

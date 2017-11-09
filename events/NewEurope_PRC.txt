@@ -309,7 +309,6 @@ country_event = {
 ##Lease of Port Arthur (Soviets to China)##
 ###########################################
 
-
 country_event = {
 	id = ne_prc.9
 	title = ne_prc.9.t
@@ -352,7 +351,7 @@ country_event = {
 		
 		#following country gets event
 		PRC = {
-			country_event = { days = 1 id = ne_prc.10}
+			country_event = { days = 1 id = ne_prc.10 }
 		}
 		
 	}
@@ -1110,9 +1109,10 @@ country_event = {
 				}
 				
 		if = {
-					limit = { FROM = { controls_state = 716 
-							   	       has_full_control_of_state = 76
-							   }
+					limit = { 
+						FROM = { controls_state = 716 
+							   	 has_full_control_of_state = 76
+						}
 					}
 					transfer_state = 716
 				}

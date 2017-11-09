@@ -4,6 +4,30 @@ add_namespace = ne_settings
 
 ##############BPWE: Options/Settings Menu#####################
 
+##DEBUG (HIDDEN)
+
+
+##Settings Menu
+country_event = {
+	id = ne_settings_intro.0
+
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = { # start settings
+		name = ne_settings_intro.1.a	
+		
+		hidden_effect = {
+			country_event = ne_settings_intro.1
+		}	
+	}
+
+	
+}
+
+
 
 ##Settings Menu
 country_event = {
@@ -92,7 +116,7 @@ country_event = {
 }
 
 
-##Neutraliyt settings and faction settings
+##Neutrality settings and faction settings
 country_event = {
 	id = ne_settings_intro.3
 	title = ne_settings_intro.3.t
@@ -156,6 +180,11 @@ country_event = {
 			GRE = {set_cosmetic_tag = NE_GRE}
 			WGR = {set_cosmetic_tag = NE_WGR}
 			DDR = {set_cosmetic_tag = NE_DDR}
+			##these need a tooltip
+			KOR = {set_cosmetic_tag = NE_KOR }
+			PRC = {set_cosmetic_tag = CSR }
+			PAK = {set_cosmetic_tag = NE_PAK }
+			SPR = { set_cosmetic_tag = NE_SPR }
 			
 			hidden_effect = {
 				set_global_flag = names_chosen
@@ -215,7 +244,7 @@ country_event = {
 	}
 	
 	option = {	 #ssrs but WITH color
-		name = ne_settings.1.b       
+		name = ne_settings.1.b0     
 		custom_effect_tooltip = historical_settings_b
 		
 		trigger = {
@@ -813,6 +842,47 @@ country_event = {
 			country_event = ne_settings_intro.1
 		}
 	
+	}
+	
+	option = { ##add additional research slot for majors
+		name = ne_settings.5.b
+		
+		trigger = {
+			NOT = { has_global_flag = additional_rd_slot }
+		}
+		
+			every_country = {
+				limit = {
+					is_major = yes
+				}
+			 	add_research_slot = 1	
+			}
+		
+		hidden_effect = {
+			country_event = ne_settings_intro.1
+		}
+		
+	}
+	
+	option = { ##remove additional research slot for majors
+		name = ne_settings.5.b1
+		
+		trigger = {
+			as_global_flag = additional_rd_slot 
+		}
+		
+			every_country = {
+				limit = {
+					is_major = yes
+				}
+			 	add_research_slot = -1	
+			}
+		
+		hidden_effect = {
+			clr_global_flag = additional_rd_slot
+			country_event = ne_settings_intro.1
+		}
+		
 	}
 
 	

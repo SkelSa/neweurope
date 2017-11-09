@@ -400,9 +400,11 @@
  
  ##OPTIONS: Misc Settings 
  ne_settings.5.t:0 "BPWE: Miscellaneous Settings"
- ne_settings.5.d:0 "Here you can find some things to change which don't belong to a specific category. The current selection is rather small and more content can be expected in the future.\nHover over the buttons to see what exactly each does!"
+ ne_settings.5.d:0 "Here you can find some things to change which don't belong to a specific category.\nThe current selection is rather small and more content can be expected in the future.\nHover over the buttons to see what exactly each does!"
  ne_settings.5.a:0 "Let the SSRs be independent puppets!"
  ne_settings.5.a1:0 "Revert the change, implement direct rule from Moscow again!"
+ ne_settings.5.b:0 "Give every major power an additional research slot!"
+ ne_settings.5.b1:0 "Remove the additional research slot!"
  ne_settings.5.e:0 "Exit to Main Menu"
  
  

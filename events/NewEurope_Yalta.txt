@@ -88,10 +88,8 @@ country_event = {
 		
 		##every occupation zone can span over Germany, except Saarland
 		
-		SAA = { 
-	
-			add_state_core = 764	
-		
+		SAA = { 	
+			add_state_core = 764			
 		}
 		
 		

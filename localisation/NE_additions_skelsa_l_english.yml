@@ -1,5 +1,15 @@
-﻿##IDEAS
+﻿
 l_english:
+
+ ##Replace/Revise
+
+
+
+
+
+
+##IDEAS
+
 
  NE_reparations:0 "War Reparations"
  NE_reparations_desc:0 "Europe is still a continent in ruins. To repair and rebuild the damage the Germans caused from Bordeaux to Rzhev, heavy war reparations against Germany were imposed by the Victorious Powers. Additionally, they will also guarantee that the Germans will never be able to disturb the peace of the world..."
@@ -38,15 +48,36 @@ l_english:
  ne_misc.13.a:0 "Long live Yugoslavia!"
  
  
+ ne_misc.16.t:0 "German Scientists captured!"
+ ne_misc.16.d:0 "We managed to capture several Nazi scientists and they are now willing to work for us. Their knowledge is extremely valuable and will without a doubt strengthen our own research!"
+ ne_misc.16.a:0 "Give them some work!"
+ 
+ ne_misc.17.t:0 "Fascist Influence is still present!"
+ ne_misc.17.d:0 "Even though we could free ourselves from the chains of fascism there's still propaganda of it around here. Dozens of radio stations, newspapers or rallies, some organized from abroad, are still trying to spread the message of this vile ideology!\nWhat do we do?"
+ ne_misc.17.t1:0 "Democratic Influence is still present!"
+ ne_misc.17.d1:0 "Even though we managed to clear our country of any democratic ideals there's still liberal propaganda of it around here. Dozens of radio stations, newspapers or rallies, some organized from abroad, are still trying to spread the message of this dangerous ideology!\nWhat do we do?"
+ ne_misc.17.a:0 "Purge them!"
+ ne_misc.17.b:0 "This won't be neccessary..."
+ 
+ 
+ ##Tooltips:
+ historical_settings_b1:0 "All communist Soviet Republics plus the Baltics gain a cosmetic tag, which changes their name to end with "SSR".\n\nExamples:\nLithuanian People's Republic -> Lithuanian SSR\nKazakh Soviet Socialist Republic -> Kazakh SSR"
  
  
  
+ ##Threats:
+ 
+ threat_ne_korea_no_cf:0 "No Ceasefire in Korea!"
  
  
- 
- 
- 
- 
+ ##countries
+
+ NE_SPR_communism:0 "Spanish Republic"
+ NE_SPR_democratic_DEF:0 "The Spanish Republic"
+ NE_SPR_fascism:0 "Spanish State"
+ NE_SPR_fascism_DEF:0 "The Spanish State"
+ NE_YUN_neutrality:0 "Yunnan Clique"
+ NE_YUN_neutrality_DEF:0 "The Yunnan Clique"
  
  ##News Events
  

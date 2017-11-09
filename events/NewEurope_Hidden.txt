@@ -24,7 +24,7 @@ country_event = {
 	
 }
 
-##stalin is dead
+##STALIN IS DEAD
 country_event = {
 	id = ne_hidden.1
 
@@ -66,9 +66,9 @@ country_event = {
 
 
 
-##MERGE EVENTS (HIDDEN) Best Korea is more democratic than usual
+##MERGE EVENTS (HIDDEN)###################
 
-
+##Best Korea is more democratic than usual
 country_event = {
 	id = ne_hidden.3
 	
