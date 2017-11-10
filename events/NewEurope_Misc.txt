@@ -1219,7 +1219,7 @@ country_event = {
 	fire_only_once = yes			
 	is_triggered_only = yes
 
-	mean_time_to_happen	= { days = 90 }
+	mean_time_to_happen	= { days = 120 }
 
 	trigger	= {
 
@@ -1228,45 +1228,28 @@ country_event = {
 		SOV = {
 			exists = yes
 			is_subject = no
-			has_government = communism	
+			has_government = communism
+			OR = {
+				any_country = { is_in_faction_with = USA }
+				any_country = { is_in_faction_with = ENG }
+			}
+			NOT = { has_war_with = PREV }
 		}
 
-		every_country = {
-			limit = {
-				OR = { 
-					is_in_faction_with = USA
-					is_in_faction_with = ENG
-				}
-				OR = {
-					tag = USA
-					tag = ENG
-				}
-			}
-			NOT = { has_war_with = SOV }
-		}
-
-		every_country = {
-			limit = {
-				OR = { 
-					is_in_faction_with = USA
-					is_in_faction_with = ENG
-				}
-				OR = {
-					tag = USA
-					tag = ENG
-				}
-			}
-			OR = { 
-				every_country = { limit = { is_in_faction_with = JAP } }
-				tag = JAP
-			}
-			has_war_with = PREV
+		SOV = {
+			every_neighbor_state = { is_controlled_by = JAP }
+			PREV = { num_divisions > 5 }
 		}
 
 		JAP = { 
 			exists = yes
 			is_subject = no
 			has_government = fascism
+			OR = {
+				any_country = { is_in_faction_with = USA }
+				any_country = { is_in_faction_with = ENG }
+			}
+			has_war_with = PREV
 		}
 	
 		OR = {
@@ -1293,6 +1276,7 @@ country_event = {
 				id = "PREV"
 				value = 80
 			}
+			declare_war_on = { target = JAP type = puppet_wargoal_focus }
 		}
 		every_country = {
 			limit = { 
