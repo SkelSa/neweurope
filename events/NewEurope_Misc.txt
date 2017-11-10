@@ -1209,8 +1209,8 @@ country_event = {
 	}
 
 }
-
-country_event = { 
+####August Storm####
+country_event = {
 	id = ne_misc.18	
 	title = ne_misc.18.t
 	desc = ne_misc.18.d
@@ -1228,14 +1228,45 @@ country_event = {
 		SOV = {
 			exists = yes
 			is_subject = no
-			has_government = communism		
+			has_government = communism	
 		}
-		
+
+		every_country = {
+			limit = {
+				OR = { 
+					is_in_faction_with = USA
+					is_in_faction_with = ENG
+				}
+				OR = {
+					tag = USA
+					tag = ENG
+				}
+			}
+			NOT = { has_war_with = SOV }
+		}
+
+		every_country = {
+			limit = {
+				OR = { 
+					is_in_faction_with = USA
+					is_in_faction_with = ENG
+				}
+				OR = {
+					tag = USA
+					tag = ENG
+				}
+			}
+			OR = { 
+				every_country = { limit = { is_in_faction_with = JAP } }
+				tag = JAP
+			}
+			has_war_with = PREV
+		}
+
 		JAP = { 
 			exists = yes
+			is_subject = no
 			has_government = fascism
-			every_country = { limit = { has_government = democracy } }
-			has_war_with = PREV
 		}
 	
 		OR = {
@@ -1246,40 +1277,41 @@ country_event = {
 	}
 
 	option = {
-		name = ne_misc.18.a
-		AND = {
-			SOV = { 
-				every_country = {
-					limit = {
-						OR = { 
-							is_puppet_of = JAP
-							is_in_faction_with = JAP
-						}
-						any_owned_state = { is_on_continent = asia }
+	name = ne_misc.18.a
+		SOV = { 
+			every_country = {
+				limit = {
+					OR = { 
+						is_puppet_of = JAP
+						is_in_faction_with = JAP
 					}
-				}
-				add_ai_strategy = {
-					type = conquer
-					id = "PREV"
-					value = 80
+					any_owned_state = { is_on_continent = asia }
 				}
 			}
+			add_ai_strategy = {
+				type = conquer
+				id = "PREV"
+				value = 80
+			}
+		}
+		every_country = {
+			limit = { 
+				is_puppet_of = SOV
+				any_owned_state = { is_on_continent = asia }
+			}
 			every_country = {
-				limit = { is_puppet_of = SOV }
-				every_country = {
-					limit = {
-						OR = { 
-							is_puppet_of = JAP
-							is_in_faction_with = JAP
-						}
-						any_owned_state = { is_on_continent = asia }
+				limit = {
+					OR = { 
+						is_puppet_of = JAP
+						is_in_faction_with = JAP
 					}
+					any_owned_state = { is_on_continent = asia }
 				}
-				add_ai_strategy = {
-					type = conquer
-					id = "PREV"
-					value = 85
-				}
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "PREV"
+				value = 85
 			}
 		}
 	}
