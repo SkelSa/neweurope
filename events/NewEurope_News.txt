@@ -2395,6 +2395,8 @@ news_event = {
 	# picture = GFX_newfoundland_transfer
 	
 	is_triggered_only = yes
+
+	major = yes
 	
 	option = {
 		name = ne_news.30.a

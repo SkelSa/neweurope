@@ -1237,8 +1237,20 @@ country_event = {
 		}
 
 		SOV = {
-			every_neighbor_state = { is_controlled_by = JAP }
-			PREV = { num_divisions > 5 }
+			AND = {
+				408 = { is_controlled_by = FROM }
+				409 = { is_controlled_by = FROM }
+				657 = { is_controlled_by = FROM }
+				561 = { is_controlled_by = FROM }
+				563 = { is_controlled_by = FROM }
+			}
+			AND = {
+				408 = { num_divisions > 5 }
+				409 = { num_divisions > 5 }
+				657 = { num_divisions > 5 }
+				561 = { num_divisions > 5 }
+				563 = { num_divisions > 5 }
+			}
 		}
 
 		JAP = { 

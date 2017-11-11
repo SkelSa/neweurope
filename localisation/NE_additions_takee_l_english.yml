@@ -36,6 +36,16 @@
  ne_ssrwb.2.b:0 "Cancel idea and all resolutions"
  ne_ssrwb.2.c:0 "Erect a wall, declare an embargo of the West Germany and the declare the second blockade of West Berlin"
 
+##The Trieste event
+ne_misc.14.t:0 "The transfer of the city of Trieste after the war"
+ne_misc.14.d:0 "Since 1382, Trieste and the surrounding territories were part of Austria and had a mixed population, consisting mainly of Italians in the city and Slovenes and Croats in rural suburbs. In 1921, Italy annexed Trieste, where, after the establishment of the fascist regime, repression began against the Slavic population, triggering a terrorist response from the TIGR organization. In 1943, after the capitulation of Italy, the city was occupied by Germany, and on May 1, 1945 it was liberated simultaneously by parts of the Yugoslav and British armies."
+ne_misc.14.a:0 "Return Trieste Italy"
+ne_misc.14.b:0 "Give Trieste to Yugoslavia"
+
+ne_misc.15.t:0 "The transfer of the city of Trieste after the war"
+ne_misc.15.d:0 "The city of Trieste is now under the control of our state"
+ne_misc.15.a:0 "Welcome!"
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
@@ -69,15 +79,45 @@
  ne_news.24.e:0 "This wall is a wall of shame!"
  ne_news.24.f:0 "We will protect our people from harmful influence!"
 
- ##The Trieste event
- ne_misc.14.t:0 "The transfer of the city of Trieste after the war"
- ne_misc.14.d:0 "Since 1382, Trieste and the surrounding territories were part of Austria and had a mixed population, consisting mainly of Italians in the city and Slovenes and Croats in rural suburbs. In 1921, Italy annexed Trieste, where, after the establishment of the fascist regime, repression began against the Slavic population, triggering a terrorist response from the TIGR organization. In 1943, after the capitulation of Italy, the city was occupied by Germany, and on May 1, 1945 it was liberated simultaneously by parts of the Yugoslav and British armies."
- ne_misc.14.a:0 "Return Trieste Italy"
- ne_misc.14.b:0 "Give Trieste to Yugoslavia"
+ ##Hatai
+ ne_news.28.t:0 "Annexing of Hatai by Turkey"
+ ne_news.28.d:0 "Today Hatay was annexed by Turkey under the influence of the war in Europe"
+ ne_news.28.a:0 "This is a grain of sand compared to the current events in Europe"
+ ne_news.28.b:0 "This is our land!"
+ ne_news.28.c:0 "At the moment, we do not care about this"
 
- ne_misc.15.t:0 "The transfer of the city of Trieste after the war"
- ne_misc.15.d:0 "The city of Trieste is now under the control of our state"
- ne_misc.15.a:0 "Welcome!"
+ ##Elbe Day
+ ne_news.29.t:0 "Elbe Day"
+ ne_news.29.d:0 "Elbe Day is the day Soviet and American troops met at the Elbe River, near Torgau in Germany, marking an important step toward the end of World War II in Europe. This contact between the Soviets, advancing from the East, and the Americans, advancing from the West, meant that the two powers had effectively cut Germany in two."
+ ne_news.29.a:0 "End of Nazism, the beginning of democracy!"
+ ne_news.29.b:0 "It's a legendary day! This is the victory of communism!"
+ ne_news.29.c:0 "This is the meeting of the liberators!"
+ ne_news.29.e:0 "We divided the fascists into two parts!"
+ ne_news.29.f:0 "This is a meeting of two angry dogs!"
+ ne_news.29.g:0 "Nazism is the end! Let's see what will happen next..."
+
+ ##Newfoundland
+ ne_news.30.t:0 "Transfer of Newfoundland to Canada"
+ ne_news.30.d:0 "A referendum was held on the future of the colony, where an insignificant majority (52%) was defeated by supporters of joining the Canadian Federation"
+ ne_news.30.a:0 "Welcome to Canada!"
+ ne_news.30.b:0 "Britain lost another dominion!"
+ ne_news.30.c:0 "The British Empire is significantly weakening every year!"
+
+ ##Auschwitz
+ ne_news.31.t:0 "Concentration camp "Auschwitz" is liberated by allied forces!"
+ ne_news.31.d:0 "Concentration camp "Auschwitz" is liberated by allied forces. According to reports, hundreds of thousands of Polish people, as well as Jews from a number of other European countries, have been held prisoner there in appalling conditions and many have been killed in the gas chambers."
+ ne_news.31.a:0 "This is a crime of the Nazis against all mankind!"
+ ne_news.31.b:0 "Once again, all the brutality of fascism is proved!"
+
+ ##Alaska. New state of the USA
+ ne_news.32.t:0 "Alaska. New state of the USA"
+ ne_news.32.d:0 "Once the Russian colony, Alaska became the 49th US state after the referendum!"
+ ne_news.32.a:0 "Welcome!"
+
+ ##Hawaii. New state of the USA
+ ne_news.33.t:0 "Hawaii. New state of the USA"
+ ne_news.33.d:0 "The Hawaiian Islands became our new state after the referendum!"
+ ne_news.33.a:0 "Welcome!"
 
  ######################################################################################################################################
  #########################################################NEW STATES###################################################################
