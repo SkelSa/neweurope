@@ -1214,7 +1214,7 @@ country_event = {
 	id = ne_misc.18	
 	title = ne_misc.18.t
 	desc = ne_misc.18.d
-  # picture = GFX_sov_augustorm
+    picture = GFX_report_event_soviet_soldiers_tank
 
 	fire_only_once = yes			
 	is_triggered_only = yes
@@ -1310,6 +1310,16 @@ country_event = {
 				value = 85
 			}
 		}
+	}
+
+	option = {
+	name = ne_misc.18.b
+		every_country = {
+			limit = { has_war_with = JAP }
+			add_opinion_modifier = { target = SOV modifier = soviet_knife_in_the_back }
+		}
+		SOV = { add_political_power = -40 }
+		JAP = { add_opinion_modifier = { target = SOV modifier = soviet_compliance_with_the_japanese_pact } }
 	}
 }
 

@@ -176,6 +176,15 @@ opinion_modifiers = {
 	west_east_very_high_tension_relations = {
 		value = -80
 	}
+
+	soviet_knife_in_the_back = {
+		value = -65
+	}
+
+	soviet_compliance_with_the_japanese_pact = {
+		value = 40
+		min_trust = 10
+	}
 	
 	
 	

@@ -46,6 +46,12 @@ ne_misc.15.t:0 "The transfer of the city of Trieste after the war"
 ne_misc.15.d:0 "The city of Trieste is now under the control of our state"
 ne_misc.15.a:0 "Welcome!"
 
+##August Storm
+ne_news.28.t:0 "Soviet invasion of Manchuria"
+ne_news.28.d:0 "After the defeat of Germany, we need to strike at the last fascist contagion - Japan, and their main satellite - Manchuria. The Allies also expect us to act against them"
+ne_news.28.a:0 "Declare war on Japan and their satellite - Manchuria, and strike!"
+ne_news.28.b:0 "Dormant and continue to respect the Neutrality Pact"
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
