@@ -11,7 +11,7 @@ news_event = {
 	##experimenting with those two; no need to works as intended!
 	
 	is_triggered_only = yes
-	major = yes
+	#major = yes
 
 	immediate = {
 		#	

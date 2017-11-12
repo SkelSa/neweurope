@@ -9,7 +9,8 @@ add_namespace = ne_settings
 
 ##Settings Menu
 country_event = {
-	id = ne_settings_intro.0
+	id = ne_settings_intro.
+	title = "Settings Menu debug"
 
 	hidden = yes
 	is_triggered_only = yes
@@ -174,12 +175,12 @@ country_event = {
 			NOT = { has_global_flag = names_chosen }		
 		}
 		
-			GER = {set_cosmetic_tag = DEU}
-			JAP = {set_cosmetic_tag = EOJ}
+			GER = {set_cosmetic_tag = NE_DEU}
+			JAP = {set_cosmetic_tag = NE_EOJ}
 			GRE = {set_cosmetic_tag = NE_GRE}
 			WGR = {set_cosmetic_tag = NE_WGR}
 			DDR = {set_cosmetic_tag = NE_DDR}
-			##these need a tooltip
+			##these need a tooltip, new additions
 			KOR = {set_cosmetic_tag = NE_KOR }
 			PRC = {set_cosmetic_tag = CSR }
 			PAK = {set_cosmetic_tag = NE_PAK }
@@ -627,18 +628,20 @@ country_event = {
 			trigger = {
 				NOT = { has_global_flag = ne_puppet_ssr	}	
 			}
-			
+
 			##release SSRs
-			release = BLR
-			release = UKR
-			release = AZR
-			release = ARM
-			release = GEO
-			release = KAZ
-			release = TRK
-			release = TAJ
-			release = KGZ
-			release = UZB
+			SOV = {							
+				release = BLR
+				release = UKR
+				release = AZR
+				release = ARM
+				release = GEO
+				release = KAZ
+				release = TRK
+				release = TAJ
+				release = KGZ
+				release = UZB			
+			}
 
 			
 			##puppet SSRs
@@ -824,6 +827,7 @@ country_event = {
 			}
 		
 		hidden_effect = {
+			set_global_flag = additional_rd_slot
 			country_event = ne_settings_intro.1
 		}
 		
