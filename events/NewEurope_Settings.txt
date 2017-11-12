@@ -182,7 +182,7 @@ country_event = {
 			DDR = {set_cosmetic_tag = NE_DDR}
 			##these need a tooltip, new additions
 			KOR = {set_cosmetic_tag = NE_KOR }
-			PRC = {set_cosmetic_tag = CSR }
+			PRC = {set_cosmetic_tag = NE_CSR }
 			PAK = {set_cosmetic_tag = NE_PAK }
 			SPR = { set_cosmetic_tag = NE_SPR }
 			

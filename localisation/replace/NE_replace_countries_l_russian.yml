@@ -26,10 +26,6 @@
  DDR_democratic_DEF:0 "Конституционная Германия"
  DDR_fascism:0 "Германский Рейх"
  DDR_fascism_DEF:0 "Германский Рейх"
- DDR_communism_ADJ:0 "Восточногерманск."
- DDR_fascism_ADJ:0 "Восточногерманск."
- DDR_neutrality_ADJ:0 "Восточногерманск."
- DDR_democratic_ADJ:0 "Восточногерманск."
- CZE_communism:0 "Чехословацкая СР"
- CZE_communism_DEF:0 "Чехословацкая СР"
+ NE_CZE_communism:0 "Чехословацкая СР"
+ NE_CZE_communism_DEF:0 "Чехословацкая СР"
  
