@@ -1214,7 +1214,7 @@ country_event = {
 	id = ne_misc.18	
 	title = ne_misc.18.t
 	desc = ne_misc.18.d
-    picture = GFX_report_event_soviet_soldiers_tank
+    picture = GFX_report_event_soviet_soldiers_tank ##Let's leave the default icons for now
 
 	fire_only_once = yes			
 	is_triggered_only = yes
@@ -1245,11 +1245,11 @@ country_event = {
 				563 = { is_controlled_by = FROM }
 			}
 			AND = {
-				408 = { num_divisions > 5 }
-				409 = { num_divisions > 5 }
-				657 = { num_divisions > 5 }
-				561 = { num_divisions > 5 }
-				563 = { num_divisions > 5 }
+				divisions_in_state = { state = 408 size > 1 }
+				divisions_in_state = { state = 409 size > 1 }
+				divisions_in_state = { state = 657 size > 1 }
+				divisions_in_state = { state = 561 size > 1 }
+				divisions_in_state = { state = 563 size > 1 }
 			}
 		}
 
@@ -1273,6 +1273,7 @@ country_event = {
 
 	option = {
 	name = ne_misc.18.a
+	ai_chance = { factor = 98 }
 		SOV = { 
 			every_country = {
 				limit = {
@@ -1286,13 +1287,35 @@ country_event = {
 			add_ai_strategy = {
 				type = conquer
 				id = "PREV"
-				value = 80
+				value = 200
 			}
 			declare_war_on = { target = JAP type = puppet_wargoal_focus }
+			declare_war_on = { target = MAN type = puppet_wargoal_focus }
+		}
+		MON = { 
+			every_country = {
+				limit = {
+					OR = { 
+						is_puppet_of = JAP
+						is_in_faction_with = JAP
+					}
+					any_owned_state = { is_on_continent = asia }
+				}
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "PREV"
+				value = 200
+			}
+			declare_war_on = { target = JAP type = puppet_wargoal_focus }
+			declare_war_on = { target = MAN type = puppet_wargoal_focus }
 		}
 		every_country = {
 			limit = { 
-				is_puppet_of = SOV
+				OR = {
+					is_puppet_of = SOV
+					tag = SOV 
+				}
 				any_owned_state = { is_on_continent = asia }
 			}
 			every_country = {
@@ -1307,7 +1330,7 @@ country_event = {
 			add_ai_strategy = {
 				type = conquer
 				id = "PREV"
-				value = 85
+				value = 100
 			}
 		}
 	}
@@ -1315,16 +1338,119 @@ country_event = {
 	option = {
 	name = ne_misc.18.b
 		every_country = {
-			limit = { has_war_with = JAP }
+			limit = { 
+				has_war_with = JAP
+				NOT = { has_war_with = SOV }
+			}
 			add_opinion_modifier = { target = SOV modifier = soviet_knife_in_the_back }
 		}
-		SOV = { add_political_power = -40 }
+		SOV = { 
+			add_political_power = -40
+			add_national_unity = -0.05
+			add_timed_idea = { idea = soviet_compromisse_with_japan days = 120 }
+		}
 		JAP = { add_opinion_modifier = { target = SOV modifier = soviet_compliance_with_the_japanese_pact } }
 	}
 }
 
+country_event = { ##Soviet-Japanese Pact
+	id = ne_misc.19	
+	title = ne_misc.19.t
+	desc = ne_misc.19.d
+    picture = GFX_report_event_generic_sign_treaty1
 
+	fire_only_once = yes
 
+	trigger	= {
+
+		AND = {
+			tag = SOV
+			SOV = { 
+				exists = yes
+				is_puppet = no
+				has_government = communism
+				NOT = { 
+					has_war_with = JAP
+					has_war_with = GER
+				}
+			}
+		}
+
+		SOV = { strength_ratio = { tag = JAP ratio > 0.6 } }
+
+		GER = { focus_progress = { focus = GER_ussr_war_goal progress > 0.01 } }
+
+	}
+
+	option = {
+		name = ne_misc.19.a
+		ai_chance = { factor = 98 }
+		JAP = { country_event = { days = 1 id = ne_misc.20 } }
+		JAP = { add_opinion_modifier = { target = SOV modifier = sov_na_pact } } 
+		USA = { country_event = { days = 1 id = ne_misc.21 } }
+	}
+
+	option = {
+		name = ne_misc.19.b
+		JAP = { add_opinion_modifier = { target = SOV modifier = sov_na_pact_denied } }
+		SOV = { add_political_power = -40 }
+	}
+}
+
+country_event = { ##Soviet-Japanese Pact. Act of Japan
+	id = ne_misc.20	
+	title = ne_misc.20.t
+	desc = ne_misc.20.d
+    picture = GFX_report_event_generic_sign_treaty1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ne_misc.20.a
+		ai_chance = { factor = 98 }
+		diplomatic_relation = {
+			country = SOV
+			relation = non_aggression_pact
+			active = yes
+		}
+		every_country = {
+			limit = { has_government = fascism }
+			add_opinion_modifier = { target = JAP modifier = axis_na_pact_reaction }
+		}
+		SOV = { add_opinion_modifier = { target = JAP modifier = sov_na_pact } }
+	}
+
+	option = {
+		name = ne_misc.20.b
+		SOV = { add_opinion_modifier = { target = JAP modifier = sov_na_pact_denied } }
+		JAP = { add_political_power = -25 }
+	}
+}
+
+country_event = { ##Allies reaction
+	id = ne_misc.21
+	title = ne_misc.21.t
+	desc = ne_misc.21.d
+    picture = GFX_report_event_generic_sign_treaty1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ne_misc.21.a
+		ai_chance = { factor = 98 }
+		USA = { add_opinion_modifier = { target = SOV modifier = american_na_pact_reaction_sanction } }
+		every_country = { limit = { has_government = democratic } add_opinion_modifier = { target = SOV modifier = american_na_pact_reaction } }
+	}
+
+	option = {
+		name = ne_misc.21.b
+		add_political_power = -45 
+	}
+}
 
 
 

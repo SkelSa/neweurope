@@ -260,6 +260,19 @@ ideas = {
 		}
 	}
 
+	##If Soviets wouldn't attack Japanese after Germany lose
+
+	soviet_compromisse_with_japan = {
+		allowed = {
+			always = no
+		}
+		picture = generic_communism_drift_bonus
+
+		modifier = {
+			fascism_drift = 0.021
+			communism_drift = -0.04
+			unity_weekly = -0.02
+		}
 	}
 	
 	ne_diplomacy_slot = {

@@ -182,10 +182,32 @@ opinion_modifiers = {
 	}
 
 	soviet_compliance_with_the_japanese_pact = {
-		value = 40
+		value = 25
 		min_trust = 10
 	}
 	
+	sov_na_pact = {
+		value = 20
+	}
+
+	sov_na_pact_denied = {
+		value = -25
+	}
+
+	axis_na_pact_reaction = {
+		value = -15
+	}
+
+	american_na_pact_reaction_sanction = {
+		trade = yes
+		value = -45
+		months = 2
+	}
+
+	american_na_pact_reaction = {
+		value = -25
+		months = 2
+	}
 	
 	
 	

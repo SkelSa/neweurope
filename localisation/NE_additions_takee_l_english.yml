@@ -29,28 +29,46 @@
  ne_stalin.5.d:0 "Having heard the report of Comrade. Khrushchev NS about Comrade. Malenkov GM and fully approving the proposals of the Presidium of the Central Committee on this issue, the Plenum of the Central Committee of the CPSU believes that Comrade Malenkov does not ensure the proper performance of the duties of the Chairman of the Council of Ministers of the USSR. Not having the necessary knowledge and experience of economic activity, as well as the experience of local Soviet bodies, Comrade Malenkov poorly organizes the work of the Council of Ministers, does not ensure serious and timely preparation of questions for meetings of the Council of Ministers. When considering many acute questions, Comrade Malenkov shows indecision, without taking a definite position. These shortcomings in the business qualities of Comrade Malenkov are extremely detrimental to the work of the Council of Ministers."
  ne_stalin.5.a:0 "Khrushchev becomes Chairman of the Council of Ministers of the USSR"
 
-##The Berlin Wall
- ne_ssrwb.2.t:0 "Erection of the Berlin Wall"
- ne_ssrwb.2.d:0 "On the recommendation of the meeting of the secretaries of the communist and workers' parties of the Warsaw Treaty countries and on the basis of the decision of the People's Chamber of the GDR, it was decided to erect a wall in East Berlin to prevent the influence of Western capitalism"
- ne_ssrwb.2.a:0 "Build the wall"
- ne_ssrwb.2.b:0 "Cancel idea and all resolutions"
- ne_ssrwb.2.c:0 "Erect a wall, declare an embargo of the West Germany and the declare the second blockade of West Berlin"
+ ##The Berlin Wall
+  ne_ssrwb.2.t:0 "Erection of the Berlin Wall"
+  ne_ssrwb.2.d:0 "On the recommendation of the meeting of the secretaries of the communist and workers' parties of the Warsaw Treaty countries and on the basis of the decision of the People's Chamber of the GDR, it was decided to erect a wall in East Berlin to prevent the influence of Western capitalism"
+  ne_ssrwb.2.a:0 "Build the wall"
+  ne_ssrwb.2.b:0 "Cancel idea and all resolutions"
+  ne_ssrwb.2.c:0 "Erect a wall, declare an embargo of the West Germany and the declare the second blockade of West Berlin"
+ 
+ ##The Trieste event
+  ne_misc.14.t:0 "The transfer of the city of Trieste after the war"
+  ne_misc.14.d:0 "Since 1382, Trieste and the surrounding territories were part of Austria and had a mixed population, consisting mainly of Italians in the city and Slovenes and Croats in rural suburbs. In 1921, Italy annexed Trieste, where, after the establishment of the fascist regime, repression began against the Slavic population, triggering a terrorist response from the TIGR organization. In 1943, after the capitulation of Italy, the city was occupied by Germany, and on May 1, 1945 it was liberated simultaneously by parts of the Yugoslav and British armies."
+  ne_misc.14.a:0 "Return Trieste Italy"
+  ne_misc.14.b:0 "Give Trieste to Yugoslavia"
+  
+  ne_misc.15.t:0 "The transfer of the city of Trieste after the war"
+  ne_misc.15.d:0 "The city of Trieste is now under the control of our state"
+  ne_misc.15.a:0 "Welcome!"
+  
+ ##August Storm
+  ne_misc.18.t:0 "Soviet invasion of Manchuria"
+  ne_misc.18.d:0 "After the defeat of Germany, we need to strike at the last fascist contagion - Japan, and their main satellite - Manchuria. The Allies also expect us to act against them"
+  ne_misc.18.a:0 "Declare war on Japan and their satellite - Manchuria, and strike!"
+  ne_misc.18.b:0 "Dormant and continue to respect the Neutrality Pact"
+  
+ ##Soviet-Japanese Pact
+  ne_misc.19.t:0 "Soviet–Japanese Neutrality Pact"
+  ne_misc.19.d:0 "To prevent war on two fronts - in the East and West with the Axis countries, it is necessary to conclude a non-aggression pact with the Japanese"
+  ne_misc.19.a:0 "Sign the non-aggression pact"
+  ne_misc.19.b:0 "Refuse to sign this pact"
 
-##The Trieste event
-ne_misc.14.t:0 "The transfer of the city of Trieste after the war"
-ne_misc.14.d:0 "Since 1382, Trieste and the surrounding territories were part of Austria and had a mixed population, consisting mainly of Italians in the city and Slovenes and Croats in rural suburbs. In 1921, Italy annexed Trieste, where, after the establishment of the fascist regime, repression began against the Slavic population, triggering a terrorist response from the TIGR organization. In 1943, after the capitulation of Italy, the city was occupied by Germany, and on May 1, 1945 it was liberated simultaneously by parts of the Yugoslav and British armies."
-ne_misc.14.a:0 "Return Trieste Italy"
-ne_misc.14.b:0 "Give Trieste to Yugoslavia"
+ ##Soviet-Japanese Pact. Act of Japan
+  ne_misc.20.t:0 "Soviet–Japanese Neutrality Pact"
+  ne_misc.20.d:0 "The neutrality pact with the Soviet Union will secure our borders in Manchuria and enable us to fight for the Great East Asia against the Allied countries, but it will worsen our relations with our current allies"
+  ne_misc.20.a:0 "Sign the non-aggression pact"
+  ne_misc.20.b:0 "Refuse to sign this pact"
 
-ne_misc.15.t:0 "The transfer of the city of Trieste after the war"
-ne_misc.15.d:0 "The city of Trieste is now under the control of our state"
-ne_misc.15.a:0 "Welcome!"
-
-##August Storm
-ne_news.28.t:0 "Soviet invasion of Manchuria"
-ne_news.28.d:0 "After the defeat of Germany, we need to strike at the last fascist contagion - Japan, and their main satellite - Manchuria. The Allies also expect us to act against them"
-ne_news.28.a:0 "Declare war on Japan and their satellite - Manchuria, and strike!"
-ne_news.28.b:0 "Dormant and continue to respect the Neutrality Pact"
+ ##Soviet-Japanese Pact. Allies reaction
+  ne_misc.21.t:0 "Soviet–Japanese Neutrality Pact"
+  ne_misc.21.d:0 "The Soviet Union signed a non-aggression pact with Japan, thereby unleashing her hands. We can respond with sanctions"
+  ne_misc.21.a:0 "Declare the sanctions of the USSR"
+  ne_misc.21.b:0 "Do not take any action against the USSR"
 
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
@@ -62,7 +80,7 @@ ne_news.28.b:0 "Dormant and continue to respect the Neutrality Pact"
  ############################################################IDEAS#####################################################################
 
  stalins_death:0 "The Influence of Stalin's Death"
-
+ soviet_compromisse_with_japan:0 "The Reaction of The People to the Compromise with the Fascists in The East!"
 
 
 #########################################################################################################################################
