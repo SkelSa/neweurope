@@ -56,8 +56,7 @@ country_event = {
 		}
 	}
 	
-	##ne_settings.3 is together with ne_settings.1 !
-	
+	##ne_settings.3 is together with ne_settings.1 !	
 	option = { # misc settings
 		name = ne_settings_intro.1.c
 
@@ -242,38 +241,7 @@ country_event = {
 			country_event = ne_settings_intro.2
 		}
 	}
-	
-	option = {	 #ssrs but WITH color
-		name = ne_settings.1.b0     
-		custom_effect_tooltip = historical_settings_b
-		
-		trigger = {
-			NOT = { has_global_flag = SSR_chosen }	
-		}
-		
-			##_1 is the version without color!
-			LAT = { set_cosmetic_tag = NE_LAT_SSR }
-			LIT = { set_cosmetic_tag = NE_LIT_SSR }
-			EST = { set_cosmetic_tag = NE_EST_SSR }
-			UKR = { set_cosmetic_tag = NE_UKR_SSR }
-			BLR = { set_cosmetic_tag = NE_BLR_SSR }
-			GEO = { set_cosmetic_tag = NE_GEO_SSR }
-			AZR = { set_cosmetic_tag = NE_AZR_SSR }
-			ARM = { set_cosmetic_tag = NE_ARM_SSR }
-			KAZ = { set_cosmetic_tag = NE_KAZ_SSR }
-			UZB = { set_cosmetic_tag = NE_UZB_SSR }
-			TAJ = { set_cosmetic_tag = NE_TAJ_SSR }
-			TRK = { set_cosmetic_tag = NE_TRK_SSR }
-			KGZ = { set_cosmetic_tag = NE_KGZ_SSR }
-			MOL = { set_cosmetic_tag = NE_MOL_SSR }
-		
-		hidden_effect = {
-			##might change the global flag 
-			set_global_flag = SSR_chosen
-			country_event = ne_settings_intro.2
-		}
-		
-	}
+
 	
 	option = {	 #DISABLE THE SSRS
 		name = ne_settings.1.b1       
@@ -306,7 +274,6 @@ country_event = {
 	
 	option = {
 		name = ne_settings.1.e        #go back to the menu (no changes done)
-		#add_political_power = -1
 		
 		trigger = {
 		
@@ -388,7 +355,6 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = USA_USSR_Long
 			country_event = ne_settings_intro.2
-
 		}
 		
 	}
@@ -544,7 +510,6 @@ country_event = {
 
 
 ##############Stricter Rules for NATO/WARSAW PACT#####################//NOT FULLY IMPLEMENTED
-
 country_event = {
 	id = ne_settings.4
 	title = ne_settings.4.t
@@ -868,7 +833,7 @@ country_event = {
 		name = ne_settings.5.b1
 		
 		trigger = {
-			as_global_flag = additional_rd_slot 
+			has_global_flag = additional_rd_slot 
 		}
 		
 			every_country = {

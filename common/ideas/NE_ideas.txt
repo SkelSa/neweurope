@@ -152,9 +152,7 @@ ideas = {
 				communism_acceptance = 70
 				production_speed_industrial_complex_factor = 0.10
 				political_power_gain = 0.10
-				
-				
-				
+							
 			}
 		}
 	
@@ -241,38 +239,40 @@ ideas = {
 				}
             }
 
-	}
+		}
 
-	##Done by takee
-	stalins_death = {
+		##Done by takee
+		stalins_death = {
+				
+			allowed = {
+				always = no
+			}
+			available = { has_global_flag = stalin_rip_a }
+
+			picture = generic_communism_drift_bonus
 			
-		allowed = {
-			always = no
+			modifier = {
+				unity_factor = -0.25
+				conscription = -0.008
+				political_power_factor = -0.5
+			}
 		}
-		available = { has_global_flag = stalin_rip_a }
 
-		picture = generic_communism_drift_bonus
 		
-		modifier = {
-			unity_factor = -0.25
-			conscription = -0.008
-			political_power_factor = -0.5
-		}
-	}
+		##If Soviets wouldn't attack Japanese after Germany lose
+		soviet_compromisse_with_japan = {
+			allowed = {
+				always = no
+			}
+			picture = generic_communism_drift_bonus
 
-	##If Soviets wouldn't attack Japanese after Germany lose
-
-	soviet_compromisse_with_japan = {
-		allowed = {
-			always = no
+			modifier = {
+				fascism_drift = 0.021
+				communism_drift = -0.04
+				unity_weekly = -0.02
+			}
 		}
-		picture = generic_communism_drift_bonus
-
-		modifier = {
-			fascism_drift = 0.021
-			communism_drift = -0.04
-			unity_weekly = -0.02
-		}
+	
 	}
 	
 	ne_diplomacy_slot = {

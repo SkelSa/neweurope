@@ -6,8 +6,7 @@ on_actions = {
 		#Intro Event
 			every_country = {
 				limit = { is_ai = no }
-				news_event = { id = ne_news.1 }
-				
+				news_event = { id = ne_news.1 }				
 			}
 		
 		#setup

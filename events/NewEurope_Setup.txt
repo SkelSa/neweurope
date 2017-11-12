@@ -1,5 +1,4 @@
 ﻿#setup stuff triggered by on_startup
-
 add_namespace = ne_setup
 
 
@@ -13,6 +12,17 @@ news_event = {
 	
 	immediate = {
 		
+		
+		##Determine the PRC's personality, they can either like the Soviets or prefer Americans (only when Krushev is elected )
+		if = {
+			limit = {
+				PRC = { is_ai = yes}
+			}
+			
+			random_list = { 60 = { set_global_flag = PRC_USA } 40 = { set_global_flag = PRC_SOV } } 
+		}
+			
+			
 		##Stuff for game		
 		GER = {set_capital = 749 }
 		KAZ = {set_capital = 589 }
@@ -132,17 +142,6 @@ news_event = {
 			}
 
 		}
-
-		##Determine the PRC's personality, they can either like the Soviets or prefer Americans (only when Krushev is elected )
-		if = {
-			limit = {
-				PRC = { is_ai = yes}
-			}
-			
-			random_list = { 60 = { set_global_flag = PRC_USA } 40 = { set_global_flag = PRC_SOV } } 
-		}
-
-
 	}
 	
 	option = {
@@ -265,8 +264,7 @@ country_event = {
 		
 		}
 		
-		##Roosevelt cores
-		
+		##Roosevelt cores		
 		if = {
 			limit = {
 				OR = {
@@ -303,8 +301,7 @@ country_event = {
 		
 		}
 
-		##guarantee INT = Internationl Zone
-		
+		##guarantee INT = Internationl Zone		
 		if = {
 			limit = {
 				country_exists = INT
@@ -315,12 +312,11 @@ country_event = {
 					is_major = yes
 					NOT = { tag = INT }
 					NOT = { has_government = fascism }
+					
 				}
 			
-			give_guarantee = INT 
-			
+			give_guarantee = INT 			
 			}
-
 		}
 
 	
