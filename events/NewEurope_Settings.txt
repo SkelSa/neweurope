@@ -156,7 +156,6 @@ country_event = {
 }
 
 
-
 ##############Historical Options#####################
 country_event = {
 	id = ne_settings.1                
@@ -175,16 +174,30 @@ country_event = {
 			NOT = { has_global_flag = names_chosen }		
 		}
 		
-			GER = {set_cosmetic_tag = NE_DEU}
-			JAP = {set_cosmetic_tag = NE_EOJ}
-			GRE = {set_cosmetic_tag = NE_GRE}
-			WGR = {set_cosmetic_tag = NE_WGR}
-			DDR = {set_cosmetic_tag = NE_DDR}
-			##these need a tooltip, new additions
+			set_global_flag = ne_india_cosmetic_enabled
+			GER = { set_cosmetic_tag = NE_DEU }
+			ITA = { set_cosmetic_tag = NE_ITA }
+			JAP = { set_cosmetic_tag = NE_EOJ }
+			WGR = { set_cosmetic_tag = NE_WGR }
+			DDR = { set_cosmetic_tag = NE_DDR }
+			GRE = { set_cosmetic_tag = NE_GRE }
+			CZE = { set_cosmetic_tag = NE_CZE }
+			POL = { set_cosmetic_tag = NE_POL }
+			#HUN = { set_cosmetic_tag = NE_HUN }
+			SPR = { set_cosmetic_tag = NE_SPR }
+			PAK = {set_cosmetic_tag = NE_PAK }
 			KOR = {set_cosmetic_tag = NE_KOR }
 			PRC = {set_cosmetic_tag = NE_CSR }
-			PAK = {set_cosmetic_tag = NE_PAK }
-			SPR = { set_cosmetic_tag = NE_SPR }
+			YUN = {set_cosmetic_tag = NE_YUN }
+			LAO = {set_cosmetic_tag = NE_LAO }
+			
+			
+			#-Communist Hungary flag + change
+			
+			#-Communist USA
+			#-SOV flag	
+			
+			##most need a tooltip, new additions
 			
 			hidden_effect = {
 				set_global_flag = names_chosen

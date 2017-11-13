@@ -1,25 +1,13 @@
 ﻿l_french:
 
- USA_communism:0 "USASR"
- USA_communism_DEF:0 "L'USASR"
  AUS_fascism:0 "Bundestag Austriche"
  AUS_fascism_DEF:0 "Bundestag Austriche"
- KOR_democratic:0 "Republique de Corée"
- KOR_democratic_DEF:0 "La Republique de Corée"
  WGR_democratic:0 "RFA"
  WGR_democratic_DEF:0 "La RFA"
  WGR_communism:0 "République Socialiste d'Allemagne"
  WGR_communism_DEF:0 "La République Socialiste d'Allemagne"
  DDR_communism:0 "RDA"
  DDR_communism_DEF:0 "La RDA"
- DDR_neutrality:0 "Royaume de Prusse"
- DDR_neutrality_DEF:0 "Le Royaume de Prusse"
  DDR_democratic:0 "Allemagne Constitutionnelle"
  DDR_democratic_DEF:0 "L'Allemagne Constitutionnelle"
- DDR_fascism:0 "DNSR"
- DDR_fascism_DEF:0 "The DNSR"
- NE_CZE_communism:0 "RS Tchécoslovaque"
- NE_CZE_communism_DEF:0 "La RS Tchécoslovaque"
- 
-
  

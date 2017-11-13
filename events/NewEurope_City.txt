@@ -3,11 +3,6 @@
 add_namespace = ne_city
 
 
-# City rename events
-
-
-
-
 ##Kaliningrad
 country_event = {
 	id = ne_city.1
@@ -38,6 +33,7 @@ country_event = {
 	
 }
 
+
 ##Brest 
 country_event = {
 	id = ne_city.4
@@ -54,9 +50,7 @@ country_event = {
 		NOT = { has_global_flag = renamed_brest }
 	}
 
-	mean_time_to_happen = {
-		days = 10
-	}
+	mean_time_to_happen = {	days = 10 }
 
 
 	option = {
@@ -84,9 +78,7 @@ country_event = {
 		NOT = { has_global_flag = renamed_vilnius }
 	}
 
-	mean_time_to_happen = {
-		days = 10
-	}
+	mean_time_to_happen = {	days = 10 }
 
 
 	option = {
@@ -109,15 +101,12 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-	
 		tag = LIT
 		owns_state = 751
 		NOT = { has_global_flag = renamed_vilnius }
 	}
 
-	mean_time_to_happen = {
-		days = 10
-	}
+	mean_time_to_happen = {	days = 10 }
 
 
 	option = {
@@ -140,16 +129,13 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	trigger = {
-	
+	trigger = {	
 		tag = POL
 		owns_state = 66
 		NOT = { has_global_flag = renamed_wroclaw }
 	}
 
-	mean_time_to_happen = {
-		days = 10
-	}
+	mean_time_to_happen = { days = 10 }
 
 
 	option = {
@@ -462,8 +448,7 @@ country_event = {
 		set_global_flag =  ne_no_stalin
 	}
 	
-	##option b tsaritsyn
-	
+	##option b tsaritsyn	
 	option = {
 		name = ne_city.2.b
 		
@@ -545,7 +530,7 @@ country_event = {
 	
 }
 
-##Titograd removed when fascism
+##Titograd removed when not commie anymore
 country_event = {
 	id = ne_city.12
 	title = ne_city.12.t

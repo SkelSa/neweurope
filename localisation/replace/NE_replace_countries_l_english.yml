@@ -1,7 +1,5 @@
 ﻿l_english:
 
- USA_communism:0 "USASR"
- USA_communism_DEF:0 "The USASR"
  AUS_fascism:0 "Bundesstaat Austria"
  AUS_fascism_DEF:0 "Bundesstaat Austria"
  WGR_democratic:0 "FRG"
@@ -12,7 +10,4 @@
  DDR_communism_DEF:0 "The GDR"
  DDR_democratic:0 "Constitutional Germany"
  DDR_democratic_DEF:0 "Constitutional Germany"
- 
- 
-
  
