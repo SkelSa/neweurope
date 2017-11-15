@@ -22,7 +22,8 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.1
-		}	
+		}
+		sound_effect = nevent
 	}
 
 	
