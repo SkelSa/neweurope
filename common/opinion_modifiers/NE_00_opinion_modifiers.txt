@@ -208,6 +208,14 @@ opinion_modifiers = {
 		value = -25
 		months = 2
 	}
+
+	pol_agree = {
+		value = 40
+	}
+
+	pol_disagree = {
+		value = -25
+	}
 	
 	
 	

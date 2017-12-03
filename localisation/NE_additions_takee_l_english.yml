@@ -70,11 +70,23 @@
   ne_misc.21.a:0 "Declare the sanctions of the USSR"
   ne_misc.21.b:0 "Do not take any action against the USSR"
 
+ ##Peking Plan
+  ne_misc.22.t:0 "The transfer of our destroyers of Britain"
+  ne_misc.22.d:0 "To save our destroyers from imminent death, we can send them to Britain. The effectiveness of destroyers under our command is extremely small"
+  ne_misc.22.a:0 "Send our advanced destroyers of Britain"
+  ne_misc.22.b:0 "Refuse to transfer. We will lose our naval pride!"
+
+ ##Succesful transfer
+  ne_misc.23.t:0 "The transfer of Poland destroyers"
+  ne_misc.23.d:0 "Poland agreed to give us their destroyers and now they are under our control!"
+  ne_misc.23.a:0 "Take control"
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
  stalins_death_soc_countries_relations_worse.1.tt:0 "§R\nAfter Stalin's death, the opinion of the countries of the Socialist camp about us and the stability of these countries will become worse.§!\n"
  berias_conspiracy_chance.1.tt:0 "§YWith some probability, this decision can be of great importance.§!\n"
+ peking_plan.1.tt:0 "§GGet transmitted Poland destroyers.§!"
 
  ######################################################################################################################################
  ############################################################IDEAS#####################################################################
