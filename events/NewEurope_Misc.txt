@@ -1538,7 +1538,24 @@ country_event = {
 				target = ENG
 			}
 		}
+		hidden_effect = { POL = { country_event = { days = 1 id = ne_misc.24 } } }
 		custom_effect_tooltip = peking_plan.1.tt
+	}
+}
+
+##############A small message for Poland that the British got their destroyers##############
+country_event = {
+	id = ne_misc.24
+	title = ne_misc.24.t
+	desc = ne_misc.24.d
+	picture = GFX_report_event_ast_navy
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ne_misc.24.a
 	}
 }
 

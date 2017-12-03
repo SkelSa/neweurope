@@ -81,6 +81,11 @@
   ne_misc.23.d:0 "Poland agreed to give us their destroyers and now they are under our control!"
   ne_misc.23.a:0 "Take control"
 
+ ##Succesful transfer
+  ne_misc.24.t:0 "The transfer of Poland destroyers"
+  ne_misc.24.d:0 "The destroyers we sent are now controlled by Britain"
+  ne_misc.24.a:0 "We hope that they will help in the coming war"
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
