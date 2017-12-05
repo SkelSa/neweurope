@@ -1465,7 +1465,7 @@ country_event = {
 		ai_chance = { factor = 98 }
 		tag = POL
 		GER = {
-			focus_progress = { focus = GER_danzig_or_war progress > 0.8 }
+			focus_progress = { focus = GER_danzig_or_war progress > 0.89 }
 			OR = {
 				NOT = { is_in_faction_with = POL }
 				NOT = { is_in_faction_with = ENG }
@@ -1504,6 +1504,7 @@ country_event = {
 		name = ne_misc.22.b
 		POL = { navy_experience = 20 }
 		ENG = { add_opinion_modifier = { target = POL modifier = pol_disagree } }
+		custom_effect_tooltip = peking_plan_warning.1.tt
 	}
 }
 
@@ -1559,6 +1560,21 @@ country_event = {
 	}
 }
 
+#############Battle events##################################################################
+country_event = {
+	id = ne_misc.25
+	title = ne_misc.25.t
+	desc = ne_misc.25.d
+	picture = GFX_report_event_ast_navy
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ne_misc.25.a
+	}
+}
 
 
 
