@@ -134,6 +134,18 @@
  AOZ_democratic_ADJ:0 "American"
  AOZ_neutrality_ADJ:0 "American"
  AOZ_communism_ADJ:0 "American"
+ POZ_fascism:0 "Polish Occupation Zone"
+ POZ_fascism_DEF:0 "The Polish Occupation Zone"
+ POZ_democratic:0 "Polish Occupation Zone"
+ POZ_democratic_DEF:0 "The Polish Occupation Zone"
+ POZ_neutrality:0 "Polish Occupation Zone"
+ POZ_neutrality_DEF:0 "The Polish Occupation Zone"
+ POZ_communism:0 "Polish Occupation Zone"
+ POZ_communism_DEF:0 "The Polish Occupation Zone"
+ POZ_fascism_ADJ:0 "Polish"
+ POZ_democratic_ADJ:0 "Polish"
+ POZ_neutrality_ADJ:0 "Polish"
+ POZ_communism_ADJ:0 "Polish"
 
  ##SSR##
  MOL_fascism:0 "State of Moldavia"
