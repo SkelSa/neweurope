@@ -19,7 +19,7 @@ news_event = {
 
 		##WGR and GDR is already in the country files
 		WGR = {
-			set_capital = 750 
+			set_capital = 51 
 			set_research_slots = 3
 		}
 
@@ -96,10 +96,10 @@ country_event = {
 		if = {
 			limit = {
 				country_exists = WGR
-				750 = { is_owned_by = WGR }
+				51 = { is_owned_by = WGR }
 			}
 					
-			WGR = { set_capital = 750 }			
+			WGR = { set_capital = 51 }			
 				
 		}
 		

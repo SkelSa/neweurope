@@ -2465,7 +2465,7 @@ country_event = {
 			declare_war_on = {
 				target = GER
 				type = take_state_focus
-				generator = { 42 51 750 764} 
+				generator = { 42 51 51 764} 
 			}
 			country_event = germany.92
 			if = {
@@ -2515,7 +2515,7 @@ country_event = {
 		set_country_flag = GER_rhineland_backed_down
 		42 = { set_demilitarized_zone = yes }
 		51 = { set_demilitarized_zone = yes }
-		750 = { set_demilitarized_zone = yes }
+		51 = { set_demilitarized_zone = yes }
 		764 = { set_demilitarized_zone = yes }
 		775 = { set_demilitarized_zone = yes }
 
@@ -2590,7 +2590,7 @@ country_event = {
 		set_country_flag = GER_rhineland_backed_down
 		42 = { set_demilitarized_zone = yes }
 		51 = { set_demilitarized_zone = yes }
-		750 = { set_demilitarized_zone = yes }
+		51 = { set_demilitarized_zone = yes }
 		764 = { set_demilitarized_zone = yes }
 		775 = { set_demilitarized_zone = yes }
 		add_timed_idea = {

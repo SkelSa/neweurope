@@ -319,7 +319,7 @@ country_event = {
 			}
 
 			##HISTORICAL
-			#transfer_state = 750
+			#transfer_state = 51
 			#transfer_state =  51
 			#transfer_state =  57
 			#transfer_state =  56
@@ -328,7 +328,7 @@ country_event = {
 			#transfer_state =  778
 
 		##Bonn
-		set_capital = 750 	
+		set_capital = 51 	
 		
 		}
 

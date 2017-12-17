@@ -41,9 +41,6 @@
  NE_GRE_democratic_DEF:0 "The Hellenic Republic"
  NE_GRE_neutrality:0 "Kingdom of Greece"
  NE_GRE_neutrality_DEF:0 "The Kingdom of Greece"
- ##Greece after becoming full communist
- NE_GRE_1_communism:0 "Hellenic Commune"
- NE_GRE_1_communism:0 "The Hellenic Commune"
  ##Russia
  NE_RUS_fascism:0 "Russian Empire"
  NE_RUS_fascism_DEF:0 "The Russian Empire"

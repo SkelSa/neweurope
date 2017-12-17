@@ -1,6 +1,6 @@
 ﻿##This file will contain the Korean War event chains. More possible stuff concerning Korea may follow...
 
-#add_namespace = ne_korea
+add_namespace = ne_korea
 add_namespace = ne_korean_war
 
 
@@ -43,24 +43,20 @@ country_event = {
 	mean_time_to_happen = {	days = 20 }
 	
 	immediate = { 
-		set_country_flag = flag_settings 
+		#
 	}
 	
 	
 	option = { # option one
 		name = ne_korea.1.a
 		ai_chance = { factor = 100 }
-
 		
-		
+		add_political_power = 10
 		
 	}
 
 	
 }
-
-
-
 
 
 

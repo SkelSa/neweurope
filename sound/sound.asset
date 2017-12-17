@@ -2606,6 +2606,6 @@ sound =
 ############ NE_TEST_SOUND #######################
 sound = 
 {
-	name = "nevent"
-	file = "menu/nevent.wav"
+	name = "communist_party"
+	file = "menu/communist_party.wav"
 }

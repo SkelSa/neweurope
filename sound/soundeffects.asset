@@ -2328,3 +2328,14 @@ soundeffect =
 	max_audible = 1
 	max_audible_behaviour = fail
 }
+
+soundeffect =
+{
+	name = "communist_party"
+	volume = 0.85
+	sounds = {
+		sound = "communist_party"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}

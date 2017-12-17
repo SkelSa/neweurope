@@ -40,7 +40,7 @@ country_event = {
 		name = ne_skelsa.1.a
 		
 		create_corps_commander = { name = "Brother Hao" picture = "Portrait_PRC_General_Brother_Hao.dds" traits = { } skill = 4 } 
-		sound_effect = communist_party.wav	
+		sound_effect = communist_party
 		
 	}
 	
@@ -50,12 +50,95 @@ country_event = {
 ##For new file: NewEurope_Finland
 
 
+##Join the war against the USSR. Decalre on yourself and give military access to germany
+
+country_event = {
+	id = ne_finland.1
+	title = ne_finland.1.t
+	desc =  ne_finland.1.d
+	picture = GFX_somepic
+
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	trigger = {
+
+		tag = FIN
+		
+		FIN = {
+			exists = yes
+			is_subject = no
+		}
+		
+		NOT = {		
+			FIN = { controls_state = 146 } 
+			FIN = { owns_state = 146 } 		
+		}
+		
+		GER = { has_war_with = SOV}
+		SOV = { surrender_progress > 0.03 }
+		
+	
+	}
+		
+	mean_time_to_happen = {	days = 6 }
+
+	
+	option = { # join the war
+		name = event.1.a
+		ai_chance = {
+			factor = 100
+		
+			modifier = {
+				factor = 0
+					OR = {
+						has_government = communism
+						has_war = yes
+					}
+				 			
+			}			
+		}
+
+		##send message to the Germans
+		## 	FIN = { give_military_access = GER }
+		
+	}
+	
+	
+	option = { # stay out of it
+		name = event.1.b
+		ai_chance = {
+			factor = 0
+		
+			modifier = {
+				factor = 100
+				OR = {
+					has_government = communism
+					has_war = yes
+				}
+			}			
+		}
+		
+		add_political_power = 25
+		
+	}
+	
+	
+}
+
+
+
+
+
+
+
 ##Armistice
 
 
 
-##Flag changes
-
+##FLAG CHANGES##
 
 ##First flag change
 country_event = {
@@ -74,10 +157,10 @@ country_event = {
 		
 		SOV = {
 			exists = yes
-			has_government = communism
-			
-			date > 1936.12.5
+			has_government = communism						
 		}
+		
+		date > 1936.12.5
 	
 	
 	}

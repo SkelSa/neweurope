@@ -31,6 +31,10 @@ NE_INDIA = {
     color_ui = rgb { 255 110 0 }
 }
 
+NE_VICHY = {
+    color = rgb { 255  90  0 }
+    color_ui = rgb { 255  90  0 }
+}
 
 NE_KOR = {
 	color = rgb { 10 15 125 }
@@ -48,6 +52,11 @@ NE_WGR = {
 }
 
 NE_DDR = {
+    color = rgb { 119  130  145 }#{ 130 135 140 }
+    color_ui = rgb { 130 135 140 }
+}
+
+NE_DDR_1 = {
     color = rgb { 119  130  145 }#{ 130 135 140 }
     color_ui = rgb { 130 135 140 }
 }

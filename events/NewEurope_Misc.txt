@@ -1462,7 +1462,6 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		ai_chance = { factor = 98 }
 		tag = POL
 		GER = {
 			focus_progress = { focus = GER_danzig_or_war progress > 0.89 }

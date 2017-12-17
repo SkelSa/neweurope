@@ -717,12 +717,12 @@ country_event = {
 			ai_chance = {
 			factor = 49
 			
-			modifier = {
-				factor = 98
+				modifier = {
+					factor = 98
 
-				PRC = {owns_state = 530}
-				
-			}
+					PRC = {owns_state = 530}
+					
+				}
 			
 			}
 		

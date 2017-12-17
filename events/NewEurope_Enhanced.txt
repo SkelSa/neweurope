@@ -178,7 +178,7 @@ country_event = {
 		
 		BOZ = { 
 			transfer_state = 51
-			transfer_state = 750
+			transfer_state = 51
 			transfer_state = 56
 			transfer_state = 59
 			transfer_state = 58
@@ -243,7 +243,7 @@ country_event = {
 			transfer_state = 58
 			transfer_state = 59
 			transfer_state = 749
-			transfer_state = 750
+			transfer_state = 51
 			transfer_state = 772
 			transfer_state = 754
 			transfer_state = 764
@@ -345,7 +345,7 @@ country_event = {
 			transfer_state = 51
 			transfer_state = 55
 			transfer_state = 772
-			transfer_state = 750
+			transfer_state = 51
 			transfer_state = 55
 			transfer_state = 56
 			transfer_state = 57
@@ -391,7 +391,7 @@ country_event = {
 			
 			transfer_state = 764
 			transfer_state = 51
-			transfer_state = 750
+			transfer_state = 51
 
 	}
 		

@@ -67,7 +67,7 @@ country_event = {
 	
 	#Skelsas recommended settings
 	option = { 
-		name = "SkelSas Recommended Settings"
+		name = ne_settings_intro.1.e
 
 		hidden_effect = {
 			country_event = ne_settings_intro.5
@@ -77,7 +77,7 @@ country_event = {
 	
 	##ADD EXECUTION OF CHANGES!
 	option = { # exit
-		name = "Exit Menu"	
+		name = ne_settings_intro.1.f
 
 		hidden_effect = {
 			##Activate all changes
@@ -215,7 +215,7 @@ country_event = {
 	
 	
 	option = {
-		name = "TEST_BETTER_LEADERS"      #better leaders
+		name = ne_settings.1.b     #better leaders
 		#custom_effect_tooltip = historical_settings_a
 		
 		trigger = {
@@ -231,7 +231,7 @@ country_event = {
 	
 	
 	option = {
-		name = "DISABLE BETTER LEADERS"      #DISABLE better leaders
+		name = ne_settings.1.b1     #DISABLE better leaders
 		#custom_effect_tooltip = historical_settings_a
 		
 		trigger = {
@@ -247,7 +247,7 @@ country_event = {
 	
 	
 	option = {	 #SSRS WITHOUT color
-		name = ne_settings.1.b       
+		name = ne_settings.1.c       
 		custom_effect_tooltip = historical_settings_b
 		
 		trigger = {
@@ -263,7 +263,7 @@ country_event = {
 
 	
 	option = {	 #DISABLE THE SSRS
-		name = ne_settings.1.b1       
+		name = ne_settings.1.c1      
 		custom_effect_tooltip = historical_settings_b
 		
 		trigger = {
@@ -285,7 +285,8 @@ country_event = {
 		
 			NOT = {
 				has_global_flag = names_chosen
-				has_global_flag = SSR_chosen
+				has_global_flag = leaders_chosen
+				has_global_flag = SSR_chosen				
 			}		
 		}
 		
@@ -302,6 +303,7 @@ country_event = {
 		
 			OR = {
 				has_global_flag = names_chosen
+				has_global_flag = leaders_chosen
 				has_global_flag = SSR_chosen
 			}
 		
@@ -635,7 +637,7 @@ country_event = {
 	
 	
 	option = {	##activate old manager
-		name = ne_settings_intro.4.b
+		name = ne_settings_intro.4.c
 		
 		trigger = {
 			NOT = { has_global_flag = ne_old_manager }
@@ -649,7 +651,7 @@ country_event = {
 	}
 	
 	option = {	##deactivate old manager; use new one
-		name = ne_settings_intro.4.b1
+		name = ne_settings_intro.4.c1
 		
 		trigger = {
 			has_global_flag = ne_old_manager 
@@ -678,17 +680,16 @@ country_event = {
 
 ##SkelSa's recommended settings EDIT
 country_event = {
-	id = "SkelSa's recommended changes"
+	id = ne_settings_intro.5
 	title = ne_settings_intro.5.t
 	desc =  ne_settings_intro.5.d
 	picture = GFX_somepic
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	
 	option = { # yes, enable skelsas changes
-		name = Yes
+		name = ne_settings_intro.5.a
 		
 		add_political_power = 1
 			
@@ -699,8 +700,8 @@ country_event = {
 		if = {	limit = { NOT = { has_global_flag = Neutrality_chosen} } set_global_flag = Neutrality_chosen	} 
 		if = {	limit = { NOT = { has_global_flag = ne_strict_faction} } set_global_flag = ne_strict_faction	}
 		if = {	limit = { NOT = { has_global_flag = CPS_created} } set_global_flag = CPS_created	} 
-		if = {	limit = { NOT = { has_global_flag = ne_puppet_SSR} } set_global_flag = ne_puppet_SSR	}
 		if = {	limit = { NOT = { has_global_flag = ne_additional_rd_slot} } set_global_flag = ne_additional_rd_slot	} 	
+		##not activated are: puppet ssrs, short USA, USSR name, Old Manager
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.1
@@ -709,11 +710,11 @@ country_event = {
 	}
 	
 	
-	option = { # option two
-		name = "No - test if event can execute itself"
+	option = { # return to menu
+		name = ne_settings_intro.5.b
 		
 		hidden_effect = {
-			country_event = ne_settings_intro.5			
+			country_event = ne_settings_intro.1		
 		}
 		
 	}
@@ -725,16 +726,16 @@ country_event = {
 ##ACTIVATE ALL CHANGES
 country_event = {
 	id = ne_settings_intro.6
-	title = ne_settings_intro.6
-	desc =  ne_settings_intro.6
+	title = ne_settings_intro.6.t
+	desc =  ne_settings_intro.6.d
 	picture = GFX_report_event_soviet_invasion_map
 
 	is_triggered_only = yes
-	hidden = yes
 
 	
 	option = {
-		name = "Activate the changes"	
+		name = ne_settings_intro.6.a
+		#-Tooltip for GDR/WGR/IND color	
 	
 			#Apply all of my changes and exit the settings menu
 			if = {
@@ -742,48 +743,34 @@ country_event = {
 					has_global_flag = names_chosen
 				}
 				
-				set_global_flag = ne_india_cosmetic_enabled
-				GER = { set_cosmetic_tag = NE_DEU } #DONE
-				ITA = { set_cosmetic_tag = NE_ITA } #DONE
-				JAP = { set_cosmetic_tag = NE_EOJ } #DONE
-				WGR = { set_cosmetic_tag = NE_WGR } #DONE
-				DDR = { set_cosmetic_tag = NE_DDR } #DONE
-				GRE = { set_cosmetic_tag = NE_GRE } #DONE
-				CZE = { set_cosmetic_tag = NE_CZE } #DONE
-				POL = { set_cosmetic_tag = NE_POL } #DONE
-				#HUN = { set_cosmetic_tag = NE_HUN }
-				SPR = { set_cosmetic_tag = NE_SPR } #DONE
-				PAK = {set_cosmetic_tag = NE_PAK } #DONE
-				KOR = {set_cosmetic_tag = NE_KOR } #DONE
-				PRC = {set_cosmetic_tag = NE_CSR } #DONE
-				YUN = {set_cosmetic_tag = NE_YUN }
-				LAO = {set_cosmetic_tag = NE_LAO } #DONE
-				USA = {set_cosmetic_tag = NE_USA } #DONE
-				SOV = {set_cosmetic_tag = NE_SOV } #DONE
+				##CHECk ALL OF THESE
+				#set_global_flag = ne_india_cosmetic_enabled
+				GER = { set_cosmetic_tag = NE_DEU } #DONE	#FLAG (F) and NAME (F) 
+				ITA = { set_cosmetic_tag = NE_ITA } #DONE	#NAME (D + F)
+				JAP = { set_cosmetic_tag = NE_EOJ } #DONE	#FLAG (F) and NAME (F)
+				WGR = { set_cosmetic_tag = NE_WGR } #DONE	#NAME (D) and COLOR 
+				DDR = { set_cosmetic_tag = NE_DDR } #DONE	#FLAG (C) and NAME (C) AND COLOR	also flag event
+				GRE = { set_cosmetic_tag = NE_GRE } #DONE	#FLAG (N+C) and NAME (N)			also flag and name change when communist wins
+				CZE = { set_cosmetic_tag = NE_CZE } #DONE	#FLAG (C) and NAME (C)
+				POL = { set_cosmetic_tag = NE_POL } #DONE	#FLAG (C)
+				HUN = { set_cosmetic_tag = NE_HUN } #DONE	#NAME (N+F) and FLAG (N+F+C)			also flag events									##also do something with Hungary's focus
+				SPR = { set_cosmetic_tag = NE_SPR } #DONE	#NAME (C+F) and FLAG (D+F+C)		also flag events for Franco and Diaz
+				PAK = {set_cosmetic_tag = NE_PAK } #DONE	#NAME (D) and COLOR
+				KOR = {set_cosmetic_tag = NE_KOR } #DONE	#NAME (D) and COLOR
+				PRC = {set_cosmetic_tag = NE_CSR } #DONE	#FLAG (C) and NAME (C)
+				YUN = {set_cosmetic_tag = NE_YUN } 			#NAME (N) ##(Flag is on the way)##
+				LAO = {set_cosmetic_tag = NE_LAO } #DONE	FLAG (C)
+				USA = {set_cosmetic_tag = NE_USA } #DONE	#FLAG (D)							also flag events when Alaska and Haiwaii join and the communism mega event
+				SOV = {set_cosmetic_tag = NE_SOV } #DONE	#FLAG (C)							also flag events (3 times)
+				CHI = {set_cosmetic_tag = NE_CHI}  #DONE	NAME (N)
 
-				
-				
-				#-Tooltip for GDR/WGR/IND color	
-				
-				#-Spanish State/Spanish Republic (Republic also flag change) -> optional
-				#-Yunnan CLIQUE
-				#####-democratic Italy -> Italian Republic, fascist Italy - > Kingdom of Italy
-				#-Communist Hungary flag + change
-				#-Communist India + new flag
-				#-GDR correct flag 1959
-				#(KOR, CHI, D02 (Vichy), PAK, IND, Greece, LAO, CZE, POL, USA (flag), SOV (flag), PRC, Commie USA)
-				#CHI
-				
-				#What is done currently:
-				#-
-				
+				##Vichy France # (NAME (F) and COLOR)gets its cosmetic in the main event file
+				##Communist India (FLAG (C) and COLOR) are set when they're independent
 
-
-				
 			}
 			
 			
-			##Better Leaders
+			##Better Leaders, Add the Korean's
 			if = {
 				limit = {
 					has_global_flag = leaders_chosen
@@ -816,6 +803,22 @@ country_event = {
 							fortification_engineer
 						}
 					}
+				}
+				
+				#Manual Azana, Spain (as communist)
+				SPR = {
+				
+					create_country_leader = {
+						name = "Manuel Azana"
+						desc = "POLITICS_MANUEL_AZANA_DESC"
+						picture = "Portrait_Spain_Manuel_Azana.dds"
+						expire = "1965.1.1"
+						ideology = anarchist_communism
+						traits = {
+							#
+						}
+					}
+
 				}
 				
 				##Borat, Kazakhstan
@@ -1107,7 +1110,7 @@ country_event = {
 	
 	
 	option = {
-		name = "Clear everything"
+		name = ne_settings_intro.6.b
 
 		trigger = {
 			OR = {
@@ -1144,7 +1147,7 @@ country_event = {
 	
 	
 	option = {
-		name = "Go back to the main menu"
+		name = ne_settings_intro.6.c
 
 		
 		hidden_effect = {
