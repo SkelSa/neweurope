@@ -1,10 +1,9 @@
-﻿##WP and NATO only
-
-
+﻿##WP and NATO 
 add_namespace = ne_wp
 add_namespace = ne_nato
 
-
+##Other Faction Stuff
+add_namespace = ne_faction
 
 
 
@@ -613,11 +612,10 @@ country_event = {
 		}
 		
 		if = {
-				limit = { DDR = {
-				
+				limit = { DDR = {				
 				OR = {
-				has_government = communism
-				is_puppet_of = SOV
+					has_government = communism
+					is_puppet_of = SOV
 				}
 			}
 			
@@ -627,12 +625,11 @@ country_event = {
 		}
 		
 		if = {
-			limit = { POL = {
-			
-			OR = {
-			has_government = communism
-			is_puppet_of = SOV
-			}
+			limit = { POL = {			
+				OR = {
+					has_government = communism
+					is_puppet_of = SOV
+				}
 			}
 			
 			}

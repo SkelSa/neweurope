@@ -23,7 +23,7 @@ news_event = {
 
 		
 		hidden_effect = {				
-			ROOT = { country_event = { days = 1 id = ne_settings_intro.0 } }							
+			ROOT = { country_event = { id = ne_settings_intro.0 } }							
 		}		
 	}
 

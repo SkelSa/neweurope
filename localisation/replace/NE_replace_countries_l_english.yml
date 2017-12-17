@@ -1,5 +1,13 @@
 ﻿l_english:
 
+ PRC_fascism_ADJ:0 "Chinese"
+ PRC_democratic_ADJ:0 "Sino"
+ PRC_neutrality_ADJ:0 "Chinese"
+ PRC_communism_ADJ:0 "Sino"
+ CHI_fascism_ADJ:0 "Chinese"
+ CHI_democratic_ADJ:0 "Sino"
+ CHI_neutrality_ADJ:0 "Chinese"
+ CHI_communism_ADJ:0 "Sino"
  AUS_fascism:0 "Bundesstaat Austria"
  AUS_fascism_DEF:0 "Bundesstaat Austria"
  WGR_democratic:0 "FRG"

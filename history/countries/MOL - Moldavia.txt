@@ -128,10 +128,11 @@ set_politics = {
 	}
 }
 
+##generated leader, no historical background
 create_country_leader = {
-	name = "El Generico"
+	name = "Yaroslav Ungureanu"
 	desc = ""
-	picture = "leader_unknown.dds"
+	picture = "Portrait_Europe_Generic_land_2.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -153,7 +154,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tihon Kinstantinov"
 	desc = ""
-	picture = "Portrait_Tihon_Konstantinov.dds"
+	picture = "Portrait_MOL_Tihon_Konstantinov.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {

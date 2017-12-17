@@ -1,6 +1,8 @@
-﻿###########################
-# Polish Events
-###########################
+﻿##########################################
+# Polish Events - MODIFIED BY NEW EUROPE #
+##########################################
+
+##MIGHT NEED BETTER COMMENTS ABOUT WHAT BPWE CHANGED
 
 add_namespace = poland
 

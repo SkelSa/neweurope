@@ -138,6 +138,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/ukrainian_crimea.dds"
 	}
 	
+	##Brother Hao is amazing!
+	spriteType = {
+		name = "GFX_brother_hao"
+		texturefile = "gfx/event_pictures/brother_hao.dds"
+	}
+	
 	##WW3 HAS STARTED##
 	
 	spriteType = {

@@ -12,7 +12,7 @@ country_event = {
 		RAJ = {
 			is_subject = no
 		}
-		ne_india_cosmetic_enabled
+		has_global_flag = ne_india_cosmetic_enabled
 	}
 
 	immediate = {

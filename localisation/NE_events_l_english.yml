@@ -35,8 +35,9 @@
  ne_news.4.c:0 "His days are numbered. We need to catch him!"
  ne_news.4.e:0 "This is just temporary..."
  
- ##FATE OF GERMANY
- ##Germany is partitioned!##
+ ##FATE OF GERMANY##
+ 
+ ##Germany is partitioned!
  ne_news.5.t:0 "The Occupation of Germany"
  ne_news.5.d:0 "Germany's fate was already sealed at Yalta, when [SOV.GetLeader], Winston Churchill and Franklin D. Roosevelt agreed on how the "new Europe" should look like. The four victorious powers, namely the [USA.GetName], [FRA.GetName], the [SOV.GetName] and the [ENG.GetName], will get an occupation zone each, which is roughly the area they control now. During the occupation, a process called "denazification" will follow to eradicate thoughts about a revival of fascism and militarism. Eventually several trials against war criminals like Goering, Speer and other Nazi members will be held. \nCurrently it's unknown how long the occupation will last, though most people expect a new, neutral Germany in less than 5 years."
  ne_news.5.a:0 "Germany will never be the same..."
@@ -44,7 +45,7 @@
  ne_news.5.c:0 "A bitter price for them..."
  ne_news.5.e:0 "Dark times for our nation..."
  
- ##Germany is divided!##
+ ##Germany is divided!
  ne_news.6.t:0 "Germany is divided!"
  ne_news.6.d:0 "Even though the relations between the wartime allies, viz the [USA.GetName] and the [SOV.GetName], were always cold, it's now official: Germany will stay divided.\nAfter the "Federal Republic of Germany" was founded, it didn't take long for its Eastern neighbour to also emerge as an own nation. As the time will go on, both countries will slowly drift to their corresponding ideology and develop their own identity. The differences between socialism and capitalism will prevent a German reunification as long as one superpower is still standing."
  ne_news.6.a:0 "A nation divided..."
@@ -52,9 +53,10 @@
  ne_news.6.c:0 "We were for reunification! Damn imperialists!"
  ne_news.6.e:0 "We will never be the same people again!"
  
- ##Germany is unified (Stalin Notes)!##
+ ##Germany is unified (Stalin Notes)!
  ne_news.7.t:0 "Stalin Note was accepted!"
  ne_news.7.d:0 "After a long series of negotiations, [USA.GetLeader] agreed on behalf of the Western powers to accept the [SOV.GetAdjective] proposal concerning the Stalin Note. The Russian proposal suggests a reunification of both German states to allow a neutral and independent Germany, which also will act as a buffer state to decrease tensions along the "Iron Curtain".\nFollowing the successful negotiations, the reunification will probably be imminent and thus the German people will no longer be apart. Additionally, Germany will never again to able to throw the world into chaos, as it's surrounded by the two most powerful blocs in history."
+
  ##Trotsky Notes
  ne_news.7.tt:0 "Trotsky Note was accepted, German reunification imminent!"
  ne_news.7.dt:0 "\nAfter a long series of negotiations, [USA.GetLeader] agreed on behalf of the Western powers to accept the [SOV.GetAdjective] proposal concerning the Trotsky Note. The Russian proposal suggests a reunification of both German states to allow a neutral and independent Germany, which also will act as a buffer state to decrease tensions along the "Iron Curtain".\nFollowing the successful negotiations, the reunification will probably be imminent and thus the German people will no longer be apart. Additionally, Germany will never again to able to throw the world into chaos, as it's surrounded by the two most powerful blocs in history."
@@ -63,16 +65,16 @@
  ne_news.7.c:0 "As long as they stay neutral..."
  ne_news.7.e:0 "Finally!"
  
- ##Germany is denied reunification! (Stalin Notes)##
+ ##Germany is denied reunification! (Stalin Notes)
  ne_news.7.t1:0 "Germany remains divided"
  ne_news.7.d1:0 "To no one's surprise, the Western Allies have just rejected a unique offer from the [SOV.GetName] called the "Stalin Note". In summary, [SOV.GetLeader] offered the Western allies to finally unite the German nation, which has been split since WW2, and create a buffer zone between both power blocs. However, due to Western distrust of the Soviets, the note was eventually dismissed. [WGR.GetLeader] stated that a possible reunification is, as long as the Soviet Union still stands, unthinkable and would sooner or later, due to subversive activities by the Soviets, end in a communist Germany anyways.\nNevertheless, the topic has caused heated debates in the West. Some experts now harshly criticize this decision, claiming that an excellent chance to ease tensions towards the Soviets is now gone forever."
+ 
  #Trotsky description
  ne_news.7.dt1:0 "To no one's surprise, the Western Allies have just rejected a unique offer from the [SOV.GetName] called the "Trotsky Note" . In short, [SOV.GetLeader] offered the Western allies to finally unite the German nation, which has been split since WW2, and create a buffer zone between both power blocs. However, due to Western distrust of the Soviets, the note was eventually dismissed. [WGR.GetLeader] stated that a possible reunification is, as long as the Soviet Union still stands, unthinkable and would sooner or later, because of subversive activities by the Soviets, end in a communist Germany anyways.\nNevertheless, the topic has caused heated debates in the West. Some experts now harshly criticize this decision, claiming that an excellent chance to ease tensions towards the Soviets is now gone forever."
  ne_news.7.a1:0 "Imagine if this had succeeded..."
  ne_news.7.b1:0 "The Reds would have influenced them later anyways."
  ne_news.7.c1:0 "It was worth a try..."
  ne_news.7.e1:0 "Our people will never be one again..."
- 
  
  ##FATE OF KOREA##
  ##Korea divided 1950
@@ -143,19 +145,17 @@
  ne_news.15.c:0 "Socialism knows no defeat!"
  ne_news.15.e:0 "Let's honor our fallen."
  
- 
- ##check
  ##Korean War Victory ROK
  ne_news.16.t:0 "Korean War is over!"
  ne_news.16.d:0 "After a brutal and long war, forces of the [KOR.GetName] finally stormed the encircled city of Pyongyang, crushing any communist forces left. Some small infantry batallions have retreated towards the mountains and continue the fighting as guerillas, though the situation looks grim for them.\n There's no official statement from the [SOV.GetName] or [PRC.GetName], but several sources indicate that their volunteer forces are returning home. Several weapons are allegedly smuggled across the border to support some guerillas, but the Korean government has already announced extensive anti-partisan operations.\nAccording to some foreign intelligence agencies, [KOR.GetLeader] has additionally already started massive anti-communist purges, but also locked up thousands of liberals."
  ne_news.16.a:0 "Korea is finally united..."
  ne_news.16.b:0 "In the end, freedom and democracy will always win!"
  ne_news.16.c:0 "This is a disaster!"
- ne_news.16.e:0 "Now we need to rebuild the country..."
+ ne_news.16.e:0 "Time to rebuild our country..."
  
  
- ##Founding of the new blocs
- ##NATO
+ ##FOUNDING OF THE NEW BLOCS##
+ ##Nato
  ne_news.17.t:0 "The Founding of NATO"
  ne_news.17.d:0 "Yesterday, several democratic nations met in Washington D.C., to discuss the founding of a new military defense alliance against the "Red Threat". Fearing a possible invasion of Western Europe, several nations seek protection from the US, as the [ENG.GetName] is still devastated by the last major war. In the end, 12 states agreed to be a member in this new Western alliance, called "NATO", to work together in a case of conflict with the [SOV.GetName].\nFollowing the founding of this new anti-communist alliance, [SOV.GetLeader] showed disinterest and merely stated, that NATO all in all is just a symbolic move by the western Allies to deter invented "Soviet aggression".\nMost experts expect an Eastern counterpart and additional members for the Western alliance, but this remains to be seen."
  ne_news.17.a:0 "The West stand determined..."
@@ -185,7 +185,7 @@
  
  
  ##Sinkiang gets answer
- ne_prc.1.t:0 "PRC asks to integrate us"
+ ne_prc.1.t:0 "PRC asks to integrate us?!"
  ne_prc.1.d:0 "After the defeat of the Kuomintang in the Chinese Civil War, Mao has just today issued an offer to us. We should become part of the PRC and share the glory of Chinese Socialism or face dire consequences. What should we do?"
  ne_prc.1.a:0 "We will join them of course! Long live Chairman Mao!"
  ne_prc.1.b:0 "How dare they even disrespect our sovereignty!"
@@ -374,20 +374,20 @@
  ne_settings.1.e1:0 "Return to the main menu"
  
  ##OPTIONS: Neutrality settings
- ne_settings.2.t:0 "BPWE: Force some contries to stay neutral"
- ne_settings.2.d:0 "Currently in most games, neutral nations like Turkey or Japan have no difficulties joining a faction and thus there's now a neutrality option to force them to stay out.\nI really suggest to enable those to keep the game more historical and fix some AI issues like the Wehrmacht fighting in Asia..."
- ne_settings.2.a:0 "Make some countries neutral!"
- ne_settings.2.b:0 "I don't want these changes anymore!"
- ne_settings.2.c:0 "Return"
+ ne_settings.3.t:0 "BPWE: Force some contries to stay neutral"
+ ne_settings.3.d:0 "Currently in most games, neutral nations like Turkey or Japan have no difficulties joining a faction and thus there's now a neutrality option to force them to stay out.\nI really suggest to enable those to keep the game more historical and fix some AI issues like the Wehrmacht fighting in Asia..."
+ ne_settings.3.a:0 "Make some countries neutral!"
+ ne_settings.3.b:0 "I don't want these changes anymore!"
+ ne_settings.3.c:0 "Return"
  
  ##OPTIONS: USA and USSR Names
- ne_settings.3.t:0 "BPWE: Names of the USSR and USA"
- ne_settings.3.d:0 "Due to the indecisiveness of the mod's creator towards country names, you can now choose the country names for the USA and USSR. Hover over the buttons to see what each button does. Keep in mind that the long country names may overlap in news events, while the short versions can look weird on the political map.\nIt's your choice!"
- ne_settings.3.a:0 "Abbreviations are better!"
- ne_settings.3.b:0 "Long country names, please!"
- ne_settings.3.c:0 "Keep vanilla!"
- ne_settings.3.c1:0 "Return to the main menu"
- ne_settings.3.e:0 "Revert to vanilla!"
+ ne_settings.2.t:0 "BPWE: Names of the USSR and USA"
+ ne_settings.2.d:0 "Due to the indecisiveness of the mod's creator towards country names, you can now choose the country names for the USA and USSR. Hover over the buttons to see what each button does. Keep in mind that the long country names may overlap in news events, while the short versions can look weird on the political map.\nIt's your choice!"
+ ne_settings.2.a:0 "Abbreviations are better!"
+ ne_settings.2.b:0 "Long country names, please!"
+ ne_settings.2.c:0 "Keep vanilla!"
+ ne_settings.2.c1:0 "Return to the main menu"
+ ne_settings.2.e:0 "Revert to vanilla!"
  
  ##OPTIONS: Faction Settings 
  ne_settings.4.t:0 "BPWE: Factions"
@@ -399,13 +399,13 @@
  ne_settings.4.e:0 "Exit to Main Menu"
  
  ##OPTIONS: Misc Settings 
- ne_settings.5.t:0 "BPWE: Miscellaneous Settings"
- ne_settings.5.d:0 "Here you can find some things to change which don't belong to a specific category.\nThe current selection is rather small and more content can be expected in the future.\nHover over the buttons to see what exactly each does!"
- ne_settings.5.a:0 "Let the SSRs be independent puppets!"
- ne_settings.5.a1:0 "Revert the change, implement direct rule from Moscow again!"
- ne_settings.5.b:0 "Give every major power an additional research slot!"
- ne_settings.5.b1:0 "Remove the additional research slot!"
- ne_settings.5.e:0 "Exit to Main Menu"
+ ne_settings_intro.4.t:0 "BPWE: Miscellaneous Settings"
+ ne_settings_intro.4.d:0 "Here you can find some things to change which don't belong to a specific category.\nThe current selection is rather small and more content can be expected in the future.\nHover over the buttons to see what exactly each does!"
+ ne_settings_intro.4.a:0 "Let the SSRs be independent puppets!"
+ ne_settings_intro.4.a1:0 "Revert the change, implement direct rule from Moscow again!"
+ ne_settings_intro.4.b:0 "Give every major power an additional research slot!"
+ ne_settings_intro.4.b1:0 "Remove the additional research slot!"
+ ne_settings_intro.4.e:0 "Exit to Main Menu"
  
  
  
@@ -437,7 +437,7 @@
  ne.2.e:0 "Exit to main menu"
  
  ne.20.t:0 "Nazi Germany"
- ne.20.d:0 "The Führer is dead and American and Soviet troops now occupy every inch of German soil. Several plans were brought up to restructure Germany. Which one should be used?"
+ ne.20.d:0 "The Führer is dead and American, British and Soviet troops now occupy every inch of German soil. Several plans were brought up to restructure Germany. Which one should be used?"
  ne.20.a:0 "(Historical) France, the UK, the United States and the Soviets all deserve a chunk!"
  ne.20.b:0 "Morgenthau and Roosevelt's ideas would be optimal"
  ne.20.c:0 "There should be two Germanies to fit Europe's ideological division!"

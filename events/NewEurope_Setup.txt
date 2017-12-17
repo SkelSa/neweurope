@@ -11,22 +11,13 @@ news_event = {
 	
 	
 	immediate = {
-		
-		
-		##Determine the PRC's personality, they can either like the Soviets or prefer Americans (only when Krushev is elected )
-		if = {
-			limit = {
-				PRC = { is_ai = yes}
-			}
-			
-			random_list = { 60 = { set_global_flag = PRC_USA } 40 = { set_global_flag = PRC_SOV } } 
-		}
-			
+
 			
 		##Stuff for game		
 		GER = {set_capital = 749 }
 		KAZ = {set_capital = 589 }
 
+		##WGR and GDR is already in the country files
 		WGR = {
 			set_capital = 750 
 			set_research_slots = 3
@@ -81,68 +72,9 @@ news_event = {
 			
 			puppet = DAN								
 		}
-		
 
-		
-		##Enver Hoxha, Albania
-		ALB = {
-		
-			create_country_leader = {
-				name = "Enver Hoxha"
-				desc = ""
-				picture = "gfx/leaders/ALb/Portrait_Enver_Hoxha.dds"
-				expire = "1965.1.1"
-				ideology = stalinism
-				traits = {
-					fortification_engineer
-				}
-			}
-		}
-		
-		##Borat, Kazakhstan
-		KAZ = {
-		
-			create_country_leader = {
-				name = "Borat Sagdiyev"
-				desc = ""
-				picture = "Portrait_Borat.dds"
-				expire = "1975.3.1"
-				ideology = conservatism
-				traits = {
-					
-				}
-			}
-		}
-		
-		POL = {
-		
-			create_country_leader = {
-				name = "Bolesław Bierut"
-				desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
-				picture = "POL_Boleslaw_Bierut.dds"
-				expire = "1965.1.1"
-				ideology = stalinism
-				traits = {
-					#
-				}
-			}	
-		}
-		
-		ROM = {
-		
-			create_country_leader = {
-				name = "Gheorghe Gheorghiu-Dej"
-				desc = "POLITICS_CONSTANTIN_PARHON_DESC"
-				picture = "ROM_Gheorghe_Gheorghiu-Dej.dds"
-				expire = "1965.1.1"
-				ideology = leninism
-				traits = {
-					#
-				}
-			}
-
-		}
 	}
+	
 	
 	option = {
 		#

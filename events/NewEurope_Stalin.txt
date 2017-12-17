@@ -30,7 +30,7 @@ country_event = {
 		kill_country_leader = yes
 		create_country_leader = {
 			name = "Georgy Malenkov"
-			picture = "Portrait_Malenkov.dds"
+			picture = "Portrait_SOV_Malenkov.dds"
 			ideology = marxism
 		}
 		custom_effect_tooltip = stalins_death_soc_countries_relations_worse.1.tt
@@ -152,7 +152,7 @@ country_event = {
 		remove_ideas = nikita_khrushchev
 		create_country_leader = {
 			name = "Lavrentiy Beria"
-			picture = "Portrait_Beria.dds"
+			picture = "Portrait_SOV_Beria.dds"
 			ideology = marxism
 			traits = {
 				berias_ideas
@@ -189,7 +189,7 @@ country_event = {
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Nikita Khrushchev"
-			picture = "Portrait_Khrushchev.dds"
+			picture = "Portrait_SOV_Khrushchev.dds"
 			ideology = marxism
 			traits = {
 			}

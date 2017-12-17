@@ -133,8 +133,8 @@ set_politics = {
 ##New Leaders by NewEurope (author: SkelSa)
 create_country_leader = {
 	name = "Syngman Rhee"
-	desc = "Dictator"
-	picture = "Portrait_Rhee_Syngman.dds"
+	desc = ""
+	picture = "Portrait_KOR_Rhee_Syngman.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -155,8 +155,8 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Kim Il-Sung"
-	desc = "Glorious Leader"
-	picture = "Portrait_Kim_Il_Sung.dds"
+	desc = ""
+	picture = "Portrait_KOR_Kim_Il_Sung.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {

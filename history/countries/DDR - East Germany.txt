@@ -1,4 +1,4 @@
-﻿##Needs to be taken from the game files due to the capital issue
+﻿##Needs to be taken from the game files due to the capital issue, also modifying the research slots
 capital = 744
 
 # Starting tech
@@ -43,7 +43,7 @@ set_technology = {
 
 
 
-set_research_slots = 4
+set_research_slots = 3
 set_convoys = 50
 set_national_unity = 0.7
 

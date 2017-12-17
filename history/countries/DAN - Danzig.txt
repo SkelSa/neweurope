@@ -130,8 +130,8 @@ set_politics = {
 
 create_country_leader = {
 	name = "Arthur Greiser"
-	desc = "Nazi"
-	picture = "Portrait_arthur_greiser.dds"
+	desc = ""
+	picture = "Portrait_DAN_arthur_greiser.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

@@ -1,8 +1,10 @@
-﻿###########################
-# Nuclear Bomb Events
-###########################
+﻿################################################
+# Nuclear Bomb Events - MODIFIED BY NEW EUROPE #
+################################################
 
-##NewEurope does changes for Berlin
+##MIGHT NEED BETTER COMMENTS ABOUT WHAT BPWE CHANGED
+
+##Changes for Berlin and Singapore
 
 add_namespace = nuke_dropped
 

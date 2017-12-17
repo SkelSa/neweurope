@@ -1,6 +1,8 @@
-﻿########################################
-# German Events - modified by NewEurope#
-########################################
+﻿##########################################
+# German Events - MODIFIED BY NEW EUROPE #
+##########################################
+
+##MIGHT NEED BETTER COMMENTS ABOUT WHAT BPWE CHANGED
 
 add_namespace = germany
 

@@ -54,7 +54,7 @@ set_politics = {
 
 create_country_leader = {
 	name = "Archibald Cochrane"	 
-	picture = "gfx/leaders/SOV/Portrait_Archibald_Cochrane.dds"
+	picture = "Portrait_BUR_Archibald_Cochrane.dds"
 	expire = "1941.1.1"
 	ideology = despotism
 

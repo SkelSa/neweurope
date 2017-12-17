@@ -1,22 +1,26 @@
 ﻿l_english:
 
- ############################################
- ####NEW COSMETIC TAGS ADDED BY NEWEUROPE####
- ############################################
+
+
+ ##########################################
+ ###NEW COSMETIC TAGS ADDED BY NEWEUROPE###
+ ##########################################
  
- ##Will be used in historical settings
-   
+ ##MOST WILL BE USED IN HISTORICAL SETTINGS##
  ##Nazi Germany
  NE_DEU_fascism:0 "Deutsches Reich"
  NE_DEU_fascism_DEF:0 "Das Deutsche Reich" 
- ##Japan
+ ##Empire of Japan
  NE_EOJ_fascism:0 "Empire of Japan"
  NE_EOJ_fascism_DEF:0 "The Empire of Japan"
- ##WGR and DDR cosmetic tags
+ ##WGR and DDR cosmetic tags 
  NE_WGR_democratic:0 "Federal Republic of Germany"
  NE_WGR_democratic_DEF:0 "The Federal Republic of Germany "
  NE_DDR_communism:0 "German Democratic Republic"
  NE_DDR_communism_DEF:0 "The German Democratic Republic" 
+ ##DDR gets their special flag
+ NE_DDR_1_communism:0 "German Democratic Republic"
+ NE_DDR_1_communism_DEF:0 "The German Democratic Republic" 
  ##Better Name South Korea
  NE_KOR_democratic:0 "Republic of Korea"
  NE_KOR_democratic_DEF:0 "The Republic of Korea"
@@ -37,13 +41,16 @@
  NE_GRE_democratic_DEF:0 "The Hellenic Republic"
  NE_GRE_neutrality:0 "Kingdom of Greece"
  NE_GRE_neutrality_DEF:0 "The Kingdom of Greece"
+ ##Greece after becoming full communist
+ NE_GRE_1_communism:0 "Hellenic Commune"
+ NE_GRE_1_communism:0 "The Hellenic Commune"
  ##Russia
- NE_RUS_fascism:0 "Russian Tsardom"
- NE_RUS_fascism_DEF:0 "The Russian Tsardom"
- NE_RUS_democratic:0 "Russia"
- NE_RUS_democratic_DEF:0 "Russia"
- NE_RUS_neutrality:0 "Russian Empire"
- NE_RUS_neutrality_DEF:0 "Russian Empire"
+ NE_RUS_fascism:0 "Russian Empire"
+ NE_RUS_fascism_DEF:0 "The Russian Empire"
+ NE_RUS_democratic:0 "Russian Federation"
+ NE_RUS_democratic_DEF:0 "Russian Federation"
+ NE_RUS_neutrality:0 "Russia"
+ NE_RUS_neutrality_DEF:0 "Russia"
  NE_RUS_communism:0 "Russian Soviet Federative Socialist Republic"
  NE_RUS_communism_DEF:0 "The Russian Soviet Federative Socialist Republic"
  NE_RUS_fascism_ADJ:0 "Russian"
@@ -65,6 +72,8 @@
  ##USA long
  NE_USA_1_democratic:0 "United States of America"
  NE_USA_1_democratic_DEF:0 "The United States"
+ 
+ 
  ##USA communist. They get an event when they're communist, but only if player chose historical settings. SOV chooses when USA is puppet <- This is NEW
  NE_USA_communism:0 "USASR"
  NE_USA_communism_DEF:0 "The USASR"
@@ -521,7 +530,7 @@
  CZR_neutrality_ADJ:0 "Czech"
  CZR_communism_ADJ:0 "Czech"
  
- ##faction names
+ ##FACTION NAMES##
  warsaw_pact:0 "Warsaw Pact"
  nato:0 "NATO"
  soviet_union:0 "Union of Soviet States"
