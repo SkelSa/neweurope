@@ -1,2 +1,206 @@
 ﻿##New events by Takee here!
 
+add_namespace = ne_takee
+
+######################Sample event####################################
+##country_event = {
+##	id = ne_takee.1
+##	title = ne_takee.1.t
+##	desc = ne_takee.1.d
+##	picture = GFX_report_event_soviet_invasion_map
+##	
+##	is_triggered_only = yes
+##
+##	fire_only_once = yes
+##
+##	trigger = {
+##
+##	}
+##	option = {
+##		name = ne_takee.1.a
+##		
+##	}
+##
+##}
+######################The Demobilization Event######################
+country_event = {
+	id = ne_takee.1
+	title = ne_takee.1.t
+	desc = ne_takee.1.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+##	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+
+		OR = {
+			has_global_flag = germany_partitioned
+			has_global_flag = germany_divided
+			has_global_flag = germany_unified
+		}
+		
+##		any_country = {
+##			has_government = democratic
+##			NOT = { 
+##				has_war_with = SOV
+##			}
+##		}
+
+		has_war = no
+	}
+
+	option = {  ##Demobilization for the secondary countries. Most of the countries will continue to have compulsory military service, like in the history
+		name = ne_takee.1.a
+		if = {
+			limit = {
+				NOT = {
+					has_government = democratic
+					AND = { 
+						tag = GER
+						tag = ITA
+						tag = HUN
+						tag = JAP
+						tag = BUL
+						tag = ROM
+					}
+				}
+				OR = {
+					has_idea = extensive_conscription
+					has_idea = service_by_requirement
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
+			random_list = { 
+				65 = { add_ideas = extensive_conscription }
+				15 = { add_ideas = volunteer_only }
+				15 = { add_ideas = disarmed_nation }
+				10 = { }
+			}
+		}
+		if = { 
+			limit = {
+				OR = {
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
+			add_ideas = service_by_requirement
+		}
+		if = { ##Demobilization for the democratic countries. Most of the countries will continue to have compulsory military service, like in the history (until the end of the 20th century)
+			limit = { 
+				has_government = democratic
+			}
+			random_list = { 
+				65 = { add_ideas = extensive_conscription }
+				35 = { add_ideas = volunteer_only }
+			}
+		}
+		if = { ##Special Demobilization for the communists
+			limit = {
+				OR = {
+					AND = {
+						has_government = communism
+						is_in_faction_with = SOV
+					}
+					tag = SOV
+				}
+			}
+		}
+		set_global_flag = global_demobilization
+	}
+}
+
+######################The Demilitarization Event######################
+
+country_event = {
+	id = ne_takee.2
+	title = ne_takee.2.t
+	desc = ne_takee.2.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+##	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+
+		OR = {
+			has_global_flag = global_demobilization
+		}
+		
+##		any_country = {
+##			has_government = democratic
+##			NOT = { 
+##				has_war_with = SOV
+##			}
+##		}
+
+		has_war = no
+	}
+
+	option = {  ##Demilitarization for the secondary countries
+		name = ne_takee.2.a
+		if = {
+			limit = {
+				NOT = {
+					has_government = democratic
+					AND = { 
+						tag = GER
+						tag = ITA
+						tag = HUN
+						tag = JAP
+						tag = BUL
+						tag = ROM
+					}
+				}
+				OR = {
+					has_idea = partial_economic_mobilisation
+					has_idea = war_economy
+					has_idea = low_economic_mobilisation
+					has_idea = tot_economic_mobilisation
+				}
+			}
+			random_list = { 
+				55 = { add_ideas = low_economic_mobilisation }
+				35 = { add_ideas = civilian_economy }
+				10 = { }
+			}
+		}
+		if = { 
+			limit = {
+				OR = {
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
+			add_ideas = service_by_requirement
+		}
+		if = { ##Demilitarization for the democratic countries
+			limit = { 
+				has_government = democratic
+			}
+			random_list = { 
+				40 = { add_ideas = partial_economic_mobilisation }
+				25 = { add_ideas = low_economic_mobilisation }
+				25 = { add_ideas = civilian_economy }
+				10 = { }
+			}
+			add_ideas = demilitarization_democratic
+		}
+		if = { ##Demilitarization for the communists
+			limit = {
+				OR = {
+					AND = {
+						has_government = communism
+						is_in_faction_with = SOV
+					}
+					tag = SOV
+				}
+			}
+			add_ideas = demilitarization_communists
+		}
+	}
+}

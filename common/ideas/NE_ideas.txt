@@ -267,9 +267,41 @@ ideas = {
 			picture = generic_communism_drift_bonus
 
 			modifier = {
-				fascism_drift = 0.021
-				communism_drift = -0.04
+				fascism_drift = 0.014
+				communism_drift = -0.015
 				unity_weekly = -0.02
+			}
+		}
+
+		demilitarization_communists = {
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = 0.16
+				production_speed_infrastructure_factor = 0.15
+				production_speed_dockyard_factor = -0.15
+				out_of_supply_factor = -0.4
+				winter_attrition_factor = -0.25
+				justify_war_goal_time = 0.5
+			}
+		}
+
+		demilitarization_democratic = {
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.19
+				production_speed_industrial_complex_factor = 0.18
+				production_speed_infrastructure_factor = 0.19
+				production_speed_dockyard_factor = -0.15
+				out_of_supply_factor = -0.52
+				winter_attrition_factor = -0.32
+				justify_war_goal_time = 0.8
 			}
 		}
 	

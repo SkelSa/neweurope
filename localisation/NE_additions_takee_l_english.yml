@@ -86,6 +86,15 @@
   ne_misc.24.d:0 "The destroyers we sent are now controlled by Britain"
   ne_misc.24.a:0 "We hope that they will help in the coming war"
 
+ ##Takee events :3
+  ne_takee.1.t:0 "Global Demobilization After The War"
+  ne_takee.1.d:0 "After the Second World War, the participating countries, including the state [Root.GetName], began to demobilize their troops as a result of the lack of necessity"
+  ne_takee.1.a:0 "Demobilize troops"
+
+  ne_takee.2.t:0 "Demilitarization Of The Economy After The War"
+  ne_takee.2.d:0 "The war was over. We no longer have such a need for heavy industry, it is necessary to restore our medium and light industry"
+  ne_takee.2.a:0 "Go to the beginning of the demilitarization of the economy"
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 

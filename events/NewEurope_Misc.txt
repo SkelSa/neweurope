@@ -1481,10 +1481,9 @@ country_event = {
 			}
 			NOT = { is_in_faction_with = GER }
 		}
-		NOT = { 
-			every_country = { 
-				limit = { has_government = democratic }
-				has_war_with = POL
+			any_country = { 
+				has_government = democratic
+				NOT = { has_war_with = POL }
 			}
 		}
 	}
@@ -1514,7 +1513,6 @@ country_event = {
 		add_national_unity = 0.05
 		custom_effect_tooltip = peking_plan_warning.1.tt
 	}
-}
 
 ################Peking Plan. Accept###################
 country_event = {
