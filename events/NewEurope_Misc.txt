@@ -1481,15 +1481,14 @@ country_event = {
 			}
 			NOT = { is_in_faction_with = GER }
 		}
-			any_country = { 
-				has_government = democratic
-				NOT = { has_war_with = POL }
-			}
+		any_country = { 
+			has_government = democratic
+			NOT = { has_war_with = POL }
 		}
 	}
 
 	option = {
-	name = ne_misc.22.a
+		name = ne_misc.22.a
 		ai_chance = { factor = 98 }
 		random_list = {
 			65 = { ENG = { country_event = { days = 3 id = ne_misc.23 } } }
@@ -1513,6 +1512,8 @@ country_event = {
 		add_national_unity = 0.05
 		custom_effect_tooltip = peking_plan_warning.1.tt
 	}
+
+}
 
 ################Peking Plan. Accept###################
 country_event = {
