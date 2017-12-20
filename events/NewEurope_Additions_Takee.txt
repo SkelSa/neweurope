@@ -108,8 +108,16 @@ country_event = {
 					tag = SOV
 				}
 			}
+			random_list = { 
+				90 = { add_ideas = extensive_conscription }
+				5 = { add_ideas = volunteer_only }
+				5 = { }
+			}
 		}
+
 		set_global_flag = global_demobilization
+		hidden_effect = { country_event = { days = 4 id = ne_takee.2 } }
+		
 	}
 }
 
@@ -121,25 +129,9 @@ country_event = {
 	desc = ne_takee.2.d
 	picture = GFX_report_event_soviet_invasion_map
 	
-##	is_triggered_only = yes
+	is_triggered_only = yes
 
 	fire_only_once = yes
-
-	trigger = {
-
-		OR = {
-			has_global_flag = global_demobilization
-		}
-		
-##		any_country = {
-##			has_government = democratic
-##			NOT = { 
-##				has_war_with = SOV
-##			}
-##		}
-
-		has_war = no
-	}
 
 	option = {  ##Demilitarization for the secondary countries
 		name = ne_takee.2.a
@@ -188,7 +180,7 @@ country_event = {
 				25 = { add_ideas = civilian_economy }
 				10 = { }
 			}
-			add_ideas = demilitarization_democratic
+			add_timed_idea = { idea = demilitarization_democratic days = 365 }
 		}
 		if = { ##Demilitarization for the communists
 			limit = {
@@ -200,7 +192,100 @@ country_event = {
 					tag = SOV
 				}
 			}
-			add_ideas = demilitarization_communists
+			add_timed_idea = { idea = demilitarization_communists days = 365 }
+		}
+		if = {
+			limit = { 
+				any_owned_state = {
+					arms_factory > 40
+					dockyard > 15
+				} 
+			}
+			###############Arms factory###############
+			random_owned_state = { limit = { arms_factory > 10 } remove_building = { type = arms_factory level = 5 } }
+			random_owned_state = { limit = { arms_factory > 8 } remove_building = { type = arms_factory level = 4 } }
+			random_owned_state = { limit = { arms_factory > 6 } remove_building = { type = arms_factory level = 4 } }
+			random_owned_state = { limit = { arms_factory > 2 } remove_building = { type = arms_factory level = 1 } }
+			###############Dockyards##################
+			random_owned_state = { limit = { dockyard > 5 } remove_building = { type = dockyard level = 2 } }
+			random_owned_state = { limit = { dockyard > 2 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+		}
+		if = {
+			limit = { 
+				any_owned_state = {
+					arms_factory > 25
+					dockyard > 10
+				} 
+			}
+			###############Arms factory###############
+			random_owned_state = { limit = { arms_factory > 5 } remove_building = { type = arms_factory level = 2 } }
+			random_owned_state = { limit = { arms_factory > 5 } remove_building = { type = arms_factory level = 2 } }
+			random_owned_state = { limit = { arms_factory > 2 } remove_building = { type = arms_factory level = 1 } }
+			random_owned_state = { limit = { arms_factory > 2 } remove_building = { type = arms_factory level = 1 } }
+			###############Dockyards##################
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+		}
+		if = {
+			limit = { 
+				any_owned_state = {
+					arms_factory < 15
+					dockyard < 10
+				} 
+			}
+			###############Arms factory###############
+			random_owned_state = { limit = { arms_factory > 2 } remove_building = { type = arms_factory level = 1 } }
+			random_owned_state = { limit = { arms_factory > 2 } remove_building = { type = arms_factory level = 1 } }
+			random_owned_state = { limit = { arms_factory > 1 } remove_building = { type = arms_factory level = 1 } }
+			random_owned_state = { limit = { arms_factory > 1 } remove_building = { type = arms_factory level = 1 } }
+			###############Dockyards##################
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
 		}
 	}
+}
+
+######################A warning for a player######################
+country_event = {
+	id = ne_takee.3
+	title = ne_takee.3.t
+	desc = ne_takee.3.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	trigger = {
+		any_country = {
+			has_government = fascism
+			is_ai = no
+		}
+		NOT = { has_country_flag = warning_already_issued }
+	}
+
+	option = {
+		name = ne_takee.3.a
+		custom_effect_tooltip = warning_for_a_player.1.tt
+		set_country_flag = warning_already_issued
+	}
+}
+
+country_event = {
+	id = ne_takee.4
+	title = ne_takee.4.t
+	desc = ne_takee.4.d
+	picture = GFX_report_event_german_polish_border
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ne_takee.4.a
+		GER = { transfer_state = 85 }
+		GER = { annex_country = { target = DAN transfer_troops = yes } }
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
 }

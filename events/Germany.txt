@@ -17,33 +17,7 @@ country_event = {
 	
 	option = {
 		name = germany.4.a
-		4 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
-		}
-		152 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
-		}
-		153 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
-		}
-
-		757 = {
-			if = {
-				limit = { is_owned_by = AUS }
-				add_core_of = GER
-			}
-		}
-
-		758 = {
+		every_owned_state = {
 			if = {
 				limit = { is_owned_by = AUS }
 				add_core_of = GER
@@ -3446,8 +3420,8 @@ country_event = {
 	
 	option = {
 		name = germany.87.a
-		transfer_state = 85
 		remove_state_claim = 86
+		DAN = { country_event = { days = 1 id = ne_takee.4 } }
 	}
 }
 

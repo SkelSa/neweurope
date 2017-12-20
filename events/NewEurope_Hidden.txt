@@ -222,4 +222,3 @@ country_event = {
 		random_list = { 40 = { news_event = { id = ne_news.22 }  } 60 = { news_event = { id = ne_news.23 }  } } 	
 	}
 }
-

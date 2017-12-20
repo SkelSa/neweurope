@@ -95,6 +95,16 @@
   ne_takee.2.d:0 "The war was over. We no longer have such a need for heavy industry, it is necessary to restore our medium and light industry"
   ne_takee.2.a:0 "Go to the beginning of the demilitarization of the economy"
 
+ ##A warning for a player
+  ne_takee.3.t:0 "[Root.GetName] currently unplayable"
+  ne_takee.3.d:0 "The currently selected [Root.GetName] country is not currently recommended for playing with BPWE mod. When playing for the selected country can cause a lot of programming errors; The modification functionality may not work \n\nWe recommend that you play only for countries that have been modified by the modification, selected in the "Country Selection Menu""
+  ne_takee.3.a:0 "I am notified of this and have NO complaints"
+
+ ##Danzig is fucked up
+  ne_takee.4.t:0 "Danzig is now under German control"
+  ne_takee.4.d:0 "Our territory now belongs to a part of Germany, and it's good or bad - time will tell"
+  ne_takee.4.a:0 "We'll see..."
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
@@ -102,6 +112,7 @@
  berias_conspiracy_chance.1.tt:0 "§YWith some probability, this decision can be of great importance.§!\n"
  peking_plan_warning.1.tt:0 "§RWe risk losing all our advanced destroyers!§!"
  peking_plan.1.tt:0 "§GGet transmitted Poland destroyers.§!"
+ warning_for_a_player.1.tt:0 "§RWarning issued§!"
 
  ######################################################################################################################################
  ############################################################IDEAS#####################################################################
@@ -203,4 +214,17 @@
  BUR_ENG_autonomy_colony_DEF:0 "The British Burma"
  BUR_ENG_autonomy_puppet_DEF:0 "The British Burma"
  BUR_ENG_autonomy_integrated_puppet_DEF:0 "The British Burma"
+
+ POZ_fascism:0 "Polish Occupation Zone"
+ POZ_fascism_DEF:0 "The Polish Occupation Zone"
+ POZ_democratic:0 "Polish Occupation Zone"
+ POZ_democratic_DEF:0 "The Polish Occupation Zone"
+ POZ_neutrality:0 "Polish Occupation Zone"
+ POZ_neutrality_DEF:0 "The Polish Occupation Zone"
+ POZ_communism:0 "Polish Occupation Zone"
+ POZ_communism_DEF:0 "The Polish Occupation Zone"
+ POZ_fascism_ADJ:0 "Polish"
+ POZ_democratic_ADJ:0 "Polish"
+ POZ_neutrality_ADJ:0 "Polish"
+ POZ_communism_ADJ:0 "Polish"
 
