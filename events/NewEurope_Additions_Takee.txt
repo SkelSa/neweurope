@@ -204,3 +204,30 @@ country_event = {
 		}
 	}
 }
+
+#################################################################
+country_event = {
+	id = ne_takee.3
+	title = ne_takee.3.t
+	desc = ne_takee.3.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	trigger = {
+		any_country = {
+			NOT = { 
+				tag = USA
+				tag = SOV
+				tag = ENG
+				tag = FRA
+			}
+			is_ai = no
+		}
+		NOT = { has_country_flag = warning_already_issued }
+	}
+
+	option = {
+		name = ne_takee.3.a
+		custom_effect_tooltip = warning_for_a_player.1.tt
+		set_country_flag = warning_already_issued
+	}
+}

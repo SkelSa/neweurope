@@ -95,6 +95,11 @@
   ne_takee.2.d:0 "The war was over. We no longer have such a need for heavy industry, it is necessary to restore our medium and light industry"
   ne_takee.2.a:0 "Go to the beginning of the demilitarization of the economy"
 
+ ##A warning for a player
+  ne_takee.3.t:0 "[Root.GetName] currently unplayable"
+  ne_takee.3.d:0 "The currently selected [Root.GetName] country is not currently recommended for playing with BPWE mod. When playing for the selected country can cause a lot of programming errors; The modification functionality may not work \n\nWe recommend that you play only for countries that have been modified by the modification, selected in the "Country Selection Menu""
+  ne_takee.3.a:0 "I am notified of this and have NO complaints"
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
@@ -102,6 +107,7 @@
  berias_conspiracy_chance.1.tt:0 "§YWith some probability, this decision can be of great importance.§!\n"
  peking_plan_warning.1.tt:0 "§RWe risk losing all our advanced destroyers!§!"
  peking_plan.1.tt:0 "§GGet transmitted Poland destroyers.§!"
+ warning_for_a_player.1.tt:0 "§RWarning issued§!"
 
  ######################################################################################################################################
  ############################################################IDEAS#####################################################################
