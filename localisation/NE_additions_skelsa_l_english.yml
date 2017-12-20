@@ -7,7 +7,7 @@ l_english:
 ##States
  STATE_783:0 "Kalastajasaarento"
  STATE_784:0 "Hanko"
-
+ ##Porkalla is state 750
 
 ##IDEAS
 
@@ -68,7 +68,7 @@ l_english:
  ne_misc.17.a:0 "Purge them!"
  ne_misc.17.b:0 "This won't be neccessary..."
  
- 
+ ##FLAG CHANGES
  
  
  
@@ -155,9 +155,6 @@ l_english:
  ne_settings.4.b:0 "Create the Co-Prosperity Sphere"
  ne_settings.4.b1:0 "Dissolve Japan's faction!"
  ne_settings.4.e:0 "Exit to Main Menu"
- 
- 
- ##FLAG CHANGES
  
  
  ##Tooltips:

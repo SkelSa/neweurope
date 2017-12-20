@@ -70,6 +70,7 @@ country_event = {
 		FIN = {
 			exists = yes
 			is_subject = no
+			NOT = { has_war_with = SOV }
 		}
 		
 		NOT = {		
