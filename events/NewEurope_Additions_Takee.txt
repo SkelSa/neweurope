@@ -287,5 +287,12 @@ country_event = {
 		GER = { annex_country = { target = DAN transfer_troops = yes } }
 		custom_effect_tooltip = GAME_OVER_TT
 	}
+	
+	##Added by SkelSa, Player can be Danzig and refuse. Will lead to massive gang bang
+	option = {
+		name = ne_takee.4.a
+		GER = { declare_war_on = { target = DAN type = annex_everything }   }
+		custom_effect_tooltip = GAME_OVER_TT
+	}
 
 }
