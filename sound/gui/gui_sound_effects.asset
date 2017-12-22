@@ -263,13 +263,13 @@ soundeffect = {
 	volume = 0.45
 }
 
-soundeffect = {
-	name = nevent
-	sounds = {
-		sound = nevent
-	}
-	volume = 0.85
-}
+####soundeffect = { ##AN EXAMPLE
+####	name = nevent
+####	sounds = {
+####		sound = nevent
+####	}
+####	volume = 0.85
+####}
 #################################################################
 ###################### SHOW POP-UP WINDOW #######################
 #################################################################

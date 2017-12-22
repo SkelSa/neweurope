@@ -2318,16 +2318,16 @@ soundeffect =
 	max_audible = 1
 	max_audible_behaviour = fail
 }
-soundeffect =
-{
-	name = "nevent"
-	volume = 0.85
-	sounds = {
-		sound = "nevent"
-	}
-	max_audible = 1
-	max_audible_behaviour = fail
-}
+####soundeffect =  ##AN EXAMPLE
+####{
+####	name = "nevent"
+####	volume = 0.85
+####	sounds = {
+####		sound = "nevent"
+####	}
+####	max_audible = 1
+####	max_audible_behaviour = fail
+####}
 
 soundeffect =
 {
