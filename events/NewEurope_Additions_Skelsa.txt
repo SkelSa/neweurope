@@ -1,4 +1,4 @@
-﻿##New events by SkelSa here!
+﻿##New events by SkelSa here! ##Hi, Andrew! test
 
 add_namespace = ne_skelsa
 add_namespace = ne_finland
