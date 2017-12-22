@@ -113,7 +113,10 @@ l_english:
  ne_misc.17.b:0 "This won't be neccessary..."
  
  ##FLAG CHANGES
- 
+ ne_flag.1.t:0 "A New Flag for our Nation"
+ ne_flag.1.d:0 "Text"
+ ne_flag.1.a:0 "Good idea"
+ ne_flag.1.a:0 "Our current flag is better"
  
  
  ##Main Main Menu; Options Menu (too much menu)
@@ -157,7 +160,7 @@ l_english:
  ne_settings_intro.5.b:0 "Disable the recommended settings!"
  ne_settings_intro.5.c:0 "Exit to Main Menu"
  
- #Sicth menu; EXIT MENU
+ #Sixth menu; EXIT MENU
  ne_settings_intro.6.t:0 "BPWE: Exit"
  ne_settings_intro.6.d:0 "Here you can now apply all the changes you did and return to the game or reset the settings to default."
  ne_settings_intro.6.a:0 "Apply the changes and return to the game!"
@@ -316,22 +319,21 @@ l_english:
  
  
  
- 
  ##Soviet Victory
- ne_news.2.t:0 "The Western Powers have surrendered!"
- ne_news.2.d:0 ""
- ne_news.2.a:0 ""
- ne_news.2.b:0 ""
- ne_news.2.c:0 ""
- ne_news.2.e:0 ""
+ ne_news.25.t:0 "The Western Powers have surrendered!"
+ ne_news.25.d:0 ""
+ ne_news.25.a:0 ""
+ ne_news.25.b:0 ""
+ ne_news.25.c:0 ""
+ ne_news.25.e:0 ""
  
  ##American Victory
- ne_news.2.t:0 "Soviet Union and Allies surrender!"
- ne_news.2.d:0 "While many foreign powers tried to conquer Russia, none of them was really successful and suffered a crushing defeat in the end. Until today. The Soviet authorities have agreed to terms of unconditional surrender"
- ne_news.2.a:0 ""
- ne_news.2.b:0 ""
- ne_news.2.c:0 ""
- ne_news.2.e:0 ""
+ ne_news.26.t:0 "Soviet Union and Allies surrender!"
+ ne_news.26.d:0 "While many foreign powers tried to conquer Russia, none of them was really successful and suffered a crushing defeat in the end. Until today. The Soviet authorities have agreed to terms of unconditional surrender"
+ ne_news.26.a:0 ""
+ ne_news.26.b:0 ""
+ ne_news.26.c:0 ""
+ ne_news.26.e:0 ""
  
  
  

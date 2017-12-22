@@ -5,7 +5,7 @@ ideas = {
 		##NAM DRIFT, MEMBER ICON 
 		##MARSHALL PLAN LOGO, RGW (MOLOTOV-PLAN)
 	
-		NE_reparations = {		##reparations for loser country
+		NE_reparations = {	##reparations for loser country
 
 			picture = can_wartime_prices_and_trade_board
 
@@ -365,24 +365,32 @@ ideas = {
 			
 			available = {
 			
+			
+				has_global_flag = ne_strict_faction
+			
 				is_in_faction_with = USA
 				is_ai = no
 				is_major = yes
 				has_government = democratic
 				
-				##system is enabled, check for flag
-				##Player is either UK, FRA, USA, WGR and in nato faction
-				##any democratic country needs idea: ready for nato
+				any_country = {
+					has_idea = NE_ready_nato
+				}
+
 				
 			}
 			
 
 			on_add = {
 		
-				#execute event for countries				
+				every_country = {
+					limit = {
+						has_idea = NE_ready_nato
+					}
+					
 					#country_event = { id =  }
-											
-				#}			
+				}
+				
 			}
 
 			ai_will_do = {
@@ -399,26 +407,31 @@ ideas = {
 			picture = invite_wp
 			
 			available = {
+	
+				has_global_flag = ne_strict_faction
 				
 				is_in_faction_with = SOV
 				is_ai = no
 				is_major = yes
 				has_government = communism
 				
-				
-				##system is enabled, check for flag
-				##Player is either SOV, POL, PRC, GDR and in wp faction
-				##any commie country needs idea: ready for warsaw pact
+				any_country = {
+					has_idea = NE_ready_wp
+				}
 				
 			}
 			
 
 			on_add = {
 		
-				#execute event for countries				
-					#country_event = { id = }
-											
-				#}			
+				every_country = {
+					limit = {
+						has_idea = NE_ready_wp
+					}
+					
+					#country_event = { id =  }
+				}
+				
 			}
 
 			ai_will_do = {

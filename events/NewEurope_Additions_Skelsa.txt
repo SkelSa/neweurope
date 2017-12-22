@@ -3,6 +3,8 @@
 add_namespace = ne_skelsa
 add_namespace = ne_finland
 add_namespace = ne_fin_harbor
+add_namespace = ne_faction
+add_namespace = ne_flag
 
 
 ##Brother Hao joins the PLA
@@ -50,7 +52,8 @@ country_event = {
 
 
 
-##For new file: NewEurope_Finland
+##FOR NEW FILE: NEWEUROPE_FINLAND##
+
 
 ##Lease of Hanko (after Winter War)
 
@@ -221,7 +224,6 @@ country_event = {
 		add_political_power = 50
 		add_national_unity = 0.05
 		FIN = { give_military_access = GER }		
-		FIN = { declare_war_on = { target = SOV }  }
 		
 		add_named_threat = { threat = 4 name = threat_ne_continuation_war }
 	
@@ -251,7 +253,7 @@ country_event = {
 		##Effects
 		add_political_power = 75
 		add_national_unity = 0.1		
-		FIN = { declare_war_on = SOV }
+		FIN = { declare_war_on = { target = SOV }  }
 		
 		add_named_threat = { threat = 4 name = threat_ne_continuation_war }
 			
@@ -278,12 +280,13 @@ country_event = {
 
 
 
+
+
 ##WW2 victims
-##Comments are always helpful
 country_event = {
-	id = ne_skelsa.1
-	title = ne_skelsa.1.t
-	desc =  ne_skelsa.1.d
+	id = ne_skelsa.5
+	title = ne_skelsa.5.t
+	desc =  ne_skelsa.5.d
 	picture = GFX_somepic
 
 	fire_only_once = yes
@@ -303,11 +306,11 @@ country_event = {
 	}
 	
 	
-	mean_time_to_happen = {	hours = 6 }
+	mean_time_to_happen = {	days = 1 }
 
 	
 	option = {	#dark times for our nation
-		name = ne_skelsa.1.a
+		name = ne_skelsa.5.a
 
 		##Effects
 		add_political_power = 15
@@ -320,15 +323,14 @@ country_event = {
 
 
 
-
-
-
-
-
 ##Factions:
 
+##ne_strict_facton
+
 ##NATO was founded, stricter settings were enabled
-##distribute spirits and reduce democratic level to 55%
+
+##DISTRIBUTE SPIRITS AND REDUCE DEMOCRATIC/COMMUNISM LEVEL TO 55%
+##COUNTRY 
 
 
 
