@@ -1,7 +1,471 @@
-﻿##This file will contain the Korean War event chains. More possible stuff concerning Korea may follow...
+﻿##EVERYTHING ABOUT KOREA GOES IN HERE##
 
+add_namespace = ne_division_kor
 add_namespace = ne_korea
 add_namespace = ne_korean_war
+
+
+##########################
+####DIVISION OF KOREA#####
+##########################
+
+##requires Korea; partitioned
+
+##DIVISION OF KOREA requires occupied peninsula
+##DIVISION OF KOREA: 4 VARIANTS:
+##1. NEUTRAL, DEMOCRATIC KOREA
+##2. 1950 borders
+##3. 1953 borders
+##4. Keep it occupied
+
+
+##tag = USA; menu to choose
+country_event = {
+	id = ne_division_kor.1
+	title = ne_division_kor.1.t
+	desc =  ne_division_kor.1.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	
+	trigger = {	
+	
+		##country check
+		tag = USA
+		
+		SOV = {
+				exists = yes
+				is_subject = no
+				has_government = communism
+				
+				NOT = { 		
+					has_war_with = ENG 
+					has_war_with = FRA
+					has_war_with = USA 		
+				}
+				
+				
+		}
+		
+		USA = {
+				exists = yes
+				is_subject = no 
+				
+				NOT = { has_war_with = SOV }			
+				
+				has_government = democratic
+		}
+		
+		
+		NOT = { country_exists = KOR } 
+		NOT = { country_exists = DPR } 
+		
+		has_global_flag = korea_partitioned
+		
+		NOT = { has_global_flag = korea_negotiations }
+	
+
+	
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	immediate = {
+	
+		set_global_flag = korea_negotiations
+	
+	}
+	
+	
+	
+	
+	#Neutral Korea
+	option = { 
+		name = ne_division_kor.1.a
+		ai_chance = { factor = 10 }
+		
+		trigger = {
+		
+			NOT = {has_global_flag = korea_neutral_declined}
+		
+		}
+		
+		SOV = {country_event = { days = 2 id = ne_division_kor.2} }
+		
+		
+	}
+
+	#1950
+	option = { 
+		name = ne_division_kor.1.b
+		ai_chance = { factor = 44 }
+		
+		trigger = {
+		
+			NOT = {has_global_flag = korea_1950_declined}
+		
+		}
+		
+		SOV = {country_event = { days = 2 id = ne_division_kor.3} }
+		
+		
+	}
+	
+	#1953
+	option = { 
+		name = ne_division_kor.1.c
+		ai_chance = { factor = 44 }
+		
+		trigger = {
+		
+			NOT = {has_global_flag = korea_1953_declined}
+		
+		}
+		
+		SOV = {country_event = { days = 2 id = ne_division_kor.4} }
+		
+		
+	}
+	
+	#KEEP OCCUPATION
+	option = { 
+		name = ne_division_kor.1.e
+		ai_chance = { factor = 2 }
+		
+		##needs no flags
+		
+		SOV = {country_event = { days = 2 id = ne_division_kor.5} }
+
+	}
+          	
+}
+
+
+
+##tag = USSR, reacts to neutral KOREA
+
+country_event = {
+	id = ne_division_kor.2
+	title = ne_division_kor.2.t
+	desc =  ne_division_kor.2.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	
+	##YES
+	option = { 
+		name = ne_division_kor.2.a
+		ai_chance = { factor = 10 }
+		
+		add_political_power = 10
+		
+		KOR = {
+
+			transfer_state = 527
+			transfer_state = 763
+			transfer_state = 770 
+			transfer_state = 771
+			transfer_state = 525
+			transfer_state = 762
+			transfer_state = 768
+			transfer_state = 769
+
+			set_politics = { ruling_party = democratic elections_allowed = no }
+			add_popularity = { ideology = democratic popularity = 0.35 }
+			add_ideas = NE_neutrality
+			
+			
+		}
+		
+		USA = {country_event = { days = 1 id = ne_division_kor.6} }
+		
+		hidden_effect = {
+		
+			news_event = { days = 2 id = ne_news.11 }
+		}
+
+		
+	}
+
+	
+	##NO
+	option = { 
+		name = ne_division_kor.2.b
+		ai_chance = { factor = 90 }
+		
+		add_political_power = -10
+		
+		USA = {country_event = { days = 1 id = ne_division_kor.7} }
+		set_global_flag = korea_neutral_declined
+
+		
+	}
+
+	
+}
+
+##tag = USSR, reacts to 1950 KOREA (historical)
+
+country_event = {
+	id = ne_division_kor.3
+	title = ne_division_kor.3.t
+	desc =  ne_division_kor.3.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	
+	##YES
+	option = { 
+	ai_chance = { factor = 80 }
+		name = ne_division_kor.3.a
+		
+		add_political_power = 10
+		
+		DPR = {
+
+			transfer_state = 527
+			transfer_state = 763
+			transfer_state = 770 
+			transfer_state = 771
+
+
+		}
+
+		KOR = {
+
+			transfer_state = 525
+			transfer_state = 762
+			transfer_state = 768
+			transfer_state = 769
+
+		}
+		
+		USA = {country_event = { days = 1 id = ne_division_kor.6} }
+		
+		hidden_effect = {		
+			news_event = { days = 2 id = ne_news.8 }
+		}
+		
+		set_global_flag = korea_divided
+
+		
+	}
+	
+	##NO
+	option = { 
+	ai_chance = { factor = 20 }
+		name = ne_division_kor.3.b
+		
+		add_political_power = -5
+		
+		USA = {country_event = { days = 1 id = ne_division_kor.7} }
+		set_global_flag = korea_1950_declined
+
+		
+	}
+
+	
+}
+
+
+##tag = USSR, reacts to 1953 KOREA with DMZ
+
+country_event = {
+	id = ne_division_kor.4
+	title = ne_division_kor.4.t
+	desc =  ne_division_kor.4.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	
+	##YES
+	option = { 
+		ai_chance = { factor = 80 }
+		name = ne_division_kor.4.a
+		
+		add_political_power = 10
+		
+		DPR = {
+
+			transfer_state = 527
+			transfer_state = 762
+			transfer_state = 769
+			transfer_state = 770
+
+
+		}
+
+		KOR = {
+
+			transfer_state = 525
+			transfer_state = 763
+			transfer_state = 768
+			transfer_state = 771
+
+		}
+		
+		USA = {country_event = { days = 1 id = ne_division_kor.6} }
+
+
+		##the DMZ gets a DMZ
+			768 = { set_demilitarized_zone = yes } 
+			769 = { set_demilitarized_zone = yes } 
+			770 = { set_demilitarized_zone = yes } 
+			771 = { set_demilitarized_zone = yes }
+
+			
+		hidden_effect = {	
+			news_event = { days = 2 id = ne_news.9 }
+		}
+		
+		set_global_flag = korea_dmz
+
+
+		
+	}
+	
+	##NO
+	option = {
+		ai_chance = { factor = 20 }
+		name = ne_division_kor.4.b
+		
+		add_political_power = -5
+		
+		USA = {country_event = { days = 1 id = ne_division_kor.7} }
+		set_global_flag = korea_1953_declined
+
+		
+	}
+
+	
+}
+
+
+##tag = USSR, reacts to American occupation
+
+country_event = {
+	id = ne_division_kor.5
+	title = ne_division_kor.5.t
+	desc =  ne_division_kor.5.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	
+	##free the north
+	option = { 
+		name = ne_division_kor.5.a
+		ai_chance = { factor = 90 }
+		
+		add_political_power = 40
+		
+		every_state = {
+			limit = {
+			is_owned_and_controlled_by = SOV
+			is_core_of = DPR
+					
+			}
+		
+		DPR = {transfer_state = PREV}
+		
+		}
+		
+		DPR = { add_opinion_modifier = { target = SOV modifier =  freed_us} }
+		
+		hidden_effect = {
+		
+			news_event = { days = 2 id = ne_news.10 }
+		}
+	
+	}
+	
+	##continue occupation
+	option = { 
+		name = ne_division_kor.5.b
+		ai_chance = { factor = 10 }
+		
+		##adding bad opinion for the Soviets towards America (imperialists!)
+		add_opinion_modifier = { target = USA modifier =  occupies_korea}
+		reverse_add_opinion_modifier = { target = USA modifier = occupies_korea}
+		
+		hidden_effect = {
+		
+			news_event = { days = 2 id = ne_news.10 }
+		}
+
+		
+	}
+
+	
+}
+
+##tag = USA, the Soviets agree
+
+country_event = {
+	id = ne_division_kor.6
+	title = ne_division_kor.6.t
+	desc =  ne_division_kor.6.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	##great
+	option = { 
+		name = ne_division_kor.6.a
+		
+		add_political_power = 5
+		
+		add_opinion_modifier = { target = SOV modifier =  found_solution_korea}
+		reverse_add_opinion_modifier = { target = SOV modifier = found_solution_korea}
+
+		
+	}
+	
+
+}
+
+##tag = USA, the Soviets decline
+
+country_event = {
+	id = ne_division_kor.7
+	title = ne_division_kor.7.t
+	desc =  ne_division_kor.7.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	##Damn
+	option = { 
+		name = ne_division_kor.7.a
+		
+		
+	USA = {country_event = { id = ne_division_kor.1} }
+		
+	}
+
+	
+}
+
+
+
+
+
+
 
 
 
@@ -13,7 +477,6 @@ country_event = {
 	picture = GFX_somepic
 
 	hidden = yes
-	is_triggered_only = yes
 	fire_only_once = yes
 
 	

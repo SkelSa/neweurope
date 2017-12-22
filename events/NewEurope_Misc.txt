@@ -983,7 +983,7 @@ country_event = {
 	mean_time_to_happen = { days = 365 }
 
 	trigger = {
-		tag = TRI
+		tag = ENG
 		
 		TRI = {
 			exists = yes
@@ -1051,7 +1051,6 @@ country_event = {
   # picture = GFX_soviet_research_slot
 
 	fire_only_once = yes			
-	is_triggered_only = yes
 
 	mean_time_to_happen	= { days = 365 }
 
@@ -1217,7 +1216,6 @@ country_event = {
     picture = GFX_report_event_soviet_soldiers_tank ##Let's leave the default icons for now
 
 	fire_only_once = yes			
-	is_triggered_only = yes
 
 	mean_time_to_happen	= { days = 120 }
 
@@ -1550,6 +1548,7 @@ country_event = {
 	}
 }
 
+
 ##############A small message for Poland that the British got their destroyers##############
 country_event = {
 	id = ne_misc.24
@@ -1566,21 +1565,7 @@ country_event = {
 	}
 }
 
-#############Battle events##################################################################
-country_event = {
-	id = ne_misc.25
-	title = ne_misc.25.t
-	desc = ne_misc.25.d
-	picture = GFX_report_event_ast_navy
 
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = ne_misc.25.a
-	}
-}
 
 
 

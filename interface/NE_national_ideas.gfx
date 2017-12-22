@@ -26,10 +26,25 @@ spriteTypes = {
 		name = "GFX_idea_ready_wp"
 		texturefile = "gfx/interface/ideas/ready_wp.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_nato_member"
+		texturefile = "gfx/interface/ideas/nato_member.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_wp_member"
+		texturefile = "gfx/interface/ideas/wp_member.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_titos_partisans"
 		texturefile = "gfx/interface/ideas/titos_partisans.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sfr_yugoslavia"
+		texturefile = "gfx/interface/ideas/sfr_yugoslavia.dds"
 	}
 	
 }

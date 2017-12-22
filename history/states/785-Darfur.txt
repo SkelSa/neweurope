@@ -1,0 +1,21 @@
+state={
+	id=785
+	name="STATE_785"
+	
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	
+	impassable = yes
+	
+	provinces={
+		4138 5060 7987 8103 10739 10900 12836 
+	}
+	manpower=498376
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

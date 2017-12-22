@@ -1,0 +1,277 @@
+﻿##EVENTS CONCERNING AUSTRIA GO HERE##
+
+add_namespace = ne_uni_austria
+
+##Unification 1. England gets event -> sends to other members and they can agree or decline -> England gets response
+
+##1. England gets an event 
+country_event = {
+	id = ne_uni_austria.1
+	title = ne_uni_austria.1.t
+	desc =  ne_uni_austria.1.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger {
+	
+		tag = ENG
+		
+		date > 1942.6.1
+		
+		country_exists = SOV
+		country_exists = ENG
+		country_exists = USA
+		country_exists = FRA
+		
+		NOT {
+			
+			ENG = {
+				has_war_with = SOV
+			}
+			
+			FRA = {
+				has_war_with = SOV
+			}
+			
+			USA = {
+				has_war_with = SOV
+			}
+			
+		}
+			
+		has_global_flag = austria_partitioned	
+			
+		NOT = { country_exists = AUS}
+		
+	}
+	
+	mean_time_to_happen = { days = 360 }
+
+	option = { # New independent austria
+		name = ne_uni_austria.1.a
+		ai_chance = { factor = 98 }
+		
+		add_political_power = 10
+
+		AUS = { 
+			
+			transfer_state = 758
+						  	
+		}
+
+		
+	FRA = {
+			country_event = {id = ne_uni_austria.2 }
+		}
+		
+	USA = {
+			country_event = {id = ne_uni_austria.3 }
+		}
+		
+	SOV = {
+			country_event = {id = ne_uni_austria.4 }
+		}
+		
+
+		
+	}
+	option = { # NO
+		name = ne_uni_austria.1.b
+		ai_chance = { factor = 2 }
+
+	}
+            
+            	
+	
+}
+
+
+####France response
+country_event = {
+	id = ne_uni_austria.2
+	title = ne_uni_austria.2.t
+	desc =  ne_uni_austria.2.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	
+	# accept
+	option = { 
+		name = ne_uni_austria.2.a
+		ai_chance = {factor = 98}
+		
+		add_political_power = 20
+		
+	AUS = { 
+			
+			transfer_state = 153
+						  	
+		}	
+		
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.5 }
+		}
+
+	}
+		
+		
+	
+	option = { # Refuse
+		name = ne_uni_austria.2.b
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.6  }
+		}
+
+	}
+	
+            	
+}
+
+
+####USA response
+country_event = {
+	id = ne_uni_austria.3
+	title = ne_uni_austria.3.t
+	desc =  ne_uni_austria.3.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes	
+	#fire_only_once = yes
+
+	
+	# accept
+	option = { 
+		name = ne_uni_austria.3.a
+		ai_chance = {factor = 98}
+		
+		add_political_power = 20
+		
+		AUS = { 			
+				transfer_state = 152						  	
+		}	
+		
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.5 }
+		}
+
+	}
+		
+		
+	
+	option = { # Refuse
+		name = ne_uni_austria.3.b
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.6  }
+		}
+
+	}
+            	
+}
+
+####Soviet response
+
+country_event = {
+	id = ne_uni_austria.4
+	title = ne_uni_austria.4.t
+	desc =  ne_uni_austria.4.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	
+	# accept
+	option = { 
+		name = ne_uni_austria.4.a
+		ai_chance = {factor = 98}
+		
+		add_political_power = 20
+		
+		AUS = { 			
+			transfer_state = 4
+			transfer_state = 757
+
+			add_ideas = NE_neutrality		
+		}
+		
+		
+		
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.5 }
+		}
+
+	}
+		
+		
+	
+	option = { # Refuse
+		name = ne_uni_austria.4.b
+		
+		ENG = {
+			country_event = {id = ne_uni_austria.6  }
+		}
+
+	}
+            	
+}
+
+##############Feedback for the British
+
+country_event = {
+	id = ne_uni_austria.5
+	title = ne_uni_austria.5.t
+	desc =  ne_uni_austria.5.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Great
+	option = { 
+		name = ne_uni_austria.5.a
+		ENG = {add_opinion_modifier = { target = FROM modifier = accepted_austrian_reunification} } 
+		ENG = {reverse_add_opinion_modifier = { target = FROM modifier = accepted_austrian_reunification} }
+		AUS = {add_opinion_modifier = { target = FROM modifier = accepted_austrian_reunification} } 
+		AUS = {reverse_add_opinion_modifier = { target = FROM modifier = accepted_austrian_reunification} }
+		
+	}
+		
+            	
+}
+
+country_event = {
+	id = ne_uni_austria.6
+	title = ne_uni_austria.6.t
+	desc =  ne_uni_austria.6.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	#has to be yes; event is triggered through another
+	is_triggered_only = yes
+	
+	#fire_only_once = yes
+
+	
+	# Shit
+	option = { 
+		name = ne_uni_austria.6.a
+		#ROOT = {reverse_add_opinion_modifier = { target = USA modifier = refused_nato} } 
+		ENG = {add_opinion_modifier = { target = FROM modifier = refused_austrian_reunification} }
+		AUS = {add_opinion_modifier = { target = FROM modifier = refused_austrian_reunification} } 		
+
+		
+	}
+		
+            	
+}

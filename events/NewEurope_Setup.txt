@@ -572,7 +572,7 @@ country_event = {
 
 
 	option = {
-		#placeholder
+		#Ignore me, I'm just a placeholder!
 	}
 		
             	
@@ -628,7 +628,7 @@ country_event = {
 	
 	
 	option = {
-		#placeholder
+		#Ignore me, I'm just a placeholder!
 	}
 	
 	

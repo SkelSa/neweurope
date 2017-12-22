@@ -1,0 +1,20 @@
+﻿##BATTLE EVENTS GO HERE##
+
+add_namespace = ne_battle
+
+##Kursk
+
+#############Battle events##################################################################
+country_event = {
+	id = ne_battle.1
+	title = ne_battle.1.t
+	desc = ne_battle.1.d
+	picture = GFX_report_event_ast_navy
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ne_battle.1.a
+	}
+}

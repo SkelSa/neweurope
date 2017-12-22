@@ -2,6 +2,8 @@
 # Finland Events
 ###########################
 
+##NEWEUROPE EDIT: State 722 to 783, added small event chain for lease of Hanko!
+
 add_namespace = finland
 
 # Soviet Ultimatum
@@ -319,7 +321,7 @@ country_event = {
 			}
 			transfer_state = 146
 			transfer_state = 147
-			transfer_state = 722
+			transfer_state = 783
 		}
 	}
 
@@ -354,7 +356,7 @@ country_event = {
 		white_peace = FIN
 		transfer_state = 146
 		transfer_state = 147
-		transfer_state = 722
+		transfer_state = 783
 	}
 
 	#Take it all
@@ -368,6 +370,10 @@ country_event = {
 			}			
 		}
 		FIN = { country_event = { id = finland.9 } }
+		
+		##Lease of Hanko
+		##FIN = { country_event = { id = ne_finland. } }
+		
 	}
 }
 

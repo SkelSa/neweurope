@@ -1,6 +1,8 @@
 ﻿##New events by SkelSa here!
 
 add_namespace = ne_skelsa
+add_namespace = ne_finland
+add_namespace = ne_fin_harbor
 
 
 ##Brother Hao joins the PLA
@@ -47,19 +49,19 @@ country_event = {
 }
 
 
+
 ##For new file: NewEurope_Finland
 
+##Lease of Hanko (after Winter War)
 
-##Join the war against the USSR. Decalre on yourself and give military access to germany
 
+##Join the war against the USSR. Declare on SOV and give military access to germany
 country_event = {
 	id = ne_finland.1
 	title = ne_finland.1.t
 	desc =  ne_finland.1.d
 	picture = GFX_somepic
 
-	hidden = yes
-	is_triggered_only = yes
 	fire_only_once = yes
 
 	
@@ -71,6 +73,12 @@ country_event = {
 			exists = yes
 			is_subject = no
 			NOT = { has_war_with = SOV }
+		}
+		
+		GER = {
+			exists = yes
+			is_faction_leader = yes 
+			has_government = fascism
 		}
 		
 		NOT = {		
@@ -88,7 +96,7 @@ country_event = {
 
 	
 	option = { # join the war
-		name = event.1.a
+		name = ne_finland.1.a
 		ai_chance = {
 			factor = 100
 		
@@ -102,14 +110,15 @@ country_event = {
 			}			
 		}
 
-		##send message to the Germans
-		## 	FIN = { give_military_access = GER }
+		hidden_effect = {
+			country_event = ne_finland.2			
+		}				
 		
 	}
 	
 	
-	option = { # stay out of it
-		name = event.1.b
+	option = { # stay out of it, war is hell
+		name = ne_finland.1.b
 		ai_chance = {
 			factor = 0
 		
@@ -122,10 +131,190 @@ country_event = {
 			}			
 		}
 		
-		add_political_power = 25
+		add_political_power = -30
+		add_national_unity = -0.05
+		add_named_threat = { threat = -5 name = threat_ne_finland_neutrality }
 		
 	}
 	
+	
+}
+
+
+
+##Germany: Finland wants to help us!
+country_event = {
+	id = ne_finland.2
+	title = ne_finland.2.t
+	desc =  ne_finland.2.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	# very well finland
+		name = ne_finland.2.a
+		ai_chance = {
+			factor = 100
+			
+			modifier = {
+				factor = 50
+				
+				is_historical_focus_on = no		
+			}			
+		}
+
+		##Effects
+		add_opinion_modifier = { target = FIN modifier =  ally_fight_against_bolshevism }
+		FIN = { add_opinion_modifier = { target = GER modifier = ally_fight_against_bolshevism } }
+		
+		hidden_effect = {	
+			country_event = ne_finland.3				
+		}
+			
+	}
+	
+	
+	option = {	# we don't need your help
+		name = ne_finland.2.b
+		ai_chance = {
+			factor = 100
+			
+			modifier = {
+				factor = 50
+				
+				is_historical_focus_on = no	
+			}			
+		}
+		
+		##Effects
+		add_political_power = -5
+		FIN = { add_opinion_modifier = { target = GER modifier = refused_to_help } }
+
+		hidden_effect = {	
+			country_event = ne_finland.4					
+		}	
+	
+	}
+	
+	
+}
+
+
+
+##Finland: Germany has accepted + Start the War
+country_event = {
+	id = ne_finland.3
+	title = ne_finland.3.t
+	desc =  ne_finland.3.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	# start the tank engines, we go to war!
+		name = ne_finland.3.a
+
+		##Effects
+		add_political_power = 50
+		add_national_unity = 0.05
+		FIN = { give_military_access = GER }		
+		FIN = { declare_war_on = { target = SOV }  }
+		
+		add_named_threat = { threat = 4 name = threat_ne_continuation_war }
+	
+	
+	}
+	
+	
+}
+
+
+
+##Finland: Germany has rejected. Either cancel the war or do it nevertheless
+country_event = {
+	id =  ne_finland.4
+	title =  ne_finland.4.t
+	desc =  ne_finland.4.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#we will win nevertheless!
+		name =  ne_finland.4.a
+		ai_chance = { factor = 25 }
+
+		##Effects
+		add_political_power = 75
+		add_national_unity = 0.1		
+		FIN = { declare_war_on = SOV }
+		
+		add_named_threat = { threat = 4 name = threat_ne_continuation_war }
+			
+	}
+	
+	
+	option = {	# we cant do it without germany's help
+		name =  ne_finland.4.b
+		ai_chance = { factor = 75 }
+		
+		##Effects
+		add_political_power = -30
+		add_national_unity = -0.05	
+	
+	}
+	
+	
+}
+
+
+
+##Moscow Armistice
+
+
+
+
+##WW2 victims
+##Comments are always helpful
+country_event = {
+	id = ne_skelsa.1
+	title = ne_skelsa.1.t
+	desc =  ne_skelsa.1.d
+	picture = GFX_somepic
+
+	fire_only_once = yes
+
+	
+	trigger = {
+				
+		GER = {
+			exists = yes
+			is_subject = no
+			is_faction_leader = yes 
+			has_government = fascism
+		}
+		
+		has_war_with = GER
+		
+	}
+	
+	
+	mean_time_to_happen = {	hours = 6 }
+
+	
+	option = {	#dark times for our nation
+		name = ne_skelsa.1.a
+
+		##Effects
+		add_political_power = 15
+		set_country_flag = ww2_victim
+			
+	}
+
 	
 }
 
@@ -135,7 +324,29 @@ country_event = {
 
 
 
-##Armistice
+
+##Factions:
+
+##NATO was founded, stricter settings were enabled
+##distribute spirits and reduce democratic level to 55%
+
+
+
+
+##Country gets ready to join nato/wp spirit
+
+
+
+
+
+##Country is AI and has the Ready spirit and 85% popularity
+
+
+
+
+
+
+
 
 
 
@@ -143,9 +354,9 @@ country_event = {
 
 ##First flag change
 country_event = {
-	id = ne_skelsa.2
-	title = ne_skelsa.2.t
-	desc =  ne_skelsa.2.d
+	id = ne_flag.1
+	title = ne_flag.1.t
+	desc =  ne_flag.1.d
 	picture = GFX_somepic
 
 	hidden = yes
@@ -175,9 +386,15 @@ country_event = {
 	
 	
 	option = { # option one
-		name = ne_skelsa.2.a
+		name = ne_flag.1.a
 		
 		drop_cosmetic_tag = yes
+		
+	}
+	
+	option = { # option one
+		name = ne_flag.1.a
+		
 		
 	}
 	

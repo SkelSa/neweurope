@@ -15,12 +15,12 @@ country_event = {
 
 	
 	option = { # start settings
-		name = ne_settings_intro.1.a	
+		name = ne_settings_intro.1.a		
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.1
 		}
-		#sound_effect = nevent
+		
 	}
 
 	
@@ -39,7 +39,8 @@ country_event = {
 
 	
 	option = { # Names and Flags + USA/USSR
-		name = ne_settings_intro.1.a	
+		name = ne_settings_intro.1.a
+		custom_effect_tooltip = historical_settings_a
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.2
@@ -193,7 +194,8 @@ country_event = {
 		
 		hidden_effect = {
 			set_global_flag = names_chosen
-			country_event = ne_settings_intro.2
+			#country_event = ne_settings_intro.2
+			country_event = ne_settings.1
 		}
 	}
 	
@@ -691,6 +693,12 @@ country_event = {
 	option = { # yes, enable skelsas changes
 		name = ne_settings_intro.5.a
 		
+		trigger = {
+		
+			NOT = { has_global_flag = ne_skelsa_recommended }
+		
+		}
+		
 		add_political_power = 1
 			
 		##add flags which are not added yet
@@ -705,13 +713,43 @@ country_event = {
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.1
+			set_global_flag = ne_skelsa_recommended
+		}
+			
+	}
+	
+	
+	option = { # disable skelsas changes
+		name = ne_settings_intro.5.b
+		
+		trigger = {
+		
+			has_global_flag = ne_skelsa_recommended 
+		
+		}
+		
+		add_political_power = 1
+			
+		##add flags which are not added yet
+		if = {	limit = {  has_global_flag = names_chosen}  clr_global_flag = names_chosen	} 
+		if = {	limit = {  has_global_flag = leaders_chosen}  clr_global_flag = leaders_chosen	} 
+		if = {	limit = {  has_global_flag = USA_USSR_Long}  clr_global_flag = USA_USSR_Long	} 
+		if = {	limit = {  has_global_flag = Neutrality_chosen}  clr_global_flag = Neutrality_chosen	} 
+		if = {	limit = {  has_global_flag = ne_strict_faction}  clr_global_flag = ne_strict_faction	}
+		if = {	limit = {  has_global_flag = CPS_created} clr_global_flag = CPS_created	} 
+		if = {	limit = {  has_global_flag = ne_additional_rd_slot}  clr_global_flag = ne_additional_rd_slot	} 	
+		##not activated are: puppet ssrs, short USA, USSR name, Old Manager##
+		
+		hidden_effect = {
+			country_event = ne_settings_intro.1
+			clr_global_flag = ne_skelsa_recommended
 		}
 			
 	}
 	
 	
 	option = { # return to menu
-		name = ne_settings_intro.5.b
+		name = ne_settings_intro.5.c
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.1		
@@ -736,6 +774,24 @@ country_event = {
 	option = {
 		name = ne_settings_intro.6.a
 		#-Tooltip for GDR/WGR/IND color	
+		
+			trigger = {
+			
+				OR = {
+					has_global_flag = names_chosen
+					has_global_flag = leaders_chosen
+					has_global_flag = USA_USSR_Long
+					has_global_flag = USA_USSR_Short
+					has_global_flag = Neutrality_chosen
+					has_global_flag = ne_strict_faction
+					has_global_flag = CPS_created
+					has_global_flag = ne_puppet_SSR
+					has_global_flag = ne_additional_rd_slot
+					has_global_flag = ne_old_manager
+				}
+			
+			}
+		
 	
 			#Apply all of my changes and exit the settings menu
 			if = {
@@ -938,20 +994,19 @@ country_event = {
 				BHU = {add_ideas = NE_neutrality}
 				NEP = {add_ideas = NE_neutrality}
 				TIB = {add_ideas = NE_neutrality}				
-				##Can not join factions during winter war; but during Barbarossa
-				FIN = {add_timed_idea = { idea = NE_neutrality days = 1400} }				
+				FIN = {add_ideas = NE_neutrality}				
 			}
 			
 			
-			##Stricter faction joining rules
-			#if = {
-			#	limit = {
-			#		has_global_flag = ne_strict_faction
-			#	}
-			#	
-			#	##reduce popularity support in some countries
-			#	##event to remove american guarantee when guaranteed country is communist with 80% support					
-			#}
+			#Stricter faction joining rules
+			if = {
+				limit = {
+					has_global_flag = ne_strict_faction
+				}
+				
+				##reduce popularity support in some countries
+				##event to remove american guarantee when guaranteed country is communist with 80% support					
+			}
 
 			
 			##CPS creation
@@ -1106,6 +1161,32 @@ country_event = {
 				}						
 			}
 		
+	}
+	
+	
+	option = {
+		name = ne_settings_intro.6.a1
+
+		trigger = {
+		
+			AND = {
+			
+				NOT = {			
+					has_global_flag = names_chosen
+					has_global_flag = leaders_chosen
+					has_global_flag = USA_USSR_Long
+					has_global_flag = USA_USSR_Short
+					has_global_flag = Neutrality_chosen
+					has_global_flag = ne_strict_faction
+					has_global_flag = CPS_created
+					has_global_flag = ne_puppet_SSR
+					has_global_flag = ne_additional_rd_slot
+					has_global_flag = ne_old_manager					
+				}
+			}
+		}
+		
+					
 	}
 	
 	
