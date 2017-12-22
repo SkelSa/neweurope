@@ -913,7 +913,7 @@ country_event = {
 						skill = 4
 					}
 					
-					remove_unit_leader = "Mao Zedong"
+					remove_unit_leader = 1945
 					
 				}
 
