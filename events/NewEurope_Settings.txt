@@ -896,7 +896,7 @@ country_event = {
 				PRC = {
 				
 					create_country_leader = {
-						name = "Mao Zedong"
+						name = "Máo Zédōng"
 						desc = "POLITICS_MAO_ZEDONG_DESC"
 						picture = "Portrait_PRC_Mao_Zedong.dds"
 						expire = "1970.1.1"
@@ -907,11 +907,13 @@ country_event = {
 					}
 					
 					create_field_marshal = {
-						name = "Mao Zedong"
+						name = "Máo Zédōng"
 						picture = "Portrait_PRC_Mao_Zedong.dds"
 						traits = { defensive_doctrine }
 						skill = 4
 					}
+					
+					remove_unit_leader = "Mao Zedong"
 					
 				}
 
