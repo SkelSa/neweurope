@@ -1631,7 +1631,7 @@ focus_tree = {
 	focus = {
 		id = GER_around_maginot
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = GER_danzig_or_war focus = GER_poland_friend}
+		prerequisite = { focus = GER_danzig_or_war focus = GER_poland_friend }
 		
 		available = {
 		
@@ -1645,6 +1645,29 @@ focus_tree = {
 				NOT = { HOL = { is_in_faction_with = GER } }
 				NOT = { BEL = { is_in_faction_with = GER } }
 				NOT = { LUX = { is_in_faction_with = GER } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = condition_for_the_around_maginot_tt
+				OR = {
+					AND = {
+						has_war_with = POL
+						POL = { 
+							has_capitulated = yes
+							exists = yes
+						}
+					}
+					AND = {
+						NOT = { has_war_with = POL }
+						is_in_faction_with = POL
+						POL = { exists = yes }
+					}
+					AND = {
+						NOT = { has_war_with = POL }
+						controls_state = 85
+						controls_state = 765
+						POL = { exists = yes }
+					}
+				}
 			}
 		}
 

@@ -291,7 +291,7 @@ country_event = {
 	option = {
 		name = ne_takee.4.a
 		GER = { declare_war_on = { target = DAN type = annex_everything }   }
-		custom_effect_tooltip = GAME_OVER_TT
+		custom_effect_tooltip = GAME_OVER_TT ## Why did not you remove the tooltip effect? :D
 	}
 
 }
