@@ -3,6 +3,13 @@ l_english:
 
  ##Replace/Revise
  
+ ##Misc
+ FIN_agree_peace:0 "Finland agrees to Soviet demands and cedes §YKarjala, Salla and Kalastajasaarento§!."
+ 
+ ##Parties
+ PRC_communism_party:0 "CPC"
+ PRC_communism_party_long:0 "Communist Party of China"
+ 
  
  ##VANILLA EVENTS WITH PETSAMO IN IT
 
@@ -20,7 +27,6 @@ l_english:
  
  
  ##IDEAS
-
 
  NE_reparations:0 "War Reparations"
  NE_reparations_desc:0 "Europe is still in ruins. To repair and rebuild the damage the Germans caused from Bordeaux to Stalingrad, heavy war reparations against Germany were imposed by the Victorious Powers. Additionally, they will also guarantee that the Germans will never be able to disturb the peace of the world."
@@ -59,6 +65,30 @@ l_english:
  ne_finland.0.d:0 ""
  ne_finland.0.a:0 ""
  
+ #historical fixes events##
+ 
+ #Germany: Pressure on Bulgaria to join the Axis
+ ne_historical.1.t:0 "Pressure on Bulgaria"
+ ne_historical.1.d:0 "Our ally [ITA.GetLeader] is doing poorly in Greece and future invasion plans can't be postponed. Even though Greece is a small and weak country, we need to occupy it before the British can send reinforcements! It is time to bring Bulgaria into our alliance and fight the Greeks from their territory too. They will for sure join our alliance after we offer our rewards..."
+ ne_historical.1.a:0 "Put the pressure on them!"
+ ne_historical.1.b:0 "This is no real solution!"
+ #Bulgaria: Join Axis or not
+ ne_historical.2.t:0 "Germany demands that we sign the Tripartite Pact?"
+ ne_historical.2.d:0 "The German ambassadors have just arrived in our capital and told [BUL.GetLeader] that the Axis demands Bulgaria's entry into the alliance and a joint invasion of our southern neighbour. As a reward, they promised us several territories we lost after the Great War plus German economic and military aid. Do we accept?"
+ ne_historical.2.a:0 "We sign it."
+ ne_historical.2.b:0 "We will never be an Axis puppet!"
+ #Germany: Bulgaria agrees to join
+ ne_historical.3.t:0 "Bulgaria accepts!"
+ ne_historical.3.d:0 "[BUL.GetLeader] has accepted our proposal and Bulgaria is now part of the Axis!"
+ ne_historical.3.a:0 "Very good."
+ #Germany: Bulgaria refuses
+ ne_historical.4.t:0 "Bulgaria refuses?!"
+ ne_historical.4.d:0 "The ambassadors from Sofia have politely refused our proposal and stressed Bulgaria's desire to keep out of international affairs..."
+ ne_historical.4.a:0 "We made our warnings clear..."
+ ne_historical.4.b:0 "They would have been a useless ally anyways."
+ 
+ 
+ 
  
  ##Brother Hao
  ne_skelsa.1.t:0 "Brother Hao wants to join the PLA"
@@ -67,10 +97,30 @@ l_english:
  
  
  ##WW2 Victim
- ne_skelsa.1.t:0 "The Fascists have declared War on Us!"
- ne_skelsa.1.d:0 "The vile fascists have decided to attack our beautiful and proud country! We have to resist at all costs!"
- ne_skelsa.1.a:0 "This is our darkest hour!"
+ ne_skelsa.2.t:0 "The Fascists have declared War on Us!"
+ ne_skelsa.2.d:0 "The vile fascists have decided to attack our beautiful and proud country! We have to resist at all costs!"
+ ne_skelsa.2.a:0 "Our darkest hour..."
  
+ ##Lease of Finnish Port
+ ne_fin_harbor.1.t:0 "Lease of Finnish Ports"
+ ne_fin_harbor.1.d:0 "According to the Moscow Peace Treaty, we are allowed to use Finnish ports as a military leasehold. The naval ports of Hanko and Porkalla located on the Gulf of Finland seem suited enough to support our Baltic Fleet and thus extend our range in the Baltic Sea.\nNo matter which port we choose, the lease contract, which all parties agreed on, will expire in 30 years and then the port will be Finnish again. Most of our experts predict that Hanko might be the best choice but of course they will accept your final decision."
+ ne_fin_harbor.1.a:0 "Hanko is our choice."
+ ne_fin_harbor.1.b:0 "Let's decide for Porkalla!"
+ ne_fin_harbor.1.c:0 "Why not both?"
+ ne_fin_harbor.1.e:0 "We have acquired enough territory already."
+ ##Finland: Info-Event about lost ports
+ ne_fin_harbor.2.t:0 "Soviets lease a naval base"
+ ne_fin_harbor.2.t1:0 "The USSR demands the lease of Hanko Peninsula"
+ ne_fin_harbor.2.t2:0 "The USSR demands the lease of Porkalla Peninsula"
+ ne_fin_harbor.2.t3:0 "The USSR demands the lease of Hanko and Porkalla"
+ ne_fin_harbor.2.t4:0 "The Soviets are not interested in our ports!"
+ ne_fin_harbor.2.d1:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. The Soviet government has just announced their interest in using the peninsula near Hanko as a new base for the Red Fleet. Our military has already cleared the area and civilians have been evacuated. We will hopefully get our port back in 30 years after the contract has expired..."
+ ne_fin_harbor.2.d2:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. The Soviet government has just announced their interest in using the peninsula near Porkalla as a new base for the Red Fleet. Even though we hoped that they would decide for the Hanko peninsula as Porkalla is just right next to Helsinki, we have no choice but to accept this decision. Our military has already cleared the area and civilians have been evacuated. We will hopefully get our port back in 30 years after the contract has expired..."
+ ne_fin_harbor.2.d3:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. The Soviet government has just announced their interest in using both naval bases, Hanko and Porkalla, for the Red Fleet. The message from the Kremlin has caused heated debates among our politicians and people have already protested on the streets, but unfortunately we have no choice but to accept this decision. Our military has already cleared the area and civilians have been evacuated. We will hopefully get our ports back in 30 years after the contract has expired..."
+ ne_fin_harbor.2.d4:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. However, the Soviet government has just announced to drop this plan and now they're not interested anymore in a lease contract. Exact reasons for this decision are still unknown but it's probably a gesture of friendship towards us.\nEen though Finland lost a lot of valuable territory, we still get to keep our ports."
+ ne_fin_harbor.2.a:0 "Let's hope that they keep their word..."
+ ne_fin_harbor.2.b:0 "Damn imperialists!"
+ ne_fin_harbor.2.c:0 "This was a surprising move."
  
  ##finland continuation war
  ne_finland.1.t:0 "The Continuation War"
@@ -88,6 +138,9 @@ l_english:
  ne_finland.4.d:0 "Fucking Nazis"
  ne_finland.4.a:0 "We can do it on our own"
  ne_finland.4.b:0 "This is then too risky"
+ 
+ ##Moscow Armistice
+ 
  
  
  ##Yugoslavia
@@ -222,7 +275,11 @@ l_english:
  ##Headline
  ally_fight_against_bolshevism:0 "Partner in our war against the USSR"
  refused_to_help:0 "They decided not to help us!"
- 
+ lost_finnish_territories:0 "The Soviets took rightful Finnish territory from us!"
+ forced_lease_hanko:0 "Hanko is Soviet"
+ forced_lease_porkalla:0 "Porkalla is Soviet"
+ forced_lease_hanko_porkalla:0 "Hanko and Porkalla are Soviet"
+ moscow_armistice:0 "USSR and Finland agreed to make peace!"
  
  ##Threats:
  

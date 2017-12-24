@@ -28,6 +28,33 @@ country_event = {
 	
 }
 
+
+
+##Play track when Sino-Japanese War starts
+country_event = {
+	id = ne_hidden.7
+
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {	
+		JAP = { has_war_with = CHI }
+		JAP = { has_war_with = SHX }	
+	}
+
+	immediate = {
+		sound_effect = sino_japanese_war
+	}
+
+    option = {
+		#
+    }
+
+	
+}
+
+
+
 ##Vichy France gets new color and name when flag was activated
 country_event = {
 	id = ne_hidden.6
@@ -49,23 +76,32 @@ country_event = {
 		
 	}
 
-	mean_time_to_happen = {	days = 20 }
+	
+	immediate = {	##Add cosmetic tag to Vichy
+	
+		every_country = {
+			limit = {
+				original_tag = FRA
+				NOT = { TAG = FRA }
+			}
+			
+			set_cosmetic_tag = NE_VICHY
+		}
 
+	}
 	
     option = {
-		##Add cosmetic tag to Vichy
-			every_country = {
-				limit = {
-					original_tag = FRA
-					NOT = { TAG = FRA }
-				}
-				
-				set_cosmetic_tag = NE_VICHY
-			}	
+	
+		#
+		
     }
 
 	
 }
+
+
+
+##Same happens to Franco's Spain + NE_neutrality EDIT
 
 
 
@@ -77,9 +113,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	
 		SOV = {
 			has_idea = stalins_death
 		}
+		
 	}
 
 	mean_time_to_happen = { days = 105 }

@@ -1053,10 +1053,10 @@ country_event = {
 		}
 	}
 	##REMOVE THIS OPTION SOON
-	option = {
-		name = "CIRCUMVENT BUG"
+	#option = {
+	#	name = "CIRCUMVENT BUG"
 	#
-	}
+	#}
 }
 
 # France national focus -  requests to join commitern
@@ -1176,7 +1176,8 @@ country_event = {
 		
 	option = {
 		name = soviet.31.a
-		FIN = { country_event = { days = 2 id = finland.1 } }
+		##NE_Winter_War
+		FIN = { country_event = { days = 2 id = ne_winter_war.1 } }
 	}
 	option = {
 		name = soviet.31.b

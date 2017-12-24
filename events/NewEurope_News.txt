@@ -213,7 +213,7 @@ news_event = {
 	immediate {
 	
 		hidden_effect = { GER = {  	kill_country_leader = yes 
-					create_country_leader = { name = "Enraged Hitler" desc = "hitler_enraged_desc" picture = "Portrait_Enraged_Hitler.dds" expire = "1999.1.1" ideology = nazism traits = { enraged_hitler } } 
+					create_country_leader = { name = "Enraged Hitler" desc = "hitler_enraged_desc" picture = "Portrait_GER_Enraged_Hitler.dds" expire = "1999.1.1" ideology = nazism traits = { enraged_hitler } } 
 
 						}
 		

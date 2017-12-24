@@ -2609,3 +2609,9 @@ sound =
 	name = "communist_party"
 	file = "menu/communist_party.wav"
 }
+
+sound = 
+{
+	name = "sino_japanese_war"
+	file = "menu/sino_japanese_war.wav"
+}

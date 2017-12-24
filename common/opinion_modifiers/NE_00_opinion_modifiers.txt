@@ -212,16 +212,36 @@ opinion_modifiers = {
 	pol_agree = {
 		value = 40
 	}
-
+	
 	pol_disagree = {
-		value = -25
+		value = -20
+	}
+
+	ally_fight_against_bolshevism = {
+		value = 30
 	}
 	
 	refused_to_help = {
 		value = -15
 	}
 	
-	ally_fight_against_bolshevism = {
+	lost_finnish_territories = {
+		value = -15
+	}
+	
+	forced_lease_hanko = {
+		value = -10
+	}
+	
+	forced_lease_porkalla = {
+		value = -10
+	}
+	
+	forced_lease_hanko_porkalla = {
+		value = -20
+	}
+	
+	moscow_armistice = {
 		value = 25
 	}
 	

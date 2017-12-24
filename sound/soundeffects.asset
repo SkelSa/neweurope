@@ -2339,3 +2339,14 @@ soundeffect =
 	max_audible = 1
 	max_audible_behaviour = fail
 }
+
+soundeffect =
+{
+	name = "sino_japanese_war"
+	volume = 0.85
+	sounds = {
+		sound = "sino_japanese_war"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}

@@ -32,8 +32,8 @@ NE_INDIA = {
 }
 
 NE_VICHY = {
-    color = rgb { 255  90  0 }
-    color_ui = rgb { 255  90  0 }
+    color = rgb { 0 0 240 }
+    color_ui = rgb { 0 0 240 }
 }
 
 NE_KOR = {
