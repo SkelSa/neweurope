@@ -104,7 +104,7 @@
   ne_takee.4.t:0 "Danzig is now under German control"
   ne_takee.4.d:0 "Our territory now belongs to a part of Germany, and it's good or bad - time will tell"
   ne_takee.4.a:0 "We'll see..."
-  ne_takee.4.a:0 "We will never be part of Germany!"
+  ne_takee.4.b:0 "We will never be part of Germany!"
 
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################

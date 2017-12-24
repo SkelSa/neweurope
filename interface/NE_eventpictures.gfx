@@ -188,3 +188,13 @@ spriteTypes = {
 		name = "GFX_news_berlin_wall"
 		texturefile = "gfx/event_pictures/news_berlin_wall.dds"
 	}
+
+	spriteType = {
+		name = "GFX_peking_plan"
+		texturefile = "gfx/event_pictures/peking_plan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_poland_grom"
+		texturefile = "gfx/event_pictures/poland_grom.dds"
+	}

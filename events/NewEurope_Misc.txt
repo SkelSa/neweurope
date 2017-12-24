@@ -1455,7 +1455,7 @@ country_event = {
 	id = ne_misc.22
 	title = ne_misc.22.t
 	desc = ne_misc.22.d
-    picture = GFX_report_event_ast_navy
+    picture = GFX_poland_grom
 
 	fire_only_once = yes
 
@@ -1518,7 +1518,7 @@ country_event = {
 	id = ne_misc.23
 	title = ne_misc.23.t
 	desc = ne_misc.23.d
-    picture = GFX_report_event_ast_navy
+    picture = GFX_poland_grom
 
 	fire_only_once = yes
 
@@ -1533,7 +1533,7 @@ country_event = {
 				target = ENG
 			}
 			transfer_ship = {
-				prefer_name = "ORP Blyskawica"
+				prefer_name = "ORP Błyskawica"
 				type = destroyer
 				target = ENG
 			}
@@ -1543,7 +1543,7 @@ country_event = {
 				target = ENG
 			}
 		}
-		hidden_effect = { POL = { country_event = { days = 1 id = ne_misc.24 } } }
+		hidden_effect = { POL = { country_event = { hours = 1 id = ne_misc.24 } } }
 		custom_effect_tooltip = peking_plan.1.tt
 	}
 }
@@ -1554,7 +1554,7 @@ country_event = {
 	id = ne_misc.24
 	title = ne_misc.24.t
 	desc = ne_misc.24.d
-	picture = GFX_report_event_ast_navy
+	picture = GFX_peking_plan
 
 	fire_only_once = yes
 
