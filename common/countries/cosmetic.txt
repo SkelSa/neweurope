@@ -138,3 +138,10 @@ NE_KGZ_SSR = {
 	color_ui = rgb { 136 15 25 }
 }
 
+NE_IND_BUR = {
+	color = rgb { 232 131 0 }
+	color_ui = rgb { 232 131 0 }
+}
+
+	
+

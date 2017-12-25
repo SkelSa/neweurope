@@ -292,3 +292,57 @@ country_event = {
 
 	
 }
+
+
+country_event = {
+	id = ne_hidden.9
+
+	hidden = yes
+
+	trigger = {
+		AND = {
+			BUR = {
+				exists = yes
+				is_puppet_of = RAJ
+			}
+		}
+		NOT = { BUR = { has_cosmetic_tag = NE_IND_BUR } }
+	}
+
+	immediate = {
+		BUR = { set_cosmetic_tag = NE_IND_BUR }
+	}
+
+    option = {
+		#
+    }
+
+	
+}
+
+country_event = {
+	id = ne_hidden.9
+
+	hidden = yes
+
+	trigger = {
+		AND = {
+			BUR = {
+				exists = yes
+				NOT = { 
+					is_puppet_of = RAJ
+				}
+			}
+		}
+	}
+
+	immediate = {
+		BUR = { drop_cosmetic_tag = yes }
+	}
+
+    option = {
+		#
+    }
+
+	
+}
