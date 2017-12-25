@@ -62,6 +62,29 @@ bookmarks = {
 				SOV_war_with_uk
 			}	
 		}
+		"CHI"={
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				german_advisors
+				CHI_communist_uprisings
+			}
+			focuses = {
+				deterrence
+				nationalism_focus
+			}	
+		}
+		"PRC"={
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				# No ideas
+			}
+			focuses = {
+				internationalism_focus
+				political_commissars
+			}	
+		}
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"

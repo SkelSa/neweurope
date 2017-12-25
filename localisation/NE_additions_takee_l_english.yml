@@ -184,6 +184,11 @@
  ne_news.33.a:0 "Welcome!"
 
  ######################################################################################################################################
+ ########################################################COUNTRY SELECT DESCRIPTION####################################################
+ ##Description for both Chinese
+ CHI_GATHERING_STORM_DESC:0 "The Kuomintang regime under Chiang Kai-shek was at the peak of its power, having driven Mao Tse-tung's Communists on their grueling 6,000 mile march to Shaanxi and established themselves as the most powerful force in Chinese politics. It seemed that China was at last united under a stable, modernizing regime, ready to bring the country into the 20th century after years of humiliation at the hands of stronger countries. However, it faced a severe challenge: an increasingly belligerent and imperialist Japan desiring to expand its resource base at China's expense. Having already conceded control of Manchuria to the Japanese in 1931, China seems destined for further clashes with the island nation, yet in early 1936 Chiang shows no signs of letting up in his civil war against the Communists. The question China must now face is a sore one: when and if Japan continues her expansion, will the Nationalists fight, or will China be humiliated yet again?"
+
+ ######################################################################################################################################
  #########################################################NEW STATES###################################################################
 
 
@@ -216,6 +221,17 @@
  BUR_ENG_autonomy_colony_DEF:0 "The British Burma"
  BUR_ENG_autonomy_puppet_DEF:0 "The British Burma"
  BUR_ENG_autonomy_integrated_puppet_DEF:0 "The British Burma"
+
+ BUR_RAJ_autonomy_satellite:0 "Indian Myanmar"
+ BUR_RAJ_autonomy_satellite_DEF:0 "Indian Myanmar"
+ BUR_RAJ_autonomy_dominion:0 "Indian Myanmar"
+ BUR_RAJ_autonomy_colony:0 "Indian Myanmar"
+ BUR_RAJ_autonomy_puppet:0 "Indian Myanmar"
+ BUR_RAJ_autonomy_integrated_puppet:0 "Indian Myanmar"
+ BUR_RAJ_autonomy_dominion_DEF:0 "The Indian Myanmar"
+ BUR_RAJ_autonomy_colony_DEF:0 "The Indian Myanmar"
+ BUR_RAJ_autonomy_puppet_DEF:0 "The Indian Myanmar"
+ BUR_RAJ_autonomy_integrated_puppet_DEF:0 "The Indian Myanmar"
 
  POZ_fascism:0 "Polish Occupation Zone"
  POZ_fascism_DEF:0 "The Polish Occupation Zone"
