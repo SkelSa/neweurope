@@ -355,5 +355,8 @@ country_event = { ##A new research slot for USSR event
 			SOV = { add_opinion_modifier = { target = PREV modifier = execution_of_german_scientists_alliesreaction } }
 		}
 		add_opinion_modifier = { target = WGR modifier = execution_of_german_scientists_wgrreaction }
+		hidden_effect = {
+			news_event = { id = ne_news.34 days = 1 }
+		}
 	}
 }

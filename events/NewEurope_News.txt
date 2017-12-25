@@ -2481,8 +2481,6 @@ news_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
-
 	trigger = {
 		AND = {
 			tag = USA
@@ -2511,8 +2509,6 @@ news_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
-
 	trigger = {
 		AND = {
 			tag = USA
@@ -2532,6 +2528,59 @@ news_event = {
 	}
 }
 
+
+####Execution of the Germans scientist####
+news_event = {
+	id = ne_news.34
+	title = ne_news.34.t
+	desc = ne_news.34.d
+	# picture = GFX_scientistexecution
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ne_news.34.a
+		trigger = {
+			tag = SOV
+		}
+	}
+
+	option = {
+		name = ne_news.34.b
+		trigger = {
+			AND = { 
+				has_government = democratic
+				NOT = { OR = { tag = SOV tag = WGR tag = DDR } }
+			}
+		}
+	}
+
+	option = {
+		name = ne_news.34.c
+		trigger = {
+			tag = WGR
+		}
+	}
+
+	option = {
+		name = ne_news.34.c
+		trigger = {
+			tag = DDR
+		}
+	}
+
+	option = {
+		name = ne_news.34.c
+		trigger = {
+			AND = {
+				has_government = communism
+				NOT = { OR = { tag = SOV tag = WGR tag = DDR } }
+			}
+		}
+	}
+}
 
 
 
