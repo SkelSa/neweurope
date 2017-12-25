@@ -9,13 +9,14 @@ add_namespace = ne_historical
 ##historical focus is on check!
 
 
-##Germany can only do "Around the Maginot" after POL has capitulated
+##GERMANY CAN ONLY DO "AROUND THE MAGINOT" AFTER POL HAS CAPITULATED##
 
 #-Done in Germany's focus tree!
 
 
-
+########################################
 ##BULGARIA JOINS THE AXIS (NOT HIDDEN)##
+########################################
 
 ##Germany: Need access to Greece via Bulgaria
 country_event = {
@@ -161,6 +162,7 @@ country_event = {
 }
 
 
+
 ##Germany: Bulgaria agrees
 country_event = {
 	id = ne_historical.3
@@ -184,6 +186,7 @@ country_event = {
 	
 	
 }
+
 
 
 ##Germany: Bulgaria refuses
@@ -223,7 +226,10 @@ country_event = {
 	
 }
 
+
+###############################################
 ##FIN FIGHTS THE WINTER WAR INSTEAD OF PEACE!##
+###############################################
 
 ##Copied from vanilla
 #NE Edit: Soviet Ultimatum
@@ -271,6 +277,7 @@ country_event = {
 		}
 	}
 }
+
 
 
 #NE Edit: Surrender when Soviet has taken too much land
@@ -331,7 +338,7 @@ country_event = {
 
 #Soviet response to Finish surrender
 country_event = {
-	id = finland.8
+	id = ne_winter_war.3
 	title = finland.8.t
 	desc = finland.8.d
 	picture = GFX_report_event_finnish_soldiers_snow
@@ -350,7 +357,7 @@ country_event = {
 		##State Change
 		transfer_state = 783
 		
-		##Motivate Players to take more
+		##Motivate Players to take this
 		add_political_power = 60
 		
 		##Lease of Hanko
@@ -358,7 +365,7 @@ country_event = {
 		
 	}
 
-	#Take it all
+	#Ignore the offer
 	option = {
 		name = finland.8.b
 		ai_chance = {
@@ -374,19 +381,138 @@ country_event = {
 }
 
 
-
-##YUG JOINS ALLIES INSTEAD OF AXIS##
-
-
-##No war over Transylvania
+###################################################
+##YUG JOINS ALLIES INSTEAD OF AXIS#################
+###################################################
 
 
-##Siam joins JAP if CHI has capitulation_progress
-
-##demand indochina focus
 
 
-##USA declares War against JAP and Germany
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################################################
+##No war over Transylvania#########################
+###################################################
+
+
+
+
+
+
+
+
+
+
+###################################################
+##SIAM JOINS JAP IF CHI HAS CAPITULATION_PROGRESS##
+###################################################
+
+# Pressure Siam to become a puppet
+country_event = {
+	##Has to be "Japan.11" due to focus tree!
+	id = japan.11
+	title = japan.11.t
+	desc = japan.11.d
+	picture = GFX_report_event_japanese_officers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		JAP = { focus_progress = { focus = siamese_puppet_focus progress > 0.90 }  }		
+	}
+	
+	option = {
+		name = japan.11.a
+		SIA = { 
+			country_event = { id = ne_japan.12 }
+		}
+	}
+
+	option = {
+		name = japan.11.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+
+# Siam event from Japan: Become puppet or not
+country_event = {
+	id = ne_japan.12
+	title = japan.12.t
+	desc = japan.12.d
+	picture = GFX_report_event_japanese_officers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.12.a
+		ai_chance = {
+			factor = 100 
+			modifier = {
+				#New Europe: Modified, SIA should decline when war against CHI is victorious
+				factor = 0
+					OR = {
+						JAP = { surrender_progress > 0.02 }				
+						
+						if = { 
+							limit = { 
+								JAP = { has_war_with = CHI }
+								is_historical_focus_on = yes
+							}
+							
+							CHI = { surrender_progress < 0.05 }
+							PRC = { surrender_progress < 0.05 }
+						}					
+					
+					}
+				#strength_ratio = { ##NewEurope: Not 
+				#	tag = JAP
+				#	ratio > 0.75
+				#}
+				
+			}
+		}
+		JAP = { 
+			country_event = { id = japan.13 }
+			effect_tooltip = { puppet = SIA }
+		}
+	}
+
+	option = {
+		name = japan.12.b
+		ai_chance = { factor = 10 }
+		JAP = { 
+			country_event = { id = japan.14 }
+			effect_tooltip = {
+				declare_war_on = {
+					target = SIA
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+}
+
+
+
+##JAP does Pearl Harbor!
+
+
+
+
 
 
 

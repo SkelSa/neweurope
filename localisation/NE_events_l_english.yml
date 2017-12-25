@@ -713,7 +713,7 @@
  ne_wp.1.b:0 "The Comintern will suffice..."
  ##Invitation for WP
  ne_wp.2.t:0 "The Warsaw Pact"
- ne_wp.2.d:0 "As a fellow communist nation the Soviets offered us to join their new faction. If we accept, they will protect us from any invasion and war declaration. However, we are also bound to help if Mother Russia is attacked..."
+ ne_wp.2.d:0 "As a fellow communist nation the Soviets offered us to join their faction. If we accept, they will protect us from any invasion and war declaration. However, we are also bound to help if Mother Russia is attacked..."
  ne_wp.2.a:0 "Workers of the world, unite!"
  ne_wp.2.b:0 "We better stay neutral"
  ##Country says yes to WP
@@ -745,7 +745,7 @@
  ne_nato.13.a:0 "Those tea suckers!"
  ##Invitation for NATO
  ne_nato.2.t:0 "America wants us to join NATO"
- ne_nato.2.d:0 "As a fellow democracy the United States has offered us to join their new faction. If we accept, they will protect us from any communist invasion and war declaration. However, we are also bound to help if America is under attack."
+ ne_nato.2.d:0 "As a fellow democracy the United States has offered us to join their faction. If we accept, they will protect us from any communist invasion and war declaration. However, we are also bound to help if America is under attack..."
  ne_nato.2.a:0 "We need America's protection!"
  ne_nato.2.b:0 "Communists don't bother us, leave alone world wars..."
  ##Country says yes to NATO

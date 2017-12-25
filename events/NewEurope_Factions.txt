@@ -486,7 +486,7 @@ country_event = {
 					OR = {
 						has_government = communism
 						exists = yes
-						is_puppet_of = SOV
+						is_subject_of = SOV
 					} 
 				
 				}
@@ -503,7 +503,7 @@ country_event = {
 					AND = {
 						has_government = communism} 
 						exists = yes
-						is_puppet_of = SOV
+						is_subject_of = SOV
 					}
 				}
 			SOV = { give_guarantee = TAN }
@@ -511,31 +511,11 @@ country_event = {
 		}
 		
 		if = {
-			limit = { 
-			
-			FIN = {
-			
-				OR = {
-					has_government = communism 
-					exists = yes					
-					is_puppet_of = SOV
-				}
-			}
-			
-			}
-			
-			FIN = {country_event = { days = 4 id = ne_wp.2 } }
-			
-		}
-		
-		
-		
-		if = {
 				limit = { CZE = {
 				
 				OR = {
 					has_government = communism 
-					is_puppet_of = SOV
+					is_subject_of = SOV
 				}
 			}
 			
@@ -552,7 +532,7 @@ country_event = {
 				
 					OR = {
 						has_government = communism 
-						is_puppet_of = SOV
+						is_subject_of = SOV
 					}
 				}
 				
@@ -568,7 +548,7 @@ country_event = {
 				
 				OR = {
 					has_government = communism 
-					is_puppet_of = SOV
+					is_subject_of = SOV
 				}
 			}
 			
@@ -583,7 +563,7 @@ country_event = {
 				
 				OR = {
 				has_government = communism 
-				is_puppet_of = SOV
+				is_subject_of = SOV
 				}
 			}
 			
@@ -597,7 +577,7 @@ country_event = {
 				
 				OR = {
 				has_government = communism 
-				is_puppet_of = SOV
+				is_subject_of = SOV
 				}
 			}
 			
@@ -610,7 +590,7 @@ country_event = {
 				limit = { DDR = {				
 				OR = {
 					has_government = communism
-					is_puppet_of = SOV
+					is_subject_of = SOV
 				}
 			}
 			
@@ -620,13 +600,13 @@ country_event = {
 		}
 		
 		if = {
-			limit = { POL = {			
-				OR = {
-					has_government = communism
-					is_puppet_of = SOV
-				}
-			}
-			
+			limit = { 			
+				POL = {			
+					OR = {
+						has_government = communism
+						is_subject_of = SOV
+					}
+				}			
 			}
 			POL = { country_event = { days = 5 id = ne_wp.2 } }
 			
@@ -638,12 +618,35 @@ country_event = {
 				ALB = {				
 					OR = {
 						has_government = communism 
-						is_puppet_of = SOV
+						is_subject_of = SOV
 					}
 				}		
 			}
 			ALB = { country_event = { days = 5 id = ne_wp.2 } }			
 		}
+		
+		every_country = { 
+			limit = {
+				is_subject_of = SOV
+				
+				NOT = {
+					tag = ALB
+					tag = POL
+					tag = DDR
+					tag = HUN
+					tag = BUL
+					tag = ROM
+					tag = CZE
+					tag = YUG
+					tag = MON
+					tag = TAN					
+				}
+			}
+			
+			country_event = { days = 5 id = ne_wp.2 }
+		}
+		
+		
 		
 		hidden_effect = {	
 			news_event = { days = 4 id = ne_news.18 }
@@ -651,6 +654,7 @@ country_event = {
 		}
 		
 	}
+	
 	
 	option = { # NO
 		name = ne_wp.1.b
@@ -660,12 +664,11 @@ country_event = {
 	}
             
             	
-	
 }
 
 
-####Asked countries can answer here!
-####communism
+
+####Asked countries can answer here! COMMUNISM
 country_event = {
 	id = ne_wp.2
 	title = ne_wp.2.t
@@ -732,7 +735,6 @@ country_event = {
 	desc =  ne_wp.3.d
 	picture = GFX_report_event_soviet_invasion_map
 	
-	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
 	#disabled, otherwise only one country gets the event
@@ -756,7 +758,6 @@ country_event = {
 	desc =  ne_wp.4.d
 	picture = GFX_report_event_soviet_invasion_map
 	
-	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
 	

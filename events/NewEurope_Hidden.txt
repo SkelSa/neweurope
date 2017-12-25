@@ -10,9 +10,7 @@ country_event = {
 
 	trigger = {
 	
-		RAJ = {
-			is_subject = no
-		}
+		RAJ = { is_subject = no }
 		has_global_flag = names_chosen
 		
 	}
@@ -27,81 +25,6 @@ country_event = {
 
 	
 }
-
-
-
-##Play track when Sino-Japanese War starts
-country_event = {
-	id = ne_hidden.7
-
-	hidden = yes
-	fire_only_once = yes
-
-	trigger = {	
-		JAP = { has_war_with = CHI }
-		JAP = { has_war_with = SHX }	
-	}
-
-	immediate = {
-		sound_effect = sino_japanese_war
-	}
-
-    option = {
-		#
-    }
-
-	
-}
-
-
-
-##Vichy France gets new color and name when flag was activated
-country_event = {
-	id = ne_hidden.6
-
-	hidden = yes
-	fire_only_once = yes
-
-	trigger = {
-	
-		FRA = {
-			exists = yes
-			has_capitulated = yes
-			has_war_with = GER
-			has_civil_war = yes
-		}
-
-		has_global_flag = names_chosen
-		
-		
-	}
-
-	
-	immediate = {	##Add cosmetic tag to Vichy
-	
-		every_country = {
-			limit = {
-				original_tag = FRA
-				NOT = { TAG = FRA }
-			}
-			
-			set_cosmetic_tag = NE_VICHY
-		}
-
-	}
-	
-    option = {
-	
-		#
-		
-    }
-
-	
-}
-
-
-
-##Same happens to Franco's Spain + NE_neutrality EDIT
 
 
 
@@ -138,8 +61,7 @@ country_event = {
 country_event = {
 	id = ne_hidden.2
 	
-	hidden = yes
-	
+	hidden = yes	
 	is_triggered_only = yes
 	
 	option = {		
@@ -149,7 +71,10 @@ country_event = {
 
 
 
+##########################################
 ##MERGE EVENTS (HIDDEN)###################
+##########################################
+
 
 ##Best Korea is more democratic than usual
 country_event = {
@@ -259,4 +184,111 @@ country_event = {
 	option = {		##first option is NATO heavy resistance, second option is little resistance
 		random_list = { 40 = { news_event = { id = ne_news.22 }  } 60 = { news_event = { id = ne_news.23 }  } } 	
 	}
+}
+
+##Vichy France gets new color and name when flag was activated
+country_event = {
+	id = ne_hidden.6
+
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+	
+		FRA = {
+			exists = yes
+			has_capitulated = yes
+			has_war_with = GER
+			has_civil_war = yes
+		}
+
+		has_global_flag = names_chosen
+		
+		
+	}
+
+	
+	immediate = {	##Add cosmetic tag to Vichy
+	
+		every_country = {
+			limit = {
+				original_tag = FRA
+				NOT = { TAG = FRA }
+			}
+			
+			set_cosmetic_tag = NE_VICHY
+		}
+	}
+	
+    option = {	
+		#	
+    }
+
+	
+}
+
+##Same happens to Franco's Spain + NE_neutrality EDIT
+country_event = {
+	id = ne_hidden.7
+
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+	
+		SPR = {
+			exists = yes
+			has_government = communism
+			has_civil_war = yes
+		}
+
+		has_global_flag = names_chosen				
+	}
+
+	
+	immediate = {	##Add cosmetic tag to Franco
+	
+		every_country = {
+			limit = {
+				original_tag = SPR
+				NOT = { TAG = SPR }
+			}
+			
+			set_cosmetic_tag = NE_SPS
+			
+			if = { limit = { has_global_flag = Neutrality_chosen } add_ideas = NE_neutrality }
+			
+		}
+	}
+	
+    option = {	
+		#	
+    }
+
+	
+}
+
+
+##Play track when Sino-Japanese War starts
+country_event = {
+	id = ne_hidden.8
+
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {	
+		JAP = { has_war_with = CHI }
+		JAP = { has_war_with = SHX }	
+	}
+
+	immediate = {
+		CHI = { sound_effect = sino_japanese_war }
+		PRC = { sound_effect = sino_japanese_war }
+	}
+
+    option = {
+		#
+    }
+
+	
 }

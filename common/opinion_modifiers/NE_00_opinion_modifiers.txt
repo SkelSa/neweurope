@@ -24,6 +24,10 @@ opinion_modifiers = {
 		value = -25
 	}
 	
+	refused_warsaw_pact_membership = {
+		value = -25
+	}
+	
 	dissolved_allies = {
 		value = 10
 	}
@@ -34,8 +38,12 @@ opinion_modifiers = {
 	
 	refused_nato = {
 		value = -25
-	}
+	}	
 	
+	refused_nato_membership = {
+		value = -25
+	}
+
 	accepted_austrian_reunification = {
 		value = 25
 	}

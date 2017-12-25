@@ -388,7 +388,7 @@ ideas = {
 						has_idea = NE_ready_nato
 					}
 					
-					#country_event = { id =  }
+					country_event = { days = 1 id = ne_faction.8 }
 				}
 				
 			}
@@ -429,7 +429,7 @@ ideas = {
 						has_idea = NE_ready_wp
 					}
 					
-					#country_event = { id =  }
+					country_event = { days = 1 id = ne_faction.8 }
 				}
 				
 			}

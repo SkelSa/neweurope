@@ -6,6 +6,8 @@ l_english:
  ##Misc
  FIN_agree_peace:0 "Finland agrees to Soviet demands and cedes §YKarjala, Salla and Kalastajasaarento§!."
  
+ ne_strict_faction:0 "Stricter Faction Rules were enabled"
+ 
  ##Parties
  PRC_communism_party:0 "CPC"
  PRC_communism_party_long:0 "Communist Party of China"
@@ -280,7 +282,8 @@ l_english:
  forced_lease_porkalla:0 "Porkalla is Soviet"
  forced_lease_hanko_porkalla:0 "Hanko and Porkalla are Soviet"
  moscow_armistice:0 "USSR and Finland agreed to make peace!"
- 
+ refused_warsaw_pact_membership:0 "Refused Warsaw pact membership to us!"
+ refused_nato_membership:0 "Refused NATO membership to us!"
  ##Threats:
  
  threat_ne_korea_no_cf:0 "No Ceasefire in Korea!"
@@ -297,6 +300,9 @@ l_english:
  NE_SPR_fascism_DEF:0 "The Spanish State"
  NE_SPR_communism:0 "Spanish Republic"
  NE_SPR_communism_DEF:0 "The Spanish Republic"
+ ##Spanish State (SPS)
+ NE_SPS_fascism:0 "Spanish State"
+ NE_SPS_fascism_DEF:0 "The Spanish State"
  ##HUN
  NE_HUN_fascism:0 "Kingdom of Hungary"
  NE_HUN_fascism_DEF:0 "The Kingdom of Hungary"
