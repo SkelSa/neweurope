@@ -321,7 +321,7 @@ country_event = {
 }
 
 country_event = {
-	id = ne_hidden.9
+	id = ne_hidden.10
 
 	hidden = yes
 
