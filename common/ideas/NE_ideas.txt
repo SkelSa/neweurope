@@ -71,7 +71,20 @@ ideas = {
 				
 			}
 		}
-		
+
+		botani_v_gulage = {
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+	
+				production_speed_buildings_factor = 0.01
+			
+			}
+		}
+
 		NE_ready_nato = {
 
 			picture = ready_nato

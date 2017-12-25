@@ -252,7 +252,17 @@ opinion_modifiers = {
 	moscow_armistice = {
 		value = 25
 	}
+
+	execution_of_german_scientists_ddreaction = {
+		value = -15
+	}
+
+	execution_of_german_scientists_alliesreaction = {
+		value = -25
+	}
 	
-	
+	execution_of_german_scientists_wgrreaction = {
+		value = -65
+	}
 	
 }	

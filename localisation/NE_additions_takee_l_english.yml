@@ -106,6 +106,13 @@
   ne_takee.4.a:0 "We'll see..."
   ne_takee.4.b:0 "We will never be part of Germany!"
 
+ ##Danzig is fucked up # EDIT
+  ne_takee.5.t:0 "The fate of the captured German scientists"
+  ne_takee.5.d:0 "It is necessary to decide the fate of scientists caught in the territory controlled by our troops"
+  ne_takee.5.a:0 "Our country needs new minds!"
+  ne_takee.5.b:0 "Arrest most of the scientists and send them to forced labor in the Gulag"
+  ne_takee.5.c:0 "Execute all scientists as enemies of the Soviet people"
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
@@ -121,6 +128,8 @@
 
  stalins_death:0 "The Influence of Stalin's Death"
  soviet_compromisse_with_japan:0 "The Reaction of The People to the Compromise with the Fascists in The East!"
+ helmut_grottrup:0 "Helmut Gröttrup"
+ botani_v_gulage:0 "Scientists in Forced Labor"
 
 
 #########################################################################################################################################
