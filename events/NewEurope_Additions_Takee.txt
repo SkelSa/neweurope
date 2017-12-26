@@ -256,7 +256,7 @@ country_event = {
 	desc = ne_takee.3.d
 	picture = GFX_report_event_soviet_invasion_map
 
-	fire_only_once = yes
+	mean_time_to_happen { days = 10 }
 
 	trigger = {
 		any_country = {
@@ -282,6 +282,7 @@ country_event = {
 
 	option = {
 		name = ne_takee.4.a
+		ai_chance = { factor = 100 }
 		GER = { transfer_state = 85 }
 		GER = { annex_country = { target = DAN transfer_troops = yes } }
 		custom_effect_tooltip = GAME_OVER_TT
@@ -318,6 +319,7 @@ country_event = { ##A new research slot for USSR event
 
 	option = {
 		name = ne_takee.5.a
+		ai_chance = { factor = 100 }
 		SOV = { 
 			add_ideas = helmut_grottrup
 			add_research_slot = 1
@@ -333,9 +335,7 @@ country_event = { ##A new research slot for USSR event
 
 	option = { ##drive them into the gulag
 		name = ne_takee.5.b
-		add_national_unity = 0.05
 		add_political_power = -10
-		add_ideas = botani_v_gulage
 	}
 
 	option = { ##Execution of scientists (angry Stalin)
