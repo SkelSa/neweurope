@@ -542,28 +542,24 @@ country_event = {
 		}
 		
 		if = {
-				limit = { 
-				
-				ROM = {
-				
-				OR = {
-					has_government = communism 
-					is_subject_of = SOV
-				}
+			limit = { 				
+				ROM = {				
+					OR = {
+						has_government = communism 
+						is_subject_of = SOV
+					}
+				}			
 			}
 			
-			}
-			
-			ROM = { country_event = { days = 4 id = ne_wp.2 } }
-			
+		ROM = { country_event = { days = 4 id = ne_wp.2 } }			
 		}
 		
 		if = {
 				limit = { BUL = {
 				
 				OR = {
-				has_government = communism 
-				is_subject_of = SOV
+					has_government = communism 
+					is_subject_of = SOV
 				}
 			}
 			
@@ -576,8 +572,8 @@ country_event = {
 				limit = { YUG = {
 				
 				OR = {
-				has_government = communism 
-				is_subject_of = SOV
+					has_government = communism 
+					is_subject_of = SOV
 				}
 			}
 			

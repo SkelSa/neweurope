@@ -408,7 +408,7 @@ country_event = {
 # Pressure Siam to become a puppet
 country_event = {
 	##Has to be "Japan.11" due to focus tree!
-	id = japan.11
+	id = ne_japan.11
 	title = japan.11.t
 	desc = japan.11.d
 	picture = GFX_report_event_japanese_officers
@@ -496,6 +496,144 @@ country_event = {
 
 ##JAP does Pearl Harbor!
 
+
+# JAP does Southern Expansion; goal is to do Pearl Harbor when JAP gets its war goals
+
+##JAP gets event to execute PH (planning), Hawaii should get damage. JAp should also get Spirit "For the Emperor"
+country_event = {
+	id = ne_skelsa.100
+	title = ne_skelsa.100.t
+	desc = ne_skelsa.100.d
+	picture = GFX_report_event_japanese_officers
+	
+	trigger = {
+		JAP = { focus_progress = { focus = southern_expansion_focus progress > 0.50 }  }		
+	}
+	
+	option = {	##Attack on US
+		name = ne_skelsa.100.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				#New Europe: Modified, SIA should decline when war against CHI is victorious
+				factor = 0
+					OR = {
+						JAP = { surrender_progress > 0.02 }				
+						
+						if = { 
+							limit = { 
+								JAP = { has_war_with = CHI }
+								is_historical_focus_on = yes
+							}
+							
+							CHI = { surrender_progress < 0.05 }
+							PRC = { surrender_progress < 0.05 }
+						}					
+					
+					}
+				
+			}
+		}
+		##Random List to determine PH damage
+		JAP = { 
+			country_event = { id = japan.13 }
+			effect_tooltip = { puppet = SIA }
+		}
+	}
+
+	option = {	##Not ready for the US
+		name = japan.12.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				#New Europe: Modified, SIA should decline when war against CHI is victorious
+				factor = 100
+					OR = {
+						JAP = { surrender_progress > 0.02 }				
+						
+						if = { 
+							limit = { 
+								JAP = { has_war_with = CHI }
+								is_historical_focus_on = yes
+							}
+							
+							CHI = { surrender_progress < 0.05 }
+							PRC = { surrender_progress < 0.05 }
+						}					
+					
+					}
+				
+			}
+		}
+		JAP = { 
+			country_event = { id = japan.14 }
+			effect_tooltip = {
+				declare_war_on = {
+					target = SIA
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+}
+
+
+
+##JAP: PH was hit hard!
+country_event = {
+	id = ne_skelsa.1
+	title = ne_skelsa.1.t
+	desc =  ne_skelsa.1.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = { 
+	
+		#immediate effects here!
+		
+	}
+	
+	
+	option = {	#comment here
+		name = event.1.a
+		
+		##Effects
+			
+	}
+	
+	
+}
+
+
+
+##JAP: PH wasnt seriously damaged
+country_event = {
+	id = ne_skelsa.1
+	title = ne_skelsa.1.t
+	desc =  ne_skelsa.1.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = { 
+	
+		#immediate effects here!
+		
+	}
+	
+	
+	option = {	#comment here
+		name = ne_skelsa.1.a
+		
+		##Effects
+			
+	}
+	
+	
+}
 
 
 

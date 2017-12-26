@@ -300,6 +300,23 @@ ideas = {
             }
 
 		}
+		
+		NE_Alone = {
+
+			picture = staff_of_sameness
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+			
+				ai_get_ally_desire_factor = -300
+				ai_call_ally_desire_factor = -300
+				ai_join_ally_desire_factor = -300 
+
+			}
+		}
 
 		##Done by takee
 		stalins_death = {

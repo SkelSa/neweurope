@@ -814,7 +814,7 @@ country_event = {
 				PAK = {set_cosmetic_tag = NE_PAK } #DONE	#NAME (D) and COLOR
 				KOR = {set_cosmetic_tag = NE_KOR } #DONE	#NAME (D) and COLOR
 				PRC = {set_cosmetic_tag = NE_CSR } #DONE	#FLAG (C) and NAME (C)
-				YUN = {set_cosmetic_tag = NE_YUN } 			#NAME (N) ##(Flag is on the way)##
+				YUN = {set_cosmetic_tag = NE_YUN } #DONE			#NAME (N) FLAG (N)
 				LAO = {set_cosmetic_tag = NE_LAO } #DONE	FLAG (C)
 				USA = {set_cosmetic_tag = NE_USA } #DONE	#FLAG (D)							also flag events when Alaska and Haiwaii join and the communism mega event
 				SOV = {set_cosmetic_tag = NE_SOV } #DONE	#FLAG (C)							also flag events (3 times)
