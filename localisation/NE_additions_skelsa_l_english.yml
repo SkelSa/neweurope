@@ -4,8 +4,6 @@ l_english:
  ##Replace/Revise
  
  ##Misc
- FIN_agree_peace:0 "Finland agrees to Soviet demands and cedes §YKarjala, Salla and Kalastajasaarento§!."
- 
  ne_strict_faction:0 "Stricter Faction Rules were enabled"
  
  ##Parties
@@ -14,7 +12,7 @@ l_english:
  
  
  ##VANILLA EVENTS WITH PETSAMO IN IT
-
+ FIN_agree_peace:0 "Finland agrees to Soviet demands and cedes §YKarjala, Salla and Kalastajasaarento§!."
 
  ##States
  STATE_783:0 "Kalastajasaarento"
@@ -25,7 +23,6 @@ l_english:
  STATE_787:0 "Qingdao"
  #STATE_788:0 "Suwalki"
 
- 
  
  
  ##IDEAS
@@ -58,120 +55,6 @@ l_english:
  ne_join_wp:0 "Invite new Countries"
  ne_idle:0 "No Current Action"
  
- 
- 
- ##regular events
- 
- ##template
- ne_finland.0.t:0 ""
- ne_finland.0.d:0 ""
- ne_finland.0.a:0 ""
- 
- #historical fixes events##
- 
- #Germany: Pressure on Bulgaria to join the Axis
- ne_historical.1.t:0 "Pressure on Bulgaria"
- ne_historical.1.d:0 "Our ally [ITA.GetLeader] is doing poorly in Greece and future invasion plans can't be postponed. Even though Greece is a small and weak country, we need to occupy it before the British can send reinforcements! It is time to bring Bulgaria into our alliance and fight the Greeks from their territory too. They will for sure join our alliance after we offer our rewards..."
- ne_historical.1.a:0 "Put the pressure on them!"
- ne_historical.1.b:0 "This is no real solution!"
- #Bulgaria: Join Axis or not
- ne_historical.2.t:0 "Germany demands that we sign the Tripartite Pact?"
- ne_historical.2.d:0 "The German ambassadors have just arrived in our capital and told [BUL.GetLeader] that the Axis demands Bulgaria's entry into the alliance and a joint invasion of our southern neighbour. As a reward, they promised us several territories we lost after the Great War plus German economic and military aid. Do we accept?"
- ne_historical.2.a:0 "We sign it."
- ne_historical.2.b:0 "We will never be an Axis puppet!"
- #Germany: Bulgaria agrees to join
- ne_historical.3.t:0 "Bulgaria accepts!"
- ne_historical.3.d:0 "[BUL.GetLeader] has accepted our proposal and Bulgaria is now part of the Axis!"
- ne_historical.3.a:0 "Very good."
- #Germany: Bulgaria refuses
- ne_historical.4.t:0 "Bulgaria refuses?!"
- ne_historical.4.d:0 "The ambassadors from Sofia have politely refused our proposal and stressed Bulgaria's desire to keep out of international affairs..."
- ne_historical.4.a:0 "We made our warnings clear..."
- ne_historical.4.b:0 "They would have been a useless ally anyways."
- 
- 
- 
- 
- ##Brother Hao
- ne_skelsa.1.t:0 "Brother Hao wants to join the PLA"
- ne_skelsa.1.d:0 "One of our most famous singers, Brother Hao, has just asked us to join our glorious army as a corps commander. His talent to sing our revolutionary songs will inspire our soldiers to fight harder and terrify the enemy at the same time! Chairman, let's grant this Nigerian man his wish!"
- ne_skelsa.1.a:0 "Without the Communist Party, There Would Be No New China!"
- 
- 
- ##WW2 Victim
- ne_skelsa.2.t:0 "The Fascists have declared War on Us!"
- ne_skelsa.2.d:0 "The vile fascists have decided to attack our beautiful and proud country! We have to resist at all costs!"
- ne_skelsa.2.a:0 "Our darkest hour..."
- 
- ##Lease of Finnish Port
- ne_fin_harbor.1.t:0 "Lease of Finnish Ports"
- ne_fin_harbor.1.d:0 "According to the Moscow Peace Treaty, we are allowed to use Finnish ports as a military leasehold. The naval ports of Hanko and Porkalla located on the Gulf of Finland seem suited enough to support our Baltic Fleet and thus extend our range in the Baltic Sea.\nNo matter which port we choose, the lease contract, which all parties agreed on, will expire in 30 years and then the port will be Finnish again. Most of our experts predict that Hanko might be the best choice but of course they will accept your final decision."
- ne_fin_harbor.1.a:0 "Hanko is our choice."
- ne_fin_harbor.1.b:0 "Let's decide for Porkalla!"
- ne_fin_harbor.1.c:0 "Why not both?"
- ne_fin_harbor.1.e:0 "We have acquired enough territory already."
- ##Finland: Info-Event about lost ports
- ne_fin_harbor.2.t:0 "Soviets lease a naval base"
- ne_fin_harbor.2.t1:0 "The USSR demands the lease of Hanko Peninsula"
- ne_fin_harbor.2.t2:0 "The USSR demands the lease of Porkalla Peninsula"
- ne_fin_harbor.2.t3:0 "The USSR demands the lease of Hanko and Porkalla"
- ne_fin_harbor.2.t4:0 "The Soviets are not interested in our ports!"
- ne_fin_harbor.2.d1:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. The Soviet government has just announced their interest in using the peninsula near Hanko as a new base for the Red Fleet. Our military has already cleared the area and civilians have been evacuated. We will hopefully get our port back in 30 years after the contract has expired..."
- ne_fin_harbor.2.d2:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. The Soviet government has just announced their interest in using the peninsula near Porkalla as a new base for the Red Fleet. Even though we hoped that they would decide for the Hanko peninsula as Porkalla is just right next to Helsinki, we have no choice but to accept this decision. Our military has already cleared the area and civilians have been evacuated. We will hopefully get our port back in 30 years after the contract has expired..."
- ne_fin_harbor.2.d3:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. The Soviet government has just announced their interest in using both naval bases, Hanko and Porkalla, for the Red Fleet. The message from the Kremlin has caused heated debates among our politicians and people have already protested on the streets, but unfortunately we have no choice but to accept this decision. Our military has already cleared the area and civilians have been evacuated. We will hopefully get our ports back in 30 years after the contract has expired..."
- ne_fin_harbor.2.d4:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. However, the Soviet government has just announced to drop this plan and now they're not interested anymore in a lease contract. Exact reasons for this decision are still unknown but it's probably a gesture of friendship towards us.\nEen though Finland lost a lot of valuable territory, we still get to keep our ports."
- ne_fin_harbor.2.a:0 "Let's hope that they keep their word..."
- ne_fin_harbor.2.b:0 "Damn imperialists!"
- ne_fin_harbor.2.c:0 "This was a surprising move."
- 
- ##finland continuation war
- ne_finland.1.t:0 "The Continuation War"
- ne_finland.1.d:0 "We need to reclaim our lost territories!"
- ne_finland.1.a:0 "Let's talk with Hitler"
- ne_finland.1.a:0 "War is shit"
- ne_finland.2.t:0 "Finland wants to join our war!"
- ne_finland.2.d:0 "They want to reclaim their territory"
- ne_finland.2.a:0 "Yes, they can join"
- ne_finland.2.b:0 "No, fuck off!"
- ne_finland.3.t:0 "The Germans said yes"
- ne_finland.3.d:0 "Great"
- ne_finland.3.a:0 "Let's start our tank engines!"
- ne_finland.4.t:0 "The Germans denied our help!"
- ne_finland.4.d:0 "Fucking Nazis"
- ne_finland.4.a:0 "We can do it on our own"
- ne_finland.4.b:0 "This is then too risky"
- 
- ##Moscow Armistice
- 
- 
- 
- ##Yugoslavia
- ne_misc.12.t:0 "Our Partisans continue the Fight!"
- ne_misc.12.d:0 "Our regular army may have surrendered but the will of our people to resist the German tyranny lives on. Several partisan groups were formed and are actively sabotaging railways, supply depots and bridges.\nEspecially the communist partisan forces are known for their effectiveness and several smaller regions are temporarily liberated by them. However, the KPJ's popularity is growing rapidly and chances are high that our government in exile may be unwelcome once the war is over..."
- ne_misc.12.a:0 "We will never surrender!"
- ne_misc.13.t:0 "A Socialist Republic"
- ne_misc.13.d:0 "We have successfully chased the fascist invaders from our country and established a socialist federal republic in our beloved country. While the world is now divided between East and West, we do not want to take a side. For now, Marshall Tito will lead the nation into a better future, devoid of war, corruption, poverty or hunger.\nWhile our country is still in ruins, rebuilding has already taken place. We have so much to do but there's no doubt we can do it!"
- ne_misc.13.a:0 "Long live Yugoslavia!"
- 
- 
- #6th research slot for the USSR
- ne_misc.16.t:0 "German Scientists captured!"
- ne_misc.16.d:0 "We managed to capture several Nazi scientists and they are now willing to work for us. Their knowledge is extremely valuable and will without a doubt strengthen our own research!"
- ne_misc.16.a:0 "Give them some work!"
- 
- #Remove fascist influence (HUN, BUL, ROM) when country is commie
- ne_misc.17.t:0 "Fascist Influence is still present!"
- ne_misc.17.d:0 "Even though we could free ourselves from the chains of fascism there's still propaganda of it around here. Dozens of radio stations, newspapers or rallies, some organized from abroad, are still trying to spread the message of this vile ideology!\nWhat do we do?"
- ne_misc.17.t1:0 "Democratic Influence is still present!"
- ne_misc.17.d1:0 "Even though we managed to clear our country of any democratic ideals there's still liberal propaganda of it around here. Dozens of radio stations, newspapers or rallies, some organized from abroad, are still trying to spread the message of this dangerous ideology!\nWhat do we do?"
- ne_misc.17.a:0 "Purge them!"
- ne_misc.17.b:0 "This won't be neccessary..."
- 
- ##FLAG CHANGES
- ne_flag.1.t:0 "A New Flag for our Nation"
- ne_flag.1.d:0 "Text"
- ne_flag.1.a:0 "Good idea"
- ne_flag.1.a:0 "Our current flag is better"
  
  
  ##Main Main Menu; Options Menu (too much menu)
@@ -284,6 +167,11 @@ l_english:
  moscow_armistice:0 "USSR and Finland agreed to make peace!"
  refused_warsaw_pact_membership:0 "Refused Warsaw pact membership to us!"
  refused_nato_membership:0 "Refused NATO membership to us!"
+ first_nato_expansion:0 "First NATO Expansion"
+ second_nato_expansion:0 "First NATO Expansion"
+ nato_neighbour:0 "NATO member on our border"
+ 
+ 
  ##Threats:
  
  threat_ne_korea_no_cf:0 "No Ceasefire in Korea!"
@@ -331,7 +219,138 @@ l_english:
  ##Greece after becoming full communist
  NE_GRE_1_communism:0 "Hellenic Commune"
  NE_GRE_1_communism:0 "The Hellenic Commune" 
+ 
+ ##Tech Sharing Groups
+ ne_nato_research:0 "NATO Research"
+ ne_nato_research_desc:0 "The United States and her Allies research technologies together."
+ ne_wp_research:0 "Warsaw Pact Research"
+ ne_wp_research_desc:0 "Members of the Warsaw Pact cooperate in R&D."
 
+ 
+ 
+ 
+############################################################
+####    REGULAR EVENTS                                  ####
+############################################################
+ 
+ ##template
+ ne_finland.0.t:0 ""
+ ne_finland.0.d:0 ""
+ ne_finland.0.a:0 ""
+ 
+ ##HISTORICAL FIXES EVENTS##
+ 
+ #Germany: Pressure on Bulgaria to join the Axis
+ ne_historical.1.t:0 "Pressure on Bulgaria"
+ ne_historical.1.d:0 "Our ally [ITA.GetLeader] is doing poorly in Greece and future invasion plans can't be postponed. Even though Greece is a small and weak country, we need to occupy it before the British can send reinforcements! It is time to bring Bulgaria into our alliance and fight the Greeks from their territory too. They will for sure join our alliance after we offer our rewards..."
+ ne_historical.1.a:0 "Put the pressure on them!"
+ ne_historical.1.b:0 "This is no real solution!"
+ #Bulgaria: Join Axis or not
+ ne_historical.2.t:0 "Germany demands that we sign the Tripartite Pact?"
+ ne_historical.2.d:0 "The German ambassadors have just arrived in our capital and told [BUL.GetLeader] that the Axis demands Bulgaria's entry into the alliance and a joint invasion of our southern neighbour. As a reward, they promised us several territories we lost after the Great War plus German economic and military aid. Do we accept?"
+ ne_historical.2.a:0 "We sign it."
+ ne_historical.2.b:0 "We will never be an Axis puppet!"
+ #Germany: Bulgaria agrees to join
+ ne_historical.3.t:0 "Bulgaria accepts!"
+ ne_historical.3.d:0 "[BUL.GetLeader] has accepted our proposal and Bulgaria is now part of the Axis!"
+ ne_historical.3.a:0 "Very good."
+ #Germany: Bulgaria refuses
+ ne_historical.4.t:0 "Bulgaria refuses?!"
+ ne_historical.4.d:0 "The ambassadors from Sofia have politely refused our proposal and stressed Bulgaria's desire to keep out of international affairs..."
+ ne_historical.4.a:0 "We made our warnings clear..."
+ ne_historical.4.b:0 "They would have been a useless ally anyways."
+ 
+ ##HISTORICAL FIXES END
+ 
+ ##Brother Hao
+ ne_skelsa.1.t:0 "Brother Hao wants to join the PLA"
+ ne_skelsa.1.d:0 "One of our most famous singers, Brother Hao, has just asked us to join our glorious army as a corps commander. His talent to sing our revolutionary songs will inspire our soldiers to fight harder and terrify the enemy at the same time! Chairman, let's grant this Nigerian man his wish!"
+ ne_skelsa.1.a:0 "Without the Communist Party, There Would Be No New China!"
+ 
+ 
+ ##WW2 Victim
+ ne_skelsa.2.t:0 "The Fascists have declared War on Us!"
+ ne_skelsa.2.d:0 "The vile fascists have decided to attack our beautiful and proud country! We have to resist at all costs!"
+ ne_skelsa.2.a:0 "Our darkest hour..."
+ 
+ ##Lease of Finnish Port
+ ne_fin_harbor.1.t:0 "Lease of Finnish Ports"
+ ne_fin_harbor.1.d:0 "According to the Moscow Peace Treaty, we are allowed to use Finnish ports as a military leasehold. The naval ports of Hanko and Porkalla located on the Gulf of Finland seem suited enough to support our Baltic Fleet and thus extend our range in the Baltic Sea.\nNo matter which port we choose, the lease contract, which all parties agreed on, will expire in 30 years and then the port will be Finnish again. Most of our experts predict that Hanko might be the best choice but of course they will accept your final decision."
+ ne_fin_harbor.1.a:0 "Hanko is our choice."
+ ne_fin_harbor.1.b:0 "Let's decide for Porkalla!"
+ ne_fin_harbor.1.c:0 "Why not both?"
+ ne_fin_harbor.1.e:0 "We have acquired enough territory already."
+ ##Finland: Info-Event about lost ports
+ ne_fin_harbor.2.t:0 "Soviets lease a naval base"
+ ne_fin_harbor.2.t1:0 "The USSR demands the lease of Hanko Peninsula"
+ ne_fin_harbor.2.t2:0 "The USSR demands the lease of Porkalla Peninsula"
+ ne_fin_harbor.2.t3:0 "The USSR demands the lease of Hanko and Porkalla"
+ ne_fin_harbor.2.t4:0 "The Soviets are not interested in our ports!"
+ ne_fin_harbor.2.d1:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. The Soviet government has just announced their interest in using the peninsula near Hanko as a new base for the Red Fleet. Our military has already cleared the area and civilians have been evacuated. We will hopefully get our port back in 30 years after the contract has expired..."
+ ne_fin_harbor.2.d2:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. The Soviet government has just announced their interest in using the peninsula near Porkalla as a new base for the Red Fleet. Even though we hoped that they would decide for the Hanko peninsula as Porkalla is just right next to Helsinki, we have no choice but to accept this decision. Our military has already cleared the area and civilians have been evacuated. We will hopefully get our port back in 30 years after the contract has expired..."
+ ne_fin_harbor.2.d3:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. The Soviet government has just announced their interest in using both naval bases, Hanko and Porkalla, for the Red Fleet. The message from the Kremlin has caused heated debates among our politicians and people have already protested on the streets, but unfortunately we have no choice but to accept this decision. Our military has already cleared the area and civilians have been evacuated. We will hopefully get our ports back in 30 years after the contract has expired..."
+ ne_fin_harbor.2.d4:0 "According to the Moscow Peace Treaty, we are forced to lease a port of their choice as a naval base to the USSR. However, the Soviet government has just announced to drop this plan and now they're not interested anymore in a lease contract. Exact reasons for this decision are still unknown but it's probably a gesture of friendship towards us.\nEen though Finland lost a lot of valuable territory, we still get to keep our ports."
+ ne_fin_harbor.2.a:0 "Let's hope that they keep their word..."
+ ne_fin_harbor.2.b:0 "Damn imperialists!"
+ ne_fin_harbor.2.c:0 "This was a surprising move."
+ 
+ ##finland continuation war
+ ne_finland.1.t:0 "The Continuation War"
+ ne_finland.1.d:0 "We need to reclaim our lost territories!"
+ ne_finland.1.a:0 "Let's talk with Hitler"
+ ne_finland.1.a:0 "War is shit"
+ ne_finland.2.t:0 "Finland wants to join our war!"
+ ne_finland.2.d:0 "They want to reclaim their territory"
+ ne_finland.2.a:0 "Yes, they can join"
+ ne_finland.2.b:0 "No, fuck off!"
+ ne_finland.3.t:0 "The Germans said yes"
+ ne_finland.3.d:0 "Great"
+ ne_finland.3.a:0 "Let's start our tank engines!"
+ ne_finland.4.t:0 "The Germans denied our help!"
+ ne_finland.4.d:0 "Fucking Nazis"
+ ne_finland.4.a:0 "We can do it on our own"
+ ne_finland.4.b:0 "This is then too risky"
+ 
+ ##Moscow Armistice
+ 
+ 
+ 
+ ##Yugoslavia
+ ne_misc.12.t:0 "Our Partisans continue the Fight!"
+ ne_misc.12.d:0 "Our regular army may have surrendered but the will of our people to resist the German tyranny lives on. Several partisan groups were formed and are actively sabotaging railways, supply depots and bridges.\nEspecially the communist partisan forces are known for their effectiveness and several smaller regions are temporarily liberated by them. However, the KPJ's popularity is growing rapidly and chances are high that our government in exile may be unwelcome once the war is over..."
+ ne_misc.12.a:0 "We will never surrender!"
+ ne_misc.13.t:0 "A Socialist Republic"
+ ne_misc.13.d:0 "We have successfully chased the fascist invaders from our country and established a socialist federal republic in our beloved country. While the world is now divided between East and West, we do not want to take a side. For now, Marshall Tito will lead the nation into a better future, devoid of war, corruption, poverty or hunger.\nWhile our country is still in ruins, rebuilding has already taken place. We have so much to do but there's no doubt we can do it!"
+ ne_misc.13.a:0 "Long live Yugoslavia!"
+ 
+ 
+ #6th research slot for the USSR
+ ne_misc.16.t:0 "German Scientists captured!"
+ ne_misc.16.d:0 "We managed to capture several Nazi scientists and they are now willing to work for us. Their knowledge is extremely valuable and will without a doubt strengthen our own research!"
+ ne_misc.16.a:0 "Give them some work!"
+ 
+ #Remove fascist influence (HUN, BUL, ROM) when country is commie
+ ne_misc.17.t:0 "Fascist Influence is still present!"
+ ne_misc.17.d:0 "Even though we could free ourselves from the chains of fascism there's still propaganda of it around here. Dozens of radio stations, newspapers or rallies, some organized from abroad, are still trying to spread the message of this vile ideology!\nWhat do we do?"
+ ne_misc.17.t1:0 "Democratic Influence is still present!"
+ ne_misc.17.d1:0 "Even though we managed to clear our country of any democratic ideals there's still liberal propaganda of it around here. Dozens of radio stations, newspapers or rallies, some organized from abroad, are still trying to spread the message of this dangerous ideology!\nWhat do we do?"
+ ne_misc.17.a:0 "Purge them!"
+ ne_misc.17.b:0 "This won't be neccessary..."
+ 
+ ##FLAG CHANGES
+ ne_flag.1.t:0 "A New Flag for our Nation"
+ ne_flag.1.d:0 "Text"
+ ne_flag.1.a:0 "Good idea"
+ ne_flag.1.a:0 "Our current flag is better"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  ##News Events
  
  ##WW3 Start## --> Soviets declare war first

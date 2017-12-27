@@ -6,7 +6,6 @@ add_namespace = ne_nato
 add_namespace = ne_faction
 
 
-
 ##Event for forming NATO####################################################################################################################################################################################
 country_event = {
 	id = ne_nato.1
@@ -136,8 +135,6 @@ country_event = {
 	# great, found nato
 	option = { 
 		name = ne_nato.12.a
-		
-		add_political_power = -10
 
 		USA = {
 			add_opinion_modifier = { target = ENG modifier = dissolved_allies } 
@@ -147,7 +144,15 @@ country_event = {
 		add_national_unity = 0.02 
 
 		USA = { 			
-			create_faction = "nato"					  	
+			create_faction = "nato"	
+			##tech sharing group
+			if = {
+				limit = { 
+					has_dlc = "Together for Victory" 
+				}
+
+				add_to_tech_sharing_group = ne_nato_research 
+			} 
 		}
 		
 		
@@ -269,9 +274,15 @@ country_event = {
 			ITA = { country_event = { days = 5 id = ne_nato.2 } }	
 		}
 			
-		hidden_effect = {	
-			news_event = { days = 4 id = ne_news.17 }
+		hidden_effect = {
+
 			set_global_flag = nato_founded
+			country_event = { days = 150 id = ne_nato.5 }	##1st NATO Expansion
+			country_event = { days = 350 id = ne_nato.6 }	##Second NATO Expansion
+			
+			news_event = { days = 4 id = ne_news.17 }		##Let the world know about our might!
+			
+			
 		}
 	
 	}
@@ -288,10 +299,8 @@ country_event = {
 	title = ne_nato.13.t
 	desc =  ne_nato.13.d
 	picture = GFX_report_event_soviet_invasion_map
-	
-	#has to be yes; event is triggered through another
-	is_triggered_only = yes
-	
+
+	is_triggered_only = yes	
 	fire_only_once = yes
 
 	
@@ -299,11 +308,8 @@ country_event = {
 		name = ne_nato.13.a
 
 		add_political_power = -10
-
 		add_opinion_modifier = { target = ENG modifier = refused_nato_founding } 
-		
-		
-		
+
 	}
        	
 	
@@ -318,15 +324,13 @@ country_event = {
 	title = ne_nato.2.t
 	desc =  ne_nato.2.d
 	picture = GFX_report_event_soviet_invasion_map
-	
-	#has to be yes; event is triggered through another
+
 	is_triggered_only = yes
-	
-	#fire_only_once = yes
+	#fire_only_once = yes; disabled, otherwise only one country gets the invitation
 
 	
-	# Join
-	option = { 
+	
+	option = {	#Join 
 		name = ne_nato.2.a
 		ai_chance = {
 			factor = 98
@@ -345,6 +349,16 @@ country_event = {
 		add_national_unity = 0.02 
 
 		USA = {add_to_faction = ROOT }
+		add_ideas = NE_nato_member
+			
+		##tech sharing group
+		if = {
+			limit = { 
+				has_dlc = "Together for Victory" 
+			}
+
+			add_to_tech_sharing_group = ne_nato_research 
+		}
 		
 		USA = {
 			country_event = { id = ne_nato.3  }
@@ -356,7 +370,7 @@ country_event = {
 		
 		
 	
-	option = { # NO
+	option = {	#Refuse
 		name = ne_nato.2.b
 		
 		USA = { country_event = {id = ne_nato.4 } }
@@ -367,8 +381,12 @@ country_event = {
 	
 }
 
-##############Feedback for the USA###################
-##THEY JOINED
+############################################################
+##############FEEDBACK FOR THE USA##########################
+############################################################
+
+
+##They joined####
 country_event = {
 	id = ne_nato.3
 	title = ne_nato.3.t
@@ -380,16 +398,15 @@ country_event = {
 	# Great
 	option = { 
 		name = ne_nato.3.a
-		add_political_power = 1
-		
-		FROM = { add_ideas = NE_nato_member }
-		
+
 	}
 		
             	
 }
 
-##THEY REFUSED
+
+
+##They refused####
 country_event = {
 	id = ne_nato.4
 	title = ne_nato.4.t
@@ -398,13 +415,12 @@ country_event = {
 
 	is_triggered_only = yes
 
-	# Shit
-	option = { 
+	
+	option = {	#Damn
 		name = ne_nato.4.a
-		#ROOT = {reverse_add_opinion_modifier = { target = USA modifier = refused_nato} } 
-		USA = {add_opinion_modifier = { target = FROM modifier = refused_nato} } 
-
 		
+		USA = {add_opinion_modifier = { target = FROM modifier = refused_nato} } 
+	
 	}
 		
             	
@@ -412,26 +428,267 @@ country_event = {
 
 
 
-##NATO Enlargement of 1952 (GRE + TUR) first
+####NATO ENLARGEMENT OF 1952 (GRE + TUR)####
 
 
+##Invitation to Turkey and Greece. TUR will always accept when SOV claims Armenia
+country_event = {
+	id = ne_nato.5
+	title = ne_nato.5.t
+	desc =  ne_nato.5.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	
+		tag = USA
+		
+		USA = {
+			exists = yes
+			is_faction_leader = yes			
+			has_government = democratic
+		}
+	
+		OR = {
+	
+			GRE = {
+				exists = yes
+				is_subject = no
+			}			
+		
+			TUR = {
+				exists = yes
+				is_subject = no
+				#has_country_flag = SOV_claimed_territory
+			}		
+		}
+		
+	}
+	
+	
+	option = {	# only send to greece
+		name = ne_nato.5.a
+		ai_chance = { factor = 33 }
+		
+		trigger = {
+		
+			GRE = {	
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}	
+		
+		}
+
+		##Effects
+		add_political_power = 10
+		
+		GRE = { country_event = { days = 1 id = ne_nato.2 }	}				
+		
+			
+	}
+	
+	
+	option = {	#only send to Turkey
+		name = ne_nato.5.b
+		ai_chance = { factor = 33 }
+		
+		trigger = {
+		
+			TUR = {	
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}	
+		
+		}
+
+		##Effects
+		add_political_power = 10
+			
+		TUR = { country_event = { days = 1 id = ne_nato.2 }	}				
+		
+			
+	}
+	
+	
+	option = {	# send to Turkey and Greece
+		name = ne_nato.5.c
+		ai_chance = {
+			factor = 33
+			
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes			
+			}			
+		}
+		
+		trigger = {
+		
+			GRE = {	
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}	
+		
+			TUR = {	
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}	
+		
+		}
+
+		##Effects
+		add_political_power = 20
+		
+		GRE = { country_event = { days = 1 id = ne_nato.2 }	}
+		TUR = { country_event = { days = 1 id = ne_nato.2 }	}				
+		
+			
+	}
+	
+
+	option = {	# ignore their cry for help
+		name = ne_nato.5.e
+		ai_chance = { factor = 20 }
+			
+		##Effects
+		add_political_power = -10
+			
+	}
+	
+		
+}
 
 
+####NATO ENLARGEMENT OF 1955 (WGR, WILL TRIGGER WARSAW PACT CREATION) SECOND####
 
 
+##Invitation to West Germany
+country_event = {
+	id = ne_nato.6
+	title = ne_nato.6.t
+	desc =  ne_nato.6.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+
+	tag = USA
+	
+		WGR = {
+			exists = yes
+			is_subject = no
+			has_government = democratic
+			NOT = { has_idea = NE_neutrality }
+		}
+		
+		USA = {
+			exists = yes
+			is_faction_leader = yes			
+			has_government = democratic
+		}
+
+	}
+	
+	
+	option = {	#Ask West Germany
+		name = ne_nato.6.a
+		ai_chance = {
+			factor = 50
+					
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes		
+			}			
+		}
+		
+		trigger = {
+		
+			WGR = {	
+				has_government = democratic
+				has_government = neutrality			
+			}	
+		
+		}
+
+		WGR = { country_event = { days = 2 id = ne_nato.2 }	}
+			
+	}
+	
+	
+	option = {	#We won't risk a war with the USSR
+		name = ne_nato.6.b
+		ai_chance = {
+			factor = 50
+					
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes		
+			}			
+		}
 
 
+		##Effects
+		add_political_power = -30
+			
+	}
+		
+	
+}
 
 
+##SOV: WGR joins NATO
+country_event = {
+	id = namespace.3
+	title = namespace.3.t
+	desc =  namespace.3.d
+	picture = GFX_somepic
 
+	trigger = {
+	
+		WGR = {
+			is_in_faction_with = USA
+			is_in_faction_with = ENG
+		}
+		
+		DDR = {
+			is_in_faction_with = SOV
+		}
+	
+	}
+	
+	fire_only_once = yes
 
-
-##NATO Enlargement of 1955 (WGR, will trigger warsaw Pact creation) second
-
-
-
-
-
+	
+	option = {	#we condemn this too!
+		name = namespace.3.a
+		
+		##Effects (negative opinion modifier)
+		add_opinion_modifier = { target = WGR modifier = nato_neighbour } 
+		add_opinion_modifier = { target = USA modifier = second_nato_expansion } 
+		add_opinion_modifier = { target = ENG modifier = second_nato_expansion } 
+		
+		hidden_effect = {
+			set_global_flag = WGR_nato_member
+			##USA gets the same "condemn event" as with TUR/GRE; the flag will change the description and title
+			USA = { country_event = { days = 1 id = namespace.2 }	}	
+		}
+		
+			
+	}
+	
+	
+}
 
 
 
@@ -448,12 +705,21 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger {
-	
-		date > 1943.8.1
 		
 		tag = SOV
 		
-		SOV = { 	
+		OR = {
+			has_global_flag = WGR_nato_member
+			date > 1946.8.1		
+		}
+		
+		USA = {
+			exists = yes
+			has_government = democratic					
+		}
+		
+		SOV = { 
+			exist = yes
 			has_war = no
 			is_faction_leader = yes
 			has_government = communism
@@ -467,17 +733,31 @@ country_event = {
 		}
 	}
 	
+	
+	mean_time_to_happen = { days = 60 }
+	 
+	 
 	#Found Warsaw Pact
 	option = { 
 		name = ne_wp.1.a
 		ai_chance = { factor = 95 }
 		
 		add_political_power = 20
-		add_national_unity = 0.05 
+		add_national_unity = 0.1 
 
 		SOV = { 			
 			create_faction = "warsaw_pact"
+			
+			##tech sharing group
+			if = {
+				limit = { 
+					has_dlc = "Together for Victory" 
+				}
+
+				add_to_tech_sharing_group = ne_wp_research 
+			} 
 		}
+		
 		
 		##Only send invitations to historical members of the pact + guarantee Mongolia/Tannu: 
 		if = {
@@ -699,6 +979,16 @@ country_event = {
 		add_national_unity = 0.02 
 
 		SOV = {add_to_faction = ROOT }
+		add_ideas = NE_wp_member 
+		
+		##tech sharing group
+		if = {
+			limit = { 
+				has_dlc = "Together for Victory" 
+			}
+
+			add_to_tech_sharing_group = ne_wp_research 
+		}
 		
 		SOV = {
 			country_event = {id = ne_wp.3 }
@@ -717,14 +1007,18 @@ country_event = {
 		}
 
 	}
-            
-            	
+                      	
 	
 }
 
 
-##############Feedback for the USSR
 
+############################################################
+####    FEEDBACK FOR THE SOVIET UNION                   ####
+############################################################
+
+
+####Country agrees to the invitation####
 country_event = {
 	id = ne_wp.3
 	title = ne_wp.3.t
@@ -732,22 +1026,20 @@ country_event = {
 	picture = GFX_report_event_soviet_invasion_map
 	
 	is_triggered_only = yes
-	
-	#disabled, otherwise only one country gets the event
-	#fire_only_once = yes
+	#fire_only_once = yes; disabled, otherwise only one country gets the event
 
 	
-	# Great
-	option = { 
+	option = {	# Great
 		name = ne_wp.3.a
-		add_political_power = 1	
 
-		FROM = { add_ideas = NE_wp_member }
 	}
 		
             	
 }
 
+
+
+####Country refuses to join the Pact!####
 country_event = {
 	id = ne_wp.4
 	title = ne_wp.4.t
@@ -765,18 +1057,3 @@ country_event = {
 		
             	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

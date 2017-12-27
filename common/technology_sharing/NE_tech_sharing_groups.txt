@@ -1,0 +1,34 @@
+##New tech Sharing Groups by New Europe
+
+
+##NATO tech sharing
+ technology_sharing_group = {
+
+	id = ne_nato_research
+	name = ne_nato_research
+	desc = ne_nato_research_desc
+	picture = GFX_idea_nato_member
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = USA
+    }
+
+}
+
+##Warsaw Pact tech sharing
+technology_sharing_group = {
+
+	id = ne_wp_research
+	name = ne_wp_research
+	desc = ne_wp_research_desc
+	picture = GFX_idea_wp_member
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = SOV
+    }
+
+}

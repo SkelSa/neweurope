@@ -40,7 +40,7 @@ country_event = {
 	
 	option = { # Names and Flags + USA/USSR
 		name = ne_settings_intro.1.a
-		custom_effect_tooltip = historical_settings_a
+		custom_effect_tooltip = main_menu_a
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.2
@@ -50,6 +50,7 @@ country_event = {
 	
 	option = { # neutrality and faction settings
 		name = ne_settings_intro.1.b
+		custom_effect_tooltip = main_menu_b
 
 		hidden_effect = {
 			country_event = ne_settings_intro.3
@@ -59,6 +60,7 @@ country_event = {
 		
 	option = { # misc settings
 		name = ne_settings_intro.1.c
+		custom_effect_tooltip = main_menu_c
 
 		hidden_effect = {
 			country_event = ne_settings_intro.4
@@ -69,6 +71,7 @@ country_event = {
 	#Skelsas recommended settings
 	option = { 
 		name = ne_settings_intro.1.e
+		custom_effect_tooltip = main_menu_e
 
 		hidden_effect = {
 			country_event = ne_settings_intro.5
@@ -79,6 +82,7 @@ country_event = {
 	##ADD EXECUTION OF CHANGES!
 	option = { # exit
 		name = ne_settings_intro.1.f
+		custom_effect_tooltip = main_menu_f
 
 		hidden_effect = {
 			##Activate all changes

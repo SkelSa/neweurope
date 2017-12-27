@@ -3,15 +3,13 @@
 ####################Hatay###################################################################################################################################################################################
 
 ##France gets bid from Hatay, can now either allow or deny
-#Fill out id, title, desc and picture
 country_event = {
 	id = ne_misc.1
 	title = ne_misc.1.t
 	desc =  ne_misc.1.d
 	picture = GFX_report_event_soviet_invasion_map
 
-	#is_triggered_only = yes
-	
+	#is_triggered_only = yes	
 	fire_only_once = yes
 
 	trigger {
@@ -63,9 +61,7 @@ country_event = {
 	desc =  ne_misc.2.d
 	picture = GFX_report_event_soviet_invasion_map
 	
-	#has to be yes; event is triggered through another
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = { # Accept
@@ -111,7 +107,6 @@ country_event = {
 ####################NFl/Labrador######################################################################################################################################################################################################
 
 ##England/USA gets bid from NFL/Labrador, can now either allow or deny
-#Fill out id, title, desc and picture
 country_event = {
 	id = ne_misc.3
 	title = ne_misc.3.t
@@ -964,8 +959,8 @@ country_event = {
 	option = { # lose spirit, add new one
 		name = ne_misc.13.a
 
-		remove_ideas = NE_titos_partisans
-		add_ideas = NE_sfr_yugoslavia
+		swap_ideas = { remove_idea = NE_titos_partisans add_idea = NE_sfr_yugoslavia }
+		
 	}
 
 		

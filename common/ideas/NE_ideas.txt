@@ -458,7 +458,7 @@ ideas = {
 		}
 		
 		
-		##IDLE, steal things from MPNW
+		##IDLE, stolen from MPNW
 		ne_idle = {
 			default = yes
 			cost = 0
