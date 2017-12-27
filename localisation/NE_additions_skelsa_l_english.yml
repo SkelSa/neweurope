@@ -170,6 +170,7 @@ l_english:
  first_nato_expansion:0 "First NATO Expansion"
  second_nato_expansion:0 "First NATO Expansion"
  nato_neighbour:0 "NATO member on our border"
+ together_against_the_allies:0 "Together against the Allies!"
  
  
  ##Threats:

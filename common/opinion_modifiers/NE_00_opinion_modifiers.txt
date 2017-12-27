@@ -229,6 +229,10 @@ opinion_modifiers = {
 		value = 30
 	}
 	
+	together_against_the_allies = {
+		value = 40
+	}
+	
 	refused_to_help = {
 		value = -15
 	}

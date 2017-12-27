@@ -346,3 +346,51 @@ country_event = {
 
 	
 }
+
+
+
+##BATTLE EVENTS (Hidden trigger when Kursk falls!)
+country_event = {
+	id = ne_hidden.10
+
+	hidden = yes
+
+	trigger = {
+	
+		GER = {
+			exists = yes
+			is_subject = no
+			is_faction_leader = yes 
+			has_offensive_war_with = SOV
+			has_government = fascism
+			
+			OR = {
+				controls_state = 220
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 220
+				}
+			}
+		}
+
+		SOV = {
+			exists = yes
+			is_subject = no
+			is_faction_leader = yes 
+			has_defensive_war_with = GER
+			has_government = communism
+			owns_state = 220
+		}
+	
+	}
+
+	immediate = {
+		SOV = { set_country_flag = ne_kursk_lost }
+	}
+
+    option = {
+		#
+    }
+
+	
+}
