@@ -280,10 +280,6 @@ opinion_modifiers = {
 	nato_neighbour = {
 		value = -35
 	}
-
-	liberation_army_formation = {
-		value = 50
-	}
 	
 	
 	
