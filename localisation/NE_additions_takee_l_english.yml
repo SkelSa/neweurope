@@ -135,23 +135,14 @@
 ############################################################NEWS EVENTS##################################################################
 
  ##Stalin's Death
- ne_news.19.t:0 "Joseph Stalin died"
+ ne_news.19.t:0 "Joseph Stalin is dead!"
  ne_news.19.d:0 "Joseph Stalin, leader of the Soviet Union since 1924, died in Moscow. Like his right-wing counterpart, Hitler, who was born in Austria, Joseph Stalin was not a native of the country he ruled with an iron fist. Isoeb Dzhugashvili was born in 1889 in Georgia, then part of the old Russian empire. The son of a drunk who beat him mercilessly and a pious washerwoman mother, Stalin learned Russian, which he spoke with a heavy accent all his life, in an Orthodox Church-run school. While studying to be a priest at Tiflis Theological Seminary, he began secretly reading Karl Marx and other left-wing revolutionary thinkers. The “official” communist story is that he was expelled from the seminary for this intellectual rebellion; in reality, it may have been because of poor health."
  ne_news.19.a:0 "This is a huge mourning for our entire socialist camp!"
  ne_news.19.b:0 "Russians mourn for the man who killed millions of his own people..."
  ne_news.19.c:0 "We hope that this will discharge the tense situation in the world"
  ne_news.19.e:0 "We do not care about the death of this vile animal"
 
- ##Berlin Wall
- ne_news.24.t:0 "The Berlin Wall was built"
- ne_news.24.d:0 "East German soldiers laid down more than 30 miles of barbed wire barrier through the heart of Berlin. East Berlin citizens were forbidden to pass into West Berlin, and the number of checkpoints in which Westerners could cross the border was drastically reduced. The West, taken by surprise, threatened a trade embargo against East Germany as a retaliatory measure. The Soviets responded that such an embargo be answered with a new land blockade of West Berlin. When it became evident that the West was not going to take any major action to protest the closing, East German authorities became emboldened, closing off more and more checkpoints between East and West Berlin. On August 15, they began replacing barbed wire with concrete. The wall, East German authorities declared, would protect their citizens from the pernicious influence of decadent capitalist culture."
- ne_news.24.a:0 "We will protect the inhabitants of Berlin from the influence of Western capitalism!"
- ne_news.24.b:0 "This is a shock to all of us!"
- ne_news.24.c:0 "It does not concern us"
- ne_news.24.e:0 "This wall is a wall of shame!"
- ne_news.24.f:0 "We will protect our people from harmful influence!"
-
- ##Hatai
+ ##Hatay
  ne_news.28.t:0 "Annexing of Hatai by Turkey"
  ne_news.28.d:0 "Today Hatay was annexed by Turkey under the influence of the war in Europe"
  ne_news.28.a:0 "This is a grain of sand compared to the current events in Europe"
@@ -214,7 +205,7 @@
 
  BUR_fascism:0 "The State of Burma"
  BUR_democratic:0 "Republic of the Union of Myanmar"
- BUR_communism:0 "Burmese People's Socialist Republic"
+ BUR_communism:0 "Union of Burma"
  BUR_neutrality:0 "Burma"
  BUR_fascism_ADJ:0 "Burmese"
  BUR_democratic_ADJ:0 "Burmese"
@@ -247,8 +238,8 @@
  POZ_democratic_DEF:0 "The Polish Occupation Zone"
  POZ_neutrality:0 "Polish Occupation Zone"
  POZ_neutrality_DEF:0 "The Polish Occupation Zone"
- POZ_communism:0 "Polish Occupation Zone"
- POZ_communism_DEF:0 "The Polish Occupation Zone"
+ POZ_communism:0 "Polish Liberation Zone"
+ POZ_communism_DEF:0 "The Polish Liberation Zone"
  POZ_fascism_ADJ:0 "Polish"
  POZ_democratic_ADJ:0 "Polish"
  POZ_neutrality_ADJ:0 "Polish"

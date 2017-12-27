@@ -12,11 +12,6 @@ news_event = {
 	
 	is_triggered_only = yes
 	#major = yes
-
-	immediate = {
-		#	
-	}
-	
 	
 	option = {	#I understand
 		name = ne_news.1.a  
@@ -2438,12 +2433,12 @@ news_event = {
 	# picture = GFX_naziarefuckedup
 	
 	major = yes
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	mean_time_to_happen = { days = 1 }
 
-	is_triggered_only = yes
+	
 
 ##	trigger = {
 ##		OR = { 
@@ -2528,6 +2523,8 @@ news_event = {
 	}
 }
 
+##Takee, I think this event is redundant#####################
+##Also, please check out Trello before adding new news events
 
 ####Execution of the Germans scientist####
 news_event = {

@@ -166,7 +166,7 @@
  
  ##Warsaw Pact
  ne_news.18.t:0 "The Warsaw Pact is formed!"
- ne_news.18.d:0 "Unsurprisingly to most foreign experts, the USSR yesterday founded its own defensive alliance in Warsaw as a response to NATO. The "Warsaw Pact", formally the "Treaty of Friendship, Cooperation, and Mutual Assistance", has eight member states and spans across Central and Eastern Europe. According to [SOV.GetLeader], its goal is the "protection of socialism in Europe and deterrence of American imperialism".\nWhile most Western leaders are now concerned with the future of their country, [USA.getLeader] and [ENG.GetLeader] promised to increase their defense spending and station more troops in Europe.\nWhile a third world war would certainly destroy the planet, most experts believe that both nuclear powers will keep each other in check now."
+ ne_news.18.d:0 "Unsurprisingly to most foreign experts, the USSR yesterday founded its own defensive alliance in Warsaw as a response to NATO. The "Warsaw Pact", formally the "Treaty of Friendship, Cooperation, and Mutual Assistance", has currently eight member states and spans across Central and Eastern Europe. According to [SOV.GetLeader], its goal is the "protection of socialism in Europe and deterrence of American and British imperialism".\nWhile most Western leaders are now concerned with the future of their country, [USA.getLeader] and [ENG.GetLeader] promised to increase their defense spending and station more troops in Europe.\nWhile a third world war would certainly destroy the planet, most experts believe that both nuclear powers will keep each other in check now."
  ne_news.18.a:0 "The world is divided..."
  ne_news.18.b:0 "Maybe we should ask for membership..."
  ne_news.18.c:0 "We had no plans to attack them anyways!"
