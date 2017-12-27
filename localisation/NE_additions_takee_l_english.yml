@@ -198,6 +198,8 @@
  STATE_780:0 "Zimbabwe"
  STATE_781:0 "Mangwe and Marakan"
  STATE_782:0 "Singapore"
+ STATE_788:0 "Karlsbad"
+ STATE_789:0 "Eger"
 
 
 ######################################################################################################################################
@@ -245,10 +247,10 @@
  POZ_neutrality_ADJ:0 "Polish"
  POZ_communism_ADJ:0 "Polish"
 
- ROA_fascism:0 "Russian Liberation Movement"
- ROA_democratic:0 "Russian Liberation Movement"
- ROA_communism:0 "Russian Liberation Movement"
- ROA_neutrality:0 "Russian Liberation Movement"
+ ROA_fascism:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_democratic:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_communism:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_neutrality:0 "Committee for the Liberation of the Peoples of Russia"
  ROA_fascism_ADJ:0 "Russian"
  ROA_democratic_ADJ:0 "Russian"
  ROA_communism_ADJ:0 "Russian"
@@ -256,3 +258,5 @@
  ROA_neutrality_party:0 "KONR"
  ROA_neutrality_party_long:0 "Committee for the Liberation of the Peoples of Russia"
 
+####Victory points
+VICTORY_POINTS_788:0 "Karlovy Vary"
