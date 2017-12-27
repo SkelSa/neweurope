@@ -336,6 +336,8 @@ country_event = {
 	}
 }
 
+
+
 #Soviet response to Finish surrender
 country_event = {
 	id = ne_winter_war.3
@@ -365,7 +367,7 @@ country_event = {
 		
 	}
 
-	#Ignore the offer
+	#Refuse the surrender
 	option = {
 		name = finland.8.b
 		ai_chance = {
@@ -392,10 +394,14 @@ country_event = {
 
 
 
+
+
 ###################################################
 ##YUG JOINS ALLIES INSTEAD OF AXIS#################
 ###################################################
 
+##Own Axis join event chain
+##Use the spirit "NE_Alone" to keep Axis members from joining Yugoslavian wars
 
 
 

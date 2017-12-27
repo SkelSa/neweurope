@@ -262,7 +262,8 @@ country_event = {
 	}
 	
     option = {	
-		#	
+		#Reduce communist support for the other Spain
+		SPR = { add_popularity = { ideology = communism popularity = -0.22 }  }
     }
 
 	
@@ -348,10 +349,39 @@ country_event = {
 }
 
 
+##EDIT: Hungary loses it's greater Hungary upon 95% surrender progress!
+country_event = {
+	id = ne_hidden.10
+
+	hidden = yes
+
+	trigger = {
+		AND = {
+			BUR = {
+				exists = yes
+				NOT = { 
+					is_puppet_of = RAJ
+				}
+			}
+		}
+	}
+
+	immediate = {
+		BUR = { drop_cosmetic_tag = yes }
+	}
+
+    option = {
+		#
+    }
+
+	
+}
+
+
 
 ##BATTLE EVENTS (Hidden trigger when Kursk falls!)
 country_event = {
-	id = ne_hidden.10
+	id = ne_hidden.11
 
 	hidden = yes
 

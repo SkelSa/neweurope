@@ -812,25 +812,28 @@ country_event = {
 				DDR = { set_cosmetic_tag = NE_DDR } #DONE	#FLAG (C) and NAME (C) AND COLOR	also flag event
 				GRE = { set_cosmetic_tag = NE_GRE } #DONE	#FLAG (N+C) and NAME (N)			also flag and name change when communist wins
 				CZE = { set_cosmetic_tag = NE_CZE } #DONE	#FLAG (C) and NAME (C)
+				BUL = { set_cosmetic_tag = NE_BUL } #DONE	#NAME (C)
+				ROM = { set_cosmetic_tag = NE_ROM } #DONE	#NAME (C)
 				POL = { set_cosmetic_tag = NE_POL } #DONE	#FLAG (C)
 				HUN = { set_cosmetic_tag = NE_HUN } #DONE	#NAME (N+F) and FLAG (N+F+C)			also flag events									##also do something with Hungary's focus
-				SPR = { set_cosmetic_tag = NE_SPR } #DONE	#NAME (C+F) and FLAG (D+F+C)		also flag events for Franco and Diaz
+				SPR = { set_cosmetic_tag = NE_SPR } #DONE	#NAME (C) and FLAG (D+C)		also flag events for Franco and Diaz
 				PAK = {set_cosmetic_tag = NE_PAK } #DONE	#NAME (D) and COLOR
 				KOR = {set_cosmetic_tag = NE_KOR } #DONE	#NAME (D) and COLOR
 				PRC = {set_cosmetic_tag = NE_CSR } #DONE	#FLAG (C) and NAME (C)
-				YUN = {set_cosmetic_tag = NE_YUN } #DONE			#NAME (N) FLAG (N)
+				YUN = {set_cosmetic_tag = NE_YUN } #DONE	FLAG (N) and #NAME (N) 
 				LAO = {set_cosmetic_tag = NE_LAO } #DONE	FLAG (C)
 				USA = {set_cosmetic_tag = NE_USA } #DONE	#FLAG (D)							also flag events when Alaska and Haiwaii join and the communism mega event
 				SOV = {set_cosmetic_tag = NE_SOV } #DONE	#FLAG (C)							also flag events (3 times)
 				CHI = {set_cosmetic_tag = NE_CHI}  #DONE	NAME (N)
 
-				##Vichy France # (NAME (F) and COLOR)gets its cosmetic in the main event file
+				##Vichy France (NAME (F) and COLOR) gets its cosmetic in the hidden file
+				##Franco's Spain (NAME (F) and FLAG (flag) gets its cosmetic in the hidden file
 				##Communist India (FLAG (C) and COLOR) are set when they're independent
 
 			}
 			
 			
-			##Better Leaders, Add the Korean's
+			##Better Leaders, ADD THE KOREANS of KOR
 			if = {
 				limit = {
 					has_global_flag = leaders_chosen
@@ -1010,8 +1013,7 @@ country_event = {
 					has_global_flag = ne_strict_faction
 				}
 				
-				##reduce popularity support in some countries
-				##event to remove american guarantee when guaranteed country is communist with 80% support					
+				##EVENT TO REMOVE AMERICAN GUARANTEE WHEN GUARANTEED COUNTRY IS COMMUNIST WITH 80% SUPPORT					
 			}
 
 			

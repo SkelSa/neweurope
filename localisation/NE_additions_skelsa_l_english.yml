@@ -192,6 +192,12 @@ l_english:
  ##Spanish State (SPS)
  NE_SPS_fascism:0 "Spanish State"
  NE_SPS_fascism_DEF:0 "The Spanish State"
+ ##ROM
+ NE_ROM_fascism:0 "Socialist Republic of Romania"
+ NE_ROM_fascism_DEF:0 "The Socialist Republic of Romania"
+ ##BUL
+ NE_BUL_fascism:0 "People's Republic of Bulgaria"
+ NE_BUL_fascism_DEF:0 "The People's Republic of Bulgaria"
  ##HUN
  NE_HUN_fascism:0 "Kingdom of Hungary"
  NE_HUN_fascism_DEF:0 "The Kingdom of Hungary"
@@ -238,6 +244,7 @@ l_english:
  ne_finland.0.t:0 ""
  ne_finland.0.d:0 ""
  ne_finland.0.a:0 ""
+ ne_finland.0.b:0 ""
  
  ##HISTORICAL FIXES EVENTS##
  
@@ -260,6 +267,14 @@ l_english:
  ne_historical.4.d:0 "The ambassadors from Sofia have politely refused our proposal and stressed Bulgaria's desire to keep out of international affairs..."
  ne_historical.4.a:0 "We made our warnings clear..."
  ne_historical.4.b:0 "They would have been a useless ally anyways."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  ##HISTORICAL FIXES END
  
