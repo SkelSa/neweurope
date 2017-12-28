@@ -256,7 +256,7 @@ country_event = {
 	desc = ne_takee.3.d
 	picture = GFX_report_event_soviet_invasion_map
 
-	mean_time_to_happen { days = 10 }
+	mean_time_to_happen { days = 8 }
 
 	trigger = {
 		any_country = {
@@ -381,8 +381,8 @@ country_event = { ##Russian Liberation Army formation
 			ROA = { exists = no }
 		}
 		AND = {
-			GER = { any_war_score < 40 }
-			SOV = { any_war_score > 60 }
+			GER = { surrender_progress > 0.6 }
+			SOV = { surrender_progress < 0.15 }
 		}
 	}
 
@@ -392,7 +392,6 @@ country_event = { ##Russian Liberation Army formation
 		ROA = {
 			add_to_war = { targeted_alliance = GER enemy = SOV }
 			give_military_access = GER
-			hidden_effect = { load_oob = "RLA_forces_oob" }
 		}
 
 		random_owned_state = {
@@ -468,6 +467,23 @@ country_event = { ##Russian Liberation Army formation
 		}
 		GER = { add_opinion_modifier = { target = ROA modifier = liberation_army_formation } }
 		ROA = { add_opinion_modifier = { target = GER modifier = liberation_army_formation } }
+
+		SOV = { remove_unit_leader = 412 }
+
+		ROA = {
+			create_corps_commander = {
+				name = "Andrey Vlasov"
+				picture = "gfx/leaders/POL/Portrait_Soviet_Andrey_Vlasov.dds"
+				traits = { winter_specialist }
+				id = 412
+				skill = 3
+			}
+		}
+
+		ROA = {
+			hidden_effect = { load_oob = "RLA_forces_oob" }
+			add_manpower = 100000
+		}
 	}
 
 }
