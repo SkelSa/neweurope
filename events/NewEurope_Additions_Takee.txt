@@ -388,12 +388,10 @@ country_event = { ##Russian Liberation Army formation
 
 	option = {
 		name = ne_takee.6.a
+		ROA = { transfer_state = 9 }
 		GER = { give_military_access = ROA }
-		ROA = {
-			add_to_war = { targeted_alliance = GER enemy = SOV }
-			give_military_access = GER
-			transfer_state = 788
-		}
+		ROA = { give_military_access = GER }
+		ROA = { add_to_war = { targeted_alliance = GER enemy = SOV } }
 		if = {  ##Give them guns and some aircrafts
 			limit = { GER = { has_equipment = { infantry_equipment > 100000 } } }
 			send_equipment = { target = ROA type = infantry_equipment amount = 50000 }
@@ -421,10 +419,6 @@ country_event = { ##Russian Liberation Army formation
 		if = {
 			limit = { GER = { has_equipment = { artillery_equipment > 1500 } } }
 			send_equipment = { target = ROA type = artillery_equipment amount = 680 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { artillery_equipment > 500 } } }
-			send_equipment = { target = ROA type = artillery_equipment amount = 250 }
 		}
 		if = {
 			limit = { GER = { has_equipment = { motorized_equipment > 4000 } } }
