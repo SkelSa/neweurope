@@ -232,6 +232,9 @@
  NE_IND_BUR_communism_ADJ:0 "Burmese"
  NE_IND_BUR_neutrality_ADJ:0 "Burmese"
 
+ NE_DEU_REN_fascism:0 "Großdeutsches Reich"
+ NE_DEU_REN_fascism_DEF:0 "Das Großdeutsches Reich"
+
  POZ_fascism:0 "Polish Occupation Zone"
  POZ_fascism_DEF:0 "The Polish Occupation Zone"
  POZ_democratic:0 "Polish Occupation Zone"

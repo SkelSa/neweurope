@@ -40,6 +40,12 @@ country_event = {
 		}
 		news_event = { hours = 6 id = news.36 }
 	}
+	hidden_effect = {
+		country_event = {
+			id = ne_takee.7
+			days = 1460
+		}
+	}
 }
 
 #anti_comintern_pact

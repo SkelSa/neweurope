@@ -398,7 +398,7 @@ country_event = { ##Russian Liberation Army formation
 			limit = {
 				any_neighbor_state = { 
 					is_owned_by = SOV
-					state_population < 2000000
+					state_population < 1000000
 				} 
 			}
 			ROA = { transfer_state = PREV }
@@ -408,7 +408,7 @@ country_event = { ##Russian Liberation Army formation
 			limit = {
 				any_neighbor_state = {
 					is_owned_by = ROA
-					state_population < 800000
+					state_population < 250000
 				} 
 			}
 			ROA = { transfer_state = PREV }
@@ -465,25 +465,41 @@ country_event = { ##Russian Liberation Army formation
 			limit = { GER = { has_equipment = { tac_bomber_equipment > 20 } } }
 			send_equipment = { target = ROA type = tac_bomber_equipment amount = 12 }
 		}
-		GER = { add_opinion_modifier = { target = ROA modifier = liberation_army_formation } }
+		GER = { 
+			add_opinion_modifier = { target = ROA modifier = liberation_army_formation }
+			add_to_faction = ROA
+		}
 		ROA = { add_opinion_modifier = { target = GER modifier = liberation_army_formation } }
-
-		SOV = { remove_unit_leader = 412 }
 
 		ROA = {
 			create_corps_commander = {
 				name = "Andrey Vlasov"
-				picture = "gfx/leaders/POL/Portrait_Soviet_Andrey_Vlasov.dds"
+				portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Andrey_Vlasov.dds"
 				traits = { winter_specialist }
 				id = 412
 				skill = 3
 			}
-		}
-
-		ROA = {
 			hidden_effect = { load_oob = "RLA_forces_oob" }
 			add_manpower = 100000
 		}
+
+	}
+
+}
+
+country_event = {
+	id = ne_takee.7
+	title = ne_takee.7.t
+	desc = ne_takee.7.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ne_takee.7.a
+		GER = { set_cosmetic_tag = NE_DEU_REN }
 	}
 
 }
