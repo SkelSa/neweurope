@@ -113,6 +113,11 @@
   ne_takee.5.b:0 "Abandon scientists"
   ne_takee.5.c:0 "Execute all scientists as enemies of the Soviet people"
 
+ ##Germany changes its name
+  ne_takee.7.t:0 "The German Reich changes its name"
+  ne_takee.7.d:0 "We have risen above the other powers, becoming one of the most powerful countries. Now our country will be called Großdeutsches Reich!"
+  ne_takee.7.a:0 "Glory to Großdeutsches Reich!"
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
@@ -122,6 +127,7 @@
  peking_plan.1.tt:0 "§GGet transmitted Poland destroyers.§!"
  warning_for_a_player.1.tt:0 "§RWarning issued§!"
  condition_for_the_around_maginot_tt:1 "You must control Poland, or make a compromise with it, or be its ally."
+ ne_takee.3.d:0 "§G[Root.GetName]§! now will be called §GGroßdeutsches Reich§!"
 
  ######################################################################################################################################
  ############################################################IDEAS#####################################################################
