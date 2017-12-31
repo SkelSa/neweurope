@@ -381,7 +381,7 @@ country_event = { ##Russian Liberation Army formation
 			ROA = { exists = no }
 		}
 		AND = {
-			GER = { surrender_progress > 0.6 }
+			GER = { surrender_progress > 0.45 }
 			SOV = { surrender_progress < 0.15 }
 		}
 	}
@@ -495,10 +495,12 @@ country_event = {
 	
 	trigger = {
 		GER = {
-			num_of_factories > 220
-			has_army_size = { size > 120 }
-			has_government = fascism
-			NOT = { has_country_flag = ne_deu_ren }
+			AND = {
+				num_of_factories > 220
+				has_army_size = { size > 120 }
+				has_government = fascism
+				NOT = { has_country_flag = ne_deu_ren }
+			}
 		}
 	}
 
@@ -524,12 +526,16 @@ country_event = {
 	desc = ne_takee.8.d
 	picture = GFX_report_event_german_speech
 	
+	hidden = yes
+
 	trigger = {
 		GER = {
 			AND = {
 				has_country_flag = ne_deu_ren
-				surrender_progress > 0.6
-				num_of_factories < 180
+				OR = {
+					surrender_progress > 0.29
+					num_of_factories < 180
+				}
 			}
 		}
 	}

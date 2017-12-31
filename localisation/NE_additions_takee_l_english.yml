@@ -127,7 +127,7 @@
  peking_plan.1.tt:0 "§GGet transmitted Poland destroyers.§!"
  warning_for_a_player.1.tt:0 "§RWarning issued§!"
  condition_for_the_around_maginot_tt:1 "You must control Poland, or make a compromise with it, or be its ally."
- ne_takee.3.d:0 "§G[Root.GetName]§! now will be called §GGroßdeutsches Reich§!"
+ germany_change_its_name:0 "§G[Root.GetName]§! now will be called §GGroßdeutsches Reich§!"
 
  ######################################################################################################################################
  ############################################################IDEAS#####################################################################
