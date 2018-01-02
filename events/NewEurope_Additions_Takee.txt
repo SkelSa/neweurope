@@ -487,7 +487,7 @@ country_event = { ##Russian Liberation Army formation
 
 }
 
-country_event = {
+country_event = {  ##Germany name change event
 	id = ne_takee.7
 	title = ne_takee.7.t
 	desc = ne_takee.7.d
@@ -520,7 +520,7 @@ country_event = {
 
 }
 
-country_event = {
+country_event = {  ##Germany lose the power and change its name
 	id = ne_takee.8
 	title = ne_takee.8.t
 	desc = ne_takee.8.d
@@ -553,5 +553,60 @@ country_event = {
     option = {
 		##Empty space
     }
+
+}
+
+country_event = {  ##United Nations Partition Plan for Palestine, 1947. Early developmental phase
+	id = ne_takee.9
+	title = ne_takee.9.t
+	desc = ne_takee.9.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	fire_only_once = yes
+
+	trigger = {
+		ENG = {
+			exists = yes
+			NOT = {
+				has_government = fascism
+				has_war = yes
+			}
+		}
+
+		OR = {
+			has_global_flag = germany_partitioned
+			has_global_flag = germany_divided
+			has_global_flag = germany_unified
+		}
+
+		date > 1946.1.1
+
+		788 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
+		791 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
+		789 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
+		454 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
+		793 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
+		790 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
+		792 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
+		794 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
+		
+	}
+
+	option = {
+		name = ne_takee.9.a
+		ISR = {
+			transfer_state = 788
+			transfer_state = 789
+			transfer_state = 784
+			transfer_state = 793
+			transfer_state = 792
+			transfer_state = 794
+		}
+		PAL = { 
+			transfer_state = 791
+			transfer_state = 454
+			transfer_state = 790
+		}
+	}
 
 }

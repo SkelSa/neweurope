@@ -1,0 +1,19 @@
+state={
+	id=791
+	name="STATE_791"
+	provinces={
+		1065 
+	}
+	manpower = 206521
+	
+	state_category = rural
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+	}
+}

@@ -204,6 +204,13 @@
  STATE_780:0 "Zimbabwe"
  STATE_781:0 "Mangwe and Marakan"
  STATE_782:0 "Singapore"
+ STATE_788:0 "The Golan Heights"
+ STATE_789:0 "Haifa"
+ STATE_790:0 "Gaza and Negev"
+ STATE_791:0 "Nazareth"
+ STATE_792:0 "Negev"
+ STATE_793:0 "Beersheba"
+ STATE_794:0 "Merhavim and Eshkol"
 
 
 ######################################################################################################################################
