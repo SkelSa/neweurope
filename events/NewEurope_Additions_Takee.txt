@@ -388,6 +388,7 @@ country_event = { ##Russian Liberation Army formation
 
 	option = {
 		name = ne_takee.6.a
+		ai_chance = { factor = 100 }
 		GER = { give_military_access = ROA }
 		ROA = {
 			add_to_war = { targeted_alliance = GER enemy = SOV }
@@ -508,6 +509,7 @@ country_event = {  ##Germany name change event
 
 	option = {
 		name = ne_takee.7.a
+		ai_chance = { factor = 100 }
 		hidden_effect = { 
 			GER = {
 				set_cosmetic_tag = NE_DEU_REN
@@ -556,15 +558,29 @@ country_event = {  ##Germany lose the power and change its name
 
 }
 
-country_event = {  ##United Nations Partition Plan for Palestine, 1947. Early developmental phase
+country_event = { ##The United Nations Partition Plan Vote
 	id = ne_takee.9
 	title = ne_takee.9.t
 	desc = ne_takee.9.d
-	picture = GFX_report_event_generic_sign_treaty1
+	picture = GFX_report_event_soviet_invasion_map ##need to change
 
 	fire_only_once = yes
 
 	trigger = {
+
+		any_country = {
+			OR = {
+				has_government = democratic
+				has_government = communism
+			}
+			NOT = {
+				AND = {
+					is_puppet = yes
+					is_puppet_of = SOV
+				}
+			}
+		}
+
 		ENG = {
 			exists = yes
 			NOT = {
@@ -581,32 +597,184 @@ country_event = {  ##United Nations Partition Plan for Palestine, 1947. Early de
 
 		date > 1946.1.1
 
-		788 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
-		791 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
-		789 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
-		454 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
-		793 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
-		790 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
-		792 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
-		794 = { OR = { tag = ISR tag = PAL } is_claimed_by = PREV }
-		
+		AND = {
+			788 = { is_core_of = ISR }
+			791 = { is_core_of = ISR }
+			789 = { is_core_of = ISR }
+			454 = { is_core_of = ISR }
+			793 = { is_core_of = ISR }
+			790 = { is_core_of = ISR }
+			792 = { is_core_of = ISR }
+			794 = { is_core_of = ISR }
+
+			788 = { is_core_of = PAL }
+			791 = { is_core_of = PAL }
+			789 = { is_core_of = PAL }
+			454 = { is_core_of = PAL }
+			793 = { is_core_of = PAL }
+			790 = { is_core_of = PAL }
+			792 = { is_core_of = PAL }
+			794 = { is_core_of = PAL }
+		}
+
+		AND = { 
+			ISR = { exists = no }
+			PAL = { exists = no }
+		}
+	
 	}
 
 	option = {
 		name = ne_takee.9.a
-		ISR = {
-			transfer_state = 788
-			transfer_state = 789
-			transfer_state = 784
-			transfer_state = 793
-			transfer_state = 792
-			transfer_state = 794
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				OR = {
+					tag = SOV
+					tag = USA
+					tag = CAN
+					tag = FRA
+					tag = BRA
+					tag = PER
+					tag = VEN
+					tag = BOL
+					tag = PAR
+					tag = URG
+					tag = BEL
+					tag = HOL
+				}
+			}
 		}
-		PAL = { 
-			transfer_state = 791
-			transfer_state = 454
-			transfer_state = 790
+		set_country_flag = un_voted_yes_for_partition
+	}
+
+	option = {
+		name = ne_takee.9.b
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				OR = {
+					tag = RAJ
+					tag = PER
+					tag = SAU
+					tag = TUR
+					tag = SYR
+					tag = YEM
+					tag = IRQ
+					tag = EGY
+					tag = PAK
+				}
+			}
 		}
+		set_country_flag = un_voted_no_for_partition
+	}
+
+	option = { ##abstentions
+		name = ne_takee.9.c
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				NOT = { 
+					OR = {
+						tag = RAJ
+						tag = PER
+						tag = SAU
+						tag = TUR
+						tag = SYR
+						tag = YEM
+						tag = IRQ
+						tag = EGY
+						tag = PAK
+						tag = SOV
+						tag = USA
+						tag = CAN
+						tag = FRA
+						tag = BRA
+						tag = PER
+						tag = VEN
+						tag = BOL
+						tag = PAR
+						tag = URG
+						tag = BEL
+						tag = HOL
+					}
+					NOT = { has_government = neutrality }
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {  ##United Nations Partition Plan for Palestine, 1947. Early developmental phase
+	id = ne_takee.10
+	title = ne_takee.10.t
+	desc = ne_takee.10.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 6 }
+
+	trigger = {
+		tag = ENG
+		any_country = {
+			AND = {
+				OR = {
+					has_government = democratic
+					has_government = communism
+				}
+				OR = {
+					has_country_flag = un_voted_yes_for_partition
+					has_country_flag = un_voted_no_for_partition
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ne_takee.10.a
+		if = {
+			limit = {
+				AND = {
+					USA = { has_country_flag = un_voted_yes_for_partition }
+					SOV = { has_country_flag = un_voted_yes_for_partition }
+					FRA = { has_country_flag = un_voted_yes_for_partition }
+					any_country = { AND = { OR = { has_government = communism has_government = democratic } has_country_flag = un_voted_yes_for_partition } } 
+				}
+			}	
+			ISR = {
+				transfer_state = 788
+				transfer_state = 789
+				transfer_state = 784
+				transfer_state = 793
+				transfer_state = 792
+				transfer_state = 794
+			}
+			PAL = { 
+				transfer_state = 791
+				transfer_state = 454
+				transfer_state = 790
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							has_country_flag = un_voted_yes_for_partition
+							has_country_flag = un_voted_no_for_partition
+						}
+					}
+					clr_country_flag = PREV
+				}
+			}
+		}
+		
 	}
 
 }
