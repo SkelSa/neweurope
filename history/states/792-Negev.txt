@@ -4,14 +4,14 @@ state={
 	provinces={
 		1015 7176 11970 4088
 	}
-	manpower = 51621
+	manpower = 289415
 	
 	state_category = rural
 
 	history={
 		owner = ENG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 		}
 		add_core_of = PAL
 		add_core_of = ISR
