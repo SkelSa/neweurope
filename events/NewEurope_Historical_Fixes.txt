@@ -581,7 +581,7 @@ country_event = {
 	
 	
 	option = {	#Long Live the Emperor!
-		name = ne_skelsa.102.a
+		name = ne_skelsa.101.a
 		
 		##Effects
 		add_political_power = 70

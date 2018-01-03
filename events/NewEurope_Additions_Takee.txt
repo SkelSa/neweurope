@@ -375,14 +375,13 @@ country_event = { ##Russian Liberation Army formation
 			GER = {
 				has_government = fascism
 				has_war_with = SOV
-				any_war_score < 60
 			}
 			SOV = { has_government = communism }
 			ROA = { exists = no }
 		}
 		AND = {
-			GER = { surrender_progress > 0.45 }
-			SOV = { surrender_progress < 0.15 }
+			GER = { surrender_progress > 0.12 }
+			SOV = { surrender_progress < 0.06 }
 		}
 	}
 
@@ -481,7 +480,7 @@ country_event = { ##Russian Liberation Army formation
 				skill = 3
 			}
 			hidden_effect = { load_oob = "RLA_forces_oob" }
-			add_manpower = 100000
+			add_manpower = 180000
 		}
 
 	}
@@ -532,14 +531,12 @@ country_event = {  ##Germany lose the power and change its name
 
 	trigger = {
 		GER = {
-			AND = {
-				has_country_flag = ne_deu_ren
-				OR = {
-					surrender_progress > 0.29
-					num_of_factories < 180
-				}
-				NOT = { has_government = fascism }
+			has_country_flag = ne_deu_ren
+			OR = {
+				surrender_progress > 0.25
+				num_of_factories < 200
 			}
+			has_government = fascism
 		}
 	}
 
