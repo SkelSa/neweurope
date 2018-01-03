@@ -208,9 +208,7 @@
  STATE_789:0 "Haifa"
  STATE_790:0 "Gaza and Negev"
  STATE_791:0 "Nazareth"
- STATE_792:0 "Negev"
- STATE_793:0 "Beersheba"
- STATE_794:0 "Merhavim and Eshkol"
+ STATE_792:0 "Negev and Be'er Sheva"
 
 
 ######################################################################################################################################
