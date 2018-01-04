@@ -383,6 +383,17 @@ country_event = { ##Russian Liberation Army formation
 			GER = { surrender_progress > 0.12 }
 			SOV = { surrender_progress < 0.06 }
 		}
+		AND = {
+			96 = { is_controlled_by = SOV }
+			95 = { is_controlled_by = SOV }
+			94 = { is_controlled_by = SOV }
+			93 = { is_controlled_by = SOV }
+			91 = { is_controlled_by = SOV }
+			89 = { is_controlled_by = SOV }
+			192 = { is_controlled_by = SOV }
+			198 = { is_controlled_by = SOV }
+			199 = { is_controlled_by = SOV }
+		}
 	}
 
 	option = {
