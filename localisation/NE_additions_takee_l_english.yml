@@ -113,10 +113,32 @@
   ne_takee.5.b:0 "Abandon scientists"
   ne_takee.5.c:0 "Execute all scientists as enemies of the Soviet people"
 
+ ##Russian Liberation Army formation
+##ne_takee.6.t:0
+
  ##Germany changes its name
   ne_takee.7.t:0 "The German Reich changes its name"
   ne_takee.7.d:0 "We have risen above the other powers, becoming one of the most powerful countries. Now our country will be called Großdeutsches Reich!"
   ne_takee.7.a:0 "Glory to Großdeutsches Reich!"
+
+ ##Germany change its name back, when the power is lose. The event is hidden
+
+ ##Anglo-Soviet invasion of Iran EVENTS
+  ne_takee.9.t:0 "Preventing the possible occupation of Iran's oil fields by Germany"
+  ne_takee.9.d:0 "Iran has long sympathized with Germany. With the renewal of friendly relations between the USSR and Great Britain and the beginning of the war between Germany and the USSR, it is necessary to solve the Iranian question"
+  ne_takee.9.a:0 "Start preparing for the invasion of Iran"
+
+  ne_takee.10.t:0 "Preventing the possible occupation of Iran's oil fields by Germany"
+  ne_takee.10.d:0 "We have prepared our troops and are ready to invade any minute"
+  ne_takee.10.a:0 "Start Invasion"
+
+  ne_takee.11.t:0 "Our allies began an invasion"  ##Allies or Soviet launched an attack
+  ne_takee.11.d:0 "Our allies began to invade with us. Together we will crush them!"
+  ne_takee.11.a:0 "The operation should not take much time..."
+
+  ne_takee.12.t:0 "Iran is giving up!"
+  ne_takee.12.d:0 "Iran suffered a crushing defeat: their army is running, the government is in flight, and their generals are on the side of the Allies!"
+  ne_takee.12.a:0 "Iran will not get an Axis!"
 
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
@@ -128,6 +150,10 @@
  warning_for_a_player.1.tt:0 "§RWarning issued§!"
  condition_for_the_around_maginot_tt:1 "You must control Poland, or make a compromise with it, or be its ally."
  germany_change_its_name:0 "§G[Root.GetName]§! now will be called §GGroßdeutsches Reich§!"
+ iran_war_tooltip.1.tt:0 "§M[Root.GetAdjective]§! will begin planning an §Rinvasion of Iran§!. The process will last about §Rtwo months§!."
+ iran_war_tooltip.2.tt:0 "§YThe invasion of Iran will begin§!"
+ iran_war_tooltip.3.tt:0 "§MThe Allies§! will launch an invasion of Iran with us."
+ iran_war_tooltip.4.tt:0 "Iran will be §Ydivided§! into §Rtwo§! spheres of §Yinfluence§!."
 
  ######################################################################################################################################
  ############################################################IDEAS#####################################################################

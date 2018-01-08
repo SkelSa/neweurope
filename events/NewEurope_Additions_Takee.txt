@@ -491,7 +491,7 @@ country_event = { ##Russian Liberation Army formation
 				skill = 3
 			}
 			hidden_effect = { load_oob = "RLA_forces_oob" }
-			add_manpower = 180000
+			add_manpower = 140000
 		}
 
 	}
@@ -563,5 +563,253 @@ country_event = {  ##Germany lose the power and change its name
     option = {
 		##Empty space
     }
+
+}
+
+country_event = {  ##Anglo-Soviet invasion of Iran
+	id = ne_takee.9
+	title = ne_takee.9.t
+	desc = ne_takee.9.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	fire_only_once = yes
+
+	trigger = {
+
+		OR = {
+			tag = SOV
+			tag = ENG
+		}
+
+		AND = {
+			SOV = { has_war_with = GER }
+			ENG = { has_war_with = GER }
+			NOT = {
+				SOV = { has_war_with = ENG }
+			}
+		}
+
+		PER = {
+			exists = yes
+			NOT = {
+				OR = { 
+					has_government = communism
+					has_government = democratic
+				}
+				OR = {
+					has_war_with = SOV
+					has_war_with = ENG
+				}
+			}
+		}
+
+		AND = {
+			ENG = { has_opinion = { target = SOV value > -5 } }
+			SOV = { has_opinion = { target = ENG value > -5 } }
+		}
+	}
+
+	option = {
+		name = ne_takee.9.a
+		SOV = {
+			add_ai_strategy = {
+				type = conquer
+				id = "PER"
+				value = 99
+			}
+		}
+		RAJ = {
+			if = {
+				limit = { is_puppet_of = ENG }
+				add_ai_strategy = {
+					type = conquer
+					id = "PER"
+					value = 89
+				}
+			}
+		}
+		AUS = {
+			if = {
+				limit = { is_puppet_of = ENG }
+				add_ai_strategy = {
+					type = conquer
+					id = "PER"
+					value = 69
+				}
+			}
+		}
+		ENG = {
+			add_ai_strategy = {
+				type = conquer
+				id = "PER"
+				value = 69
+			}
+		}
+		SOV = { diplomatic_relation = { country = ENG relation = non_aggression_pact active = yes } }
+		ENG = { diplomatic_relation = { country = SOV relation = non_aggression_pact active = yes } }
+
+		hidden_effect = {
+			random_list = {
+				50 = { SOV = { country_event = { days = 80 id = ne_takee.10 } } }
+				50 = { ENG = { country_event = { days = 80 id = ne_takee.10 } } }
+			}
+		}
+		custom_effect_tooltip = iran_war_tooltip.1.tt
+	}
+
+}
+
+country_event = {
+	id = ne_takee.10
+	title = ne_takee.10.t
+	desc = ne_takee.10.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ne_takee.10.a
+		if = {
+			limit = {
+				tag = SOV
+			}
+			hidden_effect = {
+				declare_war_on = { target = PER type = annex_everything }
+				ENG = { country_event = { hours = 2 id = ne_takee.11 } }
+			}
+		}
+		if = {
+			limit = {
+				tag = ENG
+			}
+			hidden_effect = {
+				declare_war_on = { target = PER type = annex_everything }
+				SOV = { country_event = { hours = 2 id = ne_takee.11 } }
+			}
+		}
+		set_global_flag = op_countenance
+		custom_effect_tooltip = iran_war_tooltip.2.tt
+	}
+
+}
+
+country_event = {
+	id = ne_takee.11
+	title = ne_takee.11.t
+	desc = ne_takee.11.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ne_takee.11.a
+		if = {
+			limit = {
+				tag = ENG
+			}
+			ENG = {
+				add_to_war = {
+					targeted_alliance = AUS
+					enemy = PER
+				}
+				add_to_war = {
+					targeted_alliance = RAJ
+					enemy = PER
+				}
+				add_to_war = {
+					targeted_alliance = SOV
+					enemy = PER
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = SOV
+			}
+			SOV = {
+				add_to_war = {
+					targeted_alliance = ENG		
+					enemy = PER
+				}
+			}
+			ENG = {
+				add_to_war = {
+					targeted_alliance = AUS
+					enemy = PER
+				}
+				add_to_war = {
+					targeted_alliance = RAJ
+					enemy = PER
+				}
+			}
+		}
+		custom_effect_tooltip = iran_war_tooltip.3.tt
+	}
+}
+
+country_event = {
+	id = ne_takee.12
+	title = ne_takee.12.t
+	desc = ne_takee.12.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	fire_only_once = yes
+
+	trigger = {
+
+		PER = {
+			AND = {
+				has_war_with = SOV
+				has_war_with = ENG
+			}
+			OR = {
+				surrender_progress > 0.05
+				has_capitulated = yes
+			}
+		}
+
+		has_global_flag = op_countenance
+	}
+
+	option = {
+		name = ne_takee.12.a
+		SOV = {
+			transfer_state = 266
+			transfer_state = 416
+			transfer_state = 419
+			transfer_state = 420
+		}
+		ENG = {
+			transfer_state = 413
+			transfer_state = 412
+		}
+		if = {
+			limit = { PER = { has_war_with = SOV } }
+			PER = { white_peace = SOV }
+		}
+		if = {
+			limit = { PER = { has_war_with = ENG } }
+			PER = { white_peace = ENG }
+		}
+		if = {
+			limit = { PER = { has_war_with = AUS } }
+			PER = { white_peace = AUS }
+		}
+		if = {
+			limit = { PER = { has_war_with = RAJ } }
+			PER = { white_peace = RAJ }
+		}
+		PER = { 
+			add_national_unity = -0.4
+			add_popularity = { ideology = communism popularity = 0.25 }
+			add_popularity = { ideology = democratic popularity = 0.25 }
+		}
+		hidden_effect = { clr_global_flag = op_countenance }
+		custom_effect_tooltip = iran_war_tooltip.4.tt
+	}
 
 }
