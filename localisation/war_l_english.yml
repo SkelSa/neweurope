@@ -14,6 +14,8 @@
  WAR_NAME_SOV_FIN:0 "Winter War"
  WAR_NAME_USA_SOV:0 "Third World War"
  WAR_NAME_SOV_USA:0 "Third World War"
+ WAR_NAME_ENG_SOV:0 "World War III"
+ WAR_NAME_SOV_ENG:0 "World War III"
  WAR_NAME_DPR_KOR:0 "Korean War"
  WAR_NAME_SER_TUR:0 "Remove Kebab"
  WAR_NAME_YUG_TUR:0 "Remove Kebab"
