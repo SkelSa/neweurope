@@ -616,7 +616,7 @@ country_event = {  ##Anglo-Soviet invasion of Iran
 			add_ai_strategy = {
 				type = conquer
 				id = "PER"
-				value = 99
+				value = 105
 			}
 		}
 		RAJ = {
@@ -625,7 +625,7 @@ country_event = {  ##Anglo-Soviet invasion of Iran
 				add_ai_strategy = {
 					type = conquer
 					id = "PER"
-					value = 89
+					value = 99
 				}
 			}
 		}
@@ -670,6 +670,12 @@ country_event = {
 
 	fire_only_once = yes
 
+	immediate = { 
+		hidden_effect = { ENG = { add_timed_idea = { days = 60 id = NE_alone } } }
+		hidden_effect = { SOV = { add_timed_idea = { days = 60 id = NE_alone } } }
+		hidden_effect = { PER = { add_timed_idea = { days = 60 id = NE_alone } } }
+	}
+
 	option = {
 		name = ne_takee.10.a
 		if = {
@@ -692,12 +698,6 @@ country_event = {
 		}
 		set_global_flag = op_countenance
 		custom_effect_tooltip = iran_war_tooltip.2.tt
-	}
-
-	immediate = { 
-		hidden_effect = { ENG = { add_timed_idea = { days = 60 id = NE_alone } } }
-		hidden_effect = { SOV = { add_timed_idea = { days = 60 id = NE_alone } } }
-		hidden_effect = { PER = { add_timed_idea = { days = 60 id = NE_alone } } }
 	}
 
 }
@@ -776,6 +776,10 @@ country_event = {
 					420 = { is_controlled_by = SOV }
 					266 = { is_controlled_by = SOV }
 					416 = { is_controlled_by = SOV }
+					SOV = { has_full_control_of_state = 419 }
+					SOV = { has_full_control_of_state = 420 }
+					SOV = { has_full_control_of_state = 266 }
+					SOV = { has_full_control_of_state = 416 }
 				}
 			}
 
@@ -784,6 +788,8 @@ country_event = {
 				OR = {
 					413 = { is_controlled_by = ENG }
 					412 = { is_controlled_by = ENG }
+					ENG = { has_full_control_of_state = 413 }
+					ENG = { has_full_control_of_state = 412 }
 				}
 			}
 		}
