@@ -858,3 +858,146 @@ country_event = {
 	}
 
 }
+
+country_event = { ##Faroe Islands British invasion
+	id = ne_takee.13
+	title = ne_takee.13.t
+	desc = ne_takee.13.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	fire_only_once = yes
+
+	trigger = {
+		is_historical_focus_on = yes
+		tag = ENG
+		ENG = {
+			has_war_with = GER
+			NOT = { has_war_with = DEN }
+			NOT = { has_war_with = ICE }
+			AND = {
+				ships_in_area = { area = 43 size > 15 }
+				ships_in_area = { area = 45 size > 15 }
+			}
+		}
+		GER = { 
+			has_completed_focus = GER_weserubung
+			99 = { is_controlled_by = GER }
+			37 = { is_controlled_by = GER }
+		}
+		any_country = {
+			OR = {
+				AND = {
+					is_in_faction_with = GER
+					has_war_with = ENG
+					has_war_with = DEN
+				}
+				tag = GER
+			}
+			NOT = {
+				has_full_control_of_state = 337
+				ships_in_area = { area = 43 size > 10 }  ##Britain should dominate the sea
+				ships_in_area = { area = 45 size > 10 }
+			}
+		}
+	}
+
+	option = {
+		name = ne_takee.13.a
+		ENG = { transfer_state = 337 }
+		hidden_effect = {
+			GER = { country_event = { hours = 5 id = ne_takee.14 } } 
+			ENG = { load_oob = "ENG_faroe_invasion" }
+		}
+	}
+
+}
+
+country_event = {  ##Germany resents capture
+	id = ne_takee.14
+	title = ne_takee.14.t
+	desc = ne_takee.14.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ne_takee.14.a
+		GER = { add_political_power = -25 }
+	}
+
+}
+
+country_event = { ##Iceland Island British invasion
+	id = ne_takee.15
+	title = ne_takee.15.t
+	desc = ne_takee.15.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 31 }
+
+	trigger = {
+		is_historical_focus_on = yes
+		tag = ENG
+		ENG = {
+			has_war_with = GER
+			NOT = { has_war_with = DEN }
+			NOT = { has_war_with = ICE }
+			AND = {
+				ships_in_area = { area = 43 size > 15 }
+				ships_in_area = { area = 45 size > 15 }
+			}
+		}
+		GER = { 
+			has_completed_focus = GER_weserubung
+			99 = { is_controlled_by = GER }
+			37 = { is_controlled_by = GER }
+		}
+		337 = { is_controlled_by = ENG }
+		any_country = {
+			OR = {
+				AND = {
+					is_in_faction_with = GER
+					has_war_with = ENG
+					has_war_with = DEN
+				}
+				tag = GER
+			}
+			NOT = {
+				has_full_control_of_state = 100
+				ships_in_area = { area = 43 size > 10 }
+				ships_in_area = { area = 45 size > 10 }
+			}
+		}
+	}
+
+	option = {
+		name = ne_takee.15.a
+		ENG = { transfer_state = 100 }
+		hidden_effect = {
+			GER = { country_event = { hours = 5 id = ne_takee.16 } } 
+			ENG = { load_oob = "ENG_iceland_invasion" }
+		}
+	}
+
+}
+
+country_event = {  ##Germany resents capture again
+	id = ne_takee.16
+	title = ne_takee.16.t
+	desc = ne_takee.16.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ne_takee.16.a
+		GER = { add_political_power = -40 }
+	}
+
+}
