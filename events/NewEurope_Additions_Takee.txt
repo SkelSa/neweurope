@@ -268,6 +268,7 @@ country_event = {
 	option = {
 		name = ne_takee.3.a
 		custom_effect_tooltip = warning_for_a_player.1.tt
+		add_political_power = -50
 	}
 }
 
@@ -628,7 +629,7 @@ country_event = {  ##Anglo-Soviet invasion of Iran
 				}
 			}
 		}
-		AUS = {
+		AST = {
 			if = {
 				limit = { is_puppet_of = ENG }
 				add_ai_strategy = {
@@ -693,6 +694,12 @@ country_event = {
 		custom_effect_tooltip = iran_war_tooltip.2.tt
 	}
 
+	immediate = { 
+		hidden_effect = { ENG = { add_timed_idea = { days = 60 id = NE_alone } } }
+		hidden_effect = { SOV = { add_timed_idea = { days = 60 id = NE_alone } } }
+		hidden_effect = { PER = { add_timed_idea = { days = 60 id = NE_alone } } }
+	}
+
 }
 
 country_event = {
@@ -713,7 +720,7 @@ country_event = {
 			}
 			ENG = {
 				add_to_war = {
-					targeted_alliance = AUS
+					targeted_alliance = AST
 					enemy = PER
 				}
 				add_to_war = {
@@ -738,7 +745,7 @@ country_event = {
 			}
 			ENG = {
 				add_to_war = {
-					targeted_alliance = AUS
+					targeted_alliance = AST
 					enemy = PER
 				}
 				add_to_war = {
@@ -761,6 +768,26 @@ country_event = {
 
 	trigger = {
 
+		OR = {
+			AND = {
+				tag = SOV
+				OR = {
+					419 = { is_controlled_by = SOV }
+					420 = { is_controlled_by = SOV }
+					266 = { is_controlled_by = SOV }
+					416 = { is_controlled_by = SOV }
+				}
+			}
+
+			AND = {
+				tag = ENG
+				OR = {
+					413 = { is_controlled_by = ENG }
+					412 = { is_controlled_by = ENG }
+				}
+			}
+		}
+
 		PER = {
 			AND = {
 				has_war_with = SOV
@@ -777,15 +804,27 @@ country_event = {
 
 	option = {
 		name = ne_takee.12.a
-		SOV = {
-			transfer_state = 266
-			transfer_state = 416
-			transfer_state = 419
-			transfer_state = 420
-		}
-		ENG = {
-			transfer_state = 413
-			transfer_state = 412
+		if = {
+			limit = {
+				266 = { is_core_of = PER }
+				416 = { is_core_of = PER }
+				419 = { is_core_of = PER }
+				420 = { is_core_of = PER }
+				413 = { is_core_of = PER }
+				412 = { is_core_of = PER }
+			}
+			hidden_effect = {
+				SOV = {
+					transfer_state = 266
+					transfer_state = 416
+					transfer_state = 419
+					transfer_state = 420
+				}
+				ENG = {
+					transfer_state = 413
+					transfer_state = 412
+				}
+			}
 		}
 		if = {
 			limit = { PER = { has_war_with = SOV } }
@@ -796,8 +835,8 @@ country_event = {
 			PER = { white_peace = ENG }
 		}
 		if = {
-			limit = { PER = { has_war_with = AUS } }
-			PER = { white_peace = AUS }
+			limit = { PER = { has_war_with = AST } }
+			PER = { white_peace = AST }
 		}
 		if = {
 			limit = { PER = { has_war_with = RAJ } }
