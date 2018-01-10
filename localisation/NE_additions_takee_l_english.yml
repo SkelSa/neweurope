@@ -140,6 +140,27 @@
   ne_takee.12.d:0 "Iran suffered a crushing defeat: their army is running, the government is in flight, and their generals are on the side of the Allies!"
   ne_takee.12.a:0 "Iran will not get an Axis!"
 
+ ##Faroe and Iceland British invasion
+  ne_takee.13.t:0 "Invasion of the Faroe Islands"
+  ne_takee.13.d:0 "To prevent the invasion of Germany into Britain, we need to invade the Faroe Islands. Our command is already ready to invade."
+  ne_takee.13.a:0 "Start the invasion according to plan"
+
+  ne_takee.14.t:0 "The Faroe Islands were captured by Britain!"
+  ne_takee.14.d:0 "Sad news. The British overtook us and captured today the Faroe Islands."
+  ne_takee.14.a:0 "Hier ist Müll!"
+
+  ne_takee.15.t:0 "Invasion of Iceland"
+  ne_takee.15.d:0 "We need to seize the strategically important Iceland. We are ready to begin the invasion. Their government may be dissatisfied."
+  ne_takee.15.a:0 "Start an invasion of Iceland"
+
+  ne_takee.16.t:0 "Iceland were captured by Britain!"
+  ne_takee.16.d:0 "The British once again beat us and captured an important island - Iceland."
+  ne_takee.16.a:0 "Zur Hölle mit allem!"
+
+  ne_takee.17.t:0 "Greenland goes under US control"
+  ne_takee.17.d:0 "Denmark provides us with Greenland from possible capture"
+  ne_takee.17.a:0 "Good"
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
