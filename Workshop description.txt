@@ -86,14 +86,6 @@ Each big topic is now an own "discussion" entry to ease the work of updating the
 
 
 
-[h1]GENERAL INFO[/h1]
-
-There are a lot more "Better States" mods out there, which change far more territories, however these can drain on your performance. Thus, if you're looking for just a better Europe, this mod is definitely for you!
-
-With the help of the new manager you can edit every country in Europe besides Ireland and Portugal. In Asia only Japan and Korea can be partitioned, while the PRC gets her own events to reclaim territory.
-
-
-
 [h1]CONCERNING SUGGESTIONS:[/h1]
 
 If you have any suggestions just post them under "Suggestions" (duh!). Please keep the original idea in mind and don't ask for NF trees or new technologies. Changing the map to represent our timeline will get the most attention.
@@ -103,8 +95,8 @@ If you have any suggestions just post them under "Suggestions" (duh!). Please ke
 [h1]PLANNED FOR NEXT UPDATE:[/h1]
 
 [b]-[/b]X Sino-Soviet split (border wars)
-[b]-[/b]X Enlargement for NATO + WP
-[b]-[/b]X Greek civil war
+[b]-[/b]✔ Enlargement for NATO + WP
+[b]-[/b]✔ Greek civil war
 [b]-[/b]✔ Lend-lease events for China; nations in civil war
 [b]-[/b]X Decolonization events and wars in North Africa/Middle East 
 [b]-[/b]# Tweaking borders
@@ -141,7 +133,6 @@ X  = In Work
 [h1]SPECIAL THANKS TO:[/h1]
 
 [list]
-[*][i]Finn Furwolf[/i], for the German translation! (in works)
 [*][i]Alfactor29[/i], for the French translation!
 [*][i]ghaussst[/i] and [i]Teymur Bagir-zade[/i], for the Russian translation! 
 [/list]

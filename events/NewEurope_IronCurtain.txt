@@ -936,34 +936,28 @@ country_event = {
 		
 		##sweden
 		
-		SWE = { 
-		
+		SWE = { 	
 			transfer_state = 666
 			transfer_state = 38
 			transfer_state = 139
 			transfer_state = 140
 			transfer_state = 141
 			transfer_state = 138
-			transfer_state = 124
-				
+			transfer_state = 124				
 		}
 		
 		##switzerland
 		
-		SWI = { 
-		
+		SWI = { 		
 			transfer_state = 755
 			transfer_state = 756
 			transfer_state = 3
-			transfer_state = 151
-			
-				
+			transfer_state = 151					
 		}
 		
 		
 		##turkey
-		TUR = { 
-		
+		TUR = { 	
 			transfer_state = 341
 			transfer_state = 347
 			transfer_state = 340
@@ -977,15 +971,10 @@ country_event = {
 			transfer_state = 355
 			transfer_state = 352
 			transfer_state = 345
-			transfer_state = 346
-				
+			transfer_state = 346				
 		}	
 		
-	
-		
-		
-		
-		
+
 	####names for cities
 	set_province_name = { id = 13206 name = "west_berlin"}
 	set_province_name = { id = 13207 name = "east_berlin"}
@@ -1016,8 +1005,7 @@ country_event = {
 			puppet = SAA	
 		}
 
-		WGR = { 
-			
+		WGR = { 		
 			transfer_state = 42
 			transfer_state = 50
 			transfer_state = 51
@@ -1035,12 +1023,9 @@ country_event = {
 			transfer_state = 754
 			transfer_state = 775
 			transfer_state = 778
-			
-
 		}
 		
-		DDR = { 
-			
+		DDR = { 		
 			transfer_state = 60
 			transfer_state = 61
 			transfer_state = 62
@@ -1048,14 +1033,12 @@ country_event = {
 			transfer_state = 65
 			transfer_state = 744
 			transfer_state = 753
-
 		}
 		
 		
 		##Italy 
 		
-		ENG = { 
-		
+		ENG = { 		
 			transfer_state = 273
 			transfer_state = 559
 			transfer_state = 663
@@ -1064,23 +1047,17 @@ country_event = {
 			transfer_state = 449
 			transfer_state = 448
 			transfer_state = 661
-			transfer_state = 662
-				
-		
+			transfer_state = 662					
 		}
 		
 		
-		FRA = { 
-			
+		FRA = { 		
 			transfer_state = 773	
 			transfer_state = 735
-			transfer_state = 1
-			
-
+			transfer_state = 1			
 		}
 		
-		ITA = { 
-			
+		ITA = { 			
 			transfer_state = 114
 			transfer_state = 115
 			transfer_state = 156
@@ -1093,34 +1070,25 @@ country_event = {
 			transfer_state = 158
 			transfer_state = 39
 			transfer_state = 159
-
 		}
 		
-		GRE = { 
-			
-			transfer_state = 164
-			
+		GRE = { 			
+			transfer_state = 164		
 		}
 		
-		TRI = { 
-			
-			transfer_state = 736
-			
+		TRI = { 			
+			transfer_state = 736			
 		}
 		
-		ETH = { 
-			
+		ETH = { 			
 			transfer_state = 271
-			transfer_state = 550
-			
+			transfer_state = 550			
 		}
 		
-		YUG = { 
-			
+		YUG = { 			
 			transfer_state = 747
 			transfer_state = 767
-			transfer_state = 163
-			
+			transfer_state = 163		
 		}
 		
 		##hungary
