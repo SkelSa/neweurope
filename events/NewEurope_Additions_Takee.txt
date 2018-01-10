@@ -875,8 +875,8 @@ country_event = { ##Faroe Islands British invasion
 			NOT = { has_war_with = DEN }
 			NOT = { has_war_with = ICE }
 			AND = {
-				ships_in_area = { area = 43 size > 15 }
-				ships_in_area = { area = 45 size > 15 }
+				ships_in_area = { area = 43 size > 5 }
+				ships_in_area = { area = 45 size > 5 }
 			}
 		}
 		GER = { 
@@ -895,8 +895,8 @@ country_event = { ##Faroe Islands British invasion
 			}
 			NOT = {
 				has_full_control_of_state = 337
-				ships_in_area = { area = 43 size > 10 }  ##Britain should dominate the sea
-				ships_in_area = { area = 45 size > 10 }
+				ships_in_area = { area = 43 size > 1 }  ##Britain should dominate the sea
+				ships_in_area = { area = 45 size > 1 }
 			}
 		}
 	}
@@ -947,8 +947,8 @@ country_event = { ##Iceland Island British invasion
 			NOT = { has_war_with = DEN }
 			NOT = { has_war_with = ICE }
 			AND = {
-				ships_in_area = { area = 43 size > 15 }
-				ships_in_area = { area = 45 size > 15 }
+				ships_in_area = { area = 43 size > 5 }
+				ships_in_area = { area = 45 size > 5 }
 			}
 		}
 		GER = { 
@@ -968,8 +968,8 @@ country_event = { ##Iceland Island British invasion
 			}
 			NOT = {
 				has_full_control_of_state = 100
-				ships_in_area = { area = 43 size > 10 }
-				ships_in_area = { area = 45 size > 10 }
+				ships_in_area = { area = 43 size > 1 }
+				ships_in_area = { area = 45 size > 1 }
 			}
 		}
 	}
