@@ -511,7 +511,7 @@ l_english:
  ne_news.24.f:0 "We will protect our people from harmful influence!"
  
  ##Soviet Victory
- ne_news.25.t:0 "The Western Powers have surrendered!"
+ ne_news.25.t:0 "The Western World has surrendered!"
  ne_news.25.d:0 ""
  ne_news.25.a:0 ""
  ne_news.25.b:0 ""
@@ -539,7 +539,7 @@ l_english:
  ne_news.46.d:0 "[POL.GetLeader]has announced in a radio broadcast that, despite the massive sacrifice of the Polish people, it could no longer withstand the might of the German and Soviet armies. Even though they fought valiantly, their homeland is now conquered. The new border between Nazi germany and the SU will run through the former polish territory."
  ne_news.46.a:0 "Disgusting..."
  ne_news.46.b:0 "And again Poland vanished from Europe..."
- ne_news.46.c:0 "The mistakes of 1920 are undone"
+ ne_news.46.c:0 "The mistakes of 1920 are undone!"
  ne_news.46.e:0 "This nation had no place in history anyways."
  
  

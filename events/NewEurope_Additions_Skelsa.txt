@@ -12,9 +12,6 @@ add_namespace = namespace
 
 
 
-
-
-
 ##NE_FACTION##################################################
 
 ##ne_strict_facton
@@ -469,7 +466,7 @@ country_event = {
 	id = ne_skelsa.200
 	title = ne_skelsa.200.t
 	desc =  ne_skelsa.200.d
-	picture = GFX_somepic
+	picture = GFX_su_invasion_pol
 
 	fire_only_once = yes
 
@@ -493,7 +490,7 @@ country_event = {
 	
 	immediate = { 
 	
-		POL = { add_timed_idea = { days = 60 id = NE_alone } }
+		POL = { add_timed_idea = { days = 70 id = NE_alone } }
 		
 	}
 	
@@ -535,7 +532,7 @@ country_event = {
 		}
 		
 		##Effects
-		add_political_power = -20
+		add_political_power = -25
 		POL = { remove_idea = NE_alone  }
 	}
 	
@@ -549,7 +546,7 @@ country_event = {
 	id = ne_skelsa.201
 	title = ne_skelsa.201.t
 	desc =  ne_skelsa.201.d
-	picture = GFX_somepic
+	picture = GFX_soviet_parade_lwow
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -574,7 +571,7 @@ country_event = {
 	id = ne_skelsa.202
 	title = ne_skelsa.202.t
 	desc =  ne_skelsa.202.d
-	picture = GFX_somepic
+	picture = GFX_hitler_bridge
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -594,9 +591,7 @@ country_event = {
 # Poland collapses; Eastern Poland goes to the USSR, Rest is occupied by GER, whitepeace event between POL - SOV
 country_event = {
 	id = ne_skelsa.203
-	title = ne_skelsa.203.t
-	desc = ne_skelsa.203.d
-	picture = GFX_report_event_soviet_german_soldier_handshake
+	picture = GFX_polish_division
 
 	hidden = yes
 	fire_only_once = yes
@@ -608,8 +603,7 @@ country_event = {
 		name = ne_skelsa.203.a
 
 		
-		##Transfer states to the SOV
-		
+		##Transfer states to the SOV		
 		if = {
 			limit = {
 				97 = {					
@@ -1011,6 +1005,7 @@ country_event = {
 	trigger = {
 		tag = GER
 		has_global_flag = sov_yes_pact
+		NOT = { has_global_flag = ne_soviet_invasion_poland }
 		SOV = { exists = yes }
 		NOT =  { has_war_with = SOV }
 		OR = {
@@ -1074,10 +1069,10 @@ country_event = {
 			}
 		}
 	}
+
 	
-	mean_time_to_happen = {
-		days = 2
-	}
+	mean_time_to_happen = {	days = 1 }
+	
 	
 	option = {
 		ai_chance = {

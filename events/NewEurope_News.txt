@@ -1,17 +1,14 @@
 ﻿add_namespace = ne_news
 
 
-#startup news event
+#BPWE: Introduction. Startup News Event
 news_event = {
 	id = ne_news.1
-	title = ne_news.1.t  #BPWE: Introduction
+	title = ne_news.1.t  
 	desc = ne_news.1.d
 	picture = GFX_new_europe
 	
-	##experimenting with those two; no need to works as intended!
-	
 	is_triggered_only = yes
-	#major = yes
 	
 	option = {	#I understand
 		name = ne_news.1.a  
@@ -2537,7 +2534,7 @@ news_event = {
 	id = ne_news.46
 	title = ne_news.46.t
 	desc = ne_news.46.d
-	picture = GFX_somepic
+	picture = GFX_polish_division_ger_sov
 
 	fire_only_once = yes
 
@@ -2595,7 +2592,9 @@ news_event = {
 	}
 }
 
-
+##ne_news.47: Begin of the Greek Civil War
+##ne_news.48: Communists win the Civil War
+##ne_news.49: Royalists win the Civil War
 
 
 

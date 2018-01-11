@@ -5,6 +5,7 @@ add_namespace = ne_nato
 ##Other Faction Stuff
 add_namespace = ne_faction
 
+##namespace 3 is in here!
 
 ##Event for forming NATO####################################################################################################################################################################################
 country_event = {
@@ -691,14 +692,12 @@ country_event = {
 
 
 
-
-
 ############################################################
 ####    FOUNDING THE WARSAW PACT                        ####
 ############################################################
 
 
-##Soviet: Start event
+##Soviets: Found the Warsaw Pact?
 country_event = {
 	id = ne_wp.1
 	title = ne_wp.1.t

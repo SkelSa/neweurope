@@ -199,12 +199,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/poland_grom.dds"
 	}
 	
-	##Finland and SU invasion stuff
-	
-	spriteType = {
-		name = "GFX_soviet_parade_lwow"
-		texturefile = "gfx/event_pictures/report_event_soviet_parade_lwow.dds"
-	}
+	##Finland and SU invasion stuff	
 	
 	spriteType = {
 		name = "GFX_hanko_ship"
@@ -232,13 +227,25 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_soviet_parade_lwow"
+		texturefile = "gfx/event_pictures/report_event_soviet_parade_lwow.dds"
+	}
+	
+	spriteType = {		
 		name = "GFX_hitler_bridge"
 		texturefile = "gfx/event_pictures/report_event_hitler_bridge.dds"
 	}
 	
-	##News Event
+	##News Event ##UNUSED
 	spriteType = {
 		name = "GFX_soviet_invasion_pol_news"
 		texturefile = "gfx/event_pictures/soviet_invasion_pol_news.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_polish_division_ger_sov"
+		texturefile = "gfx/event_pictures/polish_division_ger_sov.dds"
+	}
+	
+	
 	
