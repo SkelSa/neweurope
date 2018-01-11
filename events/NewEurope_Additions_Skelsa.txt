@@ -1,5 +1,6 @@
 ﻿##New events by SkelSa here! 
 
+
 add_namespace = ne_skelsa
 add_namespace = ne_winter_war
 add_namespace = ne_finland
@@ -9,968 +10,8 @@ add_namespace = ne_flag
 add_namespace = namespace
 
 
-##Brother Hao joins the PLA
-country_event = {
-	id = ne_skelsa.1
-	title = ne_skelsa.1.t
-	desc =  ne_skelsa.1.d
-	picture = GFX_brother_hao
 
-	hidden = yes
-	fire_only_once = yes
 
-	
-	trigger = {
-		tag = PRC
-		
-		PRC = {
-			exists = yes
-			is_subject = no
-			has_government = communism
-			
-			date > 1948.1.11
-		}
-	
-	
-	}
-	
-	
-	mean_time_to_happen = {	days = 1 }
-	
-	immediate = { 
-		#
-	}
-	
-	
-	option = { #without the Communist Party, there will be no new China!
-		name = ne_skelsa.1.a
-		
-		create_corps_commander = { name = "Brother Hao" picture = "Portrait_PRC_General_Brother_Hao.dds" traits = { } skill = 4 } 
-		PRC = { sound_effect = communist_party }
-		
-	}
-	
-}
-
-
-
-##FOR NEW FILE: NEWEUROPE_FINLAND##
-
-##Winter War is in Historical_Fixes
-
-##Lease finnish harbor is also here
-
-##Player can decide what to get! Moscow Peace Treaty will shake things up though
-country_event = {
-	id = ne_fin_harbor.1
-	title = ne_fin_harbor.1.t
-	desc =  ne_fin_harbor.1.d
-	picture = GFX_somepic
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	
-	option = {	# hanko - most likely
-		name = ne_fin_harbor.1.a
-		ai_chance = {
-			factor = 25
-			
-			modifier = {
-				factor = 100
-				
-				is_historical_focus_on = yes
-			}			
-		}
-		
-		trigger = {		
-			784 = { is_owned_and_controlled_by = FIN }		
-		}
-
-		##Effects
-		add_political_power = 10
-		SOV = { transfer_state = 784 }
-		
-		FIN = { country_event = { days = 5 id = ne_fin_harbor.2 } }
-		reverse_add_opinion_modifier = { target = FIN modifier = forced_lease_hanko }
-		
-		hidden_effect = {
-			set_global_flag = ne_hanko
-		}
-
-			
-	}
-	
-	
-	option = {	# porkalla 
-		name = ne_fin_harbor.1.b
-		ai_chance = {
-			factor = 25
-			
-			modifier = {
-				factor = 0
-				
-				is_historical_focus_on = yes
-			}			
-		}
-		
-		trigger = {		
-			750 = { is_owned_and_controlled_by = FIN }		
-		}
-		
-		##Effects
-		add_political_power = 10
-		SOV = { transfer_state = 750 }
-		
-		FIN = { country_event = { days = 5 id = ne_fin_harbor.2 } }
-		reverse_add_opinion_modifier = { target = FIN modifier = forced_lease_porkalla  }
-		
-		hidden_effect = {
-			set_global_flag = ne_porkalla
-		}
-
-	
-	}
-	
-	
-	option = {	#both - pisses of the finnish
-		name = ne_fin_harbor.1.c
-		ai_chance = {
-			factor = 25
-			
-			modifier = {
-				factor = 0
-				
-				is_historical_focus_on = yes
-			}			
-		}
-		
-		trigger = {		
-			784 = { is_owned_and_controlled_by = FIN }	
-			750 = { is_owned_and_controlled_by = FIN }
-		}
-		
-		##Effects
-		add_political_power = -20
-		
-		SOV = { transfer_state = 750 }
-		SOV = { transfer_state = 784 }
-			
-		FIN = { country_event = { days = 5 id = ne_fin_harbor.2 } }
-		reverse_add_opinion_modifier = { target = FIN modifier = forced_lease_hanko_porkalla }
-		
-		hidden_effect = {
-			set_global_flag = ne_hanko_porkalla
-		}
-
-	}
-	
-	
-	option = {	#nothing
-		name = ne_fin_harbor.1.e
-		ai_chance = {
-			factor = 25
-			
-			modifier = {
-				factor = 0
-				
-				is_historical_focus_on = yes
-			}			
-		}
-		
-		##Effects
-		add_political_power = -10
-		FIN = { country_event = { days = 5 id = ne_fin_harbor.2 } }
-		
-		hidden_effect = {
-			set_global_flag = ne_fin_harbor_nothing
-		}
-	
-	}
-	
-	
-}
-##Finland gets events
-country_event = {
-	id = ne_fin_harbor.2
-	title = ne_fin_harbor.2.t
-	desc =  ne_fin_harbor.2.d
-	
-	title = {	#hanko
-	text = ne_fin_harbor.2.t1
-		trigger = {
-			has_global_flag = ne_hanko 
-		}
-	}
-
-	title = {	#porkalla
-	text = ne_fin_harbor.2.t2
-		trigger = {
-			has_global_flag = ne_porkalla
-		}
-	}
-	
-	title = {	#hanko, porkalla
-	text = ne_fin_harbor.2.t3
-		trigger = {
-			has_global_flag = ne_hanko_porkalla
-		}
-	}
-	
-	title = {	#nothing
-	text = ne_fin_harbor.2.t4
-		trigger = {
-			has_global_flag = ne_hanko 
-		}
-	}		
-	
-	##DESCRIPTION
-	desc = {	#hanko
-	text = ne_fin_harbor.2.d1
-		trigger = {
-			has_global_flag = ne_hanko 
-		}
-	}
-
-	desc = {	#porkalla
-	text = ne_fin_harbor.2.d2
-		trigger = {
-			has_global_flag = ne_porkalla
-		}
-	}
-	
-	desc = {	#hanko, porkalla
-	text = ne_fin_harbor.2.d3
-		trigger = {
-			has_global_flag = ne_hanko_porkalla
-		}
-	}
-	
-	desc = {	#nothing
-	text = ne_fin_harbor.2.d4
-		trigger = {
-			has_global_flag = ne_fin_harbor_nothing
-		}
-	}	
-	
-	
-	
-	picture = GFX_somepic
-
-	#hidden = yes
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	
-	option = {	#hanko and porkalla
-		name = ne_fin_harbor.2.a
-
-		trigger = {
-			AND = {
-				has_global_flag = ne_hanko 
-				has_global_flag = ne_porkalla
-			}
-			
-		}
-		
-	}
-	
-	
-	option = {	#hanko and porkalla
-		name = ne_fin_harbor.2.b
-
-		trigger = {
-			has_global_flag = ne_hanko_porkalla		
-		}
-		
-	}
-	
-	
-	option = {	#nothing
-		name = ne_fin_harbor.2.c
-
-		trigger = {
-			has_global_flag = ne_fin_harbor_nothing				
-		}
-		
-	}
-	
-	
-}
-
-
-
-
-##Join the war against the USSR. Declare on SOV and give military access to germany
-country_event = {
-	id = ne_finland.1
-	title = ne_finland.1.t
-	desc =  ne_finland.1.d
-	picture = GFX_somepic
-
-	fire_only_once = yes
-
-	
-	trigger = {
-
-		tag = FIN
-		
-		FIN = {
-			exists = yes
-			is_subject = no
-			NOT = { has_war_with = SOV }
-		}
-		
-		GER = {
-			exists = yes
-			is_faction_leader = yes 
-			has_government = fascism
-		}
-		
-		NOT = {		
-			FIN = { controls_state = 146 } 
-			FIN = { owns_state = 146 } 		
-		}
-		
-		GER = { has_war_with = SOV}
-		SOV = { surrender_progress > 0.01 }
-		
-	
-	}
-		
-	mean_time_to_happen = {	days = 10 }
-
-	
-	option = { # join the war
-		name = ne_finland.1.a
-		ai_chance = {
-			factor = 100
-		
-			modifier = {
-				factor = 0
-					OR = {
-						has_government = communism
-						has_war = yes
-					}
-				 			
-			}			
-		}
-
-		hidden_effect = {
-			country_event = ne_finland.2			
-		}				
-		
-	}
-	
-	
-	option = { # stay out of it, war is hell
-		name = ne_finland.1.b
-		ai_chance = {
-			factor = 0
-		
-			modifier = {
-				factor = 100
-				OR = {
-					has_government = communism
-					has_war = yes
-				}
-			}			
-		}
-		
-		add_political_power = -30
-		add_national_unity = -0.05
-		add_named_threat = { threat = -5 name = threat_ne_finland_neutrality }
-		
-	}
-	
-	
-}
-
-
-
-##Germany: Finland wants to help us!
-country_event = {
-	id = ne_finland.2
-	title = ne_finland.2.t
-	desc =  ne_finland.2.d
-	picture = GFX_somepic
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	
-	option = {	# very well finland
-		name = ne_finland.2.a
-		ai_chance = {
-			factor = 100
-			
-			modifier = {
-				factor = 50
-				
-				is_historical_focus_on = no		
-			}			
-		}
-
-		##Effects
-		add_opinion_modifier = { target = FIN modifier =  ally_fight_against_bolshevism }
-		FIN = { add_opinion_modifier = { target = GER modifier = ally_fight_against_bolshevism } }
-		
-		hidden_effect = {	
-			country_event = ne_finland.3				
-		}
-			
-	}
-	
-	
-	option = {	# we don't need your help
-		name = ne_finland.2.b
-		ai_chance = {
-			factor = 100
-			
-			modifier = {
-				factor = 50
-				
-				is_historical_focus_on = no	
-			}			
-		}
-		
-		##Effects
-		add_political_power = -5
-		FIN = { add_opinion_modifier = { target = GER modifier = refused_to_help } }
-
-		hidden_effect = {	
-			country_event = ne_finland.4					
-		}	
-	
-	}
-	
-	
-}
-
-
-
-##Finland: Germany has accepted + Start the War
-country_event = {
-	id = ne_finland.3
-	title = ne_finland.3.t
-	desc =  ne_finland.3.d
-	picture = GFX_somepic
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	
-	option = {	# start the tank engines, we go to war!
-		name = ne_finland.3.a
-
-		##Effects
-		add_political_power = 50
-		add_national_unity = 0.05
-		FIN = { give_military_access = GER }		
-		
-		add_named_threat = { threat = 4 name = threat_ne_continuation_war }
-		set_global_flag = continuation_war
-	
-	
-	}
-	
-	
-}
-
-
-
-##Finland: Germany has rejected. Either cancel the war or do it nevertheless
-country_event = {
-	id =  ne_finland.4
-	title =  ne_finland.4.t
-	desc =  ne_finland.4.d
-	picture = GFX_somepic
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	
-	option = {	#we will win nevertheless!
-		name =  ne_finland.4.a
-		ai_chance = { factor = 25 }
-
-		##Effects
-		add_political_power = 75
-		add_national_unity = 0.1		
-		FIN = { declare_war_on = { target = SOV }  }
-		
-		add_named_threat = { threat = 4 name = threat_ne_continuation_war }
-		set_global_flag = continuation_war
-			
-	}
-	
-	
-	option = {	# we cant do it without germany's help
-		name =  ne_finland.4.b
-		ai_chance = { factor = 75 }
-		
-		##Effects
-		add_political_power = -30
-		add_national_unity = -0.05	
-	
-	}
-	
-	
-}
-
-
-
-##MOSCOW ARMISTICE##
-
-#They have beaten us!
-country_event = {
-	id = ne_finland.5
-	title = ne_finland.5.t
-	desc = ne_finland.5.d
-	picture = GFX_report_event_soviet_tanks_snow
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		tag = FIN
-		
-		FIN = { is_subject = no }
-		has_war_with = SOV
-		has_global_flag = continuation_war
-		surrender_progress > 0.20
-		
-	}
-
-	
-	mean_time_to_happen = { days = 30 }
-
-	#Ask the Soviets to start peace negotiations
-	option = {
-		name = ne_finland.5.a
-		ai_chance = {
-			factor = 50
-					
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes		
-			}			
-		}
-		
-		add_political_power = 20
-		
-		SOV = {
-			country_event = { id = ne_finland.6 }
-		}
-
-	}
-
-	#Stand with germany + No Surrender!
-	option = {
-		name = ne_finland.5.b
-		ai_chance = {
-			factor = 50
-					
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes		
-			}			
-		}
-		
-		add_political_power = -20
-		add_national_unity = -0.1
-		add_popularity = { ideology = fascism popularity = 0.2 } 
-		
-		SOV = {
-			country_event = { id = ne_finland.7 }
-		}
-		
-	}
-}
-
-
-
-#Soviet response to Finish surrender
-country_event = {
-	id = ne_finland.6
-	title = ne_finland.6.t
-	desc = ne_finland.6.d
-	picture = GFX_report_event_finnish_soldiers_snow
-	
-	is_triggered_only = yes
-
-	#Accept surrender  + open demand window
-	option = {
-		name = ne_finland.6.a
-		ai_chance = {
-			factor = 50
-					
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes		
-			}			
-		}
-		
-		add_political_power = 20
-		
-		##Open demand window!
-		SOV = {
-			country_event = { id = ne_finland.8 }
-		}
-		
-
-	}
-
-	#We will destroy the Finns!
-	option = {
-		name = ne_finland.6.b
-		ai_chance = {
-			factor = 50
-					
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes		
-			}			
-		}
-		
-		add_political_power = -25
-		add_national_unity = -0.05
-		
-		FIN = { country_event = { id = ne_finland.9 } }
-
-	}
-}
-
-
-##USSR: Finland continues the fight!
-country_event = {
-	id = ne_finland.7
-	title = ne_finland.7.t
-	desc =  ne_finland.7.d
-	picture = GFX_somepic
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	
-	option = {	#we will destroy them!
-		name = ne_finland.7.a
-		
-		#
-			
-	}
-	
-	
-}
-
-
-
-##Finland: USSR wants unconditional surrender!
-country_event = {
-	id = ne_finland.9
-	title = ne_finland.9.t
-	desc =  ne_finland.9.d
-	picture = GFX_somepic
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	
-	option = {	#Oh No!
-		name = ne_finland.9.a
-		
-		add_national_unity = -0.05
-			
-	}
-	
-	
-}
-
-
-
-#Soviets can decide the conditions! (Moscow Conference)
-country_event = {
-	id = ne_finland.8
-	title = ne_finland.8.t
-	desc = ne_finland.8.d
-	picture = GFX_report_event_finnish_soldiers_snow
-	
-	is_triggered_only = yes
-
-	#Historical: Petsamo (Salla ) goes Soviet, Lapland War, Lease Harbor starts later ###I WILL ONLY LEAVE THIS CHOICE HERE
-	option = {
-		name = ne_finland.8.a
-		ai_chance = {
-			factor = 25
-					
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes		
-			}			
-		}
-
-		##Finland sees the conditions and can either accept or decline!
-		FIN = {
-			country_event = { id = ne_finland.10 }
-		}
-		
-		hidden_effect = {
-			SOV = { set_country_flag = ne_moscow_armistice_historical }
-		}	
-
-	}
-	
-	
-	#No Changes
-	option = {
-		name = ne_finland.8.b
-		ai_chance = {
-			factor = 25
-					
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes		
-			}			
-		}
-		
-		add_political_power = 20
-
-		SOV = {
-			country_event = { id = ne_finland.10 }
-		}
-		
-		hidden_effect = {
-			SOV = { set_country_flag = ne_moscow_armistice_no_changes }
-		}
-
-	}
-
-}
-
-
-
-#Finland: gets the demands and has to react
-country_event = {
-	id = ne_finland.10
-	title = ne_finland.10.t
-	desc = ne_finland.10.d
-	picture = GFX_report_event_finnish_soldiers_snow
-	
-	is_triggered_only = yes
-
-	#Accept the conditions
-	option = {
-		name = ne_finland.10.a
-		ai_chance = {
-			factor = 50
-					
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes		
-			}			
-		}
-		
-		trigger = {
-			SOV = { has_country_flag = ne_moscow_armistice_historical }
-		}
-		
-		##Effects
-		
-		if = { limit = { is_in_faction_with = GER } GER = { remove_from_faction = FIN } }	
-		
-		SOV = { white_peace = FIN }		
-		give_military_access = SOV
-		
-		declare_war_on = { target = GER } 
-				
-		diplomatic_relation = { country = GER relation = military_access active = no } 
-		
-		
-		if = {
-			limit = {
-				722 = { is_owned_and_controlled_by = FIN }
-			}
-			SOV = { transfer_state = 722 }
-		}
-		
-		if = {
-			limit = {
-				722 = { is_owned_and_controlled_by = FIN }
-			}
-			SOV = { transfer_state = 147 }
-		}
-
-		add_opinion_modifier = { target = SOV modifier = moscow_armistice } 
-		SOV = { add_opinion_modifier = { target = FIN modifier = moscow_armistice } }
-		
-		
-		##GER is notified about the Lapland War
-		GER = { country_event = { days = 1 id = ne_finland.13 } }
-		
-		##SOV gets confirmation
-		SOV = { country_event = { id = ne_finland.11 } }
-		
-		##Leasing of the Harbors
-		#SOV = { country_event = { days = 10 id = ne_fin_harbor.3 } }
-			
-
-	}
-	
-	
-	#We don't accept
-	option = {
-		name = ne_finland.10.b
-		ai_chance = {
-			factor = 50
-					
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes		
-			}			
-		}
-		
-		trigger = {
-			SOV = { has_country_flag = ne_moscow_armistice_historical }
-		}
-		
-		add_political_power = -20
-		add_national_unity = -0.2
-		add_popularity = { ideology = fascism popularity = 0.25 } 
-
-		SOV = {
-			country_event = { id = ne_finland.12 }
-		}
-		
-
-	}
-
-}
-
-
-##USSR: Finland has agreed!
-country_event = {
-	id = ne_finland.11
-	title = ne_finland.11.t
-	desc =  ne_finland.11.d
-	picture = GFX_somepic
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	
-	option = {	#Very Well
-		name = ne_finland.11.a
-		
-		#
-			
-	}
-	
-	
-}
-
-
-
-##USSR: Finland declines!
-country_event = {
-	id = ne_finland.12
-	title = ne_finland.12.t
-	desc =  ne_finland.12.d
-	picture = GFX_somepic
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	
-	option = {	#Idiots
-		name = ne_finland.12.a
-		
-		#
-		
-	}
-	
-	
-}
-
-
-
-##Germany: Lapland War
-country_event = {
-	id = ne_finland.13
-	title = ne_finland.13.t
-	desc =  ne_finland.13.d
-	picture = GFX_somepic
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	
-	option = {	#Occupy Lapland
-		name = ne_finland.13.a
-		
-		if = {
-			limit = {
-				148 = { is_owned_and_controlled_by = FIN }
-			}
-			GER = { set_state_controller = 148 }
-		}
-			
-	}
-	
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##WW2 victims
-country_event = {
-	id = ne_skelsa.5
-	title = ne_skelsa.5.t
-	desc =  ne_skelsa.5.d
-	picture = GFX_somepic
-
-	fire_only_once = yes
-
-	
-	trigger = {
-				
-		GER = {
-			exists = yes
-			is_subject = no
-			is_faction_leader = yes 
-			has_government = fascism
-		}
-		
-		has_war_with = GER
-		
-	}
-	
-	
-	mean_time_to_happen = {	days = 1 }
-
-	
-	option = {	#dark times for our nation
-		name = ne_skelsa.5.a
-
-		##Effects
-		add_political_power = 15
-		set_country_flag = ww2_victim
-			
-	}
-
-	
-}
 
 
 
@@ -978,7 +19,7 @@ country_event = {
 
 ##ne_strict_facton
 
-##NATO was founded, stricter settings were enabled
+##NATO/WARSAW PACT was founded, stricter settings were enabled
 ##DISTRIBUTE SPIRITS AND REDUCE DEMOCRATIC/COMMUNISM LEVEL  
 country_event = {
 	id = ne_faction.1
@@ -1058,6 +99,9 @@ country_event = {
 		
 }
 
+	##EVENT TO INFORM COUNTRY ABOUT NATIONAL SPIRIT (ne_align)!!!
+
+
 
 
 ##Country gets ready to join nato/wp spirit
@@ -1103,9 +147,9 @@ country_event = {
 }
 
 
-############################################################
-####    AI JOIN FACTION/NO PLAYER INTERACTION           ####
-############################################################
+#####################################################
+####    AI JOIN FACTION/NO PLAYER INTERACTION    ####
+#####################################################
 
 
 ####Country gets event when has spirit NE_Ready and popularity > 0.90####
@@ -1186,7 +230,7 @@ country_event = {
 			factor = 25			
 		}
 		
-		##Effects
+		##Lose popularity
 		if = { limit = { has_government = democratic } add_popularity = { ideology = democratic popularity = -0.25 } }
 		if = { limit = { has_government = communism } add_popularity = { ideology = communism popularity = -0.25 } }
 
@@ -1420,7 +464,7 @@ country_event = {
 
 
 
-##SOVIET INVASION OF POLAND
+##SOVIET INVASION OF POLAND (Only on Historical)
 country_event = {
 	id = ne_skelsa.200
 	title = ne_skelsa.200.t
@@ -1440,10 +484,12 @@ country_event = {
 		NOT = { GER = { has_war_with = SOV } }
 		NOT = { GER = { has_war_with = POL } }
 		
+		POL = { surrender_progress > 0.20 }
+		
 	}
 	
 	
-	mean_time_to_happen = {	days = 15 }
+	mean_time_to_happen = {	days = 2 }
 	
 	immediate = { 
 	
@@ -1455,7 +501,7 @@ country_event = {
 	option = {	# Invade POL
 		name = event.1.a
 		ai_chance = {
-			factor = 50
+			factor = 10
 			
 			modifier = {
 				factor = 100
@@ -1464,10 +510,12 @@ country_event = {
 		}
 
 		##Effects
-		add_political_power = 20
+		add_political_power = 20		
+		declare_war_on = { target = POL } 
 		
 		
-		hidden_effect = {	
+		hidden_effect = {
+			set_global_flag = ne_soviet_invasion_poland
 			POL = { country_event = { days = 1 id = ne_skelsa.201 }}
 			GER = { country_event = { days = 1 id = ne_skelsa.202 }}
 		}
@@ -1478,7 +526,7 @@ country_event = {
 	option = {	# better not
 		name = event.1.b
 		ai_chance = {
-			factor = 50
+			factor = 90
 			
 			modifier = {
 				factor = 0
@@ -1508,10 +556,10 @@ country_event = {
 
 	
 	option = {	#we are doomed!
-		name = event.1.a
+		name = ne_skelsa.201.a
 		
 		##Effects
-		add_political_power = 100
+		add_political_power = -175
 		add_national_unity = -0.05
 			
 	}
@@ -1533,7 +581,7 @@ country_event = {
 
 	
 	option = {	#very good
-		name = event.1.a
+		name = ne_skelsa.202.a
 			
 	}
 	
@@ -1542,11 +590,420 @@ country_event = {
 
 
 
-# New Europe: Poland conquered... honor MR Pact?
+#better: create news event which will trigger this event
+# Poland collapses; Eastern Poland goes to the USSR, Rest is occupied by GER, whitepeace event between POL - SOV
 country_event = {
 	id = ne_skelsa.203
 	title = ne_skelsa.203.t
 	desc = ne_skelsa.203.d
+	picture = GFX_report_event_soviet_german_soldier_handshake
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	
+	##Disentegrate
+	option = {
+		name = ne_skelsa.203.a
+
+		
+		##Transfer states to the SOV
+		
+		if = {
+			limit = {
+				97 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 97
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 97 }
+		}
+		
+		if = {
+			limit = {
+				96 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 96
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 96 }
+		}
+		
+		if = {
+			limit = {
+				95 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 95
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 95 }
+		}
+		
+		if = {
+			limit = {
+				94 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 94
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 94 }
+		}
+		
+		if = {
+			limit = {
+				93 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 93
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 93 }
+		}
+		
+		if = {
+			limit = {
+				91 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 91
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 91 }
+		}
+		
+		if = {
+			limit = {
+				745 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 745
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 745 }
+		}
+		
+		if = {
+			limit = {
+				751 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 751
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 751 }
+		}
+		
+		if = {
+			limit = {
+				89 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 89
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 89 }
+		}
+		
+		##whitepeace between SOV and POL
+		SOV = { white_peace = POL }
+		
+		
+		##GER occupies the rest
+		if = {
+			limit = {
+				85 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 85
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			GER = { set_state_controller = 85 }
+		}
+		
+		if = {
+			limit = {
+				86 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 86
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			GER = { set_state_controller = 86 }
+		}
+		
+		if = {
+			limit = {
+				87 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 87
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			GER = { set_state_controller = 87 }
+		}
+		
+		if = {
+			limit = {
+				98 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 98
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			GER = { set_state_controller = 98 }
+		}
+		
+		if = {
+			limit = {
+				10 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 10
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			GER = { set_state_controller = 10 }
+		}
+		
+		if = {
+			limit = {
+				92 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 92
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			GER = { set_state_controller = 92 }
+		}
+		
+		if = {
+			limit = {
+				88 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 88
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			GER = { set_state_controller = 88 }
+		}
+		
+		if = {
+			limit = {
+				72 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 72
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			GER = { set_state_controller = 72 }
+		}
+		
+		##Annexing Danzig-Stadt
+		if = {
+			limit = {
+				765 = {					
+					is_owned_by = POL
+					
+					OR = {
+						is_controlled_by = GER
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 765
+							OR = {
+								is_in_faction_with = SOV
+								is_in_faction_with = GER
+							}
+						}
+					}
+				}
+			}
+			GER = { transfer_state = 765 }
+		}
+		
+	
+}
+
+
+
+# New Europe: Poland conquered... honor MR Pact? (ONLY APPLIES IF SU DIDN'T INVADE POL)
+country_event = {
+	id = germany.14
+	title = germany.14.t
+	desc = germany.14.d
 	picture = GFX_report_event_german_troops
 	
 	fire_only_once = yes
@@ -1865,6 +1322,92 @@ country_event = {
 
 
 
+##Brother Hao joins the PLA
+country_event = {
+	id = ne_skelsa.1
+	title = ne_skelsa.1.t
+	desc =  ne_skelsa.1.d
+	picture = GFX_brother_hao
+
+	hidden = yes
+	fire_only_once = yes
+
+	
+	trigger = {
+		tag = PRC
+		
+		PRC = {
+			exists = yes
+			is_subject = no
+			has_government = communism
+			
+			date > 1948.1.11
+		}
+	
+	
+	}
+	
+	
+	mean_time_to_happen = {	days = 1 }
+	
+	immediate = { 
+		#
+	}
+	
+	
+	option = { #without the Communist Party, there will be no new China!
+		name = ne_skelsa.1.a
+		
+		create_corps_commander = { name = "Brother Hao" picture = "Portrait_PRC_General_Brother_Hao.dds" traits = { } skill = 4 } 
+		PRC = { sound_effect = communist_party }
+		
+	}
+	
+}
+
+
+##WW2 victims
+country_event = {
+	id = ne_skelsa.5
+	title = ne_skelsa.5.t
+	desc =  ne_skelsa.5.d
+	picture = GFX_somepic
+
+	fire_only_once = yes
+
+	
+	trigger = {
+				
+		GER = {
+			exists = yes
+			is_subject = no
+			is_faction_leader = yes 
+			has_government = fascism
+		}
+		
+		has_war_with = GER
+		
+	}
+	
+	
+	mean_time_to_happen = {	days = 1 }
+
+	
+	option = {	#dark times for our nation
+		name = ne_skelsa.5.a
+
+		##Effects
+		add_political_power = 15
+		set_country_flag = ww2_victim
+			
+	}
+
+	
+}
+
+
+
+##NEEDS HEAVY REWORK##
 ####FLAG CHANGES####
 
 ##First flag change

@@ -189,18 +189,18 @@ news_event = {
 	
 	trigger = {
 	
-	NOT = { has_global_flag = hitler_rage}
+		NOT = { has_global_flag = hitler_rage}
 		
-	GER = {has_government = fascism}	
+		GER = {has_government = fascism}	
 		
-	OR {				
-		GER = { has_war_with = SOV }
-		GER = { has_war_with = ENG }
-		GER = { has_war_with = FRA }
-		GER = { has_war_with = USA }
-	}
+		OR {				
+			GER = { has_war_with = SOV }
+			GER = { has_war_with = ENG }
+			GER = { has_war_with = FRA }
+			GER = { has_war_with = USA }
+		}
 	
-	GER = {surrender_progress > 0.35}				
+		GER = {surrender_progress > 0.40 }				
 
 		
 	}
@@ -242,6 +242,7 @@ news_event = {
 		}	
 			
 		NOT = {TAG = SOV}
+		
 		}
 	}
 	
@@ -251,7 +252,7 @@ news_event = {
 
 		trigger {
 		
-		TAG = SOV
+			tag = SOV
 
 		}
 
@@ -263,7 +264,7 @@ news_event = {
 		
 		trigger {
 		
-		TAG = GER
+			tag = GER
 
 		}
 	}
@@ -313,8 +314,7 @@ news_event = {
 		#}
 		
 		
-		NOT = {
-		
+		NOT = {	
 			tag = WGR
 			tag = DDR
 			tag = SOZ
@@ -327,8 +327,7 @@ news_event = {
 			tag = USA
 			tag = FRA
 			tag = ENG
-			tag = CAN
-			
+			tag = CAN			
 		}
 			
 		}
@@ -342,11 +341,10 @@ news_event = {
 		trigger {
 		
 			OR = {
-			tag = USA
-			tag = ENG
-			tag = ENG
-			tag = CAN
-			
+				tag = USA
+				tag = ENG
+				tag = ENG
+				tag = CAN		
 			}
 
 		}
@@ -360,7 +358,7 @@ news_event = {
 		trigger {
 		
 			OR = {
-			tag = SOV					
+				tag = SOV					
 			}
 
 		}
@@ -374,13 +372,13 @@ news_event = {
 		trigger {
 		
 			OR = {
-			tag = WGR
-			tag = DDR
-			tag = SOZ
-			tag = BOZ
-			tag = AOZ
-			tag = FOZ
-			tag = SAA					
+				tag = WGR
+				tag = DDR
+				tag = SOZ
+				tag = BOZ
+				tag = AOZ
+				tag = FOZ
+				tag = SAA					
 			}
 
 		}
@@ -415,8 +413,7 @@ news_event = {
 		#}
 		
 		
-		NOT = {
-		
+		NOT = {		
 			tag = WGR
 			tag = DDR
 			tag = SOZ
@@ -429,15 +426,14 @@ news_event = {
 			tag = USA
 			tag = FRA
 			tag = ENG
-			tag = CAN
-			
+			tag = CAN			
 		}
 			
 		}
 		
 	}
 	
-	##capitalist VP
+	##Western Allies
 	option = {
 		name = ne_news.6.b
 
@@ -455,7 +451,7 @@ news_event = {
 
 		
 	}
-	##soviets
+	##Soviets
 	option = {
 		name = ne_news.6.c
 			
@@ -641,8 +637,7 @@ news_event = {
 		#}
 		
 		
-		NOT = {
-		
+		NOT = {		
 			tag = WGR
 			tag = DDR
 			tag = SOZ
@@ -655,8 +650,7 @@ news_event = {
 			tag = USA
 			tag = FRA
 			tag = ENG
-			tag = CAN
-			
+			tag = CAN			
 		}
 			
 		}
@@ -670,11 +664,10 @@ news_event = {
 		trigger {
 		
 			OR = {
-			tag = USA
-			tag = ENG
-			tag = ENG
-			tag = CAN
-			
+				tag = USA
+				tag = ENG
+				tag = ENG
+				tag = CAN			
 			}
 
 		}
@@ -745,17 +738,14 @@ news_event = {
 		#}
 		
 		
-		NOT = {
-		
-			
+		NOT = {		
 			tag = DPR
 			tag = KOR
 			tag = SOV
 			tag = USA
 			tag = FRA
 			tag = ENG
-			tag = CAN
-			
+			tag = CAN			
 		}
 			
 		}
@@ -769,11 +759,10 @@ news_event = {
 		trigger {
 		
 			OR = {
-			tag = USA
-			tag = ENG
-			tag = ENG
-			tag = CAN
-			
+				tag = USA
+				tag = ENG
+				tag = ENG
+				tag = CAN			
 			}
 
 		}
@@ -787,7 +776,7 @@ news_event = {
 		trigger {
 		
 			OR = {
-			tag = SOV					
+				tag = SOV					
 			}
 
 		}
@@ -801,8 +790,8 @@ news_event = {
 		trigger {
 		
 			OR = {
-			tag = KOR
-			tag = DPR
+				tag = KOR
+				tag = DPR
 			}
 
 		}
@@ -2266,7 +2255,6 @@ news_event = {
 }
 
 ####The Hatay transferring event####
-#####Btw, Skelsa, could you maybe add to the main event some global or country flags? Would be great!#####
 news_event = {
 	id = ne_news.28
 	title = ne_news.28.t
@@ -2438,7 +2426,6 @@ news_event = {
 
 	mean_time_to_happen = { days = 1 }
 
-	
 
 ##	trigger = {
 ##		OR = { 
@@ -2523,65 +2510,90 @@ news_event = {
 	}
 }
 
-##Takee, I think this event is redundant#####################
-##Also, please check out Trello before adding new news events
+####SOVIETS LAND IN AMERICA####
 
-####Execution of the Germans scientist####
+####Fall of Moscow Allies/vanilla event####
+
+####Fall of London (USSR) [Vanilla event, needs rework]####
+
+####Fall of Paris (USSR) [Vanilla event, needs rework]####
+
+####Fall of Seattle (USSR)####
+
+#####Fall of Washington D.C. (USSR)####
+
+####Fall of New York (USSR)####
+
+####Generic news event for country joining NATO####
+
+####Generic news event for country joining WP####
+
+####WiC: Soviets land in Southern France####
+
+####WiC: Soviets are driven into the sea####
+
+####ne_news.46: The Division of Poland####
 news_event = {
-	id = ne_news.34
-	title = ne_news.34.t
-	desc = ne_news.34.d
-	# picture = GFX_scientistexecution
+	id = ne_news.46
+	title = ne_news.46.t
+	desc = ne_news.46.d
+	picture = GFX_somepic
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger = {
+		
+		POL = { 
+			exists = yes
+			has_war_with = SOV
+			has_war_with = GER
+			surrender_progress > 0.90 
+		
+		}
+		has_global_flag = ne_soviet_invasion_poland
+
+	}
+	
+	immediate = {
+		SOV = { country_event = ne_skelsa.203 }
+	}
 
 	option = {
-		name = ne_news.34.a
+		name = ne_news.46.a
+		
+		trigger = {
+			has_government = democratic
+		}
+	}
+	
+	option = {
+		name = ne_news.46.b
+		
+		trigger = {
+			NOT = {
+				has_government = democratic
+				tag = SOV
+				tag = GER				
+			}
+		}
+	}
+	
+	option = {
+		name = ne_news.46.c
+		
 		trigger = {
 			tag = SOV
 		}
 	}
-
+	
 	option = {
-		name = ne_news.34.b
+		name = ne_news.46.e
+		
 		trigger = {
-			AND = { 
-				has_government = democratic
-				NOT = { OR = { tag = SOV tag = WGR tag = DDR } }
-			}
-		}
-	}
-
-	option = {
-		name = ne_news.34.c
-		trigger = {
-			tag = WGR
-		}
-	}
-
-	option = {
-		name = ne_news.34.c
-		trigger = {
-			tag = DDR
-		}
-	}
-
-	option = {
-		name = ne_news.34.c
-		trigger = {
-			AND = {
-				has_government = communism
-				NOT = { OR = { tag = SOV tag = WGR tag = DDR } }
-			}
+			tag = GER
 		}
 	}
 }
-
-
-
-
 
 
 

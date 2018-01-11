@@ -52,8 +52,11 @@ l_english:
  ne_diplo:0 "Additional Diplomatic Actions"
  ne_diplomacy_slot:0 "Select a Diplomatic Option"
  ne_join_nato:0 "Invite new Countries"
+ ne_join_nato_desc:0 "Invite new countries to NATO. At least one foreign country needs to have the spirit "Ready to join NATO""
  ne_join_wp:0 "Invite new Countries"
+ ne_join_wo_desc:0 "Invite new countries to the Warsaw Pact. At least one foreign country needs to have the spirit "Ready to join the Pact""
  ne_idle:0 "No Current Action"
+ ne_idle_desc:0 "No Action Currently Enabled"
  
  
  
@@ -310,7 +313,7 @@ l_english:
  ne_fin_harbor.2.b:0 "Damn imperialists!"
  ne_fin_harbor.2.c:0 "This was a surprising move."
  
- ##finland continuation war
+ ##Finland Continuation War
  ne_finland.1.t:0 "The Continuation War"
  ne_finland.1.d:0 "We need to reclaim our lost territories!"
  ne_finland.1.a:0 "Let's talk with Hitler"
@@ -328,7 +331,44 @@ l_english:
  ne_finland.4.b:0 "This is then too risky"
  
  ##Moscow Armistice
+ ne_finland.5.t:0 ""
+ ne_finland.5.d:0 ""
+ ne_finland.5.a:0 ""
+ ne_finland.5.b:0 ""
+ ne_finland.6.t:0 ""
+ ne_finland.6.d:0 ""
+ ne_finland.6.a:0 ""
+ ne_finland.6.b:0 ""
+ ne_finland.7.t:0 ""
+ ne_finland.7.d:0 ""
+ ne_finland.7.a:0 ""
+ ne_finland.7.b:0 ""
+ ne_finland.8.t:0 ""
+ ne_finland.8.d:0 ""
+ ne_finland.8.a:0 ""
+ ne_finland.8.b:0 ""
+ ne_finland.9.t:0 ""
+ ne_finland.9.d:0 ""
+ ne_finland.9.a:0 ""
+ ne_finland.9.b:0 ""
+ ne_finland.10.t:0 ""
+ ne_finland.10.d:0 ""
+ ne_finland.10.a:0 ""
+ ne_finland.10.b:0 ""
+ ne_finland.11.t:0 ""
+ ne_finland.11.d:0 ""
+ ne_finland.11.a:0 ""
+ ne_finland.11.b:0 ""
+ ne_finland.12.t:0 ""
+ ne_finland.12.d:0 ""
+ ne_finland.12.a:0 ""
+ ne_finland.12.b:0 ""
  
+ ##Lapland War (As a result)
+ ne_finland.13.t:0 ""
+ ne_finland.13.d:0 ""
+ ne_finland.13.a:0 ""
+ ne_finland.13.b:0 ""
  
  
  ##Yugoslavia
@@ -353,17 +393,71 @@ l_english:
  ne_misc.17.a:0 "Purge them!"
  ne_misc.17.b:0 "This won't be neccessary..."
  
+ ##FACTION LOCALISATION
+ 
+ ##ne_faction.1 is hidden!
+
+ 
+ ne_faction.2.t:0 "Spirit "ready_join_nato"/"warsaw/pact""
+ ne_faction.2.d:0 "d"
+ ne_faction.2.a:0 "Good"
+ ne_faction.2.b:0 "Reverse the process!"
+ 
+ ne_faction.3.t:0 ""
+ ne_faction.3.d:0 ""
+ ne_faction.3.a:0 ""
+ ne_faction.3.b:0 ""
+ 
+ ne_faction.4.t:0 ""
+ ne_faction.4.d:0 ""
+ ne_faction.4.a:0 ""
+ ne_faction.4.b:0 ""
+ 
+ ne_faction.5.t:0 ""
+ ne_faction.5.d:0 ""
+ ne_faction.5.a:0 ""
+ ne_faction.5.b:0 ""
+ 
+ ne_faction.6.t:0 ""
+ ne_faction.6.d:0 ""
+ ne_faction.6.a:0 ""
+ ne_faction.6.b:0 ""
+ 
+ ##Invitation to TUR/GRE
+ ne_nato.5.t:0 "The First NATO Expansion"
+ ne_nato.5.d:0 "Should we do it?"
+ ne_nato.5.a:0 "More members are always welcome!"
+ ne_nato.5.b:0 "This might provocate the Soviets..."
+ 
+ ##Invitation to WGR
+ ne_nato.6.t:0 "NATO membership for West Germany?"
+ ne_nato.6.d:0 "Our second extension for our alliance proposes to "
+ ne_nato.6.a:0 "Of course!"
+ ne_nato.6.b:0 "This is too risky..."
+ 
+ ##17th September 1939
+ ne_skelsa.200.t:0 "Invading Poland?"
+ ne_skelsa.200.d:0 "Like we agreed in our non-aggression pact with the Germans, we are obliged to attack Poland some time after the German invasion. Even though the Wehrmacht has effectively destroyed the Polish Army and is advancing towards Warsaw, our help could end Poland quicker.\nWe finally have the opportunity to reclaim our lost lands from 1920 and reverse our disastrous defeat against Piłsudski once and for all! Even if we don’t capture much territory, the new border between our nation and the Reich is already determined and it’s highly unlikely that the Nazis would not comply.\nOur media will simply portray the invasion as an act to protect our minorities in the region. France and the United Kingdom already have their hands full and a war is thus very unlikely…"
+ ne_skelsa.200.a:0 "Finally we can revenge 1920!"
+ ne_skelsa.200.b:0 "Why waste soldiers when we will get Eastern Poland anyways?"
+ 
+ ##Polish Reaction
+ ne_skelsa.201.t:0 "The Soviets are invading us!"
+ ne_skelsa.201.d:0 "Our eastern border guards are under heavy attack and we already have lost contact to many units. It seems like the Russians also made a deal with the Germans to carve us up!"
+ ne_skelsa.201.a:0 "We need to delay them as long as we can!"
+ 
+ ##German reaction
+ ne_skelsa.202.t:0 "The Soviets kept their Promise!"
+ ne_skelsa.202.d:0 "Our military intelligence just reported that the Soviets are now also invading Poland from the east. It seems like the Bolsheviks can indeed keep promises.\nThe fall of Poland is only days away now."
+ ne_skelsa.202.a:0 "Let's hope the Bolsheviks lose some good men..."
+ 
+ 
  ##FLAG CHANGES
  ##Nat. Spain changes its flag
- ne_flag.1.t:0 "A New Flag for our Nation"
+ ne_flag.1.t:0 "A New Flag for our Nation?"
  ne_flag.1.d:0 "Text"
- ne_flag.1.a:0 "Good idea"
- ne_flag.1.a:0 "Our current flag is better"
- 
- 
- 
- 
- 
+ ne_flag.1.a:0 "The old one was quite boring honestly"
+ ne_flag.1.a:0 "There's no reason for a flag change"
  
  
  
@@ -433,12 +527,20 @@ l_english:
  ne_news.26.e:0 ""
  
  ##Soviets enter German soil
- ne_news.27.t:0 "Soviet Union reaches German soil!"
+ ne_news.27.t:0 "Soviet Union enters German soil!"
  ne_news.27.d:0 ""
  ne_news.27.a:0 ""
  ne_news.27.b:0 ""
  ne_news.27.c:0 ""
  ne_news.27.e:0 ""
+ 
+ ##Poland collapses (LOC needs a redo)
+ ne_news.46.t:0 "Poland collapses!"
+ ne_news.46.d:0 "[POL.GetLeader]has announced in a radio broadcast that, despite the massive sacrifice of the Polish people, it could no longer withstand the might of the German and Soviet armies. Even though they fought valiantly, their homeland is now conquered. The new border between Nazi germany and the SU will run through the former polish territory."
+ ne_news.46.a:0 "Disgusting..."
+ ne_news.46.b:0 "And again Poland vanished from Europe..."
+ ne_news.46.c:0 "The mistakes of 1920 are undone"
+ ne_news.46.e:0 "This nation had no place in history anyways."
  
  
  
