@@ -45,7 +45,8 @@ l_english:
  NE_titos_partisans_desc:0 "Though the nation itself fell rather quick, the Yugoslavian people are still fighting against the German and Italian fascists. Especially the communist partisan forces under the command of Josip Tito cause nightmares for the occupiers."
  NE_sfr_yugoslavia:0 "A Socialist Republic"
  NE_sfr_yugoslavia_desc:0 "We are not Croats, Serbs or Slovenes anymore. We are all Yugoslavs. Together we shall create a socialist welfare state in which no one has to live in poverty or be hungry. Let us pave the road to a properous future for our children!"
- 
+ NE_alone:0 "No Allied Help"
+ NE_alone_desc:0 "Allies are useless anyways."
  
  
  ##Slots##
@@ -54,7 +55,7 @@ l_english:
  ne_join_nato:0 "Invite new Countries"
  ne_join_nato_desc:0 "Invite new countries to NATO. At least one foreign country needs to have the spirit "Ready to join NATO""
  ne_join_wp:0 "Invite new Countries"
- ne_join_wo_desc:0 "Invite new countries to the Warsaw Pact. At least one foreign country needs to have the spirit "Ready to join the Pact""
+ ne_join_wp_desc:0 "Invite new countries to the Warsaw Pact. At least one foreign country needs to have the spirit "Ready to join the Pact""
  ne_idle:0 "No Current Action"
  ne_idle_desc:0 "No Action Currently Enabled"
  
@@ -437,7 +438,7 @@ l_english:
  
  ##17th September 1939
  ne_skelsa.200.t:0 "Invading Poland?"
- ne_skelsa.200.d:0 "Like we agreed in our non-aggression pact with the Germans, we are obliged to attack Poland some time after the German invasion. Even though the Wehrmacht has effectively destroyed the Polish Army and is advancing towards Warsaw, our help could end Poland quicker.\nWe finally have the opportunity to reclaim our lost lands from 1920 and reverse our disastrous defeat against Piłsudski once and for all! Even if we don’t capture much territory, the new border between our nation and the Reich is already determined and it’s highly unlikely that the Nazis would not comply.\nOur media will simply portray the invasion as an act to protect our minorities in the region. France and the United Kingdom already have their hands full and a war is thus very unlikely…"
+ ne_skelsa.200.d:0 "Like we agreed in our non-aggression pact with the Germans, we are obliged to attack Poland some time after the German invasion. Even though the Wehrmacht has effectively destroyed the Polish Army and is advancing towards Warsaw, our help could end Poland quicker.\nWe finally have the opportunity to reclaim our lost lands from 1920 and reverse our disastrous defeat against Piłsudski once and for all! Even if we don’t capture much territory, the new border between our nation and the Reich is already determined and it’s highly unlikely that the Nazis would not comply.\nOur media will simply portray the invasion as an act to protect our minorities in the region. France and the United Kingdom already have their hands full and a war is thus very unlikely..."
  ne_skelsa.200.a:0 "Finally we can revenge 1920!"
  ne_skelsa.200.b:0 "Why waste soldiers when we will get Eastern Poland anyways?"
  

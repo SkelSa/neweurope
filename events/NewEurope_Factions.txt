@@ -721,7 +721,7 @@ country_event = {
 		}
 		
 		SOV = { 
-			exist = yes
+			exists = yes
 			has_war = no
 			is_faction_leader = yes
 			has_government = communism

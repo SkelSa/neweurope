@@ -3,7 +3,7 @@
 
 
 add_namespace = ne_historical
-
+add_namespace = ne_japan
 
 ##Most events are hidden
 ##historical focus is on check!
@@ -385,12 +385,65 @@ country_event = {
 
 
 ###################################################
-##No war over Transylvania#########################
+##    No war over Transylvania    #################
 ###################################################
 
 ##HUN gets its focus first!
 
 
+##HUN does "Demand Transylvania". Upon 95% progress, Northern will get tranferred to HUN IF both countries (ROM and HUN are AI)
+country_event = {
+	id = ne_skelsa.250
+	#title = event.1.t
+	#desc =  event.1.d
+	#picture = GFX_somepic
+
+	hidden = yes
+	fire_only_once = yes
+
+	
+	trigger = {
+		
+		HUN = { 
+			exists = yes	
+			is_ai = yes
+			focus_progress = { focus = HUN_demand_transylvania progress > 0.90 } 
+		}
+		
+		
+		ROM = {
+			exists = yes
+			is_ai = yes
+			NOT = { has_war_with = HUN }
+		
+		}
+		
+	}
+	
+	immediate = { 
+	
+		#maybe add opinion stuff
+		
+	}
+	
+	
+	option = {	#execute stuff
+
+		##Transfer_Transylvania
+		HUN = { 
+			transfer_state = 76 
+			add_state_core = 76
+		}
+		
+		##maybe there's a news event for when HUN wants Transylvania? If yes, it should be executed
+		#hidden_effect = {	
+		#	news_event = { id = ne_news.6 }					
+		#}
+			
+	}
+	
+	
+}
 
 
 
@@ -502,19 +555,24 @@ country_event = {
 
 
 
-##JAP does Pearl Harbor!
+####JAP DOES PEARL HARBOR!####
 
 
 # JAP does Southern Expansion; goal is to do Pearl Harbor when JAP gets its war goals
-
 ##JAP gets event to execute PH (planning), Hawaii should get damage. JAP should also get Spirit "For the Emperor"
+
 country_event = {
 	id = ne_skelsa.100
 	title = ne_skelsa.100.t
 	desc = ne_skelsa.100.d
 	picture = GFX_report_event_japanese_officers
 	
+	fire_only_once = yes
+	
 	trigger = {
+	
+		tag = JAP
+		
 		JAP = { NOT = { has_war_with = USA} }
 		JAP = { focus_progress = { focus = southern_expansion_focus progress > 0.50 }  }		
 	}
@@ -540,7 +598,7 @@ country_event = {
 				
 			}
 		}
-		##RANDOM LIST TO DETERMINE PH DAMAGE##; ne_skelsa.101 is little damage; ne_skelsa.102 is heavy damage
+		##RANDOM LIST TO DETERMINE PH DAMAGE; ne_skelsa.101 is little damage; ne_skelsa.102 is heavy damage
 		JAP = { 			
 			random_list = { 80 = { country_event = { days = 35 id = ne_skelsa.101 } } 20 = { country_event = { days = 35 id = ne_skelsa.102 } } }
 		}
@@ -701,7 +759,7 @@ country_event = {
 
 
 
-##GERMANY IS NOTIFIED, WILL DECLARE WAR! OR NOT?
+##GERMANY IS NOTIFIED, WILL DECLARE WAR! NOT IF HITLER IS SANE
 country_event = {
 	id = ne_skelsa.104
 	title = ne_skelsa.104.t

@@ -479,7 +479,7 @@ country_event = {
 		is_historical_focus_on = yes
 		GER = { has_war_with = POL }
 		NOT = { GER = { has_war_with = SOV } }
-		NOT = { GER = { has_war_with = POL } }
+		NOT = { SOV = { has_war_with = POL } }
 		
 		POL = { surrender_progress > 0.20 }
 		
@@ -490,13 +490,19 @@ country_event = {
 	
 	immediate = { 
 	
-		POL = { add_timed_idea = { days = 70 id = NE_alone } }
+	hidden_effect = {
+	
+		POL = { add_timed_idea = { days = 45 idea = NE_alone  }  }
+		ENG = { add_timed_idea = { days = 45 idea = NE_alone  }  }
+		FRA = { add_timed_idea = { days = 45 idea = NE_alone  }  }
+		
+		}
 		
 	}
 	
 	
 	option = {	# Invade POL
-		name = event.1.a
+		name = ne_skelsa.200.a
 		ai_chance = {
 			factor = 10
 			
@@ -515,13 +521,16 @@ country_event = {
 			set_global_flag = ne_soviet_invasion_poland
 			POL = { country_event = { days = 1 id = ne_skelsa.201 }}
 			GER = { country_event = { days = 1 id = ne_skelsa.202 }}
+			
+			
+			
 		}
 			
 	}
 	
 	
 	option = {	# better not
-		name = event.1.b
+		name = ne_skelsa.200.b
 		ai_chance = {
 			factor = 90
 			
@@ -533,7 +542,12 @@ country_event = {
 		
 		##Effects
 		add_political_power = -25
-		POL = { remove_idea = NE_alone  }
+		hidden_effect = {
+			POL = { remove_ideas = NE_alone  }
+			ENG = { remove_ideas = NE_alone  }
+			FRA = { remove_ideas = NE_alone  }				
+		}
+		
 	}
 	
 	
@@ -598,7 +612,7 @@ country_event = {
 	is_triggered_only = yes
 		
 	
-	##Disentegrate
+	##Poland falls apart
 	option = {
 		name = ne_skelsa.203.a
 
@@ -608,18 +622,6 @@ country_event = {
 			limit = {
 				97 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 97
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			SOV = { transfer_state = 97 }
@@ -629,18 +631,6 @@ country_event = {
 			limit = {
 				96 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 96
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			SOV = { transfer_state = 96 }
@@ -650,18 +640,6 @@ country_event = {
 			limit = {
 				95 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 95
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			SOV = { transfer_state = 95 }
@@ -671,18 +649,6 @@ country_event = {
 			limit = {
 				94 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 94
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			SOV = { transfer_state = 94 }
@@ -692,18 +658,6 @@ country_event = {
 			limit = {
 				93 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 93
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			SOV = { transfer_state = 93 }
@@ -713,18 +667,6 @@ country_event = {
 			limit = {
 				91 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 91
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			SOV = { transfer_state = 91 }
@@ -734,18 +676,6 @@ country_event = {
 			limit = {
 				745 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 745
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			SOV = { transfer_state = 745 }
@@ -755,18 +685,6 @@ country_event = {
 			limit = {
 				751 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 751
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			SOV = { transfer_state = 751 }
@@ -776,18 +694,6 @@ country_event = {
 			limit = {
 				89 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 89
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			SOV = { transfer_state = 89 }
@@ -802,18 +708,6 @@ country_event = {
 			limit = {
 				85 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 85
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			GER = { set_state_controller = 85 }
@@ -823,18 +717,6 @@ country_event = {
 			limit = {
 				86 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 86
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			GER = { set_state_controller = 86 }
@@ -844,18 +726,6 @@ country_event = {
 			limit = {
 				87 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 87
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			GER = { set_state_controller = 87 }
@@ -865,18 +735,6 @@ country_event = {
 			limit = {
 				98 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 98
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			GER = { set_state_controller = 98 }
@@ -886,18 +744,6 @@ country_event = {
 			limit = {
 				10 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 10
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			GER = { set_state_controller = 10 }
@@ -907,18 +753,7 @@ country_event = {
 			limit = {
 				92 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 92
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
+
 				}
 			}
 			GER = { set_state_controller = 92 }
@@ -929,17 +764,6 @@ country_event = {
 				88 = {					
 					is_owned_by = POL
 					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 88
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			GER = { set_state_controller = 88 }
@@ -950,17 +774,6 @@ country_event = {
 				72 = {					
 					is_owned_by = POL
 					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 72
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			GER = { set_state_controller = 72 }
@@ -971,24 +784,12 @@ country_event = {
 			limit = {
 				765 = {					
 					is_owned_by = POL
-					
-					OR = {
-						is_controlled_by = GER
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 765
-							OR = {
-								is_in_faction_with = SOV
-								is_in_faction_with = GER
-							}
-						}
-					}
 				}
 			}
 			GER = { transfer_state = 765 }
 		}
 		
-	
+	}
 }
 
 

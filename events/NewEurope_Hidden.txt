@@ -1,4 +1,4 @@
-﻿##This file will is used for some hidden events. 
+﻿##This file is used for some hidden events. 
 add_namespace = ne_hidden
 
 ##Switch to better India color when free
