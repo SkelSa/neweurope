@@ -27,4 +27,5 @@ SOZ = "countries/SovietOccupationZone.txt"
 BUR = "countries/Burma.txt"
 POZ = "countries/PolishOccupationZone.txt"
 ROA = "countries/ROA.txt"
+MOR = "countries/Morocco.txt"
 
