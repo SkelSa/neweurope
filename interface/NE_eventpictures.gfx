@@ -27,6 +27,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_elbe_day"
+		texturefile = "gfx/event_pictures/elbe_day.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_germany_partitioned"
 		texturefile = "gfx/event_pictures/germany_partitioned.dds"
 	}
@@ -46,7 +51,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/potsdam_conference.dds"
 	}
 	
-	##Stalin Notes successful and both use the same picture!
+	##Stalin Notes successful and not use the same picture!
 	
 	spriteType = {
 		name = "GFX_stalin_notes"

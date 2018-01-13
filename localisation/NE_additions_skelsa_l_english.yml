@@ -3,6 +3,13 @@ l_english:
 
  ##Replace/Revise
  
+ 
+ ne_news.1.t:0 "Introduction to Better Post-War Europe"
+ ne_news.1.d:0 "This mod aims to expand and enhance a historical playthrough as one of the Allied nations. Besides several new states to allow the recreation of a new world, BPWE features dozens of historical events and other content to allow the begin of the Cold War after the defeat of Nazi Germany and her allies.\nDue to the increasing lag in the lategame a focus was laid on events which happened before 1955 in our timeline. WW3 stuff is also included.\nThis mod was intended for historical playthroughs and thus ahistorical games will prevent a lot of content. Please try to keep this in mind.\nAnd now have fun!"
+ ne_news.1.a:0 "Thanks for the info!"
+ 
+ 
+ 
  ##Misc
  ne_strict_faction:0 "Stricter Faction Rules were enabled"
  
@@ -426,13 +433,13 @@ l_english:
  
  ##Invitation to TUR/GRE
  ne_nato.5.t:0 "The First NATO Expansion"
- ne_nato.5.d:0 "Should we do it?"
+ ne_nato.5.d:0 "Turkey and Greece control the Mediterranean and more importanly the Bosporus. While they're surrounded by socialist countries, we may offer them protection while gaining access over their strategic locations. This, however, may provoke an unknown Soviet response.\nDo we send out the invites?"
  ne_nato.5.a:0 "More members are always welcome!"
  ne_nato.5.b:0 "This might provocate the Soviets..."
  
  ##Invitation to WGR
  ne_nato.6.t:0 "NATO membership for West Germany?"
- ne_nato.6.d:0 "Our second extension for our alliance proposes to "
+ ne_nato.6.d:0 "Our second extension for our alliance proposes to invite our former enemy, Germany, into the alliance"
  ne_nato.6.a:0 "Of course!"
  ne_nato.6.b:0 "This is too risky..."
  
@@ -449,8 +456,13 @@ l_english:
  
  ##German reaction
  ne_skelsa.202.t:0 "The Soviets kept their Promise!"
- ne_skelsa.202.d:0 "Our military intelligence just reported that the Soviets are now also invading Poland from the east. It seems like the Bolsheviks can indeed keep promises.\nThe fall of Poland is only days away now."
+ ne_skelsa.202.d:0 "Our military intelligence just reported that the Soviets are now also invading Poland from the East. It seems like the Bolsheviks can indeed keep promises.\nThe fall of Poland is only days away now."
  ne_skelsa.202.a:0 "Let's hope the Bolsheviks lose some good men..."
+ 
+ ##English reaction
+ ne_skelsa.204.t:0 "The Soviets are attacking Poland!"
+ ne_skelsa.204.d:0 "The Polish intelligence could confirm that the Red Army is indeed invading the eastern parts of Poland and has already taken several cities. With the rapid advance of the Germans and now a new front on the eastern border, we're afraid to say that the situation for our Polish friends is indeed very grim. Our military experts predict that the nation will be fully occupied in about two to four weeks.\nSeveral of our politicians are calling for a declaration of war against the Russians as well but considering the consequences it will have, this could be suicide."
+ ne_skelsa.204.a:0 "Poland is lost!"
  
  
  ##FLAG CHANGES
@@ -507,12 +519,12 @@ l_english:
  ne_news.24.d:0 "East German soldiers laid down more than 30 miles of barbed wire barrier through the heart of Berlin. East Berlin citizens were forbidden to pass into West Berlin, and the number of checkpoints in which Westerners could cross the border was drastically reduced. The West, taken by surprise, threatened a trade embargo against East Germany as a retaliatory measure. The Soviets responded that such an embargo be answered with a new land blockade of West Berlin. When it became evident that the West was not going to take any major action to protest the closing, East German authorities became emboldened, closing off more and more checkpoints between East and West Berlin. On August 15, they began replacing barbed wire with concrete. The wall, East German authorities declared, would protect their citizens from the pernicious influence of decadent capitalist culture."
  ne_news.24.a:0 "We will protect the inhabitants of Berlin from the influence of Western capitalism!"
  ne_news.24.b:0 "This is a shock to all of us!"
- ne_news.24.c:0 "It does not concern us"
+ ne_news.24.c:0 "It does not concern us."
  ne_news.24.e:0 "This wall is a wall of shame!"
  ne_news.24.f:0 "We will protect our people from harmful influence!"
  
  ##Soviet Victory
- ne_news.25.t:0 "The Western World has surrendered!"
+ ne_news.25.t:0 "The Western Allies has surrendered!"
  ne_news.25.d:0 ""
  ne_news.25.a:0 ""
  ne_news.25.b:0 ""
@@ -528,7 +540,7 @@ l_english:
  ne_news.26.e:0 ""
  
  ##Soviets enter German soil
- ne_news.27.t:0 "Soviet Union enters German soil!"
+ ne_news.27.t:0 "Soviet Union enters German soil"
  ne_news.27.d:0 ""
  ne_news.27.a:0 ""
  ne_news.27.b:0 ""

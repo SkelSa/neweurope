@@ -826,8 +826,8 @@ country_event = {
 				SOV = {set_cosmetic_tag = NE_SOV } #DONE	#FLAG (C)							also flag events (3 times)
 				CHI = {set_cosmetic_tag = NE_CHI}  #DONE	NAME (N)
 
-				##Vichy France (NAME (F) and COLOR) gets its cosmetic in the hidden file
-				##Franco's Spain (NAME (F) and FLAG (flag) gets its cosmetic in the hidden file
+				##Vichy France (NAME (F), FLAG (F) and COLOR) gets its cosmetic in the hidden file
+				##Franco's Spain (NAME (F) and FLAG (F) gets its cosmetic in the hidden file
 				##Communist India (FLAG (C) and COLOR) are set when they're independent
 
 			}

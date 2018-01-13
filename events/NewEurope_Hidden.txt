@@ -259,11 +259,15 @@ country_event = {
 			if = { limit = { has_global_flag = Neutrality_chosen } add_ideas = NE_neutrality }
 			
 		}
+		
+		#Reduce communist support for the other Spain
+		SPR = { add_popularity = { ideology = communism popularity = -0.24 }  }
+		
+		
 	}
 	
     option = {	
-		#Reduce communist support for the other Spain
-		SPR = { add_popularity = { ideology = communism popularity = -0.22 }  }
+		
     }
 
 	

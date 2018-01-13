@@ -196,21 +196,21 @@
  ne_news.19.e:0 "We do not care about the death of this vile animal"
 
  ##Hatay
- ne_news.28.t:0 "Annexing of Hatai by Turkey"
- ne_news.28.d:0 "Today Hatay was annexed by Turkey under the influence of the war in Europe"
+ ne_news.28.t:0 "The Annexation of Hatay"
+ ne_news.28.d:0 "Today Hatay was annexed by Turkey."
  ne_news.28.a:0 "This is a grain of sand compared to the current events in Europe"
  ne_news.28.b:0 "This is our land!"
  ne_news.28.c:0 "At the moment, we do not care about this"
 
  ##Elbe Day
- ne_news.29.t:0 "Elbe Day"
- ne_news.29.d:0 "Elbe Day is the day Soviet and American troops met at the Elbe River, near Torgau in Germany, marking an important step toward the end of World War II in Europe. This contact between the Soviets, advancing from the East, and the Americans, advancing from the West, meant that the two powers had effectively cut Germany in two."
- ne_news.29.a:0 "End of Nazism, the beginning of democracy!"
- ne_news.29.b:0 "It's a legendary day! This is the victory of communism!"
- ne_news.29.c:0 "This is the meeting of the liberators!"
- ne_news.29.e:0 "We divided the fascists into two parts!"
- ne_news.29.f:0 "This is a meeting of two angry dogs!"
- ne_news.29.g:0 "Nazism is the end! Let's see what will happen next..."
+ ne_news.29.t:0 "East meets West!"
+ ne_news.29.d:0 "This morning, American and British forces met soldiers of the Red Army for the first time in Germany. Troops from both fronts were happy to see each other and exchanged cigarettes, beverages and handshakes before raising their countries’ flag to mark another major victory for the Allies.\nLater in the evening, London, Moscow and Washington reaffirmed the determination of the three Allied powers to complete the destruction of Hitler’s Germany.\nWith the Eastern and Western front united, Germany is effectively cut in two. Most people already predict the end of the war in Europe before the end of this year."
+ ne_news.29.a:0 "Each day, Germany’s end draws closer..."
+ ne_news.29.b:0 "True companionship!" 
+ ne_news.29.c:0 "Let’s celebrate this day with our Soviet friends!" 
+ ne_news.29.e:0 "Let’s celebrate this day with our Western friends!"
+ ne_news.29.f:0 "How could this happen?!"
+ ne_news.29.g:0 "This day will go down in history."
 
  ##Newfoundland
  ne_news.30.t:0 "Transfer of Newfoundland to Canada"
@@ -219,7 +219,7 @@
  ne_news.30.b:0 "Britain lost another dominion!"
  ne_news.30.c:0 "The British Empire is significantly weakening every year!"
 
- ##Auschwitz
+ ##Auschwitz ####UNUSED####
  ne_news.31.t:0 "Concentration camp "Auschwitz" is liberated by allied forces!"
  ne_news.31.d:0 "Concentration camp "Auschwitz" is liberated by allied forces. According to reports, hundreds of thousands of Polish people, as well as Jews from a number of other European countries, have been held prisoner there in appalling conditions and many have been killed in the gas chambers."
  ne_news.31.a:0 "This is a crime of the Nazis against all mankind!"
