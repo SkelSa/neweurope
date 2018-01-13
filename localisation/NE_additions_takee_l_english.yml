@@ -243,6 +243,10 @@
  PRC_GATHERING_STORM_DESC:0 "A mere two years ago, the Communist Party of China faced utter annihilation. To survive, it engaged on the epic journey that would become known as the Long March. With only a fraction of the army surviving the rigors of the march and little industry, the prospects of victory in the Chinese Civil War are slim indeed.\n\nBut in time, the population may be swayed to the Communist cause, new armies be raised, new base areas established, and, when the time is right, the revolutionary struggle will be renewed again, until final victory is achieved."
  
  ######################################################################################################################################
+ ########################################################VICTORY POINTS################################################################
+ VICTORY_POINTS_10070:0 "Rabat"
+
+ ######################################################################################################################################
  #########################################################NEW STATES###################################################################
 
 
@@ -317,3 +321,11 @@
  ROA_neutrality_party:0 "KONR"
  ROA_neutrality_party_long:0 "Committee for the Liberation of the Peoples of Russia"
 
+ MOR_fascism:0 "Morocco"
+ MOR_democratic:0 "Morocco"
+ MOR_communism:0 "Morocco"
+ MOR_neutrality:0 "Kingdom of Morocco"
+ MOR_fascism_ADJ:0 "Moroccan"
+ MOR_democratic_ADJ:0 "Moroccan"
+ MOR_communism_ADJ:0 "Moroccan"
+ MOR_neutrality_ADJ:0 "Moroccan"
