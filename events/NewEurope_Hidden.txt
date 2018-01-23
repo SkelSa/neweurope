@@ -282,8 +282,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {	
-		JAP = { has_war_with = CHI }
-		JAP = { has_war_with = SHX }	
+		JAP = { has_war_with = CHI }	
 	}
 
 	immediate = {
@@ -355,7 +354,7 @@ country_event = {
 
 ##EDIT: Hungary loses it's greater Hungary upon 95% surrender progress!
 country_event = {
-	id = ne_hidden.10
+	id = ne_hidden.11
 
 	hidden = yes
 
@@ -385,7 +384,7 @@ country_event = {
 
 ##BATTLE EVENTS (Hidden trigger when Kursk falls!)
 country_event = {
-	id = ne_hidden.11
+	id = ne_hidden.12
 
 	hidden = yes
 

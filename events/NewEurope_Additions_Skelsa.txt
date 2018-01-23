@@ -490,8 +490,15 @@ country_event = {
 	hidden_effect = {
 	
 		POL = { add_timed_idea = { days = 45 idea = NE_alone  }  }
-		ENG = { add_timed_idea = { days = 45 idea = NE_alone  }  }
-		FRA = { add_timed_idea = { days = 45 idea = NE_alone  }  }
+		
+		every_country = {
+			limit = {
+				is_in_faction_with = POL
+				is_subject = no
+			}
+			
+			add_timed_idea = { days = 45 idea = NE_alone }				
+		}
 		
 		}
 		
@@ -539,10 +546,16 @@ country_event = {
 		
 		##Effects
 		add_political_power = -25
+		
 		hidden_effect = {
-			POL = { remove_ideas = NE_alone  }
-			ENG = { remove_ideas = NE_alone  }
-			FRA = { remove_ideas = NE_alone  }				
+			every_country = {
+			limit = {
+				is_in_faction_with = POL
+				is_subject = no
+			}
+			
+			remove_ideas = NE_alone				
+			}			
 		}
 		
 	}
@@ -1180,6 +1193,627 @@ country_event = {
 	}
 	
 }
+
+
+##Greek civil war: ne_skelsa.50-55
+
+
+
+
+
+
+
+
+##ne_skelsa.75: Player not in historical focus!
+country_event = {
+	id = ne_skelsa.75
+	title = ne_skelsa.75.t
+	desc = ne_skelsa.75.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	trigger = {
+		
+		is_ai = no
+		is_historical_focus_on = no
+		NOT = { has_country_flag = warning_not_historical }
+		
+	}
+	
+	immediate = {
+
+		set_country_flag = warning_not_historical
+	
+	}
+
+	option = {
+		name = ne_skelsa.75.a
+		custom_effect_tooltip = warning_for_a_player.1.tt
+	}
+}
+
+##ne_skelsa.76: Partition of YUG
+country_event = {
+	id = ne_skelsa.76
+	title = ne_skelsa.76.t
+	desc = ne_skelsa.76.d ##The articifial product of Versailles is now gone. Give minorities to our allies. No longer suppressed. Mistakes of Versailles undone
+	picture = GFX_report_event_yugoslavian_split
+
+	fire_only_once = yes
+	
+	trigger = {
+
+		tag = GER
+		is_historical_focus_on = yes
+	
+		GER = {
+			exists = yes
+			has_government = fascism
+			has_war_with = ENG
+			is_faction_leader = yes
+			is_in_faction_with = ITA
+		}
+	
+		YUG = {
+			exists = yes
+			has_capitulated = yes
+			has_war_with = GER
+			has_war_with = ITA	
+		}
+
+		102 = {
+			is_owned_by = YUG
+			OR = { 
+				is_controlled_by = GER
+				any_country = { is_in_faction_with = GER  controls_state = PREV }
+			}	
+		}
+		
+		106 = {
+			is_owned_by = YUG
+			OR = { 
+				is_controlled_by = GER
+				any_country = { is_in_faction_with = GER  controls_state = PREV }
+			}	
+		}
+		
+		107 = {
+			is_owned_by = YUG
+			OR = { 
+				is_controlled_by = GER
+				any_country = { is_in_faction_with = GER  controls_state = PREV }
+			}		
+		}
+		
+		109 = {
+			is_owned_by = YUG
+			OR = { 
+				is_controlled_by = GER
+				any_country = { is_in_faction_with = GER  controls_state = PREV }
+			}		
+		}
+		
+	}
+
+
+	option = {		##Let's partition it (set_state_controller)
+		name = ne_skelsa.76.a
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes	
+			}			
+		}
+
+			
+			##GERMANY					
+			if = {
+				limit = {
+					776 = {
+						is_owned_by = YUG
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 776 }
+			}
+			
+			if = {
+				limit = {
+					108 = {
+						is_owned_by = YUG
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 108 }
+			}
+			
+			if = {
+				limit = {
+					107 = {
+						is_owned_by = YUG
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 107 }
+			}
+			
+			if = {
+				limit = {
+					748 = {
+						is_owned_by = YUG
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 748 }
+			}
+			
+			if = {
+				limit = {
+					102 = {
+						is_owned_by = YUG
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 102 }
+			}
+
+			
+			
+			##ITALY
+			if = {
+				limit = {
+					ITA = {
+						exists = yes
+						is_in_faction_with = GER
+					}
+				}
+				
+					
+				if = {
+					limit = {
+						105 = {
+							is_owned_by = YUG
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					ITA = { set_state_controller = 105 }
+				}
+				
+				if = {
+					limit = {
+						761 = {
+							is_owned_by = YUG
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					ITA = { set_state_controller = 761 }
+				}
+				
+				if = {
+					limit = {
+						759 = {
+							is_owned_by = YUG
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					ITA = { set_state_controller = 759 }
+				}
+		
+		
+			}
+			
+			
+			##Croatia
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+				}
+				
+					
+				if = {
+					limit = {
+						109 = {
+							is_owned_by = YUG
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					CRO = { transfer_state = 109 }
+				}
+				
+				if = {
+					limit = {
+						103 = {
+							is_owned_by = YUG
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					CRO = { transfer_state = 103 }
+				}
+				
+				
+				if = {
+					limit = {
+						104 = {
+							is_owned_by = YUG
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					CRO = { transfer_state = 104 }
+				}
+
+				GER = { puppet = CRO }
+		
+		
+			}
+			
+			
+			##BULGARIA
+			if = {
+				limit = {
+					BUL = {
+						exists = yes
+						is_in_faction_with = GER
+					}
+				}
+				
+					
+				if = {
+					limit = {
+						106 = {
+							is_owned_by = YUG
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					BUL = { set_state_controller = 106 }
+				}
+				
+				if = {
+					limit = {
+						760 = {
+							is_owned_by = YUG
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					BUL = { set_state_controller = 760 }
+				}
+
+		
+			}
+			
+			
+			##HUNGARY
+			if = {
+				limit = {
+					HUN = {
+						exists = yes
+						is_in_faction_with = GER
+					}
+				}
+				
+					
+				if = {
+					limit = {
+						45 = {
+							is_owned_by = YUG
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					HUN = { set_state_controller = 45 }
+				}
+				
+				
+			}
+					
+
+	}
+	
+	option = {		##No
+		name = ne_skelsa.76.b
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}			
+		}
+		
+		
+		
+		add_political_power = -10
+
+	}
+}
+
+
+
+##ne_skelsa.77: Partition of GRE
+country_event = {
+	id = ne_skelsa.77
+	title = ne_skelsa.77.t
+	desc = ne_skelsa.77.d
+	picture = GFX_report_event_yugoslavian_split
+
+	trigger = {
+
+		tag = GER
+		is_historical_focus_on = yes
+	
+		GER = {
+			exists = yes
+			has_government = fascism
+			has_war_with = ENG
+			is_faction_leader = yes
+			is_in_faction_with = ITA
+		}
+	
+	
+		GRE = {
+			exists = yes
+			has_capitulated = yes
+			has_war_with = GER
+			has_war_with = ITA		
+		}
+		
+		
+		47 = {
+			is_owned_by = GRE
+			OR = { 
+				is_controlled_by = GER
+				any_country = { is_in_faction_with = GER  controls_state = PREV }
+			}	
+		}
+		
+		731 = {
+			is_owned_by = GRE
+			OR = { 
+				is_controlled_by = GER
+				any_country = { is_in_faction_with = GER  controls_state = PREV }
+			}	
+		}
+		
+
+	}
+	
+
+	option = {		##Let's partition it (set_state_controller)
+		name = ne_skelsa.76.a
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes	
+			}			
+		}
+			
+			
+			##GERMANY					
+			if = {
+				limit = {
+					187 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 187 }
+			}
+			
+			if = {
+				limit = {
+					184 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 184 }
+			}
+			
+			if = {
+				limit = {
+					731 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 731 }
+			}
+			
+			
+			##BULGARIA
+			if = {
+				limit = {
+					BUL = {
+						exists = yes
+						is_in_faction_with = GER
+					}
+				}
+				
+					
+				if = {
+					limit = {
+						184 = {
+							is_owned_by = GRE
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					BUL = { set_state_controller = 184 }
+				}
+				
+				
+			}
+			
+			
+			##ITALY
+			if = {
+				limit = {
+					ITA = {
+						exists = yes
+						is_in_faction_with = GER
+					}
+				}
+				
+					
+				if = {
+					limit = {
+						47 = {
+							is_owned_by = GRE
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					ITA = { set_state_controller = 47 }
+				}
+				
+				if = {
+					limit = {
+						186 = {
+							is_owned_by = GRE
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					ITA = { set_state_controller = 186 }
+				}
+				
+				if = {
+					limit = {
+						185 = {
+							is_owned_by = GRE
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					ITA = { set_state_controller = 185 }
+				}
+				
+				
+			}
+	
+
+	}
+	
+	option = {		##No
+		name = ne_skelsa.76.b
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}			
+		}
+		
+		add_political_power = -10
+
+	}
+}
+
+
+
 
 
 ##WW2 victims

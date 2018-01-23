@@ -4,7 +4,7 @@ l_english:
  ##Replace/Revise
  
  
- ne_news.1.t:0 "Introduction to Better Post-War Europe"
+ ne_news.1.t:0 "Better Post-War Europe"
  ne_news.1.d:0 "This mod aims to expand and enhance a historical playthrough as one of the Allied nations. Besides several new states to allow the recreation of a new world, BPWE features dozens of historical events and other content to allow the begin of the Cold War after the defeat of Nazi Germany and her allies.\nDue to the increasing lag in the lategame a focus was laid on events which happened before 1955 in our timeline. WW3 stuff is also included.\nThis mod was intended for historical playthroughs and thus ahistorical games will prevent a lot of content. Please try to keep this in mind.\nAnd now have fun!"
  ne_news.1.a:0 "Thanks for the info!"
  
@@ -252,10 +252,10 @@ l_english:
 ############################################################
  
  ##template
- ne_finland.0.t:0 ""
- ne_finland.0.d:0 ""
- ne_finland.0.a:0 ""
- ne_finland.0.b:0 ""
+ ne_skelsa.0.t:0 ""
+ ne_skelsa.0.d:0 ""
+ ne_skelsa.0.a:0 ""
+ ne_skelsa.0.b:0 ""
  
  ##HISTORICAL FIXES EVENTS##
  
@@ -281,9 +281,22 @@ l_english:
  
  
  
+ ##WARNING: Historical Focus not on!
+ ne_skelsa.75.t:0 "Warning: Historical Focus Setting Not On!"
+ ne_skelsa.75.d:0 "This savegame was started without historical focuses. As most events and decisions rely on them, it's strongly advised to turn them on for the best experience."
+ ne_skelsa.75.a:0 "Thanks for the warning!"
  
+ ##Germany: Divide up Yugoslavia
+ ne_skelsa.76.t:0 "The Fate of Yugoslavia"
+ ne_skelsa.76.d:0 "The artificial state of Yugoslavia could not withstand the might of our - and our allies - military and surrendered! The Hungarian, German, Bulgarian and Italian minorities there are now finally free and again another mistake of Versailles is undone!\nWe have already discussed how to deal with the Yugoslavian carcass and it would be beneficial for all to divide the land among our allies. They fought hard and should be rewarded with their rightful clay."
+ ne_skelsa.76.a:0 "Finally!"
+ ne_skelsa.76.b:0 "The current occupation is fine."
  
- 
+ ##Germany: Divide up Greece
+ ne_skelsa.77.t:0 "The Fate of Greece"
+ ne_skelsa.77.d:0 "Even though the Greek people fought valiantly and brave they were no match for the combined forces of the Axis Powers. Mussolini's failed invasion will hopefully be forgotten once this war is won.\nLike with Yugoslavia, do we partition them among our allies? We can decide about the Greek nation once the Allies sign a peace treaty..."
+ ne_skelsa.77.a:0 "It was about time..."
+ ne_skelsa.77.b:0 "The current occupation is fine."
  
  
  
@@ -373,10 +386,10 @@ l_english:
  ne_finland.12.b:0 ""
  
  ##Lapland War (As a result)
- ne_finland.13.t:0 ""
- ne_finland.13.d:0 ""
- ne_finland.13.a:0 ""
- ne_finland.13.b:0 ""
+ ne_finland.13.t:0 "Finland betrays us!"
+ ne_finland.13.d:0 "The Finnish leadership under [FIN.GetLeader] have signed a conditional surrender with the Soviets! Our forces operating there are now basically cut off"
+ ne_finland.13.a:0 "Let's occupy Lapland for now"
+ ne_finland.13.b:0 "We don't need to."
  
  
  ##Yugoslavia
@@ -468,9 +481,9 @@ l_english:
  ##FLAG CHANGES
  ##Nat. Spain changes its flag
  ne_flag.1.t:0 "A New Flag for our Nation?"
- ne_flag.1.d:0 "Text"
- ne_flag.1.a:0 "The old one was quite boring honestly"
- ne_flag.1.a:0 "There's no reason for a flag change"
+ ne_flag.1.d:0 "Some talented flag designers have come up with some improvements to our current flag"
+ ne_flag.1.a:0 "The old one was quite boring honestly."
+ ne_flag.1.a:0 "There's no reason for a flag change."
  
  
  
@@ -551,7 +564,7 @@ l_english:
  ne_news.46.t:0 "Poland collapses!"
  ne_news.46.d:0 "[POL.GetLeader]has announced in a radio broadcast that, despite the massive sacrifice of the Polish people, it could no longer withstand the might of the German and Soviet armies. Even though they fought valiantly, their homeland is now conquered. The new border between Nazi germany and the SU will run through the former polish territory."
  ne_news.46.a:0 "Disgusting..."
- ne_news.46.b:0 "And again Poland vanished from Europe..."
+ ne_news.46.b:0 "And again Poland vanishes from Europe..."
  ne_news.46.c:0 "The mistakes of 1920 are undone!"
  ne_news.46.e:0 "This nation had no place in history anyways."
  

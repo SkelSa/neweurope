@@ -75,17 +75,17 @@ bookmarks = {
 			}	
 		}
 
-		#"PRC"={
-		#	history = "PRC_GATHERING_STORM_DESC"
-		#	ideology = communism
-		#	ideas = {
-		#		# No ideas
-		#	}
-		#	focuses = {
-		#		internationalism_focus
-		#		political_commissars
-		#	}	
-		#}
+		"PRC"={
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				# No ideas
+			}
+			focuses = {
+				internationalism_focus
+				political_commissars
+			}	
+		}
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"

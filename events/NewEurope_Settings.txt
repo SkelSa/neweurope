@@ -833,7 +833,7 @@ country_event = {
 			}
 			
 			
-			##Better Leaders, ADD THE KOREANS of KOR
+			##Better Leaders, ADD THE KOREANS to KOR
 			if = {
 				limit = {
 					has_global_flag = leaders_chosen

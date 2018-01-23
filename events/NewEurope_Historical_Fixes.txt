@@ -14,9 +14,10 @@ add_namespace = ne_japan
 #-Done in Germany's focus tree!
 
 
-########################################
-##BULGARIA JOINS THE AXIS (NOT HIDDEN)##
-########################################
+###################################
+##    BULGARIA JOINS THE AXIS    ##
+###################################
+
 
 ##Germany: Need access to Greece via Bulgaria
 country_event = {
@@ -689,7 +690,7 @@ country_event = {
 		set_global_flag = NE_pearl_harbor_big_damage
 		
 		hidden_effect = {
-			USA = { country_event = { id = ne_skelsa.103 }
+			USA = { country_event = { id = ne_skelsa.103 } }
 		}
 			
 	}
@@ -861,4 +862,3 @@ country_event = {
 	
 	
 }
-

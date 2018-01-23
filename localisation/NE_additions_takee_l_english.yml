@@ -96,14 +96,14 @@
   ne_takee.2.a:0 "Go to the beginning of the demilitarization of the economy"
 
  ##A warning for a player
-  ne_takee.3.t:0 "[Root.GetName] currently unplayable"
-  ne_takee.3.d:0 "The currently selected [Root.GetName] country is not currently recommended for playing with BPWE mod. When playing for the selected country can cause a lot of programming errors; The modification functionality may not work \n\nWe recommend that you play only for countries that have been modified by the modification, selected in the "Country Selection Menu""
-  ne_takee.3.a:0 "I am notified of this and have NO complaints"
+  ne_takee.3.t:0 "Your Country is not supported by this Mod!"
+  ne_takee.3.d:0 "You are currently playing as the [Root.GetName], a fascist nation. Please keep in mind that BPWE was designed as a historical mod and thus almost all events/decisions/content requires an Allied victory. While ahistorical playthroughs are still possible you will miss out a lot of content!\nIt's strongly recommended to play as one of the countries displayed in the country selection screen. For further information you may visit the workshop page."
+  ne_takee.3.a:0 "I understand."
 
- ##Danzig is fucked# EDIT
-  ne_takee.4.t:0 "Danzig is now under German control"
-  ne_takee.4.d:0 "Our territory now belongs to a part of Germany, and it's good or bad - time will tell"
-  ne_takee.4.a:0 "We'll see..."
+ ##Danzig is fucked
+  ne_takee.4.t:0 "Poland surrenders us to Germany!"
+  ne_takee.4.d:0 "The Polish government decided to transfer the ownership of our city to the Germans. We will from now on be a Reichsgau of [GER.GetName]."
+  ne_takee.4.a:0 "Reunited with Germany at last!"
   ne_takee.4.b:0 "We will never be part of Germany!"
 
  ##6th research slot for the USSR ##You might want to rename the comment, takee! Thanks for this note!-Ed
@@ -119,7 +119,7 @@
  ##Germany changes its name
   ne_takee.7.t:0 "The German Reich changes its name"
   ne_takee.7.d:0 "We have risen above the other powers, becoming one of the most powerful countries. Now our country will be called Großdeutsches Reich!"
-  ne_takee.7.a:0 "Glory to Großdeutsches Reich!"
+  ne_takee.7.a:0 "Glory to the Großdeutsches Reich!"
 
  ##Germany change its name back, when the power is lose. The event is hidden
 
@@ -151,11 +151,11 @@
 
   ne_takee.15.t:0 "Invasion of Iceland"
   ne_takee.15.d:0 "We need to seize the strategically important Iceland. We are ready to begin the invasion. Their government may be dissatisfied."
-  ne_takee.15.a:0 "Start an invasion of Iceland"
+  ne_takee.15.a:0 "Start the invasion of Iceland"
 
   ne_takee.16.t:0 "Iceland were captured by Britain!"
   ne_takee.16.d:0 "The British once again beat us and captured an important island - Iceland."
-  ne_takee.16.a:0 "Zur Hölle mit allem!"
+  ne_takee.16.a:0 "Zur Hölle mit allen!"
 
   ne_takee.17.t:0 "Greenland goes under US control"
   ne_takee.17.d:0 "Denmark provides us with Greenland from possible capture"
@@ -219,21 +219,21 @@
  ne_news.30.b:0 "Britain lost another dominion!"
  ne_news.30.c:0 "The British Empire is significantly weakening every year!"
 
- ##Auschwitz ####UNUSED####
- ne_news.31.t:0 "Concentration camp "Auschwitz" is liberated by allied forces!"
- ne_news.31.d:0 "Concentration camp "Auschwitz" is liberated by allied forces. According to reports, hundreds of thousands of Polish people, as well as Jews from a number of other European countries, have been held prisoner there in appalling conditions and many have been killed in the gas chambers."
- ne_news.31.a:0 "This is a crime of the Nazis against all mankind!"
- ne_news.31.b:0 "Once again, all the brutality of fascism is proved!"
+ ##Auschwitz ####UNUSED  -  DON'T TRANSLATE####
+ ##ne_news.31.t:0 "Concentration camp "Auschwitz" is liberated by allied forces!"
+ ##ne_news.31.d:0 "Concentration camp "Auschwitz" is liberated by allied forces. According to reports, hundreds of thousands of Polish people, as well as Jews from a number of other European countries, have been held prisoner there in appalling conditions and many have been killed in the gas chambers."
+ ##ne_news.31.a:0 "This is a crime of the Nazis against all mankind!"
+ ##ne_news.31.b:0 "Once again, all the brutality of fascism is proved!"
 
  ##Alaska. New state of the USA
  ne_news.32.t:0 "Alaska. New state of the USA"
  ne_news.32.d:0 "Once the Russian colony, Alaska became the 49th US state after the referendum!"
- ne_news.32.a:0 "Welcome!"
+ ne_news.32.a:0 "And another star on our flag!"
 
  ##Hawaii. New state of the USA
  ne_news.33.t:0 "Hawaii. New state of the USA"
  ne_news.33.d:0 "The Hawaiian Islands became our new state after the referendum!"
- ne_news.33.a:0 "Welcome!"
+ ne_news.33.a:0 "And another star on our flag!"
 
  ######################################################################################################################################
  ########################################################COUNTRY SELECT DESCRIPTION####################################################

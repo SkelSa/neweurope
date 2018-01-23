@@ -8,9 +8,9 @@
  
  
  ##INTRO FOR MOD##
- ne_news.1.t:0 "Introduction to Better Post-War Europe"
- ne_news.1.d:0 "Hi and thanks for subscribing to my mod. BPWE enhances and guarantees a more realistic Europe in a somehow historical playthrough. Besides some fixes like flags and names, this mod also adds around 30 various states so you can recreate the borders of Europe after the Nazi defeat. \n Additionally I've included several events to correct any bordergore and some other tweaks. All events are now dynamic and will trigger without any issues during a somehow historical playthrough.Also the mighty post-war manager is optional and you can always click them away and let horrible borders haunt you. \n And now have fun, I've already talked too much..."
- ne_news.1.a:0 "Thanks for the info!"
+ #ne_news.1.t:0 "Introduction to Better Post-War Europe"
+ #ne_news.1.d:0 "Hi and thanks for subscribing to my mod. BPWE enhances and guarantees a more realistic Europe in a somehow historical playthrough. Besides some fixes like flags and names, this mod also adds around 30 various states so you can recreate the borders of Europe after the Nazi defeat. \n Additionally I've included several events to correct any bordergore and some other tweaks. All events are now dynamic and will trigger without any issues during a somehow historical playthrough.Also the mighty post-war manager is optional and you can always click them away and let horrible borders haunt you. \n And now have fun, I've already talked too much..."
+ #ne_news.1.a:0 "Thanks for the info!"
  
  ##PRC-PROCLAMATION##
  ne_news.2.t:0 "The Proclamation of the PRC"
@@ -22,7 +22,7 @@
  ##HITLER IS DEAD##
  ne_news.3.t:0 "Hitler is Dead!"
  ne_news.3.d:0 "Just now, Karl Dönitz announced in an important broadcast that the Führer, Adolf Hitler, "died defending his Vaterland" and he himself, Dönitz, is now in command of the remains of the Reich. There wasn't much information else, however it's assumed that Hitler comitted suicide in his bunker in Berlin to avoid captivity by the enemy surrounding the Reichshauptstadt. The whereabouts of the other NSDAP politicians or Eva Braun is unknown, though it is assumed they're either dead or fleeing. \n Since most of the Reich is occupied and the Wehrmacht is near collapse, the death of Hitler is probably the last nail to the coffin of German morale. "
- ne_news.3.a:0 "The 1000-year Reich will fall!"
+ ne_news.3.a:0 "The Thousand-Year Reich will fall!"
  ne_news.3.b:0 "May he burn in hell!"
  ne_news.3.c:0 "So the bastard's dead? Too bad we didn't catch him alive!"
  ne_news.3.e:0 "We will never forget you and win this war! Ruhe in Frieden, ewiger Führer!"
