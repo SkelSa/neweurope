@@ -1458,7 +1458,7 @@ country_event = {
 	trigger = {
 		tag = POL
 		GER = {
-			focus_progress = { focus = GER_danzig_or_war progress > 0.86 }
+			focus_progress = { focus = GER_danzig_or_war progress > 0.81 }
 			OR = {
 				NOT = { is_in_faction_with = POL }
 				NOT = { is_in_faction_with = ENG }
@@ -1468,6 +1468,7 @@ country_event = {
 			OR = { 
 				is_in_faction_with = ENG
 				ENG = { has_guaranteed = POL }
+				has_opinion = { target = ENG value > 20 }
 			}
 			OR = { 
 				has_government = democratic
