@@ -257,11 +257,16 @@ country_event = {
 	picture = GFX_report_event_soviet_invasion_map
 
 	trigger = {
-		
-		has_government = fascism
-		is_ai = no
-		NOT = { has_country_flag = warning_unsupported_country }
-		
+
+		OR = {
+			AND = {
+				has_government = fascism
+				is_ai = no
+				NOT = { has_country_flag = warning_unsupported_country }
+			}
+			is_historical_focus_on = no
+		}
+
 	}
 	
 	immediate  = {
