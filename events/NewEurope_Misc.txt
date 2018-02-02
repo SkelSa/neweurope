@@ -590,6 +590,7 @@ country_event = {
 	
 }
 
+	
 
 #SOV gets response
 country_event = {
@@ -604,6 +605,24 @@ country_event = {
 	option = { # YES
 		name = ne_misc.11.a
 		ai_chance = { factor = 20 }
+			
+			
+		SOV	= {	
+			if = {			
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				
+				set_autonomy = {
+					target = FROM
+					autonomous_state = autonomy_ssr
+				}
+			}
+		
+			puppet = FROM
+			
+		}	
+			
 			
 		if = {
 			limit = { 
@@ -753,6 +772,24 @@ country_event = {
 			NOT = { has_country_flag = NE_RFSFR }
 		
 		}
+		
+		
+		SOV	= {	
+			if = {			
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				
+				set_autonomy = {
+					target = FROM
+					autonomous_state = autonomy_ssr
+				}
+			}
+		
+			puppet = FROM
+			
+		}	
+		
 
 		if = {
 			limit = { 
@@ -1040,41 +1077,41 @@ country_event = {
 
 
 ####SOVIET RESEARCH SLOT####
-country_event = { 
-	id = ne_misc.16	
-	title = ne_misc.16.t
-	desc = ne_misc.16.d
-  # picture = GFX_soviet_research_slot
-
-	fire_only_once = yes			
-
-	mean_time_to_happen	= { days = 365 }
-
-	trigger	= {
-
-		tag = SOV
-		
-		SOV = {
-			exists = yes
-			is_subject = no
-			has_government = communism		
-		}
-		
-		OR = {
-			has_global_flag	= germany_partitioned
-			has_global_flag	= germany_divided
-		}
-		
-	}
-
-	option = {				
-		name = ne_misc.16.a
-		
-			add_political_power = 25
-			add_research_slot = 1
-		
-	}
-}
+#country_event = { 
+#	id = ne_misc.16	
+#	title = ne_misc.16.t
+#	desc = ne_misc.16.d
+#   picture = GFX_soviet_research_slot
+#
+#	fire_only_once = yes			
+#
+#	mean_time_to_happen	= { days = 365 }
+#
+#	trigger	= {
+#
+#		tag = SOV
+#		
+#		SOV = {
+#			exists = yes
+#			is_subject = no
+#			has_government = communism		
+#		}
+#		
+#		OR = {
+#			has_global_flag	= germany_partitioned
+#			has_global_flag	= germany_divided
+#		}
+#		
+#	}
+#
+#	option = {				
+#		name = ne_misc.16.a
+#		
+#			add_political_power = 25
+#			add_research_slot = 1
+#		
+#	}
+#}
 
 
 

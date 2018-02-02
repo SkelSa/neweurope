@@ -53,7 +53,9 @@ l_english:
  NE_sfr_yugoslavia:0 "A Socialist Republic"
  NE_sfr_yugoslavia_desc:0 "We are not Croats, Serbs or Slovenes anymore. We are all Yugoslavs. Together we shall create a socialist welfare state in which no one has to live in poverty or be hungry. Let us pave the road to a properous future for our children!"
  NE_alone:0 "No Allied Help"
- NE_alone_desc:0 "Allies are useless anyways."
+ NE_alone_desc:0 "Allies are useless anyways.\nThis is a debug national spirit to ensure that no allies join this war."
+ NE_desperate_defense:0 "Desperate Defense"
+ NE_alone_desc:0 "Most of our cities are occupied, millions of civilians are dead and losses are staggering. Now the time has come for our citizens to fight against the invader till the last breath. Not only to defend the future of this nation but to save their families and loved ones!\nWe must not lose."
  
  
  ##Slots##
@@ -67,10 +69,15 @@ l_english:
  ne_idle_desc:0 "No Action Currently Enabled"
  
  
+ ##Autonomy Names
+ autonomy_satellite_sov:0 "Soviet Satellite"
+ autonomy_puppet_sov:0 "Soviet Puppet"
+ autonomy_ssr:0 "SSR"
+ 
  
  ##Main Main Menu; Options Menu (too much menu)
- ne_settings_intro.1.t:0 "BPWE: Settings"
- ne_settings_intro.1.d:0 "Since some things I really wanted to add are not suited or liked by everyone, "Better Post-War Europe" offers you a possibility to adjust the mod to your liking. Currently, there are only a handful of options though this might change in the future. Most settings have a tooltip when you hover with the mouse over them in addition to the event descriptions so there should be no problem to know what each one does.\nIt's recommended to check out the following settings as they will be permanent throughout your game and could make your game more enjoyable..."
+ ne_settings_intro.1.t:0 "Better Post-War Europe: Settings"
+ ne_settings_intro.1.d:0 "Since some things I really wanted to add are not suited or liked by everyone, "Better Post-War Europe" offers you the possibility to adjust the mod to your liking. Currently, there are only a handful of options though this might change in the future. Most settings have a tooltip when you hover with the mouse over them in addition to the event descriptions so there should be no problem to know what each one does.\nIt's recommended to check out the following settings as they will be permanent throughout your game and could make your game more enjoyable..."
  ne_settings_intro.1.a:0 "Flavor Settings"
  ne_settings_intro.1.b:0 "Neutrality and Faction Settings"
  ne_settings_intro.1.c:0 "Misc. Settings"
@@ -100,10 +107,12 @@ l_english:
  ne_settings_intro.4.b1:0 "Remove the additional research slot!"
  ne_settings_intro.4.c:0 "Enable the old manager!"
  ne_settings_intro.4.c1:0 "Use the new manager instead!"
- ne_settings_intro.4.e:0 "Exit to Main Menu"
+ ne_settings_intro.4.e:0 "Enable music!"
+ ne_settings_intro.4.e1:0 "Disable music!"
+ ne_settings_intro.4.f:0 "Exit to Main Menu"
  
  #Fifth Menu; SKELSAS RECOMMENDED CHANGES
- ne_settings_intro.5.t:0 "BPWE: SkelSa's Recommended Settings"
+ ne_settings_intro.5.t:0 "BPWE: Recommended Settings"
  ne_settings_intro.5.d:0 "This is a quick way to enable all settings and have a authentic playthrough. All options are enabled. If you wish to deactivate them after you clicked the first option you might go to Exit > Revert all Changes."
  ne_settings_intro.5.a:0 "Enable the recommended settings!"
  ne_settings_intro.5.b:0 "Disable the recommended settings!"
@@ -164,6 +173,11 @@ l_english:
  ussr_usa_settings_b:0 "Soviet Union is renamed to "Union of Soviet Socialist Republics"\n\nUnited States is renamed to "United States of America""
  historical_settings_b1:0 "All communist Soviet Republics plus the Baltics gain a cosmetic tag, which changes their name to end with "SSR".\n\nExamples:\nLithuanian People's Republic -> Lithuanian SSR\nKazakh Soviet Socialist Republic -> Kazakh SSR"
  ussr_usa_settings_c:0 "The country names stay as they are"
+ ne_old_manager_tooltip:0 "The Old Manager is currently §GENABLED§!."
+ not_ne_old_manager_tooltip:0 "The Old Manager is currently §RDISABLED§!."
+ ne_music_chosen_tooltip:0 "Event Music is currently §GENABLED§!."
+ not_ne_music_chosen_tooltip:0 "Event Music is currently §RDISABLED§!."
+ 
  
  
  ##DIPLOMACY
@@ -553,7 +567,7 @@ l_english:
  ne_news.26.e:0 ""
  
  ##Soviets enter German soil
- ne_news.27.t:0 "Soviet Union enters German soil"
+ ne_news.27.t:0 "Red Army enters German soil"
  ne_news.27.d:0 ""
  ne_news.27.a:0 ""
  ne_news.27.b:0 ""

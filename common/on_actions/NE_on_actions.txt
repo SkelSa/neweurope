@@ -14,7 +14,46 @@ on_actions = {
 				limit = { tag = DAN }
 				country_event = { id = ne_setup.1 }				
 			}
+		
+		
+		##check if some players are fascist	
+		if = {
+			limit = {
+				is_ai = no
+				has_government = fascism				
+			}
+		
+			every_country = {
+				limit = {
+					is_ai = no
+					has_government = fascism
+					NOT = { has_country_flag = warning_unsupported_country }
+				}
+				country_event = { days = 1 id = ne_takee.3 }				
+			}
+		
+		}	
+	
+			
+		##check if game is in historical mode
+		if = {
+			limit = {
+				is_historical_focus_on = no
+			}
+			
+			every_country = {
+				limit = {
+					is_ai = no
+					NOT = { has_country_flag = warning_no_historical }
+				}
+				country_event = { days = 1 id = ne_skelsa.75 }				
+			}
+		
 		}
+		
+		
+		}
+		
 	}
 
 }

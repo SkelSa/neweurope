@@ -11,9 +11,9 @@ state={
 
 			}
 
-		}
+		}		
 		add_core_of = EGY
-
+		add_claim_by = EGY
 	}
 	
 	provinces={

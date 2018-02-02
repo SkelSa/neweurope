@@ -65,7 +65,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "bottom_Window"
 			position = { x=0 y=221 }	
-			size = { width = 581 height = 300 } ##was 206
+			size = { width = 581 height = 256 } ##was 206
 			moveable = yes
 			Orientation = UPPER_LEFT
 
@@ -78,7 +78,7 @@ guiTypes = {
 			{
 				name ="event_picture"
 				spriteType = "GFX_report_event_001"
-				position = { x = 5 y = 5 }
+				position = { x = 5 y = 5 }  
 				Orientation = "UPPER_LEFT"
 				allwaystransparent = yes				
 			}
@@ -87,7 +87,7 @@ guiTypes = {
 			{
 				name ="event_pic_clip"
 				spriteType = "GFX_event_pic_clip"
-				position = { x = -3 y = 35 }
+				position = { x = -3 y = 35 } 
 				Orientation = "UPPER_LEFT"
 			}			
 
@@ -105,7 +105,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "EventWindow_News"
 		position = { x=-282 y=-310 }	
-		size = { width = 528 height = 700 } #595
+		size = { width = 528 height = 595 } #700 NE Edit
 		moveable = yes
 		Orientation = CENTER
 		show_sound = world_news_effect

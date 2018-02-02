@@ -109,16 +109,20 @@ country_event = {
 	
 		NOT = { has_country_flag = ne_event_ready_faction }
 	
-		AND = {
-			has_idea = NE_align_west
-			has_government = democratic
-			democratic > 0.70
-		}
+		OR = {
 		
-		AND = {
-			has_idea = NE_align_east
-			has_government = democratic
-			democratic > 0.70
+			AND = {
+				has_idea = NE_align_west
+				has_government = democratic
+				democratic > 0.70
+			}
+			
+			AND = {
+				has_idea = NE_align_east
+				has_government = communism
+				communism > 0.70
+			}
+			
 		}
 
 	}
@@ -130,7 +134,7 @@ country_event = {
 		name = ne_faction.2.a
 		
 		##Effects
-		add_political_power = 10
+		add_political_power = 15
 		
 		if = { limit = { has_idea = NE_align_west } swap_ideas = { remove_idea = NE_align_west add_idea = NE_ready_nato } } 
 		if = { limit = { has_idea = NE_align_east } swap_ideas = { remove_idea = NE_align_east add_idea = NE_ready_wp } } 
@@ -482,14 +486,11 @@ country_event = {
 		
 	}
 	
-	
-	mean_time_to_happen = {	days = 2 }
-	
 	immediate = { 
 	
 	hidden_effect = {
 	
-		POL = { add_timed_idea = { days = 45 idea = NE_alone  }  }
+		POL = { add_timed_idea = { days = 50 idea = NE_alone  }  }
 		
 		every_country = {
 			limit = {
@@ -497,7 +498,7 @@ country_event = {
 				is_subject = no
 			}
 			
-			add_timed_idea = { days = 45 idea = NE_alone }				
+			add_timed_idea = { days = 50 idea = NE_alone }				
 		}
 		
 		}
@@ -622,7 +623,7 @@ country_event = {
 	fire_only_once = yes
 
 	
-	option = {	#we can't have a war with both of them
+	option = {	#we can't have a war with both of them!
 		name = ne_skelsa.204.a
 		
 		add_political_power = -20
@@ -638,7 +639,7 @@ country_event = {
 # Poland collapses; Eastern Poland goes to the USSR, Rest is occupied by GER, whitepeace event between POL - SOV
 country_event = {
 	id = ne_skelsa.203
-	picture = GFX_polish_division
+	#picture = GFX_polish_division
 
 	hidden = yes
 	fire_only_once = yes
@@ -731,10 +732,7 @@ country_event = {
 			}
 			SOV = { transfer_state = 89 }
 		}
-		
-		##whitepeace between SOV and POL
-		SOV = { white_peace = POL }
-		
+
 		
 		##GER occupies the rest
 		if = {
@@ -816,11 +814,15 @@ country_event = {
 		if = {
 			limit = {
 				765 = {					
-					is_owned_by = POL
+					is_owned_by = DAN
 				}
+				DAN = { is_puppet_of = POL }
 			}
 			GER = { transfer_state = 765 }
 		}
+		
+		##whitepeace between SOV and POL
+		SOV = { white_peace = POL }
 		
 	}
 }
@@ -1188,6 +1190,12 @@ country_event = {
 		name = ne_skelsa.1.a
 		
 		create_corps_commander = { name = "Brother Hao" picture = "Portrait_PRC_General_Brother_Hao.dds" traits = { } skill = 4 } 
+		
+		if = {
+			limit = {
+				has_global_flag = ne_music_chosen
+			}
+		}
 		PRC = { sound_effect = communist_party }
 		
 	}
@@ -1211,18 +1219,10 @@ country_event = {
 	desc = ne_skelsa.75.d
 	picture = GFX_report_event_soviet_invasion_map
 
-	trigger = {
-		
-		is_ai = no
-		is_historical_focus_on = no
-		NOT = { has_country_flag = warning_not_historical }
-		
-	}
-	
-	immediate = {
+	is_triggered_only = yes
 
-		set_country_flag = warning_not_historical
-	
+	immediate = {
+		set_country_flag = warning_no_historical 
 	}
 
 	option = {
@@ -1258,22 +1258,6 @@ country_event = {
 			has_capitulated = yes
 			has_war_with = GER
 			has_war_with = ITA	
-		}
-
-		102 = {
-			is_owned_by = YUG
-			OR = { 
-				is_controlled_by = GER
-				any_country = { is_in_faction_with = GER  controls_state = PREV }
-			}	
-		}
-		
-		106 = {
-			is_owned_by = YUG
-			OR = { 
-				is_controlled_by = GER
-				any_country = { is_in_faction_with = GER  controls_state = PREV }
-			}	
 		}
 		
 		107 = {
@@ -1320,7 +1304,8 @@ country_event = {
 				
 				}
 			
-				GER = { set_state_controller = 776 }
+				GER = { set_state_controller = 776		add_state_claim = 776 }
+				
 			}
 			
 			if = {
@@ -1335,7 +1320,7 @@ country_event = {
 				
 				}
 			
-				GER = { set_state_controller = 108 }
+				GER = { set_state_controller = 108		add_state_claim = 108 }
 			}
 			
 			if = {
@@ -1350,7 +1335,7 @@ country_event = {
 				
 				}
 			
-				GER = { set_state_controller = 107 }
+				GER = { set_state_controller = 107		add_state_claim = 107 }
 			}
 			
 			if = {
@@ -1365,7 +1350,7 @@ country_event = {
 				
 				}
 			
-				GER = { set_state_controller = 748 }
+				GER = { set_state_controller = 748		add_state_claim = 748 }
 			}
 			
 			if = {
@@ -1380,7 +1365,7 @@ country_event = {
 				
 				}
 			
-				GER = { set_state_controller = 102 }
+				GER = { set_state_controller = 102		add_state_claim = 102 }
 			}
 
 			
@@ -1407,7 +1392,7 @@ country_event = {
 					
 					}
 				
-					ITA = { set_state_controller = 105 }
+					ITA = { set_state_controller = 105		add_state_claim = 105 }
 				}
 				
 				if = {
@@ -1422,7 +1407,7 @@ country_event = {
 					
 					}
 				
-					ITA = { set_state_controller = 761 }
+					ITA = { set_state_controller = 761		add_state_claim = 761 }
 				}
 				
 				if = {
@@ -1437,7 +1422,7 @@ country_event = {
 					
 					}
 				
-					ITA = { set_state_controller = 759 }
+					ITA = { set_state_controller = 759		add_state_claim = 759 }
 				}
 		
 		
@@ -1463,7 +1448,7 @@ country_event = {
 					
 					}
 				
-					CRO = { transfer_state = 109 }
+					CRO = { transfer_state = 109		add_state_claim = 109 }
 				}
 				
 				if = {
@@ -1478,7 +1463,7 @@ country_event = {
 					
 					}
 				
-					CRO = { transfer_state = 103 }
+					CRO = { transfer_state = 103		add_state_claim = 103 }
 				}
 				
 				
@@ -1494,7 +1479,7 @@ country_event = {
 					
 					}
 				
-					CRO = { transfer_state = 104 }
+					CRO = { transfer_state = 104		add_state_claim = 104 }
 				}
 
 				GER = { puppet = CRO }
@@ -1525,7 +1510,7 @@ country_event = {
 					
 					}
 				
-					BUL = { set_state_controller = 106 }
+					BUL = { set_state_controller = 106		add_state_claim = 106 }
 				}
 				
 				if = {
@@ -1540,7 +1525,7 @@ country_event = {
 					
 					}
 				
-					BUL = { set_state_controller = 760 }
+					BUL = { set_state_controller = 760		add_state_claim = 760 }
 				}
 
 		
@@ -1569,7 +1554,7 @@ country_event = {
 					
 					}
 				
-					HUN = { set_state_controller = 45 }
+					HUN = { set_state_controller = 45		add_state_claim = 45 }
 				}
 				
 				
@@ -1591,7 +1576,7 @@ country_event = {
 		
 		
 		
-		add_political_power = -10
+		add_political_power = -40
 
 	}
 }
@@ -1648,7 +1633,7 @@ country_event = {
 	
 
 	option = {		##Let's partition it (set_state_controller)
-		name = ne_skelsa.76.a
+		name = ne_skelsa.77.a
 		ai_chance = {
 			factor = 50
 			
@@ -1664,15 +1649,15 @@ country_event = {
 				limit = {
 					187 = {
 						is_owned_by = GRE
-							OR = { 
-								is_controlled_by = GER
-								any_country = { is_in_faction_with = GER  controls_state = PREV }
-							}	
+							#OR = {		####Aegean islands are not always occupied!
+							#	is_controlled_by = GER
+							#	any_country = { is_in_faction_with = GER  controls_state = PREV }
+							#}	
 					}						
 				
 				}
 			
-				GER = { set_state_controller = 187 }
+				GER = { set_state_controller = 187		add_state_claim = 187 }
 			}
 			
 			if = {
@@ -1687,7 +1672,7 @@ country_event = {
 				
 				}
 			
-				GER = { set_state_controller = 184 }
+				GER = { set_state_controller = 184		add_state_claim = 184 }
 			}
 			
 			if = {
@@ -1702,7 +1687,7 @@ country_event = {
 				
 				}
 			
-				GER = { set_state_controller = 731 }
+				GER = { set_state_controller = 731		add_state_claim = 731 }
 			}
 			
 			
@@ -1728,7 +1713,7 @@ country_event = {
 					
 					}
 				
-					BUL = { set_state_controller = 184 }
+					BUL = { set_state_controller = 184		add_state_claim = 184 }
 				}
 				
 				
@@ -1757,7 +1742,7 @@ country_event = {
 					
 					}
 				
-					ITA = { set_state_controller = 47 }
+					ITA = { set_state_controller = 47		add_state_claim = 47 }
 				}
 				
 				if = {
@@ -1772,7 +1757,7 @@ country_event = {
 					
 					}
 				
-					ITA = { set_state_controller = 186 }
+					ITA = { set_state_controller = 186		add_state_claim = 186 }
 				}
 				
 				if = {
@@ -1787,7 +1772,7 @@ country_event = {
 					
 					}
 				
-					ITA = { set_state_controller = 185 }
+					ITA = { set_state_controller = 185		add_state_claim = 186 }
 				}
 				
 				
@@ -1797,7 +1782,7 @@ country_event = {
 	}
 	
 	option = {		##No
-		name = ne_skelsa.76.b
+		name = ne_skelsa.77.b
 		ai_chance = {
 			factor = 50
 			
@@ -1807,7 +1792,7 @@ country_event = {
 			}			
 		}
 		
-		add_political_power = -10
+		add_political_power = -25
 
 	}
 }
@@ -1854,6 +1839,11 @@ country_event = {
 
 	
 }
+
+
+
+
+
 
 
 

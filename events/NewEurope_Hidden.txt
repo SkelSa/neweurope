@@ -10,6 +10,8 @@ country_event = {
 
 	trigger = {
 	
+		tag = RAJ
+		
 		RAJ = { is_subject = no }
 		has_global_flag = names_chosen
 		
@@ -286,8 +288,17 @@ country_event = {
 	}
 
 	immediate = {
+	
+		if = {
+			limit = {
+				has_global_flag = ne_music_chosen
+			}
+			
 		CHI = { sound_effect = sino_japanese_war }
-		PRC = { sound_effect = sino_japanese_war }
+		PRC = { sound_effect = sino_japanese_war }	
+		
+		}
+			
 	}
 
     option = {
@@ -304,6 +315,9 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+	
+		tag = BUR
+	
 		AND = {
 			BUR = {
 				exists = yes
@@ -330,6 +344,9 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+	
+		tag = BUR
+		
 		AND = {
 			BUR = {
 				exists = yes

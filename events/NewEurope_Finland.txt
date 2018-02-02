@@ -247,9 +247,9 @@ country_event = {
 }
 
 
-###############################################################################################
-####    Join the war against the USSR. Declare on SOV and give military access to Germany    ##
-###############################################################################################
+#################################################################################################
+####    Join the war against the USSR. Declare on SOV and give military access to Germany    ####
+#################################################################################################
 
 
 country_event = {
@@ -728,7 +728,10 @@ country_event = {
 		
 		if = { limit = { is_in_faction_with = GER } GER = { remove_from_faction = FIN } }	
 		
-		SOV = { white_peace = FIN }		
+		SOV = { white_peace = FIN }
+
+		if = { limit = { has_war_with = ENG } ENG = { white_peace = FIN } }	
+		
 		give_military_access = SOV
 		
 		declare_war_on = { target = GER } 

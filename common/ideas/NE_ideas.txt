@@ -38,7 +38,7 @@ ideas = {
 
 			modifier = {
 			
-				ai_get_ally_desire_factor = -300
+				ai_get_ally_desire_factor = -3000
 			
 				democratic_acceptance = 50
 				democratic_drift = 0.15
@@ -60,7 +60,7 @@ ideas = {
 
 			modifier = {
 			
-				ai_get_ally_desire_factor = -300
+				ai_get_ally_desire_factor = -3000
 			
 				communism_acceptance = 50
 				communism_drift = 0.15
@@ -82,7 +82,7 @@ ideas = {
 
 			modifier = {
 			
-				ai_get_ally_desire_factor = -300
+				ai_get_ally_desire_factor = -2000
 			
 				democratic_acceptance = 100
 				democratic_drift = 0.10
@@ -104,7 +104,7 @@ ideas = {
 
 			modifier = {
 			
-				ai_get_ally_desire_factor = -300
+				ai_get_ally_desire_factor = -2000
 			
 				communism_acceptance = 100
 				communism_drift = 0.10
@@ -217,8 +217,8 @@ ideas = {
 
 			modifier = {
 			
-				ai_get_ally_desire_factor = -1000
-				ai_call_ally_desire_factor = -100
+				ai_get_ally_desire_factor = -100000
+				#ai_call_ally_desire_factor = -100
 			
 				generate_wargoal_tension = 1.00
 				join_faction_tension = 1.00
@@ -288,7 +288,7 @@ ideas = {
 
 		}
 		
-		NE_Alone = {
+		NE_alone = {
 
 			picture = staff_of_sameness
 
@@ -302,6 +302,25 @@ ideas = {
 				ai_get_ally_desire_factor = -100000
 				ai_call_ally_desire_factor = -100000
 				ai_join_ally_desire_factor = -100000
+
+			}
+		}
+		
+		NE_desperate_defense = {
+
+			picture = FRA_national_mobilization_focus
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				
+				conscription = 0.02
+				army_core_attack_factor = 0.20
+				army_core_defence_factor = 0.40 
+				army_org = 5 
+				army_morale_factor = 0.15 
 
 			}
 		}

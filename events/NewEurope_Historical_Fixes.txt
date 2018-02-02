@@ -534,7 +534,7 @@ country_event = {
 			}
 		}
 		JAP = { 
-			country_event = { id = japan.13 }
+			country_event = { id = ne_japan.13 }
 			effect_tooltip = { puppet = SIA }
 		}
 	}
@@ -555,9 +555,39 @@ country_event = {
 }
 
 
+# Siam accepts and is puppeted; NE Edit: Siam just joins faction
+country_event = {
+	id = ne_japan.13
+	title = japan.13.t
+	desc = japan.13.d
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.13.a
+		#puppet = SIA
+		
+		if = {
+			limit = {
+				JAP = { is_faction_leader = yes }
+			}
+			JAP = { add_to_faction = SIA }
+		}
+		
+		if = {
+			limit = {
+				GER = { is_faction_leader = yes	is_in_faction_with = JAP }
+			}
+			JAP = { add_to_faction = SIA }
+		}
+
+	}
+}
+
+
 
 ####JAP DOES PEARL HARBOR!####
-
 
 # JAP does Southern Expansion; goal is to do Pearl Harbor when JAP gets its war goals
 ##JAP gets event to execute PH (planning), Hawaii should get damage. JAP should also get Spirit "For the Emperor"
@@ -650,8 +680,9 @@ country_event = {
 		set_global_flag = NE_pearl_harbor_low_damage
 		
 		hidden_effect = {
-			USA = { country_event = { id = ne_skelsa.103 }
+			USA = { country_event = { days = 1 id = ne_skelsa.103 } }
 		}
+		
 	
 	}
 	
@@ -690,7 +721,7 @@ country_event = {
 		set_global_flag = NE_pearl_harbor_big_damage
 		
 		hidden_effect = {
-			USA = { country_event = { id = ne_skelsa.103 } }
+			USA = { country_event = { days = 1 id = ne_skelsa.103 } }
 		}
 			
 	}
@@ -808,7 +839,7 @@ country_event = {
 		
 		declare_war_on = { target = USA type = puppet_wargoal_focus }
 
-		JAP = { country_event = { days = 1 id = ne_skelsa.104 } }
+		JAP = { country_event = { days = 2 id = ne_skelsa.105 } }
 			
 	}
 	
@@ -843,7 +874,7 @@ country_event = {
 
 ##JAP is informed about Hitler's decision
 country_event = {
-	id = ne_skelsa.104
+	id = ne_skelsa.105
 	title = ne_skelsa.104.t
 	desc =  ne_skelsa.104.d
 	picture = GFX_somepic

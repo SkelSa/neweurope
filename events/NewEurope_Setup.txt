@@ -29,9 +29,27 @@ news_event = {
 		}
 		
 		##Soviet puppets
-		SOV = {	
+		SOV	= {
+		
+			if = {			
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				
+				set_autonomy = {
+					target = TAN
+					autonomous_state = autonomy_satellite_sov
+				}
+				
+				set_autonomy = {
+					target = MON
+					autonomous_state = autonomy_satellite_sov
+				}
+			}
+		
 			puppet = TAN
-			puppet = MON		
+			puppet = MON
+			
 		}
 		
 		##American puppet Liberia
@@ -39,7 +57,7 @@ news_event = {
 			puppet = LIB	
 		}
 		
-		##EGY puppet				
+		##British puppets: YEM, OMA, NEP, BHU				
 		ENG = {		
 			if = {			
 				limit = {
@@ -48,18 +66,66 @@ news_event = {
 				
 				set_autonomy = {
 					target = EGY
-					autonomous_state = autonomy_integrated_puppet
+					autonomous_state = autonomy_dominion
+				}
+				
+				set_autonomy = {
+					target = YEM
+					autonomous_state = autonomy_dominion
+				}
+				
+				set_autonomy = {
+					target = OMA
+					autonomous_state = autonomy_dominion
+				}
+				
+				set_autonomy = {
+					target = NEP
+					autonomous_state = autonomy_puppet
+				}
+				
+				set_autonomy = {
+					target = BHU
+					autonomous_state = autonomy_puppet
 				}
 			}
-
+		
 			puppet = EGY
+			puppet = YEM
+			puppet = OMA
+			puppet = NEP
+			puppet = BHU
 			
 		}
 		
 		##EGY goes neutral puppet
 		EGY = {
+			
+			load_oob = EGY_1936		
+		
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 0.75 } 
+			add_popularity = { ideology = neutrality popularity = 0.76 } 
+		}
+		
+		##ENG puppets go neutrality
+		YEM = {		
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 0.85 } 
+		}
+		
+		OMA = {		
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 0.85 } 
+		}
+		
+		NEP = {		
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 0.90 } 
+		}
+		
+		BHU = {		
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 0.90 } 
 		}
 		
 		##DAN puppet	
@@ -78,6 +144,24 @@ news_event = {
 			
 			puppet = DAN								
 		}
+		
+		##Adding state cores
+		CAN = {		
+			
+			add_state_core = 331
+			add_state_claim = 331
+			add_state_core = 332
+			add_state_claim = 332
+			
+		}
+		
+		EGY = {		
+			
+			add_state_core = 777
+			add_state_claim = 777
+			
+		}
+		
 
 	}
 	

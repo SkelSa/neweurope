@@ -644,6 +644,7 @@ country_event = {
 	
 	option = {	##activate old manager
 		name = ne_settings_intro.4.c
+		custom_effect_tooltip = ne_old_manager_tooltip
 		
 		trigger = {
 			NOT = { has_global_flag = ne_old_manager }
@@ -656,8 +657,10 @@ country_event = {
 		
 	}
 	
+	
 	option = {	##deactivate old manager; use new one
 		name = ne_settings_intro.4.c1
+		custom_effect_tooltip = not_ne_old_manager_tooltip
 		
 		trigger = {
 			has_global_flag = ne_old_manager 
@@ -669,10 +672,42 @@ country_event = {
 		}
 		
 	}
+	
+	
+	option = {	##enable music
+		name = ne_settings_intro.4.e
+		custom_effect_tooltip = ne_music_chosen_tooltip
+		
+		trigger = {
+			NOT = { has_global_flag = ne_music_chosen }
+		}
+		
+		hidden_effect = {
+			set_global_flag = ne_music_chosen
+			country_event = ne_settings_intro.1
+		}
+		
+	}
+	
+	
+	option = {	##disable music
+		name = ne_settings_intro.4.e1
+		custom_effect_tooltip = not_ne_music_chosen_tooltip
+		
+		trigger = {
+			has_global_flag = ne_music_chosen 
+		}
+		
+		hidden_effect = {
+			clr_global_flag = ne_music_chosen
+			country_event = ne_settings_intro.1
+		}
+		
+	}
 
 	
 	option = { ##don't change anything, return to menu
-		name = ne_settings_intro.4.e
+		name = ne_settings_intro.4.f
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.1
@@ -703,7 +738,7 @@ country_event = {
 		
 		}
 		
-		add_political_power = 1
+		add_political_power = 5
 			
 		##add flags which are not added yet
 		if = {	limit = { NOT = { has_global_flag = names_chosen} } set_global_flag = names_chosen	} 
@@ -712,7 +747,8 @@ country_event = {
 		if = {	limit = { NOT = { has_global_flag = Neutrality_chosen} } set_global_flag = Neutrality_chosen	} 
 		if = {	limit = { NOT = { has_global_flag = ne_strict_faction} } set_global_flag = ne_strict_faction	}
 		if = {	limit = { NOT = { has_global_flag = CPS_created} } set_global_flag = CPS_created	} 
-		if = {	limit = { NOT = { has_global_flag = ne_additional_rd_slot} } set_global_flag = ne_additional_rd_slot	} 	
+		if = {	limit = { NOT = { has_global_flag = ne_music_chosen} } set_global_flag = ne_music_chosen	}
+		if = {	limit = { NOT = { has_global_flag = ne_additional_rd_slot} } set_global_flag = ne_additional_rd_slot	}	
 		##not activated are: puppet ssrs, short USA, USSR name, Old Manager
 		
 		hidden_effect = {
@@ -741,6 +777,7 @@ country_event = {
 		if = {	limit = {  has_global_flag = Neutrality_chosen}  clr_global_flag = Neutrality_chosen	} 
 		if = {	limit = {  has_global_flag = ne_strict_faction}  clr_global_flag = ne_strict_faction	}
 		if = {	limit = {  has_global_flag = CPS_created} clr_global_flag = CPS_created	} 
+		if = {	limit = {  has_global_flag = ne_music_chosen} clr_global_flag = ne_music_chosen	}
 		if = {	limit = {  has_global_flag = ne_additional_rd_slot}  clr_global_flag = ne_additional_rd_slot	} 	
 		##not activated are: puppet ssrs, short USA, USSR name, Old Manager##
 		
@@ -777,7 +814,22 @@ country_event = {
 	
 	option = {
 		name = ne_settings_intro.6.a
-		#-Tooltip for GDR/WGR/IND color	
+		#-Tooltip for GDR/WGR/IND color
+
+		effect_tooltip = {
+		
+			if = {
+				limit = {
+					NOT = { has_global_flag = ne_music_chosen }
+				}
+				custom_effect_tooltip = not_ne_music_chosen_tooltip
+			}
+
+		}
+		
+		
+		
+		
 		
 			trigger = {
 			
@@ -792,6 +844,7 @@ country_event = {
 					has_global_flag = ne_puppet_SSR
 					has_global_flag = ne_additional_rd_slot
 					has_global_flag = ne_old_manager
+					has_global_flag = ne_music_chosen
 				}
 			
 			}
@@ -828,7 +881,10 @@ country_event = {
 
 				##Vichy France (NAME (F), FLAG (F) and COLOR) gets its cosmetic in the hidden file
 				##Franco's Spain (NAME (F) and FLAG (F) gets its cosmetic in the hidden file
-				##Communist India (FLAG (C) and COLOR) are set when they're independent
+				##Communist India (FLAG (C) and COLOR) are set when they're independent (also in the hidden file)
+				
+				##IDEAS: Mongolia, Tannu Tuva
+				
 
 			}
 			
@@ -1000,9 +1056,12 @@ country_event = {
 				SWE = {add_ideas = NE_neutrality}
 				SWI = {add_ideas = NE_neutrality}
 				IRE = {add_ideas = NE_neutrality}
+				YEM = {add_ideas = NE_neutrality}
+				OMA = {add_ideas = NE_neutrality}
 				BHU = {add_ideas = NE_neutrality}
 				NEP = {add_ideas = NE_neutrality}
-				TIB = {add_ideas = NE_neutrality}				
+				TIB = {add_ideas = NE_neutrality}
+				SIK = {add_ideas = NE_neutrality}				
 				FIN = {add_ideas = NE_neutrality}				
 			}
 			
@@ -1013,7 +1072,7 @@ country_event = {
 					has_global_flag = ne_strict_faction
 				}
 				
-				##EVENT TO REMOVE AMERICAN GUARANTEE WHEN GUARANTEED COUNTRY IS COMMUNIST WITH 80% SUPPORT					
+			##EVENT TO REMOVE AMERICAN GUARANTEE WHEN GUARANTEED COUNTRY IS COMMUNIST WITH 80% SUPPORT EDIT			
 			}
 
 			
@@ -1061,63 +1120,57 @@ country_event = {
 						
 						set_autonomy = {
 							target = BLR
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ssr
 						}
 						
 						set_autonomy = {
 							target = UKR
-							autonomous_state = autonomy_integrated_puppet
-						}
-						
-						set_autonomy = {
-							target = MOL
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ssr
 						}
 						
 						set_autonomy = {
 							target = ARM
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ssr
 						}
 						
 						set_autonomy = {
 							target = GEO
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ssr
 						}
 						
 						set_autonomy = {
 							target = AZR
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ssr
 						}
 						
 						set_autonomy = {
 							target = KAZ
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ssr
 						}
 						
 						set_autonomy = {
 							target = UZB
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ssr
 						}
 						
 						set_autonomy = {
 							target = TAJ
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ssr
 						}
 						
 						set_autonomy = {
 							target = KGZ
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ssr
 						}
 						
 						set_autonomy = {
 							target = TRK
-							autonomous_state = autonomy_integrated_puppet
+							autonomous_state = autonomy_ssr
 						}
 						
 						else = {
 							puppet = BLR
 							puppet = UKR
-							puppet = MOL
 							puppet = ARM
 							puppet = AZR
 							puppet = GEO
@@ -1189,7 +1242,8 @@ country_event = {
 					has_global_flag = CPS_created
 					has_global_flag = ne_puppet_SSR
 					has_global_flag = ne_additional_rd_slot
-					has_global_flag = ne_old_manager					
+					has_global_flag = ne_old_manager
+					has_global_flag = ne_music_chosen
 				}
 			}
 		}
@@ -1213,6 +1267,7 @@ country_event = {
 				has_global_flag = ne_puppet_SSR
 				has_global_flag = ne_additional_rd_slot
 				has_global_flag = ne_old_manager
+				has_global_flag = ne_music_chosen
 			}
 		}
 	
@@ -1227,6 +1282,7 @@ country_event = {
 		if = {	limit = { has_global_flag = ne_puppet_SSR } clr_global_flag = ne_puppet_SSR	}
 		if = {	limit = { has_global_flag = ne_additional_rd_slot } clr_global_flag = ne_additional_rd_slot	} 
 		if = {	limit = { has_global_flag = ne_old_manager } clr_global_flag = ne_old_manager	}
+		if = {	limit = { has_global_flag = ne_music_chosen } clr_global_flag = ne_music_chosen	}
 		
 		hidden_effect = {
 			country_event = { id = ne_settings_intro.1 }		
@@ -1237,6 +1293,15 @@ country_event = {
 	
 	option = {
 		name = ne_settings_intro.6.c
+		custom_effect_tooltip = ne_old_manager_tooltip\n
+		custom_effect_tooltip = not_ne_old_manager_tooltip
+		
+		if = {
+			limit = {
+				has_global_flag = neweurope_enabled
+			}
+			custom_effect_tooltip = not_ne_music_chosen_tooltip
+		}
 
 		
 		hidden_effect = {
