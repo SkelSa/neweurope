@@ -249,7 +249,7 @@ country_event = {
 	}
 }
 
-######################A warning for a player###################### (might rework a bit)
+######################A warning for a player###################### 
 country_event = {
 	id = ne_takee.3
 	title = ne_takee.3.t

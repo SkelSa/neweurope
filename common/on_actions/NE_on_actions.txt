@@ -16,44 +16,147 @@ on_actions = {
 			}
 		
 		
-		##check if some players are fascist	
-		if = {
+		##check if some players are fascist	DOESNT WORK
+		every_country = {
 			limit = {
-				is_ai = no
-				has_government = fascism				
+				#is_ai = no
+				has_government = fascism
+				NOT = { has_country_flag = warning_unsupported_country }
 			}
-		
-			every_country = {
-				limit = {
-					is_ai = no
-					has_government = fascism
-					NOT = { has_country_flag = warning_unsupported_country }
-				}
-				country_event = { days = 1 id = ne_takee.3 }				
-			}
-		
-		}	
+
+			country_event = { days = 1 id = ne_takee.3 }				
+		}
 	
 			
-		##check if game is in historical mode
-		if = {
+		##check if game is in historical mode			
+		every_country = {
+
 			limit = {
+				is_ai = no
 				is_historical_focus_on = no
+				NOT = { has_country_flag = warning_no_historical }
 			}
 			
-			every_country = {
-				limit = {
-					is_ai = no
-					NOT = { has_country_flag = warning_no_historical }
-				}
-				country_event = { days = 1 id = ne_skelsa.75 }				
-			}
+			country_event = { days = 1 id = ne_skelsa.75 }
+			}								
+	
+		}	
+				
+	}		
+	
+	#on_government_change = {}
+	
+	#on_civil_war_end = { }
+	
+
+	on_subject_free = { 		
+		 effect = {
 		
+		
+		
+		##Switch to better India color when free
+		if = {
+			limit = {
+				TAG = RAJ
+				has_global_flag = names_chosen
+			}
+			
+			RAJ = { set_cosmetic_tag = NE_INDIA }
 		}
+		
+		
 		
 		
 		}
 		
 	}
+	
+	
+	
+	on_declare_war = {
+		effect = {
+		
+			
+			##Vichy France gets new color and name when flag was activated
+			if = {
+				limit = {
+					
+					any_country = {
+						original_tag = FRA
+						NOT = { TAG = FRA }					
+					}
+					
+					has_global_flag = names_chosen
+					
+					FRA = {
+						exists = yes
+						has_capitulated = yes
+						has_war_with = GER
+						has_civil_war = yes
+					}
+					
+					
+					FROM = {						
+						tag = FRA													
+					}
+				}
+				
+				every_country = {		##Add cosmetic tag to Vichy
+					limit = {
+						original_tag = FRA
+						NOT = { TAG = FRA }
+					}
+			
+				set_cosmetic_tag = NE_VICHY
+				}
+			}
+			
+			
+			
+			##Same also happens to Franco
+			if = {
+				limit = {
+															
+					has_global_flag = names_chosen
+					
+					SPR = {
+						exists = yes
+						has_government = communism
+						has_civil_war = yes
+					}
+					
+					any_country = {
+						original_tag = SPR
+						NOT = { TAG = SPR }					
+					}
+									
+					FROM = {						
+						tag = SPR													
+					}
+				}
+				
+				every_country = {	##Add correct flag to Nationalist Spain and the neutrality_spirit
+					limit = {
+						original_tag = SPR
+						NOT = { TAG = SPR }
+					}
+			
+					set_cosmetic_tag = NE_SPS
+			
+					if = { limit = { has_global_flag = Neutrality_chosen } add_ideas = NE_neutrality }			
+				}
+				
+				SPR = { set_cosmetic_tag = NE_SPR }
+		
+				#Reduce communist support for the other Spain
+				SPR = { add_popularity = { ideology = communism popularity = -0.24 }  }
+				
+			}
+	
+	
+		}
 
+	}
+		
+	
 }

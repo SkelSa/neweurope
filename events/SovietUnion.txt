@@ -298,7 +298,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = soviet.10.a
+		name = soviet.10.a	##newEurope: Adding cores
 		annex_country = { target = LIT }
 		add_state_core = 11
 		add_state_core = 189

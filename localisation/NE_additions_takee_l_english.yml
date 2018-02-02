@@ -228,12 +228,12 @@
  ##Alaska. New state of the USA
  ne_news.32.t:0 "Alaska. New state of the USA"
  ne_news.32.d:0 "Once the Russian colony, Alaska became the 49th US state after the referendum!"
- ne_news.32.a:0 "And another star on our flag!"
+ ne_news.32.a:0 "Add another star on our flag!"
 
  ##Hawaii. New state of the USA
  ne_news.33.t:0 "Hawaii. New state of the USA"
  ne_news.33.d:0 "The Hawaiian Islands became our new state after the referendum!"
- ne_news.33.a:0 "And another star on our flag!"
+ ne_news.33.a:0 "Add another star on our flag!"
 
  ######################################################################################################################################
  ########################################################COUNTRY SELECT DESCRIPTION####################################################
@@ -260,6 +260,7 @@
  STATE_790:0 "Gaza and Negev"
  STATE_791:0 "Nazareth"
  STATE_792:0 "Negev and Be'er Sheva"
+ STATE_793:0 "Channel Islands"
 
 
 ######################################################################################################################################

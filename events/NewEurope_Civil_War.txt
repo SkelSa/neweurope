@@ -84,7 +84,7 @@ country_event = {
 country_event = {
 	id = ne_civil_war.2
 	title = event.1.t
-	desc =  "[Get.Date]"
+	desc =  "[GetDate]"
 	picture = GFX_somepic
 
 	#hidden = yes
@@ -101,6 +101,7 @@ country_event = {
 		name = "It works. How mnay days?"
 		
 		##Effects
+		SOV = { puppet = FIN }
 			
 	}
 	

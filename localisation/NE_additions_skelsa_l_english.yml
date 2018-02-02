@@ -217,6 +217,8 @@ l_english:
  ##Spanish State (SPS)
  NE_SPS_fascism:0 "Spanish State"
  NE_SPS_fascism_DEF:0 "The Spanish State"
+ NE_SPS_communism:0 "Spanish Republic"
+ NE_SPS_communism_DEF:0 "The Spanish Republic"
  ##ROM
  NE_ROM_fascism:0 "Socialist Republic of Romania"
  NE_ROM_fascism_DEF:0 "The Socialist Republic of Romania"
@@ -405,20 +407,30 @@ l_english:
  ne_finland.13.a:0 "Let's occupy Lapland for now"
  ne_finland.13.b:0 "We don't need to."
  
+ ##Oppress the Baltic States - Info-Event
+ ne_skelsa.59.t:0 "BPWE: Info regarding the Annexation of the Baltic States"
+ ne_skelsa.59.d:0 "Better Post-War Europe changes the mechanic concerning the annexation of Lithunia, Latvia and Estonia. Instead of justifying on them like in vanilla you need to finish the next focus and be in the year 1940 to get an event for the annexation after about 70 days. Don't waste your pp on justifying, okay?"
+ ne_skelsa.59.a:0 "I understand."
+ 
+ ##Oppress the Baltic States
+ ne_skelsa.60.t:0 "Fate of the Baltic States"
+ ne_skelsa.60.d:0 "Lithuania, Latvia and Estonia, also known as the Baltic States, are broken shards from the Russian Empire still not reunited with us. Their independence will never be justified and we need to bring them into our fold before it's too late!\nOur ambassadors are ready to deliver each of them an ultimatum. Either they will rejoin the motherland or our tanks will cross the border! Considering our military power we can expect their annexation soon - no matter which option is chosen."
+ ne_skelsa.60.a:0 "Send the ultimata!"
+ ne_skelsa.60.b:0 "We will do it the old-fashioned way..."
  
  ##Yugoslavia
  ne_misc.12.t:0 "Our Partisans continue the Fight!"
  ne_misc.12.d:0 "Our regular army may have surrendered but the will of our people to resist the German tyranny lives on. Several partisan groups were formed and are actively sabotaging railways, supply depots and bridges.\nEspecially the communist partisan forces are known for their effectiveness and several smaller regions are temporarily liberated by them. However, the KPJ's popularity is growing rapidly and chances are high that our government in exile may be unwelcome once the war is over..."
  ne_misc.12.a:0 "We will never surrender!"
  ne_misc.13.t:0 "A Socialist Republic"
- ne_misc.13.d:0 "We have successfully chased the fascist invaders from our country and established a socialist federal republic in our beloved country. While the world is now divided between East and West, we do not want to take a side. For now, Marshall Tito will lead the nation into a better future, devoid of war, corruption, poverty or hunger.\nWhile our country is still in ruins, rebuilding has already taken place. We have so much to do but there's no doubt we can do it!"
+ ne_misc.13.d:0 "We have successfully chased the fascist invaders from our country and established a socialist federal republic in our beloved country. While the world is now divided between East and West, we do not want to take a side. For now, Marshall Tito will lead the nation to a better future, devoid of war, corruption, poverty or hunger.\nWhile our country is still in ruins, rebuilding has already taken place. We have so much to do but there's no doubt we can do it!"
  ne_misc.13.a:0 "Long live Yugoslavia!"
  
  
  #6th research slot for the USSR
- ne_misc.16.t:0 "German Scientists captured!"
- ne_misc.16.d:0 "We managed to capture several Nazi scientists and they are now willing to work for us. Their knowledge is extremely valuable and will without a doubt strengthen our own research!"
- ne_misc.16.a:0 "Give them some work!"
+ #ne_misc.16.t:0 "German Scientists captured!"
+ #ne_misc.16.d:0 "We managed to capture several Nazi scientists and they are now willing to work for us. Their knowledge is extremely valuable and will without a doubt strengthen our own research!"
+ #ne_misc.16.a:0 "Give them some work!"
  
  #Remove fascist influence (HUN, BUL, ROM) when country is commie
  ne_misc.17.t:0 "Fascist Influence is still present!"

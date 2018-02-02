@@ -1,34 +1,6 @@
 ﻿##This file is used for some hidden events. 
 add_namespace = ne_hidden
 
-##Switch to better India color when free
-country_event = {
-	id = ne_hidden.0
-
-	hidden = yes
-	fire_only_once = yes
-
-	trigger = {
-	
-		tag = RAJ
-		
-		RAJ = { is_subject = no }
-		has_global_flag = names_chosen
-		
-	}
-
-	immediate = {
-		RAJ = { set_cosmetic_tag = NE_INDIA }
-	}
-
-    option = {
-		#
-    }
-
-	
-}
-
-
 
 ##STALIN IS DED
 country_event = {
@@ -188,92 +160,9 @@ country_event = {
 	}
 }
 
-##Vichy France gets new color and name when flag was activated
-country_event = {
-	id = ne_hidden.6
 
-	hidden = yes
-	fire_only_once = yes
 
-	trigger = {
-	
-		FRA = {
-			exists = yes
-			has_capitulated = yes
-			has_war_with = GER
-			has_civil_war = yes
-		}
-
-		has_global_flag = names_chosen
-		
-		
-	}
-
-	
-	immediate = {	##Add cosmetic tag to Vichy
-	
-		every_country = {
-			limit = {
-				original_tag = FRA
-				NOT = { TAG = FRA }
-			}
-			
-			set_cosmetic_tag = NE_VICHY
-		}
-	}
-	
-    option = {	
-		#	
-    }
-
-	
-}
-
-##Same happens to Franco's Spain + NE_neutrality EDIT
-country_event = {
-	id = ne_hidden.7
-
-	hidden = yes
-	fire_only_once = yes
-
-	trigger = {
-	
-		SPR = {
-			exists = yes
-			has_government = communism
-			has_civil_war = yes
-		}
-
-		has_global_flag = names_chosen				
-	}
-
-	
-	immediate = {	##Add cosmetic tag to Franco
-	
-		every_country = {
-			limit = {
-				original_tag = SPR
-				NOT = { TAG = SPR }
-			}
-			
-			set_cosmetic_tag = NE_SPS
-			
-			if = { limit = { has_global_flag = Neutrality_chosen } add_ideas = NE_neutrality }
-			
-		}
-		
-		#Reduce communist support for the other Spain
-		SPR = { add_popularity = { ideology = communism popularity = -0.24 }  }
-		
-		
-	}
-	
-    option = {	
-		
-    }
-
-	
-}
+##NE_HIDDEN 6 AND 7 are free!
 
 
 ##Play track when Sino-Japanese War starts

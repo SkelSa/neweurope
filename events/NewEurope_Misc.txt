@@ -1076,7 +1076,7 @@ country_event = {
 }
 
 
-####SOVIET RESEARCH SLOT####
+####SOVIET RESEARCH SLOT#### (Already added by takee)
 #country_event = { 
 #	id = ne_misc.16	
 #	title = ne_misc.16.t
