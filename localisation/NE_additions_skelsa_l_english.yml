@@ -409,14 +409,58 @@ l_english:
  
  ##Oppress the Baltic States - Info-Event
  ne_skelsa.59.t:0 "BPWE: Info regarding the Annexation of the Baltic States"
- ne_skelsa.59.d:0 "Better Post-War Europe changes the mechanic concerning the annexation of Lithunia, Latvia and Estonia. Instead of justifying on them like in vanilla you need to finish the next focus and be in the year 1940 to get an event for the annexation after about 70 days. Don't waste your pp on justifying, okay?"
+ ne_skelsa.59.d:0 "Better Post-War Europe changes the mechanic concerning the annexation of Lithunia, Latvia and Estonia. Instead of justifying on them like in vanilla you need to finish the next focus and be in the year 1940 to get an event chain for the annexation after some days. Don't waste your pp on justifying, okay?"
  ne_skelsa.59.a:0 "I understand."
  
+
+ #ne_skelsa.60.t:0 "Fate of the Baltic States"
+ #ne_skelsa.60.d:0 "Lithuania, Latvia and Estonia, also known as the Baltic States, are broken shards from the Russian Empire still not reunited with us. Their independence will never be justified and we need to bring them into our fold before it's too late!\nOur ambassadors are ready to deliver each of them an ultimatum. Either they will rejoin the motherland or our tanks will cross the border! Considering our military power we can expect their annexation soon - no matter which option is chosen."
+ #ne_skelsa.60.a:0 "Send the ultimata!"
+ #ne_skelsa.60.b:0 "We will do it the old-fashioned way..."
+ 
  ##Oppress the Baltic States
- ne_skelsa.60.t:0 "Fate of the Baltic States"
- ne_skelsa.60.d:0 "Lithuania, Latvia and Estonia, also known as the Baltic States, are broken shards from the Russian Empire still not reunited with us. Their independence will never be justified and we need to bring them into our fold before it's too late!\nOur ambassadors are ready to deliver each of them an ultimatum. Either they will rejoin the motherland or our tanks will cross the border! Considering our military power we can expect their annexation soon - no matter which option is chosen."
- ne_skelsa.60.a:0 "Send the ultimata!"
- ne_skelsa.60.b:0 "We will do it the old-fashioned way..."
+ ne_skelsa.60.t:0 "Soviet Bases in the Baltic States"
+ ne_skelsa.60.d:0 "Lithuania, Latvia and Estonia, also known as the Baltic States, are broken shards from the Russian Empire still not reunited with us. Their independence will never be justified and we need to bring them into our fold before it's too late! While a direct annexation or invasion might be considered aggressive by other foreign powers, the Politburo came up with an idea to slowly subjugate the three nations. In the end we will replace their governments and this will lead to their integration into our motherland. Let's start by demanding bases and military access!"
+ ne_skelsa.60.a:0 "Soon they will be ours again!"
+ ne_skelsa.60.b:0 "Slowly subjugate? This will take too long!"
+ 
+ ne_skelsa.61.t:0 "The Soviet Union demands Basing Rights!"
+ ne_skelsa.61.d:0 "The Soviet ambassadors arrived today in our capital with an ultimatum for us. Allegedly to combat the fascist threat, they want the right to station their troops in our country and get ownership of some of our military bases.\nAccording to foreign press, the two other Baltic nations are facing the same question right now too. Agreeing to these demands could probably satisfy [SOV.GetLeader] for now but it's very likely the Reds will return with even more demands, some of which may threaten our sovereignty! However, declining their ultimatum might be our certain end.\nWhat should we do?"
+ ne_skelsa.61.a:0 "We have to submit..."
+ ne_skelsa.61.b:0 "No way!"
+ 
+ ne_skelsa.62.t:0 "[From.GetName] accepted our Demands!"
+ ne_skelsa.62.d:0 "[From.GetLeader] has complied to our demands, stating that it will serve both countries interests. We are now free to move our troops through their land.\nIn about a month, the next phase in our subjugation of the Baltic states will happen. Their fate is already sealed..."
+ ne_skelsa.62.a:0 "Very good..."
+ 
+ ne_skelsa.63.t:0 "[From.GetName] refused our Demands?!"
+ ne_skelsa.63.d:0 "Our ambassadors from [From.GetCapital] just returned and told us that the government of [From.GetName] would never agree to these kinds of demands, stating that the country's sovereignty is in danger.\n\nApparently we need to solve this the hard way..."
+ ne_skelsa.63.a:0 "Their stupidity will cost blood!"
+ 
+ ne_skelsa.64.t:0 "Occupation of the Baltic States"
+ ne_skelsa.64.d:0 "The Baltics have already sealed their fate when we got their military access. Now the time has come to finally occupy them! Due to their weak military we will be in Kaunas, Riga and Talinn in a couple of days and our military experts predict that there will be as good as no resistance."
+ ne_skelsa.64.a:0 "Send in the troops!"
+ 
+ ne_skelsa.65.t:0 "Soviet troops amassing near our Border!"
+ ne_skelsa.65.d:0 "Our forward observers along the border report the deployment of Soviet infantry and tank batallions along the border while their troops in our country stay in the barracks! It might be a show of power or worse, a preparation of an invasion! We don#t know it yet but it's best to keep an eye on this..."
+ ne_skelsa.65.a:0 "Reinforce our border imediately!"
+ 
+ ne_skelsa.66.t:0 "Collapse of our Nation!"
+ ne_skelsa.66.d:0 "We fell for the trap! How could we even have a little bit in trust in those Bolshevik bastards?\nMost important cities are occupied and the last airports are being captured! Our government has to leave the country at all costs now before it's too late. [Root.GetName] might be in Soviet hands now, but this occupation will not last forever!"
+ ne_skelsa.66.a:0 "We will return someday..."
+ 
+ ne_skelsa.67.t:0 "Collapse of [From.GetName]!"
+ ne_skelsa.67.d:0 "Like expected, this tiny nation could not withstand the might of the Soviet Union! Phase 3 of our plans will place some of our most loyal ministers into their government to replace the old one. A plebiscite will be then held in about a month to formally join the USSR.\nWe could also capture the presidents of Estonia and Latvia. They're in Siberia, for now."
+ ne_skelsa.67.a:0 "Set up the puppet government!"
+ 
+ ne_skelsa.68.t:0 "Plebiscite to join the Soviet Union"
+ ne_skelsa.68.d:0 "We are a small socialist nation but while our army and the will of our people is strong, the fascist menace in Europe called Germany is a real concern. Luckily, our Soviet friend can offer us the protection we need. We will hold a plebiscite to confirm this decision by our people. And we might want to correct the results a little in case the referendum will fail. Our population might not know a lot about the danger of the fascism as we do..."
+ ne_skelsa.68.a:0 "As an SSR we will be stronger!"
+ 
+ ne_skelsa.69.t:0 "Plebiscite a success in [From.GetName]!"
+ ne_skelsa.69.d:0 "Exciting news from [From.GetCapital] as an overwhelming majority of the people voted to reunite with the Motherland! Our troops were greeted in all major cities of [From.GetName] and the NKVD can now start to detain any fascists they find.\nThis is another glorious day in the history of our nation!"
+ ne_skelsa.69.a:0 "Completely surprising news!"
+ ne_skelsa.69.a:0 "We welcome them!"
  
  ##Yugoslavia
  ne_misc.12.t:0 "Our Partisans continue the Fight!"

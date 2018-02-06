@@ -802,6 +802,16 @@ country_event = {
 		
 		if = {
 			limit = {
+				90 = {					
+					is_owned_by = POL
+					
+				}
+			}
+			GER = { set_state_controller = 90 }
+		}
+		
+		if = {
+			limit = {
 				72 = {					
 					is_owned_by = POL
 					
@@ -823,6 +833,9 @@ country_event = {
 		
 		##whitepeace between SOV and POL
 		SOV = { white_peace = POL }
+		
+		##Set Global FLAG
+		set_global_flag = POL_collapse
 		
 	}
 }
@@ -1241,6 +1254,14 @@ country_event = {
 
 
 ##Soviet Union: Ultimatum to the Baltic States : ne_skelsa.60
+
+##Request military access (Should represent Soviet bases there)
+##Estonia also will guarantee SOV and SOV them
+
+
+
+##Soviet invasion of the three states; NE_neutrality will be added once the invasion starts. Remove NE_neutrality after they are puppets.
+##Soviets: Establish military presence in the Baltics
 country_event = {
 	id = ne_skelsa.60
 	title = ne_skelsa.60.t
@@ -1254,7 +1275,7 @@ country_event = {
 	
 		tag = SOV
 		
-		date > 1940.1.1
+		POL = { has_capitulated = yes }
 		
 		SOV = { has_completed_focus = SOV_claims_on_baltic } 
 		SOV = { has_completed_focus = SOV_baltic_security } 
@@ -1262,10 +1283,10 @@ country_event = {
 	}
 
 	
-	mean_time_to_happen = {	days = 70 }
+	mean_time_to_happen = {	days = 35 }
 	
 	
-	option = {	# send ultimatum
+	option = {	# force baltics to agree to military access. EST and SOV guarantee each other
 		name = ne_skelsa.60.a
 		ai_chance = {
 			factor = 50
@@ -1285,7 +1306,7 @@ country_event = {
 				}
 			}
 				
-			EST = { country_event = { days = 2 id = baltic.1 } }			
+			EST = { country_event = { days = 2 id = ne_skelsa.61 } }			
 		}
 		
 		if = {
@@ -1296,7 +1317,7 @@ country_event = {
 				}
 			}
 				
-			LAT = { country_event = { days = 2 id = baltic.2 } }			
+			LAT = { country_event = { days = 2 id = ne_skelsa.61 } }			
 		}
 		
 		if = {
@@ -1307,18 +1328,18 @@ country_event = {
 				}
 			}
 				
-			LIT = { country_event = { days = 1 id = baltic.3 } }			
+			LIT = { country_event = { days = 1 id = ne_skelsa.61 } }			
 		}
-	
 		
-		hidden_effect = {	
-			#
+		hidden _effect = {
+			SOV = { country_event = { days = 120 id = ne_skelsa.64 } }		
 		}
+
 			
 	}
 	
 	
-	option = {	# We will do it the old fashioned way! (gain wargoal)
+	option = {	# This would take too long, declare war now!
 		name = ne_skelsa.60.b
 		ai_chance = {
 			factor = 50
@@ -1330,27 +1351,407 @@ country_event = {
 		}
 		
 		##Effects
-		add_political_power = -15
-		
-		create_wargoal = {
-			type = annex_everything
-			target = EST
-		}
-		
-		create_wargoal = {
-			type = annex_everything
-			target = LAT
-		}
-		
-		create_wargoal = {
-			type = annex_everything
-			target = LIT
-		}
+		add_political_power = -60
+
+		create_wargoal = {	type = annex_everything	target = LIT }
+		create_wargoal = {	type = annex_everything	target = LAT }
+		create_wargoal = {	type = annex_everything	target = EST }
 
 		hidden_effect = {	
-			news_event = { id = ne_news.6 }					
+			#				
 		}	
 	
+	}
+	
+	
+}
+
+
+
+##The Baltics see the demands, can either accept or tell the Soviets to fuck off
+country_event = {
+	id = ne_skelsa.61
+	title = ne_skelsa.61.t
+	desc =  ne_skelsa.61.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	
+	option = {	#ok, soviets, you get your access
+		name = ne_skelsa.61.a
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes			
+			}			
+		}
+		
+		##Effects		
+		add_political_power = -60
+		
+		give_military_access = SOV
+		SOV = { give_military_access = ROOT }
+		
+		
+		if = {
+			limit = {
+				tag = EST
+			}
+			
+			give_guarantee = SOV
+			SOV = { give_guarantee = EST }			
+		}
+		
+		
+		SOV = { country_event = { days = 1 id = ne_skelsa.62 } }
+		
+	}
+	
+	option = {	#stay stubborn
+		name = ne_skelsa.61.a
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes			
+			}			
+		}
+		
+		##Effects
+		
+		add_national_unity = 0.20
+		add_political_power = 150
+	
+		SOV = { country_event = { days = 1 id = ne_skelsa.63 } }
+	
+	}
+	
+	
+}
+
+
+
+##SOV: Baltic Country has accepted
+country_event = {
+	id = ne_skelsa.62
+	title = ne_skelsa.62.t
+	desc =  ne_skelsa.62.d
+	picture = GFX_report_event_molotov_signing_pact
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = {	#Nice
+		name = ne_skelsa.1.a
+		
+		##Effects
+		add_political_power = 10
+		FROM = { set_country_flag = ne_baltics_accepted }
+			
+	}
+	
+	
+}
+
+
+
+##SOV: Baltic Country has refused; gain wargoal
+country_event = {
+	id = ne_skelsa.63
+	title = ne_skelsa.63.t
+	desc =  ne_skelsa.63.d
+	picture = GFX_report_event_molotov_signing_pact
+
+	#hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#Idiots, they will pay in blood
+		name = ne_skelsa.63.a
+		
+		add_political_power = -10
+		
+		##SOV gains war goal!
+		SOV = {
+			create_wargoal = {
+				type = annex_everything
+				target = FROM
+			}
+		}
+			
+	}
+	
+	
+}
+
+
+
+##SOV: Preparing the Invasion of the Baltics
+country_event = {
+	id = ne_skelsa.64
+	title = ne_skelsa.64.t
+	desc =  ne_skelsa.64.d
+	picture = GFX_report_event_soviet_in_riga
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+	
+	hidden_effect = {
+	
+		every_country = {
+			limit = {
+				has_country_flag = ne_baltics_accepted
+			}							
+						
+			##SOV are amassing troops along the border
+			country_event = { days = 1 id = ne_skelsa.65 } 			
+												
+			}
+			
+		}	
+		
+	}
+	
+	
+	option = {	#Make everything ready
+		name = ne_skelsa.64.a
+		
+		add_political_power = 40
+		add_manpower = 25000
+		
+		##SOV gains war goal!
+		hidden_effect = {
+		
+			every_country = {
+				limit = {
+					has_country_flag = ne_baltics_accepted
+				}							
+				
+				add_ideas = NE_neutrality
+				
+				SOV = { 
+					create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+					}
+				}		
+			
+			}
+
+		}
+		
+	}
+	
+	
+}
+
+
+##Baltic States: SOV prepares to invade..
+##Typical Short response event
+country_event = {
+	id = ne_skelsa.65
+	title = ne_skelsa.65.t
+	desc =  ne_skelsa.65.d
+	picture = GFX_report_event_soviet_in_riga
+
+	is_triggered_only = yes
+
+	
+	option = {	#better prepare
+		name = ne_skelsa.65.a
+		
+		##Effects
+		add_political_power = 30
+		add_manpower = 30000
+		
+		##TEST
+		add_opinion_modifier = { target = SOV modifier = tizard_refused } 
+			
+	}
+	
+	
+}
+
+
+##Baltic States: Collapse
+country_event = {
+	id = ne_skelsa.66
+	title = ne_skelsa.66.t
+	desc =  ne_skelsa.66.d
+	picture = GFX_report_event_soviet_in_riga
+
+
+	trigger = {
+	
+		exists = yes
+		has_war_with = SOV
+		has_country_flag = ne_baltics_accepted
+		surrender_progress > 0.35
+		
+		
+	
+	}
+	
+	
+	option = {	#We have lost
+		name = ne_skelsa.66.a
+		
+		##Effects
+		add_political_power = -100
+		add_national_unity = -0.10
+		
+		SOV = { country_event = { days = 1 id = ne_skelsa.66 } }			
+			
+	}
+	
+	
+}
+
+
+##Soviet Union: Baltic States collapses.
+country_event = {
+	id = ne_skelsa.67
+	title = ne_skelsa.67.t
+	desc =  ne_skelsa.67.d
+	picture = GFX_report_event_soviet_in_riga
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+		
+			##Killing baltic leaders
+			if = {
+				limit = {
+					FROM = EST
+					EST = { has_country_leader = { name = "Konstantin Päts" } }				
+				}
+				EST = { kill_country_leader = yes }
+			}
+		
+			if = {
+				limit = {
+					FROM = LAT
+					LAT = { has_country_leader = { name = "Karlis Ulmanis" } }				
+				}
+				LAT = { kill_country_leader = yes }
+			}
+			
+		}
+	
+	}
+	
+	option = {	#Turn them into puppets!
+		name = ne_skelsa.67.a
+		
+		if = {
+			limit = {
+				FROM = EST
+			}
+			
+			SOV = { puppet = EST }
+			#SOV = { set_country_flag = ne_estonia_collapsed }
+			
+		}
+		
+		if = {
+			limit = {
+				FROM = LAT
+			}
+			
+			SOV = { puppet = EST }
+			#SOV = { set_country_flag = ne_latvia_collapsed }
+		}
+		
+		if = {
+			limit = {
+				FROM = LIT
+			}
+			
+			SOV = { puppet = EST }
+			#SOV = { set_country_flag = ne_lithuania_collapsed }
+			
+		}
+		
+						
+	}
+	
+	
+}
+
+
+
+##Baltics (Communist): Hold plebiscite to join the USSR
+country_event = {
+	id = ne_skelsa.68
+	title = ne_skelsa.68.t
+	desc =  ne_skelsa.68.d
+	picture = GFX_report_event_soviet_in_riga
+
+	trigger = {
+		
+		is_subject_of = SOV
+		has_government = communism
+		NOT = { has_country_flag = plebiscite_join_ussr }
+		
+		OR = {
+			tag = EST
+			tag = LAT
+			tag = LIT		
+		}
+	
+	}
+	
+	immediate = {
+	
+		hidden_effect = {		
+			set_country_flag = plebiscite_join_ussr		
+		}		
+	
+	}
+
+	
+	option = {	#Hold the plebiscite!
+		name = ne_skelsa.68.a
+
+		custom_effect_tooltip = GAME_OVER_TT
+		
+		##SOV gets event
+		SOV = { country_event = { days = 1 id = ne_skelsa.69 } }
+		
+	}
+	
+	
+}
+
+
+
+##Soviet: Baltic country wishes to be annexed!
+country_event = {
+	id = ne_skelsa.69
+	title = ne_skelsa.69.t
+	desc =  ne_skelsa.69.d
+	picture = GFX_report_event_soviet_in_riga
+	
+	is_triggered_only = yes
+	#fire_only_once = yes ##Onyl one country would be absorbed!
+
+	
+	option = {	#We welcome then!
+		name = ne_skelsa.69.a
+
+		annex_country = { target = FROM } 		
+		
 	}
 	
 	
@@ -1944,6 +2345,29 @@ country_event = {
 }
 
 
+##India gets event about her independence
+country_event = {
+	id = ne_skelsa.7
+	title = ne_skelsa.7.t
+	desc =  ne_skelsa.7.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#AFTER ALL THESE CENTURIES WE'RE FREE!
+		name = ne_skelsa.7.a
+
+		##Effects
+		add_political_power = 125
+		add_national_unity = 0.10
+			
+	}
+
+	
+}
+
 
 
 
@@ -2010,6 +2434,8 @@ country_event = {
 	trigger = {
 	
 		tag = SOV
+		
+		has_global_flag = names_chosen
 		
 		SOV = {
 			exists = yes

@@ -1062,7 +1062,10 @@ country_event = {
 				NEP = {add_ideas = NE_neutrality}
 				TIB = {add_ideas = NE_neutrality}
 				SIK = {add_ideas = NE_neutrality}				
-				FIN = {add_ideas = NE_neutrality}				
+				FIN = {add_ideas = NE_neutrality}
+				EST = {add_ideas = NE_neutrality}
+				LAT = {add_ideas = NE_neutrality}
+				LIT = {add_ideas = NE_neutrality}				
 			}
 			
 			
@@ -1293,8 +1296,9 @@ country_event = {
 	
 	option = {
 		name = ne_settings_intro.6.c
-		custom_effect_tooltip = ne_old_manager_tooltip\n
+		custom_effect_tooltip = ne_old_manager_tooltip
 		custom_effect_tooltip = not_ne_old_manager_tooltip
+		custom_effect_tooltip = GAME_OVER_TT
 		
 		if = {
 			limit = {

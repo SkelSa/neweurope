@@ -46,11 +46,12 @@ on_actions = {
 	
 	#on_government_change = {}
 	
-	#on_civil_war_end = { }
+
 	
 
 	on_subject_free = { 		
 		 effect = {
+		
 		
 		
 		
@@ -61,8 +62,12 @@ on_actions = {
 				has_global_flag = names_chosen
 			}
 			
-			RAJ = { set_cosmetic_tag = NE_INDIA }
+			RAJ = { 
+				set_cosmetic_tag = NE_INDIA 
+				country_event = { days = 1 id = ne_skelsa.7 }
+			}
 		}
+		
 		
 		
 		
@@ -157,6 +162,16 @@ on_actions = {
 		}
 
 	}
+	
+	
+		#on_civil_war_end = { 
+			#effect = {
+			
+			
+			#}
+		
+		
+		#}
 		
 	
 }
