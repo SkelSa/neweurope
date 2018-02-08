@@ -229,13 +229,13 @@ l_english:
  
  
  ##fascist name might need rework
- ##ICU = Indochina
+ ##Indochina (ICU)
  ICU_fascism:0 "Indochinese State" 
  ICU_fascism_DEF:0 "The Indochinese State"
- ICU_democratic:0 "Indochinese Union"
- ICU_democratic_DEF:0 "The Indochinese Union" ##Indochinese Federation
- ICU_neutrality:0 "Indochinese Union"
- ICU_neutrality_DEF:0 "The Indochinese Union"
+ ICU_democratic:0 "French Indochina"
+ ICU_democratic_DEF:0 "French Indochina" 
+ ICU_neutrality:0 "French Indochina"
+ ICU_neutrality_DEF:0 "French Indochina"
  ICU_communism:0 "Socialist Republics of Indochina"
  ICU_communism_DEF:0 "The Socialist Republics of Indochina"
  ICU_fascism_ADJ:0 "Indochinese"
@@ -243,7 +243,7 @@ l_english:
  ICU_neutrality_ADJ:0 "Indochinese"
  ICU_communism_ADJ:0 "Indochinese"
  
- ##TUN = Tunisia
+ ##Tunisia
  TUN_fascism:0 ""
  TUN_fascism_DEF:0 ""
  TUN_democratic:0 "Republic of Tunisia"
@@ -295,7 +295,7 @@ l_english:
  ETR_communism:0 "Second East Turkestan Republic"
  ETR_communism_DEF:0 "The Second East Turkestan Republic"
  ETR_fascism_ADJ:0 "Turkic"
- ETR_democratic_ADJ:0 Turkic
+ ETR_democratic_ADJ:0 Turkic"
  ETR_neutrality_ADJ:0 "Turkic"
  ETR_communism_ADJ:0 "Turkic"
  
@@ -342,18 +342,18 @@ l_english:
  HAT_communism_ADJ:0 "Hatay"
  
  ##Italian Social Republic
- ITS_fascism:0 "Italian Social Republic"
- ITS_fascism_DEF:0 "The Italian Social Republic"
+ ITS_fascism:0 "Republic of Salò"
+ ITS_fascism_DEF:0 "The Republic of Salò"
  ITS_democratic:0 "Republic of Italy"
  ITS_democratic_DEF:0 "The Republic of Italy"
- ITS_neutrality:0 "Republic of Salò"
- ITS_neutrality_DEF:0 "The Republic of Salò"
+ ITS_neutrality:0 "Italian Empire"
+ ITS_neutrality_DEF:0 "The Italian Empire"
  ITS_communism:0 "Italian Union"
  ITS_communism_DEF:0 "The Italian Union"
  ITS_fascism_ADJ:0 "Italian"
  ITS_democratic_ADJ:0 "Italian"
  ITS_neutrality_ADJ:0 "Italian"
- ITS_communism_ADJ:0 Italian""
+ ITS_communism_ADJ:0 "Italian"
  
  
  
@@ -410,12 +410,22 @@ l_english:
  NE_ITA_democratic_DEF:0 "The Republic of Italy"
  NE_ITA_fascism:0 "Kingdom of Italy"
  NE_ITA_fascism_DEF:0 "The Kingdom of Italy"
+ ##ITS cosmetic
+ NE_ITS_fascism:0 "Italian Social Republic"
+ NE_ITS_fascism_DEF:0 "The Italian Social Republic"
  ##CHI
  NE_CHI_neutrality:0 "Republic of China"
  NE_CHI_neutrality_DEF:0 "The Republic of China"
  ##IND
  NE_IND_democratic:0 "Republic of India"
  NE_IND_democratic_DEF:0 "The Republic of India"
+ ##Indochina - name changes are different in French ##Indochinese Federation
+ NE_ICU_democratic:0 " Indochinese Union"
+ NE_ICU_democratic_DEF:0 "The  Indochinese Union"
+ NE_ICU_neutrality:0 " Indochinese Union"
+ NE_ICU_neutrality_DEF:0 "The  Indochinese Union"
+ NE_ICU_fascism:0 " Indochinese Union"
+ NE_ICU_fascism_DEF:0 "The  Indochinese Union"
  ##Vichy France
  NE_VICHY_fascism:0 "French State"
  NE_VICHY_fascism_DEF:0 "The French State"
