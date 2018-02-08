@@ -875,11 +875,11 @@ country_event = {
 				PRC = {set_cosmetic_tag = NE_CSR } #DONE	#FLAG (C) and NAME (C)
 				YUN = {set_cosmetic_tag = NE_YUN } #DONE	FLAG (N) and #NAME (N) 
 				LAO = {set_cosmetic_tag = NE_LAO } #DONE	FLAG (C)
-				USA = {set_cosmetic_tag = NE_USA } #DONE	#FLAG (D)							also flag events when Alaska and Haiwaii join and the communism mega event
-				SOV = {set_cosmetic_tag = NE_SOV } #DONE	#FLAG (C)							also flag events (3 times)
+				#USA = {set_cosmetic_tag = NE_USA } #DONE	#FLAG (D)							also flag events when Alaska and Haiwaii join and the communism mega event ####USA AND SOV deactivated until later!
+				#SOV = {set_cosmetic_tag = NE_SOV } #DONE	#FLAG (C)							also flag events (3 times)
 				CHI = {set_cosmetic_tag = NE_CHI}  #DONE	NAME (N)
-				#ICU = {set_cosmetic_tag = NE_ICU } 	#FLAG (C)							
-				#ITS = {set_cosmetic_tag = NE_ITS}  	NAME (N)
+				#ICU = {set_cosmetic_tag = NE_ICU } 	#FLAG (ALL)	NAME (D+N)						
+				#ITS = {set_cosmetic_tag = NE_ITS}  	#FLAG (ALL)	NAME (F)
 				
 				
 				##Vichy France (NAME (F), FLAG (F) and COLOR) gets its cosmetic in the hidden file
