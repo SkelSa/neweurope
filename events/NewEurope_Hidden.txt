@@ -258,25 +258,23 @@ country_event = {
 }
 
 
-##EDIT: Hungary loses it's greater Hungary upon 95% surrender progress!
+##EDIT: Hungary loses it's greater Hungary upon doing that focus! (Proclaim greater Hungary is shit anyways)
 country_event = {
 	id = ne_hidden.11
 
 	hidden = yes
-
-	trigger = {
-		AND = {
-			BUR = {
-				exists = yes
-				NOT = { 
-					is_puppet_of = RAJ
-				}
-			}
-		}
-	}
+	is_triggered_only = yes
+	
+	#trigger = {
+		
+		#tag = HUN
+		#has_completed_focus = { }
+		
+		
+	#}
 
 	immediate = {
-		BUR = { drop_cosmetic_tag = yes }
+		HUN = { drop_cosmetic_tag = yes }
 	}
 
     option = {

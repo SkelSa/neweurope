@@ -1,4 +1,4 @@
-﻿capital = 102
+﻿capital = 797 ##Italian Slovenia
 
 oob = "SVN_1936"
 

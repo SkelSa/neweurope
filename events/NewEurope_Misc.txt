@@ -546,6 +546,7 @@ country_event = {
 		SOV = { exists = yes has_government = communism }	
 		is_subject_of = SOV
 		NOT = { has_country_flag = ssr_puppetry }
+		NOT = { has_country_flag = ne_baltic_puppet }	##Baltics can't become puppets before the SOV annexation event!
 
 		OR = {		
 			tag = EST
@@ -1120,7 +1121,7 @@ country_event = {
 	id = ne_misc.17
 	title = ne_misc.17.t
 	desc =  ne_misc.17.d
-	#picture = GFX_report_a_trieste_choice
+	picture = GFX_report_event_soviet_invasion_map
 	
 	title = {
 		text = ne_misc.17.t1
@@ -1143,63 +1144,13 @@ country_event = {
 		}
 	}
 	
-	
-	hidden = yes	
-	
-	trigger = {
-	
-		OR = {
-		
-			AND = {
-			
-				OR = {		
-					has_idea = fascist_influence
-					has_idea = nationalism
-					has_idea = HUN_strengthen_fascists
-				}	
-				
-				AND = {			
-					has_government = fascism 
-					fascism > 0.53		
-				}
-				
-			}
-		
-		
-			AND = {
-			
-				tag = CZE
-					OR = {
-						has_idea = CZE_democratic_bastion
-						has_idea = CZE_beacon_of_liberty					
-					}
-				
-				
-				OR = {
-				
-					AND = {
-						has_government = fascism 
-						fascism > 0.53			
-					}
-					
-					AND = {
-						has_government = communism
-						communism > 0.53			
-					}
-				}
-			}
-		}
+	is_triggered_only = yes
 
-		NOT = { has_country_flag = influence_removed }
-
-	}
 	
 	immediate = {	
 		set_country_flag = influence_removed	
 	}
-	
-	mean_time_to_happen = { days = 5 }
-	
+
 
 	option = {
 	
@@ -1241,6 +1192,9 @@ country_event = {
 	}
 
 }
+
+
+
 ####August Storm####
 country_event = {
 	id = ne_misc.18	

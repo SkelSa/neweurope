@@ -44,16 +44,44 @@ on_actions = {
 				
 	}		
 	
-	#on_government_change = {}
+	on_government_change = {
+		effect = {
+		
+			##remove unneccesary ideology spirits when e.g. Eastern Europe is communist
+			if = {
+				limit = { has_government = communism  communism > 0.53}
+				every_country = {
+					limit = {
+						OR = {	
+							has_idea = fascist_influence
+							has_idea = nationalism
+							has_idea = HUN_strengthen_fascists
+							has_idea = CZE_democratic_bastion
+							has_idea = CZE_beacon_of_liberty
+						}
+						
+						NOT = { has_country_flag = influence_removed }
+						
+					}
+					
+					country_event = { days = 1 id = ne_misc.17 }
+				}
+				
+					
+			}
+
+		}
 	
 
+	
+	}
+	
 	
 
 	on_subject_free = { 		
 		 effect = {
 		
-		
-		
+			
 		
 		##Switch to better India color when free
 		if = {
@@ -82,7 +110,7 @@ on_actions = {
 		effect = {
 		
 			
-			##Vichy France gets new color and name when flag was activated
+			##Vichy France gets new color and name when flag was activated; also gets historical colonies
 			if = {
 				limit = {
 					
@@ -90,8 +118,7 @@ on_actions = {
 						original_tag = FRA
 						NOT = { TAG = FRA }					
 					}
-					
-					has_global_flag = names_chosen
+										
 					
 					FRA = {
 						exists = yes
@@ -106,13 +133,50 @@ on_actions = {
 					}
 				}
 				
-				every_country = {		##Add cosmetic tag to Vichy
+				every_country = {		
 					limit = {
 						original_tag = FRA
 						NOT = { TAG = FRA }
+						
 					}
 			
-				set_cosmetic_tag = NE_VICHY
+				if = {
+					limit = {
+						has_global_flag = names_chosen
+					}
+					set_cosmetic_tag = NE_VICHY	##Add cosmetic tag to Vichy
+				}
+				
+				##Assign colonies to Vichy (Note: Some colonies need to be divided up (539) )
+				transfer_state = 553
+				transfer_state = 665
+				transfer_state = 459
+				transfer_state = 460
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 514
+				transfer_state = 557
+				transfer_state = 515 ##You need to split up Chad and Niger for this as latter went to Free France
+				transfer_state = 556
+				transfer_state = 272
+				transfer_state = 1   ##Corsica and Savoy went to Italy after case Anton and to Germany after 1943
+				transfer_state = 735
+				transfer_state = 310
+				transfer_state = 670
+				transfer_state = 671
+				transfer_state = 741
+				transfer_state = 286
+				transfer_state = 543
+				transfer_state = 706
+				transfer_state = 708
+				transfer_state = 713
+				transfer_state = 268
+				transfer_state = 373
+				transfer_state = 694
+				#transfer_state = In case anything went missing
+				
+				
+				
 				}
 			}
 			

@@ -28,7 +28,13 @@ l_english:
  STATE_785:0 "Darfur"
  STATE_786:0 "West Xikang"
  STATE_787:0 "Qingdao"
- #STATE_788:0 "Suwalki"
+ STATE_798:0 "Southern Shaanxi"
+ STATE_799:0 "Srem"
+ STATE_799:0 "Suwalki"
+ 
+ ##Cities
+ VICTORY_POINTS_3631:0 "Ljubljana"
+ VICTORY_POINTS_12156:0 "Xi'an"
 
  
  
@@ -204,7 +210,156 @@ l_english:
  threat_ne_continuation_war:0 "Continuation War"
  threat_ne_finland_neutrality:0 "Finland stays neutral"
  
- ##countries
+ ####REAL COUNTRIES####
+ 
+ ##TEMPLATE
+ #_neutrality:0 ""
+ #_neutrality_DEF:0 ""
+ #_democratic:0 ""
+ #_democratic_DEF:0 ""
+ #_fascism:0 ""
+ #_fascism_DEF:0 ""
+ #_communism:0 ""
+ #_communism_DEF:0 ""
+ #_neutrality_ADJ:0 ""
+ #_democratic_ADJ:0 ""
+ #_fascism_ADJ:0 ""
+ #_communism_ADJ:0 ""
+ 
+ 
+ 
+ ##fascist name might need rework
+ ##ICU = Indochina
+ ICU_fascism:0 "Indochinese State" 
+ ICU_fascism_DEF:0 "The Indochinese State"
+ ICU_democratic:0 "Indochinese Union"
+ ICU_democratic_DEF:0 "The Indochinese Union" ##Indochinese Federation
+ ICU_neutrality:0 "Indochinese Union"
+ ICU_neutrality_DEF:0 "The Indochinese Union"
+ ICU_communism:0 "Socialist Republics of Indochina"
+ ICU_communism_DEF:0 "The Socialist Republics of Indochina"
+ ICU_fascism_ADJ:0 "Indochinese"
+ ICU_democratic_ADJ:0 "Indochinese"
+ ICU_neutrality_ADJ:0 "Indochinese"
+ ICU_communism_ADJ:0 "Indochinese"
+ 
+ ##TUN = Tunisia
+ TUN_fascism:0 ""
+ TUN_fascism_DEF:0 ""
+ TUN_democratic:0 "Republic of Tunisia"
+ TUN_democratic_DEF:0 "The Republic of Tunisia"
+ TUN_neutrality:0 "Tunis"
+ TUN_neutrality_DEF:0 "Tunis"
+ TUN_communism:0 "Socialist Republic of Tunisia"
+ TUN_communism_DEF:0 "The Socialist Republic of Tunisia"
+ TUN_fascism_ADJ:0 "Tunisian"
+ TUN_democratic_ADJ:0 "Tunisian"
+ TUN_neutrality_ADJ:0 "Tunisian"
+ TUN_communism_ADJ:0 "Tunisian"
+ 
+ ##Algeria
+ ALG_fascism:0 "Nation of Algeria" 
+ ALG_fascism_DEF:0 "Nation of Algeria"
+ ALG_democratic:0 "Algeria"
+ ALG_democratic_DEF:0 "Algeria"
+ ALG_neutrality:0 "Kingdom of Algeria"
+ ALG_neutrality_DEF:0 "The Kingdom of Algeria"
+ ALG_communism:0 "People's Democratic Republic of Algeria"
+ ALG_communism_DEF:0 "The People's Democratic Republic of Algeria"
+ ALG_fascism_ADJ:0 "Algerian"
+ ALG_democratic_ADJ:0 "Algerian"
+ ALG_neutrality_ADJ:0 "Algerian"
+ ALG_communism_ADJ:0 "Algerian"
+ 
+ ##Vichy-France
+ VCH_fascism:0 "Vichy France" 
+ VCH_fascism_DEF:0 "Vichy France"
+ VCH_democratic:0 "French Republic"
+ VCH_democratic_DEF:0 "The French Republic"
+ VCH_neutrality:0 "French Empire"
+ VCH_neutrality_DEF:0 "The French Empire"
+ VCH_communism:0 "Commune of France"
+ VCH_communism_DEF:0 "The Commune of France"
+ VCH_fascism_ADJ:0 "French"
+ VCH_democratic_ADJ:0 "French"
+ VCH_neutrality_ADJ:0 "French"
+ VCH_communism_ADJ:0 "French"
+ 
+ ##East-Turkestan Republic
+ ETR_fascism:0 "East Turkestan State"
+ ETR_fascism_DEF:0 "State of East Turkestan"
+ ETR_democratic:0 "East Turkestan Federation"
+ ETR_democratic_DEF:0 "East Turkestan Federation"
+ ETR_neutrality:0 "Northern Uyghuristan"
+ ETR_neutrality_DEF:0 "Northern Uyghuristan"
+ ETR_communism:0 "Second East Turkestan Republic"
+ ETR_communism_DEF:0 "The Second East Turkestan Republic"
+ ETR_fascism_ADJ:0 "Turkic"
+ ETR_democratic_ADJ:0 Turkic
+ ETR_neutrality_ADJ:0 "Turkic"
+ ETR_communism_ADJ:0 "Turkic"
+ 
+ ##Rhodesia
+ RHO_fascism:0 "Empire of Rhodesia"
+ RHO_fascism_DEF:0 "The Empire of Rhodesia"
+ RHO_democratic:0 "Rhodesian Federation"
+ RHO_democratic_DEF:0 "The Rhodesian Federation"
+ RHO_neutrality:0 "Kingdom of Rhodesia"
+ RHO_neutrality_DEF:0 "Kingdom of Rhodesia"
+ RHO_communism:0 "SFR Rhodesia"
+ RHO_communism_DEF:0 "SFR Rhodesia"
+ RHO_fascism_ADJ:0 "Rhodesian"
+ RHO_democratic_ADJ:0 "Rhodesian"
+ RHO_neutrality_ADJ:0 "Rhodesian"
+ RHO_communism_ADJ:0 "Rhodesian"
+ 
+ ##North Vietnam
+ DRV_fascism:0 "State of Vietnam"
+ DRV_fascism_DEF:0 "State of Vietnam"
+ DRV_democratic:0 "Republic of Vietnam"
+ DRV_democratic_DEF:0 "The Republic of Vietnam"
+ DRV_neutrality:0 "Vietnam"
+ DRV_neutrality_DEF:0 "Vietnam"
+ DRV_communism:0 "Democratic Republic of Vietnam"
+ DRV_communism_DEF:0 "The Democratic Republic of Vietnam"
+ DRV_fascism_ADJ:0 "Vietnamese"
+ DRV_democratic_ADJ:0 "Vietnamese"
+ DRV_neutrality_ADJ:0 "Vietnamese"
+ DRV_communism_ADJ:0 "Vietnamese"
+ 
+ ##Hatay
+ HAT_fascism:0 "State of Hatay"
+ HAT_fascism_DEF:0 "The State of Hatay"
+ HAT_democratic:0 "Republic of Hatay"
+ HAT_democratic_DEF:0 "The Republic of Hatay"
+ HAT_neutrality:0 "Region of Hatay"
+ HAT_neutrality_DEF:0 "The Region of Hatay"
+ HAT_communism:0 "Communist Province of Hatay"
+ HAT_communism_DEF:0 "The Communist Province of Hatay"
+ HAT_fascism_ADJ:0 "Hatay"
+ HAT_democratic_ADJ:0 "Hatay"
+ HAT_neutrality_ADJ:0 "Hatay"
+ HAT_communism_ADJ:0 "Hatay"
+ 
+ ##Italian Social Republic
+ ITS_fascism:0 "Italian Social Republic"
+ ITS_fascism_DEF:0 "The Italian Social Republic"
+ ITS_democratic:0 "Republic of Italy"
+ ITS_democratic_DEF:0 "The Republic of Italy"
+ ITS_neutrality:0 "Republic of Salò"
+ ITS_neutrality_DEF:0 "The Republic of Salò"
+ ITS_communism:0 "Italian Union"
+ ITS_communism_DEF:0 "The Italian Union"
+ ITS_fascism_ADJ:0 "Italian"
+ ITS_democratic_ADJ:0 "Italian"
+ ITS_neutrality_ADJ:0 "Italian"
+ ITS_communism_ADJ:0 Italian""
+ 
+ 
+ 
+ 
+ 
+ ####COSMETIC TAGS####
 
  ##PAK
  NE_PAK_democratic:0 "Islamic Republic of Pakistan"
@@ -233,6 +388,23 @@ l_english:
  ##YUN
  NE_YUN_neutrality:0 "Yunnan Clique"
  NE_YUN_neutrality_DEF:0 "The Yunnan Clique"
+ ##Serbia (Government of National Salvation)
+ NE_SER_GNS_fascism:0 "Government of National Salvation"
+ NE_SER_GNS_fascism_DEF:0 "The Government of National Salvation"
+ NE_SER_GNS_fascism_ADJ:0 "Serbian"
+ ##Tunisia (French protectorate)
+ NE_TUN_FRA_neutrality:0 "French Tunisia"
+ NE_TUN_FRA_neutrality_DEF:0 "French Tunisia"
+ NE_TUN_FRA_democratic:0 "French Tunisia"
+ NE_TUN_FRA_democratic_DEF:0 "French Tunisia"
+ NE_TUN_FRA_fascism:0 "French Tunisia"
+ NE_TUN_FRA_fascism_DEF:0 "French Tunisia"
+ NE_TUN_FRA_communism:0 "French Tunisia"
+ NE_TUN_FRA_communism_DEF:0 "French Tunisia"
+ NE_TUN_FRA_neutrality_ADJ:0 "Tunisian"
+ NE_TUN_FRA_democratic_ADJ:0 "Tunisian"
+ NE_TUN_FRA_fascism_ADJ:0 "Tunisian"
+ NE_TUN_FRA_communism_ADJ:0 "Tunisian"
  ##ITA
  NE_ITA_democratic:0 "Republic of Italy"
  NE_ITA_democratic_DEF:0 "The Republic of Italy"
@@ -247,6 +419,8 @@ l_english:
  ##Vichy France
  NE_VICHY_fascism:0 "French State"
  NE_VICHY_fascism_DEF:0 "The French State"
+ NE_VICHY_democratic:0 "Free France"
+ NE_VICHY_democratic_DEF:0 "Free France"
  ##GDR after flag change
  NE_DDR_1_communism:0 "German Democratic Republic"
  NE_DDR_1_communism_DEF:0 "The German Democratic Republic"
@@ -295,11 +469,14 @@ l_english:
  ne_historical.4.a:0 "We made our warnings clear..."
  ne_historical.4.b:0 "They would have been a useless ally anyways."
  
- 
+ ##India is free
+ ne_skelsa.75.t:0 "We're free from British Rule!"
+ ne_skelsa.75.d:0 "We're finally free from British Yoke!"
+ ne_skelsa.75.a:0 "This is a new era for our country!"
  
  ##WARNING: Historical Focus not on!
  ne_skelsa.75.t:0 "Warning: Historical Focus Setting Not On!"
- ne_skelsa.75.d:0 "This savegame was started without historical focuses. As most events and decisions rely on them, it's strongly advised to turn them on for the best experience."
+ ne_skelsa.75.d:0 "This savegame was started without historical focuses. As most events and decisions rely on them, it's strongly advised to turn them on for the best gameplay expereince."
  ne_skelsa.75.a:0 "Thanks for the warning!"
  
  ##Germany: Divide up Yugoslavia
@@ -413,14 +590,9 @@ l_english:
  ne_skelsa.59.a:0 "I understand."
  
 
- #ne_skelsa.60.t:0 "Fate of the Baltic States"
- #ne_skelsa.60.d:0 "Lithuania, Latvia and Estonia, also known as the Baltic States, are broken shards from the Russian Empire still not reunited with us. Their independence will never be justified and we need to bring them into our fold before it's too late!\nOur ambassadors are ready to deliver each of them an ultimatum. Either they will rejoin the motherland or our tanks will cross the border! Considering our military power we can expect their annexation soon - no matter which option is chosen."
- #ne_skelsa.60.a:0 "Send the ultimata!"
- #ne_skelsa.60.b:0 "We will do it the old-fashioned way..."
- 
  ##Oppress the Baltic States
  ne_skelsa.60.t:0 "Soviet Bases in the Baltic States"
- ne_skelsa.60.d:0 "Lithuania, Latvia and Estonia, also known as the Baltic States, are broken shards from the Russian Empire still not reunited with us. Their independence will never be justified and we need to bring them into our fold before it's too late! While a direct annexation or invasion might be considered aggressive by other foreign powers, the Politburo came up with an idea to slowly subjugate the three nations. In the end we will replace their governments and this will lead to their integration into our motherland. Let's start by demanding bases and military access!"
+ ne_skelsa.60.d:0 "Lithuania, Latvia and Estonia, also known as the Baltic States, are broken shards from the Russian Empire still not reunited with us. Their independence will never be justified and we need to bring them into our fold before it's too late! While a direct annexation or invasion might be considered aggressive by other foreign powers, the Politburo came up with an idea to slowly subjugate the three nations. In the end we will replace their governments and this will lead to their integration into our motherland. Let's start by demanding military bases and access. Either they accept or our tanks will cross the border! Considering our military power we can expect our goal soon - no matter which option is chosen."
  ne_skelsa.60.a:0 "Soon they will be ours again!"
  ne_skelsa.60.b:0 "Slowly subjugate? This will take too long!"
  
@@ -461,6 +633,7 @@ l_english:
  ne_skelsa.69.d:0 "Exciting news from [From.GetCapital] as an overwhelming majority of the people voted to reunite with the Motherland! Our troops were greeted in all major cities of [From.GetName] and the NKVD can now start to detain any fascists they find.\nThis is another glorious day in the history of our nation!"
  ne_skelsa.69.a:0 "Completely surprising news!"
  ne_skelsa.69.a:0 "We welcome them!"
+ ne_skelsa.69.b:0 "They should stay our puppet."
  
  ##Yugoslavia
  ne_misc.12.t:0 "Our Partisans continue the Fight!"

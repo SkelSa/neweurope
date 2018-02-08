@@ -1170,63 +1170,26 @@ country_event = {
 			is_claimed_by = SOV
 			is_owned_by = FIN
 		}
+		
+		##Only happens in winter - might need a lot of testing though
 		OR = {
 			AND = {
-				date > 1936.1.12
-				date < 1937.1.2
+				date > 1938.1.11
+				date < 1939.1.3
 			}
 			AND = {
-				date > 1937.1.12
-				date < 1938.1.2
+				date > 1939.1.11
+				date < 1940.1.3
 			}
 			AND = {
-				date > 1938.1.12
-				date < 1939.1.2
+				date > 1940.1.11
+				date < 1941.1.3
 			}
 			AND = {
-				date > 1939.1.12
-				date < 1940.1.2
+				date > 1941.1.11
+				date < 1942.1.3
 			}
-			AND = {
-				date > 1940.1.12
-				date < 1941.1.2
-			}
-			AND = {
-				date > 1941.1.12
-				date < 1942.1.2
-			}
-			AND = {
-				date > 1942.1.12
-				date < 1943.1.2
-			}
-			AND = {
-				date > 1943.1.12
-				date < 1944.1.2
-			}
-			AND = {
-				date > 1944.1.12
-				date < 1945.1.2
-			}
-			AND = {
-				date > 1945.1.12
-				date < 1946.1.2
-			}
-			AND = {
-				date > 1946.1.12
-				date < 1947.1.2
-			}
-			AND = {
-				date > 1947.1.12
-				date < 1948.1.2
-			}
-			AND = {
-				date > 1948.1.12
-				date < 1949.1.2
-			}
-			AND = {
-				date > 1950.1.12
-				date < 1951.1.2
-			}
+
 		}
 	}
 	
@@ -1260,6 +1223,7 @@ country_event = {
 			any_owned_state = { is_claimed_by = SOV }
 		}
 		NOT = { has_country_flag = estonia_demand }
+		NOT = { has_global_flag = neweurope_enabled } ##Disable the vanilla system
 	}
 	
 	immediate = { set_country_flag = estonia_demand } 
@@ -1291,6 +1255,7 @@ country_event = {
 			any_owned_state = { is_claimed_by = SOV }
 		}
 		NOT = { has_country_flag = latvia_demand }
+		NOT = { has_global_flag = neweurope_enabled } ##Disable the vanilla system
 	}
 	
 	immediate = { set_country_flag = latvia_demand } 
@@ -1322,6 +1287,7 @@ country_event = {
 			any_owned_state = { is_claimed_by = SOV }
 		}
 		NOT = { has_country_flag = lithuania_demand }
+		NOT = { has_global_flag = neweurope_enabled } ##Disable the vanilla system
 	}
 	
 	immediate = { set_country_flag = lithuania_demand } 
