@@ -13,7 +13,7 @@ l_english:
  ##Misc
  ne_strict_faction:0 "Stricter Faction Rules were enabled"
  
- ##Parties
+ ##Parties (by Pinkie Pie)
  PRC_communism_party:0 "CPC"
  PRC_communism_party_long:0 "Communist Party of China"
  
@@ -30,7 +30,8 @@ l_english:
  STATE_787:0 "Qingdao"
  STATE_798:0 "Southern Shaanxi"
  STATE_799:0 "Srem"
- STATE_799:0 "Suwalki"
+ STATE_800:0 "Suwalki"
+ 
  
  ##Cities
  VICTORY_POINTS_3631:0 "Ljubljana"
@@ -202,6 +203,8 @@ l_english:
  second_nato_expansion:0 "First NATO Expansion"
  nato_neighbour:0 "NATO member on our border"
  together_against_the_allies:0 "Together against the Allies!"
+ baltic_annexation:0 "Condemns the Annexation of the Baltics"
+ betrayed_us:0 "They betrayed us!"
  
  
  ##Threats:
@@ -355,7 +358,47 @@ l_english:
  ITS_neutrality_ADJ:0 "Italian"
  ITS_communism_ADJ:0 "Italian"
  
+ ##French Mandate for Syria and the Lebanon
+ FSL_fascism:0 "French Levant"
+ FSL_fascism_DEF:0 "The French Levant"
+ FSL_democratic:0 "French Mandate for Syria and the Lebanon"
+ FSL_democratic_DEF:0 "The French Mandate for Syria and the Lebanon"
+ FSL_neutrality:0 "French Mandate for Syria and the Lebanon"
+ FSL_neutrality_DEF:0 "The French Mandate for Syria and the Lebanon"
+ FSL_communism:0 "French Mandate for Syria and the Lebanon"
+ FSL_communism_DEF:0 "The French Mandate for Syria and the Lebanon"
+ FSL_fascism_ADJ:0 "Levantine"
+ FSL_democratic_ADJ:0 "Levantine"
+ FSL_neutrality_ADJ:0 "Levantine"
+ FSL_communism_ADJ:0 "Levantine"
  
+ ##Senegal (WILL BE ADDED LATER)
+ #SEN_fascism:0 ""
+ #SEN_fascism_DEF:0 ""
+ #SEN_democratic:0 ""
+ #SEN_democratic_DEF:0 ""
+ #SEN_neutrality:0 ""
+ #SEN_neutrality_DEF:0 ""
+ #SEN_communism:0 ""
+ #SEN_communism_DEF:0 ""
+ #SEN_fascism_ADJ:0 ""
+ #SEN_democratic_ADJ:0 ""
+ #SEN_neutrality_ADJ:0 ""
+ #SEN_communism_ADJ:0 ""
+ 
+ ##Ceylon name change to Sri lanka only later
+ CEY_fascism:0 "State of Ceylon"
+ CEY_fascism_DEF:0 "The State of Ceylon"
+ CEY_democratic:0 "Dominion of Ceylon"
+ CEY_democratic_DEF:0 "The Dominion of Ceylon"
+ CEY_neutrality:0 "Ceylon"
+ CEY_neutrality_DEF:0 "Ceylon"
+ CEY_communism:0 "Democratic Socialist Republic of Sri Lanka"
+ CEY_communism_DEF:0 "The Democratic Socialist Republic of Sri Lanka"
+ CEY_fascism_ADJ:0 "Ceylonese"
+ CEY_democratic_ADJ:0 "Ceylonese"
+ CEY_neutrality_ADJ:0 "Ceylonese"
+ CEY_communism_ADJ:0 "Sri Lankan"
  
  
  
@@ -401,10 +444,6 @@ l_english:
  NE_TUN_FRA_fascism_DEF:0 "French Tunisia"
  NE_TUN_FRA_communism:0 "French Tunisia"
  NE_TUN_FRA_communism_DEF:0 "French Tunisia"
- NE_TUN_FRA_neutrality_ADJ:0 "Tunisian"
- NE_TUN_FRA_democratic_ADJ:0 "Tunisian"
- NE_TUN_FRA_fascism_ADJ:0 "Tunisian"
- NE_TUN_FRA_communism_ADJ:0 "Tunisian"
  ##ITA
  NE_ITA_democratic:0 "Republic of Italy"
  NE_ITA_democratic_DEF:0 "The Republic of Italy"
@@ -419,6 +458,15 @@ l_english:
  ##IND
  NE_IND_democratic:0 "Republic of India"
  NE_IND_democratic_DEF:0 "The Republic of India"
+ ##British Ceylon Name will go away after 1948 
+ NE_CEY_fascism:0 "Free Ceylon"
+ NE_CEY_fascism_DEF:0 "Free Ceylon"
+ NE_CEY_democratic:0 "British Ceylon"
+ NE_CEY_democratic_DEF:0 "British Ceylon"
+ NE_CEY_neutrality:0 "British Ceylon"
+ NE_CEY_neutrality_DEF:0 "British Ceylon"
+ NE_CEY_communism:0 "Autonomous Region of Sri Lanka"
+ NE_CEY_communism_DEF:0 "The Autonomous Region of Sri Lanka"
  ##Indochina - name changes are different in French ##Indochinese Federation
  NE_ICU_democratic:0 " Indochinese Union"
  NE_ICU_democratic_DEF:0 "The  Indochinese Union"

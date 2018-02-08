@@ -148,18 +148,23 @@ news_event = {
 		##Adding state cores
 		CAN = {		
 			
-			add_state_core = 331
 			add_state_claim = 331
-			add_state_core = 332
 			add_state_claim = 332
 			
 		}
 		
-		EGY = {		
-			
-			add_state_core = 777
-			add_state_claim = 777
-			
+		EGY = {					
+			add_state_claim = 777		
+		}
+		
+		GRE = {					
+			add_state_core = 183
+			add_state_core = 795
+		}
+		
+		TUR = {					
+			add_state_core = 183
+			add_state_core = 795			
 		}
 		
 

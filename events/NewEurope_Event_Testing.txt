@@ -494,7 +494,15 @@ country_event = {
 			}			
 		}
 
-		annex_country = { target = FROM } 		
+		annex_country = { target = FROM }	##annex the baltic country
+		
+		every_state = {						##gain cores on the territory
+			limit = {
+				is_core_of = FROM
+			}
+			SOV = { add_state_core = PREV }
+		}
+ 		
 		
 	}
 	

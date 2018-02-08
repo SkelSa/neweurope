@@ -274,15 +274,23 @@ opinion_modifiers = {
 	}
 	
 	second_nato_expansion = {
-		value = -30
+		value = -25
 	}
 	
 	nato_neighbour = {
-		value = -35
+		value = -30
 	}
 
 	liberation_army_formation = {
 		value = 50
+	}
+	
+	baltic_annexation = {
+		value = -8
+	}
+	
+	betrayed_us = {
+		value = -30
 	}
 	
 	

@@ -1185,7 +1185,7 @@ country_event = {
 			is_subject = no
 			has_government = communism
 			
-			date > 1948.1.11
+			date > 1947.1.11
 		}
 	
 	
