@@ -1,5 +1,5 @@
 ﻿##New events by Takee here!
-##test change
+##Hi! How are you?
 
 add_namespace = ne_takee
 
