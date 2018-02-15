@@ -28,6 +28,23 @@ news_event = {
 			set_research_slots = 3
 		}
 		
+		##Danzig puppet	
+		POL = {		
+			if = {			
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				
+				set_autonomy = {
+					target = DAN
+					autonomous_state = autonomy_integrated_puppet
+				}
+
+			}
+			
+			puppet = DAN								
+		}
+		
 		##Soviet puppets
 		SOV	= {
 		
@@ -52,12 +69,67 @@ news_event = {
 			
 		}
 		
-		##American puppet Liberia
+		##American puppet Liberia, Philippines
 		USA = {	
-			puppet = LIB	
+
+			if = {			
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				
+				set_autonomy = {
+					target = LIB
+					autonomous_state = autonomy_colony
+				}
+				
+				set_autonomy = {
+					target = PHI
+					autonomous_state = autonomy_dominion
+				}
+			}
+			
+			puppet = LIB
+			puppet = PHI
+			
 		}
 		
-		##British puppets: YEM, OMA, NEP, BHU				
+		##French puppets (Tunisia, Syria, Lebanon, Morocco)
+		FRA = {	
+
+			if = {			
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				
+				set_autonomy = {
+					target = TUN
+					autonomous_state = autonomy_colony
+				}
+				
+				set_autonomy = {
+					target = MOR
+					autonomous_state = autonomy_colony
+				}
+				
+				set_autonomy = {
+					target = LEB
+					autonomous_state = autonomy_dominion
+				}
+				
+				set_autonomy = {
+					target = SYR
+					autonomous_state = autonomy_dominion
+				}
+			}
+			
+			puppet = TUN
+			puppet = MOR
+			puppet = LEB
+			puppet = SYR
+			
+		}
+		
+		##British puppets: OMA, NEP, BHU				
 		ENG = {		
 			if = {			
 				limit = {
@@ -66,11 +138,6 @@ news_event = {
 				
 				set_autonomy = {
 					target = EGY
-					autonomous_state = autonomy_dominion
-				}
-				
-				set_autonomy = {
-					target = YEM
 					autonomous_state = autonomy_dominion
 				}
 				
@@ -86,7 +153,7 @@ news_event = {
 				
 				set_autonomy = {
 					target = BHU
-					autonomous_state = autonomy_puppet
+					autonomous_state = autonomy_dominion
 				}
 			}
 		
@@ -96,9 +163,22 @@ news_event = {
 			puppet = NEP
 			puppet = BHU
 			
+			add_to_faction = IRQ
+			
+			if = {
+				limit = { has_dlc = "Together for Victory" }
+
+				EGY = { add_to_tech_sharing_group = commonwealth_research }
+				OMA = { add_to_tech_sharing_group = commonwealth_research }
+				NEP = { add_to_tech_sharing_group = commonwealth_research }
+				BHU = { add_to_tech_sharing_group = commonwealth_research }
+				IRQ = { add_to_tech_sharing_group = commonwealth_research }
+				
+			}
+			
 		}
 		
-		##EGY goes neutral puppet
+		##Further chnages for new puppets	
 		EGY = {
 			
 			load_oob = EGY_1936		
@@ -106,8 +186,7 @@ news_event = {
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
 			add_popularity = { ideology = neutrality popularity = 0.76 } 
 		}
-		
-		##ENG puppets go neutrality
+				
 		YEM = {		
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
 			add_popularity = { ideology = neutrality popularity = 0.85 } 
@@ -128,22 +207,22 @@ news_event = {
 			add_popularity = { ideology = neutrality popularity = 0.90 } 
 		}
 		
-		##DAN puppet	
-		POL = {		
-			if = {			
-				limit = {
-					has_dlc = "Together for Victory"
-				}
-				
-				set_autonomy = {
-					target = DAN
-					autonomous_state = autonomy_integrated_puppet
-				}
-
-			}
-			
-			puppet = DAN								
+		SYR = {		
+		
+			set_cosmetic_tag = NE_SYR_FRA ##Syrian Republic
+		
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 0.90 } 
 		}
+		
+		LEB = {		
+		
+			set_cosmetic_tag = NE_LEB_FRA
+			
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 0.90 } 
+		}
+			
 		
 		##Adding state cores
 		CAN = {		

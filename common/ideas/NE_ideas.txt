@@ -290,7 +290,7 @@ ideas = {
 		
 		NE_alone = {
 
-			picture = staff_of_sameness
+			picture = FRA_scw_intervention_nationalists_focus
 
 			allowed = {
 				always = no # Triggered via event
@@ -298,7 +298,7 @@ ideas = {
 
 			modifier = {
 				
-				ai_focus_aggressive_factor = -0.5
+				ai_focus_aggressive_factor = -1
 				ai_get_ally_desire_factor = -100000
 				ai_call_ally_desire_factor = -100000
 				ai_join_ally_desire_factor = -100000
@@ -308,7 +308,7 @@ ideas = {
 		
 		NE_desperate_defense = {
 
-			picture = FRA_national_mobilization_focus
+			picture = idea_generic_reserve_divisions
 
 			allowed = {
 				always = no # Triggered via event

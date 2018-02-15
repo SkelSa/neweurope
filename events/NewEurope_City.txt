@@ -376,7 +376,7 @@ country_event = {
 }
 
 
-##Kill Stalin, Hail trotsky
+##Kill Stalin, Hail Trotsky
 country_event = {
 	id = ne_city.3
 	title = ne_city.3.t

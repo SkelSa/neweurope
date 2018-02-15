@@ -109,8 +109,27 @@ on_actions = {
 	on_declare_war = {
 		effect = {
 		
+			##remove neutrality spirit when at war (does not apply for DPRK, KOR or JAP )
+			if = {
+				limit = {					
+					has_idea = NE_neutrality
+
+					NOT = {		
+						tag = JAP
+						tag = DPR
+						tag = KOR
+					}
+					
+				}
 			
-			##Vichy France gets new color and name when flag was activated; also gets historical colonies
+				remove_ideas = NE_neutrality 
+			}
+			
+			
+			
+			
+			
+			##Vichy France is established; also gets historical colonies
 			if = {
 				limit = {
 					

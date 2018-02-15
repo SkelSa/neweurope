@@ -153,41 +153,9 @@ country_event = {
 	}
 }
 
+##ne_fix.9 is free! Buy now!
 
-
-##delete neutrality flags, if at war (exception for KOR, DPR, JAP)
-country_event = {
-	id = ne_fix.9
-	
-	hidden = yes	
-	#fire_only_once = yes
-	
-	trigger = {
-	
-		has_idea = NE_neutrality
-		has_war = yes
-		
-		NOT = {		
-			tag = JAP
-			tag = DPR
-			tag = KOR
-		}
-		
-		NOT = { has_country_flag = NE_neutrality_removed }
-
-	}
-	
-	immediate = {	
-		set_country_flag = NE_neutrality_removed	
-	}
-	
-	option = {	
-		remove_ideas = NE_neutrality		
-	}
-}
-
-
-##puppet the occupation zones
+##Puppet the occupation zones
 country_event = {
 	id = ne_fix.10
 	

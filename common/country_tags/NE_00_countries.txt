@@ -28,4 +28,23 @@ BUR = "countries/Burma.txt"
 POZ = "countries/PolishOccupationZone.txt"
 ROA = "countries/ROA.txt"
 MOR = "countries/Morocco.txt"
+##12 unfinished countries
+ICU = "countries/Indochina.txt"
+ALG = "countries/Algeria.txt"
+TUN = "countries/Tunisia.txt"
+VCH = "countries/VichyFrance.txt"
+ETR = "countries/TurkestanRepublic.txt"
+ZAM = "countries/Zambia.txt"
+DRV = "countries/RedVietnam.txt"
+HAT = "countries/Hatay.txt"
+ITS = "countries/ItalianSocialRepublic.txt"
+FSL = "countries/FrenchMandate.txt"	##NATION OBSOLETE
+SEN = "countries/Senegal.txt"
+CEY = "countries/Ceylon.txt"
+##Next 5 countries
+#MAD =  "countries/Madagascar.txt" (Malagasy Republic)
+#SUD =  "countries/Sudan.txt"
+#GHA =  "countries/Ghana.txt"
+#FWA =  "countries/FrenchWestAfrica.txt"
 
+##Lybia was created through several other states. The Real Lybia should have a cosmetic flag, so there are only two other half-countries.

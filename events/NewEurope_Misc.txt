@@ -112,9 +112,7 @@ country_event = {
 	title = ne_misc.3.t
 	desc =  ne_misc.3.d
 	picture = GFX_report_event_soviet_invasion_map
-
-	#is_triggered_only = yes	
-	#fire_only_once = yes
+	
 
 	trigger = {
 
@@ -123,18 +121,14 @@ country_event = {
 		
 		OR = {
 			
-			AND = {
-				
+			AND = {				
 				controls_state = 331
-				owns_state = 331
-				
+				owns_state = 331				
 			}
 
-			AND = {
-				
+			AND = {				
 				controls_state = 332
-				owns_state = 332
-				
+				owns_state = 332			
 			}
 			
 		}
@@ -241,22 +235,26 @@ country_event = {
 	option = { # Accept
 		name = ne_misc.4.a
 		ai_chance = { factor = 98 }
-		add_political_power = 15
-
+		
+			add_political_power = 15
 
 		##in theory ROOT should work, but i doesn't...very strange
 		
 	if = {
-					limit = { FROM = { controls_state = 331 } }
-					transfer_state = 331
-					add_state_core = 331
-				}
+		limit = { FROM = { controls_state = 331 } }
+		
+		transfer_state = 331
+		add_state_core = 331
+		
+		}
 				
 	if = {
-					limit = { FROM = { controls_state = 332 } }
-					transfer_state = 332
-					add_state_core = 332
-				}
+		limit = { FROM = { controls_state = 332 } }
+			
+		transfer_state = 332
+		add_state_core = 332
+		
+		}
 
 	}
 
@@ -264,7 +262,6 @@ country_event = {
 }
 
 ##Owner says NO
-
 country_event = {
 	id = ne_misc.5
 	title = ne_misc.5.t
@@ -289,6 +286,9 @@ country_event = {
 
 ##country in civil war can ask for assistance in a war, can either ask PRC/SOV or USA/ENG
 ##democracies ask democracies, communists ask communists, neutrality asks no one, fascist gets no support
+
+####THESE EVENTS DON'T WORK PROPERLY THUS MIGHT NEED REWORK
+
 country_event = {
 	id = ne_misc.6
 	title = ne_misc.6.t
@@ -1116,7 +1116,7 @@ country_event = {
 
 
 
-##Remove influences once fascism/democracy has been defeated
+##Remove influences once fascism/democracy has been defeated (triggered through on_actions)
 country_event = {
 	id = ne_misc.17
 	title = ne_misc.17.t

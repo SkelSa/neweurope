@@ -241,6 +241,54 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_hitler_bridge.dds"
 	}
 	
+	##Setup events
+	spriteType = {		
+		name = "GFX_no_historical_focuses"
+		texturefile = "gfx/event_pictures/report_event_no_historical_focuses.dds"
+	}
+	
+	spriteType = {		
+		name = "GFX_fascist_selected"
+		texturefile = "gfx/event_pictures/report_event_fascist_selected.dds"
+	}
+	
+	##Soviet annexation of the Baltics
+	spriteType = {		
+		name = "GFX_soviets_entering_wilno"
+		texturefile = "gfx/event_pictures/report_event_soviets_entering_wilno.dds"
+	}
+	
+	spriteType = {		
+		name = "GFX_lithuanian_soldiers_vilnius"
+		texturefile = "gfx/event_pictures/report_event_lithuanian_soldiers_vilnius.dds"
+	}
+	
+	spriteType = {		
+		name = "GFX_baltic_annexation"
+		texturefile = "gfx/event_pictures/report_event_baltic_annexation.dds"
+	}
+	
+	#LoN
+	
+	spriteType = {		
+		name = "GFX_lon"
+		texturefile = "gfx/event_pictures/report_event_lon.dds"
+	}
+	
+	#MR Pact was changed!
+	
+	spriteType = {		
+		name = "GFX_changed_mr_pact"
+		texturefile = "gfx/event_pictures/report_event_changed_mr_pact.dds"
+	}
+	
+	#Development of the T-34 and KV-1
+	
+	spriteType = {		
+		name = "GFX_t34"
+		texturefile = "gfx/event_pictures/report_event_t34.dds"
+	}
+	
 	##News Event ##UNUSED
 	spriteType = {
 		name = "GFX_soviet_invasion_pol_news"

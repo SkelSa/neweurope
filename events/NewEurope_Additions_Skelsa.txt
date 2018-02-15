@@ -5,6 +5,7 @@ add_namespace = ne_skelsa
 add_namespace = ne_faction
 add_namespace = ne_flag
 add_namespace = namespace
+add_namespace = ne_city
 
 
 
@@ -1253,15 +1254,12 @@ country_event = {
 
 
 
-
-
-
 ##ne_skelsa.75: Player not in historical focus!
 country_event = {
 	id = ne_skelsa.75
 	title = ne_skelsa.75.t
 	desc = ne_skelsa.75.d
-	picture = GFX_report_event_soviet_invasion_map
+	picture = GFX_report_event_no_historical_focuses
 
 	is_triggered_only = yes
 
@@ -1334,6 +1332,8 @@ country_event = {
 			}			
 		}
 
+		##Add country flag to Yugoslavia
+		YUG = { set_country_flag = ne_axis_occupied }	
 			
 			##GERMANY					
 			if = {
@@ -1687,6 +1687,8 @@ country_event = {
 			}			
 		}
 			
+		##Add country flag to Greece
+		GRE = { set_country_flag = ne_axis_occupied }
 			
 			##GERMANY					
 			if = {
@@ -1842,6 +1844,331 @@ country_event = {
 }
 
 
+##SOV: Propose to Germany a change in the M-R Pact
+country_event = {
+	id = ne_skelsa.80
+	title = ne_skelsa.80.t
+	desc =  ne_skelsa.80.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#AFTER ALL THESE CENTURIES WE'RE FREE!
+		name = ne_skelsa.80.a
+
+		##Effects
+		add_political_power = 125
+		add_national_unity = 0.10
+			
+	}
+
+	
+}
+
+
+
+##GER: is informed about Soviet proposal
+country_event = {
+	id = ne_skelsa.82
+	title = ne_skelsa.82.t
+	desc =  ne_skelsa.82.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#We'll do this
+		name = ne_skelsa.82.a
+
+		##Effects
+		add_political_power = 125
+		add_national_unity = 0.10
+			
+	}
+
+	
+}
+
+
+
+##SOV: is informed that it was kicked out of the LON (triggered by Winter War)
+country_event = {
+	id = ne_skelsa.85
+	title = ne_skelsa.85.t
+	desc =  ne_skelsa.85.d
+	picture = GFX_lon
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#pp loss (small)
+		name = ne_skelsa.85.a
+
+		##Effects
+		add_political_power = -10
+			
+	}
+
+	
+}
+
+
+
+##SOV: T-34 and KV-1 development
+country_event = {
+	id = ne_skelsa.86
+	title = ne_skelsa.86.t
+	desc =  ne_skelsa.86.d
+	picture = GFX_t34
+
+	trigger = {
+		tag = SOV
+		date > 1940.1.31 
+		
+		#Conditions might need a check
+		NOT = { has_tech = improved_medium_tank  }
+		NOT = {  has_tech = basic_heavy_tank  }
+	
+	}
+	
+	fire_only_once = yes
+
+	
+	option = {	#gain army experience, 150 tanks and tech
+		name = ne_skelsa.86.a
+
+		##Effects
+		army_experience = 15
+		add_equipment_to_stockpile = { type = medium_tank_equipment_2  amount = 117 producer = SOV } 
+		add_equipment_to_stockpile = { type = heavy_tank_equipment_1  amount = 50 producer = SOV }
+		
+		set_technology = { improved_medium_tank = 1 } 
+		set_technology = { basic_heavy_tank = 1 } 
+		
+	}
+
+	
+}
+
+
+
+##SOV, CHI: Get spirit "desperate defense"
+country_event = {
+	id = ne_skelsa.87
+	title = ne_skelsa.87.t
+	desc =  ne_skelsa.87.d
+	picture = GFX_report_event_swedish_soldier
+
+	trigger = {
+	
+		OR = {
+			tag = SOV
+			tag = CHI
+		}
+	
+		NOT = { has_idea = NE_desperate_defense }
+		NOT = { has_country_flag = ne_desperate_defense }
+		surrender_progress > 0.60 
+		 
+	
+	}	
+	
+	
+	immediate = { set_country_flag = ne_desperate_defense }
+	
+	
+	option = {		##We will defend our home atall costs
+		name = ne_skelsa.87.a
+
+		##Effects
+		 	add_ideas = NE_desperate_defense 
+		add_political_power = -20		
+		add_manpower = 20000
+		
+		if = {
+			limit = { has_national_unity < 80 }
+		}
+		
+		add_national_unity = 0.10
+	}
+
+	
+}
+
+
+
+##SOV, CHI: Lose spirit "desperate defense"
+country_event = {
+	id = ne_skelsa.88
+	title = ne_skelsa.88.t
+	desc =  ne_skelsa.88.d
+	picture = GFX_report_event_swedish_soldier
+
+
+	trigger = {
+	
+		OR = {
+			tag = SOV
+			tag = CHI
+		}
+	
+		has_idea = NE_desperate_defense
+		#NOT = { has_country_flag = lost_desperate_defense } TEST
+		surrender_progress < 0.40 
+		 
+	
+	}
+
+	#immediate = { set_country_flag = lost_desperate_defense } TEST
+	
+	
+	option = {	#lose spirit
+		name = ne_skelsa.88.a
+
+		##Effects
+		remove_ideas = NE_desperate_defense
+			
+	}
+
+	
+}
+
+
+
+##Hidden Event for GRE and YUG so Axis lose their claims there
+country_event = {
+	id = ne_skelsa.89
+	
+	hidden = yes
+
+
+	trigger = {
+	
+		OR = {
+			tag = GRE
+			tag = YUG
+		}
+		
+		has_country_flag = ne_axis_occupied
+	
+		NOT = { has_country_flag = freed_from_axis_occupation } 
+		
+		surrender_progress < 0.05
+			 
+	
+	}
+
+	immediate = { set_country_flag = freed_from_axis_occupation } 
+	
+	
+	option = {	#Axis lose claims
+		#name = ne_skelsa.88.a
+
+		##Effects TESTING	
+		if = {
+			limit = { tag = GRE }
+		}
+		
+		every_state = {
+			limit = {
+				is_core_of = GRE
+				OR = {
+					is_claimed_by = GER
+					is_claimed_by = ITA
+					is_claimed_by = BUL
+					is_claimed_by = HUN
+					is_claimed_by = CRO
+				}
+			}
+			
+			every_country = {
+				limit = {
+					any_state = {
+						is_core_of = GRE
+						is_claimed_by = PREV				
+					}
+				
+				}
+			
+			remove_state_claim = PREV
+			}
+					
+		}
+
+		if = {
+			limit = { tag = YUG }
+		}
+		
+		every_state = {
+			limit = {
+				is_core_of = YUG
+				OR = {
+					is_claimed_by = GER
+					is_claimed_by = ITA
+					is_claimed_by = BUL
+					is_claimed_by = HUN
+					is_claimed_by = CRO
+				}
+			}
+			
+			every_country = {
+				limit = {
+					any_state = {
+						is_core_of = YUG
+						is_claimed_by = PREV				
+					}
+				
+				}
+			
+			remove_state_claim = PREV
+			}
+		}
+	}
+
+	
+}
+
+
+
+##ne_skelsa.90 is about Metaxas' death event chain
+
+##Metaxa dies (Before Fall of Athens)
+country_event = {
+	id = ne_skelsa.90
+	title = ne_skelsa.90.t
+	desc =  ne_skelsa.90.d
+	picture = GFX_somepic ##search for a pic of Metaxas
+
+	fire_only_once = yes
+
+	trigger = {
+	
+		tag = GRE
+		has_war_with = GER
+		has_war_with = ITA
+		surrender_progress > 0.05
+		has_country_leader = { name = "Ioannis Metaxas" }
+	
+	}
+	
+	
+	option = {	#nu loss (small)
+		name = ne_skelsa.90.a
+
+		##Effects
+		add_national_unity = -0.02
+			
+	}
+
+	
+}
+
+
+
 ##India gets event about her independence
 country_event = {
 	id = ne_skelsa.7
@@ -1963,6 +2290,36 @@ country_event = {
 		name = ne_flag.1.a
 		
 		
+	}
+	
+}
+
+
+##Vyborg (might need better id)
+country_event = {
+	id = ne_city.30
+	title = ne_city.30.t
+	desc = ne_city.30.d
+	picture = GFX_report_event_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = SOV
+		owns_state = 146
+		NOT = { has_global_flag = renamed_vyborg }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.1.a
+		set_province_name = { id = 9206 name = vyborg }
+		set_global_flag = renamed_vyborg
 	}
 	
 }

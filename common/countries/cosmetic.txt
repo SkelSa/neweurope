@@ -1,6 +1,6 @@
 
 MAL_UK = {
-    color = rgb { 201 56 93 }
+    color = rgb { 201 56 93 } 
     color_ui = rgb { 255 73 121 }
 }
 
@@ -32,8 +32,18 @@ NE_INDIA = {
 }
 
 NE_VICHY = {
-    color = rgb { 0 0 240 }
+    color = rgb { 0 0 240 } ##Darker blue (Kosovo-Blue from MD)
     color_ui = rgb { 0 0 240 }
+}
+
+NE_LEB_FRA = {
+    color = rgb { 0 40 255 }
+    color_ui = rgb { 0 40 255 }
+}
+
+NE_SYR_FRA = {
+    color = rgb { 0 40 255 }
+    color_ui = rgb { 0 40 255 }
 }
 
 NE_KOR = {
@@ -67,7 +77,7 @@ NE_RUS = {
 }
 
 
-##ssr (SOV has 125  13  24  )
+##SSR (SOV has 125  13  24  )
 NE_LIT_SSR = {
 	color = rgb { 136 15 25 }
 	color_ui = rgb { 136 15 25 }
@@ -137,6 +147,9 @@ NE_KGZ_SSR = {
 	color = rgb { 136 15 25 }
 	color_ui = rgb { 136 15 25 }
 }
+
+
+
 
 NE_IND_BUR = {
 	color = rgb { 232 131 0 }

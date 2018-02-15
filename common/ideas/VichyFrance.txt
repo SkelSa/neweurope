@@ -1,0 +1,441 @@
+ideas = {
+
+	##Check which politicians stayed with Vichy
+
+	# POLITICAL
+	political_advisor = {	
+			
+		##fascist
+		VCH_marcel_bucard = {
+			
+			
+			allowed = {
+				original_tag = VCH
+			}
+			available ={
+				has_completed_focus = FRA_right_wing_rhetoric
+			}
+			
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		##diplomat between the us and vichy
+		VCH_gaston_henry_haye = {
+			
+			allowed = {
+				original_tag = VCH
+			}
+			
+			picture = generic_political_advisor_europe_5
+			
+			traits = { silent_workhorse }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	
+
+		##Vichy foreign minister
+		VCH_paul_baudouin = {
+			
+			allowed = {
+				original_tag = VCH
+			}
+			
+			picture = generic_political_advisor_europe_3
+			
+			traits = { smooth_talking_charmer }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+	
+	}
+		
+	# MILITARY
+	army_chief = {
+		
+		##maurice gamelin not vichy
+
+		VCH_maxime_weygand = {
+			
+			
+			allowed = {
+				original_tag = VCH
+			}
+			available = {
+				has_completed_focus = FRA_defensive_focus
+			}
+
+			cost = 50
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		##not enough info, he can stay vichy
+		VCH_henri_marie_auguste_bineau = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = VCH
+			}
+			
+
+			
+			traits = { army_chief_offensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		###not enough info, can stay vichy too
+		VCH_pierre_alombert_goget = {
+			
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = VCH
+			}
+			
+
+			
+			traits = { army_chief_defensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+		
+		
+	}
+	navy_chief = {
+		
+		##vichy
+		VCH_francois_darlan = {
+			
+			
+			allowed = {
+				original_tag = VCH
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		##marcel_gensoul : allegiance not very specific, retired shortly after
+
+		VCH_jean_marie_abrial = {
+			
+			
+			allowed = {
+				original_tag = VCH
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+
+	air_chief = {
+			
+		##not enough info, can stay vichy (so vichy has at least an air chief)
+		VCH_robert_odic = {
+			
+			
+			allowed = {
+				original_tag = VCH
+			}
+			
+
+			
+			traits = { air_chief_all_weather_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		##philippe_fequant died in 1938. Great research you did there Paradox!
+
+	}
+	
+	high_command = {
+		
+		##anti-semite, Vichy
+		VCH_charles_huntziger = {
+			
+			
+			allowed = {
+				original_tag = VCH
+			}
+			
+
+			
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		
+		##jean_francois_jannekeyn not enough info but I guess he stayed to the Free French
+	
+		
+		##scuttled the french fleet, Vichy
+		VCH_jean_de_laborde = {
+			
+			
+			allowed = {
+				original_tag = VCH
+			}
+			
+
+			
+			traits = { navy_capital_ship_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+		##rene emile godfroy weird guy. Didn't support the Free French or Vichy. Will not be Vichy as he joined the Free French in 1943
+
+	}
+	
+	tank_manufacturer = {
+
+		designer = yes
+	
+		# TECHNOLOGY
+
+		##Renault didn't produce tanks for the Germans, only trucks. Maybe change trait
+		VCH_renault = {
+		
+			picture = renault
+						
+			allowed = {
+				original_tag = VCH
+			}
+						
+			research_bonus = {
+				armor = 0.10
+			}
+			
+
+			traits = { motorized_equipment_manufacturer }
+		}
+	
+		##despite as good as no info, AMX may stay
+		VCH_AMX = {
+		
+			picture = generic_tank_manufacturer_2
+
+			available = {
+				has_completed_focus = FRA_army_reform
+			}
+						
+			allowed = {
+				original_tag = VCH
+			}
+						
+			research_bonus = {
+				armor = 0.10
+			}
+			
+
+			traits = { fast_tank_manufacturer }
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		##somua was removed; seat in Paris, no real production and few info
+		
+		##MAS was left here, despite no real info about them concerning Vichy
+		VCH_mas = {
+						
+			allowed = {
+				original_tag = VCH
+			}
+						
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+	
+		##Schneider was removed too, also very few info about WW2
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		##produced for the Germans
+		VCH_morane_saulnier = {
+			
+			allowed = {
+				original_tag = VCH
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		##no clear info, but assumably stayed with Vichy
+		VCH_bloch = {
+						
+			allowed = {
+				original_tag = VCH
+			}
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		##stayed to the Germans
+		VCH_amiot = {
+						
+			allowed = {
+				original_tag = VCH
+			}
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		
+		##Levasseur was removed, no clear info about them
+		
+	}
+	naval_manufacturer = {
+
+		designer = yes
+		
+		##again, no clear info but they may stay
+		VCH_fcm = {
+						
+			allowed = {
+				original_tag = VCH
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+	
+	industrial_concern = {	
+		
+		##no clear info, but they may stay
+		VCH_famh = {
+						
+			allowed = {
+				original_tag = VCH
+			}
+						
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+		}
+	}
+	
+	
+	theorist = {
+		
+		
+		##governor of indochina
+		VCH_jean_decoux = {
+			
+			
+			allowed = {
+				original_tag = VCH
+			}
+			
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		#victor denain, not enough info but he had no real impact probably
+		
+		VCH_jean_marie_bergeret = {
+						
+			allowed = {
+				original_tag = VCH
+			}
+						
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}	
+}

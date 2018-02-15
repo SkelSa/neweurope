@@ -1,0 +1,131 @@
+﻿capital = 545 ##Somewhere in southern Africa, might want to check for ZIMBABWE, BOTSWANA and ZAMBIA
+
+oob = "RHO_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_research_slots = 2 ##will gain the other three through the focus tree
+
+set_convoys = 5
+
+set_national_unity = 0.5
+
+1939.1.1 = {
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "RHO_1939"
+
+	set_technology = {
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+
+##Neutrality reigns over this country (1936 and 1939 should be the same)
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+		}
+
+		neutrality = {
+			popularity = 100
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+
+##Democratic leader
+create_country_leader = {
+	name = "Nameless Clerk"
+	#picture = "Portrait_France_Charles_De_Gaulle.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+##Neutrality Leader
+create_country_leader = {
+	name = "Nameless Clerk"
+	#picture = "Portrait_France_Charles_De_Gaulle.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+##Communist Leader
+create_country_leader = {
+	name = "Nameless Clerk"
+	#picture = "Portrait_France_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = 	stalinism
+	traits = {
+		
+	}
+}
+
+##Fascist Leader
+create_country_leader = {
+	
+	name = " Marcus James Hugins"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {	
+		prince_of_terror		
+	}
+	
+}
+
+
+

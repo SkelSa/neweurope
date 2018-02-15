@@ -1,4 +1,4 @@
-﻿##Needs to be taken from the game files due to the capital issue, also modifying the research slots
+﻿##Needs to be taken from the game files due to the capital issue, also modifying the research slots and oob
 capital = 51
 
 # Starting tech
@@ -40,10 +40,9 @@ set_technology = {
 }
 
 
+oob = "WGR_oob"
 
-
-
-set_research_slots = 3
+set_research_slots = 2
 set_convoys = 50
 set_national_unity = 0.7
 

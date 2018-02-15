@@ -1055,20 +1055,25 @@ country_event = {
 					has_global_flag = Neutrality_chosen
 				}
 				
-				TUR = {add_ideas = NE_neutrality}
-				SWE = {add_ideas = NE_neutrality}
-				SWI = {add_ideas = NE_neutrality}
-				IRE = {add_ideas = NE_neutrality}
-				YEM = {add_ideas = NE_neutrality}
-				OMA = {add_ideas = NE_neutrality}
-				BHU = {add_ideas = NE_neutrality}
-				NEP = {add_ideas = NE_neutrality}
-				TIB = {add_ideas = NE_neutrality}
-				SIK = {add_ideas = NE_neutrality}				
-				FIN = {add_ideas = NE_neutrality}
-				EST = {add_ideas = NE_neutrality}
-				LAT = {add_ideas = NE_neutrality}
-				LIT = {add_ideas = NE_neutrality}				
+				TUR = { add_ideas = NE_neutrality }
+				SWE = { add_ideas = NE_neutrality }
+				SWI = { add_ideas = NE_neutrality }
+				IRE = { add_ideas = NE_neutrality }				
+				YEM = { add_ideas = NE_neutrality }
+				OMA = { add_ideas = NE_neutrality }
+				BHU = { add_ideas = NE_neutrality }
+				NEP = { add_ideas = NE_neutrality }
+				TIB = { add_ideas = NE_neutrality }
+				SIK = { add_ideas = NE_neutrality }				
+				FIN = { add_ideas = NE_neutrality }
+				EST = { add_ideas = NE_neutrality }
+				LAT = { add_ideas = NE_neutrality }
+				LIT = { add_ideas = NE_neutrality }	
+				IRQ = { add_ideas = NE_neutrality }
+				
+				IRQ = { add_ideas = NE_alone }
+				BHU = { add_ideas = NE_alone }
+				
 			}
 			
 			

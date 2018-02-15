@@ -38,7 +38,7 @@ country_event = {
 	mean_time_to_happen = {	days = 35 }
 	
 	
-	option = {	# force baltics to agree to military access. EST and SOV will guarantee each other
+	option = {	# force Baltics to agree to military access. EST and SOV will guarantee each other
 		name = ne_skelsa.60.a
 		ai_chance = {
 			factor = 50
@@ -299,6 +299,9 @@ country_event = {
 				}		
 			
 			}
+			
+			##USA will get an event in 3 days
+			USA = { country_event = { days = 3 id = ne_skelsa.82 } }
 
 		}
 		
@@ -521,5 +524,65 @@ country_event = {
 		
 	}
 	
+	
+}
+
+
+
+##USA: US condemns Soviet expansionism 
+country_event = {
+	id = ne_skelsa.83
+	title = ne_skelsa.83.t
+	desc =  ne_skelsa.83.d
+	picture = GFX_report_event_FDR_speech
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	
+		USA = { 
+			exists = yes 
+			NOT = { has_opinion = { target = SOV value > 40 } }
+		}
+		
+		SOV = { has_war = yes }
+		
+	}
+	
+	option = {	#negative opinion modifier
+		name = ne_skelsa.83.a
+
+		##Effects
+		add_political_power = 5
+		add_opinion_modifier = { target = SOV modifier = baltic_annexation } 
+		SOV = { country_event = { days = 1 id = ne_skelsa.82 } }
+			
+	}
+
+	
+}
+
+
+
+##SOV: is informed about US' condemnation
+country_event = {
+	id = ne_skelsa.84
+	title = ne_skelsa.84.t
+	desc =  ne_skelsa.84.d
+	picture = GFX_report_event_FDR_speech
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#pp loss (small)
+		name = ne_skelsa.84.a
+
+		##Effects
+		add_political_power = -20
+			
+	}
+
 	
 }
