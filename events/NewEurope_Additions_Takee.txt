@@ -255,7 +255,7 @@ country_event = {
 	id = ne_takee.3
 	title = ne_takee.3.t
 	desc = ne_takee.3.d
-	picture = GFX_report_event_fascist_selected
+	picture = GFX_fascist_selected
 	
 	is_triggered_only = yes
 	
