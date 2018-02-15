@@ -20,7 +20,7 @@ country_event = {
 	id = ne_faction.1
 	title = ne_faction.1.t
 	desc = ne_faction.1.d
-	picture = GFX_report_event_finnish_soldiers_snow
+	picture = GFX_finnish_soldiers_snow
 
 	hidden = yes
 	fire_only_once = yes
@@ -848,7 +848,7 @@ country_event = {
 	id = germany.14
 	title = germany.14.t
 	desc = germany.14.d
-	picture = GFX_report_event_german_troops
+	picture = GFX_german_troops
 	
 	fire_only_once = yes
 
@@ -1126,7 +1126,7 @@ country_event = {
 	id = germany.15
 	title = germany.15.t
 	desc = germany.15.d
-	picture = GFX_report_event_soviet_german_soldier_handshake
+	picture = GFX_soviet_german_soldier_handshake
 
 	is_triggered_only = yes
 	
@@ -1151,7 +1151,7 @@ country_event = {
 	id = germany.16
 	title = germany.16.t
 	desc = germany.16.d
-	picture = GFX_report_event_german_troops
+	picture = GFX_german_troops
 
 	is_triggered_only = yes
 	
@@ -1229,7 +1229,7 @@ country_event = {
 	id = ne_skelsa.59
 	title = ne_skelsa.59.t
 	desc =  ne_skelsa.59.d
-	picture = GFX_report_event_soviet_in_riga
+	picture = GFX_soviet_in_riga
 
 	fire_only_once = yes
 	
@@ -1259,7 +1259,7 @@ country_event = {
 	id = ne_skelsa.75
 	title = ne_skelsa.75.t
 	desc = ne_skelsa.75.d
-	picture = GFX_report_event_no_historical_focuses
+	picture = GFX_no_historical_focuses
 
 	is_triggered_only = yes
 
@@ -1278,7 +1278,7 @@ country_event = {
 	id = ne_skelsa.76
 	title = ne_skelsa.76.t
 	desc = ne_skelsa.76.d ##The articifial product of Versailles is now gone. Give minorities to our allies. No longer suppressed. Mistakes of Versailles undone
-	picture = GFX_report_event_yugoslavian_split
+	picture = GFX_yugoslavian_split
 
 	fire_only_once = yes
 	
@@ -1632,7 +1632,7 @@ country_event = {
 	id = ne_skelsa.77
 	title = ne_skelsa.77.t
 	desc = ne_skelsa.77.d
-	picture = GFX_report_event_yugoslavian_split
+	picture = GFX_yugoslavian_split
 
 	trigger = {
 
@@ -1961,7 +1961,7 @@ country_event = {
 	id = ne_skelsa.87
 	title = ne_skelsa.87.t
 	desc =  ne_skelsa.87.d
-	picture = GFX_report_event_swedish_soldier
+	picture = GFX_swedish_soldier
 
 	trigger = {
 	
@@ -2006,7 +2006,7 @@ country_event = {
 	id = ne_skelsa.88
 	title = ne_skelsa.88.t
 	desc =  ne_skelsa.88.d
-	picture = GFX_report_event_swedish_soldier
+	picture = GFX_swedish_soldier
 
 
 	trigger = {
@@ -2300,7 +2300,7 @@ country_event = {
 	id = ne_city.30
 	title = ne_city.30.t
 	desc = ne_city.30.d
-	picture = GFX_report_event_stalin_02
+	picture = GFX_stalin_02
 	
 	fire_only_once = yes
 	

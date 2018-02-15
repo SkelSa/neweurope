@@ -11,11 +11,13 @@ state={
 		add_core_of = MOR
 
 		victory_points = {
-			10070 5 
-		}
-		victory_points = {
 			7069 5 
 		}
+		
+		victory_points = {
+			10070 5 
+		}
+		
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
