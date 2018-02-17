@@ -1,0 +1,12 @@
+state={
+	id=515
+	name="STATE_515"
+
+	history={
+		owner = FRA
+	}
+
+	provinces={
+		13138 
+	}
+}

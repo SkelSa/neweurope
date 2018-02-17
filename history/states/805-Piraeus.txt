@@ -9,6 +9,9 @@ state={
 
 	history={
 		owner = GRE
+		victory_points = {
+			13227 5 
+		}
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 2

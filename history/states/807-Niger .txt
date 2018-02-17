@@ -1,0 +1,19 @@
+state={
+	id=807
+	name="STATE_807"
+	provinces={
+		1956 1975 2056 4913 7939 8028 8128 10758 10780 10805 10917 12707 
+	}
+	manpower = 7422250
+	
+	state_category = rural
+	resources={
+		rubber=1
+	}
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 3
+		}
+	}
+}

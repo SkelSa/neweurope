@@ -1,0 +1,26 @@
+state={
+	id=811
+	name="STATE_811"
+
+	provinces={
+		3924 
+	}
+
+	history={
+		owner = YUG
+		victory_points = {
+			3924 1 
+		}
+		buildings = {
+			infrastructure = 6
+			3924 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = CRO
+		add_core_of = YUG
+	} 
+
+	manpower=298646
+	state_category=city
+}
