@@ -282,6 +282,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_changed_mr_pact.dds"
 	}
 	
+	#Metaxas is dead!
+	spriteType = {		
+		name = "GFX_metaxas_death"
+		texturefile = "gfx/event_pictures/report_event_metaxas_death.dds"
+	}
+	
+	
+	
 	#Development of the T-34 and KV-1
 	
 	spriteType = {		

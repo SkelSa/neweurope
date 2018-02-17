@@ -45,6 +45,11 @@ news_event = {
 			puppet = DAN								
 		}
 		
+		ALG = {
+		
+			set_cosmetic_tag = MAL_UK
+		}
+		
 		##Soviet puppets
 		SOV	= {
 		

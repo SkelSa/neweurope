@@ -40,14 +40,28 @@ on_actions = {
 			country_event = { days = 1 id = ne_skelsa.75 }
 			}								
 	
-		}	
+		}
+		
+		##Test
+		every_country = {
+
+			limit = {
+				tag = SYR
+			}
+			
+			set_cosmetic_tag = MAL_UK
+			}								
+	
+		}
+
+		
 				
 	}		
 	
 	on_government_change = {
 		effect = {
 		
-			##remove unneccesary ideology spirits when e.g. Eastern Europe is communist
+			##remove unnecessary ideology spirits when e.g. Eastern Europe is communist
 			if = {
 				limit = { has_government = communism  communism > 0.53}
 				every_country = {

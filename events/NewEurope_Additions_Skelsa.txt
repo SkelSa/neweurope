@@ -1224,33 +1224,7 @@ country_event = {
 
 
 
-##Info concerning the annexation of the Baltic States: ne_skelsa.59
-country_event = {
-	id = ne_skelsa.59
-	title = ne_skelsa.59.t
-	desc =  ne_skelsa.59.d
-	picture = GFX_soviet_in_riga
 
-	fire_only_once = yes
-	
-	mean_time_to_happen = { days = 5 }
-	
-	trigger = {
-	
-		tag = SOV
-		SOV = { has_completed_focus = SOV_claims_on_baltic } 
-		NOT = { SOV = { has_completed_focus = SOV_baltic_security } }
-		
-	}
-	
-	
-	option = {	#I understand
-		name = ne_skelsa.59.a
-			
-	}
-	
-	
-}
 
 
 
@@ -2136,12 +2110,12 @@ country_event = {
 
 ##ne_skelsa.90 is about Metaxas' death event chain
 
-##Metaxa dies (Before Fall of Athens)
+##Metaxas dies (Before Fall of Athens)
 country_event = {
 	id = ne_skelsa.90
 	title = ne_skelsa.90.t
 	desc =  ne_skelsa.90.d
-	picture = GFX_somepic ##search for a pic of Metaxas
+	picture = GFX_metaxas_death
 
 	fire_only_once = yes
 
@@ -2161,7 +2135,10 @@ country_event = {
 
 		##Effects
 		add_national_unity = -0.02
-			
+		
+		kill_country_leader = yes
+		create_country_leader = { name = "George II of Greece" picture = "Portrait_GRE_George_II.dds" expire = "1965.1.1" ideology = moderatism traits = { } }
+		set_party_name = { ideology = neutrality name = GRE_House_of_Glucksburg }	
 	}
 
 	
