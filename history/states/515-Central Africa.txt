@@ -2,11 +2,23 @@ state={
 	id=515
 	name="STATE_515"
 
+	resources={
+		chromium=32.000
+		tungsten=8.000
+	}
+
 	history={
-		owner = FRA
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ZIM
 	}
 
 	provinces={
-		13138 
+		12908 12986 
 	}
+
+	manpower=102451
+	state_category=rural
 }
