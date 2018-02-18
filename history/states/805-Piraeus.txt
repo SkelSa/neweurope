@@ -1,23 +1,29 @@
 state={
 	id=805
 	name="STATE_805"
-	manpower=684000
+	manpower=1382352
 	provinces={
-		13227 
+		4109 13227
 	}
 	state_category = city
 
 	history={
 		owner = GRE
 		victory_points = {
-			13227 5 
+			13227 10
+		}
+		victory_points = {
+			4109 10
 		}
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 2
-			air_base = 2
+			industrial_complex = 3
+			air_base = 4
 			13227 = {
-				naval_base = 5
+				naval_base = 4
+			}
+			4109 = {
+				naval_base = 4
 
 			}
 

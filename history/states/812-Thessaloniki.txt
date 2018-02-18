@@ -6,7 +6,7 @@ state={
 		936 966 3844 9837 11818 
 	}
 	
-	state_category = city
+	state_category = town
 
 	history={
 		owner = GRE
