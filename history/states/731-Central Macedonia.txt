@@ -1,24 +1,16 @@
 state={
 	id=731
 	name="STATE_731"
-	manpower=1155700
+	manpower=471135
 	
 	state_category = town
 
 	history={
 		owner = GRE
-		victory_points = {
-			11818 5 
-		}
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
-			industrial_complex = 2
-			air_base = 2
-			11818 = {
-				naval_base = 3
-
-			}
+			industrial_complex = 1
 
 		}
 		add_core_of = GRE
@@ -27,6 +19,6 @@ state={
 	}
 	
 	provinces={
-		895 936 966 3526 3844 3936 9837 10163 11818 
+		895 3526 3936 10163 
 	}
 }
