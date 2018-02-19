@@ -1,4 +1,6 @@
-﻿add_namespace = ne_stalin
+﻿##VERY UNFINISHED!
+
+add_namespace = ne_stalin
 
 country_event = {
 	id = ne_stalin.1
@@ -18,7 +20,7 @@ country_event = {
 		}
 	}
 	
-	mean_time_to_happen = { days = 1095 }
+	mean_time_to_happen = { days = 548 }
 
 	option = {
 		name = ne_stalin.1.a
@@ -87,7 +89,8 @@ country_event = {
 			random_list = {
 				80 = {
 					SOV = { country_event = { days = 65 id = ne_stalin.4 } }
-					set_country_flag = berias_conspiracy }
+					set_country_flag = berias_conspiracy 
+				}
 				20 = {
 				}
 			}
@@ -181,9 +184,9 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = { days = 590 }
+	mean_time_to_happen = { days = 484 }
 
-	option = {
+	option = {  ##Khrushchev came to power
 		name = ne_stalin.5.a
 		ai_chance = { factor = 100 }
 		retire_country_leader = yes
