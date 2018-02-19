@@ -13226,3 +13226,5 @@
 13225;228;86;124;land;true;plains;1
 13226;158;1;4;land;true;desert;0
 13227;158;1;5;land;true;urban;1
+13228;158;1;6;land;false;desert;5
+13229;100;10;20;land;false;mountain;5
