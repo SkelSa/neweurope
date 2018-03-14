@@ -183,7 +183,7 @@ news_event = {
 			
 		}
 		
-		##Further chnages for new puppets	
+		##Further changes for new puppets	
 		EGY = {
 			
 			load_oob = EGY_1936		

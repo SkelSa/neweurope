@@ -45,7 +45,7 @@ country_event = {
 		name = ne_misc.1.b
 		ai_chance = { factor = 2 }
 		add_political_power = -25
-		add_national_unity = -0.05 
+		add_stability = -0.05 
 		FRA = { reverse_add_opinion_modifier = { target = TUR modifier = refused_hatay_transfer } }
 
 	}
@@ -54,7 +54,7 @@ country_event = {
 	
 }
 
-##Turkey gets event if france says yes
+##Turkey gets event if France says yes
 country_event = {
 	id = ne_misc.2
 	title = ne_misc.2.t
@@ -68,7 +68,7 @@ country_event = {
 		name = ne_misc.2.a
 		ai_chance = { factor = 98 }
 		add_political_power = 15
-		add_national_unity = 0.02 
+		add_stability = 0.02 
 
 		TUR = { 
 			
@@ -90,15 +90,12 @@ country_event = {
 		name = ne_misc.2.b
 		ai_chance = { factor = 2 }
 		add_political_power = -25
-		add_national_unity = -0.05 
+		add_stability = -0.05 
 
 	}
 	
 	
-	
 }
-
-
 
 
 
@@ -204,7 +201,7 @@ country_event = {
 		name = ne_misc.3.b
 		ai_chance = { factor = 2 }
 		add_political_power = -20
-		add_national_unity = -0.05 
+		add_stability = -0.05 
 		
 		CAN = {
 			country_event = {days = 1 id = ne_misc.5 }
@@ -329,7 +326,6 @@ country_event = {
 		name = ne_misc.6.a
 		ai_chance = { factor = 98 }
 		add_political_power = -5
-		add_national_unity = 0.03
 		
 		if = {
 			limit = {
@@ -500,7 +496,7 @@ country_event = {
 				name = ne_misc.8.a
 				ai_chance = { factor = 98 }
 				add_political_power = 15
-				add_national_unity = 0.01
+				add_war_support = 0.01
 				
 				##opinion modifier
 				add_opinion_modifier = { target = FROM modifier = NE_lend_lease }	
@@ -1331,7 +1327,7 @@ country_event = {
 		}
 		SOV = { 
 			add_political_power = -40
-			add_national_unity = -0.05
+			add_war_support = -0.05
 			add_timed_idea = { idea = soviet_compromisse_with_japan days = 120 }
 		}
 		JAP = { add_opinion_modifier = { target = SOV modifier = soviet_compliance_with_the_japanese_pact } }
@@ -1482,7 +1478,7 @@ country_event = {
 			15 = { ENG = { country_event = { days = 8 id = ne_misc.23 } } }
 		}
 		POL = {
-			add_national_unity = -0.05
+			add_stability = -0.05
 			navy_experience = -15
 		}
 		ENG = {
@@ -1495,7 +1491,7 @@ country_event = {
 		ai_chance = { factor = 2 }
 		POL = { navy_experience = 15 }
 		ENG = { add_opinion_modifier = { target = POL modifier = pol_disagree } }
-		add_national_unity = 0.05
+		add_stability = 0.05
 		custom_effect_tooltip = peking_plan_warning.1.tt
 	}
 

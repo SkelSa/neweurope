@@ -978,7 +978,8 @@ country_event = {
 		}
 		
 		add_political_power = 40
-		add_national_unity = 0.02 
+		add_stability = 0.02 
+		add_war_support = 0.05 
 
 		SOV = {add_to_faction = ROOT }
 		add_ideas = NE_wp_member 

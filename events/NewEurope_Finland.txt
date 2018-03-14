@@ -328,7 +328,7 @@ country_event = {
 		}
 		
 		add_political_power = -30
-		add_national_unity = -0.05
+		add_war_support = -0.2
 		add_named_threat = { threat = -5 name = threat_ne_finland_neutrality }
 		
 	}
@@ -415,7 +415,9 @@ country_event = {
 
 		##Effects
 		add_political_power = 50
-		add_national_unity = 0.05
+		add_stability = 0.05
+		add_war_support = 0.2
+		
 		FIN = { give_military_access = GER }		
 		
 		add_named_threat = { threat = 4 name = threat_ne_continuation_war }
@@ -446,7 +448,7 @@ country_event = {
 
 		##Effects
 		add_political_power = 75
-		add_national_unity = 0.1		
+		add_war_support = 0.1		
 		FIN = { declare_war_on = { target = SOV }  }
 		
 		add_named_threat = { threat = 4 name = threat_ne_continuation_war }
@@ -461,7 +463,8 @@ country_event = {
 		
 		##Effects
 		add_political_power = -30
-		add_national_unity = -0.05	
+		add_stability = 0.05
+		add_war_support = -0.2
 	
 	}
 	
@@ -528,7 +531,7 @@ country_event = {
 		}
 		
 		add_political_power = -20
-		add_national_unity = -0.1
+		add_stability = -0.1
 		add_popularity = { ideology = fascism popularity = 0.2 } 
 		
 		SOV = {
@@ -584,7 +587,7 @@ country_event = {
 		}
 		
 		add_political_power = -25
-		add_national_unity = -0.05
+		add_war_support = 0.05
 		
 		FIN = { country_event = { id = ne_finland.9 } }
 
@@ -629,7 +632,7 @@ country_event = {
 	option = {	#Oh No!
 		name = ne_finland.9.a
 		
-		add_national_unity = -0.05
+		add_war_support = -0.05
 			
 	}
 	
@@ -794,7 +797,9 @@ country_event = {
 		}
 		
 		add_political_power = -20
-		add_national_unity = -0.2
+		add_stability = -0.2
+		add_war_support = 0.3
+		
 		add_popularity = { ideology = fascism popularity = 0.25 } 
 
 		SOV = {

@@ -340,7 +340,7 @@ country_event = { ##A new research slot for the USSR event
 
 	option = { ##Execution of scientists (angry Stalin)
 		name = ne_takee.5.c
-		add_national_unity = 0.15
+		add_stability = 0.05
 		add_political_power = -25
 		add_popularity = { ideology = communism popularity = 0.1 }
 		add_opinion_modifier = { target = DDR modifier = execution_of_german_scientists_ddreaction }
@@ -848,7 +848,8 @@ country_event = {
 			PER = { white_peace = RAJ }
 		}
 		PER = { 
-			add_national_unity = -0.4
+			add_stability = -0.3
+			add_war_support = 0.2
 			add_popularity = { ideology = communism popularity = 0.25 }
 			add_popularity = { ideology = democratic popularity = 0.25 }
 		}

@@ -583,7 +583,7 @@ country_event = {
 		
 		##Effects
 		add_political_power = -175
-		add_national_unity = -0.05
+		add_stability = -0.05
 			
 	}
 	
@@ -1829,12 +1829,11 @@ country_event = {
 	fire_only_once = yes
 
 	
-	option = {	#AFTER ALL THESE CENTURIES WE'RE FREE!
+	option = {	#Still not finished I guess?
 		name = ne_skelsa.80.a
 
 		##Effects
-		add_political_power = 125
-		add_national_unity = 0.10
+		add_political_power = 10
 			
 	}
 
@@ -1858,8 +1857,7 @@ country_event = {
 		name = ne_skelsa.82.a
 
 		##Effects
-		add_political_power = 125
-		add_national_unity = 0.10
+		add_political_power = 10
 			
 	}
 
@@ -1955,19 +1953,23 @@ country_event = {
 	immediate = { set_country_flag = ne_desperate_defense }
 	
 	
-	option = {		##We will defend our home atall costs
+	option = {		##We will defend our home at all costs
 		name = ne_skelsa.87.a
 
 		##Effects
 		 	add_ideas = NE_desperate_defense 
 		add_political_power = -20		
 		add_manpower = 20000
+		add_war_support = 0.15
 		
 		if = {
-			limit = { has_national_unity < 80 }
+			limit = { has_stability < 50 }
+			
+		add_stability = 0.15
+					
 		}
 		
-		add_national_unity = 0.10
+		
 	}
 
 	
@@ -2130,11 +2132,11 @@ country_event = {
 	}
 	
 	
-	option = {	#nu loss (small)
+	option = {	#stability loss (small)
 		name = ne_skelsa.90.a
 
 		##Effects
-		add_national_unity = -0.02
+		add_stability = -0.02
 		
 		kill_country_leader = yes
 		create_country_leader = { name = "George II of Greece" picture = "Portrait_GRE_George_II.dds" expire = "1965.1.1" ideology = moderatism traits = { } }
@@ -2162,7 +2164,7 @@ country_event = {
 
 		##Effects
 		add_political_power = 125
-		add_national_unity = 0.10
+		add_stability = 0.10
 			
 	}
 

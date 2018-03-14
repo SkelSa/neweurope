@@ -124,7 +124,8 @@ country_event = {
            
 			drop_cosmetic_tag = yes
 			add_political_power = 200
-			add_national_unity = 0.15
+			add_stability = 0.15
+			add_war_support = 0.15
 
 		hidden_effect = {	
 			news_event = { id = ne_news.2 }
@@ -442,7 +443,8 @@ country_event = {
 	ai_chance = { factor = 50 }
 		name = ne_prc.12.a
 		
-		add_national_unity = 0.05
+		add_war_support = 0.05
+		
 		##China hates SOV and SOV hates China
 		add_opinion_modifier = { target = PRC modifier =  refused_dalian}
 		reverse_add_opinion_modifier = { target = PRC modifier = refused_dalian}
@@ -607,7 +609,7 @@ country_event = {
 	ai_chance = { factor = 50 }
 		name = ne_prc.16.b
 		
-			add_national_unity = 0.05		
+			add_war_support = -0.05		
 			add_opinion_modifier = { target = FROM modifier =  refused_dalian}
 			reverse_add_opinion_modifier = { target = FROM modifier = asked_return_territory}
 
@@ -673,7 +675,7 @@ country_event = {
 	option = {	#DALIAN STAYS SOVIET		
 		name = ne_prc.17.b
 			add_political_power = 20
-			add_national_unity = -0.05
+			add_stability = -0.05
 			
 			PRC = {
 				country_event = { days = 4 id = ne_prc.19}
@@ -738,7 +740,7 @@ country_event = {
 	ai_chance = { factor = 10 }
 		name = ne_prc.19.b
 		
-		add_national_unity = 0.05
+		add_stability = 0.05
 		
 		add_opinion_modifier = { target = SOV modifier =  refused_dalian}
 		reverse_add_opinion_modifier = { target = SOV modifier = asked_return_territory}
@@ -1185,7 +1187,8 @@ country_event = {
 		name = ne_prc.23.b
 		
 		add_political_power = -10
-		add_national_unity = -0.05
+		add_stability = 0.05
+		add_war_support = -0.05
 		
 		add_opinion_modifier = { target = FROM modifier =  refused_dalian}
 		reverse_add_opinion_modifier = { target = FROM modifier = asked_return_territory}

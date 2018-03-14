@@ -227,7 +227,7 @@
 
  ##Alaska. New state of the USA
  ne_news.32.t:0 "Alaska. New state of the USA"
- ne_news.32.d:0 "Once the Russian colony, Alaska became the 49th US state after the referendum!"
+ ne_news.32.d:0 "Once a Russian colony, Alaska became the 49th US state after the referendum!"
  ne_news.32.a:0 "Add another star on our flag!"
 
  ##Hawaii. New state of the USA
@@ -237,10 +237,10 @@
 
  ######################################################################################################################################
  ########################################################COUNTRY SELECT DESCRIPTION####################################################
- ##Description for both Chinese
+ ##Description for both Chinese; BPWE needs it's own better loc for CHI and PRC
  ##CHI_GATHERING_STORM_DESC:0 "The Kuomintang regime under Chiang Kai-shek was at the peak of its power, having driven Mao Tse-tung's Communists on their grueling 6,000 mile march to Shaanxi and established themselves as the most powerful force in Chinese politics. It seemed that China was at last united under a stable, modernizing regime, ready to bring the country into the 20th century after years of humiliation at the hands of stronger countries. However, it faced a severe challenge: an increasingly belligerent and imperialist Japan desiring to expand its resource base at China's expense. Having already conceded control of Manchuria to the Japanese in 1931, China seems destined for further clashes with the island nation, yet in early 1936 Chiang shows no signs of letting up in his civil war against the Communists. The question China must now face is a sore one: when and if Japan continues her expansion, will the Nationalists fight, or will China be humiliated yet again?"
- CHI_GATHERING_STORM_DESC:0 "Following the revolution that deposed the last of the Qing Emperors, the young Chinese Republic has struggled to survive. Warlord rule much of the land on the periphery. In the heart of the country, the Communists have set up a base area in a remote mountain valley. Just beyond the borders, the Japanese have created a puppet government under the last Chinese Emperor and will try to reunite the country under his rule.\n\nWith many enemies threatening it, the government of Chiang Kai-Shek will have to make hard choices if it wants to survive and rule supreme in China."
- PRC_GATHERING_STORM_DESC:0 "A mere two years ago, the Communist Party of China faced utter annihilation. To survive, it engaged on the epic journey that would become known as the Long March. With only a fraction of the army surviving the rigors of the march and little industry, the prospects of victory in the Chinese Civil War are slim indeed.\n\nBut in time, the population may be swayed to the Communist cause, new armies be raised, new base areas established, and, when the time is right, the revolutionary struggle will be renewed again, until final victory is achieved."
+ #CHI_GATHERING_STORM_DESC:0 "Following the revolution that deposed the last of the Qing Emperors, the young Chinese Republic has struggled to survive. Warlord rule much of the land on the periphery. In the heart of the country, the Communists have set up a base area in a remote mountain valley. Just beyond the borders, the Japanese have created a puppet government under the last Chinese Emperor and will try to reunite the country under his rule.\n\nWith many enemies threatening it, the government of Chiang Kai-Shek will have to make hard choices if it wants to survive and rule supreme in China."
+ #PRC_GATHERING_STORM_DESC:0 "A mere two years ago, the Communist Party of China faced utter annihilation. To survive, it engaged on the epic journey that would become known as the Long March. With only a fraction of the army surviving the rigors of the march and little industry, the prospects of victory in the Chinese Civil War are slim indeed.\n\nBut in time, the population may be swayed to the Communist cause, new armies be raised, new base areas established, and, when the time is right, the revolutionary struggle will be renewed again, until final victory is achieved."
  
  ######################################################################################################################################
  ########################################################VICTORY POINTS################################################################
@@ -255,11 +255,12 @@
  ######################################################################################################################################
  #########################################################NEW STATES###################################################################
 
-
+##Mangwe and Marakan is wrong! Negev is double
+ 
  STATE_336:0 "Malaya"
  STATE_779:0 "Sagaing"
  STATE_780:0 "Zimbabwe"
- STATE_781:0 "Mangwe and Marakan"
+ STATE_781:0 "Mangwe and Marakan" 
  STATE_782:0 "Singapore"
  STATE_788:0 "The Golan Heights"
  STATE_789:0 "Haifa"

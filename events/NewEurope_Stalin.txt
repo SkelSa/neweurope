@@ -42,7 +42,7 @@ country_event = {
 					has_government = communism
 					NOT = { tag = SOV }
 				}
-				add_national_unity = -0.15
+				add_stability = -0.15
 				add_opinion_modifier = { target = SOV modifier = communism_leanings_bad }
 			}
 		}

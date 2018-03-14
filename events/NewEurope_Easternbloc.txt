@@ -206,7 +206,7 @@ country_event = {
 		}
 		DDR = {
 			add_opinion_modifier = { target = WGR modifier = west_east_high_tension_relations }
-			add_national_unity = -0.15
+			add_stability = -0.05
 		}
 		hidden_effect = {
 			news_event = { id = ne_news.24 days = 1 }
