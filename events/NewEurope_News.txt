@@ -92,22 +92,22 @@ news_event = {
 		
 			AND = {			
 				GER = {surrender_progress > 0.60}				
-				749 = { is_controlled_by = SOV }		
+				768 = { is_controlled_by = SOV }		
 			}
 
 			AND = {			
 				GER = {surrender_progress > 0.60}				
-				749 = { is_controlled_by = USA }			
+				768 = { is_controlled_by = USA }			
 			}
 
 			AND = {			
 				GER = {surrender_progress > 0.60}				
-				749 = { is_controlled_by = FRA }		
+				768 = { is_controlled_by = FRA }		
 			}
 			
 			AND = {		
 				GER = {surrender_progress > 0.60}				
-				749 = { is_controlled_by = ENG }			
+				768 = { is_controlled_by = ENG }			
 			}
 			
 		}
@@ -1188,10 +1188,10 @@ news_event = {
 	
 		hidden_effect = {
 			##the DMZ gets a DMZ
-			768 = { set_demilitarized_zone = yes } 
-			769 = { set_demilitarized_zone = yes } 
-			770 = { set_demilitarized_zone = yes } 
-			771 = { set_demilitarized_zone = yes } 	
+			786 = { set_demilitarized_zone = yes } 
+			787 = { set_demilitarized_zone = yes } 
+			788 = { set_demilitarized_zone = yes } 
+			789 = { set_demilitarized_zone = yes } 	
 		}
 	
 	}

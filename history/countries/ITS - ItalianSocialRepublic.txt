@@ -1,10 +1,13 @@
-﻿capital = 159 #Salo
+﻿capital = 159 #Salo near Lake Garda
 
 ##ITS is a difficult case, it's better to give them the Italian focus tree. They won't live long and are just a German puppet
 
 oob = "ITS_oob"
 
-set_research_slots = 4
+set_research_slots = 3
+
+set_stability = 0.45
+set_war_support = 0.30
 
 ##Italian Tree Progress
 complete_national_focus = ITA_ethiopian_war_logistics

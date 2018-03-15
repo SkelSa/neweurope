@@ -14,7 +14,7 @@ news_event = {
 
 			
 		##Stuff for game		
-		GER = {set_capital = 749 }
+		GER = {set_capital = 768 }
 		KAZ = {set_capital = 589 }
 
 		##WGR and GDR is already in the country files
@@ -24,7 +24,7 @@ news_event = {
 		}
 
 		DDR = {
-			set_capital = 744 
+			set_capital = 763 
 			set_research_slots = 3
 		}
 		
@@ -238,7 +238,7 @@ news_event = {
 		}
 		
 		EGY = {					
-			add_state_claim = 777		
+			add_state_claim = 795		
 		}
 		
 		GRE = {					
@@ -285,10 +285,10 @@ country_event = {
 		if = {
 			limit = {
 				country_exists = DDR
-				744 = { is_owned_by = DDR }
+				763 = { is_owned_by = DDR }
 			}
 					
-			DDR = { set_capital = 744 }			
+			DDR = { set_capital = 763 }			
 				
 		}
 		
@@ -728,11 +728,11 @@ country_event = {
 				
 				SOV = { 		
 					owns_state = 4
-					owns_state = 757							
+					owns_state = 776							
 				}
 				
 				ENG = { 	
-					owns_state = 758				
+					owns_state = 777				
 				}	
 			}
 				

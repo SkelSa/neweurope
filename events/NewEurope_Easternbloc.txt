@@ -124,7 +124,7 @@ country_event = {
 				has_government = communism
 				has_country_leader = { name = "Nikita Khrushchev" }	
 			}
-			749 = { is_controlled_by = WGR }
+			768 = { is_controlled_by = WGR }
 		}
 		has_global_flag = germany_divided
 	}
@@ -132,7 +132,7 @@ country_event = {
 	option = {
 		name = ne_ssrwb.2.a
 		ai_chance = { factor = 100 }
-		744 = {
+		763 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -227,7 +227,7 @@ country_event = {
 
 	option = {
 		name = ne_ssrwb.2.c
-		744 = {
+		763 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -332,10 +332,10 @@ country_event = {
 				value = 50
 			}
 		}
-		hidden_effect = { 749 = { damage_building = { type = infrastructure damage = 0.8 } } }
-		hidden_effect = { 749 = { damage_building = { type = infrastructure damage = 0.8 } } }
-		hidden_effect = { 749 = { damage_building = { type = infrastructure damage = 0.6 } } }
-		hidden_effect = { 749 = { damage_building = { type = infrastructure damage = 0.5 } } }
+		hidden_effect = { 768 = { damage_building = { type = infrastructure damage = 0.8 } } }
+		hidden_effect = { 768 = { damage_building = { type = infrastructure damage = 0.8 } } }
+		hidden_effect = { 768 = { damage_building = { type = infrastructure damage = 0.6 } } }
+		hidden_effect = { 768 = { damage_building = { type = infrastructure damage = 0.5 } } }
 		hidden_effect = {
 			news_event = { id = ne_news.24 days = 1 }
 		}

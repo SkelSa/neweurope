@@ -1,0 +1,23 @@
+state={
+	id=780
+	name="STATE_780"
+	provinces={
+		6940 9849 9874 
+	}
+	
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = YUG
+		add_core_of = SER
+		add_core_of = KOS
+		add_core_of = ALB
+	}
+	
+	manpower=10001
+	buildings_max_level_factor=1.000
+	state_category=town
+}

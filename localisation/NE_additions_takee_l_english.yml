@@ -148,6 +148,7 @@
   ne_takee.14.t:0 "The Faroe Islands were captured by Britain!"
   ne_takee.14.d:0 "Sad news. The British overtook us and captured today the Faroe Islands."
   ne_takee.14.a:0 "Hier ist Müll!"
+  ##WTF :D ?
 
   ne_takee.15.t:0 "Invasion of Iceland"
   ne_takee.15.d:0 "We need to seize the strategically important Iceland. We are ready to begin the invasion. Their government may be dissatisfied."
@@ -155,7 +156,7 @@
 
   ne_takee.16.t:0 "Iceland were captured by Britain!"
   ne_takee.16.d:0 "The British once again beat us and captured an important island - Iceland."
-  ne_takee.16.a:0 "Zur Hölle mit allen!"
+  ne_takee.16.a:0 "Zur Hölle mit Ihnen!"
 
   ne_takee.17.t:0 "Greenland goes under US control"
   ne_takee.17.d:0 "Denmark provides us with Greenland from possible capture"
@@ -180,7 +181,7 @@
  ############################################################IDEAS#####################################################################
 
  stalins_death:0 "The Influence of Stalin's Death"
- soviet_compromisse_with_japan:0 "The Reaction of The People to the Compromise with the Fascists in The East!"
+ soviet_compromisse_with_japan:0 "Soviet Compromise with Japan"
  helmut_grottrup:0 "Helmut Gröttrup"
 
 
@@ -255,37 +256,8 @@
  ######################################################################################################################################
  #########################################################NEW STATES###################################################################
 
-##Mangwe and Marakan is wrong! Negev is double
+##Mangwe and Marakan is wrong! Negev is double -> Moved new states to the main folder!
  
- STATE_336:0 "Malaya"
- STATE_779:0 "Sagaing"
- STATE_780:0 "Zimbabwe"
- STATE_781:0 "Mangwe and Marakan" 
- STATE_782:0 "Singapore"
- STATE_788:0 "The Golan Heights"
- STATE_789:0 "Haifa"
- STATE_790:0 "Gaza and Negev"
- STATE_791:0 "Nazareth"
- STATE_792:0 "Negev and Be'er Sheva"
- STATE_793:0 "Channel Islands"
- STATE_794:0 "Tekirdag"
- STATE_795:0 "South Cyprus"
- STATE_796:0 "Pomurska"
- STATE_797:0 "South Slovenia"
- STATE_801:0 "Al-Quneitra"
- STATE_802:0 "Rwanda"
- STATE_803:0 "Burundi"
- STATE_804:0 "Lasithi"
- STATE_805:0 "Athens"
- STATE_806:0 "Evros"
- STATE_807:0 "Niger"
- STATE_808:0 "Chad"
- STATE_809:0 "Cameroun"
- STATE_810:0 "North Aegean"
- STATE_811:0 "Split"
- STATE_812:0 "Thessaloniki"
- STATE_813:0 "Aouzou Strip"
-
 ######################################################################################################################################
 #########################################################NEW COUNTRIES################################################################
 

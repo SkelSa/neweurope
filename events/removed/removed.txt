@@ -38,23 +38,23 @@
 ####		date > 1946.1.1
 ####
 ####		AND = {
-####			788 = { is_core_of = ISR }
-####			791 = { is_core_of = ISR }
-####			789 = { is_core_of = ISR }
+####			804 = { is_core_of = ISR }
+####			807 = { is_core_of = ISR }
+####			805 = { is_core_of = ISR }
 ####			454 = { is_core_of = ISR }
-####			793 = { is_core_of = ISR }
-####			790 = { is_core_of = ISR }
-####			792 = { is_core_of = ISR }
-####			794 = { is_core_of = ISR }
+####			809 = { is_core_of = ISR }
+####			806 = { is_core_of = ISR }
+####			808 = { is_core_of = ISR }
+####			810 = { is_core_of = ISR }
 ####
-####			788 = { is_core_of = PAL }
-####			791 = { is_core_of = PAL }
-####			789 = { is_core_of = PAL }
+####			804 = { is_core_of = PAL }
+####			807 = { is_core_of = PAL }
+####			805 = { is_core_of = PAL }
 ####			454 = { is_core_of = PAL }
-####			793 = { is_core_of = PAL }
-####			790 = { is_core_of = PAL }
-####			792 = { is_core_of = PAL }
-####			794 = { is_core_of = PAL }
+####			809 = { is_core_of = PAL }
+####			806 = { is_core_of = PAL }
+####			808 = { is_core_of = PAL }
+####			810 = { is_core_of = PAL }
 ####		}
 ####
 ####		AND = { 
@@ -190,17 +190,17 @@
 ####				}
 ####			}	
 ####			ISR = {
-####				transfer_state = 788
-####				transfer_state = 789
-####				transfer_state = 784
-####				transfer_state = 793
-####				transfer_state = 792
-####				transfer_state = 794
+####				transfer_state = 804
+####				transfer_state = 805
+####				transfer_state = 802
+####				transfer_state = 809
+####				transfer_state = 808
+####				transfer_state = 810
 ####			}
 ####			PAL = { 
-####				transfer_state = 791
+####				transfer_state = 807
 ####				transfer_state = 454
-####				transfer_state = 790
+####				transfer_state = 806
 ####			}
 ####			hidden_effect = {
 ####				every_country = {

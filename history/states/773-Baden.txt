@@ -1,0 +1,38 @@
+#actual Baden from NewEurope
+state={
+	id=773
+	name="STATE_773"
+	
+	history={
+		owner = GER
+		
+		victory_points = {
+			6542 1
+		}
+		
+		buildings = {
+			infrastructure = 8
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = GER
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 3
+				industrial_complex = 2
+
+			}
+
+		}
+
+	}
+	
+	provinces={
+		519 694 3679 3690 3692 6542 6712 6934 9655 11486 11640 13126 
+	}
+	manpower=2543427
+	buildings_max_level_factor=1.000
+	state_category = town
+}

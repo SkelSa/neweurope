@@ -2,9 +2,10 @@
 
 oob = "SRJ_1936"
 
-set_national_unity = 0.60
+set_stability = 0.70
+set_war_support = 0.70
 
-set_research_slots = 3
+set_research_slots = 2
 
 add_ideas = {
 	

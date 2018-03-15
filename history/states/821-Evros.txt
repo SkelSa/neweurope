@@ -1,0 +1,19 @@
+state={
+	id=821
+	name="STATE_821"
+	manpower = 145650
+	state_category = rural
+
+	provinces={
+		11905 
+	}
+
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GRE
+		add_claim_by = BUL
+	}
+}

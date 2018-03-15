@@ -1,0 +1,26 @@
+state={
+	id=792
+	name="STATE_792"
+	
+	history={
+		owner = SYR
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			12029 5 
+		}
+		add_core_of = SYR
+		add_core_of = TUR
+		add_core_of = HAT
+
+	}
+	
+	provinces={
+		12029 
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

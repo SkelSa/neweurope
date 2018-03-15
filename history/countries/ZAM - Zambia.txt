@@ -12,7 +12,8 @@ set_research_slots = 2 ##will gain the other three through the focus tree
 
 set_convoys = 5
 
-set_national_unity = 0.5
+set_stability = 0.40
+set_war_support = 0.25
 
 1939.1.1 = {
 	#generic focuses

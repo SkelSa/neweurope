@@ -165,15 +165,15 @@ country_event = {
 		name = ne.20.a         #Historical partion
 		
 		SAA = { 		
-			transfer_state = 764
+			transfer_state = 783
 			
 		}
 		
 		
 		FOZ = { 		
 			transfer_state = 42
-			transfer_state = 754
-			transfer_state = 775
+			transfer_state = 773
+			transfer_state = 793
 		}
 		
 		BOZ = { 
@@ -183,23 +183,23 @@ country_event = {
 			transfer_state = 59
 			transfer_state = 58
 			transfer_state = 57
-			transfer_state = 778
+			transfer_state = 796
 		}
 		
 		AOZ = { 		
 			transfer_state = 54
 			transfer_state = 53
 			transfer_state = 52
-			transfer_state = 772
+			transfer_state = 790
 			transfer_state = 50
-			transfer_state = 749
+			transfer_state = 768
 			transfer_state = 55
 		}
 		
 		SOZ = { 			
-			transfer_state = 744
+			transfer_state = 763
 			transfer_state = 60
-			transfer_state = 753
+			transfer_state = 772
 			transfer_state = 64
 			transfer_state = 65
 			transfer_state = 61
@@ -242,13 +242,13 @@ country_event = {
 			transfer_state = 57
 			transfer_state = 58
 			transfer_state = 59
-			transfer_state = 749
+			transfer_state = 768
 			transfer_state = 51
-			transfer_state = 772
-			transfer_state = 754
-			transfer_state = 764
-			transfer_state = 775
-			transfer_state = 778
+			transfer_state = 790
+			transfer_state = 773
+			transfer_state = 783
+			transfer_state = 793
+			transfer_state = 796
 			
 
 		}
@@ -260,8 +260,8 @@ country_event = {
 			transfer_state = 62
 			transfer_state = 64
 			transfer_state = 65
-			transfer_state = 744
-			transfer_state = 753
+			transfer_state = 763
+			transfer_state = 772
 
 		}
 
@@ -304,7 +304,7 @@ country_event = {
 
     FRA = { 
 			
-			transfer_state = 764
+			transfer_state = 783
 			transfer_state = 42
 
 		}
@@ -314,7 +314,7 @@ country_event = {
 			transfer_state = 53
 			transfer_state = 54
 			transfer_state = 50
-			transfer_state = 754
+			transfer_state = 773
 		}
 	
 	NGR = { 
@@ -322,18 +322,18 @@ country_event = {
 			transfer_state = 68
 			transfer_state = 62
 			transfer_state = 63
-			transfer_state = 744
-			transfer_state = 749
-			transfer_state = 743
-			transfer_state = 753
+			transfer_state = 763
+			transfer_state = 768
+			transfer_state = 762
+			transfer_state = 772
 			transfer_state = 65
 			transfer_state = 60
 			transfer_state = 57
 			transfer_state = 56
-			transfer_state = 746
+			transfer_state = 765
 			transfer_state = 64
 			transfer_state = 61
-			transfer_state = 772
+			transfer_state = 790
 			transfer_state = 58
 			transfer_state = 59			
 
@@ -344,13 +344,13 @@ country_event = {
 			transfer_state = 58
 			transfer_state = 51
 			transfer_state = 55
-			transfer_state = 772
+			transfer_state = 790
 			transfer_state = 51
 			transfer_state = 55
 			transfer_state = 56
 			transfer_state = 57
-			transfer_state = 775
-			transfer_state = 778
+			transfer_state = 793
+			transfer_state = 796
 			
 
 		}
@@ -358,7 +358,7 @@ country_event = {
     POL = { 
 			
 			transfer_state = 66
-			transfer_state = 743
+			transfer_state = 762
 			transfer_state = 67
 
 		}
@@ -389,7 +389,7 @@ country_event = {
 	
 	INT = { 
 			
-			transfer_state = 764
+			transfer_state = 783
 			transfer_state = 51
 			transfer_state = 51
 
@@ -401,7 +401,7 @@ country_event = {
 			transfer_state = 53
 			transfer_state = 54
 			transfer_state = 50
-			transfer_state = 754
+			transfer_state = 773
 
 	}
 	
@@ -410,16 +410,16 @@ country_event = {
 			transfer_state = 68
 			transfer_state = 62
 			transfer_state = 63
-			transfer_state = 744
-			transfer_state = 749
-			transfer_state = 743
+			transfer_state = 763
+			transfer_state = 768
+			transfer_state = 762
 			transfer_state = 59
-			transfer_state = 753
+			transfer_state = 772
 			transfer_state = 66
 			transfer_state = 65
 			transfer_state = 64
 			transfer_state = 62
-			transfer_state = 746
+			transfer_state = 765
 			transfer_state = 61
 			transfer_state = 67
 			
@@ -427,11 +427,11 @@ country_event = {
 	}
 	
 	HAN = { transfer_state = 58
-	        transfer_state = 772
+	        transfer_state = 790
 			transfer_state = 57
 			transfer_state = 56
 			transfer_state = 59
-			transfer_state = 778
+			transfer_state = 796
 			
 			
 			
@@ -450,14 +450,14 @@ country_event = {
 			
 			transfer_state = 55
 			transfer_state = 42
-			transfer_state = 775
+			transfer_state = 793
 
 
 	}
 		
     POL = { 
 			
-			transfer_state = 743
+			transfer_state = 762
 
 
 		}
@@ -526,7 +526,7 @@ country_event = {
 		
 		FRA = { 
 			
-			transfer_state = 773	
+			transfer_state = 791	
 			transfer_state = 735
 			transfer_state = 1
 			
@@ -571,8 +571,8 @@ country_event = {
 		
 		YUG = { 
 			
-			transfer_state = 747
-			transfer_state = 767
+			transfer_state = 766
+			transfer_state = 785
 			transfer_state = 163
 			
 		}
@@ -615,10 +615,10 @@ country_event = {
 			transfer_state = 661
 			transfer_state = 550
 			transfer_state = 736
-			transfer_state = 747
-			transfer_state = 767
+			transfer_state = 766
+			transfer_state = 785
 			transfer_state = 662
-			transfer_state = 773
+			transfer_state = 791
 			transfer_state = 163
 			transfer_state = 164
 
@@ -697,15 +697,15 @@ country_event = {
 			transfer_state = 449
 			transfer_state = 448
 			transfer_state = 661
-			transfer_state = 773
+			transfer_state = 791
 			
 			
 		}
 		
 		YUG = { 
 			
-			transfer_state = 747
-			transfer_state = 767
+			transfer_state = 766
+			transfer_state = 785
 			transfer_state = 736
 			transfer_state = 163
 			
@@ -792,7 +792,7 @@ country_event = {
 			transfer_state = 155
 			transfer_state = 154
 			transfer_state = 43
-			transfer_state = 757
+			transfer_state = 776
 			drop_cosmetic_tag = yes
 				
 		}
@@ -829,7 +829,7 @@ country_event = {
 			transfer_state = 155
 			transfer_state = 154
 			transfer_state = 43
-			transfer_state = 757
+			transfer_state = 776
 			transfer_state = 664
 			transfer_state = 73
 			transfer_state = 76
@@ -850,9 +850,9 @@ country_event = {
 			transfer_state = 155 ##normal Hungary
 			transfer_state = 154
 			transfer_state = 43
-			transfer_state = 757 ## Austria + Tyrol
+			transfer_state = 776 ## Austria + Tyrol
 			transfer_state = 4
-			transfer_state = 758
+			transfer_state = 777
 			transfer_state = 153
 			transfer_state = 152
 			transfer_state = 39
@@ -865,13 +865,13 @@ country_event = {
 			transfer_state = 72
 			transfer_state = 9
 			transfer_state = 69 ## YUG 
-			transfer_state = 748
+			transfer_state = 767
 			transfer_state = 45
 			transfer_state = 109
 			transfer_state = 104
 			transfer_state = 103
-			transfer_state = 767
-			transfer_state = 747
+			transfer_state = 785
+			transfer_state = 766
 			transfer_state = 736
 			transfer_state = 163
 			transfer_state = 102 ##Romania
@@ -935,7 +935,7 @@ country_event = {
 		SOV = { 
 	
 			transfer_state = 78
-			transfer_state = 752
+			transfer_state = 771
 			transfer_state = 80
 
 			
@@ -970,7 +970,7 @@ country_event = {
 			transfer_state = 76
 			transfer_state = 79
 			transfer_state = 78
-			transfer_state = 752
+			transfer_state = 771
 			transfer_state = 80
 			transfer_state = 77
 			
@@ -1073,7 +1073,7 @@ country_event = {
 			transfer_state = 211
 			transfer_state = 212
 			transfer_state = 48
-			transfer_state = 760
+			transfer_state = 779
 			transfer_state = 106
 			transfer_state = 731
 			transfer_state = 184
@@ -1609,7 +1609,7 @@ country_event = {
 		
 		SOV = { 
 		
-			transfer_state = 752
+			transfer_state = 771
 			transfer_state = 78
 			transfer_state = 80
 			transfer_state = 73
@@ -1624,13 +1624,13 @@ country_event = {
 			transfer_state = 189
 			transfer_state = 188  ##end of baltic states
 			transfer_state = 5    ##Kaliningrad
-			transfer_state = 751
+			transfer_state = 770
 			transfer_state = 96
 			transfer_state = 95
-			transfer_state = 745
+			transfer_state = 764
 			transfer_state = 94
 			transfer_state = 93
-			transfer_state = 751
+			transfer_state = 770
 			transfer_state = 91
 			transfer_state = 89
 			transfer_state = 209   ##territory from PLC
@@ -1710,7 +1710,7 @@ country_event = {
 		POL = { 
 		
 			transfer_state = 97
-			transfer_state = 743
+			transfer_state = 762
 				
 		}
 		
@@ -1766,7 +1766,7 @@ country_event = {
 	ROM = { 		
 		transfer_state = 80
 		transfer_state = 78
-		transfer_state = 752			
+		transfer_state = 771			
 	}
 	
 	CZE = { 		
@@ -1774,10 +1774,10 @@ country_event = {
 	}
 	
 	POL = { 		
-		transfer_state = 751
+		transfer_state = 770
 		transfer_state = 96
 		transfer_state = 95
-		transfer_state = 745
+		transfer_state = 764
 		transfer_state = 97
 		transfer_state = 94
 		transfer_state = 93
@@ -1871,7 +1871,7 @@ country_event = {
 		
 		dismantle_faction = yes 
 		
-		transfer_state = 752
+		transfer_state = 771
 		transfer_state = 78
 		transfer_state = 80
 		transfer_state = 73
@@ -1886,13 +1886,13 @@ country_event = {
 		transfer_state = 189
 		transfer_state = 188  ##end of baltic states
 		transfer_state = 5    ##Kaliningrad
-		transfer_state = 751
+		transfer_state = 770
 		transfer_state = 96
 		transfer_state = 95
-		transfer_state = 745
+		transfer_state = 764
 		transfer_state = 94
 		transfer_state = 93
-		transfer_state = 751
+		transfer_state = 770
 		transfer_state = 91
 		transfer_state = 89
 	
@@ -1986,7 +1986,7 @@ country_event = {
 		MOL = {set_cosmetic_tag = NE_MOL_SSR}		
 	}
 
-	LIT = {set_capital = 751}
+	LIT = {set_capital = 770}
 	
 	if = {
 		limit = { 
@@ -2040,7 +2040,7 @@ country_event = {
 		
 			dismantle_faction = yes 
 			
-			transfer_state = 752
+			transfer_state = 771
 			transfer_state = 78
 			transfer_state = 80
 			transfer_state = 73
@@ -2055,13 +2055,13 @@ country_event = {
 			transfer_state = 189
 			transfer_state = 188  ##end of baltic states
 			transfer_state = 5    ##Kaliningrad
-			transfer_state = 751
+			transfer_state = 770
 			transfer_state = 96
 			transfer_state = 95
-			transfer_state = 745
+			transfer_state = 764
 			transfer_state = 94
 			transfer_state = 93
-			transfer_state = 751
+			transfer_state = 770
 			transfer_state = 91
 			transfer_state = 89
 	
@@ -2180,7 +2180,7 @@ country_event = {
 	##Only change is the color
 	SOV ={ set_cosmetic_tag = NE_RUS }
 
-	LIT = {set_capital = 751}
+	LIT = {set_capital = 770}
 	KAZ = {set_capital = 590}
 		
 	hidden_effect = {
@@ -2378,19 +2378,19 @@ country_event = {
 		
 		POL = { 
 		
-			transfer_state = 743
+			transfer_state = 762
 			transfer_state = 98
 			transfer_state = 85
 			transfer_state = 10
 			transfer_state = 63
 			transfer_state = 68
-			transfer_state = 746
+			transfer_state = 765
 			transfer_state = 66
 			transfer_state = 67
 			transfer_state = 88
 			transfer_state = 90
 			transfer_state = 97
-			transfer_state = 765
+			transfer_state = 784
 			transfer_state = 92
 			transfer_state = 87
 			transfer_state = 86
@@ -2409,14 +2409,14 @@ country_event = {
 		name = ne.311.b         #pre-war
 		POL = { 
 		
-			transfer_state = 743
+			transfer_state = 762
 			transfer_state = 98
 			transfer_state = 85
 			transfer_state = 10
 			transfer_state = 88
 			transfer_state = 90
 			transfer_state = 97
-			transfer_state = 765
+			transfer_state = 784
 			transfer_state = 92
 			transfer_state = 91
 			transfer_state = 89
@@ -2425,8 +2425,8 @@ country_event = {
 			transfer_state = 94
 			transfer_state = 95
 			transfer_state = 96
-			transfer_state = 751
-			transfer_state = 745
+			transfer_state = 770
+			transfer_state = 764
 			transfer_state = 87
 			transfer_state = 86
 			
@@ -2445,8 +2445,8 @@ country_event = {
 			transfer_state = 68
 			transfer_state = 67
 			transfer_state = 66
-			transfer_state = 746
-			transfer_state = 743
+			transfer_state = 765
+			transfer_state = 762
 			transfer_state = 5
 			
 			
@@ -2476,7 +2476,7 @@ country_event = {
 			transfer_state = 88
 			transfer_state = 90
 			transfer_state = 97
-			transfer_state = 765
+			transfer_state = 784
 			transfer_state = 92
 			transfer_state = 91
 			transfer_state = 89
@@ -2485,10 +2485,10 @@ country_event = {
 			transfer_state = 94
 			transfer_state = 95
 			transfer_state = 96
-			transfer_state = 751
-			transfer_state = 745
+			transfer_state = 770
+			transfer_state = 764
 			transfer_state = 5    ##East Prussia
-			transfer_state = 743 
+			transfer_state = 762 
 			transfer_state = 188
 			transfer_state = 189
 			transfer_state = 11
@@ -2559,20 +2559,20 @@ country_event = {
 			transfer_state = 108
 			transfer_state = 103
 			transfer_state = 109
-			transfer_state = 767
-			transfer_state = 747
+			transfer_state = 785
+			transfer_state = 766
 			transfer_state = 102
 			transfer_state = 163
 			transfer_state = 107
 			transfer_state = 105
-			transfer_state = 759
+			transfer_state = 778
 			transfer_state = 106
-			transfer_state = 760
-			transfer_state = 748
+			transfer_state = 779
+			transfer_state = 767
 			transfer_state =  45
 			transfer_state = 104
-			transfer_state = 761
-			transfer_state = 776
+			transfer_state = 780
+			transfer_state = 794
 			
 		}
 	
@@ -2589,7 +2589,7 @@ country_event = {
 		SVN = { 
 		
 			transfer_state = 102
-			transfer_state = 747
+			transfer_state = 766
 
 				
 		}
@@ -2599,7 +2599,7 @@ country_event = {
 			transfer_state = 163
 			transfer_state = 103
 			transfer_state = 109
-			transfer_state = 767
+			transfer_state = 785
 				
 		}
 		
@@ -2613,12 +2613,12 @@ country_event = {
 		SER = { 
 		
 			transfer_state = 45
-			transfer_state = 748
+			transfer_state = 767
 			transfer_state = 107
 			transfer_state = 108
-			transfer_state = 760
-			transfer_state = 761
-			transfer_state = 776
+			transfer_state = 779
+			transfer_state = 780
+			transfer_state = 794
 
 				
 		}
@@ -2633,7 +2633,7 @@ country_event = {
 		MAC = { 
 		
 			transfer_state = 106
-			transfer_state = 759
+			transfer_state = 778
 
 				
 		}
@@ -2653,16 +2653,16 @@ country_event = {
 			transfer_state = 108
 			transfer_state = 103
 			transfer_state = 109
-			transfer_state = 767
-			transfer_state = 747
+			transfer_state = 785
+			transfer_state = 766
 			transfer_state = 102
 			transfer_state = 163
 			transfer_state = 107
 			transfer_state = 105
-			transfer_state = 759
+			transfer_state = 778
 			transfer_state = 106
-			transfer_state = 760
-			transfer_state = 748
+			transfer_state = 779
+			transfer_state = 767
 			transfer_state =  45
 			transfer_state = 212
 			transfer_state = 211
@@ -2726,14 +2726,14 @@ country_event = {
 		ALB = { 
 		
 			transfer_state = 44
-			transfer_state = 761
-			transfer_state = 776
+			transfer_state = 780
+			transfer_state = 794
 			
 				
 		}
 		
-		761 = { add_core_of = ALB } 
-		776 = { add_core_of = ALB } 
+		780 = { add_core_of = ALB } 
+		794 = { add_core_of = ALB } 
 		
 						
 	hidden_effect = {
@@ -3397,11 +3397,11 @@ country_event = {
 		
 		SOV = { 		
 			transfer_state = 4
-			transfer_state = 757							
+			transfer_state = 776							
 		}
 		
 		ENG = { 		
-			transfer_state = 758					
+			transfer_state = 777					
 		}
 		
 					
@@ -3420,8 +3420,8 @@ country_event = {
 			transfer_state = 153
 			transfer_state = 152	
 			transfer_state = 4
-			transfer_state = 757
-			transfer_state = 758				
+			transfer_state = 776
+			transfer_state = 777				
 		}
 		
 		ENG = {remove_from_faction = AUS}
@@ -3715,8 +3715,8 @@ country_event = {
 		
 		SWI = { 
 		
-			transfer_state = 755
-			transfer_state = 756
+			transfer_state = 774
+			transfer_state = 775
 			transfer_state = 3
 			transfer_state = 151
 			
@@ -3741,13 +3741,13 @@ country_event = {
 		
 		FRA = { 
 		
-			transfer_state = 755
+			transfer_state = 774
 				
 		}
 		
 		ITA = { 
 		
-			transfer_state = 756
+			transfer_state = 775
 				
 		}
 		
@@ -3762,13 +3762,13 @@ country_event = {
 		name = ne.342.c        # ITA FRA
 		
 		ITA = { 	
-			transfer_state = 756
+			transfer_state = 775
 			transfer_state = 151				
 		}
 		
 		
 		FRA = { 		
-			transfer_state = 755
+			transfer_state = 774
 			transfer_state = 3			
 		}
 		

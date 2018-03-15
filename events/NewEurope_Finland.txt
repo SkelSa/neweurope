@@ -34,12 +34,12 @@ country_event = {
 		}
 		
 		trigger = {		
-			784 = { is_owned_and_controlled_by = FIN }		
+			802 = { is_owned_and_controlled_by = FIN }		
 		}
 
 		##Effects
 		add_political_power = 10
-		SOV = { transfer_state = 784 }
+		SOV = { transfer_state = 802 }
 		
 		FIN = { country_event = { days = 5 id = ne_fin_harbor.2 } }
 		reverse_add_opinion_modifier = { target = FIN modifier = forced_lease_hanko }
@@ -65,12 +65,12 @@ country_event = {
 		}
 		
 		trigger = {		
-			750 = { is_owned_and_controlled_by = FIN }		
+			769 = { is_owned_and_controlled_by = FIN }		
 		}
 		
 		##Effects
 		add_political_power = 10
-		SOV = { transfer_state = 750 }
+		SOV = { transfer_state = 769 }
 		
 		FIN = { country_event = { days = 5 id = ne_fin_harbor.2 } }
 		reverse_add_opinion_modifier = { target = FIN modifier = forced_lease_porkalla  }
@@ -96,15 +96,15 @@ country_event = {
 		}
 		
 		trigger = {		
-			784 = { is_owned_and_controlled_by = FIN }	
-			750 = { is_owned_and_controlled_by = FIN }
+			802 = { is_owned_and_controlled_by = FIN }	
+			769 = { is_owned_and_controlled_by = FIN }
 		}
 		
 		##Effects
 		add_political_power = -20
 		
-		SOV = { transfer_state = 750 }
-		SOV = { transfer_state = 784 }
+		SOV = { transfer_state = 769 }
+		SOV = { transfer_state = 802 }
 			
 		FIN = { country_event = { days = 5 id = ne_fin_harbor.2 } }
 		reverse_add_opinion_modifier = { target = FIN modifier = forced_lease_hanko_porkalla }

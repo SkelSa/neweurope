@@ -1,5 +1,5 @@
 ﻿##Needs to be taken from the game files due to the capital issue, also modifying the research slots and oob
-capital = 51
+capital = 767
 
 # Starting tech
 set_technology = {
@@ -44,7 +44,7 @@ oob = "WGR_oob"
 
 set_research_slots = 2
 set_convoys = 50
-set_national_unity = 0.7
+set_stability = 0.55
 
 1939.1.1 = {
 
@@ -100,8 +100,8 @@ set_national_unity = 0.7
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1

@@ -1,0 +1,30 @@
+state={
+	id=827
+	name="STATE_827"
+	manpower=684565
+	provinces={
+		936 966 3844 9837 11818 
+	}
+	
+	state_category = town
+
+	history={
+		owner = GRE
+		victory_points = {
+			11818 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			air_base = 2
+			11818 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = GRE
+		add_claim_by = BUL
+
+	}
+}

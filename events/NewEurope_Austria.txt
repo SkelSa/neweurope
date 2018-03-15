@@ -57,7 +57,7 @@ country_event = {
 
 		AUS = { 
 			
-			transfer_state = 758
+			transfer_state = 777
 						  	
 		}
 
@@ -197,7 +197,7 @@ country_event = {
 		
 		AUS = { 			
 			transfer_state = 4
-			transfer_state = 757
+			transfer_state = 776
 
 			add_ideas = NE_neutrality		
 		}

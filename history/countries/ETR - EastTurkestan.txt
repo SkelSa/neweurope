@@ -2,6 +2,9 @@
 
 oob = "ETR_oob"
 
+set_stability = 0.40
+set_war_support = 0.77
+
 set_technology = {
 		#doctrines
 		grand_battle_plan = 1

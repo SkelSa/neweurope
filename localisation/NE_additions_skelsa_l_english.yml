@@ -24,16 +24,6 @@ l_english:
  ##VANILLA EVENTS WITH PETSAMO IN IT
  FIN_agree_peace:0 "Finland agrees to Soviet demands and cedes §YKarjala, Salla and Kalastajasaarento§!."
 
- ##States
- STATE_783:0 "Kalastajasaarento"
- STATE_784:0 "Hanko"
- ##Porkalla is state 750
- STATE_785:0 "Darfur"
- STATE_786:0 "West Xikang"
- STATE_787:0 "Qingdao"
- STATE_798:0 "Southern Shaanxi"
- STATE_799:0 "Srem"
- STATE_800:0 "Suwalki"
  
  ##Politicians and Companies
  FRA_AMX:0 "AMX"
@@ -797,7 +787,7 @@ l_english:
 
  
  ne_faction.2.t:0 "Spirit "ready_join_nato"/"warsaw/pact""
- ne_faction.2.d:0 "d"
+ ne_faction.2.d:0 ""
  ne_faction.2.a:0 "Good"
  ne_faction.2.b:0 "Reverse the process!"
  

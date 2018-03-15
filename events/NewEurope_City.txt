@@ -74,7 +74,7 @@ country_event = {
 	trigger = {
 	
 		tag = SOV
-		owns_state = 751
+		owns_state = 770
 		NOT = { has_global_flag = renamed_vilnius }
 	}
 
@@ -83,7 +83,7 @@ country_event = {
 
 	option = {
 		name = ne_city.1.a
-		751 = { set_state_name = "vilnius" } 
+		770 = { set_state_name = "vilnius" } 
 		set_province_name = { id = 3320 name = "vilnius"}
 		set_global_flag = renamed_vilnius
 	}
@@ -102,7 +102,7 @@ country_event = {
 	
 	trigger = {
 		tag = LIT
-		owns_state = 751
+		owns_state = 770
 		NOT = { has_global_flag = renamed_vilnius }
 	}
 
@@ -111,9 +111,9 @@ country_event = {
 
 	option = {
 		name = ne_city.1.a
-		751 = { set_state_name = "vilnius" } 
+		770 = { set_state_name = "vilnius" } 
 		set_province_name = { id = 3320 name = "vilnius"}
-		set_capital = 751
+		set_capital = 770
 		set_global_flag = renamed_vilnius
 	}
 	
@@ -160,7 +160,7 @@ country_event = {
 	trigger = {
 	
 		tag = POL
-		owns_state = 765
+		owns_state = 784
 		NOT = { has_global_flag = renamed_gdansk }
 	}
 
@@ -171,7 +171,7 @@ country_event = {
 
 	option = {
 		name = ne_city.1.a
-		765 = { set_state_name = "gdansk" } 
+		784 = { set_state_name = "gdansk" } 
 		set_province_name = { id = 362 name = "gdansk"}
 		set_global_flag = renamed_gdansk
 	}
@@ -582,8 +582,8 @@ country_event = {
 	trigger = {
 	
 		tag = WGR
-		controls_state = 744
-		owns_state = 744
+		controls_state = 763
+		owns_state = 763
 	}
 
 	mean_time_to_happen = {
@@ -592,8 +592,8 @@ country_event = {
 
 	option = {
 		#name = ne_city.1.a
-		reset_province_name = 744 
-		reset_province_name = 749 
+		reset_province_name = 763 
+		reset_province_name = 768 
 	}
 	
 }
@@ -608,8 +608,8 @@ country_event = {
 	trigger = {
 	
 		tag = DDR
-		controls_state = 749
-		owns_state = 749
+		controls_state = 768
+		owns_state = 768
 	}
 
 	mean_time_to_happen = {
@@ -618,8 +618,8 @@ country_event = {
 
 	option = {
 		#name = ne_city.1.a
-		reset_province_name = 744 
-		reset_province_name = 749 
+		reset_province_name = 763 
+		reset_province_name = 768 
 	}
 	
 }

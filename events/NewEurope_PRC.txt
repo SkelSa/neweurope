@@ -329,10 +329,10 @@ country_event = {
 		SOV = {is_subject = no}	
 		
 		NOT = {SOV = { has_war_with = PRC } }
-		NOT = {SOV = { owns_state = 766 }}
+		NOT = {SOV = { owns_state = 764 }}
 		
-		PRC = { owns_state = 766 }
-		PRC = { controls_state = 766 }
+		PRC = { owns_state = 764 }
+		PRC = { controls_state = 764 }
 		
 		OR ={
 			has_global_flag = germany_divided
@@ -417,7 +417,7 @@ country_event = {
 		name = ne_prc.11.a
 		
 		add_political_power = 30
-		SOV = {transfer_state = 766}
+		SOV = {transfer_state = 764}
 		
 		set_global_flag = dalian_leased
 		
@@ -479,8 +479,8 @@ country_event = {
 		}		
 		
 		
-		NOT = { PRC = { owns_state = 766 } }
-		NOT = { PRC = { controls_state = 766 } }
+		NOT = { PRC = { owns_state = 764 } }
+		NOT = { PRC = { controls_state = 764 } }
 		
 		
 		OR = {
@@ -503,8 +503,8 @@ country_event = {
 		#following country gets event
 		every_country = {		
 			limit = {	
-				controls_state = 766
-				owns_state = 766	
+				controls_state = 764
+				owns_state = 764	
 			}
 		
 		country_event = { days = 1 id = ne_prc.14}	
@@ -573,7 +573,7 @@ country_event = {
 		name = ne_prc.15.a
 			## either annex command or transfer_state
 			add_political_power = 25
-			ROOT = {transfer_state = 766}
+			ROOT = {transfer_state = 764}
 			
 			add_opinion_modifier = { target = FROM modifier =  returned_dalian}
 		
@@ -596,7 +596,7 @@ country_event = {
 		name = ne_prc.16.a
 		
 		add_political_power = 5
-		create_wargoal = { type = take_state target = FROM generator = {766} } 
+		create_wargoal = { type = take_state target = FROM generator = {764} } 
 		
 		add_opinion_modifier = { target = FROM modifier =  refused_dalian}
 		reverse_add_opinion_modifier = { target = FROM modifier = asked_return_territory}
@@ -640,8 +640,8 @@ country_event = {
 		
 		NOT = {		
 			PRC = { 
-				owns_state = 766 
-				controls_state = 766				
+				owns_state = 764 
+				controls_state = 764				
 			} 			
 		}
 
@@ -701,7 +701,7 @@ country_event = {
 		name = ne_prc.18.a
 		
 		add_political_power = 50
-		transfer_state = 766
+		transfer_state = 764
 		
 		
 		add_opinion_modifier = { target = SOV modifier =  returned_dalian}
@@ -728,7 +728,7 @@ country_event = {
 		name = ne_prc.19.a
 		
 		add_political_power = 150
-		create_wargoal = { type = take_state target = SOV generator = {766} } 
+		create_wargoal = { type = take_state target = SOV generator = {764} } 
 		
 		add_opinion_modifier = { target = SOV modifier =  refused_dalian}
 		reverse_add_opinion_modifier = { target = SOV modifier = asked_return_territory}

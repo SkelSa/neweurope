@@ -27,12 +27,12 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					760 = { is_owned_by = YUG }
-					760 = { is_owned_by = GER }
+					779 = { is_owned_by = YUG }
+					779 = { is_owned_by = GER }
 
 				}
 			}
-			transfer_state = 760
+			transfer_state = 779
 		}
 	}
 }
@@ -77,8 +77,8 @@ country_event = {
 		if = {
 			limit = { owns_state = 44 }
 			ITA = { transfer_state = 105 }
-			ITA = { transfer_state = 761 }
-			ITA = { transfer_state = 759 }
+			ITA = { transfer_state = 780 }
+			ITA = { transfer_state = 778 }
 		}		
 	}
 }
@@ -104,8 +104,8 @@ country_event = {
 		
 		DDR = {
 				exists = yes
-				owns_state = 749
-				owns_state = 744
+				owns_state = 768
+				owns_state = 763
 		}
 
 	}
@@ -115,7 +115,7 @@ country_event = {
 		reset_province_name = 13206 
 		reset_province_name = 13207 
 	
-		set_capital = 749			
+		set_capital = 768			
 	}
 	
 	
@@ -133,8 +133,8 @@ country_event = {
 	
 		WGR = {
 			exists = yes
-			owns_state = 749
-			owns_state = 744
+			owns_state = 768
+			owns_state = 763
 		}
 		
 		DDR = {
@@ -148,7 +148,7 @@ country_event = {
 		reset_province_name = 13206 
 		reset_province_name = 13207 
 	
-	set_capital = 749
+	set_capital = 768
 
 	}
 }

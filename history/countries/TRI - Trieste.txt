@@ -2,7 +2,9 @@
 
 oob = "TRI_1936"
 
-set_research_slots = 3
+set_research_slots = 1
+
+set_stability = 0.50
 
 # Starting tech
 set_technology = {
@@ -12,9 +14,7 @@ set_technology = {
 
 
 add_ideas = {
-
-NE_neutrality
-
+	NE_neutrality
 }
 
 set_politics = {

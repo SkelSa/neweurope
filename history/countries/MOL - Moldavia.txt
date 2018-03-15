@@ -2,7 +2,10 @@
 
 oob = "MOL_1936"
 
-set_research_slots = 3
+set_research_slots = 2
+
+set_stability = 0.70
+set_war_support = 0.50
 
 # Starting tech
 set_technology = {
@@ -14,11 +17,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 20
+			popularity = 60
 		}
 
 		fascism = {
-			popularity = 30
+			popularity = 0
 		}
 		
 		communism = {
@@ -26,11 +29,11 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 10
+			popularity = 0
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = democratic
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes

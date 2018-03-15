@@ -709,20 +709,20 @@ country_event = {
 		
 		if = {
 			limit = {
-				745 = {					
+				764 = {					
 					is_owned_by = POL
 				}
 			}
-			SOV = { transfer_state = 745 }
+			SOV = { transfer_state = 764 }
 		}
 		
 		if = {
 			limit = {
-				751 = {					
+				770 = {					
 					is_owned_by = POL
 				}
 			}
-			SOV = { transfer_state = 751 }
+			SOV = { transfer_state = 770 }
 		}
 		
 		if = {
@@ -824,12 +824,12 @@ country_event = {
 		##Annexing Danzig-Stadt
 		if = {
 			limit = {
-				765 = {					
+				784 = {					
 					is_owned_by = DAN
 				}
 				DAN = { is_puppet_of = POL }
 			}
-			GER = { transfer_state = 765 }
+			GER = { transfer_state = 784 }
 		}
 		
 		##whitepeace between SOV and POL
@@ -866,8 +866,8 @@ country_event = {
 				owns_state = 93
 				owns_state = 91
 				owns_state = 97
-				owns_state = 745
-				owns_state = 751
+				owns_state = 764
+				owns_state = 770
 				owns_state = 89
 			}
 			AND = {
@@ -879,8 +879,8 @@ country_event = {
 					controls_state = 93
 					controls_state = 91
 					controls_state = 97
-					controls_state = 745
-					controls_state = 751
+					controls_state = 764
+					controls_state = 770
 					controls_state = 89
 				}
 			}
@@ -898,8 +898,8 @@ country_event = {
 						owns_state = 91
 						owns_state = 97
 						owns_state = 89
-						owns_state = 745
-						owns_state = 751
+						owns_state = 764
+						owns_state = 770
 						AND = {
 							POL = { has_capitulated = yes }
 							OR = {
@@ -910,8 +910,8 @@ country_event = {
 								controls_state = 91
 								controls_state = 97
 								controls_state = 89
-								controls_state = 745
-								controls_state = 751
+								controls_state = 764
+								controls_state = 770
 							}
 						}		
 					}
@@ -1046,33 +1046,33 @@ country_event = {
 		}
 		if = {
 			limit = {
-				745 = {
+				764 = {
 					OR = {
 						is_controlled_by = GER
 						any_other_country = {
-							controls_state = 745
+							controls_state = 764
 							is_in_faction_with = GER
 							GER = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			SOV = { transfer_state = 745 }
+			SOV = { transfer_state = 764 }
 		}
 		if = {
 			limit = {
-				751 = {
+				770 = {
 					OR = {
 						is_controlled_by = GER
 						any_other_country = {
-							controls_state = 751
+							controls_state = 770
 							is_in_faction_with = GER
 							GER = { is_faction_leader = yes }
 						}
 					}
 				}
 			}
-			SOV = { transfer_state = 751 }
+			SOV = { transfer_state = 770 }
 		}
 		SOV = { country_event = germany.15 }
 	}
@@ -1109,8 +1109,8 @@ country_event = {
 			add_state_claim = 91
 			add_state_claim = 97
 			add_state_claim = 89
-			add_state_claim = 745
-			add_state_claim = 751
+			add_state_claim = 764
+			add_state_claim = 770
 			effect_tooltip = {
 				create_wargoal = {
 					type = annex_everything
@@ -1312,7 +1312,7 @@ country_event = {
 			##GERMANY					
 			if = {
 				limit = {
-					776 = {
+					794 = {
 						is_owned_by = YUG
 							OR = { 
 								is_controlled_by = GER
@@ -1322,7 +1322,7 @@ country_event = {
 				
 				}
 			
-				GER = { set_state_controller = 776		add_state_claim = 776 }
+				GER = { set_state_controller = 794		add_state_claim = 794 }
 				
 			}
 			
@@ -1358,7 +1358,7 @@ country_event = {
 			
 			if = {
 				limit = {
-					748 = {
+					767 = {
 						is_owned_by = YUG
 							OR = { 
 								is_controlled_by = GER
@@ -1368,7 +1368,7 @@ country_event = {
 				
 				}
 			
-				GER = { set_state_controller = 748		add_state_claim = 748 }
+				GER = { set_state_controller = 767		add_state_claim = 767 }
 			}
 			
 			if = {
@@ -1415,7 +1415,7 @@ country_event = {
 				
 				if = {
 					limit = {
-						761 = {
+						780 = {
 							is_owned_by = YUG
 								OR = { 
 									is_controlled_by = GER
@@ -1425,12 +1425,12 @@ country_event = {
 					
 					}
 				
-					ITA = { set_state_controller = 761		add_state_claim = 761 }
+					ITA = { set_state_controller = 780		add_state_claim = 780 }
 				}
 				
 				if = {
 					limit = {
-						759 = {
+						778 = {
 							is_owned_by = YUG
 								OR = { 
 									is_controlled_by = GER
@@ -1440,7 +1440,7 @@ country_event = {
 					
 					}
 				
-					ITA = { set_state_controller = 759		add_state_claim = 759 }
+					ITA = { set_state_controller = 778		add_state_claim = 778 }
 				}
 		
 		
@@ -1533,7 +1533,7 @@ country_event = {
 				
 				if = {
 					limit = {
-						760 = {
+						779 = {
 							is_owned_by = YUG
 								OR = { 
 									is_controlled_by = GER
@@ -1543,7 +1543,7 @@ country_event = {
 					
 					}
 				
-					BUL = { set_state_controller = 760		add_state_claim = 760 }
+					BUL = { set_state_controller = 779		add_state_claim = 779 }
 				}
 
 		

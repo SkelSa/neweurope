@@ -4,6 +4,9 @@ oob = "SEN_1936"
 
 set_research_slots = 2 ##will gain the other three through the focus tree
 
+set_stability = 0.50
+set_war_support = 0.35
+
 # Starting tech (have access to French tech as they're puppets)
 set_technology = {
 	infantry_weapons = 1

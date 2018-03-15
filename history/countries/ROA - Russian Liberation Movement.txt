@@ -43,14 +43,16 @@ set_technology = {
 
 
 set_research_slots = 0
-set_national_unity = 0.5
+
+set_stability = 0.25
+set_war_support = 0.90
 
 
 set_politics = {
 
 	parties = {
 		neutrality = { 
-			popularity = 20
+			popularity = 100
 		}
 	}
 	
@@ -60,7 +62,6 @@ set_politics = {
 	elections_allowed = no
 
 }
-
 
 
 

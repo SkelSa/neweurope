@@ -2,6 +2,9 @@
 
 oob = "DRV_oob" ##Is not there from game start
 
+set_stability = 0.65
+set_war_support = 0.80
+
 set_research_slots = 2
 
 # Starting tech

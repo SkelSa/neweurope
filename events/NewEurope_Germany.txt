@@ -97,8 +97,8 @@ country_event = {
 			#transfer_state = 50
 			#transfer_state = 54
 			#transfer_state = 55
-			#transfer_state = 772
-			#transfer_state = 749					  	
+			#transfer_state = 790
+			#transfer_state = 768					  	
 		}
 
 		
@@ -183,14 +183,14 @@ country_event = {
 			}
 
 			annex_country = { target = SAA transfer_troops = yes }
-			WGR = {add_state_core = 764}
+			WGR = {add_state_core = 783}
 		}
 
 		##HISTORICAL
-		#transfer_state = 754
+		#transfer_state = 773
 		#transfer_state = 42
-		#transfer_state = 775
-		#transfer_state = 764
+		#transfer_state = 793
+		#transfer_state = 783
 
 	}	
 
@@ -236,9 +236,9 @@ country_event = {
 			}
 	
 			##HISTORICAL
-			#transfer_state = 754
+			#transfer_state = 773
 			#transfer_state = 42
-			#transfer_state = 775
+			#transfer_state = 793
 
 		}	
 		
@@ -315,7 +315,7 @@ country_event = {
 			#transfer_state =  56
 			#transfer_state =  59
 			#transfer_state =  58
-			#transfer_state =  778
+			#transfer_state =  796
 
 		##Bonn
 		set_capital = 51 	
@@ -519,7 +519,7 @@ country_event = {
 			}
 			
 			##East Berlin
-			set_capital = 744						  	
+			set_capital = 763						  	
 		}
 
 		
@@ -573,7 +573,7 @@ country_event = {
 			}
 			
 			##East Berlin
-			set_capital = 744	
+			set_capital = 763	
 						  	
 		}
 		
@@ -640,13 +640,13 @@ country_event = {
 		OR = {
 		
 			FRA = {
-				controls_state = 764
-				owns_state = 764
+				controls_state = 783
+				owns_state = 783
 			}
 			
 			FOZ = {
-				controls_state = 764
-				owns_state = 764
+				controls_state = 783
+				owns_state = 783
 			}
 		
 		}
@@ -666,8 +666,8 @@ country_event = {
 	option = {	##create saarland
 		name = ne_saar.2.a
 		
-		SAA = { transfer_state = 764  }
-		SAA = { add_state_core = 764  }
+		SAA = { transfer_state = 783  }
+		SAA = { add_state_core = 783  }
 		FRA = { puppet = SAA }
 
 		
@@ -703,12 +703,12 @@ country_event = {
 			SAA = {		
 				exists = yes
 				is_subject_of = FRA
-				controls_state = 764							
+				controls_state = 783							
 			}
 			
 			FRA = {				
-				controls_state = 764
-				owns_state = 764			
+				controls_state = 783
+				owns_state = 783			
 			}
 		
 		}
@@ -729,7 +729,7 @@ country_event = {
 
 		WGR = { annex_country = { target = SAA transfer_troops = no } }
 		
-		WGR = { transfer_state = 764 }
+		WGR = { transfer_state = 783 }
 		
 		hidden_effect = {		
 			clr_global_flag = saarland_puppet	
@@ -919,7 +919,7 @@ country_event = {
 		WGR = { 
 			annex_country = { target = DDR }
 			annex_country = { target = GER }
-			set_capital = 749
+			set_capital = 768
 
 			##ensure neutrality	
 			add_ideas = NE_neutrality

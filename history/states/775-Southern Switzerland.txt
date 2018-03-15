@@ -1,0 +1,23 @@
+
+state={
+	id=775
+	name="STATE_775"
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = SWI
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		3641 3662 9600 
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

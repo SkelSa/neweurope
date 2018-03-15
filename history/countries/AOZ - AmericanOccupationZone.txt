@@ -1,4 +1,13 @@
-﻿capital = 55
+﻿capital = 55	##Frankfurt
+
+oob = "AOZ_1936"
+
+set_stability = 0.65
+set_war_support = 0.20
+
+
+set_research_slots = 3
+
 
 # Starting tech
 set_technology = {
@@ -42,15 +51,11 @@ set_technology = {
 
 
 
-set_research_slots = 3
-set_national_unity = 0.6
-
-
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 70
+			popularity = 100
 		}
 
 		fascism = {
@@ -58,7 +63,7 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 30
+			popularity = 0
 			banned = no #default is no
 		}
 	}

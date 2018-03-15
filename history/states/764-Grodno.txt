@@ -1,0 +1,26 @@
+state={
+	id=764
+	name="STATE_764"
+	
+	history={
+		owner = POL
+		victory_points = {
+			3393 1 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = POL
+		add_core_of = BLR
+
+	}
+	
+	
+	provinces={
+		318 347 3281 3393 
+	}
+	manpower=456000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

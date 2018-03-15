@@ -1,0 +1,22 @@
+state={
+	id=811
+	name="STATE_811"
+	manpower = 124695
+	
+	state_category = rural
+	resources={
+		chromium=4
+	}
+
+	history=
+	{
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+		}
+
+	}
+	provinces= { 
+		7193 
+	}
+}

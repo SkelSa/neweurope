@@ -1,0 +1,32 @@
+state={
+	id=776
+	name="STATE_776"
+	
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			688 10 
+		}
+		add_core_of = AUS
+		add_claim_by = HUN
+		1938.3.12 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
+
+		}
+
+	}
+	
+	provinces={
+		3700 9661 11630 
+	}
+	manpower=400000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

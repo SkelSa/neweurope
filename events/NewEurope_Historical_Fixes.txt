@@ -322,7 +322,7 @@ country_event = {
 			transfer_state = 146
 			transfer_state = 147
 			##State with long Finnish name
-			transfer_state = 783
+			transfer_state = 801
 		}
 	}
 
@@ -360,7 +360,7 @@ country_event = {
 		transfer_state = 146
 		transfer_state = 147
 		##State Change
-		transfer_state = 783
+		transfer_state = 801
 		
 		##Motivate Players to take this
 		add_political_power = 60

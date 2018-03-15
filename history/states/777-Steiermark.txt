@@ -1,0 +1,32 @@
+
+state={
+	id=777
+	name="STATE_777"
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			688 10 
+		}
+		add_core_of = AUS
+		1938.3.12 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
+
+		}
+
+	}
+
+	provinces={
+		653 668 671 3673 3674 6673 6687 6691 9646 9648 9650 9679 
+	}
+	manpower=900000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

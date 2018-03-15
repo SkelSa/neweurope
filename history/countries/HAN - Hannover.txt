@@ -2,7 +2,10 @@
 
 oob = "HAN_1936"
 
-set_research_slots = 3
+set_research_slots = 2
+
+set_stability = 0.65
+set_war_support = 0.43
 
 # Starting tech
 set_technology = {
@@ -14,19 +17,19 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 40
+			popularity = 65
 		}
 
 		fascism = {
-			popularity = 20
+			popularity = 10
 		}
 		
 		communism = {
-			popularity = 20
+			popularity = 25
 		}
 		
 		neutrality = { 
-			popularity = 20
+			popularity = 0
 		}
 	}
 	
@@ -88,9 +91,6 @@ set_politics = {
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1

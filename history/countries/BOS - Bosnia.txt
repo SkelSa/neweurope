@@ -2,11 +2,15 @@
 
 oob = "BOS_1936"
 
-set_research_slots = 3
+set_research_slots = 2
+
+set_stability = 0.55
+set_war_support = 0.60
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	tech_recon = 1
 	
 }
 
@@ -18,7 +22,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 20
+			popularity = 10
 		}
 		
 		communism = {
@@ -26,14 +30,14 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 40
+			popularity = 50
 		}
 	}
 	
 	ruling_party = neutrality
 	last_election = "1933.12.20"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 1939.1.1 = {
@@ -105,19 +109,19 @@ set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 20
+				popularity = 10
 			}
 
 			fascism = {
-				popularity = 20
+				popularity = 10
 			}
 			
 			communism = {
-				popularity = 20
+				popularity = 30
 			}
 			
 			neutrality = { 
-				popularity = 40
+				popularity = 50
 			}
 		}
 		

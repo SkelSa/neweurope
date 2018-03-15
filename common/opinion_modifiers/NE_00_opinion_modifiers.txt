@@ -10,288 +10,156 @@
 
 opinion_modifiers = {
 
+
 	##NewEurope MODIFIERS
 	
-	refused_hatay_transfer = {
-		value = -10
-	}
 	
-	accepted_hatay_transfer = {
-		value = 10
-	}
+	##Generic Modifiers:
 	
-	refused_warsaw_pact = {
-		value = -25
-	}
+	asked_return_territory = { value = -20 }
 	
-	refused_warsaw_pact_membership = {
-		value = -25
-	}
+	return_territory = { value = 20 }
 	
-	dissolved_allies = {
-		value = 10
-	}
+	refuse_territory = { value = -20 }
 	
-	refused_nato_founding = {
-		value = -40
-	}
+	fooled_us = { value = -10 }
 	
-	refused_nato = {
-		value = -25
-	}	
+	sided_americans = { value = -25 }
 	
-	refused_nato_membership = {
-		value = -25
-	}
+	sided_soviets = { value = -25 }
+	
+	betrayed_us = { value = -30 }
+	
+	not_invited = { value = -5 }
+	
+	freed_us = { value = 30 }
+	
+	NE_lend_lease = { value = 35 }
+	
+	NE_denied_lend_lease = { value = -40 }
+	
+	
+	##Specific Modifiers
+	
+	
+	refused_hatay_transfer = { value = -10 }
+	
+	accepted_hatay_transfer = {	value = 10 }
+	
+	refused_warsaw_pact = { value = -25 }
+	
+	refused_warsaw_pact_membership = { value = -25 }
+	
+	dissolved_allies = { value = 10 }
+	
+	refused_nato_founding = { value = -40 }
+	
+	refused_nato = { value = -25 }	
+	
+	refused_nato_membership = { value = -25 }
 
-	accepted_austrian_reunification = {
-		value = 25
-	}
+	accepted_austrian_reunification = { value = 25 }
 	
-	refused_austrian_reunification = {
-		value = -25
-	}
+	refused_austrian_reunification = { value = -25 }
 	
-	accepted_westgerman_reunification = {
-		value = 30
-	}
+	accepted_westgerman_reunification = { value = 30 }
 	
-	refused_westgerman_reunification = {
-		value = -30
-	}
+	refused_westgerman_reunification = { value = -30 }
 
-	controls_saarland = {
-		value = -15
-	}
+	controls_saarland = { value = -15 }
 	
-	western_german_puppet = {
-		value = -30
-	}
+	western_german_puppet = { value = -30 }
 	
-	eastern_german_puppet = {
-		value = -30
-	}
+	eastern_german_puppet = { value = -30 }
 	
-	not_invited = {
-		value = -5
-	}
+	accepted_japanese_reunification = { value = 30 }
 	
-	accepted_japanese_reunification = {
-		value = 30
-	}
+	refused_japanese_reunification = { value = -30 }
 	
-	refused_japanese_reunification = {
-		value = -30
-	}
+	western_japanese_puppet = { value = -30 }
 	
-	western_japanese_puppet = {
-		value = -30
-	}
+	eastern_japanese_puppet = { value = -30 }
 	
-	eastern_japanese_puppet = {
-		value = -30
-	}
+	leased_dalian = { value = 5 }
 	
-	leased_dalian = {
-		value = 5
-	}
+	returned_dalian = { value = 5 }
 	
-	returned_dalian = {
-		value = 5
-	}
+	refused_dalian = { value = -5 }
 	
-	refused_dalian = {
-		value = -5
-	}
+	accepted_nfl = { value = 5 }
 	
-	accepted_nfl = {
-		value = 5
-	}
+	refused_nfl = { value = -5 }
 	
-	refused_nfl = {
-		value = -5
-	}
+	accepted_notes = { value = 20 }
 	
-	accepted_notes = {
-		value = 20
-	}
+	refused_notes = { value = -20 }	
 	
-	refused_notes = {
-		value = -20
-	}
 	
-	asked_return_territory = {
-		value = -20
-	}
+	returned_shikoku = { value = 40 }
 	
-	return_territory = {
-		value = 20
-	}
+	peace_treaty = { value = 15 }
 	
-	refuse_territory = {
-		value = -20
-	}
+	found_solution_korea = { value = 20 }
 	
-	fooled_us = {
-		value = -10
-	}
+	occupies_korea = { value = -20 }
 	
-	sided_americans = {
-		value = -20
-	}
-	
-	sided_soviets = {
-		value = -20
-	}
-	
-	returned_shikoku = {
-		value = 40
-	}
-	
-	peace_treaty = {
-		value = 15
-	}
-	
-	found_solution_korea = {
-		value = 20
-	}
-	
-	occupies_korea = {
-		value = -20
-	}
-	
-	freed_us = {
-		value = 30
-	}
-	
-	NE_lend_lease = {
-		value = 35
-	}
-	
-	NE_denied_lend_lease = {
-		value = -40
-	}
 
-	west_east_medium_tension_relations = {
-		value = -45
-		years = 4
-	}
+	west_east_medium_tension_relations = { value = -45  years = 4 }
 
-	west_east_high_tension_relations = {
-		value = -65
-	}
+	west_east_high_tension_relations = { value = -65 }
 
-	west_east_very_high_tension_relations = {
-		value = -80
-	}
+	west_east_very_high_tension_relations = { value = -80 }
 
-	soviet_knife_in_the_back = {
-		value = -65
-	}
+	soviet_knife_in_the_back = { value = -65 }
 
-	soviet_compliance_with_the_japanese_pact = {
-		value = 25
-		min_trust = 10
-	}
+	soviet_compliance_with_the_japanese_pact = { value = 25 min_trust = 10 }
 	
-	sov_na_pact = {
-		value = 20
-	}
+	sov_na_pact = { value = 20 }
 
-	sov_na_pact_denied = {
-		value = -25
-	}
+	sov_na_pact_denied = { value = -25 }
 
-	axis_na_pact_reaction = {
-		value = -15
-	}
+	axis_na_pact_reaction = { value = -15 }
 
-	american_na_pact_reaction_sanction = {
-		trade = yes
-		value = -45
-		months = 2
-	}
+	american_na_pact_reaction_sanction = { trade = yes  value = -45  months = 2 }
 
-	american_na_pact_reaction = {
-		value = -25
-		months = 2
-	}
+	american_na_pact_reaction = { value = -25  months = 2 }
 
-	pol_agree = {
-		value = 40
-	}
+	pol_agree = { value = 40 }
 	
-	pol_disagree = {
-		value = -20
-	}
+	pol_disagree = { value = -20 }
 
-	ally_fight_against_bolshevism = {
-		value = 30
-	}
+	ally_fight_against_bolshevism = { value = 30 }
 	
-	together_against_the_allies = {
-		value = 40
-	}
+	together_against_the_allies = { value = 40 }
 	
-	refused_to_help = {
-		value = -15
-	}
+	refused_to_help = { value = -15 }
 	
-	lost_finnish_territories = {
-		value = -15
-	}
+	lost_finnish_territories = { value = -15 }
 	
-	forced_lease_hanko = {
-		value = -10
-	}
+	forced_lease_hanko = { value = -10 }
 	
-	forced_lease_porkalla = {
-		value = -10
-	}
+	forced_lease_porkalla = { value = -10 }
 	
-	forced_lease_hanko_porkalla = {
-		value = -20
-	}
+	forced_lease_hanko_porkalla = { value = -20 }
 	
-	moscow_armistice = {
-		value = 25
-	}
+	moscow_armistice = { value = 25 }
 
-	execution_of_german_scientists_ddreaction = {
-		value = -15
-	}
+	execution_of_german_scientists_ddreaction = { value = -15 }
 
-	execution_of_german_scientists_alliesreaction = {
-		value = -25
-	}
+	execution_of_german_scientists_alliesreaction = { value = -25 }
 	
-	execution_of_german_scientists_wgrreaction = {
-		value = -65
-	}
+	execution_of_german_scientists_wgrreaction = { value = -65 }
 	
-	first_nato_expansion = {
-		value = -20
-	}
+	first_nato_expansion = { value = -20}
 	
-	second_nato_expansion = {
-		value = -25
-	}
+	second_nato_expansion = { value = -25 }
 	
-	nato_neighbour = {
-		value = -30
-	}
+	nato_neighbour = { value = -30 decay = 5 }
 
-	liberation_army_formation = {
-		value = 50
-	}
+	liberation_army_formation = { value = 50 }
 	
-	baltic_annexation = {
-		value = -8
-	}
+	baltic_annexation = { value = -8 }
 	
-	betrayed_us = {
-		value = -30
-	}
 	
 	
 	

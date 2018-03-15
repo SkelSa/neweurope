@@ -72,9 +72,9 @@ country_event = {
 
 		TUR = { 
 			
-			transfer_state = 774
+			transfer_state = 792
 			
-			add_state_core = 774 
+			add_state_core = 792 
 			
 		}
 		
@@ -751,9 +751,9 @@ country_event = {
 			
 		if = {
 			limit = { 
-				LIT = { owns_state = 751 } 
+				LIT = { owns_state = 770 } 
 			}
-		LIT = {set_capital = 751}
+		LIT = {set_capital = 770}
 		
 		}
 	}

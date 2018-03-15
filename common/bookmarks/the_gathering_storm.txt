@@ -66,27 +66,59 @@ bookmarks = {
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				CHI_army_corruption_1
+				CHI_hyper_inflation_1
+				CHI_nine_power_treaty
+			}
+			focuses = {
+				CHI_united_front
+				CHI_army_reform
+				CHI_invite_the_flying_tigers
+			}
+		}
+		"PRC"={			
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = communism
+			available = { has_dlc = "Waking the Tiger" }
+			ideas = {
+				PRC_the_long_march_1
+				PRC_low_popular_support_3
+				PRC_power_struggles
+			}
+			focuses = {
+				PRC_infiltration
+				PRC_maoism
+				PRC_anti_japanese_expedition
+			}
+		}
+		"CHI"={
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			available = { NOT = {  has_dlc = "Waking the Tiger" } }
+			ideas = {
 				german_advisors
 				CHI_communist_uprisings
 			}
 			focuses = {
 				deterrence
 				nationalism_focus
-			}	
-		}
-
-		"PRC"={
+			}
+		}		
+		"PRC"={			
 			history = "PRC_GATHERING_STORM_DESC"
 			ideology = communism
+			available = { NOT = {  has_dlc = "Waking the Tiger" } }
 			ideas = {
-				# No ideas
+				##
 			}
 			focuses = {
 				internationalism_focus
 				political_commissars
-			}	
+				technology_sharing
+			}
 		}
 
+		
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
@@ -107,7 +139,6 @@ bookmarks = {
 				CAN_join_comintern
 			}
 		}
-		
 		"POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
@@ -121,7 +152,6 @@ bookmarks = {
 				POL_seek_accommodation_with_germany
 			}
 		}
-		
 		"CZE"={
 			minor = yes
 			history = "CZE_GATHERING_STORM_DESC"
@@ -135,9 +165,7 @@ bookmarks = {
 				CZE_industrial_legacy
 				CZE_military_research_institute
 			}
-		}		
-			
-		
+		}
 		"YUG"={
 			minor = yes
 			history = "YUG_GATHERING_STORM_DESC"
@@ -180,8 +208,7 @@ bookmarks = {
 				RAJ_indian_gurkhas
 				RAJ_the_smiling_buddha
 			}
-		}
-		
+		}		
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
@@ -195,7 +222,6 @@ bookmarks = {
 				AST_delegation_to_china
 			}
 		}
-		
 		"NZL"={
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
@@ -209,7 +235,7 @@ bookmarks = {
 				NZL_maori_volunteers
 			}
 		}
-			
+
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

@@ -155,7 +155,7 @@ country_event = {
 	
 	transfer_state = 524
 	transfer_state = 609
-	transfer_state = 766
+	transfer_state = 764
 	transfer_state = 530
 	
 	}
@@ -344,7 +344,7 @@ country_event = {
 		
 			transfer_state = 524
 			transfer_state = 609
-			transfer_state = 766
+			transfer_state = 764
 			transfer_state = 530
 		
 		}
@@ -487,7 +487,7 @@ country_event = {
 	
 		transfer_state = 524
 		#transfer_state = 609
-		#transfer_state = 766
+		#transfer_state = 764
 		
 	}
 	
@@ -556,9 +556,9 @@ country_event = {
 				DPR = {
 
 				transfer_state = 527
-				transfer_state = 763
-				transfer_state = 770 
-				transfer_state = 771
+				transfer_state = 782
+				transfer_state = 788 
+				transfer_state = 789
 
 
 				}
@@ -566,9 +566,9 @@ country_event = {
 				KOR = {
 
 				transfer_state = 525
-				transfer_state = 762
-				transfer_state = 768
-				transfer_state = 769
+				transfer_state = 781
+				transfer_state = 786
+				transfer_state = 787
 		
 				}
 					
@@ -592,9 +592,9 @@ country_event = {
 				SOV = {
 
 				transfer_state = 527
-				transfer_state = 763
-				transfer_state = 770 
-				transfer_state = 771
+				transfer_state = 782
+				transfer_state = 788 
+				transfer_state = 789
 
 
 				}
@@ -602,9 +602,9 @@ country_event = {
 				USA = {
 
 				transfer_state = 525
-				transfer_state = 762
-				transfer_state = 768
-				transfer_state = 769
+				transfer_state = 781
+				transfer_state = 786
+				transfer_state = 787
 		
 				}
 				
@@ -626,24 +626,24 @@ country_event = {
 
 				DPR = {
 					transfer_state = 527
-					transfer_state = 762
-					transfer_state = 769
-					transfer_state = 770
+					transfer_state = 781
+					transfer_state = 787
+					transfer_state = 788
 				}
 
 				KOR = {
 					transfer_state = 525
-					transfer_state = 763
-					transfer_state = 768
-					transfer_state = 771	
+					transfer_state = 782
+					transfer_state = 786
+					transfer_state = 789	
 				}
 		
 		
 				##the DMZ gets a DMZ
-				768 = { set_demilitarized_zone = yes } 
-				769 = { set_demilitarized_zone = yes } 
-				770 = { set_demilitarized_zone = yes } 
-				771 = { set_demilitarized_zone = yes } 
+				786 = { set_demilitarized_zone = yes } 
+				787 = { set_demilitarized_zone = yes } 
+				788 = { set_demilitarized_zone = yes } 
+				789 = { set_demilitarized_zone = yes } 
 		
 				hidden_effect = {
 				country_event = ne_asia.1

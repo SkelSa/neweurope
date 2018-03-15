@@ -138,7 +138,7 @@ country_event = {
 			has_government = communism
 		}
 		
-		749 = {
+		768 = {
 			OR = {
 				is_owned_by = WGR
 				any_country = {

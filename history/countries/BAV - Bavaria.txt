@@ -1,12 +1,17 @@
-﻿capital = 52
+﻿capital = 52##MÜNCHEN 
 
 oob = "BAV_1936"
 
-set_research_slots = 3
+set_research_slots = 2
+
+
+set_stability = 0.55
+set_war_support = 0.25
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	tech_recon = 1
 	
 }
 
@@ -105,7 +110,7 @@ set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 40
+				popularity = 35
 			}
 
 			fascism = {
@@ -117,7 +122,7 @@ set_politics = {
 			}
 			
 			neutrality = { 
-				popularity = 20
+				popularity = 25
 			}
 		}
 		

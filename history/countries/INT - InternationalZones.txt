@@ -2,7 +2,10 @@
 
 oob = "INT_1936"
 
-set_research_slots = 3
+set_research_slots = 2
+
+set_stability = 0.90
+set_war_support = 0.10
 
 # Starting tech
 set_technology = {

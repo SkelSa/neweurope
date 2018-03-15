@@ -89,43 +89,43 @@ country_event = {
 		##every occupation zone can span over Germany, except Saarland
 		
 		SAA = { 	
-			add_state_core = 764			
+			add_state_core = 783			
 		}
 		
 		
 		FOZ = { 
 			
 			add_state_core = 42
-			add_state_core = 754
-			add_state_core = 775
+			add_state_core = 773
+			add_state_core = 793
 			add_state_core = 51
 			add_state_core = 51
 			add_state_core = 56
 			add_state_core = 59
 			add_state_core = 58
 			add_state_core = 57
-			add_state_core = 778
+			add_state_core = 796
 			add_state_core = 54
 			add_state_core = 53
 			add_state_core = 52
-			add_state_core = 772
+			add_state_core = 790
 			add_state_core = 50
-			add_state_core = 749
+			add_state_core = 768
 			add_state_core = 55
-			add_state_core = 744
+			add_state_core = 763
 			add_state_core = 60
-			add_state_core = 753
+			add_state_core = 772
 			add_state_core = 64
 			add_state_core = 65
 			add_state_core = 61
 			add_state_core = 62
-			add_state_core = 764
+			add_state_core = 783
 			
 			#adding historical claims
-			add_state_claim = 754
+			add_state_claim = 773
 			add_state_claim = 42
-			add_state_claim = 775
-			add_state_claim = 764 #saarland
+			add_state_claim = 793
+			add_state_claim = 783 #saarland
 				
 
 		}
@@ -133,30 +133,30 @@ country_event = {
 		BOZ = { 
 		
 			add_state_core = 42
-			add_state_core = 754
-			add_state_core = 775
+			add_state_core = 773
+			add_state_core = 793
 			add_state_core = 51
 			add_state_core = 51
 			add_state_core = 56
 			add_state_core = 59
 			add_state_core = 58
 			add_state_core = 57
-			add_state_core = 778
+			add_state_core = 796
 			add_state_core = 54
 			add_state_core = 53
 			add_state_core = 52
-			add_state_core = 772
+			add_state_core = 790
 			add_state_core = 50
-			add_state_core = 749
+			add_state_core = 768
 			add_state_core = 55
-			add_state_core = 744
+			add_state_core = 763
 			add_state_core = 60
-			add_state_core = 753
+			add_state_core = 772
 			add_state_core = 64
 			add_state_core = 65
 			add_state_core = 61
 			add_state_core = 62
-			add_state_core = 764
+			add_state_core = 783
 			
 			#adding historical claims
 			add_state_claim = 51
@@ -165,37 +165,37 @@ country_event = {
 			add_state_claim =  56
 			add_state_claim =  59
 			add_state_claim =  58
-			add_state_claim =  778
+			add_state_claim =  796
 
 		}
 		
 		AOZ = { 
 		
 			add_state_core = 42
-			add_state_core = 754
-			add_state_core = 775
+			add_state_core = 773
+			add_state_core = 793
 			add_state_core = 51
 			add_state_core = 51
 			add_state_core = 56
 			add_state_core = 59
 			add_state_core = 58
 			add_state_core = 57
-			add_state_core = 778
+			add_state_core = 796
 			add_state_core = 54
 			add_state_core = 53
 			add_state_core = 52
-			add_state_core = 772
+			add_state_core = 790
 			add_state_core = 50
-			add_state_core = 749
+			add_state_core = 768
 			add_state_core = 55
-			add_state_core = 744
+			add_state_core = 763
 			add_state_core = 60
-			add_state_core = 753
+			add_state_core = 772
 			add_state_core = 64
 			add_state_core = 65
 			add_state_core = 61
 			add_state_core = 62
-			add_state_core = 764
+			add_state_core = 783
 			
 			#adding historical claims
 			add_state_claim = 52
@@ -203,8 +203,8 @@ country_event = {
 			add_state_claim = 50
 			add_state_claim = 54
 			add_state_claim = 55
-			add_state_claim = 772
-			add_state_claim = 749
+			add_state_claim = 790
+			add_state_claim = 768
 			
 			
 
@@ -213,39 +213,39 @@ country_event = {
 		SOZ = { 
 		
 			add_state_core = 42
-			add_state_core = 754
-			add_state_core = 775
+			add_state_core = 773
+			add_state_core = 793
 			add_state_core = 51
 			add_state_core = 51
 			add_state_core = 56
 			add_state_core = 59
 			add_state_core = 58
 			add_state_core = 57
-			add_state_core = 778
+			add_state_core = 796
 			add_state_core = 54
 			add_state_core = 53
 			add_state_core = 52
-			add_state_core = 772
+			add_state_core = 790
 			add_state_core = 50
-			add_state_core = 749
+			add_state_core = 768
 			add_state_core = 55
-			add_state_core = 744
+			add_state_core = 763
 			add_state_core = 60
-			add_state_core = 753
+			add_state_core = 772
 			add_state_core = 64
 			add_state_core = 65
 			add_state_core = 61
 			add_state_core = 62
-			add_state_core = 764
+			add_state_core = 783
 			
 			##adding historical claims
 			add_state_claim = 62
 			add_state_claim = 61
 			add_state_claim = 64
-			add_state_claim = 753
+			add_state_claim = 772
 			add_state_claim = 65
 			add_state_claim = 60
-			add_state_claim = 744
+			add_state_claim = 763
 
 		}
 		
@@ -255,9 +255,9 @@ country_event = {
 			add_state_core = 67
 			add_state_core = 68
 			add_state_core = 63
-			add_state_core = 743
-			add_state_core = 746
+			add_state_core = 762
 			add_state_core = 765
+			add_state_core = 784
 			
 		}
 		
@@ -267,9 +267,9 @@ country_event = {
 			remove_state_core  = 67
 			remove_state_core  = 68
 			remove_state_core  = 63
-			remove_state_core  = 743
-			remove_state_core  = 746
+			remove_state_core  = 762
 			remove_state_core  = 765
+			remove_state_core  = 784
 		
 		}
 			
@@ -307,43 +307,43 @@ country_event = {
 		
 		SAA = { 
 	
-			add_state_core = 764	
+			add_state_core = 783	
 		
 		}
 			
 		FOZ = { 
 			
 			add_state_core = 42
-			add_state_core = 754
-			add_state_core = 775
+			add_state_core = 773
+			add_state_core = 793
 			add_state_core = 51
 			add_state_core = 51
 			add_state_core = 56
 			add_state_core = 59
 			add_state_core = 58
 			add_state_core = 57
-			add_state_core = 778
+			add_state_core = 796
 			add_state_core = 54
 			add_state_core = 53
 			add_state_core = 52
-			add_state_core = 772
+			add_state_core = 790
 			add_state_core = 50
-			add_state_core = 749
+			add_state_core = 768
 			add_state_core = 55
-			add_state_core = 744
+			add_state_core = 763
 			add_state_core = 60
-			add_state_core = 753
+			add_state_core = 772
 			add_state_core = 64
 			add_state_core = 65
 			add_state_core = 61
 			add_state_core = 62
-			add_state_core = 764
+			add_state_core = 783
 			
 			#adding historical claims
-			add_state_claim = 754
+			add_state_claim = 773
 			add_state_claim = 42
-			add_state_claim = 775
-			add_state_claim = 764 #saarland
+			add_state_claim = 793
+			add_state_claim = 783 #saarland
 				
 
 		}
@@ -351,30 +351,30 @@ country_event = {
 		BOZ = { 
 		
 			add_state_core = 42
-			add_state_core = 754
-			add_state_core = 775
+			add_state_core = 773
+			add_state_core = 793
 			add_state_core = 51
 			add_state_core = 51
 			add_state_core = 56
 			add_state_core = 59
 			add_state_core = 58
 			add_state_core = 57
-			add_state_core = 778
+			add_state_core = 796
 			add_state_core = 54
 			add_state_core = 53
 			add_state_core = 52
-			add_state_core = 772
+			add_state_core = 790
 			add_state_core = 50
-			add_state_core = 749
+			add_state_core = 768
 			add_state_core = 55
-			add_state_core = 744
+			add_state_core = 763
 			add_state_core = 60
-			add_state_core = 753
+			add_state_core = 772
 			add_state_core = 64
 			add_state_core = 65
 			add_state_core = 61
 			add_state_core = 62
-			add_state_core = 764
+			add_state_core = 783
 			
 			#adding historical claims
 			add_state_claim = 51
@@ -383,37 +383,37 @@ country_event = {
 			add_state_claim =  56
 			add_state_claim =  59
 			add_state_claim =  58
-			add_state_claim =  778
+			add_state_claim =  796
 
 		}
 		
 		AOZ = { 
 		
 			add_state_core = 42
-			add_state_core = 754
-			add_state_core = 775
+			add_state_core = 773
+			add_state_core = 793
 			add_state_core = 51
 			add_state_core = 51
 			add_state_core = 56
 			add_state_core = 59
 			add_state_core = 58
 			add_state_core = 57
-			add_state_core = 778
+			add_state_core = 796
 			add_state_core = 54
 			add_state_core = 53
 			add_state_core = 52
-			add_state_core = 772
+			add_state_core = 790
 			add_state_core = 50
-			add_state_core = 749
+			add_state_core = 768
 			add_state_core = 55
-			add_state_core = 744
+			add_state_core = 763
 			add_state_core = 60
-			add_state_core = 753
+			add_state_core = 772
 			add_state_core = 64
 			add_state_core = 65
 			add_state_core = 61
 			add_state_core = 62
-			add_state_core = 764
+			add_state_core = 783
 			
 			#adding historical claims
 			add_state_claim = 52
@@ -421,8 +421,8 @@ country_event = {
 			add_state_claim = 50
 			add_state_claim = 54
 			add_state_claim = 55
-			add_state_claim = 772
-			add_state_claim = 749
+			add_state_claim = 790
+			add_state_claim = 768
 			
 			
 
@@ -431,39 +431,39 @@ country_event = {
 		SOZ = { 
 		
 			add_state_core = 42
-			add_state_core = 754
-			add_state_core = 775
+			add_state_core = 773
+			add_state_core = 793
 			add_state_core = 51
 			add_state_core = 51
 			add_state_core = 56
 			add_state_core = 59
 			add_state_core = 58
 			add_state_core = 57
-			add_state_core = 778
+			add_state_core = 796
 			add_state_core = 54
 			add_state_core = 53
 			add_state_core = 52
-			add_state_core = 772
+			add_state_core = 790
 			add_state_core = 50
-			add_state_core = 749
+			add_state_core = 768
 			add_state_core = 55
-			add_state_core = 744
+			add_state_core = 763
 			add_state_core = 60
-			add_state_core = 753
+			add_state_core = 772
 			add_state_core = 64
 			add_state_core = 65
 			add_state_core = 61
 			add_state_core = 62
-			add_state_core = 764
+			add_state_core = 783
 			
 			##adding historical claims
 			add_state_claim = 62
 			add_state_claim = 61
 			add_state_claim = 64
-			add_state_claim = 753
+			add_state_claim = 772
 			add_state_claim = 65
 			add_state_claim = 60
-			add_state_claim = 744
+			add_state_claim = 763
 
 		}
 		
@@ -473,9 +473,9 @@ country_event = {
 			add_state_core = 67
 			add_state_core = 68
 			add_state_core = 63
-			add_state_core = 743
-			add_state_core = 746
+			add_state_core = 762
 			add_state_core = 765
+			add_state_core = 784
 			
 		}
 		
@@ -485,9 +485,9 @@ country_event = {
 			remove_state_core  = 67
 			remove_state_core  = 68
 			remove_state_core  = 63
-			remove_state_core  = 743
-			remove_state_core  = 746
+			remove_state_core  = 762
 			remove_state_core  = 765
+			remove_state_core  = 784
 		
 		}
 

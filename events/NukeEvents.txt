@@ -178,14 +178,14 @@ news_event = {
 
 	trigger = {
 		FROM = {
-			state = 744
+			state = 763
 			is_owned_by = GER
 		}
 	}
 	
 	trigger = {
 		FROM = {
-			state = 749
+			state = 768
 			is_owned_by = GER
 		}
 	}

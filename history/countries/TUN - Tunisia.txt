@@ -43,6 +43,8 @@ set_convoys = 20
 
 oob = "TUN_1936"
 
+set_stability = 0.70
+
 1939.1.1 = {
 
 	add_political_power = 899
