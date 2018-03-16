@@ -1486,9 +1486,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-<<<<<<< HEAD
-		
-=======
 
 		bypass = {
 			ROM = {
@@ -1498,7 +1495,7 @@ focus_tree = {
 				}
 			}
 		}
->>>>>>> e53b34bf9fec111a1b0cc109f5d035c07ba2cf7d
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1547,8 +1544,6 @@ focus_tree = {
 			factor = 1
 		}
 
-<<<<<<< HEAD
-=======
 		available = {
 			OR = {
 				HUN = {
@@ -1562,7 +1557,6 @@ focus_tree = {
 			}
 		}
 
->>>>>>> e53b34bf9fec111a1b0cc109f5d035c07ba2cf7d
 		available_if_capitulated = no
 		
 		complete_tooltip = {
@@ -1643,10 +1637,8 @@ focus_tree = {
 				limit = {
 					HUN = {
 						is_in_faction_with = GER
-<<<<<<< HEAD
-=======
+
 						is_free_or_subject_of_root = yes
->>>>>>> e53b34bf9fec111a1b0cc109f5d035c07ba2cf7d
 					}
 				}
 				random_owned_controlled_state = {
@@ -1686,10 +1678,8 @@ focus_tree = {
 				limit = {
 					ROM = {
 						is_in_faction_with = GER
-<<<<<<< HEAD
-=======
+
 						is_free_or_subject_of_root = yes
->>>>>>> e53b34bf9fec111a1b0cc109f5d035c07ba2cf7d
 					}
 				}
 				random_owned_controlled_state = {
@@ -1729,10 +1719,8 @@ focus_tree = {
 				limit = {
 					HUN = {
 						is_in_faction_with = GER
-<<<<<<< HEAD
-=======
+
 						is_free_or_subject_of_root = yes
->>>>>>> e53b34bf9fec111a1b0cc109f5d035c07ba2cf7d
 					}
 				}
 				HUN = {
@@ -1775,10 +1763,9 @@ focus_tree = {
 				limit = {
 					ROM = {
 						is_in_faction_with = GER
-<<<<<<< HEAD
-=======
+
 						is_free_or_subject_of_root = yes
->>>>>>> e53b34bf9fec111a1b0cc109f5d035c07ba2cf7d
+
 					}
 				}
 				ROM = {
@@ -2639,10 +2626,9 @@ focus_tree = {
 					NOT = { tag = GER }
 					NOT = { has_war_with = GER }
 					NOT = { is_in_faction_with = SOV }
-<<<<<<< HEAD
-=======
+
 					is_subject = no
->>>>>>> e53b34bf9fec111a1b0cc109f5d035c07ba2cf7d
+
 					OR = {
 						capital_scope = {
 								is_on_continent = europe
@@ -6744,8 +6730,7 @@ focus_tree = {
 			is_puppet = no
 			NOT = { has_war_with = FIN }
 		}
-<<<<<<< HEAD
-=======
+
 		bypass = {
 			OR = {
 				AND = {
@@ -6759,7 +6744,6 @@ focus_tree = {
 				FIN = { exists = no }
 			}
 		}
->>>>>>> e53b34bf9fec111a1b0cc109f5d035c07ba2cf7d
 		cancel_if_invalid = yes
 		x = 0
 		y = 1
@@ -6806,10 +6790,8 @@ focus_tree = {
 					NOT = { tag = GER }
 					NOT = { has_war_with = GER }
 					NOT = { is_in_faction_with = SOV }
-<<<<<<< HEAD
-=======
+
 					is_subject = no
->>>>>>> e53b34bf9fec111a1b0cc109f5d035c07ba2cf7d
 					OR = {
 						capital_scope = {
 								is_on_continent = europe
