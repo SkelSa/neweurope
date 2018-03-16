@@ -1091,7 +1091,7 @@ country_event = {
 			transfer_state = 163		
 		}
 		
-		##hungary
+		##Hungary
 		
 		
 		HUN = { 		
@@ -1102,7 +1102,7 @@ country_event = {
 		}
 		
 		
-		##romania
+		##Romania
 		
 		ROM = { 		
 			transfer_state = 46
@@ -1116,7 +1116,7 @@ country_event = {
 		
 
 		
-		##bulgaria
+		##Bulgaria
 		
 		BUL = { 		
 			transfer_state = 77
@@ -1126,7 +1126,7 @@ country_event = {
 		}
 		
 	
-		##finland
+		##Finland
 		
 		
 		FIN = { 		
@@ -1137,7 +1137,7 @@ country_event = {
 			transfer_state = 111		
 		}
 		
-		##england (fight bordergore on the isles)
+		##england (fight border gore on the isles)
 		
 		
 		ENG = { 		
@@ -1411,8 +1411,7 @@ country_event = {
 			transfer_state = 138
 			transfer_state = 124				
 		}
-		
-		
+			
 		
 		SWI = {		##switzerland	
 			transfer_state = 774
@@ -1420,7 +1419,6 @@ country_event = {
 			transfer_state = 3
 			transfer_state = 151					
 		}
-		
 		
 		
 		TUR = { 	##turkey		
