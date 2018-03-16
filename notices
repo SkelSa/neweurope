@@ -1,0 +1,2 @@
+﻿Here are some formalities for Modding now. Please save this message somehow. Decision Category files will have the format "CAT_DEC_NE_countryname". Decision files will be "DEC_NE_countryname". Event files, as usual NewEurope_countryname.
+And always put events/decisions to their corresponding country file. There are still some left overs, like NewEurope_EasternBloc or so. They will be reduced over time
