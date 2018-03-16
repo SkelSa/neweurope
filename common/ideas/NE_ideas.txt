@@ -45,7 +45,7 @@ ideas = {
 				political_power_gain = 0.25
 				opinion_gain_monthly_factor = 0.25
 				opinion_gain_monthly_same_ideology_factor = 0.25
-				unity_weekly = 0.002
+				stability_weekly = 0.002
 				
 			}
 		}
@@ -110,7 +110,7 @@ ideas = {
 				communism_drift = 0.10
 				opinion_gain_monthly_same_ideology_factor = 0.5
 				##only communists
-				unity_weekly = 0.002				
+				stability_weekly = 0.002				
 				
 			}
 		}
@@ -174,7 +174,7 @@ ideas = {
 							
 				communism_drift = 0.15
 				fascism_drift = -0.10
-				unity_weekly = 0.002
+				stability_weekly = 0.002
 				conscription_factor = 0.10
 				partisan_effect = 0.5
 							
@@ -194,7 +194,7 @@ ideas = {
 			modifier = {
 			
 				
-				unity_factor = 0.10  
+				stability_factor = 0.10 
 				communism_acceptance = 80
 				communism_drift = 0.02
 				drift_defence_factor = 0.15 
@@ -336,7 +336,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				unity_factor = -0.25
+				stability_weekly = -0.005
 				conscription = -0.008
 				political_power_factor = -0.5
 			}
@@ -353,7 +353,7 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.014
 				communism_drift = -0.015
-				unity_weekly = -0.02
+				stability_weekly = -0.02
 			}
 		}
 

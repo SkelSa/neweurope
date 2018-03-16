@@ -1,4 +1,4 @@
-﻿capital = 754
+﻿capital = 773
 
 # Starting tech (Clone of the French)
 set_technology = {

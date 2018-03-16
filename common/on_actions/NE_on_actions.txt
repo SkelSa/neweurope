@@ -3,61 +3,58 @@ on_actions = {
 	#BPWE activated for every player
 	on_startup = {
 		effect = {		
-		#Intro Event
+			#Intro Event
+				every_country = {
+					limit = { is_ai = no }
+					country_event = { id = ne_news.1 }				
+				}
+			
+			#setup
+				every_country = {
+					limit = { tag = DAN }
+					country_event = { id = ne_setup.1 }				
+				}
+			
+			
+			##check if some players are fascist	DOESNT WORK
 			every_country = {
-				limit = { is_ai = no }
-				country_event = { id = ne_news.1 }				
-			}
-		
-		#setup
-			every_country = {
-				limit = { tag = DAN }
-				country_event = { id = ne_setup.1 }				
-			}
-		
-		
-		##check if some players are fascist	DOESNT WORK
-		every_country = {
-			limit = {
-				#is_ai = no
-				has_government = fascism
-				NOT = { has_country_flag = warning_unsupported_country }
-			}
+				limit = {
+					#is_ai = no
+					has_government = fascism
+					NOT = { has_country_flag = warning_unsupported_country }
+				}
 
-			country_event = { days = 1 id = ne_takee.3 }				
-		}
-	
-			
-		##check if game is in historical mode			
-		every_country = {
-
-			limit = {
-				is_ai = no
-				is_historical_focus_on = no
-				NOT = { has_country_flag = warning_no_historical }
+				country_event = { days = 1 id = ne_takee.3 }				
 			}
-			
-			country_event = { days = 1 id = ne_skelsa.75 }
-			}								
-	
-		}
-		
-		##Test
-		every_country = {
-
-			limit = {
-				tag = SYR
-			}
-			
-			set_cosmetic_tag = MAL_UK
-			}								
-	
-		}
-
 		
 				
-	}		
-	
+			##check if game is in historical mode			
+			every_country = {
+
+				limit = {
+					is_ai = no
+					is_historical_focus_on = no
+					NOT = { has_country_flag = warning_no_historical }
+				}
+				
+				country_event = { days = 1 id = ne_skelsa.75 }
+				}								
+
+			##Test
+			every_country = {
+
+				limit = {
+					tag = SYR
+				}
+				
+				set_cosmetic_tag = MAL_UK
+				}								
+		
+			}
+			
+			}
+
+
 	on_government_change = {
 		effect = {
 		

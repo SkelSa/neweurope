@@ -1,6 +1,6 @@
-﻿capital = 774 #City with A. Don't know atm
+﻿capital = 792 #City with A. Don't know atm
 
-set_stability = 0.67
+set_stability = 0.66
 set_war_support = 0.35
 
 ## Starting tech (Are only alive in the span of a year)

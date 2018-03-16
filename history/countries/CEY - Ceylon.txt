@@ -28,8 +28,6 @@ if = {
 
 set_convoys = 20
 
-set_national_unity = 0.7
-
 set_cosmetic_tag = NE_CEY
 
 1939.1.1 = {
@@ -83,8 +81,8 @@ set_cosmetic_tag = NE_CEY
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		improved_oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1

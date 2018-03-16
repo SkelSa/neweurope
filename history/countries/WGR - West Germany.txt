@@ -1,5 +1,5 @@
 ﻿##Needs to be taken from the game files due to the capital issue, also modifying the research slots and oob
-capital = 767
+capital = 51 ##Bonn
 
 # Starting tech
 set_technology = {

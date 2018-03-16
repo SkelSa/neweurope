@@ -1,46 +1,34 @@
-﻿capital = 78
+﻿capital = 107
 
-oob = "MOL_1936"
+oob = "YUG_1936"
 
-set_research_slots = 2
+set_research_slots = 3
 
-set_stability = 0.70
-set_war_support = 0.50
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	mass_assault = 1
+add_ideas = {
+	anti_german_military
 }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 60
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 40
-		}
-		
-		neutrality = { 
-			popularity = 0
-		}
-	}
-	
-	ruling_party = democratic
-	last_election = "1933.12.20"
-	election_frequency = 48
-	elections_allowed = yes
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_submarine = 1
 }
 
 1939.1.1 = {
-	
+
+	add_ideas = {
+		limited_conscription
+	}
+
+	add_political_power = 1198
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -48,32 +36,28 @@ set_politics = {
 	complete_national_focus = motorization_effort
 	complete_national_focus = aviation_effort
 	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
+	complete_national_focus = flexible_navy
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-		
 	
-	
-	oob = "MOL_1939"
+	oob = "YUG_1939"
 	set_technology = {
 		fighter1 = 1
 		early_bomber = 1
 		tactical_bomber1 = 1
-		basic_light_tank = 1
+		CAS1 = 1
+		naval_bomber1 = 1
+		gw_artillery = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
 		interwar_antiair = 1
-		tech_recon = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
-		basic_submarine = 1
+		basic_destroyer = 1
 
 		#doctrines
-		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-		
+		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
 		fleet_in_being = 1
@@ -90,18 +74,41 @@ set_politics = {
 		#industry
 		basic_machine_tools = 1
 		improved_machine_tools = 1
-		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		improved_oil_processing = 1
-		improved_oil_processing = 1
+		oil_processing = 1
 		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		concentrated_industry = 1
 	}
 }
 
+set_convoys = 0
 
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 20
+		}
+
+		fascism = {
+			popularity = 30
+		}
+		
+		communism = {
+			popularity = 20
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 30
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 36
+	elections_allowed = yes
+}
 
 1939.1.1 = {
 	set_politics = {
@@ -112,30 +119,31 @@ set_politics = {
 			}
 
 			fascism = {
-				popularity = 35
+				popularity = 30
 			}
 			
 			communism = {
-				popularity = 2
+				popularity = 20
+				#banned = no #default is no
 			}
 			
 			neutrality = { 
-				popularity = 43
+				popularity = 30
 			}
 		}
 		
 		ruling_party = neutrality
-		last_election = "1939.7.15"
-		election_frequency = 48
-		elections_allowed = no
+		last_election = "1938.1.1"
+		election_frequency = 36
+		elections_allowed = yes
 	}
 }
+set_stability = 0.6
 
-##generated leader, no historical background
 create_country_leader = {
-	name = "Yaroslav Ungureanu"
+	name = "Draza Mihailovic"
 	desc = ""
-	picture = "Portrait_Europe_Generic_land_2.dds"
+	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -144,33 +152,33 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "El Generico"
+	name = "Milan Nedic"
 	desc = ""
-	picture = "leader_unknown.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Tihon Kinstantinov"
-	desc = ""
-	picture = "Portrait_MOL_Tihon_Konstantinov.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "El Generico"
-	desc = ""
-	picture = "leader_unknown.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Peter Karadordevic"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = Despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Zivorad Jovanovic"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = leninism
 	traits = {
 		#
 	}

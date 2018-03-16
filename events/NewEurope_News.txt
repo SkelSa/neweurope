@@ -79,6 +79,8 @@ news_event = {
 	
 	trigger = {	
 	
+			GER = { has_country_leader = { name = "Adolf Hitler" }  }
+	
 			NOT = { has_global_flag = hitler_dead }
 		
 			OR = {						
@@ -171,9 +173,9 @@ news_event = {
 
 #TEST NEWS EVENT
 news_event = {
-	id = ne_news.100
-	title = ne_news.100.t
-	desc = ne_news.100.d
+	id = ne_news.105
+	title = ne_news.105.t
+	desc = ne_news.105.d
 	picture = GFX_news_event_french_parade
 	
 	major = yes
@@ -194,7 +196,7 @@ news_event = {
 	}
 	
 	option = {
-		name = news.100.a
+		name = news.105.a
 		trigger = {
 			NOT = {
 				TAG = FRA
@@ -203,11 +205,11 @@ news_event = {
 		}
 	}
 	option = {
-		name = ne_news.100.b
+		name = ne_news.105.b
 		trigger = { TAG = FRA }
 	}
 	option = {
-		name = ne_news.100.c
+		name = ne_news.105.c
 		trigger = { TAG = ITA }
 	}
 }
@@ -2145,7 +2147,7 @@ news_event = {
 }
 
 
-##End of WW3 (democracy won)
+##End of WW3 (Democracy won)
 news_event = {
 	id = ne_news.26
 	title = ne_news.26.t
@@ -2364,7 +2366,7 @@ news_event = {
 		is_neighbor_of = SOV		
 		
 
-		##Country does not occupy native russian or polish land
+		##Country does not occupy native Russian or polish land
 		NOT = {		
 			any_state = {
 				OR = {
@@ -2501,7 +2503,7 @@ news_event = {
 
 ##	trigger = {
 ##		OR = { 
-##			has_government = democracy
+##			has_government = democratic
 ##			has_government = communism
 ##		}
 ##		88 = { is_controlled_by = PREV }
@@ -2512,7 +2514,7 @@ news_event = {
 		name = ne_news.31.a
 		
 		trigger = {
-			has_government = democracy
+			has_government = democratic
 		}
 	}
 
@@ -2554,7 +2556,7 @@ news_event = {
 	}
 }
 
-####Hawaii. New state of the USA####
+####Hawaii. New state of the USA####Is this a news article for the world or only for the US?
 news_event = {
 	id = ne_news.33
 	title = ne_news.33.t
@@ -2647,9 +2649,11 @@ news_event = {
 		
 		trigger = {
 			NOT = {
-				has_government = democratic
-				tag = SOV
-				tag = GER				
+					OR = {
+						has_government = democratic
+						tag = SOV
+						tag = GER
+					}
 			}
 		}
 	}

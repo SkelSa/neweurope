@@ -96,7 +96,8 @@ country_event = {
 		}
 		
 		add_political_power = -5
-		add_national_unity = -0.05 
+		add_stability = 0.05
+		add_war_support = -0.10
 
 		USA = {
 			country_event = {id = ne_nato.12 }
@@ -141,7 +142,8 @@ country_event = {
 		}
 		
 		add_political_power = 20
-		add_national_unity = 0.02 
+		add_stability = 0.02
+		add_war_support = 0.09
 
 		USA = { 			
 			create_faction = "nato"	
@@ -346,7 +348,8 @@ country_event = {
 		}
 		
 		add_political_power = 20
-		add_national_unity = 0.02 
+		add_stability = 0.02
+		add_war_support = 0.09
 
 		USA = {add_to_faction = ROOT }
 		add_ideas = NE_nato_member
@@ -745,7 +748,8 @@ country_event = {
 		ai_chance = { factor = 95 }
 		
 		add_political_power = 20
-		add_national_unity = 0.1 
+		add_stability = 0.05
+		add_war_support = 0.12
 
 		SOV = { 			
 			create_faction = "warsaw_pact"

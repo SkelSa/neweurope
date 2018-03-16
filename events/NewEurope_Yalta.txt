@@ -572,6 +572,7 @@ country_event = {
 	}
 
 	option ={
+		name = germany.121.a
 		if = {
 			limit = {
 				country_exists = POL

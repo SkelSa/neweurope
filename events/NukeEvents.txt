@@ -2,9 +2,7 @@
 # Nuclear Bomb Events - MODIFIED BY NEW EUROPE #
 ################################################
 
-##MIGHT NEED BETTER COMMENTS ABOUT WHAT BPWE CHANGED
-
-##Changes for Berlin and Singapore
+##Changes for Berlin-Nuke Event
 
 add_namespace = nuke_dropped
 
@@ -52,40 +50,22 @@ news_event = {
 	trigger = {
 		NOT = {
 			FROM = {
-				state = 529
-			}
-			FROM = {
-				state = 528
-			}
-			FROM = {
-				state = 64
-			}
-			FROM = {
-				state = 126
-			}
-			FROM = {
-				state = 531
-			}
-			FROM = {
-				state = 282
-			}
-			FROM = {
-				state = 361
-			}
-			FROM = {
-				state = 2
-			}
-			FROM = {
-				state = 16 
-			}
-			FROM = {
-				state = 219
-			}
-			FROM = {
-				state = 37
-			}
-			FROM = {
-				state = 141
+				FROM = {
+					OR = {
+						state = 529
+						state = 528
+						state = 64
+						state = 126
+						state = 531
+						state = 282
+						state = 361
+						state = 2
+						state = 16 
+						state = 219
+						state = 37
+						state = 141
+					}
+				}
 			}
 		}
 	}
@@ -117,20 +97,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 529 }
+		FROM.FROM = { state = 529 }
 	}
 
 	option = {
 		name = nuke_dropped.2.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 529 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.2.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 529
 		}
 	}
 }
@@ -147,20 +127,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 528 }
+		FROM.FROM = { state = 528 }
 	}
 
 	option = {
 		name = nuke_dropped.3.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 528 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.3.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 528
 		}
 	}
 }
@@ -177,30 +157,33 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = {
-			state = 763
-			is_owned_by = GER
-		}
-	}
 	
-	trigger = {
-		FROM = {
-			state = 768
-			is_owned_by = GER
+		OR = {
+	
+			FROM.FROM = {
+				state = 763
+				is_owned_by = GER
+			}
+			
+			FROM.FROM = {
+				state = 768
+				is_owned_by = GER
+			}
+		
 		}
 	}
 
 	option = {
 		name = nuke_dropped.4.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 64 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.4.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 64
 		}
 	}
 }
@@ -217,20 +200,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 126 }
+		FROM.FROM = { state = 126 }
 	}
 
 	option = {
 		name = nuke_dropped.5.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 126 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.5.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 126
 		}
 	}
 }
@@ -247,20 +230,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 531 }
+		FROM.FROM = { state = 531 }
 	}
 
 	option = {
 		name = nuke_dropped.6.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 531 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.6.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 531
 		}
 	}
 }
@@ -277,20 +260,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 282 }
+		FROM.FROM = { state = 282 }
 	}
 
 	option = {
 		name = nuke_dropped.7.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 282 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.7.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 282
 		}
 	}
 }
@@ -307,20 +290,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 361 }
+		FROM.FROM = { state = 361 }
 	}
 
 	option = {
 		name = nuke_dropped.8.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 361 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.8.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 361
 		}
 	}
 }
@@ -337,20 +320,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 2 }
+		FROM.FROM = { state = 2 }
 	}
 
 	option = {
 		name = nuke_dropped.9.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 2 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.9.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 2
 		}
 	}
 }
@@ -367,20 +350,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 16 }
+		FROM.FROM = { state = 16 }
 	}
 
 	option = {
 		name = nuke_dropped.10.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 16 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.10.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 16
 		}
 	}
 }
@@ -397,20 +380,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 219 }
+		FROM.FROM = { state = 219 }
 	}
 
 	option = {
 		name = nuke_dropped.11.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 219 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.11.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 219
 		}
 	}
 }
@@ -427,7 +410,7 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 37 }
+		FROM.FROM = { state = 37 }
 	}
 
 	option = {
@@ -439,7 +422,7 @@ news_event = {
 					NOT = { has_war_with = DEN }
 				}
 				AND = {
-					NOT = { owns_state = FROM }
+					NOT = { owns_state = 39 }
 					NOT = { tag = SWE }
 					NOT = { has_war_with = DEN }
 				}
@@ -450,14 +433,14 @@ news_event = {
 	option = {
 		name = nuke_dropped.12.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 39
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.12.c
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 39 }
 			tag = SWE
 			has_war_with = DEN
 		}
@@ -476,20 +459,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM = { state = 141 }
+		FROM.FROM = { state = 141 }
 	}
 
 	option = {
 		name = nuke_dropped.13.a
 		trigger = {
-			NOT = { owns_state = FROM }
+			NOT = { owns_state = 141 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.13.b
 		trigger = {
-			owns_state = FROM
+			owns_state = 141
 		}
 	}
 }
