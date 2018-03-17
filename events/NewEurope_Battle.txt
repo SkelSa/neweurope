@@ -1,5 +1,5 @@
 ﻿##BATTLE EVENTS GO HERE##
-##MOVE TO DECISIONS
+##TRIGGERED THROUGH DECISIONS
 
 add_namespace = ne_battle
 
