@@ -9,4 +9,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_category_eng_misix.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decision_eng_poland_flag"
+		texturefile = "gfx/interface/decisions/decision_eng_poland_flag.dds"
+	}
+
+
 }

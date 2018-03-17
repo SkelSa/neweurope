@@ -2,7 +2,7 @@ ENG_historical_military_operations = {
 
 	ENG_the_peking_plan = {
 	
-##		icon = ##
+		icon = eng_poland_flag
 
 		allowed = {
 			tag = ENG
