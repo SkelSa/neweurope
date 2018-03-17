@@ -1440,56 +1440,31 @@ country_event = {
 	desc = ne_misc.22.d
     picture = GFX_poland_grom
 
-	fire_only_once = yes
-
-	trigger = {
-		tag = POL
-		GER = {
-			focus_progress = { focus = GER_danzig_or_war progress > 0.81 }
-			OR = {
-				NOT = { is_in_faction_with = POL }
-				NOT = { is_in_faction_with = ENG }
-			}
-		}
-		POL = {
-			OR = { 
-				is_in_faction_with = ENG
-				ENG = { has_guaranteed = POL }
-				has_opinion = { target = ENG value > 20 }
-			}
-			OR = { 
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = { is_in_faction_with = GER }
-		}
-		any_country = { 
-			has_government = democratic
-			NOT = { has_war_with = POL }
-		}
-	}
-
+	is_triggered_only = yes
+	
 	option = {
 		name = ne_misc.22.a
 		ai_chance = { factor = 98 }
-		random_list = {
-			65 = { ENG = { country_event = { days = 3 id = ne_misc.23 } } }
-			20 = { ENG = { country_event = { days = 5 id = ne_misc.23 } } }
-			15 = { ENG = { country_event = { days = 8 id = ne_misc.23 } } }
-		}
 		POL = {
 			add_stability = -0.05
 			navy_experience = -15
 		}
 		ENG = {
 			add_opinion_modifier = { target = POL modifier = pol_agree }
+			random_list = {
+				20 = { country_event = { days = 2 id = ne_misc.23 } }
+				20 = { country_event = { days = 4 id = ne_misc.23 } }
+				20 = { country_event = { days = 3 id = ne_misc.23 } }
+				20 = { country_event = { days = 5 id = ne_misc.23 } }
+				20 = { country_event = { days = 6 id = ne_misc.23 } }
+			}
 		}
 	}
 
 	option = {
 		name = ne_misc.22.b
 		ai_chance = { factor = 2 }
-		POL = { navy_experience = 15 }
+		POL = { navy_experience = 25 }
 		ENG = { add_opinion_modifier = { target = POL modifier = pol_disagree } }
 		add_stability = 0.05
 		custom_effect_tooltip = peking_plan_warning.1.tt

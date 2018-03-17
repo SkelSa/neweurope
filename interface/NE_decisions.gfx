@@ -1,0 +1,12 @@
+##neweurope
+spriteTypes = {	
+
+	### categories
+	
+
+	spriteType = {
+		name = "GFX_decision_category_eng_misix"
+		texturefile = "gfx/interface/decisions/decision_category_eng_misix.dds"
+	}
+
+}

@@ -1,0 +1,6 @@
+ENG_historical_military_operations = { 
+	icon = GFX_decision_category_eng_misix
+	allowed = {
+		original_tag = ENG
+	}
+}

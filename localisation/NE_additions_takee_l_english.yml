@@ -325,3 +325,10 @@
  MOR_democratic_ADJ:0 "Moroccan"
  MOR_communism_ADJ:0 "Moroccan"
  MOR_neutrality_ADJ:0 "Moroccan"
+
+######################################################################################################################################
+#########################################################DECISIONS####################################################################
+
+ENG_historical_military_operations:0 "Secret Intelligence Service"
+ENG_the_peking_plan:0 "The Peking Plan"
+ENG_the_peking_plan_desc:0 "The Peking Plan (or Operation Peking) was an operation in which three destroyers of the Polish Navy, the Burza ("Storm"), Błyskawica ("Lightning"), and Grom ("Thunder"), were evacuated to the United Kingdom in late August and early September 1939 prior to the outbreak of war. They were ordered to travel to British ports and assist the British Royal Navy in the event of a war with Nazi Germany. The plan was successful and allowed the ships to avoid certain destruction or capture in the German invasion."
