@@ -75,6 +75,10 @@ SOV_the_crimea_transfer = {
 
 		cost = 25
 
+		highlight_states = {
+			state = 137
+		}
+
 		ai_will_do = {
 			base = 85
 			modifier = {
