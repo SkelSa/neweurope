@@ -1064,7 +1064,7 @@ country_event = {  ##Anglo-Polish military alliance
 		AND = {
 			has_global_flag = anglo_guarantee
 			OR = { 
-				GER = { focus_progress = { focus = GER_danzig_or_war progress > 0.85 } }
+				GER = { focus_progress = { focus = GER_danzig_or_war progress > 0.6 } }
 				GER = { has_completed_focus = GER_danzig_or_war }
 			}
 			NOT = { POL = { is_in_faction_with = ENG } }
