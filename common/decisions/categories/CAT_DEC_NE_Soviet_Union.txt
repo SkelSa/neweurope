@@ -22,3 +22,14 @@ SOV_the_red_army = {
 	}
 	
 }
+
+##Ukrainian Crimea
+SOV_the_crimea_transfer = { 
+	icon = GFX_
+	picture = GFX_ukrainian_crimea
+
+	allowed = {
+		tag = SOV	
+	}
+	
+}

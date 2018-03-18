@@ -1,11 +1,5 @@
 ﻿l_english:
 
-##Crimea is Ukraine (not anymore)
- ne_ssrwb.1.t:0 "The transfer of the Crimean Oblast."
- ne_ssrwb.1.d:0 "Taking into account the commonality of the economy, the territorial proximity and close economic and cultural ties between the Crimean region and the Ukrainian SSR, the Presidium of the Supreme Soviet of the Union of Soviet Socialist Republics decides: Approve the joint presentation of the Presidium of the Supreme Soviet of the RSFSR and the Presidium of the Supreme Soviet of the Ukrainian SSR on the transfer of the Crimean region from the Russian Soviet Federated Socialist Republic to the Ukrainian Soviet Socialist Republic."
- ne_ssrwb.1.a:0 "Approve the decree."
- ne_ssrwb.1.b:0 "Change your mind about this and cancel it."
-
 ##Stalin events
 
  ne_stalin.1.t:0 "The great leader is dead!"
@@ -30,11 +24,11 @@
  ne_stalin.5.a:0 "Khrushchev becomes Chairman of the Council of Ministers of the USSR"
 
  ##The Berlin Wall
-  ne_ssrwb.2.t:0 "Erection of the Berlin Wall"
-  ne_ssrwb.2.d:0 "On the recommendation of the meeting of the secretaries of the communist and workers' parties of the Warsaw Treaty countries and on the basis of the decision of the People's Chamber of the GDR, it was decided to erect a wall in East Berlin to prevent the influence of Western capitalism"
-  ne_ssrwb.2.a:0 "Build the wall"
-  ne_ssrwb.2.b:0 "Cancel idea and all resolutions"
-  ne_ssrwb.2.c:0 "Erect a wall, declare an embargo of the West Germany and the declare the second blockade of West Berlin"
+  ne_ssrwb.1.t:0 "Erection of the Berlin Wall"
+  ne_ssrwb.1.d:0 "On the recommendation of the meeting of the secretaries of the communist and workers' parties of the Warsaw Treaty countries and on the basis of the decision of the People's Chamber of the GDR, it was decided to erect a wall in East Berlin to prevent the influence of Western capitalism"
+  ne_ssrwb.1.a:0 "Build the wall"
+  ne_ssrwb.1.b:0 "Cancel idea and all resolutions"
+  ne_ssrwb.1.c:0 "Erect a wall, declare an embargo of the West Germany and the declare the second blockade of West Berlin"
  
  ##The Trieste event
   ne_misc.14.t:0 "The transfer of the city of Trieste after the war"
@@ -343,3 +337,7 @@ ENG_the_peking_plan_desc:0 "The Peking Plan (or Operation Peking) was an operati
 ENG_historical_missions_ne:0 "Secret Intelligence Service Tasks"
 ENG_the_english_poland_alliance:0 "Military Assistance to Poland"
 ENG_the_english_poland_alliance_desc:0 "We are compelled to defend Poland if Germany declares war on it."
+##Crimea is Ukraine (not anymore)
+SOV_the_crimea_transfer:0 "Administrative actions of the Presidium of the Supreme Soviet of the Soviet Union"
+SOV_crimea_transfer:0 "The transfer of the Crimean Oblast"
+SOV_crimea_transfer_desc:0 "Taking into account the commonality of the economy, the territorial proximity and close economic and cultural ties between the Crimean region and the Ukrainian SSR, the Presidium of the Supreme Soviet of the Union of Soviet Socialist Republics decides: Approve the joint presentation of the Presidium of the Supreme Soviet of the RSFSR and the Presidium of the Supreme Soviet of the Ukrainian SSR on the transfer of the Crimean region from the Russian Soviet Federated Socialist Republic to the Ukrainian Soviet Socialist Republic."
