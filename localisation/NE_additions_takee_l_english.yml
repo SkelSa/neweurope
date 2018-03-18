@@ -97,8 +97,9 @@
 
  ##A warning for a player
   ne_takee.3.t:0 "Your Country is not supported by this Mod!"
-  ne_takee.3.d:0 "You are currently playing as the [Root.GetName], a fascist nation. Please keep in mind that BPWE was designed as a historical mod and thus almost all events/decisions/content requires an Allied victory. While ahistorical playthroughs are still possible you will miss out a lot of content!\nIt's strongly recommended to play as one of the countries displayed in the country selection screen. For further information you may visit the workshop page."
-  ne_takee.3.a:0 "I understand."
+  ne_takee.3.d:0 "You are currently playing as the [Root.GetName], a fascist nation. Please keep in mind that "Better Post-War Europe" was designed as a historical mod and thus almost all events and decisions require an Allied victory. While ahistorical playthroughs are still possible you will miss out a lot of content! It's strongly recommended to play as one of the countries displayed in the country selection screen."
+  ne_takee.3.a:0 "I don't care."
+  ne_takee.3.b:0 "I will start a new game then."
 
  ##Danzig is fucked
   ne_takee.4.t:0 "Poland surrenders us to Germany!"
@@ -117,8 +118,8 @@
 ##ne_takee.6.t:0
 
  ##Germany changes its name
-  ne_takee.7.t:0 "The German Reich changes its name"
-  ne_takee.7.d:0 "We have risen above the other powers, becoming one of the most powerful countries. Now our country will be called Großdeutsches Reich!"
+  ne_takee.7.t:0 "A Greater German Reich"
+  ne_takee.7.d:0 "We have risen above the other powers, becoming one of the most powerful countries. It's finally time to rename our country to Großdeutsches Reich!"
   ne_takee.7.a:0 "Glory to the Vaterland!"
 
  ##Germany change its name back, when the power is lose. The event is hidden
@@ -174,7 +175,8 @@
  berias_conspiracy_chance.1.tt:0 "With some probability, this decision can be of great importance."
  peking_plan_warning.1.tt:0 "§RWe risk losing all our advanced destroyers!§!"
  peking_plan.1.tt:0 "§GGet transmitted Poland destroyers.§!"
- warning_for_a_player.1.tt:0 "§RWarning issued§!"
+ warning_for_a_player.1.tt:0 "§RYou will miss out a lot of stuff if you decide to continue this game...§!"
+ warning_for_a_player_quit.1.tt:0 "§RThis option will open the country end screen from which the current game can be quit§!"
  condition_for_the_around_maginot_tt:1 "You must control Poland, or make a compromise with it, or be its ally."
  germany_change_its_name:0 "§G[Root.GetName]§! now will be called §GGroßdeutsches Reich§!"
  iran_war_tooltip.1.tt:0 "§M[Root.GetAdjective]§! will begin planning an §Rinvasion of Iran§!. The process will last about §Rtwo months§!."

@@ -298,6 +298,7 @@ spriteTypes = {
 	}
 	
 	##News Event ##UNUSED
+	
 	spriteType = {
 		name = "GFX_soviet_invasion_pol_news"
 		texturefile = "gfx/event_pictures/soviet_invasion_pol_news.dds"
@@ -309,4 +310,25 @@ spriteTypes = {
 	}
 	
 	
+	#Settings Menu
+	
+	spriteType = {		
+		name = "GFX_ne_settings_main"
+		texturefile = "gfx/event_pictures/report_event_ne_settings_main.dds"
+	}
+	
+	
+	spriteType = {		
+		name = "GFX_misc_settings"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+	
+	spriteType = {		
+		name = "GFX_historical_settings"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+	
+	
+	
+
 	

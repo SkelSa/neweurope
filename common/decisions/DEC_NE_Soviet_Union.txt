@@ -1,0 +1,60 @@
+##Decisions for the Soviet Union
+
+
+
+##Invest in tank development (Normal Decision)
+SOV_the_red_army = {		
+
+
+	invest_in_tank_development = {		
+			
+			
+			icon = GFX_	
+			
+			custom_cost_trigger = {
+
+				has_army_experience > 10
+
+			}
+
+			custom_cost_text = army_xp_more_than_10
+		
+		
+			ai_will_do = {				
+				factor = 10
+			}
+	
+	
+			allowed = {
+				tag = SOV			
+			}
+					
+		
+			available = {
+				always = yes
+				
+				
+			}
+				
+			
+			visible = {
+			
+								
+			}
+		
+
+			complete_effect = {
+				add_political_power
+				add_army_experience = -10
+
+			}
+								
+
+	}
+
+	
+}
+
+
+
+

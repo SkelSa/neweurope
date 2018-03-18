@@ -1,6 +1,7 @@
 ﻿add_namespace = ne_settings_intro
 add_namespace = ne_settings
 
+##effect_tooltip = {}
 
 ##############BPWE: OPTIONS/SETTINGS MENU#####################
 
@@ -33,7 +34,7 @@ country_event = {
 	id = ne_settings_intro.1
 	title = ne_settings_intro.1.t
 	desc =  ne_settings_intro.1.d
-	picture = GFX_report_event_soviet_invasion_map
+	picture = GFX_ne_settings_main
 
 	is_triggered_only = yes
 
@@ -68,7 +69,7 @@ country_event = {
 	}
 	
 	
-	#Skelsas recommended settings
+	#SkelSa's recommended settings
 	option = { 
 		name = ne_settings_intro.1.e
 		custom_effect_tooltip = main_menu_e
@@ -106,7 +107,8 @@ country_event = {
 
 	
 	option = { # Names and Flags
-		name = ne_settings_intro.2.a	
+		name = ne_settings_intro.2.a
+		custom_effect_tooltip = historical_flavor_menu_a
 		
 		hidden_effect = {			
 			country_event = ne_settings.1			
@@ -116,6 +118,7 @@ country_event = {
 	
 	option = { # USA/USSR
 		name = ne_settings_intro.2.b
+		custom_effect_tooltip = historical_flavor_menu_b
 
 		hidden_effect = {
 			country_event = ne_settings.2
@@ -125,6 +128,7 @@ country_event = {
 	
 	option = { # Return to main menu
 		name = ne_settings_intro.2.c
+		custom_effect_tooltip = ne_return_menu
 
 		hidden_effect = {
 			country_event = ne_settings_intro.1
@@ -147,7 +151,8 @@ country_event = {
 
 	
 	option = { # Neutrality
-		name = ne_settings_intro.3.a	
+		name = ne_settings_intro.3.a
+		custom_effect_tooltip = neutrality_menu_a
 		
 		hidden_effect = {			
 			country_event = ne_settings.3			
@@ -157,6 +162,7 @@ country_event = {
 	
 	option = { # faction
 		name = ne_settings_intro.3.b
+		custom_effect_tooltip = neutrality_menu_b
 
 		hidden_effect = {
 			country_event = ne_settings.4
@@ -166,6 +172,7 @@ country_event = {
 	
 	option = { # Return to main menu
 		name = ne_settings_intro.3.c
+		custom_effect_tooltip = ne_return_menu
 
 		hidden_effect = {
 			country_event = ne_settings_intro.1
@@ -177,7 +184,162 @@ country_event = {
 
 
 
+##Misc-Settings
+country_event = {
+	id = ne_settings_intro.4
+	title = ne_settings_intro.4.t
+	desc =  ne_settings_intro.4.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+	
+	
+	option = {		##Enable puppet SSRs
+		name = ne_settings_intro.4.a
+		custom_effect_tooltip = misc_settings_a
+		
+		trigger = {
+			NOT = { has_global_flag = ne_puppet_ssr	}	
+		}
+		
+		
+		hidden_effect = {
+			set_global_flag = ne_puppet_ssr
+			country_event = ne_settings_intro.1
+		}
+	
+	}
+	
+	option = {		##Disable SSRs
+		name = ne_settings_intro.4.a1
+		custom_effect_tooltip = misc_settings_a1
+		
+		
+		trigger = {
+			has_global_flag = ne_puppet_ssr		
+		}
+
+		
+		hidden_effect = {
+			clr_global_flag = ne_puppet_ssr
+			country_event = ne_settings_intro.1
+		}
+	
+	}
+	
+	
+	option = {	##add additional research slot for majors
+		name = ne_settings_intro.4.b
+		custom_effect_tooltip = misc_settings_b
+		
+		trigger = {
+			NOT = { has_global_flag = ne_additional_rd_slot }
+		}
+				
+		hidden_effect = {
+			set_global_flag = ne_additional_rd_slot
+			country_event = ne_settings_intro.1
+		}
+		
+	}
+	
+	option = {	##remove additional research slot for majors
+		name = ne_settings_intro.4.b1
+		custom_effect_tooltip = misc_settings_b1
+		
+		trigger = {
+			has_global_flag = ne_additional_rd_slot 
+		}
+		
+		hidden_effect = {
+			clr_global_flag = ne_additional_rd_slot
+			country_event = ne_settings_intro.1
+		}
+		
+	}
+	
+	
+	option = {	##activate old manager
+		name = ne_settings_intro.4.c
+		custom_effect_tooltip = misc_settings_c
+		
+		trigger = {
+			NOT = { has_global_flag = ne_old_manager }
+		}
+				
+		hidden_effect = {
+			set_global_flag = ne_old_manager
+			country_event = ne_settings_intro.1
+		}
+		
+	}
+	
+	
+	option = {	##deactivate old manager; use new one
+		name = ne_settings_intro.4.c1
+		custom_effect_tooltip = misc_settings_c1
+		
+		trigger = {
+			has_global_flag = ne_old_manager 
+		}
+		
+		hidden_effect = {
+			clr_global_flag = ne_old_manager
+			country_event = ne_settings_intro.1
+		}
+		
+	}
+	
+	
+	option = {	##enable music
+		name = ne_settings_intro.4.e
+		custom_effect_tooltip = misc_settings_e
+		
+		trigger = {
+			NOT = { has_global_flag = ne_music_chosen }
+		}
+		
+		hidden_effect = {
+			set_global_flag = ne_music_chosen
+			country_event = ne_settings_intro.1
+		}
+		
+	}
+	
+	
+	option = {	##disable music
+		name = ne_settings_intro.4.e1
+		custom_effect_tooltip = misc_settings_e1
+		
+		trigger = {
+			has_global_flag = ne_music_chosen 
+		}
+		
+		hidden_effect = {
+			clr_global_flag = ne_music_chosen
+			country_event = ne_settings_intro.1
+		}
+		
+	}
+
+	
+	option = { ##don't change anything, return to menu
+		name = ne_settings_intro.4.f
+		custom_effect_tooltip = ne_return_menu
+		
+		hidden_effect = {
+			country_event = ne_settings_intro.1
+		}
+		
+	}
+	
+               
+}
+
+
+
 ##############Historical Options#####################
+
 country_event = {
 	id = ne_settings.1                
 	title = ne_settings.1.t   
@@ -189,7 +351,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.1.a        #ENABLE THE FLAGS AND NAMES
-		custom_effect_tooltip = historical_settings_a
+		custom_effect_tooltip = hist_settings_a
 		
 		trigger = {
 			NOT = { has_global_flag = names_chosen }		
@@ -205,8 +367,8 @@ country_event = {
 	
 	
 	option = {
-		name = ne_settings.1.a1       #DISABLE the flags and names
-		#custom_effect_tooltip = historical_settings_a
+		name = ne_settings.1.a1       #DISABLE THE FLAGS AND NAMES
+		custom_effect_tooltip = hist_settings_a1
 		
 		trigger = {
 			has_global_flag = names_chosen		
@@ -222,7 +384,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.1.b     #better leaders
-		#custom_effect_tooltip = historical_settings_a
+		custom_effect_tooltip = hist_settings_b
 		
 		trigger = {
 			NOT = { has_global_flag = leaders_chosen }		
@@ -238,7 +400,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.1.b1     #DISABLE better leaders
-		#custom_effect_tooltip = historical_settings_a
+		custom_effect_tooltip = hist_settings_b1
 		
 		trigger = {
 			has_global_flag = leaders_chosen		
@@ -254,7 +416,7 @@ country_event = {
 	
 	option = {	 #SSRS WITHOUT color
 		name = ne_settings.1.c       
-		custom_effect_tooltip = historical_settings_b
+		custom_effect_tooltip = hist_settings_c
 		
 		trigger = {
 			NOT = { has_global_flag = SSR_chosen }	
@@ -270,7 +432,7 @@ country_event = {
 	
 	option = {	 #DISABLE THE SSRS
 		name = ne_settings.1.c1      
-		custom_effect_tooltip = historical_settings_b
+		custom_effect_tooltip = hist_settings_c1
 		
 		trigger = {
 			has_global_flag = SSR_chosen		
@@ -286,6 +448,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.1.e        #go back to the menu (no changes done)
+		custom_effect_tooltip = ne_return_menu_no_changes
 		
 		trigger = {
 		
@@ -304,6 +467,7 @@ country_event = {
 
 	option = {
 		name = ne_settings.1.e1        #leave the menu,changes done
+		custom_effect_tooltip = ne_return_menu
 		
 		trigger = {
 		
@@ -441,6 +605,7 @@ country_event = {
 	##Enable the neutrality settings
 	option = {
 		name = ne_settings.3.a
+		custom_effect_tooltip = neut_settings_a
 		
 		trigger = {		
 			NOT = { has_global_flag = Neutrality_chosen }		
@@ -457,6 +622,7 @@ country_event = {
 
 	option = { # NO
 		name = ne_settings.3.b
+		custom_effect_tooltip = neut_settings_a1
 		
 		trigger = {		
 			has_global_flag = Neutrality_chosen 		
@@ -472,6 +638,7 @@ country_event = {
 
 	option = { # Return to menu
 	name = ne_settings.3.c
+	custom_effect_tooltip = ne_return_menu
 	
 	
 		hidden_effect = {
@@ -494,7 +661,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.4.a
-		#custom_effect_tooltip = tooltip 
+		custom_effect_tooltip = fact_settings_a
 		
 		trigger = {
 			NOT = { has_global_flag = ne_strict_faction	}	
@@ -510,7 +677,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.4.a1
-		#custom_effect_tooltip = tooltip 
+		custom_effect_tooltip = fact_settings_a1
 		
 		trigger = {
 			has_global_flag = ne_strict_faction		
@@ -522,38 +689,6 @@ country_event = {
 			country_event = ne_settings_intro.1
 		}
 	
-	}
-	
-	
-	option = { ##just co-properity
-		name = ne_settings.4.b
-		
-		trigger = {
-			NOT = { has_global_flag = CPS_created }	
-		}
-
-		
-		hidden_effect = {
-			set_global_flag = CPS_created
-			country_event = ne_settings_intro.3		
-		}
-
-	}
-	
-	
-	option = { ##delete co-properity sphere
-		name = ne_settings.4.b1
-		
-		trigger = {
-			has_global_flag = CPS_created 
-		}
-
-		
-		hidden_effect = {
-			clr_global_flag = CPS_created
-			country_event = ne_settings_intro.3		
-		}
-
 	}
 
 	
@@ -570,153 +705,6 @@ country_event = {
 }
 
 
-##Misc-Settings
-country_event = {
-	id = ne_settings_intro.4
-	title = ne_settings_intro.4.t
-	desc =  ne_settings_intro.4.d
-	picture = GFX_report_event_soviet_invasion_map
-	
-	is_triggered_only = yes
-	
-	
-	option = {		##Enable puppet SSRs
-		name = ne_settings_intro.4.a
-		#custom_effect_tooltip = tooltip 
-		
-		trigger = {
-			NOT = { has_global_flag = ne_puppet_ssr	}	
-		}
-		
-		
-		hidden_effect = {
-			set_global_flag = ne_puppet_ssr
-			country_event = ne_settings_intro.1
-		}
-	
-	}
-	
-	option = {		##Disable SSRs
-		name = ne_settings_intro.4.a1
-		#custom_effect_tooltip = tooltip 
-		
-		trigger = {
-			has_global_flag = ne_puppet_ssr		
-		}
-
-		
-		hidden_effect = {
-			clr_global_flag = ne_puppet_ssr
-			country_event = ne_settings_intro.1
-		}
-	
-	}
-	
-	
-	option = {	##add additional research slot for majors
-		name = ne_settings_intro.4.b
-		
-		trigger = {
-			NOT = { has_global_flag = ne_additional_rd_slot }
-		}
-				
-		hidden_effect = {
-			set_global_flag = ne_additional_rd_slot
-			country_event = ne_settings_intro.1
-		}
-		
-	}
-	
-	option = {	##remove additional research slot for majors
-		name = ne_settings_intro.4.b1
-		
-		trigger = {
-			has_global_flag = ne_additional_rd_slot 
-		}
-		
-		hidden_effect = {
-			clr_global_flag = ne_additional_rd_slot
-			country_event = ne_settings_intro.1
-		}
-		
-	}
-	
-	
-	option = {	##activate old manager
-		name = ne_settings_intro.4.c
-		custom_effect_tooltip = ne_old_manager_tooltip
-		
-		trigger = {
-			NOT = { has_global_flag = ne_old_manager }
-		}
-				
-		hidden_effect = {
-			set_global_flag = ne_old_manager
-			country_event = ne_settings_intro.1
-		}
-		
-	}
-	
-	
-	option = {	##deactivate old manager; use new one
-		name = ne_settings_intro.4.c1
-		custom_effect_tooltip = not_ne_old_manager_tooltip
-		
-		trigger = {
-			has_global_flag = ne_old_manager 
-		}
-		
-		hidden_effect = {
-			clr_global_flag = ne_old_manager
-			country_event = ne_settings_intro.1
-		}
-		
-	}
-	
-	
-	option = {	##enable music
-		name = ne_settings_intro.4.e
-		custom_effect_tooltip = ne_music_chosen_tooltip
-		
-		trigger = {
-			NOT = { has_global_flag = ne_music_chosen }
-		}
-		
-		hidden_effect = {
-			set_global_flag = ne_music_chosen
-			country_event = ne_settings_intro.1
-		}
-		
-	}
-	
-	
-	option = {	##disable music
-		name = ne_settings_intro.4.e1
-		custom_effect_tooltip = not_ne_music_chosen_tooltip
-		
-		trigger = {
-			has_global_flag = ne_music_chosen 
-		}
-		
-		hidden_effect = {
-			clr_global_flag = ne_music_chosen
-			country_event = ne_settings_intro.1
-		}
-		
-	}
-
-	
-	option = { ##don't change anything, return to menu
-		name = ne_settings_intro.4.f
-		
-		hidden_effect = {
-			country_event = ne_settings_intro.1
-		}
-		
-	}
-	
-               
-}
 
 
 ##SkelSa's recommended settings EDIT
@@ -731,6 +719,7 @@ country_event = {
 	
 	option = { # yes, enable skelsas changes
 		name = ne_settings_intro.5.a
+		custom_effect_tooltip = reco_settings_a
 		
 		trigger = {
 		
@@ -738,7 +727,7 @@ country_event = {
 		
 		}
 		
-		add_political_power = 5
+		add_political_power = 1
 			
 		##add flags which are not added yet
 		if = {	limit = { NOT = { has_global_flag = names_chosen} } set_global_flag = names_chosen	} 
@@ -746,7 +735,6 @@ country_event = {
 		if = {	limit = { NOT = { has_global_flag = USA_USSR_Long} } set_global_flag = USA_USSR_Long	} 
 		if = {	limit = { NOT = { has_global_flag = Neutrality_chosen} } set_global_flag = Neutrality_chosen	} 
 		if = {	limit = { NOT = { has_global_flag = ne_strict_faction} } set_global_flag = ne_strict_faction	}
-		if = {	limit = { NOT = { has_global_flag = CPS_created} } set_global_flag = CPS_created	} 
 		if = {	limit = { NOT = { has_global_flag = ne_music_chosen} } set_global_flag = ne_music_chosen	}
 		if = {	limit = { NOT = { has_global_flag = ne_additional_rd_slot} } set_global_flag = ne_additional_rd_slot	}	
 		##not activated are: puppet ssrs, short USA, USSR name, Old Manager
@@ -759,8 +747,9 @@ country_event = {
 	}
 	
 	
-	option = { # disable skelsas changes
+	option = { # disable Skelsa's changes
 		name = ne_settings_intro.5.b
+		custom_effect_tooltip = reco_settings_a1
 		
 		trigger = {
 		
@@ -768,7 +757,7 @@ country_event = {
 		
 		}
 		
-		add_political_power = 1
+		add_political_power = -1
 			
 		##add flags which are not added yet
 		if = {	limit = {  has_global_flag = names_chosen}  clr_global_flag = names_chosen	} 
@@ -776,7 +765,6 @@ country_event = {
 		if = {	limit = {  has_global_flag = USA_USSR_Long}  clr_global_flag = USA_USSR_Long	} 
 		if = {	limit = {  has_global_flag = Neutrality_chosen}  clr_global_flag = Neutrality_chosen	} 
 		if = {	limit = {  has_global_flag = ne_strict_faction}  clr_global_flag = ne_strict_faction	}
-		if = {	limit = {  has_global_flag = CPS_created} clr_global_flag = CPS_created	} 
 		if = {	limit = {  has_global_flag = ne_music_chosen} clr_global_flag = ne_music_chosen	}
 		if = {	limit = {  has_global_flag = ne_additional_rd_slot}  clr_global_flag = ne_additional_rd_slot	} 	
 		##not activated are: puppet ssrs, short USA, USSR name, Old Manager##
@@ -791,6 +779,7 @@ country_event = {
 	
 	option = { # return to menu
 		name = ne_settings_intro.5.c
+		custom_effect_tooltip = ne_return_menu
 		
 		hidden_effect = {
 			country_event = ne_settings_intro.1		
@@ -814,22 +803,8 @@ country_event = {
 	
 	option = {
 		name = ne_settings_intro.6.a
-		#-Tooltip for GDR/WGR/IND color
+		custom_effect_tooltip = exit_settings_a
 
-		effect_tooltip = {
-		
-			if = {
-				limit = {
-					NOT = { has_global_flag = ne_music_chosen }
-				}
-				custom_effect_tooltip = not_ne_music_chosen_tooltip
-			}
-
-		}
-		
-		
-		
-		
 		
 			trigger = {
 			
@@ -840,7 +815,6 @@ country_event = {
 					has_global_flag = USA_USSR_Short
 					has_global_flag = Neutrality_chosen
 					has_global_flag = ne_strict_faction
-					has_global_flag = CPS_created
 					has_global_flag = ne_puppet_SSR
 					has_global_flag = ne_additional_rd_slot
 					has_global_flag = ne_old_manager
@@ -1060,21 +1034,6 @@ country_event = {
 				
 			##EVENT TO REMOVE AMERICAN GUARANTEE WHEN GUARANTEED COUNTRY IS COMMUNIST WITH 80% SUPPORT EDIT			
 			}
-
-			
-			##CPS creation
-			if = {
-				limit = {
-					has_global_flag = CPS_created
-				}
-				
-				JAP = { 
-					create_faction = "coprosperity_sphere" 
-					add_to_faction = MAN
-					add_to_faction = MEN
-				}			
-			}
-
 			
 			##USSR independent SSRs
 			if = {
@@ -1213,6 +1172,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings_intro.6.a1
+		custom_effect_tooltip = exit_settings_a1
 
 		trigger = {
 		
@@ -1225,7 +1185,6 @@ country_event = {
 					has_global_flag = USA_USSR_Short
 					has_global_flag = Neutrality_chosen
 					has_global_flag = ne_strict_faction
-					has_global_flag = CPS_created
 					has_global_flag = ne_puppet_SSR
 					has_global_flag = ne_additional_rd_slot
 					has_global_flag = ne_old_manager
@@ -1240,6 +1199,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings_intro.6.b
+		custom_effect_tooltip = exit_settings_b
 
 		trigger = {
 			OR = {
@@ -1249,7 +1209,6 @@ country_event = {
 				has_global_flag = USA_USSR_Short
 				has_global_flag = Neutrality_chosen
 				has_global_flag = ne_strict_faction
-				has_global_flag = CPS_created
 				has_global_flag = ne_puppet_SSR
 				has_global_flag = ne_additional_rd_slot
 				has_global_flag = ne_old_manager
@@ -1264,7 +1223,6 @@ country_event = {
 		if = {	limit = { has_global_flag = USA_USSR_Short } clr_global_flag = USA_USSR_Short	}
 		if = {	limit = { has_global_flag = Neutrality_chosen } clr_global_flag = Neutrality_chosen	} 
 		if = {	limit = { has_global_flag = ne_strict_faction } clr_global_flag = ne_strict_faction	}
-		if = {	limit = { has_global_flag = CPS_created } clr_global_flag = CPS_created	} 
 		if = {	limit = { has_global_flag = ne_puppet_SSR } clr_global_flag = ne_puppet_SSR	}
 		if = {	limit = { has_global_flag = ne_additional_rd_slot } clr_global_flag = ne_additional_rd_slot	} 
 		if = {	limit = { has_global_flag = ne_old_manager } clr_global_flag = ne_old_manager	}
@@ -1279,16 +1237,18 @@ country_event = {
 	
 	option = {
 		name = ne_settings_intro.6.c
-		custom_effect_tooltip = ne_old_manager_tooltip
-		custom_effect_tooltip = not_ne_old_manager_tooltip
-		custom_effect_tooltip = GAME_OVER_TT
+		custom_effect_tooltip = ne_return_menu
+		##Testing the flags
+		#custom_effect_tooltip = ne_old_manager_tooltip
+		#custom_effect_tooltip = not_ne_old_manager_tooltip
+		#custom_effect_tooltip = GAME_OVER_TT
 		
-		if = {
-			limit = {
-				has_global_flag = neweurope_enabled
-			}
-			custom_effect_tooltip = not_ne_music_chosen_tooltip
-		}
+		#if = {
+		#	limit = {
+		#		has_global_flag = neweurope_enabled
+		#	}
+		#	custom_effect_tooltip = not_ne_music_chosen_tooltip
+		##}
 
 		
 		hidden_effect = {

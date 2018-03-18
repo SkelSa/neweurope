@@ -1,6 +1,4 @@
 ﻿##New events by Takee here!
-##Hi! How are you?
-##Fine!
 
 add_namespace = ne_takee
 
@@ -251,7 +249,7 @@ country_event = {
 	}
 }
 
-######################A warning for a player###################### 
+######################A Warning for a player###################### 
 country_event = {
 	id = ne_takee.3
 	title = ne_takee.3.t
@@ -267,7 +265,20 @@ country_event = {
 	option = {
 		name = ne_takee.3.a
 		custom_effect_tooltip = warning_for_a_player.1.tt
-		add_political_power = -20
+		ai_chance = { factor = 1 }
+		
+		##Find a better solution for this loc
+		effect_tooltip = { add_political_power = -1 }
+		hidden_effect = { add_political_power = -1 }
+		
+	}
+	
+	option = {
+		name = ne_takee.3.b
+		custom_effect_tooltip = warning_for_a_player_quit.1.tt
+		ai_chance = { factor = 0 }
+	
+		hidden_effect = { if = { limit ={ is_ai = no } LUX = { annex_country = { target = ROOT } } } }
 	}
 }
 

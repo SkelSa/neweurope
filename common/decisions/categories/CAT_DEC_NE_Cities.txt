@@ -1,0 +1,12 @@
+
+
+
+##City Renaming
+city_rename = {
+
+	icon = GFX_
+
+	picture = GFX_
+
+
+}

@@ -1,0 +1,1 @@
+##Decisions to trigger the Manager and similar stuff:

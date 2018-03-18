@@ -1,0 +1,17 @@
+##Decisions for the conferences etc to create a better post war Europe (and Asia)
+
+
+##Creation of a new Europe
+creation_of_a_new_europe = {
+	icon = GFX_
+	
+	allowed = {
+		OR = {
+			tag = SOV
+			tag = ENG
+			tag = FRA
+			tag = USA
+		}
+	}	
+	
+}

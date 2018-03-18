@@ -1,5 +1,6 @@
-﻿
-l_english:
+﻿l_english:
+
+##Hints: [GetDateText] <- Test this some day
 
  ##Replace/Revise
  
@@ -8,6 +9,11 @@ l_english:
  ne_news.1.d:0 "This mod aims to expand and enhance a historical playthrough as one of the Allied nations. Besides several new states to allow the recreation of a new world, BPWE features dozens of historical events and other content to allow the begin of the Cold War after the defeat of Nazi Germany and her allies.\nDue to the increasing lag in the lategame a focus was laid on events which happened before 1955 in our timeline. WW3 stuff is also included.\nThis mod was intended for historical playthroughs and thus ahistorical games will prevent a lot of content. Please try to keep this in mind.\nAnd now have fun!"
  ne_news.1.a:0 "Thanks for the info!"
  
+ ##Test
+ army_xp_more_than_10:0 "§H10§!£army_experience"
+ army_xp_more_than_10_blocked:0 "§R10§!£army_experience"
+ army_xp_more_than_10_tooltip:0 "It costs 10£army_experience to select this."
+ 
  
  
  ##Misc
@@ -15,8 +21,6 @@ l_english:
  
  ##Parties (by Pinkie Pie) - MOVE THEM TO THE SETTINGS, Command:  	set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party } 
  
- PRC_communism_party:0 "CPC"
- PRC_communism_party_long:0 "Communist Party of China"
  LEB_communism_party:0 "Syrian-Lebanese Communist Party"
  GRE_House_of_Glucksburg:0 "House of Glücksburg"
  
@@ -89,108 +93,9 @@ l_english:
  autonomy_ssr:0 "SSR"
  
  
- ##Main Main Menu; Options Menu (too much menu)
- ne_settings_intro.1.t:0 "Better Post-War Europe: Settings"
- ne_settings_intro.1.d:0 "Since some things I really wanted to add are not suited or liked by everyone, "Better Post-War Europe" offers you the possibility to adjust the mod to your liking. Currently, there are only a handful of options though this might change in the future. Most settings have a tooltip when you hover with the mouse over them in addition to the event descriptions so there should be no problem to know what each one does.\nIt's recommended to check out the following settings as they will be permanent throughout your game and could make your game more enjoyable..."
- ne_settings_intro.1.a:0 "Flavor Settings"
- ne_settings_intro.1.b:0 "Neutrality and Faction Settings"
- ne_settings_intro.1.c:0 "Misc. Settings"
- ne_settings_intro.1.e:0 "SkelSa's Recommended Settings"
- ne_settings_intro.1.f:0 "Exit"
- 
- #Second menu; Choose between historical Names and USA/USSR
- ne_settings_intro.2.t:0 "BPWE: Historical Names and Flags and Alternative Names for the USA/USSR"
- ne_settings_intro.2.d:0 "Welcome to the submenu of flavor settings! You can now choose between name changes for the USA/USSR or historical names/flags for some countries. Which one do you want to change first?"
- ne_settings_intro.2.a:0 "Historical Options"
- ne_settings_intro.2.b:0 "Names of the USSR/USA"
- ne_settings_intro.2.c:0 "Return to the menu"
- 
- #Third Menu; choose between neutrality and factions
- ne_settings_intro.3.t:0 "BPWE: Neutrality and Faction Settings"
- ne_settings_intro.3.d:0 "Welcome to the submenu of the neutrality and faction settings! Which one do you want to change first? "
- ne_settings_intro.3.a:0 "Neutrality Settings"
- ne_settings_intro.3.b:0 "Faction Settings"
- ne_settings_intro.3.c:0 "Return to the menu"
- 
- ##Fourth Menu; Misc Settings 
- ne_settings_intro.4.t:0 "BPWE: Miscellaneous Settings"
- ne_settings_intro.4.d:0 "Here you can find some things to change which don't belong to a specific category.\nHover over the buttons to see what exactly each does!"
- ne_settings_intro.4.a:0 "Let the SSRs be independent puppets!"
- ne_settings_intro.4.a1:0 "Revert the change, implement direct rule from Moscow again!"
- ne_settings_intro.4.b:0 "Give every major power an additional research slot!"
- ne_settings_intro.4.b1:0 "Remove the additional research slot!"
- ne_settings_intro.4.c:0 "Enable the old manager!"
- ne_settings_intro.4.c1:0 "Use the new manager instead!"
- ne_settings_intro.4.e:0 "Enable music!"
- ne_settings_intro.4.e1:0 "Disable music!"
- ne_settings_intro.4.f:0 "Exit to Main Menu"
- 
- #Fifth Menu; SKELSAS RECOMMENDED CHANGES
- ne_settings_intro.5.t:0 "BPWE: Recommended Settings"
- ne_settings_intro.5.d:0 "This is a quick way to enable all settings to have an authentic playthrough. All options are enabled. If you wish to deactivate them after you clicked the first option you might go to Exit > Revert all Changes."
- ne_settings_intro.5.a:0 "Enable the recommended settings!"
- ne_settings_intro.5.b:0 "Disable the recommended settings!"
- ne_settings_intro.5.c:0 "Exit to Main Menu"
- 
- #Sixth menu; EXIT MENU
- ne_settings_intro.6.t:0 "BPWE: Exit"
- ne_settings_intro.6.d:0 "Here you can now apply all the changes you did and return to the game or reset the settings to default."
- ne_settings_intro.6.a:0 "Apply the changes and return to the game!"
- ne_settings_intro.6.a1:0 "Return to the game with no changes!"
- ne_settings_intro.6.b:0 "Revert all adjustments I did"
- ne_settings_intro.6.c:0 "Go back, I'm not finished yet!"
- 
- ##OPTIONS: Flags and names ##delete this comment after you've read: tooltip has activate instead of enable
- ne_settings.1.t:0 "BPWE: Historical Flavor"
- ne_settings.1.d:0 "The historical settings aim to provide realistic and hsitorical flags, names and leaders. Through this event you can activate the historical accurate flags, country names and sometimes the color of several countries. In total around 25 countries will see a change, most notable will be Germany and Japan. Additionally, flag changes which happened historically between 1936 and 1948 will also happen via event.\nThe "Better Leaders" option will replace some head of states to more historical ones. For example, Boleslaw Bierut will now lead a Communist Poland.\nThe last option allows you to to change the communist names of the 14 Soviet Republics to end with SSR (Soviet Socialist Republic) either with their standard color or a reddish tone similar to that of the motherland. Just hover over the buttons to see a the full list of changes!"
- ne_settings.1.a:0 "Enable historical names and names!"
- ne_settings.1.a1:0 "Disable historical names and names!"
- ne_settings.1.b:0 ""
- ne_settings.1.b1:0 ""
- ne_settings.1.c:0  "Enable the SSR endings!"
- ne_settings.1.c1:0 "Disable the SSR endings!"
- ne_settings.1.e:0 "I'm not interested in changing these settings..."
- ne_settings.1.e1:0 "Return to the main menu"
- 
- ##OPTIONS: USA and USSR Names
- ne_settings.2.t:0 "BPWE: Names of the USSR and USA"
- ne_settings.2.d:0 "Due to the indecisiveness of this mod's creator towards country names, you can now choose the country names for the USA and USSR. Hover over the buttons to see what each button does. Keep in mind that the long country names may overlap in news events, while the short versions can look weird on the political map.\nIt's your choice!"
- ne_settings.2.a:0 "Choose abbreviations!"
- ne_settings.2.b:0 "Choose long country names!"
- ne_settings.2.c:0 "Keep vanilla!"
- ne_settings.2.c1:0 "Return to the main menu"
- ne_settings.2.e:0 "Revert to vanilla!"
- 
- ##OPTIONS: Neutrality settings
- ne_settings.3.t:0 "BPWE: Force some contries to stay neutral"
- ne_settings.3.d:0 "Currently in most games, neutral nations like Turkey or Japan have no difficulties joining a faction and thus there's now a neutrality option to force them to stay out.\nI really suggest to enable those to keep the game more historical and fix some AI issues like the Wehrmacht fighting in Asia..."
- ne_settings.3.a:0 "Make some countries neutral!"
- ne_settings.3.b:0 "I don't want these changes anymore!"
- ne_settings.3.c:0 "Return"
- 
- ##OPTIONS: Faction Settings 
- ne_settings.4.t:0 "BPWE: Factions"
- ne_settings.4.d:0 "With the options below you can create an own faction for Japan but also enable stricter join rules for NATO or the Warsaw Pact. I highly recommend to create the "Co-Properity Sphere" as this helps the Axis AI immensely. Additionally, Japan will not join the war against the USSR when Germany does.\nThe stricter rules for NATO/WP mean that not every democratic country can join NATO, for instance, instantly. Instead, they would have to achieve a lot of party popularity. Several national spirits help you to see when a country would be ready to join. If they are a great power, Players can invite some countries earlier into their faction via the diplomacy slots while any AI-only faction requires any potential new members to have a really high party popularity among some other minor conditions. Historical invitations are done via event however.\nChoose now what you want."
- ne_settings.4.a:0 "Enable historical NATO/PACT"
- ne_settings.4.a1:0 "Disable any special rules about NATO/WP"
- ne_settings.4.b:0 "Enable the Co-Prosperity Sphere"
- ne_settings.4.b1:0 "Dissolve Japan's faction!"
- ne_settings.4.e:0 "Exit to Main Menu"
- 
- 
- ##Tooltips:
-
- historical_settings_a:0 "If you enable this, following changes will happen:\n\nGermany is renamed to "Deutsches Reich" and gets their correct flag\n\nJapan is renamed to "Empire of Japan" and gets their historical flag\n\nGreece is renamed to "Kingdom of Greece" and gets their historical flag\n\nWest Germany is renamed to "Federal Republic of Germany" instead of "FRG"\n\nEast Germany is renamed to "German Democratic Republic" instead of "GDR""
- historical_settings_b:0 "All communist Soviet Republics plus the Baltics gain a cosmetic tag, which changes their name to end with "SSR".\n\nExamples:\nLithuanian People's Republic -> Lithuanian SSR\nKazakh Soviet Socialist Republic -> Kazakh SSR"
- historical_settings_c:0 "Hover over the two buttons above this one to see all changes"
- ussr_usa_settings_a:0 "Soviet Union is renamed to "USSR"\n\nUnited States is renamed to "USA""
- ussr_usa_settings_b:0 "Soviet Union is renamed to "Union of Soviet Socialist Republics"\n\nUnited States is renamed to "United States of America""
- historical_settings_b1:0 "All communist Soviet Republics plus the Baltics gain a cosmetic tag, which changes their name to end with "SSR".\n\nExamples:\nLithuanian People's Republic -> Lithuanian SSR\nKazakh Soviet Socialist Republic -> Kazakh SSR"
- ussr_usa_settings_c:0 "The country names stay as they are"
- ne_old_manager_tooltip:0 "The Old Manager is currently §GENABLED§!."
- not_ne_old_manager_tooltip:0 "The Old Manager is currently §RDISABLED§!."
- ne_music_chosen_tooltip:0 "Event Music is currently §GENABLED§!."
- not_ne_music_chosen_tooltip:0 "Event Music is currently §RDISABLED§!."
+ ##Tooltips
+ spain_civil_war_help:0 "Some equipment will be sent to support the Spanish Republic in their struggle."
+ nat_spain_civil_war_help:0 "Some equipment will be sent to support the Spanish State in their struggle."
  
  ##settings menu
  main_menu_a:0 ""
@@ -220,6 +125,7 @@ l_english:
  together_against_the_allies:0 "Together against the Allies!"
  baltic_annexation:0 "Condemns the Annexation of the Baltics"
  betrayed_us:0 "They betrayed us!"
+ helped_spain_civil_war:0 "They betrayed us!"
  
  
  ##Threats:
@@ -430,7 +336,6 @@ l_english:
  CEY_communism_ADJ:0 "Sri Lankan"
  
  
- 
  ####COSMETIC TAGS####
 
  ##PAK
@@ -527,6 +432,7 @@ l_english:
  NE_GRE_1_communism:0 "The Hellenic Commune" 
  
  
+ 
  ##Tech Sharing Groups
  ne_nato_research:0 "NATO Research"
  ne_nato_research_desc:0 "The United States and her Allies research technologies together."
@@ -550,7 +456,7 @@ l_english:
  
  #Germany: Pressure on Bulgaria to join the Axis
  ne_historical.1.t:0 "Pressure on Bulgaria"
- ne_historical.1.d:0 "Our ally [ITA.GetLeader] is doing poorly in Greece and future invasion plans can't be postponed. Even though Greece is a small and weak country, we need to occupy it before the British can send reinforcements! It is time to bring Bulgaria into our alliance and fight the Greeks from their territory too. They will for sure join our alliance after we offer our rewards..."
+ ne_historical.1.d:0 "Our ally [ITA.GetLeader] is doing poorly in Greece and future invasion plans can't be postponed. Even though Greece is a small and weak country, we need to occupy it before the British can send reinforcements there! It is time to bring Bulgaria into our alliance and fight the Greeks from their territory too. They will for sure join our alliance after we offer our rewards..."
  ne_historical.1.a:0 "Put the pressure on them!"
  ne_historical.1.b:0 "This is no real solution!"
  #Bulgaria: Join Axis or not
@@ -564,7 +470,7 @@ l_english:
  ne_historical.3.a:0 "Very good."
  #Germany: Bulgaria refuses
  ne_historical.4.t:0 "Bulgaria refuses?!"
- ne_historical.4.d:0 "The ambassadors from Sofia have politely refused our proposal and stressed Bulgaria's desire to keep out of international affairs..."
+ ne_historical.4.d:0 "The ambassadors from Sofia have politely refused our proposal and stressed Bulgaria's desire to keep out of international affairs."
  ne_historical.4.a:0 "We made our warnings clear..."
  ne_historical.4.b:0 "They would have been a useless ally anyways."
  
@@ -575,8 +481,9 @@ l_english:
  
  ##WARNING: Historical Focus not on!
  ne_skelsa.75.t:0 "Warning: Historical Focus Setting Not On!"
- ne_skelsa.75.d:0 "This savegame was started without enabled historical focuses! As most events and decisions rely on them, it's strongly advised to turn them on for the best gameplay experience."
- ne_skelsa.75.a:0 "Thanks for the warning!"
+ ne_skelsa.75.d:0 "This savegame was started with historical focuses turned off! As almost all events and decisions rely on them, it's strongly advised to turn them on to get the full content of "Better Post-War Europe"."
+ ne_skelsa.75.a:0 "Let me continue the game anyways."
+ ne_skelsa.75.b:0 "Thanks for the warning!"
  
  ##Germany: Divide up Yugoslavia
  ne_skelsa.76.t:0 "The Fate of Yugoslavia"
@@ -600,7 +507,7 @@ l_english:
  ne_skelsa.84.d:0 "The United States, one of the most imperialist nations on Earth, has just let us know that their government won't recognize our "occupation" of Lithuania, Latvia and Estonia. [USA.GetLeader] also announced support for the old Baltic government and stated, that as long as Soviet troops are occupying Baltic territory, relations between the US and USSR will suffer.\nDue to the isolationist stance of the United States of America we can safely ignore this letter. It's just a matter of time until they have to accept our new borders."
  ne_skelsa.84.a:0 "We don't care about their opinion."
  
- ##SOV gets kicked out of the LoN
+ ##SOV gets kicked out of the LoN (add opinion modifier)
  ne_skelsa.85.t:0 "We were kicked out of the League of Nations!"
  ne_skelsa.85.d:0 "As a result of our war against Finland we were kicked out of the League of Nations today. 7 out of 15 Council members, including Great Britain, France and Belgium, voted for our expulsion. Without suprise, the League breached its own regulations to ensure our exit by choosing South Africa, Bolivia and Egypt as Council members just yesterday.\nHowever, the loss of our five-year old membership will not have any real consequences for us. The organization has failed multiple times to solve any conflicts in the past and with the ongoing world war, it will probably dissolve soon."
  ne_skelsa.85.a:0 "It was a useless organization anyway."
@@ -612,7 +519,7 @@ l_english:
  
  ##Metaxas is dead!
  ne_skelsa.90.t:0 "Prime Minister Metaxas has passed away!"
- ne_skelsa.90.d:0 "After a long struggle against toxaemia our beloved Leader has died in Athens today. In the next days our people will mourn his death and say farewell. We have decided that the current governor of the Bank of Greece, Alexandros Koryzis, will be Metaxas' successor and serve as the Prime Minister of Greece. However, King George II will, as expected, remain our head of state and have the final say in all political decisions.\n Let us hope that our new government and the King can maneuver the Greek nation through these difficult times. We have to defend Greece at all costs!"
+ ne_skelsa.90.d:0 "After a long struggle against toxaemia our beloved Leader has died in Athens today. In the next days our people will mourn his death and say farewell. We have decided that the current governor of the Bank of Greece, Alexandros Koryzis, will be Metaxas' successor and serve as the Prime Minister of Greece. However, King George II will, as expected, remain our head of state and have the final say in all political decisions.\n Even though the death of Metaxas will be a setback, we are confident that the new government and our beloved King can maneuver the Greek nation through these difficult times."
  ne_skelsa.90.a:0 "King George II will achieve victory for Greece!"
  
  
@@ -627,7 +534,7 @@ l_english:
  
  ##WW2 Victim
  ne_skelsa.2.t:0 "The Fascists have declared War on Us!"
- ne_skelsa.2.d:0 "The vile fascists have decided to attack our beautiful and proud country! We have to resist at all costs!"
+ ne_skelsa.2.d:0 "The vile fascists have decided to attack our country! We have to resist at all costs!"
  ne_skelsa.2.a:0 "Our darkest hour..."
  
  ##Lease of Finnish Port
@@ -759,6 +666,25 @@ l_english:
  ne_skelsa.69.a:0 "We welcome them!"
  ne_skelsa.69.b:0 "They should stay our puppet."
  
+ ##REDO LOC
+ 
+ ##Spanish Support ## There's not much intel about it besides that Spain is in complete disarray and chaos right now.\nSome of our people have already joined the fight to support the Republican government and 
+ ne_skelsa.115.t:0 "Guns for the Spanish Republic?"
+ ne_skelsa.115.d:0 "A civil war in Spain has erupted between fascists and a coalition ranging from monarchists to anarchists! Do we send support?"
+ ne_skelsa.115.a:0 "Of course we will support them!"
+ ne_skelsa.115.b:0 "We shouldn't get involved in this."
+ 
+ ##Spanish Support 
+ ne_skelsa.116.t:0 "Guns for the Spanish State?"
+ ne_skelsa.116.d:0 "A civil war in Spain has erupted between fascists and a coalition ranging from monarchists to anarchists! Do we send support?"
+ ne_skelsa.116.a:0 "Let's make sure that Franco gets his support!"
+ ne_skelsa.116.b:0 "We can't spare anything."
+ 
+ ne_skelsa.117.t:0 "[FROM.GetName] sent us support!"
+ ne_skelsa.117.d:0 "We have recently received some military aid from [FROM.GetNameDef] to support us in our struggle against the Falangist forces. This is great news!"
+ ne_skelsa.117.d1:0 "The government of [FROM.GetLeader] has decided to aid us with military equipment! Today, at  "
+ ne_skelsa.117.a:0 "We will thank them later."
+ 
  ##Yugoslavia
  ne_misc.12.t:0 "Our Partisans continue the Fight!"
  ne_misc.12.d:0 "Our regular army may have surrendered but the will of our people to resist the German tyranny lives on. Several partisan groups were formed and are actively sabotaging railways, supply depots and bridges.\nEspecially the communist partisan forces are known for their effectiveness and several smaller regions are temporarily liberated by them. However, the KPJ's popularity is growing rapidly and chances are high that our government in exile may be unwelcome once the war is over..."
@@ -819,7 +745,7 @@ l_english:
  
  ##Invitation to WGR
  ne_nato.6.t:0 "NATO membership for West Germany?"
- ne_nato.6.d:0 "Our second extension for our alliance proposes to invite our former enemy, Germany, into the alliance"
+ ne_nato.6.d:0 "Our second expansion for our alliance proposes to invite our former enemy, Germany, into the alliance."
  ne_nato.6.a:0 "Of course!"
  ne_nato.6.b:0 "This is too risky..."
  
@@ -913,7 +839,7 @@ l_english:
  
  ##American Victory
  ne_news.26.t:0 "Soviet Union and Allies surrender!"
- ne_news.26.d:0 "While many foreign powers tried to conquer Russia, none of them was really successful and suffered a crushing defeat in the end. Until today. The Soviet authorities have agreed to terms of unconditional surrender"
+ ne_news.26.d:0 "While many foreign powers tried to conquer Russia, only a handful were successful while the others suffered a crushing defeat in the end. Until today. The Soviet authorities have agreed to terms of unconditional surrender this morning and the cessation of all hostilities."
  ne_news.26.a:0 ""
  ne_news.26.b:0 ""
  ne_news.26.c:0 ""
