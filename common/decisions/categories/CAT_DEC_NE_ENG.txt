@@ -7,3 +7,12 @@ ENG_historical_military_operations = {
 		}
 	}
 }
+ENG_historical_missions_ne = { 
+	icon = GFX_decision_category_eng_misix
+	allowed = {
+		AND = {
+			original_tag = ENG
+			is_historical_focus_on = yes
+		}
+	}
+}

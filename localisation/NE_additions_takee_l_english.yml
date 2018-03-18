@@ -162,6 +162,11 @@
   ne_takee.17.d:0 "Denmark provides us with Greenland from possible capture"
   ne_takee.17.a:0 "Good"
 
+ ##Poland was attacked by Germany
+  ne_takee.19.t:0 "Military Assistance to Poland in the Aggression of Germany"
+  ne_takee.19.d:0 "Germany plans to attack Poland in a matter of days"
+  ne_takee.19.a:0 "Invite them to the alliance"
+
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
@@ -176,6 +181,7 @@
  iran_war_tooltip.2.tt:0 "§YThe invasion of Iran will begin§!"
  iran_war_tooltip.3.tt:0 "§MThe Allies§! will launch an invasion of Iran with us."
  iran_war_tooltip.4.tt:0 "Iran will be §Ydivided§! into §Rtwo§! spheres of §Yinfluence§!."
+ anglo_guarantee_tooltip.1.tt:0 "§GPoland will be protected in the war with Germany.§!"
 
  ######################################################################################################################################
  ############################################################IDEAS#####################################################################
@@ -332,3 +338,6 @@
 ENG_historical_military_operations:0 "Secret Intelligence Service"
 ENG_the_peking_plan:0 "The Peking Plan"
 ENG_the_peking_plan_desc:0 "The Peking Plan (or Operation Peking) was an operation in which three destroyers of the Polish Navy, the Burza ("Storm"), Błyskawica ("Lightning"), and Grom ("Thunder"), were evacuated to the United Kingdom in late August and early September 1939 prior to the outbreak of war. They were ordered to travel to British ports and assist the British Royal Navy in the event of a war with Nazi Germany. The plan was successful and allowed the ships to avoid certain destruction or capture in the German invasion."
+ENG_historical_missions_ne:0 "Secret Intelligence Service Tasks"
+ENG_the_english_poland_alliance:0 "Military Assistance to Poland"
+ENG_the_english_poland_alliance_desc:0 "We are compelled to defend Poland if Germany declares war on it."

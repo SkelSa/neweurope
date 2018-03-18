@@ -159,6 +159,8 @@ opinion_modifiers = {
 	liberation_army_formation = { value = 50 }
 	
 	baltic_annexation = { value = -8 }
+
+	allies_didnt_guarantee = { value = -50 }
 	
 	
 	
