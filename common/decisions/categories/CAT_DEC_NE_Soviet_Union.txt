@@ -1,0 +1,24 @@
+##Decisions categories for the Soviet Union:
+
+
+##Broken shards of the Russian Empire
+SOV_shards_russian_empire = {
+	icon = GFX_
+
+	allowed = {
+		tag = SOV		
+	}
+	
+	
+}
+
+
+##The Red Army
+SOV_the_red_army = { 
+	icon = GFX_
+	
+	allowed = {
+		tag = SOV	
+	}
+	
+}

@@ -40,17 +40,17 @@ on_actions = {
 				country_event = { days = 1 id = ne_skelsa.75 }
 				}								
 
-			##Test
-			every_country = {
-
-				limit = {
-					tag = SYR
-				}
-				
-				set_cosmetic_tag = MAL_UK
-				}								
+				##Test
+				#every_country = {
+				#
+				#	limit = {
+				#		tag = SYR
+				#	}
+				#	
+				#	set_cosmetic_tag = MAL_UK
+				#	}								
 		
-			}
+				}
 			
 			}
 
@@ -80,6 +80,22 @@ on_actions = {
 				
 					
 			}
+			
+			##Bulgaria loses fascist influence when fascism is at 44%
+			if = {
+				limit = { fascism > 0.44 }
+				every_country = {
+					limit = {
+						tag = BUL
+						has_government = neutrality
+						has_idea = fascist_influence						
+					}
+					
+					remove_ideas = fascist_influence
+				}
+				
+					
+			}
 
 		}
 	
@@ -97,7 +113,7 @@ on_actions = {
 		##Switch to better India color when free
 		if = {
 			limit = {
-				TAG = RAJ
+				tag = RAJ
 				has_global_flag = names_chosen
 			}
 			

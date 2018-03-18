@@ -1,3 +1,5 @@
+##NewEurope has done several smaller edit here. These include: Adjusted states for the Rhineland and for Yugoslavia; Barbarossa only after March 1941, Lower Chance for Op. Tannenbaum in historical mode
+
 focus_tree = {
 	id = german_focus
 	
@@ -2707,13 +2709,17 @@ focus_tree = {
 		y = 4
 		relative_position_id = GER_anti_comitern_pact
 		cost = 10
+		
+		##NewEurope Edit
 		historical_ai = {
 			NOT = {
 				any_home_area_neighbor_country = {
 					has_war_with = ROOT					
 				}		
 			}
+			date > 1941.3.1
 		}
+		
 		bypass = {
 			has_war_with = SOV
 		}
@@ -4093,8 +4099,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_war_with_france
 		cost = 10
+		
+		##NewEurope Edit
 		ai_will_do = {
-			factor = 10
+			factor = 1
+			
+				modifier = {
+					factor = 10
+					is_historical_focus_on = no
+				}
 		}
 		
 		completion_reward = {

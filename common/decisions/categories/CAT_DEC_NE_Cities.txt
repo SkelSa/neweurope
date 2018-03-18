@@ -2,7 +2,7 @@
 
 
 ##City Renaming
-cat_name = {
+city_rename = {
 
 	icon = GFX_
 

@@ -160,6 +160,8 @@ opinion_modifiers = {
 	
 	baltic_annexation = { value = -8 }
 	
+	helped_spain_civil_war = { value = 20 }
+	
 	
 	
 	

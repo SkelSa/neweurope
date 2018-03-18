@@ -1,0 +1,21 @@
+##Decisions for all countries
+
+
+##Foreign Policy
+Generic_ne_foreign_policy = {
+	icon = GFX_
+
+	picture = GFX_
+	
+}
+
+
+##City Renaming
+Generic_ne_city_rename = {
+
+	icon = GFX_
+
+	picture = GFX_
+
+
+}

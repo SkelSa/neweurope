@@ -1244,6 +1244,16 @@ country_event = {
 	option = {
 		name = ne_skelsa.75.a
 		custom_effect_tooltip = warning_for_a_player.1.tt
+		ai_chance = { factor = 1 }
+
+	}
+	
+	option = {
+		name = ne_skelsa.75.b
+		custom_effect_tooltip = warning_for_a_player_quit.1.tt
+		ai_chance = { factor = 0 }
+	
+		hidden_effect = { if = { limit ={ is_ai = no } LUX = { annex_country = { target = ROOT } } } }
 	}
 }
 
@@ -1251,7 +1261,7 @@ country_event = {
 country_event = {
 	id = ne_skelsa.76
 	title = ne_skelsa.76.t
-	desc = ne_skelsa.76.d ##The articifial product of Versailles is now gone. Give minorities to our allies. No longer suppressed. Mistakes of Versailles undone
+	desc = ne_skelsa.76.d ##The artificial product of Versailles is now gone! Give minorities to our allies. No longer suppressed. Mistakes of Versailles undone
 	picture = GFX_yugoslavian_split
 
 	fire_only_once = yes
@@ -2145,6 +2155,353 @@ country_event = {
 
 	
 }
+
+
+
+##Democratic and  can assist Rep. Spain with guns
+country_event = {
+	id = ne_skelsa.115
+	title = ne_skelsa.115.t
+	desc =  ne_skelsa.115.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+
+	trigger = {
+	
+		OR = {
+			tag = MEX
+			tag = SOV
+			tag = USA
+			tag = FRA
+			tag = ENG		
+		}
+			
+		NOT = { has_country_flag = ne_guns_for_spain }
+		
+		SPR = {
+			has_civil_war = yes				
+		}
+	
+	}
+	
+	mean_time_to_happen = { days = 20 }
+	
+	immediate = {
+	
+		set_country_flag = ne_guns_for_spain 
+		
+	}
+	
+	
+	option = {	#We will help them
+		name = ne_skelsa.115.a	
+		
+		##AI Chance
+		ai_chance = {
+			factor = 50
+					
+			modifier = {
+				factor = 100
+				
+				is_historical_focus_on = yes
+				OR = {
+					tag = MEX
+					tag = SOV				
+				}
+			}			
+		}
+
+		##Effects
+		add_political_power = 10
+		
+		custom_effect_tooltip = spain_civil_war_help
+		
+		every_country = {
+			limit = {
+				original_tag = SPR
+				has_government = communism
+			}
+			
+			country_event = { days = 1 id = ne_skelsa.117 }
+		}
+		
+			
+	}
+	
+	
+	option = {	#There's no reason for us to get involved
+		name = ne_skelsa.115.b
+		
+		##AI Chance
+		ai_chance = {
+			factor = 50
+					
+			modifier = {
+				factor = 0
+				
+				is_historical_focus_on = yes
+				OR = {
+					tag = USA
+					tag = FRA
+					tag = ENG
+				}
+			}			
+		}	
+
+		##Effects
+		add_political_power = -10
+		add_war_support = -0.02
+			
+	}
+
+	
+}
+
+
+
+##Fascist countries an support Franco with guns
+country_event = {
+	id = ne_skelsa.116
+	title = ne_skelsa.116.t
+	desc =  ne_skelsa.116.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+
+	trigger = {
+	
+		OR = {
+			tag = GER
+			tag = ITA
+			tag = POR	
+		}
+			
+		NOT = { has_country_flag = ne_guns_for_spain }
+		
+		SPR = {
+			has_civil_war = yes				
+		}
+	
+	}
+	
+	mean_time_to_happen = { days = 15 }
+	
+	immediate = {
+	
+		set_country_flag = ne_guns_for_spain 
+		
+	}
+	
+	
+	option = {	#We will help them
+		name = ne_skelsa.116.a	
+		
+		##AI Chance
+		ai_chance = {
+			factor = 50
+					
+			modifier = {
+				factor = 100
+				
+				is_historical_focus_on = yes
+				OR = {
+					tag = GER
+					tag = ITA
+					tag = SOV				
+				}
+			}			
+		}
+
+		##Effects
+		add_political_power = 10
+		
+		custom_effect_tooltip = nat_spain_civil_war_help
+		
+		every_country = {
+			limit = {
+				original_tag = SPR
+				has_government = fascism
+			}
+			
+			country_event = { days = 1 id = ne_skelsa.117 }
+		}
+		
+			
+	}
+	
+	
+	option = {	#There's no reason for us to get involved
+		name = ne_skelsa.116.b
+		
+		##AI Chance
+		ai_chance = {
+			factor = 50
+					
+			modifier = {
+				factor = 0
+				
+				is_historical_focus_on = yes				
+			}			
+		}	
+
+		##Effects
+		add_political_power = -10
+		add_war_support = -0.05
+			
+	}
+
+	
+}
+
+
+
+
+
+##Spain gets event about Foreign Assistance
+country_event = {
+	id = ne_skelsa.117
+	title = ne_skelsa.117.t
+	
+	desc = {
+	text = ne_skelsa.117.d1
+		trigger = {
+			has_government = fascism
+		}
+	}
+	
+	desc = {
+	text = ne_skelsa.117.d
+		trigger = {
+			has_government = communism
+		}
+	}
+	
+	picture = report_event_spain_civil_war_soldiers
+
+	is_triggered_only = yes
+
+	
+	option = {	#Great
+		name = ne_skelsa.1.a
+		
+		##Effects
+		add_opinion_modifier = { target = FROM modifier = helped_spain_civil_war } 
+		
+		##Foreign Volunteers
+		add_manpower = 5000	
+		hidden_effect = { FROM = { add_manpower = -5000} }
+		
+		##Requires some testing surely
+		
+		##Soviet
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = SOV
+				}
+				
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = SOV } 
+			}
+		
+		}
+		
+		##Mexico
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = MEX
+				}
+				
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = MEX } 
+			}
+		
+		}
+		
+		##US
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = USA
+				}
+				
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = USA } 
+			}
+		
+		}
+		
+		##FRA
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = FRA
+				}
+				
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = FRA } 
+			}
+		
+		}
+		
+		##ENG
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = ENG
+				}
+				
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = ENG } 
+			}
+		
+		}
+		
+		##ITA
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = ITA
+				}
+				
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = ITA } 
+			}
+		
+		}
+		
+		##POR
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = POR
+				}
+				
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = POR } 
+			}
+		
+		}
+		
+		##GER
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = GER
+				}
+				
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = GER } 
+			}
+		
+		}
+
+		
+		
+			
+	}
+	
+	
+}
+
 
 
 
