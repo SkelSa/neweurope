@@ -1,0 +1,10 @@
+GRE_historical_metaxasline = { 
+	icon = GFX_decision_category_gre_histmiss
+	picture = #
+	allowed = {
+		AND = {
+			original_tag = GRE
+			is_historical_focus_on = yes
+		}
+	}
+}

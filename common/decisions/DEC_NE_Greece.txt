@@ -1,0 +1,43 @@
+GRE_historical_metaxasline = {
+
+    GRE_metaxas_line = {
+	
+		icon = gre_met_line
+
+		allowed = { 
+			tag = GRE
+		}         
+	
+		available = {
+			##
+		}
+	
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+
+		activation = {
+			##
+		}
+	
+		is_good = yes                        
+	
+		days_mission_timeout = #     
+	
+		timeout_effect = {                     
+			##
+		}
+	
+		complete_effect = {                    
+			##
+		}
+
+    }
+
+}
