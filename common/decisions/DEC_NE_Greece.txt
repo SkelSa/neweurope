@@ -2,14 +2,18 @@ GRE_historical_metaxasline = {
 
     GRE_metaxas_line = {
 	
-		icon = gre_met_line
+		icon = generic_construction
 
 		allowed = { 
 			tag = GRE
 		}         
 	
 		available = {
-			##
+			GRE = {
+				num_of_civilian_factories > 16
+				has_political_power > 360
+			}
+			
 		}
 	
 		fire_only_once = yes
@@ -23,19 +27,62 @@ GRE_historical_metaxasline = {
 		}
 
 		activation = {
-			##
+			ITA = { has_completed_focus = ITA_bulgaria_friend }
+			GRE = { has_war = no }
+			NOT = {
+				OR = {
+					GRE = { is_in_faction_with = BUL }
+					GRE = { is_in_faction_with = ITA }
+				}
+			}
+			184 = { 
+				is_controlled_by = GRE
+				bunker < 4
+			}
+			731 = { 
+				is_controlled_by = GRE
+				bunker < 4
+			}
 		}
 	
-		is_good = yes                        
-	
-		days_mission_timeout = #     
-	
+		is_good = no
+
+		days_mission_timeout = 650
+
 		timeout_effect = {                     
-			##
+			add_stability = -0.2
+			add_war_support = -0.35
 		}
 	
-		complete_effect = {                    
-			##
+		complete_effect = {
+
+			731 = {
+				add_building_construction = {
+					type = bunker 
+					province = 3526 
+					level = 4 
+					instant_build = yes 
+				} 
+			}
+
+			184 = {
+				add_building_construction = {
+					type = bunker 
+					province = 6990 
+					level = 4 
+					instant_build = yes 
+				} 
+				add_building_construction = {
+					type = bunker 
+					province = 9930 
+					level = 4 
+					instant_build = yes 
+				}
+			}
+
+			add_stability = 0.11
+			add_war_support = 0.18
+			add_political_power = -350
 		}
 
     }

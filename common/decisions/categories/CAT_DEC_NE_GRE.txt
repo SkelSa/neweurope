@@ -1,6 +1,8 @@
 GRE_historical_metaxasline = { 
-	icon = GFX_decision_category_gre_histmiss
-	picture = #
+	icon = generic_economy
+
+	picture = GFX_decision_cat_picture_historical_metaxasline
+
 	allowed = {
 		AND = {
 			original_tag = GRE

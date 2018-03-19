@@ -14,5 +14,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_eng_poland_flag.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decision_historical_metaxasline"
+		texturefile = "gfx/interface/decisions/decision_historical_metaxasline.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_historical_metaxasline"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_historical_metaxasline.dds"
+	}
 
 }
