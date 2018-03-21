@@ -54,7 +54,26 @@ on_actions = {
 			
 			}
 
-
+	on_capitulation = {
+		effect = {
+		
+			if = {
+				limit = { 
+					original_tag = JAP
+					has_idea = NE_bad_infrastructure 
+				}
+				
+				remove_ideas = NE_bad_infrastructure
+			}
+		
+		
+		}
+	
+	
+	
+	}
+			
+			
 	on_government_change = {
 		effect = {
 		
@@ -81,7 +100,7 @@ on_actions = {
 					
 			}
 			
-			##Bulgaria loses fascist influence when fascism is at 44%
+			##Bulgaria loses fascist influence when fascism is over 44%
 			if = {
 				limit = { fascism > 0.44 }
 				every_country = {
@@ -95,6 +114,25 @@ on_actions = {
 				}
 				
 					
+			}
+			
+			##Italy loses incompetent_officers when not fascist anymore. Will also be transferred to the Social Republic
+			if = {
+				limit = { 
+				
+				original_tag = ITA 
+				has_idea = NE_ITA_incompetent_officers
+				
+				OR = {
+					has_government = communism
+					has_government = democratic 
+				}
+										
+					
+			}
+				
+			remove_ideas = NE_ITA_incompetent_officers
+			
 			}
 
 		}

@@ -2213,6 +2213,8 @@ country_event = {
 		##Effects
 		add_political_power = 10
 		
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -2000 producer = ROOT }
+		
 		custom_effect_tooltip = spain_civil_war_help
 		
 		every_country = {
@@ -2258,7 +2260,7 @@ country_event = {
 
 
 
-##Fascist countries an support Franco with guns
+##Fascist countries can support Franco with guns
 country_event = {
 	id = ne_skelsa.116
 	title = ne_skelsa.116.t
@@ -2311,6 +2313,8 @@ country_event = {
 
 		##Effects
 		add_political_power = 10
+		
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -2000 producer = ROOT } 
 		
 		custom_effect_tooltip = nat_spain_civil_war_help
 		
@@ -2398,7 +2402,7 @@ country_event = {
 					tag = SOV
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = SOV } 
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = SOV } 
 			}
 		
 		}
@@ -2411,7 +2415,7 @@ country_event = {
 					tag = MEX
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = MEX } 
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = MEX } 
 			}
 		
 		}
@@ -2424,7 +2428,7 @@ country_event = {
 					tag = USA
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = USA } 
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = USA } 
 			}
 		
 		}
@@ -2437,7 +2441,7 @@ country_event = {
 					tag = FRA
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = FRA } 
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = FRA } 
 			}
 		
 		}
@@ -2450,7 +2454,7 @@ country_event = {
 					tag = ENG
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = ENG } 
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ENG } 
 			}
 		
 		}
@@ -2463,7 +2467,7 @@ country_event = {
 					tag = ITA
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = ITA } 
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ITA } 
 			}
 		
 		}
@@ -2476,7 +2480,7 @@ country_event = {
 					tag = POR
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = POR } 
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = POR } 
 			}
 		
 		}
@@ -2489,7 +2493,7 @@ country_event = {
 					tag = GER
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = GER } 
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = GER } 
 			}
 		
 		}

@@ -8,11 +8,69 @@ add_namespace = ne_japan
 ##Most events are hidden
 ##historical focus is on check!
 
+#-Done in Germany's focus tree!
 
 ##GERMANY CAN ONLY DO "AROUND THE MAGINOT" AFTER POL HAS CAPITULATED##
 
-#-Done in Germany's focus tree!
+#	OR = {
+#		POL = { has_capitulated = yes }
+#		
+#		GER = { owns_state = 85 }
+#		GER = { owns_state = 784 }			
+#	}
 
+
+#custom_trigger_tooltip = {
+#	tooltip = condition_for_the_around_maginot_tt
+#	OR = {
+#		AND = {
+#			has_war_with = POL
+#			POL = { 
+#				has_capitulated = yes
+#				exists = yes
+#			}
+#		}
+#		AND = {
+#			NOT = { has_war_with = POL }
+#			is_in_faction_with = POL
+#			POL = { exists = yes }
+#		}
+#		AND = {
+#			NOT = { has_war_with = POL }
+#			controls_state = 85
+#			controls_state = 784
+#			POL = { exists = yes }
+#		}
+#	}
+#}
+
+
+##NO OPERATION TANNENBAUM IN HISTORICAL##
+
+
+#	ai_will_do = {
+#		factor = 1
+#		
+#		modifier = {
+#			factor = 0
+#			is_historical_focus_on = yes
+#		}
+#	}
+
+
+##WAR WITH THE USSR ONLY AFTER MARCH 1941##
+
+
+#	historical_ai = {
+#		NOT = {
+#			any_home_area_neighbor_country = {
+#				has_war_with = ROOT					
+#			}		
+#		}
+#		date > 1941.3.1
+#	}
+			
+	
 
 ###################################
 ##    BULGARIA JOINS THE AXIS    ##
@@ -26,8 +84,6 @@ country_event = {
 	desc =  ne_historical.1.d
 	picture = GFX_somepic
 
-	#hidden = yes
-	#is_triggered_only = yes
 	fire_only_once = yes
 
 	
@@ -82,7 +138,7 @@ country_event = {
 	}
 	
 	
-	option = {	# not neccessary
+	option = {	# not necessary
 		name = event.1.b
 		ai_chance = {
 			factor = 50
@@ -386,67 +442,68 @@ country_event = {
 }
 
 
-
 ###################################################
 ##    No war over Transylvania    #################
 ###################################################
 
+
+##CURRENTLY DISABLED DUE TO VANILLA BEING FINE
+
 ##HUN gets its focus first!
-
-
 ##HUN does "Demand Transylvania". Upon 95% progress, Northern will get tranferred to HUN IF both countries (ROM and HUN are AI)
-country_event = {
-	id = ne_skelsa.250
+
+#country_event = {
+#	id = ne_skelsa.250
 	#title = event.1.t
 	#desc =  event.1.d
 	#picture = GFX_somepic
 
-	hidden = yes
-	fire_only_once = yes
+#	hidden = yes
+#	fire_only_once = yes
 
 	
-	trigger = {
+#	trigger = {
 		
-		HUN = { 
-			exists = yes	
-			is_ai = yes
-			focus_progress = { focus = HUN_demand_transylvania progress > 0.90 } 
-		}
+#		HUN = { 
+#			exists = yes	
+#			is_ai = yes
+#			focus_progress = { focus = HUN_demand_transylvania progress > 0.90 } 
+#		}
 		
 		
-		ROM = {
-			exists = yes
-			is_ai = yes
-			NOT = { has_war_with = HUN }
-		
-		}
-		
-	}
+#		ROM = {
+#			exists = yes
+#			is_ai = yes
+#			NOT = { has_war_with = HUN }
+#		
+#		}
+#		
+#	}
 	
-	immediate = { 
+#	immediate = { 
+#	
+#		#maybe add opinion stuff
+#		
+#	}
 	
-		#maybe add opinion stuff
-		
-	}
 	
-	
-	option = {	#execute stuff
+#	option = {	#execute stuff
 
 		##Transfer_Transylvania
-		HUN = { 
-			transfer_state = 76 
-			add_state_core = 76
-		}
-		
+#		HUN = { 
+#			transfer_state = 76 
+#			add_state_core = 76
+#		}
+#		
 		##maybe there's a news event for when HUN wants Transylvania? If yes, it should be executed
 		#hidden_effect = {	
 		#	news_event = { id = ne_news.6 }					
 		#}
 			
-	}
+#	}
 	
 	
-}
+#}
 
 
 
@@ -471,7 +528,174 @@ country_event = {
 
 
 
-####JAP DOES PEARL HARBOR!####
+#############################################################################
+####       JAPAN GETS EVENT ABOUT BAD INFRASTRUCTURE IN CHINA            ####
+#############################################################################
+
+
+##Bad Infrastructure
+country_event = {
+	id = ne_historical.5
+	title = ne_historical.5.t
+	desc =  ne_historical.5.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	
+	trigger = {		##Triggers when China has lost a significant amount of land
+		
+		tag = JAP
+		
+		JAP = { 
+			exists = yes
+			has_war_with = CHI 
+			has_war_with = PRC
+			surrender_progress < 0.05
+			
+			##Controls some states
+			controls_state = 598
+			controls_state = 597
+			controls_state = 596
+			controls_state = 749
+			controls_state = 608
+			controls_state = 607
+			
+		}
+		
+		CHI = { 
+			exists = yes
+			surrender_progress > 0.75
+		}
+		
+	
+	
+	}
+	
+	option = {	#Oh well...
+		name = ne_historical.5.a
+		
+		##Effects
+		add_ideas = NE_bad_infrastructure
+			
+	}
+	
+	
+}
+
+
+##Resolved Bad Infrastructure!
+country_event = {
+	id = ne_historical.6
+	title = ne_historical.6.t
+	desc =  ne_historical.6.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	
+	trigger = {		##Triggers when China has lost a significant amount of land
+		
+		tag = JAP
+		
+		JAP = { 
+			exists = yes		
+		}
+		
+		OR = {
+			
+			AND = {
+				JAP = { 			
+					has_war_with = CHI
+					has_war_with = PRC
+					has_idea = NE_bad_infrastructure			
+				}
+				
+				CHI = { 			
+					surrender_progress < 0.45			
+				}
+
+			}
+
+			
+			AND = {
+			
+				JAP = { 			
+					NOT = { has_war_with = CHI }
+					has_idea = NE_bad_infrastructure			
+				}
+				
+				CHI = { 
+					OR = {
+						is_subject_of = JAP
+						exists = no
+					}
+
+				}
+
+			}
+
+		}
+		
+
+	}
+	
+	option = {	#Very Good
+		name = ne_historical.6.a
+		
+		##Effects
+		remove_ideas = NE_bad_infrastructure
+			
+	}
+	
+	
+}
+
+
+#####################################
+##    NO WAR BETWEEN BUL AND ROM   ##
+#####################################
+
+##Enact NAP between the two countries after ROM cedes Dobrudzha (HIDDEN = YES )
+country_event = {
+	id = ne_historical.7
+	#title = ne_historical.5.t
+	#desc =  ne_historical.5.d
+	#picture = GFX_somepic
+
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+	
+		ROM = {
+			exists = yes
+			NOT = { has_war_with = BUL }
+		}
+		
+		BUL = {
+			exists = yes
+			owns_state = 77
+		}
+		
+		GER = { has_completed_focus = GER_second_vienna_award } 
+	
+	
+	}
+	
+	
+	option = {	
+		#name = ne_historical.5.a
+		
+		##Enact NAP
+		BUL = { diplomatic_relation = { country = ROM relation = non_aggression_pact } }
+	    ROM = { diplomatic_relation = { country = BUL relation = non_aggression_pact } }
+			
+	}
+	
+	
+}
+
+
+###################################################
+####       JAPAN DOES PEARL HARBOR             ####
+###################################################
 
 # JAP does Southern Expansion; goal is to do Pearl Harbor when JAP gets its war goals
 ##JAP gets event to execute PH (planning), Hawaii should get damage. JAP should also get Spirit "For the Emperor"
@@ -506,8 +730,8 @@ country_event = {
 							is_historical_focus_on = yes
 						}
 
-						CHI = { surrender_progress > 0.05 }
-						PRC = { surrender_progress > 0.05 }
+						CHI = { surrender_progress > 0.10 }
+						PRC = { surrender_progress > 0.10 }
 					}					
 	
 				

@@ -1,0 +1,13 @@
+##Decisions categories for the Democracies:
+
+
+##Spread your ideology (only available to majors and democracies)
+EAST_spread_democracy = {
+
+	icon = GFX_
+
+	allowed = {
+		
+	}
+	
+}

@@ -1,0 +1,68 @@
+##Decisions for any Western Nations go here:
+
+Generic_ne_foreign_policy = {
+
+	####Join WARSAW PACT####
+	ne_join_wp = {		
+			
+			
+			icon = invite_wp ##No idea if this works	
+			cost = 250
+		
+			days_re_enable = 280##Can be selected again after 280 days
+		
+			ai_will_do = {
+				factor = 0				
+			}
+	
+	
+			allowed = {
+				is_major = yes
+				is_in_faction_with = SOV
+				has_government = communism
+			}
+					
+		
+			available = {			
+			
+				has_global_flag = ne_strict_faction			
+				is_in_faction_with = SOV
+				is_major = yes
+				has_government = communism
+				
+				any_country = {
+					has_idea = NE_ready_wp
+				}
+
+				
+			}
+				
+			
+			visible = {
+			
+				any_country = {
+					has_idea = NE_ready_wp
+				}
+				has_government = communism
+				is_in_faction_with = SOV			
+								
+			}
+		
+
+			complete_effect = {
+				every_country = {
+					limit = {
+						has_idea = NE_ready_wp
+					}
+					
+					country_event = { days = 1 id = ne_faction.8 }
+				}		
+
+			}
+								
+
+	}
+	
+	
+	
+}

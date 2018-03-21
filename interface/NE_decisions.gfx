@@ -14,6 +14,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_eng_poland_flag.dds"
 	}
 
+	##No pic in the folder for this sprite
 	spriteType = {
 		name = "GFX_decision_historical_metaxasline"
 		texturefile = "gfx/interface/decisions/decision_historical_metaxasline.dds"

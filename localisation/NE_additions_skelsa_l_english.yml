@@ -74,7 +74,10 @@
  NE_alone_desc:0 "Allies are useless anyways.\nThis is a debug national spirit to ensure that no allies join this war."
  NE_desperate_defense:0 "Desperate Defense"
  NE_alone_desc:0 "Most of our cities are occupied, millions of civilians are dead and losses are staggering. Now the time has come for our citizens to fight against the invader till the last breath. Not only to defend the future of this nation but to save their families and loved ones!\nWe must not lose."
- 
+ NE_bad_infrastructure:0 "Bad Infrastructure"
+ NE_bad_infrastructure_desc:0 "The further we advanced into the Chinese mainland we encountered worse roads, bridges and rail networks. This combined with several attacks by guerillas on our transports has led to a significant strain on our supplylogistics."
+ NE_ITA_incompetent_officers:0 "Italian General Staff"
+ NE_ITA_incompetent_officers_desc:0 "The "Esercito Italiano" is plagued by incompetent officers and generals. Furthermore, among ill-equipped units and poor morale Mussolini and the rest of the fascist leadership dream of big conquest. A dream which many Italians are not interested in..."
  
  ##Slots##
  ne_diplo:0 "Additional Diplomatic Actions"
@@ -473,6 +476,17 @@
  ne_historical.4.d:0 "The ambassadors from Sofia have politely refused our proposal and stressed Bulgaria's desire to keep out of international affairs."
  ne_historical.4.a:0 "We made our warnings clear..."
  ne_historical.4.b:0 "They would have been a useless ally anyways."
+ 
+ 
+ #Japan: Get Event about bad infrastructure in China
+ ne_historical.5.t:0 "Problems in China!"
+ ne_historical.5.d:0 "We have advanced far into the Chinese mainland but our troops there are facing huge supply issues! Partisans and bad road and railway connections are a significant strain on our supply logistics. Not advancing at all might be the best solution for now."
+ ne_historical.5.a:0 "Oh well..."
+ #Supply situation better now
+ ne_historical.6.t:0 "Our Supply situation has improved!"
+ ne_historical.6.d:0 "Though we were pushed back by Chinese forces a bit our supply routes have been shortened and are less frequently attacked. Most of the IJA faces a good supply of munitions, guns, food and men."
+ ne_historical.6.a:0 "Good."
+ 
  
  ##India is free
  ne_skelsa.75.t:0 "We're free from British Rule!"

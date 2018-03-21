@@ -360,8 +360,7 @@ country_event = {
 		
 		hidden_effect = {
 			set_global_flag = names_chosen
-			#country_event = ne_settings_intro.2
-			country_event = ne_settings.1
+			country_event = ne_settings_intro.2
 		}
 	}
 	
@@ -1164,7 +1163,9 @@ country_event = {
 						is_major = yes
 					}
 					add_research_slot = 1	
-				}						
+				}
+
+				CHI = { add_research_slot = 1 }
 			}
 		
 	}

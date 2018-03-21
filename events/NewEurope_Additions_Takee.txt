@@ -263,13 +263,16 @@ country_event = {
 	}
 
 	option = {
-		name = ne_takee.3.a
-		custom_effect_tooltip = warning_for_a_player.1.tt
+		name = ne_takee.3.a		
 		ai_chance = { factor = 1 }
-		
+
 		##Find a better solution for this loc
-		effect_tooltip = { add_political_power = -1 }
-		hidden_effect = { add_political_power = -1 }
+		#effect_tooltip = { add_political_power = -1 }
+		#hidden_effect = { add_political_power = -1 }
+		
+		add_political_power = -1
+		
+		custom_effect_tooltip = warning_for_a_player.1.tt
 		
 	}
 	

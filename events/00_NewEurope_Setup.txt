@@ -28,6 +28,10 @@ news_event = {
 			set_research_slots = 3
 		}
 		
+		ITA = {		
+			add_ideas = NE_ITA_incompetent_officers
+		}
+		
 		##Danzig puppet	
 		POL = {		
 			if = {			
@@ -43,12 +47,7 @@ news_event = {
 			}
 			
 			puppet = DAN								
-		}
-		
-		ALG = {
-		
-			set_cosmetic_tag = MAL_UK
-		}
+		}		
 		
 		##Soviet puppets
 		SOV	= {

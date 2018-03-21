@@ -308,7 +308,7 @@ ideas = {
 		
 		NE_desperate_defense = {
 
-			picture = idea_generic_reserve_divisions
+			picture = idea_chi_war_of_resistance
 
 			allowed = {
 				always = no # Triggered via event
@@ -323,6 +323,43 @@ ideas = {
 				army_morale_factor = 0.15 
 
 			}
+		}
+		
+		NE_bad_infrastructure = {
+
+			picture = idea_generic_build_infrastructure
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				
+				supply_consumption_factor = 0.40
+				offence = -0.15
+				army_morale_factor = -0.05
+
+			}
+		}
+		
+		##Italy's incompetent officers
+		NE_ITA_incompetent_officers = {
+
+			picture = GFX_idea_chi_incompetent_officers
+
+			allowed = {
+				always = no # Triggered via Setup
+			}
+
+			modifier = {
+				
+				planning_speed = -0.30 
+				army_morale_factor = -0.10 
+				experience_gain_army_factor = -0.05 
+				army_attack_factor = -0.10
+				army_org = -3 
+			}
+			
 		}
 
 		##Done by takee
@@ -390,107 +427,8 @@ ideas = {
 		}
 	
 	}
+
 	
-	ne_diplomacy_slot = {
-	
-	
-		#JOIN NATO
-		ne_join_nato = { 
-			default = no
-			cost = 250
-			picture = invite_nato
-			
-			available = {
-			
-			
-				has_global_flag = ne_strict_faction
-			
-				is_in_faction_with = USA
-				is_ai = no
-				is_major = yes
-				has_government = democratic
-				
-				any_country = {
-					has_idea = NE_ready_nato
-				}
-
-				
-			}
-			
-
-			on_add = {
-		
-				every_country = {
-					limit = {
-						has_idea = NE_ready_nato
-					}
-					
-					country_event = { days = 1 id = ne_faction.8 }
-				}
-				
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-
-		}
-			
-		
-		##JOIN WP
-		ne_join_wp = { 
-			default = no
-			cost = 250
-			picture = invite_wp
-			
-			available = {
-	
-				has_global_flag = ne_strict_faction
-				
-				is_in_faction_with = SOV
-				is_ai = no
-				is_major = yes
-				has_government = communism
-				
-				any_country = {
-					has_idea = NE_ready_wp
-				}
-				
-			}
-			
-
-			on_add = {
-		
-				every_country = {
-					limit = {
-						has_idea = NE_ready_wp
-					}
-					
-					country_event = { days = 1 id = ne_faction.8 }
-				}
-				
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-
-		}
-		
-		
-		##IDLE, stolen from MPNW
-		ne_idle = {
-			default = yes
-			cost = 0
-			
-			picture = idle
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-	}
 }
 
 

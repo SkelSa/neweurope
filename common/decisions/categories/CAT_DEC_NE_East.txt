@@ -1,0 +1,13 @@
+##Decisions categories for the Communist Nations:
+
+
+##Spread your ideology (only available to majors and communists)
+EAST_spread_communism = {
+
+	icon = GFX_
+
+	allowed = {
+		
+	}
+	
+}

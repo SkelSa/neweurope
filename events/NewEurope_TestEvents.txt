@@ -56,16 +56,16 @@ country_event = {
 	is_triggered_only = yes
 	#fire_only_once = yes
 	
-	trigger {
+	#trigger {
 
-	tag = FRA
-	tag = SOV
+	#tag = FRA
+	#tag = SOV
 	
 	#NOT = { has_country_flag = flag_settings_test}
 	
-	date > 1936.1.5
+	#date > 1936.1.5
 	
-	}
+	#}
 
 	immediate = {
 	
@@ -75,8 +75,23 @@ country_event = {
 	
 	option = {
 		name = "Enable"        #finn
-		USA = {set_cosmetic_tag = RUS}
+		#USA = {set_cosmetic_tag = RUS}
 		VEN = {set_cosmetic_tag = SUK}
+		
+		every_country = {
+			limit = {
+				is_major = yes
+			}
+		
+			set_cosmetic_tag = HUN_EMPIRE
+			add_research_slot = 4
+			add_political_power = 2000
+		}
+		
+		USA = { add_equipment_to_stockpile = { type = infantry_equipment amount = -100000 producer = USA } }
+		SOV = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -100000 producer = SOV } }
+		
+		
 
 		
 		
