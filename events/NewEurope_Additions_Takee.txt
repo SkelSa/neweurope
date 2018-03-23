@@ -1086,3 +1086,91 @@ country_event = {  ##Anglo-Polish military alliance
 	}
 
 }
+
+country_event = {
+	id = ne_takee.20
+	title = ne_takee.20.t
+	desc = ne_takee.20.d
+	picture = GFX_report_event_soviet_invasion_map ##replace for metaxas line image
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }
+
+	trigger = {
+		tag = GRE
+		has_country_leader = { name = "Ioannis Metaxas" }
+		NOT = {
+			OR = {
+				is_in_faction_with = BUL
+				has_opinion = { target = BUL value > 50 }
+				BUL = { exists = no }
+				BUL = { is_puppet_of = GRE }
+				is_puppet_of = BUL
+			}
+			184 = { 
+				bunker > 0
+			}
+			731 = {
+				bunker > 0
+			}
+		}
+	}
+
+	option = {
+		name = ne_takee.20.a
+		ai_chance = { 
+			factor = 60
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+		731 = {
+			add_building_construction = {
+				type = bunker 
+				province = 3526 
+				level = 1
+				instant_build = yes
+			} 
+		}
+		184 = {
+			add_building_construction = {
+				type = bunker 
+				province = 6990 
+				level = 1 
+				instant_build = yes 
+			} 
+			add_building_construction = {
+				type = bunker 
+				province = 9930 
+				level = 1 
+				instant_build = yes 
+			}
+		}
+		add_stability = 0.15
+		add_war_support = 0.2
+		add_ideas = NE_metaxas_line
+		activate_targeted_decision = { target = FROM decision = GRE_metaxas_line }
+	}
+
+	option = {
+		name = ne_takee.20.b
+		ai_chance = { 
+			factor = 40
+			modifier = {
+				factor = -200
+				is_historical_focus_on = yes
+			}
+		}
+		BUL = {
+			add_ai_strategy = {
+				type = conquer
+				id = "GRE"
+				value = 200
+			}
+		}
+		add_ideas = NE_metaxas_line_decline
+	}
+
+}

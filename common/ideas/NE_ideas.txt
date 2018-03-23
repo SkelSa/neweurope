@@ -93,6 +93,28 @@ ideas = {
 			}
 		}
 		
+		NE_metaxas_line = {
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				production_speed_bunker_factor = -1.5
+			}
+		}
+
+		NE_metaxas_line_decline = {
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.35
+			}
+		}
 		
 		NE_ready_wp = {
 
