@@ -19,3 +19,11 @@ Generic_ne_city_rename = {
 
 
 }
+
+##The beginning of postwar demilitarization
+Generic_ne_demilitariz = { 
+	icon = GFX_
+	visible = {
+		has_war = no
+	}
+}

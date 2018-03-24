@@ -1,4 +1,11 @@
 ##Misc. Decisions come here
+Generic_ne_demilitariz = {
+
+	ne_dimilitarization = {
+	
+	}
+
+}
 
 
 

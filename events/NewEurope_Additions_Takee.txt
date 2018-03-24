@@ -1091,7 +1091,7 @@ country_event = {
 	id = ne_takee.20
 	title = ne_takee.20.t
 	desc = ne_takee.20.d
-	picture = GFX_report_event_soviet_invasion_map ##replace for metaxas line image
+	picture = GFX_metaxas_line ##replace for metaxas line image
 
 	fire_only_once = yes
 
@@ -1103,7 +1103,7 @@ country_event = {
 		NOT = {
 			OR = {
 				is_in_faction_with = BUL
-				has_opinion = { target = BUL value > 50 }
+				has_opinion = { target = BUL value > 90 }
 				BUL = { exists = no }
 				BUL = { is_puppet_of = GRE }
 				is_puppet_of = BUL
@@ -1166,6 +1166,13 @@ country_event = {
 		BUL = {
 			add_ai_strategy = {
 				type = conquer
+				id = "GRE"
+				value = 200
+			}
+		}
+		BUL = {
+			add_ai_strategy = {
+				type = antagonize
 				id = "GRE"
 				value = 200
 			}
