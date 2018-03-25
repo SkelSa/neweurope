@@ -100,7 +100,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_bunker_factor = -1.5
+				production_speed_bunker_factor = -1
 			}
 		}
 
