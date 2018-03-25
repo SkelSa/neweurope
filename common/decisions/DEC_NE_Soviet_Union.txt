@@ -159,7 +159,7 @@ SOV_the_crimea_transfer = {
 						add_extra_state_shared_building_slots = 4
 					}
 				}
-				SOV = { add_stability = 0.25 }
+				SOV = { add_stability = 0.2 }
 			}
 		}
 
