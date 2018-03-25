@@ -173,8 +173,8 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 	
 		available = { ##conditions of implementation
 			AND = {
-				ships_in_area = { area = 43 size > 5 }
-				ships_in_area = { area = 45 size > 5 }
+				ships_in_area = { area = 43 size > 0 }
+				ships_in_area = { area = 45 size > 0 }
 			}
 			OR = {
 				AND = {
@@ -197,8 +197,8 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 				}
 				NOT = {
 					has_full_control_of_state = 337
-					ships_in_area = { area = 43 size > 1 }  ##Britain should dominate the sea
-					ships_in_area = { area = 45 size > 1 }
+					ships_in_area = { area = 43 size > 0 }  ##Britain should dominate the sea
+					ships_in_area = { area = 45 size > 0 }
 				}
 			}
 		}
@@ -237,8 +237,8 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 				}
 				NOT = {
 					has_full_control_of_state = 337
-					ships_in_area = { area = 43 size > 1 }  ##Britain should dominate the sea
-					ships_in_area = { area = 45 size > 1 }
+					ships_in_area = { area = 43 size > 0 }  ##Britain should dominate the sea
+					ships_in_area = { area = 45 size > 0 }
 				}
 			}
 		}
@@ -266,8 +266,8 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 		available = { ##conditions of implementation
 			337 = { is_controlled_by = FROM }
 			AND = {
-				ships_in_area = { area = 43 size > 5 }
-				ships_in_area = { area = 45 size > 5 }
+				ships_in_area = { area = 43 size > 0 }
+				ships_in_area = { area = 45 size > 0 }
 			}
 			OR = {
 				AND = {
@@ -294,8 +294,8 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 				}
 				NOT = {
 					has_full_control_of_state = 337
-					ships_in_area = { area = 43 size > 1 }  ##Britain should dominate the sea
-					ships_in_area = { area = 45 size > 1 }
+					ships_in_area = { area = 43 size > 0 }  ##Britain should dominate the sea
+					ships_in_area = { area = 45 size > 0 }
 				}
 			}
 		}
@@ -311,13 +311,13 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 		}
 
 		activation = {
+			337 = { is_controlled_by = FROM }
 			ENG = {
 				has_war_with = GER
 				OR = {
 					NOT = { has_war_with = DEN }
 					NOT = { has_war_with = ICE }
 				}
-				337 = { is_controlled_by = ENG }
 			}
 			GER = { 
 				has_completed_focus = GER_weserubung
@@ -335,8 +335,8 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 				}
 				NOT = {
 					has_full_control_of_state = 100
-					ships_in_area = { area = 43 size > 1 }  ##Britain should dominate the sea
-					ships_in_area = { area = 45 size > 1 }
+					ships_in_area = { area = 43 size > 0 }  ##Britain should dominate the sea
+					ships_in_area = { area = 45 size > 0 }
 				}
 			}
 		}
