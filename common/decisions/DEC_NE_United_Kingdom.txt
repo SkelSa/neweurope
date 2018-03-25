@@ -63,7 +63,7 @@ ENG_historical_military_operations = {
 	}
 }
 
-ENG_historical_missions_ne = {
+ENG_historical_missions_ne = { ##New Europe Historical Missions
 
     ENG_the_english_poland_alliance = {
 	
@@ -165,27 +165,25 @@ ENG_historical_missions_ne = {
 
     ENG_inv_faroe = {  ##Faroe Islands British invasion
 	
-		icon = ##eng_inv_faroe
+		icon = eng_inv_faroe
 
 		allowed = { 
 			tag = ENG
 		}         
 	
 		available = { ##conditions of implementation
-			FROM = {
+			AND = {
+				ships_in_area = { area = 43 size > 5 }
+				ships_in_area = { area = 45 size > 5 }
+			}
+			OR = {
 				AND = {
-					ships_in_area = { area = 43 size > 5 }
-					ships_in_area = { area = 45 size > 5 }
+					has_manpower > 4500
+					divisions_in_state = { state = 136 size > 0 }
 				}
-				OR = {
-					AND = {
-						has_manpower > 4500
-						divisions_in_state = { area = 136 size > 0 }
-					}
-					AND = {
-						has_manpower > 4500
-						divisions_in_state = { area = 120 size > 0 }
-					}
+				AND = {
+					has_manpower > 4500
+					divisions_in_state = { state = 120 size > 0 }
 				}
 			}
 			any_country = {
@@ -257,9 +255,9 @@ ENG_historical_missions_ne = {
 
     }
 
-    ENG_inv_faroe = {  ##Iceland
+    ENG_inv_iceland = {  ##Iceland
 	
-		icon = ##eng_inv_iceland
+		icon = eng_inv_iceland
 
 		allowed = { 
 			tag = ENG
@@ -267,25 +265,23 @@ ENG_historical_missions_ne = {
 	
 		available = { ##conditions of implementation
 			337 = { is_controlled_by = FROM }
-			FROM = {
+			AND = {
+				ships_in_area = { area = 43 size > 5 }
+				ships_in_area = { area = 45 size > 5 }
+			}
+			OR = {
 				AND = {
-					ships_in_area = { area = 43 size > 5 }
-					ships_in_area = { area = 45 size > 5 }
-				}
-				OR = {
-					AND = {
-						has_manpower > 4500
-						divisions_in_state = { area = 136 size > 0 }
-					}
-					AND = {
-						has_manpower > 4500
-						divisions_in_state = { area = 120 size > 0 }
-					}
+					has_manpower > 4500
+					divisions_in_state = { state = 136 size > 0 }
 				}
 				AND = {
 					has_manpower > 4500
-					divisions_in_state = { area = 337 size > 0 }
+					divisions_in_state = { state = 120 size > 0 }
 				}
+			}
+			AND = {
+				has_manpower > 4500
+				divisions_in_state = { state = 337 size > 0 }
 			}
 			any_country = {
 				OR = {
