@@ -24,7 +24,7 @@ GRE_historical_metaxasline = {
 	
 		is_good = yes
 
-		days_mission_timeout = 730
+		days_mission_timeout = 1275
 
 		timeout_effect = {                     
 			731 = {
