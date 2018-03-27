@@ -12,7 +12,6 @@ GRE_historical_metaxasline = {
 		available = {
 			OR = {
 				is_in_faction_with = BUL
-				has_opinion = { target = BUL value > 50 }
 				BUL = { exists = no }
 				BUL = { is_puppet_of = GRE }
 				is_puppet_of = BUL
@@ -114,6 +113,7 @@ GRE_historical_metaxasline = {
 					}
 				}
 			}
+			remove_ideas = NE_metaxas_line
 		}
 
     }

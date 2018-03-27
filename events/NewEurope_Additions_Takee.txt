@@ -1073,7 +1073,7 @@ country_event = {
 				value = 200
 			}
 		}
-		add_ideas = NE_metaxas_line_decline
+		add_timed_idea = { idea = NE_metaxas_line_decline days = 730 }
 	}
 
 }
