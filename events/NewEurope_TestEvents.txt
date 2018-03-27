@@ -163,12 +163,12 @@ country_event = {
 	annex_country = {target =  ITA }
 	annex_country = {target =  ALB }
 	annex_country = {target =  SWI }
-	annex_country = {target =  USA }
-	annex_country = {target =  JAP }
-	annex_country = {target =  CHI }
-	annex_country = {target =  CAN }
-	annex_country = {target =  PRC }
-	annex_country = {target =  MON }
+	#annex_country = {target =  USA }
+	#annex_country = {target =  JAP }
+	#annex_country = {target =  CHI }
+	#annex_country = {target =  CAN }
+	#annex_country = {target =  PRC }
+	#annex_country = {target =  MON }
 	
 	
 	

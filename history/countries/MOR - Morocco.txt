@@ -11,7 +11,7 @@ oob = "MOR_1936"
 set_stability = 0.65
 set_war_support = 0.65
 
-set_research_slots = 2
+set_research_slots = 1 ##remove these
 
 1939.1.1 = {
 

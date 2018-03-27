@@ -77,7 +77,7 @@
  NE_bad_infrastructure:0 "Bad Infrastructure"
  NE_bad_infrastructure_desc:0 "The further we advanced into the Chinese mainland we encountered worse roads, bridges and rail networks. This combined with several attacks by guerillas on our transports has led to a significant strain on our supplylogistics."
  NE_ITA_incompetent_officers:0 "Italian General Staff"
- NE_ITA_incompetent_officers_desc:0 "The "Esercito Italiano" is plagued by incompetent officers and generals. Furthermore, among ill-equipped units and poor morale Mussolini and the rest of the fascist leadership dream of big conquest. A dream which many Italians are not interested in..."
+ NE_ITA_incompetent_officers_desc:0 "The "Esercito Italiano" is plagued by incompetent officers and generals. Furthermore, among ill-equipped units and poor morale Mussolini and the rest of the fascist leadership dream of big conquest. A dream, many Italians are not interested in..."
  
  ##Slots##
  ne_diplo:0 "Additional Diplomatic Actions"

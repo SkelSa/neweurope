@@ -2,7 +2,7 @@
 
 
  ##This is the localization for testing events. This is only a temporary storage for you loc!
-   
+ ##Simplify the option localisation!  
    
  ##Main Main Menu; Options Menu (too much menu)
  ne_settings_intro.1.t:0 "Better Post-War Europe: Settings"
@@ -97,7 +97,7 @@
  ##Tooltips:
  main_menu_a:0 "The flavour options of BPWE aim to enhance the current nations with historical names and flags. Additionally, it's now possible to give countries like Poland or Romania their historical leaders."
  main_menu_b:0 "Ever wanted to force a nation to stay neutral and not join WW2? Then you might want to check these settings out! The faction rules for joining NATO or the Warsaw Pact are also here."
- main_menu_c:0 "Some additional stuff you can change doesn't belong to a category and thus you can find them here. 
+ main_menu_c:0 "Some additional stuff you can change doesn't belong to a category and thus you can find them here."
  main_menu_e:0 "The recommended settings are a quick way to enable all options which will help to improve a historical playthrough. More infos are inside."
  main_menu_f:0 "Apply all of your changes to the current game and quit the settings menu."
  
