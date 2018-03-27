@@ -1,4 +1,15 @@
 ##Misc. Decisions come here
+Generic_ne_demilitariz = {
+
+	ne_dimilitarization = {
+		allowed = {  
+			tag = LUX ##Just for a test  
+			has_manpower > 9000000 ##Just for a test 
+			num_of_factories > 1000 ##Just for a test
+		}
+	}
+
+}
 
 Generic_ne_foreign_policy = {
 

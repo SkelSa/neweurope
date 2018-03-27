@@ -327,6 +327,11 @@ spriteTypes = {
 		name = "GFX_historical_settings"
 		texturefile = "gfx/event_pictures/report_event_.dds"
 	}
+
+	spriteType = {		
+		name = "GFX_metaxas_line"
+		texturefile = "gfx/event_pictures/metaxas_line.dds"
+	}
 	
 	
 	

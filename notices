@@ -4,3 +4,15 @@
 - More will be added over time
 
 And always put events/decisions to their corresponding country file. There are still some left overs, like NewEurope_EasternBloc or so. They will be reduced over time.
+
+25.03.2018, Notices
+
+I did a little test game. Here are my Notices:
+
+- The Soviets perfectly fighting against Poland without disturbing anyone and Poland didn't call Allies in the war with the Soviets;
+- Germany can't in garrisons and it suffers from naval invasions. I guess we should made something for Germany in ai_strategy;
+- Some small events, like the 'The Death of Rudolf Hess' worked unhistorical for some reason;
+- Still a bordergore in Yugoslavia. We definitely should fix it somehow;
+- Germany does the focus against Denmark and Norway, while it at war with France or Poland;
+- The Allies played really bad in Africa and the UK lost the whole Egypt;
+- The Soviets had a war with Lithuania;

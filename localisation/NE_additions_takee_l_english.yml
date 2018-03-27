@@ -162,6 +162,16 @@
   ne_takee.19.d:0 "Germany plans to attack Poland in a matter of days"
   ne_takee.19.a:0 "Invite them to the alliance"
 
+ ##The Metaxas Line event
+  ne_takee.20.t:0 "Erection of Metaxas Line"
+  ne_takee.20.d:0 "The Metaxas Line was a chain of fortifications constructed along the line of the Greco-Bulgarian border, designed to protect Greece in case of a Bulgarian invasion after the rearmament of Bulgaria. It was named after Ioannis Metaxas, then Prime Minister of Greece, and chiefly consists of tunnels that led to observatories, emplacements and machine-gun nests."
+  ne_takee.20.a:0 "Erect the building"
+  ne_takee.20.b:0 "no, right.!? where is yes?!"
+
+ ######################################################################################################################################
+ ########################################################SOME SMALL IDEAS AND E.T.C..##################################################
+ NE_metaxas_line:0 "Construction of a Metaxas Line"
+ NE_metaxas_line_decline:0 "Decline of Construction of a Metaxas Line"
  ######################################################################################################################################
  ############################################################TOOLTIPS##################################################################
 
@@ -255,6 +265,7 @@
  VICTORY_POINTS_5199:0 "Lusaka"
  VICTORY_POINTS_3776:0 "Salò"
  VICTORY_POINTS_7260:0 "Colombo"
+ VICTORY_POINTS_13230:0 "Orestiada"
  ######################################################################################################################################
  #########################################################NEW STATES###################################################################
 
