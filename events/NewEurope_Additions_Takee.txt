@@ -994,7 +994,6 @@ country_event = {
 		NOT = {
 			OR = {
 				is_in_faction_with = BUL
-				has_opinion = { target = BUL value > 90 }
 				BUL = { exists = no }
 				BUL = { is_puppet_of = GRE }
 				is_puppet_of = BUL
@@ -1043,11 +1042,6 @@ country_event = {
 		add_war_support = 0.2
 		add_ideas = NE_metaxas_line
 		activate_targeted_decision = { target = FROM decision = GRE_metaxas_line }
-		add_ai_strategy = {
-			type = build_building
-			id = bunker
-			value = -200
-		}
 	}
 
 	option = {

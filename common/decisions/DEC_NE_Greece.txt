@@ -2,13 +2,12 @@ GRE_historical_metaxasline = {
 
     GRE_metaxas_line = {
 	
-		icon = generic_construction
+		icon = generic_construction       
 
-		allowed = { 
-			tag = GRE
+		allowed = {
 			always = no
-		}         
-	
+		}
+
 		available = {
 			OR = {
 				is_in_faction_with = BUL
