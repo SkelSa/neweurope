@@ -308,7 +308,7 @@ ideas = {
 		
 		NE_desperate_defense = {
 
-			picture = idea_chi_war_of_resistance
+			picture = chi_war_of_resistance3
 
 			allowed = {
 				always = no # Triggered via event
@@ -327,7 +327,7 @@ ideas = {
 		
 		NE_bad_infrastructure = {
 
-			picture = idea_generic_build_infrastructure
+			picture = generic_build_infrastructure
 
 			allowed = {
 				always = no # Triggered via event
@@ -345,7 +345,7 @@ ideas = {
 		##Italy's incompetent officers
 		NE_ITA_incompetent_officers = {
 
-			picture = GFX_idea_chi_incompetent_officers
+			picture = chi_incompetent_officers
 
 			allowed = {
 				always = no # Triggered via Setup

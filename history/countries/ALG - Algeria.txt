@@ -1,4 +1,16 @@
-﻿capital = 459 #Algiers
+﻿####ALGERIA###
+
+##NATION IS RELEASABLE##
+##REQUIRES 1936 AND 1939 INFO!##
+
+##For event nations
+####SOCIALIST REPUBLIC OF JAPAN####
+
+##NATION IS FORMED THROUGH EVENT
+##REQUIRES NO 1939 INFO
+
+
+capital = 459 #Algiers
 
 set_research_slots = 2 ##will gain the other three through the focus tree
 

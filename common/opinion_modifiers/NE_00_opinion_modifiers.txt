@@ -164,7 +164,9 @@ opinion_modifiers = {
 	
 	helped_spain_civil_war = { value = 20 }
 	
+	kicked_out_lon = { value = -5 }
 	
+	illegal_offensive_war = { value = -5 }
 	
 	
 }	

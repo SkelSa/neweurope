@@ -29,7 +29,7 @@
  
  ##Fourth Menu; Misc Settings 
  ne_settings_intro.4.t:0 "BPWE: Miscellaneous Settings"
- ne_settings_intro.4.d:0 "Here you can find some things to change which don't really belong to a specific category.\nBeneath you can read a description about what each setting does in detail:\n\n"SSRs become Puppets" - > The USSR will be split up into their individual Republics. Every former SSR will remain a puppet of the RFSFR though and a new faction will be founded to replace the Comintern. Mongolia and Tannu Tuva will only get a guarantee from Russia.\n"Additional Research Slot for all Majors" - > Every country which is considered to be a major by this game (Germany, Italy, France, UK, Soviet Union, United States, China and Japan)will get an additional research slot from the start. This will allow some countries to conduct better historical research but also leads to a 7 research slot USA. It's recommended to be enabled when playing with technology tree overhauls.\n"The Old Manager" - > You can ignore this for now\n"Enable Music for specific Events" - > Music will be played when a specific event in world history, like the start of the Sino-Japanese War, happens in your game. Currently, only a few events support this but more are definitely planned...\nAlso, hover over the buttons to see which option is enabled right now."
+ ne_settings_intro.4.d:0 "Here you can find some things to change which don't really belong to a specific category.\n\nBeneath you can read a description about what each setting does in detail:\n\n"SSRs become Puppets" - > The USSR will be split up into their individual Republics. Every former SSR will remain a puppet of the RFSFR though and a new faction will be founded to replace the Comintern. Mongolia and Tannu Tuva will only get a guarantee from Russia.\n\n"Additional Research Slot for all Majors" - > Every country which is considered to be a major by this game (Germany, Italy, France, UK, Soviet Union, United States, China and Japan)will get an additional research slot from the start. This will allow some countries to conduct better historical research but also leads to a 7 research slot USA. It's recommended to be enabled when playing with technology tree overhauls.\n"The Old Manager" - > You can ignore this for now\n"Enable Music for specific Events" - > Music will be played when a specific event in world history, like the start of the Sino-Japanese War, happens in your game. Currently, only a few events support this but more are definitely planned...\nAlso, hover over the buttons to see which option is enabled right now."
  ne_settings_intro.4.a:0 "Let the SSRs be puppets!"
  ne_settings_intro.4.a1:0 "Revert the change, implement direct rule from Moscow again!"
  ne_settings_intro.4.b:0 "Give every major power an additional research slot!"
@@ -42,7 +42,7 @@
  
  #Fifth Menu; SKELSAS RECOMMENDED CHANGES
  ne_settings_intro.5.t:0 "BPWE: Recommended Settings"
- ne_settings_intro.5.d:0 "This is a quick way to enable some recommended settings by the mod author to have an authentic and somewhat historical playthrough. If you wish to deactivate them after you clicked the first option you might go to Exit > Revert all Changes.\n\nAll of the following will be enabled:\n- Historical Flags and Names for Countries\n- Historical Leaders\n- Long Country Names for the USSR and USA\n- Neutrality Spirits\n- Stricter Faction Rules for joining NATO or the Warsaw Pact\n- Music for some specific Events\n- Additional Research Slot for all Major Nations"
+ ne_settings_intro.5.d:0 "This is a quick way to enable some recommended settings by the mod author to have an authentic and somewhat historical playthrough. If you wish to deactivate them after you clicked the first option you might go to Exit > Revert all Changes.\n\n\nAll of the following will be enabled:\n\n- Historical Flags and Names for Countries\n\n- Historical Leaders\n\n- Long Country Names for the USSR and USA\n\n- Neutrality Spirits\n\n- Stricter Faction Rules for joining NATO or the Warsaw Pact\n\n- Music for some specific Events\n\n- Additional Research Slot for all Major Nations\n\n"
  ne_settings_intro.5.a:0 "Enable the recommended settings!"
  ne_settings_intro.5.b:0 "Disable the recommended settings!"
  ne_settings_intro.5.c:0 "Exit to Main Menu"
@@ -88,14 +88,13 @@
  ne_settings.4.d:0 "With the options below you can enable stricter join rules for NATO or the Warsaw Pact.\nThe stricter rules for NATO/WP are obviously only applied once NATO or the Warsaw pact are created and mean that not every democratic country can join NATO, for instance, instantly. Instead, they would have to achieve a lot of party popularity. Several national spirits help you to see when a country would be ready to join. If they are a great power, Players can invite some countries earlier into their faction via the diplomacy slots while any AI-only faction requires any potential new members to have a really high party popularity among some other minor conditions. Historical invitations are done via event however.\nChoose now what you want."
  ne_settings.4.a:0 "Enable historical NATO/PACT"
  ne_settings.4.a1:0 "Disable any special rules about NATO/WP"
- ne_settings.4.b:0 ""
- ne_settings.4.b1:0 ""
+ #ne_settings.4.b:0 ""
+ #ne_settings.4.b1:0 ""
  ne_settings.4.e:0 "Exit to Main Menu"
  
  ##It's possible to allow independent SSRs from the beginning or give every major an additional research slot from the start."
  
  ##Tooltips:
- 
  main_menu_a:0 "The flavour options of BPWE aim to enhance the current nations with historical names and flags. Additionally, it's now possible to give countries like Poland or Romania their historical leaders."
  main_menu_b:0 "Ever wanted to force a nation to stay neutral and not join WW2? Then you might want to check these settings out! The faction rules for joining NATO or the Warsaw Pact are also here."
  main_menu_c:0 "Some additional stuff you can change doesn't belong to a category and thus you can find them here. 
@@ -115,6 +114,11 @@
  neutrality_menu_b: ""
  
  
+ ne_settings_enabled:0 "This is currently §Genabled§!."
+ ne_settings_disabled:0 "This is currently §Rdisabled§!."
+ 
+ ##STUFF FOR LATER
+ 
  ##Historical Settings
  hist_settings_a:0 "-Historical Flags and Names- are currently §Rdisabled§!."
  hist_settings_a1:0 "-Historical Flags and Names- are currently §Genabled§!."
@@ -122,7 +126,6 @@
  hist_settings_b1:0 "-Historical Leaders- are currently §Genabled§!."
  hist_settings_c:0 "-Better SSR Names- are currently §Rdisabled§!."
  hist_settings_c1:0 "-Better SSR Names- are currently §Genabled§!."
- 
  ##Misc. Settings
  misc_settings_a:0 "-SSRs are Puppets- is currently §Rdisabled§!."
  misc_settings_a1:0 "-SSRs are Puppets- is currently §Genabled§!."
@@ -133,19 +136,15 @@
  ##Event Music
  misc_settings_e:0 ""Music for specific Events" is currently §Rdisabled§!."
  misc_settings_e1:0 ""Music for specific Events" is currently §Genabled§!."
- 
  ##Neutrality Settings
  hist_settings_a:0 "-Neutrality Options- are currently §Rdisabled§!."
  hist_settings_a1:0 "-Neutrality Options- are currently §Genabled§!."
- 
  ##Stricter Faction Rules
  fact_settings_a:0 "-Stricter Faction Rules- are currently §Rdisabled§!."
  fact_settings_a1:0 "-Stricter faction Rules- are currently §Genabled§!."
- 
  ##SkelSa Recommended Settings
  reco_settings_a:0 "-Recommended Settings- are currently §Rdisabled§!."
  reco_settings_a1:0 "-Recommended Settings- are currently §Genabled§!."
- 
  ##Exit Menu (option B)
  exit_settings_a:0 "You will return to the game §Rwithout§! any changes. Keep in mind that it's not possible to reopen this menu after closing it."
  exit_settings_a1:0 "You will return to the game now with your custom changes. Have fun!"
@@ -159,7 +158,7 @@
  ussr_usa_settings_a:0 "Soviet Union is renamed to "USSR"\n\nUnited States is renamed to "USA""
  ussr_usa_settings_b:0 "Soviet Union is renamed to "Union of Soviet Socialist Republics"\n\nUnited States is renamed to "United States of America""
  historical_settings_b1:0 "All communist Soviet Republics plus the Baltics gain a cosmetic tag, which changes their name to end with "SSR".\n\nExamples:\nLithuanian People's Republic -> Lithuanian SSR\nKazakh Soviet Socialist Republic -> Kazakh SSR"
- ussr_usa_settings_c:0 "The country names stay as they are" 
+ ussr_usa_settings_c:0 "The country names stay as they are. Return to menu without changes." 
  
  
     

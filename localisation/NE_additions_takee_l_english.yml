@@ -169,7 +169,7 @@
  berias_conspiracy_chance.1.tt:0 "With some probability, this decision can be of great importance."
  peking_plan_warning.1.tt:0 "§RWe risk losing all our advanced destroyers!§!"
  peking_plan.1.tt:0 "§GGet transmitted Poland destroyers.§!"
- warning_for_a_player.1.tt:0 "§RYou will miss out a lot of stuff if you decide to continue this game...§!"
+ warning_for_a_player.1.tt:0 "§RYou will miss out a lot of stuff if you decide to continue this game...§!\n\n"
  warning_for_a_player_quit.1.tt:0 "§RThis option will open the country end screen from which the current game can be quit§!"
  condition_for_the_around_maginot_tt:1 "You must control Poland, or make a compromise with it, or be its ally."
  germany_change_its_name:0 "§G[Root.GetName]§! now will be called §GGroßdeutsches Reich§!"

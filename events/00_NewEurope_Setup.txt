@@ -213,8 +213,16 @@ news_event = {
 		
 		SYR = {		
 		
-			set_cosmetic_tag = NE_SYR_FRA ##Syrian Republic
+			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_SYR_FRA ##Syrian Republic
 		
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 0.90 } 
+		}
+		
+		LEB = {		
+		
+			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_LEB_FRA
+			
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
 			add_popularity = { ideology = neutrality popularity = 0.90 } 
 		}
@@ -229,11 +237,9 @@ news_event = {
 			
 		
 		##Adding state cores
-		CAN = {		
-			
+		CAN = {					
 			add_state_claim = 331
-			add_state_claim = 332
-			
+			add_state_claim = 332			
 		}
 		
 		EGY = {					
@@ -242,12 +248,12 @@ news_event = {
 		
 		GRE = {					
 			add_state_core = 183
-			add_state_core = 795
+			add_state_core = 811
 		}
 		
 		TUR = {					
 			add_state_core = 183
-			add_state_core = 795			
+			add_state_core = 811			
 		}
 		
 
@@ -260,7 +266,7 @@ news_event = {
 }
 
 
-##Exit europe manager menu; adding cores
+##Exit Europe manager menu; adding cores
 country_event = {
 	id = ne_setup.2
 

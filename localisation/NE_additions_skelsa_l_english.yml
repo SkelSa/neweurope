@@ -97,19 +97,9 @@
  
  
  ##Tooltips
- spain_civil_war_help:0 "Some equipment will be sent to support the Spanish Republic in their struggle."
- nat_spain_civil_war_help:0 "Some equipment will be sent to support the Spanish State in their struggle."
- 
- ##settings menu
- main_menu_a:0 ""
- main_menu_b:0 ""
- main_menu_c:0 ""
- main_menu_e:0 ""
- main_menu_f:0 ""
- 
- 
- 
- 
+ spain_civil_war_help:0 "Military Equipment will be sent to support the Spanish Republic in their struggle."
+ nat_spain_civil_war_help:0 "Military Equipment will be sent to support the Spanish State in their struggle."
+
  ##DIPLOMACY
  
  ##Headline
@@ -128,8 +118,9 @@
  together_against_the_allies:0 "Together against the Allies!"
  baltic_annexation:0 "Condemns the Annexation of the Baltics"
  betrayed_us:0 "They betrayed us!"
- helped_spain_civil_war:0 "They betrayed us!"
- 
+ helped_spain_civil_war:0 "Helped us during the Civil War"
+ kicked_out_lon:0 "They kicked us out of the League of Nations"
+ illegal_offensive_war:0 "Illegal Offensive Actions"
  
  ##Threats:
  
@@ -170,19 +161,7 @@
  ICU_neutrality_ADJ:0 "Indochinese"
  ICU_communism_ADJ:0 "Indochinese"
  
- ##Tunisia
- TUN_fascism:0 "Tunisian State"
- TUN_fascism_DEF:0 "Tunisian State"
- TUN_democratic:0 "Republic of Tunisia"
- TUN_democratic_DEF:0 "The Republic of Tunisia"
- TUN_neutrality:0 "Tunisian Kingdom"
- TUN_neutrality_DEF:0 "Tunisian Kingdom"
- TUN_communism:0 "Socialist Republic of Tunisia"
- TUN_communism_DEF:0 "The Socialist Republic of Tunisia"
- TUN_fascism_ADJ:0 "Tunisian"
- TUN_democratic_ADJ:0 "Tunisian"
- TUN_neutrality_ADJ:0 "Tunisian"
- TUN_communism_ADJ:0 "Tunisian"
+ 
  
  ##Algeria
  ALG_fascism:0 "Nation of Algeria" 
@@ -268,19 +247,19 @@
  HAT_neutrality_ADJ:0 "Hatay"
  HAT_communism_ADJ:0 "Hatay"
  
- ##Greater Lebanon (Mandate of France)
- NE_LEB_FRA_fascism:0 "Greater Lebanon"
- NE_LEB_FRA_fascism_DEF:0 "The Greater Lebanon"
- NE_LEB_FRA_democratic:0 "Greater Lebanon"
- NE_LEB_FRA_democratic_DEF:0 "The Greater Lebanon"
- NE_LEB_FRA_neutrality:0 "Greater Lebanon"
- NE_LEB_FRA_neutrality_DEF:0 "The Greater Lebanon"
- NE_LEB_FRA_communism:0 "Greater Lebanon"
- NE_LEB_FRA_communism_DEF:0 "The Greater Lebanon"
- NE_LEB_FRA_fascism_ADJ:0 "Lebanese"
- NE_LEB_FRA_democratic_ADJ:0 "Lebanese"
- NE_LEB_FRA_neutrality_ADJ:0 "Lebanese"
- NE_LEB_FRA_communism_ADJ:0 "Lebanese"
+ ##Tunisia
+ TUN_fascism:0 "Tunisian State"
+ TUN_fascism_DEF:0 "Tunisian State"
+ TUN_democratic:0 "Republic of Tunisia"
+ TUN_democratic_DEF:0 "The Republic of Tunisia"
+ TUN_neutrality:0 "Tunisian Kingdom"
+ TUN_neutrality_DEF:0 "Tunisian Kingdom"
+ TUN_communism:0 "Socialist Republic of Tunisia"
+ TUN_communism_DEF:0 "The Socialist Republic of Tunisia"
+ TUN_fascism_ADJ:0 "Tunisian"
+ TUN_democratic_ADJ:0 "Tunisian"
+ TUN_neutrality_ADJ:0 "Tunisian"
+ TUN_communism_ADJ:0 "Tunisian"
  
  ##Italian Social Republic
  ITS_fascism:0 "Republic of Salò"
@@ -296,7 +275,7 @@
  ITS_neutrality_ADJ:0 "Italian"
  ITS_communism_ADJ:0 "Italian"
  
- ##French Mandate for Syria and the Lebanon ##NATION IS OBSOLETE
+ ##French Mandate for Syria and the Lebanon ##NATION IS PROBABLY OBSOLETE
  #FSL_fascism:0 "French Levant"
  #FSL_fascism_DEF:0 "The French Levant"
  #FSL_democratic:0 "French Mandate for Syria and the Lebanon"
@@ -373,6 +352,8 @@
  NE_SER_GNS_fascism_DEF:0 "The Government of National Salvation"
  NE_SER_GNS_fascism_ADJ:0 "Serbian"
  
+ ###FRENCH COLONIES
+ 
  ##Tunisia (French protectorate)
  NE_TUN_FRA_neutrality:0 "French Tunisia"
  NE_TUN_FRA_neutrality_DEF:0 "French Tunisia"
@@ -391,6 +372,27 @@
  NE_MOR_FRA_fascism_DEF:0 "French Morocco"
  NE_MOR_FRA_communism:0 "French Morocco"
  NE_MOR_FRA_communism_DEF:0 "French Morocco"
+ ##Greater Lebanon (Mandate of France)
+ NE_LEB_FRA_fascism:0 "Greater Lebanon"
+ NE_LEB_FRA_fascism_DEF:0 "The Greater Lebanon"
+ NE_LEB_FRA_democratic:0 "Greater Lebanon"
+ NE_LEB_FRA_democratic_DEF:0 "The Greater Lebanon"
+ NE_LEB_FRA_neutrality:0 "Greater Lebanon"
+ NE_LEB_FRA_neutrality_DEF:0 "The Greater Lebanon"
+ NE_LEB_FRA_communism:0 "Greater Lebanon"
+ NE_LEB_FRA_communism_DEF:0 "The Greater Lebanon"
+ NE_LEB_FRA_fascism_ADJ:0 "Lebanese"
+ NE_LEB_FRA_democratic_ADJ:0 "Lebanese"
+ NE_LEB_FRA_neutrality_ADJ:0 "Lebanese"
+ NE_LEB_FRA_communism_ADJ:0 "Lebanese"
+ ##Indochina - name changes are different in French ##Indochinese Federation
+ NE_ICU_democratic:0 " Indochinese Union"
+ NE_ICU_democratic_DEF:0 "The  Indochinese Union"
+ NE_ICU_neutrality:0 " Indochinese Union"
+ NE_ICU_neutrality_DEF:0 "The  Indochinese Union"
+ NE_ICU_fascism:0 " Indochinese Union"
+ NE_ICU_fascism_DEF:0 "The  Indochinese Union"
+ 
 
  ##ITA
  NE_ITA_democratic:0 "Republic of Italy"
@@ -415,13 +417,6 @@
  NE_CEY_neutrality_DEF:0 "British Ceylon"
  NE_CEY_communism:0 "Autonomous Region of Sri Lanka"
  NE_CEY_communism_DEF:0 "The Autonomous Region of Sri Lanka"
- ##Indochina - name changes are different in French ##Indochinese Federation
- NE_ICU_democratic:0 " Indochinese Union"
- NE_ICU_democratic_DEF:0 "The  Indochinese Union"
- NE_ICU_neutrality:0 " Indochinese Union"
- NE_ICU_neutrality_DEF:0 "The  Indochinese Union"
- NE_ICU_fascism:0 " Indochinese Union"
- NE_ICU_fascism_DEF:0 "The  Indochinese Union"
  ##Vichy France
  NE_VICHY_fascism:0 "French State"
  NE_VICHY_fascism_DEF:0 "The French State"
@@ -533,7 +528,7 @@
  
  ##Metaxas is dead!
  ne_skelsa.90.t:0 "Prime Minister Metaxas has passed away!"
- ne_skelsa.90.d:0 "After a long struggle against toxaemia our beloved Leader has died in Athens today. In the next days our people will mourn his death and say farewell. We have decided that the current governor of the Bank of Greece, Alexandros Koryzis, will be Metaxas' successor and serve as the Prime Minister of Greece. However, King George II will, as expected, remain our head of state and have the final say in all political decisions.\n Even though the death of Metaxas will be a setback, we are confident that the new government and our beloved King can maneuver the Greek nation through these difficult times."
+ ne_skelsa.90.d:0 "After a long struggle against toxaemia our beloved Leader has died in Athens today. In the next days our people will mourn his death and say farewell. We have decided that the current governor of the Bank of Greece, Alexandros Koryzis, will be Metaxas' successor and serve as the Prime Minister of Greece. However, King George II will, as expected, remain our head of state and have the final say in all political decisions.\n Even though the death of Metaxas will be a setback, we are confident that the new government and our beloved King can maneuver the Greek nation through these difficult times of war."
  ne_skelsa.90.a:0 "King George II will achieve victory for Greece!"
  
  
@@ -682,7 +677,7 @@
  
  ##REDO LOC
  
- ##Spanish Support ## There's not much intel about it besides that Spain is in complete disarray and chaos right now.\nSome of our people have already joined the fight to support the Republican government and 
+ ##Spanish Support ## There's not much Intel about it besides that Spain is in complete disarray and chaos right now.\nSome of our people have already joined the fight to support the Republican government and 
  ne_skelsa.115.t:0 "Guns for the Spanish Republic?"
  ne_skelsa.115.d:0 "A civil war in Spain has erupted between fascists and a coalition ranging from monarchists to anarchists! Do we send support?"
  ne_skelsa.115.a:0 "Of course we will support them!"
@@ -708,7 +703,7 @@
  ne_misc.13.a:0 "Long live Yugoslavia!"
  
  
- #6th research slot for the USSR
+ #6th research slot for the USSR ##ALREADY DONE BY TAKEE
  #ne_misc.16.t:0 "German Scientists captured!"
  #ne_misc.16.d:0 "We managed to capture several Nazi scientists and they are now willing to work for us. Their knowledge is extremely valuable and will without a doubt strengthen our own research!"
  #ne_misc.16.a:0 "Give them some work!"
@@ -793,6 +788,13 @@
  ne_flag.1.a:0 "There's no reason for a flag change."
  
  
+ ##DECISIONS
+ 
+ Generic_ne_foreign_policy:0 "Foreign Policy"
+ ne_help_for_rep_spain:0 "Assisting the Spanish Republic"
+ ne_help_for_rep_spain_desc:0 "A civil war has erupted in Spain! The legitimate socialist government under the leadership of Manuel Azana needs urgent help in defeating the forces of the Falange Española. A victory of the fascists would be a catastrophe..."
+ ne_help_for_nat_spain:0 "Assisting Nationalist Spain"
+ ne_help_for_nat_spain_desc:0 "A civil war has erupted in Spain and the Spanish nationalists under the guidance of Francisco Franco may turn Spain into a fascist nation should they defeat the old and reactionary government. Sending them military equipment and lend-lease might secure a potential ally for the future..."
  
  
  ##News Events

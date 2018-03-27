@@ -24,7 +24,7 @@ country_event = {
 	}
 	
 	option = {
-		name = netest.1.a 
+		name = "Option A"
 			#add_ideas = NE_reparations
 			#add_ideas = NE_align_west
 			#add_ideas = NE_align_east
@@ -40,6 +40,11 @@ country_event = {
 			#add_ideas = soviet_compromisse_with_japan
 			#add_ideas = demilitarization_communists
 			#add_ideas = demilitarization_democratic
+	}
+	
+	option = {
+		name = "Option B"
+
 	}
 	
 }
@@ -110,8 +115,8 @@ country_event = {
 
 country_event = {
 	id = netest.999   #                    
-	title = "Annex all"
-	desc =  "Annex All"
+	title = "Annex all?"
+	desc =  "Annex All!"
 
 	picture = GFX_report_event_soviet_invasion_map
 
@@ -120,13 +125,13 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = netest.999.a 
+		name = "Annex all nations in Europe"
 
 	SOV = {
-	527 = { add_core_of = SOV } 
-	add_state_claim = 717
-	transfer_state = 527
-	transfer_state = 717
+	#527 = { add_core_of = SOV } 
+	#add_state_claim = 717
+	#transfer_state = 527
+	#transfer_state = 717
 	
 	
 	annex_country = {target =  EST }

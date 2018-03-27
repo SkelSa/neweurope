@@ -196,7 +196,7 @@ country_event = {
 	
 	option = {		##Enable puppet SSRs
 		name = ne_settings_intro.4.a
-		custom_effect_tooltip = misc_settings_a
+		custom_effect_tooltip = ne_settings_disabled
 		
 		trigger = {
 			NOT = { has_global_flag = ne_puppet_ssr	}	
@@ -212,7 +212,7 @@ country_event = {
 	
 	option = {		##Disable SSRs
 		name = ne_settings_intro.4.a1
-		custom_effect_tooltip = misc_settings_a1
+		custom_effect_tooltip = ne_settings_enabled
 		
 		
 		trigger = {
@@ -230,7 +230,7 @@ country_event = {
 	
 	option = {	##add additional research slot for majors
 		name = ne_settings_intro.4.b
-		custom_effect_tooltip = misc_settings_b
+		custom_effect_tooltip = ne_settings_disabled
 		
 		trigger = {
 			NOT = { has_global_flag = ne_additional_rd_slot }
@@ -245,7 +245,7 @@ country_event = {
 	
 	option = {	##remove additional research slot for majors
 		name = ne_settings_intro.4.b1
-		custom_effect_tooltip = misc_settings_b1
+		custom_effect_tooltip = ne_settings_enabled
 		
 		trigger = {
 			has_global_flag = ne_additional_rd_slot 
@@ -261,7 +261,7 @@ country_event = {
 	
 	option = {	##activate old manager
 		name = ne_settings_intro.4.c
-		custom_effect_tooltip = misc_settings_c
+		custom_effect_tooltip = ne_settings_disabled
 		
 		trigger = {
 			NOT = { has_global_flag = ne_old_manager }
@@ -277,7 +277,7 @@ country_event = {
 	
 	option = {	##deactivate old manager; use new one
 		name = ne_settings_intro.4.c1
-		custom_effect_tooltip = misc_settings_c1
+		custom_effect_tooltip = ne_settings_enabled
 		
 		trigger = {
 			has_global_flag = ne_old_manager 
@@ -293,7 +293,7 @@ country_event = {
 	
 	option = {	##enable music
 		name = ne_settings_intro.4.e
-		custom_effect_tooltip = misc_settings_e
+		custom_effect_tooltip = ne_settings_disabled
 		
 		trigger = {
 			NOT = { has_global_flag = ne_music_chosen }
@@ -309,7 +309,7 @@ country_event = {
 	
 	option = {	##disable music
 		name = ne_settings_intro.4.e1
-		custom_effect_tooltip = misc_settings_e1
+		custom_effect_tooltip = ne_settings_enabled
 		
 		trigger = {
 			has_global_flag = ne_music_chosen 
@@ -351,7 +351,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.1.a        #ENABLE THE FLAGS AND NAMES
-		custom_effect_tooltip = hist_settings_a
+		custom_effect_tooltip = ne_settings_disabled
 		
 		trigger = {
 			NOT = { has_global_flag = names_chosen }		
@@ -367,7 +367,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.1.a1       #DISABLE THE FLAGS AND NAMES
-		custom_effect_tooltip = hist_settings_a1
+		custom_effect_tooltip = ne_settings_enabled
 		
 		trigger = {
 			has_global_flag = names_chosen		
@@ -383,7 +383,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.1.b     #better leaders
-		custom_effect_tooltip = hist_settings_b
+		custom_effect_tooltip = ne_settings_disabled
 		
 		trigger = {
 			NOT = { has_global_flag = leaders_chosen }		
@@ -399,7 +399,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.1.b1     #DISABLE better leaders
-		custom_effect_tooltip = hist_settings_b1
+		custom_effect_tooltip = ne_settings_enabled
 		
 		trigger = {
 			has_global_flag = leaders_chosen		
@@ -415,7 +415,7 @@ country_event = {
 	
 	option = {	 #SSRS WITHOUT color
 		name = ne_settings.1.c       
-		custom_effect_tooltip = hist_settings_c
+		custom_effect_tooltip = ne_settings_disabled
 		
 		trigger = {
 			NOT = { has_global_flag = SSR_chosen }	
@@ -431,7 +431,7 @@ country_event = {
 	
 	option = {	 #DISABLE THE SSRS
 		name = ne_settings.1.c1      
-		custom_effect_tooltip = hist_settings_c1
+		custom_effect_tooltip = ne_settings_enabled
 		
 		trigger = {
 			has_global_flag = SSR_chosen		
@@ -499,7 +499,7 @@ country_event = {
 	
 	option = {	##short versions
 		name = ne_settings.2.a
-		custom_effect_tooltip = ussr_usa_settings_a
+		custom_effect_tooltip = ussr_usa_settings_a ##Might need extra
 		
 		trigger = {		
 			NOT = { has_global_flag = USA_USSR_Long }
@@ -517,7 +517,7 @@ country_event = {
 	
 	option = { 	##long versions
 		name = ne_settings.2.b
-		custom_effect_tooltip = ussr_usa_settings_b
+		custom_effect_tooltip = ussr_usa_settings_b ##might need extra
 		
 		trigger = {		
 			NOT = { has_global_flag = USA_USSR_Long }
@@ -536,7 +536,7 @@ country_event = {
 	option = { 	# Disable the names!
 		name = ne_settings.2.e
 		##NEW TOOLTIP NEEDED
-		#custom_effect_tooltip = ussr_usa_settings_c
+		custom_effect_tooltip = ussr_usa_settings_c ##might need extra
 		
 		trigger = {
 			OR = {
@@ -572,7 +572,7 @@ country_event = {
 
 	option = { # NO, return to menu WITH changes
 		name = ne_settings.2.c1
-		custom_effect_tooltip = ussr_usa_settings_c
+		custom_effect_tooltip = ne_return_menu
 	
 			trigger = {
 					OR = {
@@ -604,7 +604,7 @@ country_event = {
 	##Enable the neutrality settings
 	option = {
 		name = ne_settings.3.a
-		custom_effect_tooltip = neut_settings_a
+		custom_effect_tooltip = ne_settings_disabled
 		
 		trigger = {		
 			NOT = { has_global_flag = Neutrality_chosen }		
@@ -621,7 +621,7 @@ country_event = {
 
 	option = { # NO
 		name = ne_settings.3.b
-		custom_effect_tooltip = neut_settings_a1
+		custom_effect_tooltip = ne_settings_enabled
 		
 		trigger = {		
 			has_global_flag = Neutrality_chosen 		
@@ -660,7 +660,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.4.a
-		custom_effect_tooltip = fact_settings_a
+		custom_effect_tooltip = ne_settings_disabled
 		
 		trigger = {
 			NOT = { has_global_flag = ne_strict_faction	}	
@@ -676,7 +676,7 @@ country_event = {
 	
 	option = {
 		name = ne_settings.4.a1
-		custom_effect_tooltip = fact_settings_a1
+		custom_effect_tooltip = ne_settings_enabled
 		
 		trigger = {
 			has_global_flag = ne_strict_faction		
@@ -718,7 +718,7 @@ country_event = {
 	
 	option = { # yes, enable skelsas changes
 		name = ne_settings_intro.5.a
-		custom_effect_tooltip = reco_settings_a
+		custom_effect_tooltip = ne_settings_disabled
 		
 		trigger = {
 		
@@ -748,7 +748,7 @@ country_event = {
 	
 	option = { # disable Skelsa's changes
 		name = ne_settings_intro.5.b
-		custom_effect_tooltip = reco_settings_a1
+		custom_effect_tooltip = ne_settings_enabled
 		
 		trigger = {
 		

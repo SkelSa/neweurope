@@ -263,16 +263,16 @@ country_event = {
 	}
 
 	option = {
-		name = ne_takee.3.a		
-		ai_chance = { factor = 1 }
-
-		##Find a better solution for this loc
-		#effect_tooltip = { add_political_power = -1 }
-		#hidden_effect = { add_political_power = -1 }
-		
+		name = ne_takee.3.a	
+		##JUMP
+		custom_effect_tooltip = warning_for_a_player.1.tt
 		add_political_power = -1
 		
-		custom_effect_tooltip = warning_for_a_player.1.tt
+		ai_chance = { factor = 1 }
+		
+		
+		
+		
 		
 	}
 	
@@ -306,12 +306,12 @@ country_event = {
 	option = {
 		name = ne_takee.4.b
 		GER = { declare_war_on = { target = DAN type = annex_everything }   }
-		custom_effect_tooltip = GAME_OVER_TT ## Why did not you remove the tooltip effect? :D
+		custom_effect_tooltip = GAME_OVER_TT ## Why did not you remove the tool tip effect? :D
 	}
 
 }
 
-country_event = { ##A new research slot for the USSR event
+country_event = { ##A new research slot for the USSR 
 	id = ne_takee.5
 	title = ne_takee.5.t
 	desc = ne_takee.5.d

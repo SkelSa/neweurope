@@ -1,4 +1,112 @@
 ##Misc. Decisions come here
 
+Generic_ne_foreign_policy = {
+
+	ne_help_for_rep_spain = {		
+			
+			
+			icon = GFX_decision_category_army_reform	
+			
+			cost = 15
+		
+			fire_only_once = yes ##Test if fire_only_once only goes for one country or multiple
+		
+			ai_will_do = {
+				factor = 100				
+			}
+	
+	
+			allowed = {
+				OR = {
+					tag = MEX
+					tag = SOV
+					tag = USA
+					tag = FRA
+					tag = ENG		
+				}			
+			}
+					
+		
+			available = {
+			
+				SPR = {
+					has_civil_war = yes				
+				}	
+				
+			}
+				
+			
+			visible = {
+				SPR = {
+						has_civil_war = yes				
+				}								
+			}
+		
+
+			complete_effect = {
+			
+				country_event = { days = 1 id = ne_skelsa.115 }
+
+			}
+								
+
+	}
+	
+	
+	ne_help_for_nat_spain = {		
+			
+			
+			icon = GFX_decision_category_army_reform	
+			
+			cost = 15
+		
+			fire_only_once = yes ##Test if fire_only_once only goes for one country or multiple
+		
+			ai_will_do = {
+				factor = 100				
+			}
+	
+	
+			allowed = {
+			
+				OR = {
+					tag = GER
+					tag = ITA
+					tag = POR	
+				}	
+				
+			}
+					
+		
+			available = {
+			
+				SPR = {
+					has_civil_war = yes				
+				}	
+				
+			}
+				
+			
+			visible = {
+			
+				SPR = {
+					has_civil_war = yes				
+				}	
+				
+			}
+		
+
+			complete_effect = {
+			
+				country_event = { days = 1 id = ne_skelsa.116 }
+
+			}
+								
+
+	}
+
+
+}
+
 
 
