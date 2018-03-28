@@ -364,11 +364,19 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 			GER = { has_war_with = POL }
 		}
 	
-		timeout_effect = {  ##hope it works with 'cancel_trigger'                  
+		timeout_effect = {  ##hope it works with 'cancel_trigger'
 			POL = {
-				any_country = { AND = { has_government = democratic is_in_faction_with = ENG } }
+				every_country = {
+					limit = {
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+						} 
+					}
+				}
 				add_opinion_modifier = { target = PREV modifier = allies_didnt_guarantee } 
 			}
+
 			ENG = {
 				add_political_power = -150
 			}
