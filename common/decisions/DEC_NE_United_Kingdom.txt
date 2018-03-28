@@ -74,6 +74,8 @@ ENG_historical_military_operations = {
 			tag = ENG
 		}         
 	
+		cost = 150
+
 		available = { ##conditions of implementation
 			AND = {
 				OR = {
@@ -180,7 +182,9 @@ ENG_historical_military_operations = {
 		allowed = { 
 			tag = ENG
 		}         
-	
+
+		cost = 150
+
 		available = { ##conditions of implementation
 			337 = { is_controlled_by = FROM }
 			AND = {
@@ -302,11 +306,11 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 	
 		available = { ##conditions of implementation
 			OR = { 
-				POL = { is_in_faction_with = ENG }
-				AND = {
-					ENG = { has_guaranteed = POL }
-					POL = { has_opinion = { target = ENG value > 50 } }
-				}
+				POL = { is_in_faction_with = FROM }
+				FROM = { has_guaranteed = POL }
+			}
+			NOT = {
+				POL = { has_opinion = { target = ENG value < 20 } }
 			}
 		}
 	
@@ -328,23 +332,26 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 					NOT = { is_in_faction_with = ENG }
 				}
 			}
+
 			POL = {
 				OR = { 
 					has_government = democratic
 					has_government = neutrality
 				}
-				NOT = { 
-					is_in_faction_with = GER
-					OR = {
-						ENG = { has_guaranteed = POL }
-						ENG = { is_in_faction_with = POL }
-						AND = {
-							POL = { has_opinion = { target = ENG value > 40 } }
-							ENG = { is_ai = no }
-						}
+			}
+
+			NOT = { 
+				OR = {
+					ENG = { has_guaranteed = POL }
+					ENG = { is_in_faction_with = POL }
+					POL = { is_in_faction_with = GER }
+					AND = {
+						POL = { has_opinion = { target = ENG value > 40 } }
+						ENG = { is_ai = no }
 					}
 				}
 			}
+
 			any_country = { 
 				has_government = democratic
 				NOT = { has_war_with = POL }
@@ -353,11 +360,14 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 	
 		is_good = no                        
 	
-		days_mission_timeout = 45     
+		cancel_trigger = {
+			GER = { has_war_with = POL }
+		}
 	
-		timeout_effect = {                     
+		timeout_effect = {  ##hope it works with 'cancel_trigger'                  
 			POL = {
-				add_opinion_modifier = { target = ENG modifier = allies_didnt_guarantee } 
+				any_country = { AND = { has_government = democratic is_in_faction_with = ENG } }
+				add_opinion_modifier = { target = PREV modifier = allies_didnt_guarantee } 
 			}
 			ENG = {
 				add_political_power = -150
@@ -372,7 +382,7 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 						has_global_flag = anglo_guarantee
 					}
 				}
-				ENG = { add_political_power = 45 }
+				ENG = { add_political_power = 50 }
 			}
 			if = {
 				limit = {
