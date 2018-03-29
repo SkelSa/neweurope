@@ -47,4 +47,48 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/sfr_yugoslavia.dds"
 	}
 	
+	##Foreign Help
+	
+	spriteType = {
+		name = "GFX_idea_civil_war_help_ger"
+		texturefile = "gfx/interface/ideas/civil_war_help_ger.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_civil_war_help_por"
+		texturefile = "gfx/interface/ideas/civil_war_help_por.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_civil_war_help_ita"
+		texturefile = "gfx/interface/ideas/civil_war_help_ita.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_civil_war_help_sov"
+		texturefile = "gfx/interface/ideas/civil_war_help_sov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_civil_war_help_usa"
+		texturefile = "gfx/interface/ideas/civil_war_help_usa.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_civil_war_help_eng"
+		texturefile = "gfx/interface/ideas/civil_war_help_eng.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_civil_war_help_fra"
+		texturefile = "gfx/interface/ideas/civil_war_help_fra.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_civil_war_help_mex"
+		texturefile = "gfx/interface/ideas/civil_war_help_mex.dds"
+	}
+	
+	
+	
 }

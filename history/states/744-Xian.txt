@@ -8,7 +8,7 @@ state={
 		add_core_of = PRC
 		add_core_of = CHI
 		victory_points = {
-			12156 2 		##Xian, Position in vanilla was wrong!
+			7301 2 		##Xian, Position in vanilla was wrong!
 		}
 		buildings = {
 			infrastructure = 3

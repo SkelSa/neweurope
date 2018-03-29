@@ -75,7 +75,7 @@
  NE_desperate_defense:0 "Desperate Defense"
  NE_alone_desc:0 "Most of our cities are occupied, millions of civilians are dead and losses are staggering. Now the time has come for our citizens to fight against the invader till the last breath. Not only to defend the future of this nation but to save their families and loved ones!\nWe must not lose."
  NE_bad_infrastructure:0 "Bad Infrastructure"
- NE_bad_infrastructure_desc:0 "The further we advanced into the Chinese mainland we encountered worse roads, bridges and rail networks. This combined with several attacks by guerillas on our transports has led to a significant strain on our supplylogistics."
+ NE_bad_infrastructure_desc:0 "The further we advanced into the Chinese mainland we encountered worse roads, bridges and rail networks! This combined with several attacks by guerillas on our transports has led to a significant strain on our supply logistics."
  NE_ITA_incompetent_officers:0 "Italian General Staff"
  NE_ITA_incompetent_officers_desc:0 "The "Esercito Italiano" is plagued by incompetent officers and generals. Furthermore, among ill-equipped units and poor morale Mussolini and the rest of the fascist leadership dream of big conquest. A dream, many Italians are not interested in..."
  
@@ -320,6 +320,10 @@
  
  ####COSMETIC TAGS####
 
+ ##PAK
+ NE_DEU_REN_HISTORICAL_fascism:0 "Großdeutsches Reich"
+ NE_DEU_REN_HISTORICAL_fascism_DEF:0 "das Großdeutsche Reich"
+ 
  ##PAK
  NE_PAK_democratic:0 "Islamic Republic of Pakistan"
  NE_PAK_democratic_DEF:0 "The Islamic Republic of Pakistan"
@@ -869,9 +873,9 @@
  ne_news.27.c:0 "Cheers to our Soviet allies!"
  ne_news.27.e:0 "They will regret setting foot on our homeland!"
  
- ##Poland collapses (LOC needs a redo)
+ ##Poland collapses (LOC needs a redo) (removed the part about the national treasury and the feeling of betrayal towards the West)
  ne_news.46.t:0 "Poland collapses!"
- ne_news.46.d:0 "[POL.GetLeader]has announced in a radio broadcast that, despite the massive sacrifice of the Polish people, it could no longer withstand the combined might of the German and Soviet armies. While some smaller pockets of resistance are still fighting against the occupiers it's expected that they won't last until the end of the week.\nAccording to Romanian sources, about 120000 troops could escape via the "Romanian Bridgehead" to join the British and French armies in the West to continue the fight against Nazi Germany. Additionally, the treasury of the National Bank of Poland could be evacuated there.\nWhile the war will continue in the West, many Poles feel betrayed by the Western powers, claiming that a French offensive might have stopped the Germans. Most experts are convinced that Germany, now turning to Paris, will have enormous difficulties penetrating French defenses like the Maginot Line. However, this remains to be seen."
+ ne_news.46.d:0 "[POL.GetLeader] has announced in a radio broadcast that, despite the massive sacrifice of the Polish people, the country could no longer withstand the combined might of the German and Soviet armies. While some smaller pockets of resistance are still fighting against the occupiers it's expected that they won't last until the end of the week.\nAccording to Romanian sources, about 120000 troops could escape via the "Romanian Bridgehead" to join the British and French armies in the West to continue the fight against Nazi Germany.\nMost experts are convinced that Germany, now turning to Paris, will have enormous difficulties penetrating heavy French fortifications along the border. However, this remains to be seen."
  ne_news.46.a:0 "Disgusting..."
  ne_news.46.b:0 "And again Poland vanishes from Europe..."
  ne_news.46.c:0 "The mistakes of 1920 are undone!"

@@ -162,7 +162,6 @@ news_event = {
 			}
 		
 			puppet = EGY
-			puppet = YEM
 			puppet = OMA
 			puppet = NEP
 			puppet = BHU

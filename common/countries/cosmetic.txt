@@ -21,6 +21,11 @@ AUS_NOT_WHITE = {
 
 ##New Europe additions
 
+NE_DEU_REN_HISTORICAL = {
+	color = rgb { 74 74 74 }
+	color_ui = rgb { 74 74 74 }
+}
+
 NE_PAK = {
 	color = rgb { 90  170  90 }
 	color_ui = rgb { 90  170  90 }

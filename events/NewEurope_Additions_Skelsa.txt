@@ -1208,9 +1208,12 @@ country_event = {
 		if = {
 			limit = {
 				has_global_flag = ne_music_chosen
+				PRC = { is_ai = no }
 			}
-		}
+		
 		PRC = { sound_effect = communist_party }
+		}
+		
 		
 	}
 	
@@ -2390,7 +2393,8 @@ country_event = {
 					tag = SOV
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = SOV } 
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = SOV }
+				add_ideas = NE_civil_war_help_sov
 			}
 		
 		}
@@ -2404,6 +2408,7 @@ country_event = {
 				}
 				
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = MEX } 
+				add_ideas = NE_civil_war_help_mex
 			}
 		
 		}
@@ -2417,6 +2422,7 @@ country_event = {
 				}
 				
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = USA } 
+				add_ideas = NE_civil_war_help_usa
 			}
 		
 		}
@@ -2430,6 +2436,7 @@ country_event = {
 				}
 				
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = FRA } 
+				add_ideas = NE_civil_war_help_fra
 			}
 		
 		}
@@ -2443,6 +2450,7 @@ country_event = {
 				}
 				
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ENG } 
+				add_ideas = NE_civil_war_help_eng
 			}
 		
 		}
@@ -2456,6 +2464,7 @@ country_event = {
 				}
 				
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ITA } 
+				add_ideas = NE_civil_war_help_ita
 			}
 		
 		}
@@ -2469,6 +2478,7 @@ country_event = {
 				}
 				
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = POR } 
+				add_ideas = NE_civil_war_help_por
 			}
 		
 		}
@@ -2482,6 +2492,7 @@ country_event = {
 				}
 				
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = GER } 
+				add_ideas = NE_civil_war_help_ger
 			}
 		
 		}
@@ -2502,7 +2513,7 @@ country_event = {
 	id = ne_skelsa.7
 	title = ne_skelsa.7.t
 	desc =  ne_skelsa.7.d
-	picture = GFX_somepic
+	picture = GFX_
 
 	is_triggered_only = yes
 	fire_only_once = yes

@@ -520,32 +520,58 @@ country_event = {  ##Germany name change event
 	
 	trigger = {
 		tag = GER
-		GER = {
-			AND = {
-				num_of_factories > 245
-				has_army_size = { size > 120 }
-				has_government = fascism
-				NOT = { has_country_flag = ne_deu_ren }
-			}
+		GER = {		
+			num_of_factories > 245
+			has_army_size = { size > 120 }
+			has_government = fascism
+			NOT = { has_country_flag = ne_deu_ren }
+			surrender_progress < 0.01
+			
+			controls_state = 16
+			controls_state = 10
+			controls_state = 206
+			controls_state = 194
+			
 		}
 	}
 
 	fire_only_once = no
+	
+	immediate = {
+		GER = { set_country_flag = ne_deu_ren }
+	}
 
 	option = {
 		name = ne_takee.7.a
 		ai_chance = { factor = 100 }
-		hidden_effect = { 
-			GER = {
-				set_cosmetic_tag = NE_DEU_REN
-				set_country_flag = ne_deu_ren
+		
+		##Without historical names
+		if = {
+			limit = {
+				NOT = { has_global_flag = names_chosen }	
 			}
-		}
-		add_political_power = 10
+			
+		GER = { set_cosmetic_tag = NE_DEU_REN }			
+		}	
+		
+		##With historical names	
+		if = {
+			limit = {
+				has_global_flag = names_chosen			
+			}
+			
+		GER = { set_cosmetic_tag = NE_DEU_REN_HISTORICAL }			
+		}	
+		
+			
+		add_political_power = 120
 		custom_effect_tooltip = germany_change_its_name
 	}
 
 }
+
+##Can you maybe remove this event? (ne_takee.8)
+##Germany did never change its name back
 
 country_event = {  ##Germany lose the power and change its name
 	id = ne_takee.8
@@ -576,7 +602,7 @@ country_event = {  ##Germany lose the power and change its name
 	}
 
     option = {
-		##Empty space
+		##Ignore me!
     }
 
 }

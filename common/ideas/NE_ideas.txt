@@ -377,12 +377,166 @@ ideas = {
 				
 				planning_speed = -0.30 
 				army_morale_factor = -0.10 
-				experience_gain_army_factor = -0.05 
+				experience_gain_army_factor = -0.01
 				army_attack_factor = -0.10
 				army_org = -3 
 			}
 			
 		}
+		
+		##Help during a civil war: 8 spirits
+		NE_civil_war_help_ger = {
+
+			picture = GFX_idea_civil_war_help_ger
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				
+				planning_speed = 0.10 
+				army_org = 5 
+				training_time_factor = -0.1 
+				land_reinforce_rate = 0.05 
+				
+			}
+			
+		}
+		
+		NE_civil_war_help_por = {
+
+			picture = GFX_idea_civil_war_help_por
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				
+				planning_speed = 0.10 
+				army_org = 5 
+				training_time_factor = -0.1 
+				land_reinforce_rate = 0.05 
+				
+			}
+			
+		}
+		
+		NE_civil_war_help_ita = {
+
+			picture = GFX_idea_civil_war_help_ita
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				
+				planning_speed = 0.10 
+				army_org = 5 
+				training_time_factor = -0.1 
+				land_reinforce_rate = 0.05 
+				
+			}
+			
+		}
+		
+		NE_civil_war_help_mex = {
+
+			picture = GFX_idea_civil_war_help_mex
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				
+				planning_speed = 0.10 
+				army_org = 5 
+				training_time_factor = -0.1 
+				land_reinforce_rate = 0.05 
+				
+			}
+			
+		}
+		
+		NE_civil_war_help_usa = {
+
+			picture = GFX_idea_civil_war_help_usa
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				
+				planning_speed = 0.10 
+				army_org = 5 
+				training_time_factor = -0.1 
+				land_reinforce_rate = 0.05 
+				
+			}
+			
+		}
+		
+		NE_civil_war_help_sov = {
+
+			picture = GFX_idea_civil_war_help_sov
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				
+				planning_speed = 0.10 
+				army_org = 5 
+				training_time_factor = -0.1 
+				land_reinforce_rate = 0.05 
+				
+			}
+			
+		}
+		
+		NE_civil_war_help_eng = {
+
+			picture = GFX_idea_civil_war_help_eng
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				
+				planning_speed = 0.10 
+				army_org = 5 
+				training_time_factor = -0.1 
+				land_reinforce_rate = 0.05 
+				
+			}
+			
+		}
+		
+		NE_civil_war_help_fra = {
+
+			picture = GFX_idea_civil_war_help_fra
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				
+				planning_speed = 0.10 
+				army_org = 5 
+				training_time_factor = -0.1 
+				land_reinforce_rate = 0.05 
+				
+			}
+			
+		}
+
 
 		##Done by takee
 		stalins_death = {
