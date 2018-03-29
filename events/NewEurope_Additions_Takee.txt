@@ -570,43 +570,6 @@ country_event = {  ##Germany name change event
 
 }
 
-##Can you maybe remove this event? (ne_takee.8)
-##Germany did never change its name back
-
-country_event = {  ##Germany lose the power and change its name
-	id = ne_takee.8
-	title = ne_takee.8.t
-	desc = ne_takee.8.d
-	picture = GFX_report_event_german_speech
-	
-	hidden = yes
-
-	trigger = {
-		GER = {
-			has_country_flag = ne_deu_ren
-			OR = {
-				surrender_progress > 0.25
-				num_of_factories < 200
-			}
-			has_government = fascism
-		}
-	}
-
-	fire_only_once = no
-
-	immediate = {
-		GER = {
-			drop_cosmetic_tag = yes
-			clr_country_flag = ne_deu_ren
-		}
-	}
-
-    option = {
-		##Ignore me!
-    }
-
-}
-
 country_event = {  ##Anglo-Soviet invasion of Iran
 	id = ne_takee.9
 	title = ne_takee.9.t

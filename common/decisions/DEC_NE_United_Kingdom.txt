@@ -12,18 +12,23 @@ ENG_historical_military_operations = {
 
 		available = {
 			OR = {
-				POL = {
-					OR = { 
-						is_in_faction_with = ENG
-						has_opinion = { target = ENG value > 49 }
+				FROM = {
+					OR = {
+						is_in_faction_with = POL
+						has_guaranteed = POL
 					}
 				}
-				ENG = { has_guaranteed = POL }
+				POL = { has_opinion = { target = FROM value > 39 } }
 			}
-			GER = { focus_progress = { focus = GER_danzig_or_war progress > 0.85 } }
+			hidden_trigger = { 
+				GER = { focus_progress = { focus = GER_danzig_or_war progress > 0.85 } }
+				NOT = { POL = { has_war_with = GER } }
+			}
 		}
 
-		cost = 15
+	
+
+		cost = 30
 
 		ai_will_do = {
 			base = 45
@@ -306,11 +311,11 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 	
 		available = { ##conditions of implementation
 			OR = { 
-				POL = { is_in_faction_with = FROM }
+				FROM = { is_in_faction_with = POL }
 				FROM = { has_guaranteed = POL }
 			}
 			NOT = {
-				POL = { has_opinion = { target = ENG value < 20 } }
+				POL = { has_opinion = { target = ENG value < 21 } }
 			}
 		}
 	
@@ -360,11 +365,9 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 	
 		is_good = no                        
 	
-		cancel_trigger = {
-			GER = { has_war_with = POL }
-		}
-	
-		timeout_effect = {  ##hope it works with 'cancel_trigger'
+		days_mission_timeout = 70
+
+		timeout_effect = {
 			POL = {
 				every_country = {
 					limit = {
