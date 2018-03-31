@@ -1,0 +1,14 @@
+##Different types of decisions for different countries
+NE_waroperation_iraqinvasion = {
+
+	icon = GFX_iraqinvasion ##Will make an unique icon for it later
+
+	allowed = {
+		OR = {
+			tag = SOV
+			tag = ENG
+			is_historical_focus_on = yes
+		}
+	}
+	
+}
