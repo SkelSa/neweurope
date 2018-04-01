@@ -134,6 +134,10 @@ NE_waroperation_iraqinvasion = {
 			}
 		}
 
+		ai_will_do = {
+			factor = 200				
+		}
+
 		available = {  ##this is the conditions of complete
 			OR = {
 				AND = {
@@ -206,15 +210,74 @@ NE_waroperation_iraqinvasion = {
 	
 		is_good = no
 
-		days_mission_timeout = 365
+		days_mission_timeout = 145
 
-		timeout_effect = {  ##the timeout effect is bad effect
-			##later
+		timeout_effect = {
+			random_list = {
+				65 = { 
+					PER = { 
+						add_timed_idea = { ideas = NE_iraniran days = 180 }
+						add_ai_strategy = {
+							type = alliance
+							id = "GER"
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = "SOV"
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = "ENG"
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = "RAJ"
+							value = 200
+						}
+					}
+				}
+				35 = {
+					GER = { 
+						add_to_faction = PER 
+						add_ai_strategy = {
+							type = protect
+							id = "PER"
+							value = 160
+						}
+					}
+					ITA = {
+						add_ai_strategy = {
+							type = protect
+							id = "PER"
+							value = 100
+						}
+					}
+					PER = {
+						add_ai_strategy = {
+							type = antagonize
+							id = "SOV"
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = "ENG"
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = "RAJ"
+							value = 200
+						}
+					}
+				}
+			}
 		}
-	
+
 		complete_effect = {
 			hidden_effect = {
-				set_global_flag = op_countenance
 				SOV = { diplomatic_relation = { country = ENG relation = non_aggression_pact active = yes } }
 				ENG = { diplomatic_relation = { country = SOV relation = non_aggression_pact active = yes } }
 				random_list = {

@@ -570,196 +570,6 @@ country_event = {  ##Germany name change event
 
 }
 
-country_event = {  ##Anglo-Soviet invasion of Iran
-	id = ne_takee.9
-	title = ne_takee.9.t
-	desc = ne_takee.9.d
-	picture = GFX_report_event_soviet_invasion_map
-
-	fire_only_once = yes
-
-	trigger = {
-
-		OR = {
-			tag = SOV
-			tag = ENG
-		}
-
-		AND = {
-			SOV = { has_war_with = GER }
-			ENG = { has_war_with = GER }
-			NOT = {
-				SOV = { has_war_with = ENG }
-			}
-		}
-
-		PER = {
-			exists = yes
-			NOT = {
-				OR = { 
-					has_government = communism
-					has_government = democratic
-				}
-				OR = {
-					has_war_with = SOV
-					has_war_with = ENG
-				}
-			}
-		}
-
-		AND = {
-			ENG = { has_opinion = { target = SOV value > -5 } }
-			SOV = { has_opinion = { target = ENG value > -5 } }
-		}
-	}
-
-	option = {
-		name = ne_takee.9.a
-		SOV = {
-			add_ai_strategy = {
-				type = conquer
-				id = "PER"
-				value = 105
-			}
-		}
-		RAJ = {
-			if = {
-				limit = { is_puppet_of = ENG }
-				add_ai_strategy = {
-					type = conquer
-					id = "PER"
-					value = 99
-				}
-			}
-		}
-		AST = {
-			if = {
-				limit = { is_puppet_of = ENG }
-				add_ai_strategy = {
-					type = conquer
-					id = "PER"
-					value = 69
-				}
-			}
-		}
-		ENG = {
-			add_ai_strategy = {
-				type = conquer
-				id = "PER"
-				value = 69
-			}
-		}
-		SOV = { diplomatic_relation = { country = ENG relation = non_aggression_pact active = yes } }
-		ENG = { diplomatic_relation = { country = SOV relation = non_aggression_pact active = yes } }
-
-		hidden_effect = {
-			random_list = {
-				50 = { SOV = { country_event = { days = 80 id = ne_takee.10 } } }
-				50 = { ENG = { country_event = { days = 80 id = ne_takee.10 } } }
-			}
-		}
-		custom_effect_tooltip = iran_war_tooltip.1.tt
-	}
-
-}
-
-country_event = {
-	id = ne_takee.10
-	title = ne_takee.10.t
-	desc = ne_takee.10.d
-	picture = GFX_report_event_soviet_invasion_map
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	immediate = { 
-		hidden_effect = { ENG = { add_timed_idea = { days = 60 idea = NE_alone } } }
-		hidden_effect = { SOV = { add_timed_idea = { days = 60 idea = NE_alone } } }
-		hidden_effect = { PER = { add_timed_idea = { days = 60 idea = NE_alone } } }
-	}
-
-	option = {
-		name = ne_takee.10.a
-		if = {
-			limit = {
-				tag = SOV
-			}
-			hidden_effect = {
-				declare_war_on = { target = PER type = annex_everything }
-				ENG = { country_event = { hours = 2 id = ne_takee.11 } }
-			}
-		}
-		if = {
-			limit = {
-				tag = ENG
-			}
-			hidden_effect = {
-				declare_war_on = { target = PER type = annex_everything }
-				SOV = { country_event = { hours = 2 id = ne_takee.11 } }
-			}
-		}
-		set_global_flag = op_countenance
-		custom_effect_tooltip = iran_war_tooltip.2.tt
-	}
-
-}
-
-country_event = {
-	id = ne_takee.11
-	title = ne_takee.11.t
-	desc = ne_takee.11.d
-	picture = GFX_report_event_soviet_invasion_map
-	
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		name = ne_takee.11.a
-		if = {
-			limit = {
-				tag = ENG
-			}
-			ENG = {
-				add_to_war = {
-					targeted_alliance = AST
-					enemy = PER
-				}
-				add_to_war = {
-					targeted_alliance = RAJ
-					enemy = PER
-				}
-				add_to_war = {
-					targeted_alliance = SOV
-					enemy = PER
-				}
-			}
-		}
-		if = {
-			limit = {
-				tag = SOV
-			}
-			SOV = {
-				add_to_war = {
-					targeted_alliance = ENG		
-					enemy = PER
-				}
-			}
-			ENG = {
-				add_to_war = {
-					targeted_alliance = AST
-					enemy = PER
-				}
-				add_to_war = {
-					targeted_alliance = RAJ
-					enemy = PER
-				}
-			}
-		}
-		custom_effect_tooltip = iran_war_tooltip.3.tt
-	}
-}
-
 country_event = {
 	id = ne_takee.12
 	title = ne_takee.12.t
@@ -771,29 +581,8 @@ country_event = {
 	trigger = {
 
 		OR = {
-			AND = {
-				tag = SOV
-				OR = {
-					419 = { is_controlled_by = SOV }
-					420 = { is_controlled_by = SOV }
-					266 = { is_controlled_by = SOV }
-					416 = { is_controlled_by = SOV }
-					SOV = { has_full_control_of_state = 419 }
-					SOV = { has_full_control_of_state = 420 }
-					SOV = { has_full_control_of_state = 266 }
-					SOV = { has_full_control_of_state = 416 }
-				}
-			}
-
-			AND = {
-				tag = ENG
-				OR = {
-					413 = { is_controlled_by = ENG }
-					412 = { is_controlled_by = ENG }
-					ENG = { has_full_control_of_state = 413 }
-					ENG = { has_full_control_of_state = 412 }
-				}
-			}
+			surrender_progress > 0.024
+			has_capitulated = yes
 		}
 
 		PER = {
@@ -801,13 +590,14 @@ country_event = {
 				has_war_with = SOV
 				has_war_with = ENG
 			}
-			OR = {
-				surrender_progress > 0.05
-				has_capitulated = yes
+		}
+
+		NOT = {
+			any_country = {
+				has_decision = NE_warop_iraqinvasion
 			}
 		}
 
-		has_global_flag = op_countenance
 	}
 
 	option = {
@@ -852,11 +642,11 @@ country_event = {
 		}
 		PER = { 
 			add_stability = -0.3
-			add_war_support = 0.2
-			add_popularity = { ideology = communism popularity = 0.25 }
-			add_popularity = { ideology = democratic popularity = 0.25 }
+			add_war_support = -0.4
+			add_popularity = { ideology = communism popularity = 0.15 }
+			add_popularity = { ideology = democratic popularity = 0.15 }
+			add_popularity = { ideology = fascism popularity = -0.40 }
 		}
-		hidden_effect = { clr_global_flag = op_countenance }
 		custom_effect_tooltip = iran_war_tooltip.4.tt
 	}
 

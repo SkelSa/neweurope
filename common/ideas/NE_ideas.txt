@@ -203,7 +203,21 @@ ideas = {
 				
 			}
 		}
-		
+
+		NE_iraniran = {
+
+			picture = iran_iran
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				fascism_drift = 0.2
+				war_support_weekly = 0.1
+				fascism_acceptance = 80
+			}
+		}
 		
 		NE_sfr_yugoslavia = {
 
