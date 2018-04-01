@@ -213,7 +213,7 @@ ideas = {
 			}
 
 			modifier = {
-				fascism_drift = 0.2
+				fascism_drift = 2
 				war_support_weekly = 0.1
 				fascism_acceptance = 80
 			}

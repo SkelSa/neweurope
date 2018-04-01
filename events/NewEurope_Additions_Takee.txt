@@ -581,14 +581,25 @@ country_event = {
 	trigger = {
 
 		OR = {
-			surrender_progress > 0.024
-			has_capitulated = yes
+			AND = {
+				tag = ENG
+				is_ai = no
+			}
+
+			AND = {
+				tag = SOV
+				is_ai = no
+			}
 		}
 
 		PER = {
 			AND = {
 				has_war_with = SOV
 				has_war_with = ENG
+			}
+			OR = {
+				surrender_progress > 0.024
+				has_capitulated = yes
 			}
 		}
 

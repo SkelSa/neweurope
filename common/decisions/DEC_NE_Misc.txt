@@ -142,8 +142,8 @@ NE_waroperation_iraqinvasion = {
 			OR = {
 				AND = {
 					AND = {
-						ENG = { has_opinion = { target = SOV value > 4 } }
-						SOV = { has_opinion = { target = ENG value > 4 } }
+						ENG = { has_opinion = { target = SOV value > -1 } }
+						SOV = { has_opinion = { target = ENG value > -1 } }
 					}
 			
 					any_country = {
@@ -151,7 +151,7 @@ NE_waroperation_iraqinvasion = {
 							tag = ENG
 							is_puppet_of = ENG
 						}
-						divisions_in_state = { state = 444 size > 3 }
+						divisions_in_state = { state = 444 size > 2 }
 					}
 			
 					any_country = {
@@ -160,9 +160,9 @@ NE_waroperation_iraqinvasion = {
 							is_puppet_of = SOV
 						}
 						AND = {
-							divisions_in_state = { state = 229 size > 3 }
-							divisions_in_state = { state = 230 size > 3 }
-							divisions_in_state = { state = 584 size > 3 }
+							divisions_in_state = { state = 229 size > 2 }
+							divisions_in_state = { state = 230 size > 2 }
+							divisions_in_state = { state = 584 size > 2 }
 						}
 					}
 				}
@@ -216,7 +216,7 @@ NE_waroperation_iraqinvasion = {
 			random_list = {
 				65 = { 
 					PER = { 
-						add_timed_idea = { ideas = NE_iraniran days = 180 }
+						add_timed_idea = { idea = NE_iraniran days = 180 }
 						add_ai_strategy = {
 							type = alliance
 							id = "GER"
@@ -280,46 +280,19 @@ NE_waroperation_iraqinvasion = {
 			hidden_effect = {
 				SOV = { diplomatic_relation = { country = ENG relation = non_aggression_pact active = yes } }
 				ENG = { diplomatic_relation = { country = SOV relation = non_aggression_pact active = yes } }
-				random_list = {
-					80 = {
-						ENG = { 
-							declare_war_on = { target = PER type = annex_everything }
-							add_to_war = { targeted_alliance = SOV enemy = PER }
-							add_to_war = { targeted_alliance = RAJ enemy = PER }
-							add_to_war = { targeted_alliance = AUS enemy = PER }
-							add_war_support = 0.02
-						}
-					}
-					20 = {
-						SOV = { 
-							declare_war_on = { target = PER type = annex_everything }
-							add_to_war = { targeted_alliance = ENG enemy = PER }
-							add_to_war = { targeted_alliance = RAJ enemy = PER }
-							add_to_war = { targeted_alliance = AUS enemy = PER }
-							add_war_support = 0.02
-						}
-					}
+				ENG = { 
+					declare_war_on = { target = PER type = annex_everything }
+					add_to_war = { targeted_alliance = SOV enemy = PER }
+					add_to_war = { targeted_alliance = RAJ enemy = PER }
+					add_to_war = { targeted_alliance = AUS enemy = PER }
+					add_war_support = 0.02
 				}
-				SOV = {
-					add_ai_strategy = {
-						type = conquer
-						id = "PER"
-						value = 185
-					}
-				}
-				ENG = {
-					add_ai_strategy = {
-						type = conquer
-						id = "PER"
-						value = 185
-					}
-				}
-				RAJ = {
-					add_ai_strategy = {
-						type = conquer
-						id = "PER"
-						value = 185
-					}
+				SOV = { 
+					declare_war_on = { target = PER type = annex_everything }
+					add_to_war = { targeted_alliance = ENG enemy = PER }
+					add_to_war = { targeted_alliance = RAJ enemy = PER }
+					add_to_war = { targeted_alliance = AUS enemy = PER }
+					add_war_support = 0.02
 				}
 			}
 			hidden_effect = { ENG = { add_timed_idea = { days = 60 idea = NE_alone } } }
