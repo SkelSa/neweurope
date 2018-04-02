@@ -121,7 +121,7 @@ Generic_ne_foreign_policy = {
 
 
 
-NE_waroperation_iraqinvasion = {
+NE_waroperation_iraqinvasion = { ##need localization!
 
     NE_warop_iraqinvasion = {
 	
@@ -302,5 +302,166 @@ NE_waroperation_iraqinvasion = {
 		}
 
     }
+
+}
+
+NE_rla_dec = { ##need localization!
+
+	NE_rla_form = { ##need localization!
+	
+		icon = rla_form
+
+		allowed = {
+			tag = GER
+		}
+
+		fire_only_once = yes
+
+		available = {
+			AND = {
+				GER = { surrender_progress > 0.05 }
+				SOV = { surrender_progress < 0.05 }
+			}
+			AND = {
+				GER = { 
+					has_manpower < 480000
+					has_manpower > 10000
+				}
+			}
+		}
+
+	
+
+		cost = 25
+
+		ai_will_do = {
+			base = 50
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	
+		visible = {
+
+			AND = {
+				GER = {
+					has_government = fascism
+					has_war_with = SOV
+				}
+				SOV = { has_government = communism }
+				ROA = { exists = no }
+			}
+			AND = {
+				96 = { is_controlled_by = SOV }
+				95 = { is_controlled_by = SOV }
+				94 = { is_controlled_by = SOV }
+				93 = { is_controlled_by = SOV }
+				91 = { is_controlled_by = SOV }
+				89 = { is_controlled_by = SOV }
+				192 = { is_controlled_by = SOV }
+				198 = { is_controlled_by = SOV }
+				199 = { is_controlled_by = SOV }
+			}
+		}
+		
+		complete_effect = {
+
+			GER = { give_military_access = ROA }
+			ROA = {
+				add_to_war = { targeted_alliance = GER enemy = SOV }
+				give_military_access = GER
+			}
+	
+			random_owned_state = {
+				limit = {
+					any_neighbor_state = { 
+						is_owned_by = SOV
+						state_population < 1000000
+					} 
+				}
+				ROA = { transfer_state = PREV }
+			}
+	
+			random_owned_state = {
+				limit = {
+					any_neighbor_state = {
+						is_owned_by = ROA
+						state_population < 450000
+					} 
+				}
+				ROA = { transfer_state = PREV }
+			}
+			if = {  ##Give them guns and some aircrafts
+				limit = { GER = { has_equipment = { infantry_equipment > 100000 } } }
+				send_equipment = { target = ROA type = infantry_equipment amount = 50000 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { infantry_equipment > 50000 } } }
+				send_equipment = { target = ROA type = infantry_equipment amount = 25000 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { infantry_equipment > 10000 } } }
+				send_equipment = { target = ROA type = infantry_equipment amount = 5400 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { infantry_equipment < 8000 } } }
+				send_equipment = { target = ROA type = infantry_equipment amount = 1000 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { artillery_equipment > 25000 } } }
+				send_equipment = { target = ROA type = artillery_equipment amount = 25000 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { artillery_equipment > 6500 } } }
+				send_equipment = { target = ROA type = artillery_equipment amount = 2500 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { artillery_equipment > 1500 } } }
+				send_equipment = { target = ROA type = artillery_equipment amount = 680 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { artillery_equipment > 500 } } }
+				send_equipment = { target = ROA type = artillery_equipment amount = 250 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { motorized_equipment > 4000 } } }
+				send_equipment = { target = ROA type = motorized_equipment amount = 2100 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { motorized_equipment > 1000 } } }
+				send_equipment = { target = ROA type = motorized_equipment amount = 280 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { motorized_equipment < 900 } } }
+				send_equipment = { target = ROA type = motorized_equipment amount = 100 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { fighter_equipment > 20 } } }
+				send_equipment = { target = ROA type = fighter_equipment amount = 16 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { tac_bomber_equipment > 20 } } }
+				send_equipment = { target = ROA type = tac_bomber_equipment amount = 12 }
+			}
+			GER = { 
+				add_opinion_modifier = { target = ROA modifier = liberation_army_formation }
+				add_to_faction = ROA
+			}
+			ROA = { add_opinion_modifier = { target = GER modifier = liberation_army_formation } }
+	
+			ROA = {
+				create_corps_commander = {
+					name = "Andrey Vlasov"
+					portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Andrey_Vlasov.dds"
+					traits = { winter_specialist }
+					id = 412
+					skill = 3
+				}
+				hidden_effect = { load_oob = "RLA_forces_oob" }
+				add_manpower = 185000
+			}
+		}
+	}
 
 }

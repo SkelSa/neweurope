@@ -1,4 +1,5 @@
 ##Different types of decisions for different countries
+######################Iran Invasion###################
 NE_waroperation_iraqinvasion = {
 
 	icon = GFX_iraqinvasion ##Will make an unique icon for it later
@@ -9,6 +10,18 @@ NE_waroperation_iraqinvasion = {
 			tag = ENG
 			is_historical_focus_on = yes
 		}
+	}
+	
+}
+
+######################RLA decisions###################
+NE_rla_dec = {
+
+	icon = GFX_ruslibarm ##Will make an unique icon for it later
+
+	allowed = {
+		tag = GER
+		is_historical_focus_on = yes
 	}
 	
 }
