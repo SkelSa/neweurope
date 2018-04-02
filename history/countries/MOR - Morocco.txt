@@ -15,6 +15,9 @@ set_research_slots = 2
 
 set_convoys = 20
 
+##Cosmetic tag
+set_cosmetic_tag = NE_MOR_FRA
+
 
 # Starting tech (Clone of France 1936 )
 set_technology = {

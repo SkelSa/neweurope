@@ -15,6 +15,9 @@ set_war_support = 0.45
 
 set_convoys = 10
 
+##Cosmetic tag
+set_cosmetic_tag = NE_SYR_FRA
+
 
 # Starting tech (Clone of France 1936 )
 set_technology = {

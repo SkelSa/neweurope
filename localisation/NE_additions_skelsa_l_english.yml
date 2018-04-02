@@ -78,9 +78,9 @@
  NE_bad_infrastructure_desc:0 "The further we advanced into the Chinese mainland we encountered worse roads, bridges and rail networks! This combined with several attacks by guerillas on our transports has led to a significant strain on our supply logistics."
  NE_ITA_incompetent_officers:0 "Italian General Staff"
  NE_ITA_incompetent_officers_desc:0 "The "Esercito Italiano" is plagued by incompetent officers and generals. Furthermore, among ill-equipped units and poor morale Mussolini and the rest of the fascist leadership dream of big conquest. A dream, many Italians are not interested in..."
- NE_civil_war_help_ger:0 "German Military Assistance"
- NE_civil_war_help_ita:0 "Italian Military Assistance"
- NE_civil_war_help_por:0 "Portuguese Military Assistance"
+ NE_civil_war_help_ger:0 "German Military Aid"
+ NE_civil_war_help_ita:0 "Italian Military Aid"
+ NE_civil_war_help_por:0 "Portuguese Military Aid"
  NE_civil_war_help_usa:0 "American Military Assistance"
  NE_civil_war_help_eng:0 "British Military Assistance"
  NE_civil_war_help_fra:0 "French Military Assistance"
@@ -170,8 +170,6 @@
  ICU_democratic_ADJ:0 "Indochinese"
  ICU_neutrality_ADJ:0 "Indochinese"
  ICU_communism_ADJ:0 "Indochinese"
- 
- 
  
  ##Algeria
  ALG_fascism:0 "Nation of Algeria" 
@@ -284,21 +282,7 @@
  ITS_democratic_ADJ:0 "Italian"
  ITS_neutrality_ADJ:0 "Italian"
  ITS_communism_ADJ:0 "Italian"
- 
- ##French Mandate for Syria and the Lebanon ##NATION IS PROBABLY OBSOLETE
- #FSL_fascism:0 "French Levant"
- #FSL_fascism_DEF:0 "The French Levant"
- #FSL_democratic:0 "French Mandate for Syria and the Lebanon"
- #FSL_democratic_DEF:0 "The French Mandate for Syria and the Lebanon"
- #FSL_neutrality:0 "French Mandate for Syria and the Lebanon"
- #FSL_neutrality_DEF:0 "The French Mandate for Syria and the Lebanon"
- #FSL_communism:0 "French Mandate for Syria and the Lebanon"
- #FSL_communism_DEF:0 "The French Mandate for Syria and the Lebanon"
- #FSL_fascism_ADJ:0 "Levantine"
- #FSL_democratic_ADJ:0 "Levantine"
- #FSL_neutrality_ADJ:0 "Levantine"
- #FSL_communism_ADJ:0 "Levantine"
- 
+
  ##Senegal 
  SEN_fascism:0 "Senegalese Empire"
  SEN_fascism_DEF:0 "Senegalese Empire"
@@ -342,11 +326,15 @@
  NE_SPR_fascism_DEF:0 "The Spanish State"
  NE_SPR_communism:0 "Spanish Republic"
  NE_SPR_communism_DEF:0 "The Spanish Republic"
+ NE_SPR_democratic:0 "Spanish Republic"
+ NE_SPR_democratic_DEF:0 "The Spanish Republic"
  ##Spanish State (SPS)
  NE_SPS_fascism:0 "Spanish State"
  NE_SPS_fascism_DEF:0 "The Spanish State"
  NE_SPS_communism:0 "Spanish Republic"
  NE_SPS_communism_DEF:0 "The Spanish Republic"
+ NE_SPR_democratic:0 "Spanish Republic"
+ NE_SPR_democratic_DEF:0 "The Spanish Republic"
  ##ROM
  NE_ROM_fascism:0 "Socialist Republic of Romania"
  NE_ROM_fascism_DEF:0 "The Socialist Republic of Romania"
@@ -368,28 +356,28 @@
  
  ###FRENCH COLONIES
  
- ##Tunisia (French protectorate)
- NE_TUN_FRA_neutrality:0 "French protectorate of Tunisia"
- NE_TUN_FRA_neutrality_DEF:0 "The French protectorate of Tunisia"
- NE_TUN_FRA_democratic:0 "French protectorate of Tunisia"
- NE_TUN_FRA_democratic_DEF:0 "The French protectorate of Tunisia"
- NE_TUN_FRA_fascism:0 "French protectorate of Tunisia"
- NE_TUN_FRA_fascism_DEF:0 "The French protectorate of Tunisia"
- NE_TUN_FRA_communism:0 "French protectorate of Tunisia"
- NE_TUN_FRA_communism_DEF:0 "The French protectorate of Tunisia"
+ ##Tunisia (French Protectorate)
+ NE_TUN_FRA_neutrality:0 "French Protectorate of Tunisia"
+ NE_TUN_FRA_neutrality_DEF:0 "The French Protectorate of Tunisia"
+ NE_TUN_FRA_democratic:0 "French Protectorate of Tunisia"
+ NE_TUN_FRA_democratic_DEF:0 "The French Protectorate of Tunisia"
+ NE_TUN_FRA_fascism:0 "French Protectorate of Tunisia"
+ NE_TUN_FRA_fascism_DEF:0 "The French Protectorate of Tunisia"
+ NE_TUN_FRA_communism:0 "French Protectorate of Tunisia"
+ NE_TUN_FRA_communism_DEF:0 "The French Protectorate of Tunisia"
  NE_TUN_FRA_fascism_ADJ:0 "Tunisian"
  NE_TUN_FRA_democratic_ADJ:0 "Tunisian"
  NE_TUN_FRA_neutrality_ADJ:0 "Tunisian"
  NE_TUN_FRA_communism_ADJ:0 "Tunisian"
- ##Morocco (French protectorate)
- NE_MOR_FRA_neutrality:0 "French protectorate in Morocco"
- NE_MOR_FRA_neutrality_DEF:0 "The French protectorate in Morocco"
- NE_MOR_FRA_democratic:0 "French protectorate in Morocco"
- NE_MOR_FRA_democratic_DEF:0 "The French protectorate in Morocco"
- NE_MOR_FRA_fascism:0 "French protectorate in Morocco"
- NE_MOR_FRA_fascism_DEF:0 "The French protectorate in Morocco"
- NE_MOR_FRA_communism:0 "French protectorate in Morocco"
- NE_MOR_FRA_communism_DEF:0 "The French protectorate in Morocco"
+ ##Morocco (French Protectorate)
+ NE_MOR_FRA_neutrality:0 "French Protectorate in Morocco"
+ NE_MOR_FRA_neutrality_DEF:0 "The French Protectorate in Morocco"
+ NE_MOR_FRA_democratic:0 "French Protectorate in Morocco"
+ NE_MOR_FRA_democratic_DEF:0 "The French Protectorate in Morocco"
+ NE_MOR_FRA_fascism:0 "French Protectorate in Morocco"
+ NE_MOR_FRA_fascism_DEF:0 "The French Protectorate in Morocco"
+ NE_MOR_FRA_communism:0 "French Protectorate in Morocco"
+ NE_MOR_FRA_communism_DEF:0 "The French Protectorate in Morocco"
  NE_MOR_FRA_fascism_ADJ:0 "Moroccan"
  NE_MOR_FRA_democratic_ADJ:0 "Moroccan"
  NE_MOR_FRA_neutrality_ADJ:0 "Moroccan"
@@ -428,7 +416,34 @@
  NE_ICU_fascism:0 " Indochinese Union"
  NE_ICU_fascism_DEF:0 "The  Indochinese Union"
  
-
+##State of Greater Lebanon (Mandate of France)
+ NE_LEB_fascism:0 "Greater Lebanon"
+ NE_LEB_fascism_DEF:0 "Greater Lebanon"
+ NE_LEB_democratic:0 "Republic of Lebanon"
+ NE_LEB_democratic_DEF:0 "The Republic of Lebanon"
+ NE_LEB_neutrality:0 "Lebanon"
+ NE_LEB_neutrality_DEF:0 "Lebanon"
+ NE_LEB_communism:0 "Lebanese Socialist Republic"
+ NE_LEB_communism_DEF:0 "The Lebanese Socialist Republic"
+ NE_LEB_fascism_ADJ:0 "Lebanese"
+ NE_LEB_democratic_ADJ:0 "Lebanese"
+ NE_LEB_neutrality_ADJ:0 "Lebanese"
+ NE_LEB_communism_ADJ:0 "Lebanese"
+ ##French Syria
+ NE_SYR_fascism:0 "Syrian State"
+ NE_SYR_fascism_DEF:0 "The Syrian State"
+ NE_SYR_democratic:0 "Syrian Republic"
+ NE_SYR_democratic_DEF:0 "The Syrian Republic"
+ NE_SYR_neutrality:0 "Syrian Kingdom"
+ NE_SYR_neutrality_DEF:0 "Syrian Kingdom"
+ NE_SYR_communism:0 "Syrian People's Republic"
+ NE_SYR_communism_DEF:0 "The Syrian People's Republic"
+ NE_SYR_fascism_ADJ:0 "Syrian"
+ NE_SYR_democratic_ADJ:0 "Syrian"
+ NE_SYR_neutrality_ADJ:0 "Syrian"
+ NE_SYR_communism_ADJ:0 "Syrian"
+ 
+ 
  ##ITA
  NE_ITA_democratic:0 "Republic of Italy"
  NE_ITA_democratic_DEF:0 "The Republic of Italy"
@@ -912,5 +927,18 @@
  ne_news.46.c:0 "The mistakes of 1920 are undone!"
  ne_news.46.e:0 "This nation had no place in history anyways."
  
+  ##French Mandate for Syria and the Lebanon ##NATION IS PROBABLY OBSOLETE
+ #FSL_fascism:0 "French Levant"
+ #FSL_fascism_DEF:0 "The French Levant"
+ #FSL_democratic:0 "French Mandate for Syria and the Lebanon"
+ #FSL_democratic_DEF:0 "The French Mandate for Syria and the Lebanon"
+ #FSL_neutrality:0 "French Mandate for Syria and the Lebanon"
+ #FSL_neutrality_DEF:0 "The French Mandate for Syria and the Lebanon"
+ #FSL_communism:0 "French Mandate for Syria and the Lebanon"
+ #FSL_communism_DEF:0 "The French Mandate for Syria and the Lebanon"
+ #FSL_fascism_ADJ:0 "Levantine"
+ #FSL_democratic_ADJ:0 "Levantine"
+ #FSL_neutrality_ADJ:0 "Levantine"
+ #FSL_communism_ADJ:0 "Levantine"
  
  

@@ -149,10 +149,10 @@ on_actions = {
 		
 			
 		
-		##Switch to better India color when free
+		##Switch to better India color when free (Does it work in a civil war?)
 		if = {
 			limit = {
-				tag = RAJ
+				original_tag = RAJ
 				has_global_flag = names_chosen
 			}
 			
@@ -162,8 +162,46 @@ on_actions = {
 			}
 		}
 		
+		##Syria and Lebanon get Hoi3 color when independent and names were enabled
+		if = {
+			limit = {
+				original_tag = SYR
+				has_global_flag = names_chosen
+			}
+			
+			SYR = { 
+				set_cosmetic_tag = NE_SYR
+			}
+		}
 		
+		if = {
+			limit = {
+				original_tag = LEB
+				has_global_flag = names_chosen
+			}
+			
+			LEB = { 
+				set_cosmetic_tag = NE_LEB
+			}
+		}
 		
+		##Other French puppets lose the cosmetic tag
+		if = {
+			limit = {
+				original_tag = MOR
+			}
+			
+			drop_cosmetic_tag = yes
+		}
+		
+		if = {
+			limit = {
+				original_tag = TUN
+			}
+			
+			drop_cosmetic_tag = yes
+		}
+
 		
 		
 		}

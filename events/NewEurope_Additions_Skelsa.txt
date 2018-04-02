@@ -2572,11 +2572,6 @@ country_event = {
 
 
 
-
-
-
-
-
 ##NEEDS HEAVY REWORK##
 ####FLAG CHANGES####
 
@@ -2643,7 +2638,7 @@ country_event = {
 	trigger = {
 	
 		tag = SOV
-		owns_state = 146
+		owns_state = 146		
 		NOT = { has_global_flag = renamed_vyborg }
 	}
 

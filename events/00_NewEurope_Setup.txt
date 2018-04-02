@@ -20,12 +20,10 @@ news_event = {
 		##WGR and GDR is already in the country files
 		WGR = {
 			set_capital = 51 
-			set_research_slots = 3
 		}
 
 		DDR = {
 			set_capital = 763 
-			set_research_slots = 3
 		}
 		
 		ITA = {		
@@ -218,35 +216,27 @@ news_event = {
 		}
 		
 		SYR = {		
-		
-			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_SYR_FRA ##Syrian Republic
-		
-			#set_politics = { ruling_party = neutrality elections_allowed = no } 
-			#add_popularity = { ideology = neutrality popularity = 0.90 } 
+
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 1 } 
 		}
 		
 		LEB = {		
-		
-			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_LEB_FRA
-			
-			#set_politics = { ruling_party = neutrality elections_allowed = no } 
-			#add_popularity = { ideology = neutrality popularity = 0.90 } 
+
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 1 } 
 		}
 		
 		MOR = {		
-		
-			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_LEB_FRA
-			
-			#set_politics = { ruling_party = neutrality elections_allowed = no } 
-			#add_popularity = { ideology = neutrality popularity = 0.90 } 
+
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 1 } 
 		}
 		
 		TUN = {		
-		
-			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_LEB_FRA
 			
-			#set_politics = { ruling_party = neutrality elections_allowed = no } 
-			#add_popularity = { ideology = neutrality popularity = 0.90 } 
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 1 } 
 		}
 			
 		

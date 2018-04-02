@@ -859,7 +859,8 @@ country_event = {
 					
 					##Vichy France (NAME (F), FLAG (F) and COLOR) gets its cosmetic in the hidden file
 					##Franco's Spain (NAME (F) and FLAG (F) gets its cosmetic in the hidden file
-					##Communist India (FLAG (C) and COLOR) are set when they're independent (also in the hidden file)
+					##Communist India (FLAG (C) and COLOR) are set when they're independent (in on_actions)
+					##Syria and Lebanon (FLAG, COLOR, NAME) are also in on_actions
 					
 					##IDEAS: Mongolia, Tannu Tuva
 					
