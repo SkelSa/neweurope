@@ -8,8 +8,8 @@ NE_waroperation_iraqinvasion = {
 		OR = {
 			tag = SOV
 			tag = ENG
-			is_historical_focus_on = yes
 		}
+		is_historical_focus_on = yes
 	}
 	
 }
