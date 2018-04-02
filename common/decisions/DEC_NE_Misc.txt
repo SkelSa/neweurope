@@ -121,7 +121,7 @@ Generic_ne_foreign_policy = {
 
 
 
-NE_waroperation_iraqinvasion = {
+NE_waroperation_iraqinvasion = { ##need localization!
 
     NE_warop_iraqinvasion = {
 	
@@ -134,12 +134,16 @@ NE_waroperation_iraqinvasion = {
 			}
 		}
 
+		ai_will_do = {
+			factor = 200				
+		}
+
 		available = {  ##this is the conditions of complete
 			OR = {
 				AND = {
 					AND = {
-						ENG = { has_opinion = { target = SOV value > 4 } }
-						SOV = { has_opinion = { target = ENG value > 4 } }
+						ENG = { has_opinion = { target = SOV value > -1 } }
+						SOV = { has_opinion = { target = ENG value > -1 } }
 					}
 			
 					any_country = {
@@ -147,7 +151,7 @@ NE_waroperation_iraqinvasion = {
 							tag = ENG
 							is_puppet_of = ENG
 						}
-						divisions_in_state = { state = 444 size > 3 }
+						divisions_in_state = { state = 444 size > 2 }
 					}
 			
 					any_country = {
@@ -156,9 +160,9 @@ NE_waroperation_iraqinvasion = {
 							is_puppet_of = SOV
 						}
 						AND = {
-							divisions_in_state = { state = 229 size > 3 }
-							divisions_in_state = { state = 230 size > 3 }
-							divisions_in_state = { state = 584 size > 3 }
+							divisions_in_state = { state = 229 size > 2 }
+							divisions_in_state = { state = 230 size > 2 }
+							divisions_in_state = { state = 584 size > 2 }
 						}
 					}
 				}
@@ -206,57 +210,89 @@ NE_waroperation_iraqinvasion = {
 	
 		is_good = no
 
-		days_mission_timeout = 365
+		days_mission_timeout = 145
 
-		timeout_effect = {  ##the timeout effect is bad effect
-			##later
+		timeout_effect = {
+			random_list = {
+				65 = { 
+					PER = { 
+						add_timed_idea = { idea = NE_iraniran days = 180 }
+						add_ai_strategy = {
+							type = alliance
+							id = "GER"
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = "SOV"
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = "ENG"
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = "RAJ"
+							value = 200
+						}
+					}
+				}
+				35 = {
+					GER = { 
+						add_to_faction = PER 
+						add_ai_strategy = {
+							type = protect
+							id = "PER"
+							value = 160
+						}
+					}
+					ITA = {
+						add_ai_strategy = {
+							type = protect
+							id = "PER"
+							value = 100
+						}
+					}
+					PER = {
+						add_ai_strategy = {
+							type = antagonize
+							id = "SOV"
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = "ENG"
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = "RAJ"
+							value = 200
+						}
+					}
+				}
+			}
 		}
-	
+
 		complete_effect = {
 			hidden_effect = {
-				set_global_flag = op_countenance
 				SOV = { diplomatic_relation = { country = ENG relation = non_aggression_pact active = yes } }
 				ENG = { diplomatic_relation = { country = SOV relation = non_aggression_pact active = yes } }
-				random_list = {
-					80 = {
-						ENG = { 
-							declare_war_on = { target = PER type = annex_everything }
-							add_to_war = { targeted_alliance = SOV enemy = PER }
-							add_to_war = { targeted_alliance = RAJ enemy = PER }
-							add_to_war = { targeted_alliance = AUS enemy = PER }
-							add_war_support = 0.02
-						}
-					}
-					20 = {
-						SOV = { 
-							declare_war_on = { target = PER type = annex_everything }
-							add_to_war = { targeted_alliance = ENG enemy = PER }
-							add_to_war = { targeted_alliance = RAJ enemy = PER }
-							add_to_war = { targeted_alliance = AUS enemy = PER }
-							add_war_support = 0.02
-						}
-					}
+				ENG = { 
+					declare_war_on = { target = PER type = annex_everything }
+					add_to_war = { targeted_alliance = SOV enemy = PER }
+					add_to_war = { targeted_alliance = RAJ enemy = PER }
+					add_to_war = { targeted_alliance = AUS enemy = PER }
+					add_war_support = 0.02
 				}
-				SOV = {
-					add_ai_strategy = {
-						type = conquer
-						id = "PER"
-						value = 185
-					}
-				}
-				ENG = {
-					add_ai_strategy = {
-						type = conquer
-						id = "PER"
-						value = 185
-					}
-				}
-				RAJ = {
-					add_ai_strategy = {
-						type = conquer
-						id = "PER"
-						value = 185
-					}
+				SOV = { 
+					declare_war_on = { target = PER type = annex_everything }
+					add_to_war = { targeted_alliance = ENG enemy = PER }
+					add_to_war = { targeted_alliance = RAJ enemy = PER }
+					add_to_war = { targeted_alliance = AUS enemy = PER }
+					add_war_support = 0.02
 				}
 			}
 			hidden_effect = { ENG = { add_timed_idea = { days = 60 idea = NE_alone } } }
@@ -266,5 +302,166 @@ NE_waroperation_iraqinvasion = {
 		}
 
     }
+
+}
+
+NE_rla_dec = { ##need localization!
+
+	NE_rla_form = { ##need localization!
+	
+		icon = rla_form
+
+		allowed = {
+			tag = GER
+		}
+
+		fire_only_once = yes
+
+		available = {
+			AND = {
+				GER = { surrender_progress > 0.05 }
+				SOV = { surrender_progress < 0.05 }
+			}
+			AND = {
+				GER = { 
+					has_manpower < 480000
+					has_manpower > 10000
+				}
+			}
+		}
+
+	
+
+		cost = 25
+
+		ai_will_do = {
+			base = 50
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	
+		visible = {
+
+			AND = {
+				GER = {
+					has_government = fascism
+					has_war_with = SOV
+				}
+				SOV = { has_government = communism }
+				ROA = { exists = no }
+			}
+			AND = {
+				96 = { is_controlled_by = SOV }
+				95 = { is_controlled_by = SOV }
+				94 = { is_controlled_by = SOV }
+				93 = { is_controlled_by = SOV }
+				91 = { is_controlled_by = SOV }
+				89 = { is_controlled_by = SOV }
+				192 = { is_controlled_by = SOV }
+				198 = { is_controlled_by = SOV }
+				199 = { is_controlled_by = SOV }
+			}
+		}
+		
+		complete_effect = {
+
+			GER = { give_military_access = ROA }
+			ROA = {
+				add_to_war = { targeted_alliance = GER enemy = SOV }
+				give_military_access = GER
+			}
+	
+			random_owned_state = {
+				limit = {
+					any_neighbor_state = { 
+						is_owned_by = SOV
+						state_population < 1000000
+					} 
+				}
+				ROA = { transfer_state = PREV }
+			}
+	
+			random_owned_state = {
+				limit = {
+					any_neighbor_state = {
+						is_owned_by = ROA
+						state_population < 450000
+					} 
+				}
+				ROA = { transfer_state = PREV }
+			}
+			if = {  ##Give them guns and some aircrafts
+				limit = { GER = { has_equipment = { infantry_equipment > 100000 } } }
+				send_equipment = { target = ROA type = infantry_equipment amount = 50000 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { infantry_equipment > 50000 } } }
+				send_equipment = { target = ROA type = infantry_equipment amount = 25000 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { infantry_equipment > 10000 } } }
+				send_equipment = { target = ROA type = infantry_equipment amount = 5400 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { infantry_equipment < 8000 } } }
+				send_equipment = { target = ROA type = infantry_equipment amount = 1000 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { artillery_equipment > 25000 } } }
+				send_equipment = { target = ROA type = artillery_equipment amount = 25000 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { artillery_equipment > 6500 } } }
+				send_equipment = { target = ROA type = artillery_equipment amount = 2500 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { artillery_equipment > 1500 } } }
+				send_equipment = { target = ROA type = artillery_equipment amount = 680 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { artillery_equipment > 500 } } }
+				send_equipment = { target = ROA type = artillery_equipment amount = 250 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { motorized_equipment > 4000 } } }
+				send_equipment = { target = ROA type = motorized_equipment amount = 2100 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { motorized_equipment > 1000 } } }
+				send_equipment = { target = ROA type = motorized_equipment amount = 280 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { motorized_equipment < 900 } } }
+				send_equipment = { target = ROA type = motorized_equipment amount = 100 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { fighter_equipment > 20 } } }
+				send_equipment = { target = ROA type = fighter_equipment amount = 16 }
+			}
+			if = {
+				limit = { GER = { has_equipment = { tac_bomber_equipment > 20 } } }
+				send_equipment = { target = ROA type = tac_bomber_equipment amount = 12 }
+			}
+			GER = { 
+				add_opinion_modifier = { target = ROA modifier = liberation_army_formation }
+				add_to_faction = ROA
+			}
+			ROA = { add_opinion_modifier = { target = GER modifier = liberation_army_formation } }
+	
+			ROA = {
+				create_corps_commander = {
+					name = "Andrey Vlasov"
+					portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Andrey_Vlasov.dds"
+					traits = { winter_specialist }
+					id = 412
+					skill = 3
+				}
+				hidden_effect = { load_oob = "RLA_forces_oob" }
+				add_manpower = 185000
+			}
+		}
+	}
 
 }

@@ -71,25 +71,35 @@ units = {
 		name = "600. Infanterie-Division (Russ.)"
 		location = 11542
 		division_template = "Infanterie-Division (Russ.)"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "650. Infanterie-Division (Russ.)"
 		location = 11542
 		division_template = "Infanterie-Division (Russ.)"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "700. Infanterie-Division (Russ.)"
 		location = 11542
 		division_template = "Infanterie-Division (Russ.)"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "XV. SS-Kosaken-Kavallerie-Korps"
 		location = 11542
 		division_template = "XV. SS-Kosaken-Kavallerie-Korps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "Russisches Schutzkorps"
 		location = 11542
 		division_template = "Russisches Schutzkorps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
 }

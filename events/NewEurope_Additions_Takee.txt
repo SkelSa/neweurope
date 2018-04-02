@@ -375,143 +375,6 @@ country_event = { ##A new research slot for the USSR
 	}
 }
 
-country_event = { ##Russian Liberation Army formation
-	id = ne_takee.6
-	title = ne_takee.6.t
-	desc = ne_takee.6.d
-	picture = GFX_report_event_fascist_speech
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = GER
-		AND = {
-			GER = {
-				has_government = fascism
-				has_war_with = SOV
-			}
-			SOV = { has_government = communism }
-			ROA = { exists = no }
-		}
-		AND = {
-			GER = { surrender_progress > 0.05 }
-			SOV = { surrender_progress < 0.05 }
-		}
-		AND = {
-			96 = { is_controlled_by = SOV }
-			95 = { is_controlled_by = SOV }
-			94 = { is_controlled_by = SOV }
-			93 = { is_controlled_by = SOV }
-			91 = { is_controlled_by = SOV }
-			89 = { is_controlled_by = SOV }
-			192 = { is_controlled_by = SOV }
-			198 = { is_controlled_by = SOV }
-			199 = { is_controlled_by = SOV }
-		}
-	}
-
-	option = {
-		name = ne_takee.6.a
-		ai_chance = { factor = 100 }
-		GER = { give_military_access = ROA }
-		ROA = {
-			add_to_war = { targeted_alliance = GER enemy = SOV }
-			give_military_access = GER
-		}
-
-		random_owned_state = {
-			limit = {
-				any_neighbor_state = { 
-					is_owned_by = SOV
-					state_population < 1000000
-				} 
-			}
-			ROA = { transfer_state = PREV }
-		}
-
-		random_owned_state = {
-			limit = {
-				any_neighbor_state = {
-					is_owned_by = ROA
-					state_population < 250000
-				} 
-			}
-			ROA = { transfer_state = PREV }
-		}
-		if = {  ##Give them guns and some aircrafts
-			limit = { GER = { has_equipment = { infantry_equipment > 100000 } } }
-			send_equipment = { target = ROA type = infantry_equipment amount = 50000 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { infantry_equipment > 50000 } } }
-			send_equipment = { target = ROA type = infantry_equipment amount = 25000 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { infantry_equipment > 10000 } } }
-			send_equipment = { target = ROA type = infantry_equipment amount = 5400 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { infantry_equipment < 8000 } } }
-			send_equipment = { target = ROA type = infantry_equipment amount = 1000 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { artillery_equipment > 25000 } } }
-			send_equipment = { target = ROA type = artillery_equipment amount = 25000 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { artillery_equipment > 6500 } } }
-			send_equipment = { target = ROA type = artillery_equipment amount = 2500 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { artillery_equipment > 1500 } } }
-			send_equipment = { target = ROA type = artillery_equipment amount = 680 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { artillery_equipment > 500 } } }
-			send_equipment = { target = ROA type = artillery_equipment amount = 250 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { motorized_equipment > 4000 } } }
-			send_equipment = { target = ROA type = motorized_equipment amount = 2100 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { motorized_equipment > 1000 } } }
-			send_equipment = { target = ROA type = motorized_equipment amount = 280 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { motorized_equipment < 900 } } }
-			send_equipment = { target = ROA type = motorized_equipment amount = 100 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { fighter_equipment > 20 } } }
-			send_equipment = { target = ROA type = fighter_equipment amount = 16 }
-		}
-		if = {
-			limit = { GER = { has_equipment = { tac_bomber_equipment > 20 } } }
-			send_equipment = { target = ROA type = tac_bomber_equipment amount = 12 }
-		}
-		GER = { 
-			add_opinion_modifier = { target = ROA modifier = liberation_army_formation }
-			add_to_faction = ROA
-		}
-		ROA = { add_opinion_modifier = { target = GER modifier = liberation_army_formation } }
-
-		ROA = {
-			create_corps_commander = {
-				name = "Andrey Vlasov"
-				portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Andrey_Vlasov.dds"
-				traits = { winter_specialist }
-				id = 412
-				skill = 3
-			}
-			hidden_effect = { load_oob = "RLA_forces_oob" }
-			add_manpower = 140000
-		}
-
-	}
-
-}
-
 country_event = {  ##Germany name change event
 	id = ne_takee.7
 	title = ne_takee.7.t
@@ -570,196 +433,6 @@ country_event = {  ##Germany name change event
 
 }
 
-country_event = {  ##Anglo-Soviet invasion of Iran
-	id = ne_takee.9
-	title = ne_takee.9.t
-	desc = ne_takee.9.d
-	picture = GFX_report_event_soviet_invasion_map
-
-	fire_only_once = yes
-
-	trigger = {
-
-		OR = {
-			tag = SOV
-			tag = ENG
-		}
-
-		AND = {
-			SOV = { has_war_with = GER }
-			ENG = { has_war_with = GER }
-			NOT = {
-				SOV = { has_war_with = ENG }
-			}
-		}
-
-		PER = {
-			exists = yes
-			NOT = {
-				OR = { 
-					has_government = communism
-					has_government = democratic
-				}
-				OR = {
-					has_war_with = SOV
-					has_war_with = ENG
-				}
-			}
-		}
-
-		AND = {
-			ENG = { has_opinion = { target = SOV value > -5 } }
-			SOV = { has_opinion = { target = ENG value > -5 } }
-		}
-	}
-
-	option = {
-		name = ne_takee.9.a
-		SOV = {
-			add_ai_strategy = {
-				type = conquer
-				id = "PER"
-				value = 105
-			}
-		}
-		RAJ = {
-			if = {
-				limit = { is_puppet_of = ENG }
-				add_ai_strategy = {
-					type = conquer
-					id = "PER"
-					value = 99
-				}
-			}
-		}
-		AST = {
-			if = {
-				limit = { is_puppet_of = ENG }
-				add_ai_strategy = {
-					type = conquer
-					id = "PER"
-					value = 69
-				}
-			}
-		}
-		ENG = {
-			add_ai_strategy = {
-				type = conquer
-				id = "PER"
-				value = 69
-			}
-		}
-		SOV = { diplomatic_relation = { country = ENG relation = non_aggression_pact active = yes } }
-		ENG = { diplomatic_relation = { country = SOV relation = non_aggression_pact active = yes } }
-
-		hidden_effect = {
-			random_list = {
-				50 = { SOV = { country_event = { days = 80 id = ne_takee.10 } } }
-				50 = { ENG = { country_event = { days = 80 id = ne_takee.10 } } }
-			}
-		}
-		custom_effect_tooltip = iran_war_tooltip.1.tt
-	}
-
-}
-
-country_event = {
-	id = ne_takee.10
-	title = ne_takee.10.t
-	desc = ne_takee.10.d
-	picture = GFX_report_event_soviet_invasion_map
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	immediate = { 
-		hidden_effect = { ENG = { add_timed_idea = { days = 60 idea = NE_alone } } }
-		hidden_effect = { SOV = { add_timed_idea = { days = 60 idea = NE_alone } } }
-		hidden_effect = { PER = { add_timed_idea = { days = 60 idea = NE_alone } } }
-	}
-
-	option = {
-		name = ne_takee.10.a
-		if = {
-			limit = {
-				tag = SOV
-			}
-			hidden_effect = {
-				declare_war_on = { target = PER type = annex_everything }
-				ENG = { country_event = { hours = 2 id = ne_takee.11 } }
-			}
-		}
-		if = {
-			limit = {
-				tag = ENG
-			}
-			hidden_effect = {
-				declare_war_on = { target = PER type = annex_everything }
-				SOV = { country_event = { hours = 2 id = ne_takee.11 } }
-			}
-		}
-		set_global_flag = op_countenance
-		custom_effect_tooltip = iran_war_tooltip.2.tt
-	}
-
-}
-
-country_event = {
-	id = ne_takee.11
-	title = ne_takee.11.t
-	desc = ne_takee.11.d
-	picture = GFX_report_event_soviet_invasion_map
-	
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		name = ne_takee.11.a
-		if = {
-			limit = {
-				tag = ENG
-			}
-			ENG = {
-				add_to_war = {
-					targeted_alliance = AST
-					enemy = PER
-				}
-				add_to_war = {
-					targeted_alliance = RAJ
-					enemy = PER
-				}
-				add_to_war = {
-					targeted_alliance = SOV
-					enemy = PER
-				}
-			}
-		}
-		if = {
-			limit = {
-				tag = SOV
-			}
-			SOV = {
-				add_to_war = {
-					targeted_alliance = ENG		
-					enemy = PER
-				}
-			}
-			ENG = {
-				add_to_war = {
-					targeted_alliance = AST
-					enemy = PER
-				}
-				add_to_war = {
-					targeted_alliance = RAJ
-					enemy = PER
-				}
-			}
-		}
-		custom_effect_tooltip = iran_war_tooltip.3.tt
-	}
-}
-
 country_event = {
 	id = ne_takee.12
 	title = ne_takee.12.t
@@ -772,27 +445,13 @@ country_event = {
 
 		OR = {
 			AND = {
-				tag = SOV
-				OR = {
-					419 = { is_controlled_by = SOV }
-					420 = { is_controlled_by = SOV }
-					266 = { is_controlled_by = SOV }
-					416 = { is_controlled_by = SOV }
-					SOV = { has_full_control_of_state = 419 }
-					SOV = { has_full_control_of_state = 420 }
-					SOV = { has_full_control_of_state = 266 }
-					SOV = { has_full_control_of_state = 416 }
-				}
+				tag = ENG
+				is_ai = no
 			}
 
 			AND = {
-				tag = ENG
-				OR = {
-					413 = { is_controlled_by = ENG }
-					412 = { is_controlled_by = ENG }
-					ENG = { has_full_control_of_state = 413 }
-					ENG = { has_full_control_of_state = 412 }
-				}
+				tag = SOV
+				is_ai = no
 			}
 		}
 
@@ -802,12 +461,17 @@ country_event = {
 				has_war_with = ENG
 			}
 			OR = {
-				surrender_progress > 0.05
+				surrender_progress > 0.024
 				has_capitulated = yes
 			}
 		}
 
-		has_global_flag = op_countenance
+		NOT = {
+			any_country = {
+				has_decision = NE_warop_iraqinvasion
+			}
+		}
+
 	}
 
 	option = {
@@ -852,11 +516,11 @@ country_event = {
 		}
 		PER = { 
 			add_stability = -0.3
-			add_war_support = 0.2
-			add_popularity = { ideology = communism popularity = 0.25 }
-			add_popularity = { ideology = democratic popularity = 0.25 }
+			add_war_support = -0.4
+			add_popularity = { ideology = communism popularity = 0.15 }
+			add_popularity = { ideology = democratic popularity = 0.15 }
+			add_popularity = { ideology = fascism popularity = -0.40 }
 		}
-		hidden_effect = { clr_global_flag = op_countenance }
 		custom_effect_tooltip = iran_war_tooltip.4.tt
 	}
 
