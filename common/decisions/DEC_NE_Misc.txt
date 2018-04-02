@@ -175,7 +175,7 @@ NE_waroperation_iraqinvasion = { ##need localization!
 			}
 		}	
 	
-		visible = {
+		activation = {
 			AND = {
 				SOV = { has_war_with = GER }
 				ENG = { has_war_with = GER }
