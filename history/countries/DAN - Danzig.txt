@@ -1,20 +1,22 @@
 ﻿####DANZIG####
 
-##NATION IS THERE FROM THE START
-##REQUIRES 1939!!!
+##NATION IS THERE FROM THE START##
+##REQUIRES 1936 AND 1939 INFO!##
+
 
 capital = 784
 
-oob = "DAN_OOB"
+oob = "DAN_1936"
 
-set_research_slots = 1
+set_stability = 0.40
+set_war_support = 0.70
 
-set_stability = 0.50
-set_war_support = 0.60
+set_research_slots = 1##Weak nation
 
 set_convoys = 5
 
-# Starting tech (Copy of Poland 1939)
+
+# Starting tech (COPY OF POLAND 1936)
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -37,23 +39,23 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 20
+			popularity = 10
 		}
 
 		fascism = {
-			popularity = 20
+			popularity = 70
 		}
 		
 		communism = {
-			popularity = 20
+			popularity = 0
 		}
 		
 		neutrality = { 
-			popularity = 40
+			popularity = 20
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
@@ -77,9 +79,9 @@ set_politics = {
 	complete_national_focus = production_effort
 			
 	
-	oob = "DAN_OOB"
+	oob = "DAN_1939"
 		
-	##Copy of Poland	
+	##COPY OF POLAND 1939
 	set_technology = {
 		basic_light_tank = 1
 		tactical_bomber1 = 1
@@ -120,6 +122,7 @@ set_politics = {
 		concentrated_industry3 = 1
 		concentrated_industry4 = 1
 	}
+	
 	create_equipment_variant = {
 		name = "PZL P.43"
 		type = CAS_equipment_1
@@ -132,7 +135,6 @@ set_politics = {
 	}	
 	
 }
-
 
 
 1939.1.1 = {
@@ -163,9 +165,6 @@ set_politics = {
 	}
 }
 
-
-
-
 create_country_leader = {
 	name = "Arthur Greiser"
 	desc = ""
@@ -178,4 +177,13 @@ create_country_leader = {
 }
 
 
-
+create_equipment_variant = {
+	name = "PZL P.24"
+	type = fighter_equipment_0
+	upgrades = {
+		plane_gun_upgrade = 3
+		plane_range_upgrade = 0  
+		plane_engine_upgrade = 1
+		plane_reliability_upgrade = 3
+	}
+}

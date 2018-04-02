@@ -30,8 +30,13 @@ news_event = {
 	picture = GFX_prc_proclamation
 	
 	major = yes
-	is_triggered_only = yes
 	#fire_only_once = yes
+	
+	trigger = {
+	
+		PRC = { has_completed_focus = PRC_proclaim_the_peoples_republic }
+	
+	}
 	
 	option = {
 		name = ne_news.2.a
@@ -39,8 +44,7 @@ news_event = {
 		
 			OR = {	
 				has_government = fascism
-				has_government = neutrality
-				
+				has_government = neutrality				
 				tag = PRC
 			}
 			

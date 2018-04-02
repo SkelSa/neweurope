@@ -822,350 +822,354 @@ country_event = {
 			
 			}
 		
-	
-			#Apply all of my changes and exit the settings menu
-			if = {
-				limit = {
-					has_global_flag = names_chosen
+			hidden_effect = {
+		
+		
+				#Apply all of my changes and exit the settings menu
+				if = {
+					limit = {
+						has_global_flag = names_chosen
+					}
+					
+					##CHECk ALL OF THESE
+					#set_global_flag = ne_india_cosmetic_enabled
+					GER = { set_cosmetic_tag = NE_DEU } #DONE	#FLAG (F) and NAME (F) 
+					ITA = { set_cosmetic_tag = NE_ITA } #DONE	#NAME (D + F)
+					JAP = { set_cosmetic_tag = NE_EOJ } #DONE	#FLAG (F) and NAME (F)
+					WGR = { set_cosmetic_tag = NE_WGR } #DONE	#NAME (D) and COLOR 
+					DDR = { set_cosmetic_tag = NE_DDR } #DONE	#FLAG (C) and NAME (C) AND COLOR	also flag event
+					GRE = { set_cosmetic_tag = NE_GRE } #DONE	#FLAG (N+C) and NAME (N)			also flag and name change when communist wins
+					CZE = { set_cosmetic_tag = NE_CZE } #DONE	#FLAG (C) and NAME (C)
+					BUL = { set_cosmetic_tag = NE_BUL } #DONE	#NAME (C)
+					ROM = { set_cosmetic_tag = NE_ROM } #DONE	#NAME (C)
+					POL = { set_cosmetic_tag = NE_POL } #DONE	#FLAG (C)
+					HUN = { set_cosmetic_tag = NE_HUN } #DONE	#NAME (N+F) and FLAG (N+F+C)			also flag events									##also do something with Hungary's focus
+					SPR = { set_cosmetic_tag = NE_SPR } #DONE	#NAME (C) and FLAG (D+C)		also flag events for Franco and Diaz
+					PAK = {set_cosmetic_tag = NE_PAK } #DONE	#NAME (D) and COLOR
+					KOR = {set_cosmetic_tag = NE_KOR } #DONE	#NAME (D) and COLOR
+					PRC = {set_cosmetic_tag = NE_CSR } #DONE	#FLAG (C) and NAME (C)
+					YUN = {set_cosmetic_tag = NE_YUN } #DONE	FLAG (N) and #NAME (N) 
+					LAO = {set_cosmetic_tag = NE_LAO } #DONE	FLAG (C)
+					#USA = {set_cosmetic_tag = NE_USA } #DONE	#FLAG (D)							also flag events when Alaska and Haiwaii join and the communism mega event ####USA AND SOV deactivated until later!
+					#SOV = {set_cosmetic_tag = NE_SOV } #DONE	#FLAG (C)							also flag events (3 times)
+					CHI = {set_cosmetic_tag = NE_CHI}  #DONE	NAME (N)
+					#ICU = {set_cosmetic_tag = NE_ICU } 	#FLAG (ALL)	NAME (D+N)						
+					#ITS = {set_cosmetic_tag = NE_ITS}  	#FLAG (ALL)	NAME (F)
+					
+					
+					##Vichy France (NAME (F), FLAG (F) and COLOR) gets its cosmetic in the hidden file
+					##Franco's Spain (NAME (F) and FLAG (F) gets its cosmetic in the hidden file
+					##Communist India (FLAG (C) and COLOR) are set when they're independent (in on_actions)
+					##Syria and Lebanon (FLAG, COLOR, NAME) are also in on_actions
+					
+					##IDEAS: Mongolia, Tannu Tuva
+					
 				}
 				
-				##CHECk ALL OF THESE
-				#set_global_flag = ne_india_cosmetic_enabled
-				GER = { set_cosmetic_tag = NE_DEU } #DONE	#FLAG (F) and NAME (F) 
-				ITA = { set_cosmetic_tag = NE_ITA } #DONE	#NAME (D + F)
-				JAP = { set_cosmetic_tag = NE_EOJ } #DONE	#FLAG (F) and NAME (F)
-				WGR = { set_cosmetic_tag = NE_WGR } #DONE	#NAME (D) and COLOR 
-				DDR = { set_cosmetic_tag = NE_DDR } #DONE	#FLAG (C) and NAME (C) AND COLOR	also flag event
-				GRE = { set_cosmetic_tag = NE_GRE } #DONE	#FLAG (N+C) and NAME (N)			also flag and name change when communist wins
-				CZE = { set_cosmetic_tag = NE_CZE } #DONE	#FLAG (C) and NAME (C)
-				BUL = { set_cosmetic_tag = NE_BUL } #DONE	#NAME (C)
-				ROM = { set_cosmetic_tag = NE_ROM } #DONE	#NAME (C)
-				POL = { set_cosmetic_tag = NE_POL } #DONE	#FLAG (C)
-				HUN = { set_cosmetic_tag = NE_HUN } #DONE	#NAME (N+F) and FLAG (N+F+C)			also flag events									##also do something with Hungary's focus
-				SPR = { set_cosmetic_tag = NE_SPR } #DONE	#NAME (C) and FLAG (D+C)		also flag events for Franco and Diaz
-				PAK = {set_cosmetic_tag = NE_PAK } #DONE	#NAME (D) and COLOR
-				KOR = {set_cosmetic_tag = NE_KOR } #DONE	#NAME (D) and COLOR
-				PRC = {set_cosmetic_tag = NE_CSR } #DONE	#FLAG (C) and NAME (C)
-				YUN = {set_cosmetic_tag = NE_YUN } #DONE	FLAG (N) and #NAME (N) 
-				LAO = {set_cosmetic_tag = NE_LAO } #DONE	FLAG (C)
-				#USA = {set_cosmetic_tag = NE_USA } #DONE	#FLAG (D)							also flag events when Alaska and Haiwaii join and the communism mega event ####USA AND SOV deactivated until later!
-				#SOV = {set_cosmetic_tag = NE_SOV } #DONE	#FLAG (C)							also flag events (3 times)
-				CHI = {set_cosmetic_tag = NE_CHI}  #DONE	NAME (N)
-				#ICU = {set_cosmetic_tag = NE_ICU } 	#FLAG (ALL)	NAME (D+N)						
-				#ITS = {set_cosmetic_tag = NE_ITS}  	#FLAG (ALL)	NAME (F)
 				
-				
-				##Vichy France (NAME (F), FLAG (F) and COLOR) gets its cosmetic in the hidden file
-				##Franco's Spain (NAME (F) and FLAG (F) gets its cosmetic in the hidden file
-				##Communist India (FLAG (C) and COLOR) are set when they're independent (also in the hidden file)
-				
-				##IDEAS: Mongolia, Tannu Tuva
-				
+				##Better Leaders, ADD THE KOREANS to KOR
+				if = {
+					limit = {
+						has_global_flag = leaders_chosen
+					}
+					
+					#Bolesław Bierut
+					POL = {				
+						create_country_leader = {
+							name = "Bolesław Bierut"
+							desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
+							picture = "Portrait_POL_Boleslaw_Bierut.dds"
+							expire = "1965.1.1"
+							ideology = stalinism
+							traits = {
+								#
+							}
+						}	
+					}
 
-			}
-			
-			
-			##Better Leaders, ADD THE KOREANS to KOR
-			if = {
-				limit = {
-					has_global_flag = leaders_chosen
-				}
-				
-				#Bolesław Bierut
-				POL = {				
-					create_country_leader = {
-						name = "Bolesław Bierut"
-						desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
-						picture = "Portrait_POL_Boleslaw_Bierut.dds"
-						expire = "1965.1.1"
-						ideology = stalinism
-						traits = {
-							#
+					##Enver Hoxha, Albania
+					ALB = {
+					
+						create_country_leader = {
+							name = "Enver Hoxha"
+							desc = ""
+							picture = "Portrait_ALB_Enver_Hoxha.dds"
+							expire = "1965.1.1"
+							ideology = stalinism
+							traits = {
+								fortification_engineer
+							}
 						}
-					}	
-				}
+					}
+					
+					#Manual Azana, Spain (as communist)
+					SPR = {
+					
+						create_country_leader = {
+							name = "Manuel Azana"
+							desc = "POLITICS_MANUEL_AZANA_DESC"
+							picture = "Portrait_Spain_Manuel_Azana.dds"
+							expire = "1965.1.1"
+							ideology = anarchist_communism
+							traits = {
+								#
+							}
+						}
 
-				##Enver Hoxha, Albania
-				ALB = {
-				
-					create_country_leader = {
-						name = "Enver Hoxha"
-						desc = ""
-						picture = "Portrait_ALB_Enver_Hoxha.dds"
-						expire = "1965.1.1"
-						ideology = stalinism
-						traits = {
-							fortification_engineer
+					}
+					
+					##Borat, Kazakhstan
+					KAZ = {
+					
+						create_country_leader = {
+							name = "Borat Sagdiyev"
+							desc = ""
+							picture = "Portrait_KAZ_Borat.dds"
+							expire = "1975.3.1"
+							ideology = conservatism
+							traits = {
+								
+							}
 						}
+					}
+
+					#Gheorghiu-Dej
+					ROM = {
+					
+						create_country_leader = {
+							name = "Gheorghe Gheorghiu-Dej"
+							desc = "POLITICS_CONSTANTIN_PARHON_DESC"
+							picture = "Portrait_ROM_Gheorghe_Gheorghiu-Dej.dds"
+							expire = "1965.1.1"
+							ideology = leninism
+							traits = {
+								#
+							}
+						}
+
 					}
 				}
 				
-				#Manual Azana, Spain (as communist)
-				SPR = {
 				
-					create_country_leader = {
-						name = "Manuel Azana"
-						desc = "POLITICS_MANUEL_AZANA_DESC"
-						picture = "Portrait_Spain_Manuel_Azana.dds"
-						expire = "1965.1.1"
-						ideology = anarchist_communism
-						traits = {
-							#
-						}
+				##USSR independent SSRs
+				if = {
+					limit = {
+						has_global_flag = SSR_chosen
 					}
-
+					
+					##_1 is the version without color!
+					LAT = {set_cosmetic_tag = NE_LAT_SSR_1}
+					LIT = {set_cosmetic_tag = NE_LIT_SSR_1}
+					EST = {set_cosmetic_tag = NE_EST_SSR_1}
+					UKR = {set_cosmetic_tag = NE_UKR_SSR_1}
+					BLR = {set_cosmetic_tag = NE_BLR_SSR_1}
+					GEO = {set_cosmetic_tag = NE_GEO_SSR_1}
+					AZR = {set_cosmetic_tag = NE_AZR_SSR_1}
+					ARM = {set_cosmetic_tag = NE_ARM_SSR_1}
+					KAZ = {set_cosmetic_tag = NE_KAZ_SSR_1}
+					UZB = {set_cosmetic_tag = NE_UZB_SSR_1}
+					TAJ = {set_cosmetic_tag = NE_TAJ_SSR_1}
+					TRK = {set_cosmetic_tag = NE_TRK_SSR_1}
+					KGZ = {set_cosmetic_tag = NE_KGZ_SSR_1}
+					MOL = {set_cosmetic_tag = NE_MOL_SSR_1}						
 				}
 				
-				##Borat, Kazakhstan
-				KAZ = {
 				
-					create_country_leader = {
-						name = "Borat Sagdiyev"
-						desc = ""
-						picture = "Portrait_KAZ_Borat.dds"
-						expire = "1975.3.1"
-						ideology = conservatism
-						traits = {
+				##USA/USSR name long
+				if = {
+					limit = {
+						has_global_flag = USA_USSR_Long
+					}
+					
+					#long version
+					SOV = { set_cosmetic_tag = NE_USS_1 }
+					USA = { set_cosmetic_tag = NE_USA_1 }					
+				}
+				
+				
+				##USA/USSR name short
+				if = {
+					limit = {
+						has_global_flag = USA_USSR_Short
+					}
+					
+					##short versions
+					SOV = { set_cosmetic_tag = NE_USS }
+					USA = { set_cosmetic_tag = NE_USA }				
+				}
+				
+				
+				##Neutrality chosen
+				if = {
+					limit = {
+						has_global_flag = Neutrality_chosen
+					}
+					
+					TUR = { add_ideas = NE_neutrality }
+					SWE = { add_ideas = NE_neutrality }
+					SWI = { add_ideas = NE_neutrality }
+					IRE = { add_ideas = NE_neutrality }				
+					YEM = { add_ideas = NE_neutrality }
+					OMA = { add_ideas = NE_neutrality }
+					BHU = { add_ideas = NE_neutrality }
+					NEP = { add_ideas = NE_neutrality }
+					TIB = { add_ideas = NE_neutrality }
+					SIK = { add_ideas = NE_neutrality }				
+					FIN = { add_ideas = NE_neutrality }
+					EST = { add_ideas = NE_neutrality }
+					LAT = { add_ideas = NE_neutrality }
+					LIT = { add_ideas = NE_neutrality }	
+					IRQ = { add_ideas = NE_neutrality }
+					
+					IRQ = { add_ideas = NE_alone }
+					BHU = { add_ideas = NE_alone }
+					
+				}
+				
+				
+				#Stricter faction joining rules
+				if = {
+					limit = {
+						has_global_flag = ne_strict_faction
+					}
+					
+				##EVENT TO REMOVE AMERICAN GUARANTEE WHEN GUARANTEED COUNTRY IS COMMUNIST WITH 80% SUPPORT EDIT			
+				}
+				
+				##USSR independent SSRs
+				if = {
+					limit = {
+						has_global_flag = ne_puppet_ssr
+					}
+					
+					##release SSRs
+					SOV = {							
+						release = BLR
+						release = UKR
+						release = AZR
+						release = ARM
+						release = GEO
+						release = KAZ
+						release = TRK
+						release = TAJ
+						release = KGZ
+						release = UZB			
+					}
+
+					##puppet SSRs
+					SOV = {
+
+						if = {			
+							limit = {
+								has_dlc = "Together for Victory"
+							}
+							
+							set_autonomy = {
+								target = BLR
+								autonomous_state = autonomy_ssr
+							}
+							
+							set_autonomy = {
+								target = UKR
+								autonomous_state = autonomy_ssr
+							}
+							
+							set_autonomy = {
+								target = ARM
+								autonomous_state = autonomy_ssr
+							}
+							
+							set_autonomy = {
+								target = GEO
+								autonomous_state = autonomy_ssr
+							}
+							
+							set_autonomy = {
+								target = AZR
+								autonomous_state = autonomy_ssr
+							}
+							
+							set_autonomy = {
+								target = KAZ
+								autonomous_state = autonomy_ssr
+							}
+							
+							set_autonomy = {
+								target = UZB
+								autonomous_state = autonomy_ssr
+							}
+							
+							set_autonomy = {
+								target = TAJ
+								autonomous_state = autonomy_ssr
+							}
+							
+							set_autonomy = {
+								target = KGZ
+								autonomous_state = autonomy_ssr
+							}
+							
+							set_autonomy = {
+								target = TRK
+								autonomous_state = autonomy_ssr
+							}
+							
+							else = {
+								puppet = BLR
+								puppet = UKR
+								puppet = ARM
+								puppet = AZR
+								puppet = GEO
+								puppet = KAZ
+								puppet = UZB
+								puppet = TRK
+								puppet = KGZ
+								puppet = TAJ
+							}
 							
 						}
-					}
+				
+
+						dismantle_faction = yes
+						
+						end_puppet = TAN
+						end_puppet = MON 
+						
+						give_guarantee = TAN
+						give_guarantee = MON
+						
+						create_faction = "soviet_union"
+						add_to_faction = BLR
+						add_to_faction = UKR
+						add_to_faction = AZR
+						add_to_faction = GEO
+						add_to_faction = ARM
+						add_to_faction = KAZ
+						add_to_faction = UZB
+						add_to_faction = TRK
+						add_to_faction = TAJ
+						add_to_faction = KGZ
+
+					}					
 				}
 
-				#Gheorghiu-Dej
-				ROM = {
 				
-					create_country_leader = {
-						name = "Gheorghe Gheorghiu-Dej"
-						desc = "POLITICS_CONSTANTIN_PARHON_DESC"
-						picture = "Portrait_ROM_Gheorghe_Gheorghiu-Dej.dds"
-						expire = "1965.1.1"
-						ideology = leninism
-						traits = {
-							#
-						}
-					}
-
-				}
-			}
-			
-			
-			##USSR independent SSRs
-			if = {
-				limit = {
-					has_global_flag = SSR_chosen
-				}
-				
-				##_1 is the version without color!
-				LAT = {set_cosmetic_tag = NE_LAT_SSR_1}
-				LIT = {set_cosmetic_tag = NE_LIT_SSR_1}
-				EST = {set_cosmetic_tag = NE_EST_SSR_1}
-				UKR = {set_cosmetic_tag = NE_UKR_SSR_1}
-				BLR = {set_cosmetic_tag = NE_BLR_SSR_1}
-				GEO = {set_cosmetic_tag = NE_GEO_SSR_1}
-				AZR = {set_cosmetic_tag = NE_AZR_SSR_1}
-				ARM = {set_cosmetic_tag = NE_ARM_SSR_1}
-				KAZ = {set_cosmetic_tag = NE_KAZ_SSR_1}
-				UZB = {set_cosmetic_tag = NE_UZB_SSR_1}
-				TAJ = {set_cosmetic_tag = NE_TAJ_SSR_1}
-				TRK = {set_cosmetic_tag = NE_TRK_SSR_1}
-				KGZ = {set_cosmetic_tag = NE_KGZ_SSR_1}
-				MOL = {set_cosmetic_tag = NE_MOL_SSR_1}						
-			}
-			
-			
-			##USA/USSR name long
-			if = {
-				limit = {
-					has_global_flag = USA_USSR_Long
-				}
-				
-				#long version
-				SOV = { set_cosmetic_tag = NE_USS_1 }
-				USA = { set_cosmetic_tag = NE_USA_1 }					
-			}
-			
-			
-			##USA/USSR name short
-			if = {
-				limit = {
-					has_global_flag = USA_USSR_Short
-				}
-				
-				##short versions
-				SOV = { set_cosmetic_tag = NE_USS }
-				USA = { set_cosmetic_tag = NE_USA }				
-			}
-			
-			
-			##Neutrality chosen
-			if = {
-				limit = {
-					has_global_flag = Neutrality_chosen
-				}
-				
-				TUR = { add_ideas = NE_neutrality }
-				SWE = { add_ideas = NE_neutrality }
-				SWI = { add_ideas = NE_neutrality }
-				IRE = { add_ideas = NE_neutrality }				
-				YEM = { add_ideas = NE_neutrality }
-				OMA = { add_ideas = NE_neutrality }
-				BHU = { add_ideas = NE_neutrality }
-				NEP = { add_ideas = NE_neutrality }
-				TIB = { add_ideas = NE_neutrality }
-				SIK = { add_ideas = NE_neutrality }				
-				FIN = { add_ideas = NE_neutrality }
-				EST = { add_ideas = NE_neutrality }
-				LAT = { add_ideas = NE_neutrality }
-				LIT = { add_ideas = NE_neutrality }	
-				IRQ = { add_ideas = NE_neutrality }
-				
-				IRQ = { add_ideas = NE_alone }
-				BHU = { add_ideas = NE_alone }
-				
-			}
-			
-			
-			#Stricter faction joining rules
-			if = {
-				limit = {
-					has_global_flag = ne_strict_faction
-				}
-				
-			##EVENT TO REMOVE AMERICAN GUARANTEE WHEN GUARANTEED COUNTRY IS COMMUNIST WITH 80% SUPPORT EDIT			
-			}
-			
-			##USSR independent SSRs
-			if = {
-				limit = {
-					has_global_flag = ne_puppet_ssr
-				}
-				
-				##release SSRs
-				SOV = {							
-					release = BLR
-					release = UKR
-					release = AZR
-					release = ARM
-					release = GEO
-					release = KAZ
-					release = TRK
-					release = TAJ
-					release = KGZ
-					release = UZB			
-				}
-
-				##puppet SSRs
-				SOV = {
-
-					if = {			
-						limit = {
-							has_dlc = "Together for Victory"
-						}
-						
-						set_autonomy = {
-							target = BLR
-							autonomous_state = autonomy_ssr
-						}
-						
-						set_autonomy = {
-							target = UKR
-							autonomous_state = autonomy_ssr
-						}
-						
-						set_autonomy = {
-							target = ARM
-							autonomous_state = autonomy_ssr
-						}
-						
-						set_autonomy = {
-							target = GEO
-							autonomous_state = autonomy_ssr
-						}
-						
-						set_autonomy = {
-							target = AZR
-							autonomous_state = autonomy_ssr
-						}
-						
-						set_autonomy = {
-							target = KAZ
-							autonomous_state = autonomy_ssr
-						}
-						
-						set_autonomy = {
-							target = UZB
-							autonomous_state = autonomy_ssr
-						}
-						
-						set_autonomy = {
-							target = TAJ
-							autonomous_state = autonomy_ssr
-						}
-						
-						set_autonomy = {
-							target = KGZ
-							autonomous_state = autonomy_ssr
-						}
-						
-						set_autonomy = {
-							target = TRK
-							autonomous_state = autonomy_ssr
-						}
-						
-						else = {
-							puppet = BLR
-							puppet = UKR
-							puppet = ARM
-							puppet = AZR
-							puppet = GEO
-							puppet = KAZ
-							puppet = UZB
-							puppet = TRK
-							puppet = KGZ
-							puppet = TAJ
-						}
-						
-					}
-			
-
-					dismantle_faction = yes
-					
-					end_puppet = TAN
-					end_puppet = MON 
-					
-					give_guarantee = TAN
-					give_guarantee = MON
-					
-					create_faction = "soviet_union"
-					add_to_faction = BLR
-					add_to_faction = UKR
-					add_to_faction = AZR
-					add_to_faction = GEO
-					add_to_faction = ARM
-					add_to_faction = KAZ
-					add_to_faction = UZB
-					add_to_faction = TRK
-					add_to_faction = TAJ
-					add_to_faction = KGZ
-
-				}					
-			}
-
-			
-			##extra Research Slot
-			if = {
-				limit = {
-					has_global_flag = ne_additional_rd_slot 
-				}
-				
-				every_country = {
+				##extra Research Slot
+				if = {
 					limit = {
-						is_major = yes
+						has_global_flag = ne_additional_rd_slot 
 					}
-					add_research_slot = 1	
-				}
+					
+					every_country = {
+						limit = {
+							is_major = yes
+						}
+						add_research_slot = 1	
+					}
 
-				CHI = { add_research_slot = 1 }
+					CHI = { add_research_slot = 1 }
+				}
+				
 			}
 		
 	}

@@ -1,5 +1,12 @@
-﻿##neweurope - more leaders for Korea, Korea has far to many changes, thus the file stays where it is
-capital = 525 #South Korea - Seoul or Busan
+﻿####KOREA####
+
+##NATION IS A RELEASABLE##
+##REQUIRES 1936 AND 1939 INFO!##
+
+
+##neweurope - more leaders for Korea, Korea has far to many changes, thus the file stays where it is
+
+capital = 525 #Seoul
 
 oob = "KOR_1936"
 
@@ -10,7 +17,8 @@ set_research_slots = 2
 
 set_convoys = 5
 
-##Copy of Japan
+
+##CLONE OF JAPAN 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -22,8 +30,6 @@ set_technology = {
 	gw_artillery = 1
 	gwtank = 1
 	basic_light_tank = 1
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	cv_early_fighter = 1
 	cv_CAS1 = 1
 	cv_naval_bomber1 = 1
@@ -91,32 +97,33 @@ set_politics = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 		
-	
-	
 	oob = "KOR_1939"
+	
+	##Copy of Japan 1939
 	set_technology = {
+		#PLACEHOLDERS for vehicles
+		improved_submarine = 1
+		basic_destroyer = 1
+		improved_destroyer = 1
+		improved_heavy_cruiser = 1
+		improved_carrier = 1
+		heavy_battleship = 1
+		cv_fighter1 = 1
 		fighter1 = 1
-		early_bomber = 1
 		tactical_bomber1 = 1
-		basic_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
-		tech_recon = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		basic_submarine = 1
-
+	
 		#doctrines
-		#Air
+		#air
 		force_rotation = 1
 		fighter_baiting = 1
-		
+		low_echelon_support = 1
+		dispersed_fighting = 1
+
 		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
+		prepared_defense = 1
+		grand_assault = 1
+		carrier_primacy = 1
+		carrier_task_forces = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -124,15 +131,22 @@ set_politics = {
 		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
 
 		#industry
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		construction3 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
 	}
 }
 
@@ -167,7 +181,7 @@ set_politics = {
 }
 
 
-##New Leaders by NewEurope (author: SkelSa)
+##New Leaders by NewEurope
 create_country_leader = {
 	name = "Syngman Rhee"
 	desc = ""

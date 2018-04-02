@@ -94,46 +94,7 @@ country_event = {
 }
 
 
-#Proclamation of the PRC
-country_event = {
-	id = ne_prc.2
-	title = ne_prc.2.t
-	desc = ne_prc.2.d
-	picture = GFX_report_event_chinese_soldiers
-
-	#is_triggered_only = yes	
-	fire_only_once = yes
-
-	trigger = {
-	
-		tag = PRC
-		
-		NOT = {
-			country_exists = CHI
-		}
-		
-	}
-
-	mean_time_to_happen = {
-		days = 15
-	}
-
-	
-	option = {
-		name = ne_prc.2.a
-           
-			drop_cosmetic_tag = yes
-			add_political_power = 200
-			add_stability = 0.15
-			add_war_support = 0.15
-
-		hidden_effect = {	
-			news_event = { id = ne_news.2 }
-		}
-	}
-	
-	
-}
+##ne_prc.2 (Proclamation of China was removed!)
 
 #Annex Sinkiang
 country_event = {

@@ -3,5 +3,9 @@
 graphical_culture = commonwealth_gfx
 graphical_culture_2d = commonwealth_2d
 
-color = rgb { 0 40 120 }
-color_ui = rgb { 30 110 220 }
+color = rgb { 10  104  145 }
+color_ui = rgb { 10  104  145 }
+
+##Hoi3: 10  104  145
+
+##Hoi4 MD Blue: 0 40 120 

@@ -3,4 +3,7 @@
 graphical_culture = asian_gfx
 graphical_culture_2d = asian_2d
 
-color = { 249 145 0 } ##golden
+color = { 130  206  113 } ##golden
+color_ui = rgb { 130  206  113 }
+
+##Golden: 249 145 0

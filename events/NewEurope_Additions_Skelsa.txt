@@ -2374,14 +2374,13 @@ country_event = {
 
 	
 	option = {	#Great
-		name = ne_skelsa.1.a
+		name = ne_skelsa.117.a
 		
 		##Effects
 		add_opinion_modifier = { target = FROM modifier = helped_spain_civil_war } 
 		
 		##Foreign Volunteers
 		add_manpower = 5000	
-		hidden_effect = { FROM = { add_manpower = -5000} }
 		
 		##Requires some testing probably:
 		
@@ -2393,8 +2392,8 @@ country_event = {
 					tag = SOV
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = SOV }
-				add_ideas = NE_civil_war_help_sov
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = SOV } }
+				ROOT = { add_ideas = NE_civil_war_help_sov } 
 			}
 		
 		}
@@ -2407,8 +2406,8 @@ country_event = {
 					tag = MEX
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = MEX } 
-				add_ideas = NE_civil_war_help_mex
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = MEX } }
+				ROOT = { add_ideas = NE_civil_war_help_mex }
 			}
 		
 		}
@@ -2421,8 +2420,8 @@ country_event = {
 					tag = USA
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = USA } 
-				add_ideas = NE_civil_war_help_usa
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = USA } }
+				ROOT = { add_ideas = NE_civil_war_help_usa }
 			}
 		
 		}
@@ -2435,8 +2434,8 @@ country_event = {
 					tag = FRA
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = FRA } 
-				add_ideas = NE_civil_war_help_fra
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = FRA } }
+				ROOT = { add_ideas = NE_civil_war_help_fra }
 			}
 		
 		}
@@ -2449,8 +2448,8 @@ country_event = {
 					tag = ENG
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ENG } 
-				add_ideas = NE_civil_war_help_eng
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ENG } }
+				ROOT = { add_ideas = NE_civil_war_help_eng }
 			}
 		
 		}
@@ -2463,8 +2462,8 @@ country_event = {
 					tag = ITA
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ITA } 
-				add_ideas = NE_civil_war_help_ita
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ITA } }
+				ROOT = { add_ideas = NE_civil_war_help_ita }
 			}
 		
 		}
@@ -2477,8 +2476,8 @@ country_event = {
 					tag = POR
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = POR } 
-				add_ideas = NE_civil_war_help_por
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = POR } }
+				ROOT = { add_ideas = NE_civil_war_help_por }
 			}
 		
 		}
@@ -2491,12 +2490,11 @@ country_event = {
 					tag = GER
 				}
 				
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = GER } 
-				add_ideas = NE_civil_war_help_ger
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = GER } }
+				ROOT = { add_ideas = NE_civil_war_help_ger }
 			}
 		
 		}
-
 		
 		
 			
@@ -2504,7 +2502,6 @@ country_event = {
 	
 	
 }
-
 
 
 
@@ -2575,11 +2572,6 @@ country_event = {
 
 
 
-
-
-
-
-
 ##NEEDS HEAVY REWORK##
 ####FLAG CHANGES####
 
@@ -2646,7 +2638,7 @@ country_event = {
 	trigger = {
 	
 		tag = SOV
-		owns_state = 146
+		owns_state = 146		
 		NOT = { has_global_flag = renamed_vyborg }
 	}
 

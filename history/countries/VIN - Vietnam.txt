@@ -1,16 +1,21 @@
-﻿##NATION IS OBSOLETE
+﻿####VIETNAM####
 
-capital = 553
+##NATION IS A RELEASABLE##
+##REQUIRES 1936 AND 1939 INFO!##
 
-oob = "FSL_1936"
 
-set_research_slots = 2 ##will gain the other three through the focus tree
+capital = 671 #Hanoi
 
-set_convoys = 50
+oob = "VIN_1936"
 
-set_stability = 0.6
+set_stability = 0.45
+set_war_support = 0.90
 
-# Starting tech (have access to French tech as they're puppets)
+set_convoys = 14
+
+set_research_slots = 2
+
+# Starting tech (Clone of France 1936 )
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -47,24 +52,25 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+
 1939.1.1 = {
 
-	add_political_power = 899
-	
-        oob = "FSL_1939"
+	oob = "VIN_1939"
 
+	add_political_power = 1198
+	
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
 	complete_national_focus = motorization_effort
 	complete_national_focus = aviation_effort
 	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
+	complete_national_focus = large_navy
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
-	complete_national_focus = production_effort	
-
+	complete_national_focus = production_effort
 	
+	##CLONE OF FRANCE 1939
 	set_technology = {
 		fighter1 = 1
 		fighter2 = 1
@@ -83,7 +89,6 @@ set_technology = {
 		support_weapons2 = 1
 		basic_battleship = 1
 		basic_battlecruiser = 1
-
 		#doctrines
 		#Air
 		force_rotation = 1
@@ -111,6 +116,9 @@ set_technology = {
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -121,75 +129,75 @@ set_technology = {
 }
 
 
-##Neutrality reigns over this country
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 35
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 15
 		}
 		
 		communism = {
-			popularity = 0
+			popularity = 15
 		}
-
 		neutrality = {
-			popularity = 100
+			popularity = 35
 		}
 	}
-	
-	ruling_party = neutrality
-	last_election = "1932.5.1"
-	election_frequency = 48
+
+	ruling_party = democratic
+	last_election = "1933.2.16"
+	election_frequency = 36
 	elections_allowed = yes
 }
 
-
-##Democratic leader
+#NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
 create_country_leader = {
-	name = "Nameless Clerk"
-	#picture = "Portrait_France_Charles_De_Gaulle.dds"
-	expire = "1965.1.1"
+	name = "Phan Bôi Châu" 
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology 
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ho Chí Minh" 
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
+	expire = "1953.3.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ngô Đình Diêm"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
 		
 	}
 }
 
-##Neutrality Leader
 create_country_leader = {
-	name = "Nameless Clerk"
-	#picture = "Portrait_France_Charles_De_Gaulle.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
+	name = "Nguyen Tuong Tam"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+	expire = "1953.3.1"
+	ideology = moderatism
 	traits = {
 		
 	}
 }
 
-##Communist Leader
-create_country_leader = {
-	name = "Nameless Clerk"
-	#picture = "Portrait_France_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = 	stalinism
-	traits = {
-		
-	}
-}
 
-##Fascist Leader
-create_country_leader = {
-	name = "Nameless Clerk"
-	#picture = "Portrait_France_Philippe_Petain.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
 

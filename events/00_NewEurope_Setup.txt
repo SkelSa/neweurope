@@ -20,16 +20,18 @@ news_event = {
 		##WGR and GDR is already in the country files
 		WGR = {
 			set_capital = 51 
-			set_research_slots = 3
 		}
 
 		DDR = {
 			set_capital = 763 
-			set_research_slots = 3
 		}
 		
 		ITA = {		
 			add_ideas = NE_ITA_incompetent_officers
+		}
+		
+		GER = {		
+			diplomatic_relation = { country = POL relation = non_aggression_pact } 
 		}
 		
 		##Danzig puppet	
@@ -179,6 +181,9 @@ news_event = {
 				
 			}
 			
+		 	diplomatic_relation = { country = HOL relation = guarantee active = yes }
+			diplomatic_relation = { country = BEL relation = guarantee active = yes }
+			
 		}
 		
 		##Further changes for new puppets	
@@ -211,27 +216,27 @@ news_event = {
 		}
 		
 		SYR = {		
-		
-			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_SYR_FRA ##Syrian Republic
-		
+
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 0.90 } 
+			add_popularity = { ideology = neutrality popularity = 1 } 
 		}
 		
 		LEB = {		
-		
-			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_LEB_FRA
-			
+
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 0.90 } 
+			add_popularity = { ideology = neutrality popularity = 1 } 
 		}
 		
-		LEB = {		
+		MOR = {		
+
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 1 } 
+		}
 		
-			set_cosmetic_tag = NE_LEB_FRA
+		TUN = {		
 			
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 0.90 } 
+			add_popularity = { ideology = neutrality popularity = 1 } 
 		}
 			
 		
