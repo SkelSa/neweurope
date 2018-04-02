@@ -171,29 +171,24 @@ on_actions = {
 	}
 	
 	
-	
+	##FROM is war target, ROOT is war starter?
 	on_declare_war = {
 		effect = {
 		
-			##remove neutrality spirit when at war (does not apply for DPRK, KOR or JAP )
-			if = {
-				limit = {					
-					has_idea = NE_neutrality
+			#if = {
+			#	limit = {
+			#		OR = {
+			#			FROM = { tag = SOV }
+			#			ROOT = { tag = SOV }
+			#		}
+			#		SOV = {
+			#			NOT = { has_country_flag = SOV_war_since_purge }
+			#			has_completed_focus = SOV_great_purge
+			#		}
+			#	}
+			#	SOV = { set_country_flag = SOV_war_since_purge }
+			#}
 
-					NOT = {		
-						tag = JAP
-						tag = DPR
-						tag = KOR
-					}
-					
-				}
-			
-				remove_ideas = NE_neutrality 
-			}
-			
-			
-			
-			
 			
 			##Vichy France is established; also gets historical colonies
 			if = {
@@ -264,35 +259,32 @@ on_actions = {
 				
 				}
 			}
-			
-			
+						
 			
 			##Same also happens to Franco
 			if = {
 				limit = {
-															
-					has_global_flag = names_chosen
+																				
 					
-					SPR = {
-						exists = yes
+					ROOT = {
+						original_tag = SPR
+						has_government = fascism
+						has_civil_war = yes
+					}
+									
+					FROM = {						
+						original_tag = SPR
 						has_government = communism
 						has_civil_war = yes
 					}
 					
-					any_country = {
-						original_tag = SPR
-						has_government = fascism				
-					}
-									
-					FROM = {						
-						tag = SPR													
-					}
 				}
 				
 				every_country = {	##Add correct flag to Nationalist Spain and the neutrality_spirit
 					limit = {
 						original_tag = SPR
 						has_government = fascism
+						has_global_flag = names_chosen
 					}
 			
 					set_cosmetic_tag = NE_SPS
@@ -300,26 +292,37 @@ on_actions = {
 					if = { limit = { has_global_flag = Neutrality_chosen } add_ideas = NE_neutrality }			
 				}
 				
-				every_country = {	##Add correct flag to Rep. Spain and the neutrality_spirit
+				every_country = {	##Add correct flag to Rep. Spain 
 					limit = {
 						original_tag = SPR
 						has_government = communism
+						has_global_flag = names_chosen
 					}
 			
 					set_cosmetic_tag = NE_SPR 
+					
+					##Reduce communist support for the other Spain
+					add_popularity = { ideology = communism popularity = -0.90 } 
 					
 				}						
 				
 			}
 			
-			every_country = {	##Add correct flag to Rep. Spain and the neutrality_spirit
-					limit = {
-						original_tag = SPR
-						has_government = communism
-					}
 			
-				#Reduce communist support for the other Spain
-				SPR = { add_popularity = { ideology = communism popularity = -0.26 }  }					
+			##remove neutrality spirit when at war (does not apply for DPRK, KOR or JAP )
+			if = {
+				limit = {					
+					has_idea = NE_neutrality
+
+					NOT = {		
+						tag = JAP
+						tag = DPR
+						tag = KOR
+					}
+					
+				}
+			
+				remove_ideas = NE_neutrality 
 			}
 			
 	
@@ -331,11 +334,17 @@ on_actions = {
 		on_civil_war_end = { 
 
 		
-			effect = {
+			effect = {			
 			
 			
-				if = {
-					limit = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SPR
+					}
+					ROOT = {
+						original_tag = SPR
+						
 						OR = {
 							has_idea = NE_civil_war_help_ger
 							has_idea = NE_civil_war_help_sov
@@ -344,26 +353,90 @@ on_actions = {
 							has_idea = NE_civil_war_help_usa
 							has_idea = NE_civil_war_help_eng
 							has_idea = NE_civil_war_help_fra
-							has_idea = NE_civil_war_help_mex
-						
+							has_idea = NE_civil_war_help_mex							
 						}
+						
+					}
+				}
+				
+				
+				if = {
+					limit = {
+						has_idea = NE_civil_war_help_ger
 					}
 					
-					remove_ideas = NE_civil_war_help_ger
-					remove_ideas = NE_civil_war_help_sov
-					remove_ideas = NE_civil_war_help_ita
-					remove_ideas = NE_civil_war_help_por
-					remove_ideas = NE_civil_war_help_usa
-					remove_ideas = NE_civil_war_help_eng
-					remove_ideas = NE_civil_war_help_fra
-					remove_ideas = NE_civil_war_help_mex
+				remove_ideas = NE_civil_war_help_ger
 				}
-			
+				
+				
+				if = {
+					limit = {
+						has_idea = NE_civil_war_help_por
+					}
+					
+				remove_ideas = NE_civil_war_help_por
+				}
+				
+				
+				if = {
+					limit = {
+						has_idea = NE_civil_war_help_ita
+					}
+					
+				remove_ideas = NE_civil_war_help_ita
+				}
+				
+				
+				if = {
+					limit = {
+						has_idea = NE_civil_war_help_sov
+					}
+					
+				remove_ideas = NE_civil_war_help_sov
+				}
+				
+				
+				if = {
+					limit = {
+						has_idea = NE_civil_war_help_mex
+					}
+					
+				remove_ideas = NE_civil_war_help_mex
+				}
+				
+				
+				if = {
+					limit = {
+						has_idea = NE_civil_war_help_fra
+					}
+					
+				remove_ideas = NE_civil_war_help_fra
+				}
+				
+				
+				if = {
+					limit = {
+						has_idea = NE_civil_war_help_eng
+					}
+					
+				remove_ideas = NE_civil_war_help_eng
+				}
+				
+				
+				if = {
+					limit = {
+						has_idea = NE_civil_war_help_usa
+					}
+					
+				remove_ideas = NE_civil_war_help_usa
+				}
+				
 
 			}
-		
-		
-		}
-		
+
+			
+
+		}		
+
 	
 }

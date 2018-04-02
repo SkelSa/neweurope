@@ -2,5 +2,7 @@
 graphical_culture = african_gfx
 graphical_culture_2d = african_2d
 
-color = rgb { 242 129 0 }
-color_ui = rgb { 242 129 0 }
+color = rgb { 234  102  69 }
+color_ui = rgb { 234  102  69 }
+
+##Old "orange color" : 242 129 0

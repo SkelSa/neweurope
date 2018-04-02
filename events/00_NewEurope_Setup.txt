@@ -32,6 +32,10 @@ news_event = {
 			add_ideas = NE_ITA_incompetent_officers
 		}
 		
+		GER = {		
+			diplomatic_relation = { country = POL relation = non_aggression_pact } 
+		}
+		
 		##Danzig puppet	
 		POL = {		
 			if = {			
@@ -179,6 +183,9 @@ news_event = {
 				
 			}
 			
+		 	diplomatic_relation = { country = HOL relation = guarantee active = yes }
+			diplomatic_relation = { country = BEL relation = guarantee active = yes }
+			
 		}
 		
 		##Further changes for new puppets	
@@ -214,24 +221,32 @@ news_event = {
 		
 			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_SYR_FRA ##Syrian Republic
 		
-			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 0.90 } 
+			#set_politics = { ruling_party = neutrality elections_allowed = no } 
+			#add_popularity = { ideology = neutrality popularity = 0.90 } 
 		}
 		
 		LEB = {		
 		
 			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_LEB_FRA
 			
-			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 0.90 } 
+			#set_politics = { ruling_party = neutrality elections_allowed = no } 
+			#add_popularity = { ideology = neutrality popularity = 0.90 } 
 		}
 		
-		LEB = {		
+		MOR = {		
 		
-			set_cosmetic_tag = NE_LEB_FRA
+			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_LEB_FRA
 			
-			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 0.90 } 
+			#set_politics = { ruling_party = neutrality elections_allowed = no } 
+			#add_popularity = { ideology = neutrality popularity = 0.90 } 
+		}
+		
+		TUN = {		
+		
+			##cosmetic tags are inside the country file!  set_cosmetic_tag = NE_LEB_FRA
+			
+			#set_politics = { ruling_party = neutrality elections_allowed = no } 
+			#add_popularity = { ideology = neutrality popularity = 0.90 } 
 		}
 			
 		

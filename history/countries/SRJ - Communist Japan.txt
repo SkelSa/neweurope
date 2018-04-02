@@ -1,7 +1,7 @@
-﻿####SOCIALIST REPUBLIC OF JAPAN####
+﻿####SOCIALIST REPUBIC OF JAPAN####
 
-##NATION IS FORMED THROUGH EVENT
-##REQUIRES NO 1939 INFO
+##NATION IS FORMED THROUGH EVENT##
+##REQUIRES NO 1939 INFO!##
 
 capital = 533
 
@@ -10,13 +10,11 @@ oob = "SRJ_OOB"
 set_stability = 0.70
 set_war_support = 0.70
 
-set_research_slots = 3
+set_research_slots = 2
 
 
-##Copy of Japan 1939
+##Copy of Japan (1936 + 1939 )
 set_technology = {
-
-	##1936 tech
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1		
@@ -27,8 +25,6 @@ set_technology = {
 	gw_artillery = 1
 	gwtank = 1
 	basic_light_tank = 1
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	cv_early_fighter = 1
 	cv_CAS1 = 1
 	cv_naval_bomber1 = 1
@@ -52,8 +48,7 @@ set_technology = {
 	trench_warfare = 1
 	base_strike = 1
 	synth_oil_experiments = 1
-
-	##Stuff
+	#PLACEHOLDERS for vehicles
 	improved_submarine = 1
 	basic_destroyer = 1
 	improved_destroyer = 1
@@ -99,7 +94,6 @@ set_technology = {
 	concentrated_industry = 1
 	concentrated_industry2 = 1
 	concentrated_industry3 = 1
-		
 }
 
 
@@ -138,13 +132,8 @@ set_politics = {
 			popularity = 20
 		}
 
-		fascism = {
-			popularity = 0
-		}
-		
 		communism = {
 			popularity = 80
-			#banned = no 
 		}
 	}
 		
@@ -188,7 +177,7 @@ create_country_leader = {
 
 
 
-### VARIANTS ###
+## VARIANTS ###
 	# 1936 Start #
 		### Carrier Variants
 		create_equipment_variant = {

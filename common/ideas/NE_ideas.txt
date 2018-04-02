@@ -387,7 +387,7 @@ ideas = {
 		##Help during a civil war: 8 spirits
 		NE_civil_war_help_ger = {
 
-			picture = GFX_idea_civil_war_help_ger
+			picture = civil_war_help_ger
 
 			allowed = {
 				always = no # Triggered via event
@@ -406,7 +406,7 @@ ideas = {
 		
 		NE_civil_war_help_por = {
 
-			picture = GFX_idea_civil_war_help_por
+			picture = civil_war_help_por
 
 			allowed = {
 				always = no # Triggered via event
@@ -425,7 +425,7 @@ ideas = {
 		
 		NE_civil_war_help_ita = {
 
-			picture = GFX_idea_civil_war_help_ita
+			picture = civil_war_help_ita
 
 			allowed = {
 				always = no # Triggered via event
@@ -444,7 +444,7 @@ ideas = {
 		
 		NE_civil_war_help_mex = {
 
-			picture = GFX_idea_civil_war_help_mex
+			picture = civil_war_help_mex
 
 			allowed = {
 				always = no # Triggered via event
@@ -463,7 +463,7 @@ ideas = {
 		
 		NE_civil_war_help_usa = {
 
-			picture = GFX_idea_civil_war_help_usa
+			picture = civil_war_help_usa
 
 			allowed = {
 				always = no # Triggered via event
@@ -482,7 +482,7 @@ ideas = {
 		
 		NE_civil_war_help_sov = {
 
-			picture = GFX_idea_civil_war_help_sov
+			picture = civil_war_help_sov
 
 			allowed = {
 				always = no # Triggered via event
@@ -501,7 +501,7 @@ ideas = {
 		
 		NE_civil_war_help_eng = {
 
-			picture = GFX_idea_civil_war_help_eng
+			picture = civil_war_help_eng
 
 			allowed = {
 				always = no # Triggered via event
@@ -520,7 +520,7 @@ ideas = {
 		
 		NE_civil_war_help_fra = {
 
-			picture = GFX_idea_civil_war_help_fra
+			picture = civil_war_help_fra
 
 			allowed = {
 				always = no # Triggered via event

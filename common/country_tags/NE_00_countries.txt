@@ -38,7 +38,7 @@ ZAM = "countries/Zambia.txt"
 DRV = "countries/RedVietnam.txt"
 HAT = "countries/Hatay.txt"
 ITS = "countries/ItalianSocialRepublic.txt"
-FSL = "countries/FrenchMandate.txt"	##NATION OBSOLETE
+#FSL = "countries/FrenchMandate.txt"	##NATION OBSOLETE
 SEN = "countries/Senegal.txt"
 CEY = "countries/Ceylon.txt"
 ##Next 5 countries

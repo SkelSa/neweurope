@@ -1,6 +1,21 @@
-﻿capital = 458
+﻿####TUNISIA####
 
-# Starting tech (have access to French tech as they're puppets)
+##NATION IS THERE FROM THE START##
+##REQUIRES 1936 AND 1939 INFO!##
+
+
+capital = 458
+
+oob = "TUN_1936"
+
+set_stability = 0.70
+set_war_support = 0.52
+
+set_research_slots = 2 ##will gain the other three through the focus tree
+
+set_convoys = 20
+
+# Starting tech (Clone of France 1936 )
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -37,15 +52,10 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-set_research_slots = 2 ##will gain the other three through the focus tree
-
-set_convoys = 20
-
-oob = "TUN_1936"
-
-set_stability = 0.70
 
 1939.1.1 = {
+
+	oob = "TUN_1939"
 
 	add_political_power = 899
 
@@ -60,8 +70,8 @@ set_stability = 0.70
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort	
 
-	oob = "TUN_1939"
-
+	
+	##CLONE OF FRANCE 1939
 	set_technology = {
 		fighter1 = 1
 		fighter2 = 1
@@ -80,7 +90,6 @@ set_stability = 0.70
 		support_weapons2 = 1
 		basic_battleship = 1
 		basic_battlecruiser = 1
-
 		#doctrines
 		#Air
 		force_rotation = 1
@@ -109,7 +118,7 @@ set_stability = 0.70
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		improved_oil_processing = 1
+		oil_processing = 1
 		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1

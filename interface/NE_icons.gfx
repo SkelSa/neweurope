@@ -14,10 +14,5 @@ spriteTypes = {
 		name = "GFX_idea_idle"
 		texturefile = "gfx/slot icons/NE_idle.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_idea_civil_war_help_ger"
-		texturefile = "gfx/idea_civil_war_help_ger.dds"
-	}
 
 }

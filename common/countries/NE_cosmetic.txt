@@ -1,0 +1,170 @@
+##New Europe additions
+
+##Greater German Nazi Reich
+NE_DEU_REN_HISTORICAL = {
+	color = rgb { 74 74 74 }
+	color_ui = rgb { 74 74 74 }
+}
+
+##Pakistan
+NE_PAK = {
+	color = rgb { 90  170  90 }
+	color_ui = rgb { 90  170  90 }
+}
+
+##India
+NE_INDIA = {
+    color = rgb { 255 100 0 }
+    color_ui = rgb { 255 110 0 }
+}
+
+##Indian Burma
+NE_IND_BUR = {
+	color = rgb { 232 131 0 }
+	color_ui = rgb { 232 131 0 }
+}
+
+##Vichy France
+NE_VICHY = {
+    color = rgb { 0 0 240 } ##Darker blue (Kosovo-Blue from MD)
+    color_ui = rgb { 0 0 240 }
+}
+
+##French Lebanon
+NE_LEB_FRA = {
+    color = rgb { 0 40 255 }
+    color_ui = rgb { 0 40 255 }
+}
+
+##French Syria
+NE_SYR_FRA = {
+    color = rgb { 0 40 255 }
+    color_ui = rgb { 0 40 255 }
+}
+
+##French Tunisia
+NE_TUN_FRA = {
+    color = rgb { 0 40 255 }
+    color_ui = rgb { 0 40 255 }
+}
+
+##French Morocco
+NE_MOR_FRA = {
+    color = rgb { 0 40 255 }
+    color_ui = rgb { 0 40 255 }
+}
+
+
+
+##Better Korean Color
+NE_KOR = {
+	color = rgb { 10 15 125 }
+	color_ui = rgb { 10 15 125 }
+}
+
+##?
+RAJ_UK = {
+	color = rgb { 170  10  10 }
+	color_ui = rgb { 200  10  10 }
+}
+
+##Better West Germany Color
+NE_WGR = {
+    color = rgb { 104  153  126 } #{ 120 140 120 }
+    color_ui = rgb { 120 140 120 }
+}
+
+##Better East Germany Color
+NE_DDR = {
+    color = rgb { 119  130  145 }#{ 130 135 140 }
+    color_ui = rgb { 130 135 140 }
+}
+
+##East Germany Tag after it got it's flag
+NE_DDR_1 = {
+    color = rgb { 119  130  145 }#{ 130 135 140 }
+    color_ui = rgb { 130 135 140 }
+}
+
+##Green Russia
+NE_RUS = {
+	color = rgb { 0 80 20 }
+	color_ui = rgb {  0 80 20 }
+}
+
+
+##################
+## REDDISH SSRs ##
+##################
+
+
+##SSR (SOV has 125  13  24  )
+NE_LIT_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_LAT_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_EST_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_BLR_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_UKR_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_MOL_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_AZR_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_ARM_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_GEO_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_KAZ_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_TAJ_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_UZB_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_TRK_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
+
+NE_KGZ_SSR = {
+	color = rgb { 136 15 25 }
+	color_ui = rgb { 136 15 25 }
+}
