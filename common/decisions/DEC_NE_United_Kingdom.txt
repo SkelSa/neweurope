@@ -28,7 +28,7 @@ ENG_historical_military_operations = {
 
 	
 
-		cost = 30
+		cost = 25
 
 		ai_will_do = {
 			base = 45
@@ -79,7 +79,7 @@ ENG_historical_military_operations = {
 			tag = ENG
 		}         
 	
-		cost = 150
+		cost = 100
 
 		available = { ##conditions of implementation
 			AND = {
@@ -276,7 +276,7 @@ ENG_historical_military_operations = {
 					has_full_control_of_state = 100
 					AND = {
 						OR = {
-							ships_in_area = { area = 43 size > 0 }
+							ships_in_area = { area = 43 size > 0 } ##'ships' is not a number of the ship amounts, it's a number of the fleets at all
 							ships_in_area = { area = 16 size > 0 }
 						}
 						ships_in_area = { area = 45 size > 0 }
@@ -312,10 +312,17 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 		available = { ##conditions of implementation
 			OR = { 
 				FROM = { is_in_faction_with = POL }
-				FROM = { has_guaranteed = POL }
+				OR = {
+					any_country = {  ##because sometimes britain doesn't have much political power and can't complete this mission
+						is_in_faction_with = FROM
+						has_guaranteed = POL
+					}
+					FROM = { has_guaranteed = POL }
+				}
+				
 			}
 			NOT = {
-				POL = { has_opinion = { target = ENG value < 21 } }
+				POL = { has_opinion = { target = ENG value < 26 } }
 			}
 		}
 	
