@@ -1444,29 +1444,41 @@ country_event = {
 	
 	option = {
 		name = ne_misc.22.a
-		ai_chance = { factor = 98 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
 		POL = {
 			add_stability = -0.05
 			navy_experience = -15
+			add_war_support = -0.15
 		}
 		ENG = {
 			add_opinion_modifier = { target = POL modifier = pol_agree }
-			random_list = {
-				20 = { country_event = { days = 2 id = ne_misc.23 } }
-				20 = { country_event = { days = 4 id = ne_misc.23 } }
-				20 = { country_event = { days = 3 id = ne_misc.23 } }
-				20 = { country_event = { days = 5 id = ne_misc.23 } }
-				20 = { country_event = { days = 6 id = ne_misc.23 } }
-			}
+		}
+		random_list = {
+			65 = { ENG = { country_event = { days = 2 id = ne_misc.23 } } }
+			20 = { ENG = { country_event = { days = 4 id = ne_misc.23 } } }
+			15 = { ENG = { country_event = { days = 8 id = ne_misc.23 } } }
 		}
 	}
 
 	option = {
 		name = ne_misc.22.b
-		ai_chance = { factor = 2 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = -100
+				is_historical_focus_on = yes
+			}
+		}
 		POL = { navy_experience = 25 }
 		ENG = { add_opinion_modifier = { target = POL modifier = pol_disagree } }
 		add_stability = 0.05
+		add_war_support = 0.2
 		custom_effect_tooltip = peking_plan_warning.1.tt
 	}
 
