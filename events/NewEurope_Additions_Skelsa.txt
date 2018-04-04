@@ -1737,7 +1737,23 @@ country_event = {
 		##Add country flag to Greece
 		GRE = { set_country_flag = ne_axis_occupied }
 			
-			##GERMANY					
+			##GERMANY
+
+			if = {
+				limit = {
+					821 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 821		add_state_claim = 821 }
+			}
+
 			if = {
 				limit = {
 					187 = {
@@ -1815,22 +1831,6 @@ country_event = {
 				GER = { set_state_controller = 827		add_state_claim = 827 }
 			}
 			
-			##Evros
-			if = {
-				limit = {
-					829 = {
-						is_owned_by = GRE
-							OR = { 
-								is_controlled_by = GER
-								any_country = { is_in_faction_with = GER  controls_state = PREV }
-							}	
-					}						
-				
-				}
-			
-				GER = { set_state_controller = 829		add_state_claim = 829 }
-			}
-			
 			##Northern Aegean
 			if = {
 				limit = {
@@ -1849,6 +1849,23 @@ country_event = {
 			
 			
 			##BULGARIA
+
+			##Evros
+			if = {
+				limit = {
+					829 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				BUL = { set_state_controller = 829		add_state_claim = 829 }
+			}
+
 			if = {
 				limit = {
 					BUL = {
@@ -1872,22 +1889,6 @@ country_event = {
 				
 					BUL = { set_state_controller = 184		add_state_claim = 184 }
 				}
-				
-				if = {
-					limit = {
-						821 = {
-							is_owned_by = GRE
-								OR = { 
-									is_controlled_by = GER
-									any_country = { is_in_faction_with = GER  controls_state = PREV }
-								}	
-						}						
-					
-					}
-				
-					BUL = { set_state_controller = 821		add_state_claim = 821 }
-				}				
-				
 				
 			}
 			
