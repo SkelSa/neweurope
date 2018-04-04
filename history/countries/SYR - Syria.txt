@@ -137,7 +137,7 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 50
+			popularity = 80
 		}
 
 		fascism = {
@@ -145,12 +145,12 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 10
+			popularity = 5
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			popularity = 30
+			popularity = 5
 		}
 	}
 	
@@ -163,7 +163,7 @@ set_politics = {
 create_country_leader = {
 	name = "Hashim al-Atassi"
 	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_navy_1.dds"
+	picture = "Portrait_SYR_Hashim_Al_Atassi.dds"
 	ideology = liberalism
 	traits = {
 		#

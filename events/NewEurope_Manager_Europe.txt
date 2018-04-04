@@ -492,7 +492,7 @@ country_event = {
 	
 }
 
-##ITALY
+##ITALY##
 
 country_event = {
 	id = ne.21                      
@@ -506,7 +506,7 @@ country_event = {
 	#fire_only_once = yes
 	
 	option = {
-		name = ne.21.a         #Historical partition + free colonies + Trieste + istria
+		name = ne.21.a         #Historical partition + free colonies + Trieste + Istria
 		
 		ENG = { 
 		
@@ -1100,8 +1100,7 @@ country_event = {
 
 
 
-##Finland
-
+##FINLAND##
 country_event = {
 	id = ne.224                      
 	title = ne.224.t 
@@ -1126,6 +1125,10 @@ country_event = {
 			transfer_state = 147
 			transfer_state = 146
 			transfer_state = 111
+			
+			transfer_state = 801 ##Kalasta
+			transfer_state = 802 ##Hanko
+			transfer_state = 769 ##Pprkkala
 				
 		}
 
@@ -1145,6 +1148,7 @@ country_event = {
 			transfer_state = 149
 			transfer_state = 148
 			transfer_state = 111
+			transfer_state = 802 ##Hanko
 			
 				
 		}
@@ -1154,6 +1158,9 @@ country_event = {
 			transfer_state = 146
 			transfer_state = 147
 			transfer_state = 722
+			
+			transfer_state = 769 ##Porkkala
+			transfer_state = 801 ##Kalasta
 							
 		}
 		
@@ -1165,7 +1172,7 @@ country_event = {
 	
 	
 	option = {
-		name = ne.224.c        #FULL COMMUNISM
+		name = ne.224.c        #FULL COMMUNISM FOR FINLAND
 		
 		SOV = { 
 		
@@ -1177,6 +1184,10 @@ country_event = {
 			transfer_state = 147
 			transfer_state = 146
 			transfer_state = 111
+			
+			transfer_state = 801 ##Kalasta
+			transfer_state = 802 ##Hanko
+			transfer_state = 769 ##Pprkkala
 				
 		}
 		
@@ -1318,6 +1329,8 @@ country_event = {
 			transfer_state = 121
 			transfer_state = 128
 			transfer_state = 129
+			
+			transfer_state = 809 ##Channel Islands
 	
 		}
 	
@@ -1439,7 +1452,7 @@ country_event = {
 		
 		GUA = { 
 		
-			transfer_state = 311
+			transfer_state = 311		
 	
 		}
 		
@@ -1449,6 +1462,8 @@ country_event = {
 			transfer_state = 274
 			transfer_state = 558
 			transfer_state = 707
+			
+			transfer_state = 809 ##Channel islands
 	
 		}
 		
@@ -1473,7 +1488,8 @@ country_event = {
 		
 		GRE = { 
 		
-			transfer_state = 183
+			transfer_state = 183 ##Cyprus
+			transfer_state = 183 ##Southern Cyprus
 	
 		}
 		
@@ -1573,7 +1589,7 @@ country_event = {
 		ENG = {end_puppet = MAL}
 		
 		##destroy allies and give RAJ their tag!
-		RAJ = {set_cosmetic_tag = IND}
+		RAJ = {set_cosmetic_tag = NE_INDIA }
 		MAL = {drop_cosmetic_tag = yes}
 		ENG = { dismantle_faction = yes }
 		
@@ -1648,6 +1664,9 @@ country_event = {
 			transfer_state = 193
 			transfer_state = 224
 			transfer_state = 243
+			
+			transfer_state = 801 ##Kalastanjannero
+			transfer_state = 769 ##Porkkala
 			
 			annex_country = { target = EST } 	
 			annex_country = { target = LAT }
@@ -1743,7 +1762,12 @@ country_event = {
 	FIN = { 		
 		transfer_state = 722
 		transfer_state = 147
-		transfer_state = 146			
+		transfer_state = 146
+		
+		transfer_state = 801 ##Kalastajaaanero
+		transfer_state = 769 ##Hanko
+		transfer_state = 802 ##Porkkala
+		
 	}
 	
 	
@@ -1895,6 +1919,9 @@ country_event = {
 		transfer_state = 770
 		transfer_state = 91
 		transfer_state = 89
+		
+		transfer_state = 801 ##Kalastanjannero
+		transfer_state = 769 ##Porkkala
 	
 		
 		release = LIT
@@ -2064,6 +2091,9 @@ country_event = {
 			transfer_state = 770
 			transfer_state = 91
 			transfer_state = 89
+			
+			transfer_state = 801 ##Kalastanjannero
+			transfer_state = 769 ##Porkkala
 	
 	
 			release = LIT
@@ -2084,7 +2114,7 @@ country_event = {
 		
 		}
 	
-	##change idelogy to democratic
+	##change ideology to democratic
 	
 	SOV = { add_popularity = { ideology = democratic popularity = 1 } }
 	LIT = { add_popularity = { ideology = democratic popularity = 1 } }
@@ -2153,8 +2183,7 @@ country_event = {
 			TRK = {set_cosmetic_tag = NE_TRK_SSR_1}
 			KGZ = {set_cosmetic_tag = NE_KGZ_SSR_1}
 			MOL = {set_cosmetic_tag = NE_MOL_SSR_1}
-
-			
+		
 	}
 	
 	SOV = { 
@@ -2360,8 +2389,7 @@ country_event = {
 	
 }
 
-##Poland#############################################################################################################################################################################################################################
-
+##POLAND##
 country_event = {
 	id = ne.311                      
 	title = ne.311.t 
@@ -2394,7 +2422,7 @@ country_event = {
 			transfer_state = 92
 			transfer_state = 87
 			transfer_state = 86
-
+			transfer_state = 815
 				
 		}
 		
@@ -2429,6 +2457,7 @@ country_event = {
 			transfer_state = 764
 			transfer_state = 87
 			transfer_state = 86
+			transfer_state = 815
 			
 			
 		}
@@ -2448,9 +2477,7 @@ country_event = {
 			transfer_state = 765
 			transfer_state = 762
 			transfer_state = 5
-			
-			
-			
+	
 		}
 		
 		
@@ -2463,7 +2490,7 @@ country_event = {
 	
 	
 	option = {
-		name = ne.311.c        #PLC - ahistorical bullshit ahead
+		name = ne.311.c        #PLC - a historical bullshit ahead
 		
 		POL = { 
 		
@@ -2488,7 +2515,8 @@ country_event = {
 			transfer_state = 770
 			transfer_state = 764
 			transfer_state = 5    ##East Prussia
-			transfer_state = 762 
+			transfer_state = 762
+			transfer_state = 815 ##Porkkala
 			transfer_state = 188
 			transfer_state = 189
 			transfer_state = 11
@@ -2538,8 +2566,7 @@ country_event = {
 }
 
 
-##Yugoslavia#########################################################################################################################################################################################################################
-
+##YUGOSLAVIA##
 country_event = {
 	id = ne.312                      
 	title = ne.312.t 
@@ -2574,6 +2601,11 @@ country_event = {
 			transfer_state = 780
 			transfer_state = 794
 			
+			transfer_state = 812 #Pormurska
+			transfer_state = 826 #Split
+			transfer_state = 813 # Ljubliana
+			transfer_state = 814 # Srem	
+			
 		}
 	
 	
@@ -2590,7 +2622,8 @@ country_event = {
 		
 			transfer_state = 102
 			transfer_state = 766
-
+			transfer_state = 813 # Ljubliana
+			transfer_state = 812 #Pormurska
 				
 		}
 		
@@ -2600,6 +2633,7 @@ country_event = {
 			transfer_state = 103
 			transfer_state = 109
 			transfer_state = 785
+			transfer_state = 826 #Split
 				
 		}
 		
@@ -2619,6 +2653,7 @@ country_event = {
 			transfer_state = 779
 			transfer_state = 780
 			transfer_state = 794
+			transfer_state = 814 # Srem	
 
 				
 		}
@@ -2668,9 +2703,13 @@ country_event = {
 			transfer_state = 211
 			transfer_state =  77
 			transfer_state =  48
+			transfer_state = 812 #Pormurska
+			transfer_state = 826 #Split
+			transfer_state = 813 # Ljubliana
+			transfer_state = 814 # Srem	
 			
-
-			#annex_country = { target = BUL } 
+			
+			annex_country = { target = BUL } 
 			
 		}
 
@@ -2843,7 +2882,13 @@ country_event = {
 			transfer_state = 184
 			transfer_state = 187
 			transfer_state = 164
-			
+			transfer_state = 819 #Lasihti (Eastern Crete)
+			transfer_state = 820 #Piraeus
+			transfer_state = 827 #Thessaloniki
+			transfer_state = 825 #North Aegean
+			transfer_state = 821 ##Small strip of land next to Evros
+			transfer_state = 829 ##Evros
+	
 		}
 		
 	
@@ -2865,12 +2910,18 @@ country_event = {
 			transfer_state = 731
 			transfer_state = 184
 			transfer_state = 187
+			transfer_state = 819 #Lasihti (Eastern Crete)
+			transfer_state = 820 #Piraeus
+			transfer_state = 827 #Thessaloniki
+			transfer_state = 825 #North Aegean
+			transfer_state = 821 ##Small strip of land next to Evros
+			transfer_state = 829 ##Evros
 				
 		}
 		
 		ENG = { 
 		
-			transfer_state = 164
+			transfer_state = 164 ##Rhodes
 				
 		}
 		
@@ -2882,7 +2933,7 @@ country_event = {
 	
 	
 	option = {
-		name = ne.321.c        #megali- idea
+		name = ne.321.c        #MEGALI- IDEA
 		
 		GRE = { 
 		
@@ -2899,9 +2950,15 @@ country_event = {
 			transfer_state = 184
 			transfer_state = 341
 			transfer_state = 340
-			
-			
-			
+			transfer_state = 819 #Lasihti (Eastern Crete)
+			transfer_state = 820 #Piraeus
+			transfer_state = 827 #Thessaloniki
+			transfer_state = 825 #North Aegean
+			transfer_state = 821 ##Small strip of land next to Evros
+			transfer_state = 829 ##Evros
+			transfer_state = 810 ##Tekirdag
+
+			##Cyprus was not part of the Megali idea!
 				
 		}
 		
@@ -2931,8 +2988,6 @@ country_event = {
 	picture = GFX_report_event_soviet_invasion_map
 
 	is_triggered_only = yes
-
-	#fire_only_once = yes
 	
 	option = {
 		name = ne.322.a         #historical
@@ -3820,7 +3875,13 @@ country_event = {
 			transfer_state = 355
 			transfer_state = 352
 			transfer_state = 345
-			transfer_state = 346				
+			transfer_state = 346			
+			transfer_state = 810
+			transfer_state = 342
+			transfer_state = 343
+			transfer_state = 356
+			transfer_state = 49 ##Ankara
+	
 		}
 		
 					
@@ -3882,6 +3943,7 @@ country_event = {
 			transfer_state = 343
 			transfer_state = 356
 			transfer_state = 49
+			transfer_state = 810 ##Tekirdag
 		}
 		
 				

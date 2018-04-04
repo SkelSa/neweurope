@@ -318,31 +318,43 @@ on_actions = {
 					
 				}
 				
-				every_country = {	##Add correct flag to Nationalist Spain and the neutrality_spirit
-					limit = {
-						original_tag = SPR
-						has_government = fascism
-						has_global_flag = names_chosen
-					}
-			
-					set_cosmetic_tag = NE_SPS
-			
-					if = { limit = { has_global_flag = Neutrality_chosen } add_ideas = NE_neutrality }			
+				ROOT = {
+					if = {	limit = { has_global_flag = names_chosen } set_cosmetic_tag = NE_SPS }					
+					if = { limit = { has_global_flag = Neutrality_chosen } add_ideas = NE_neutrality }				
 				}
 				
-				every_country = {	##Add correct flag to Rep. Spain 
-					limit = {
-						original_tag = SPR
-						has_government = communism
-						has_global_flag = names_chosen
-					}
-			
-					set_cosmetic_tag = NE_SPR 
-					
-					##Reduce communist support for the other Spain
-					add_popularity = { ideology = communism popularity = -0.90 } 
-					
-				}						
+				FROM = {
+					if = {	limit = { has_global_flag = names_chosen } set_cosmetic_tag = NE_SPR }					
+					add_popularity = { ideology = communism popularity = -0.90 } 				
+				}
+				
+				
+				
+				#every_country = {	##Add correct flag to Nationalist Spain and the neutrality_spirit
+				#	limit = {
+				#		original_tag = SPR
+				##		has_government = fascism
+				#		
+				#	}
+			#
+				#	
+			#
+				#	if = { limit = { has_global_flag = Neutrality_chosen } add_ideas = NE_neutrality }			
+				#}
+				
+				#every_country = {	##Add correct flag to Rep. Spain 
+				#	limit = {
+				#		original_tag = SPR
+				#		has_government = communism
+				#		has_global_flag = names_chosen
+				#	}
+			#
+				#	set_cosmetic_tag = NE_SPR 
+				#	
+				#	##Reduce communist support for the other Spain
+				#	add_popularity = { ideology = communism popularity = -0.90 } 
+				#	
+				#}						
 				
 			}
 			
@@ -374,7 +386,7 @@ on_actions = {
 		
 			effect = {			
 			
-			
+			##Remove military assistance spirits after war
 			if = {
 				limit = {
 					FROM = {

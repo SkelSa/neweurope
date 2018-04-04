@@ -185,9 +185,9 @@ create_country_leader = {
 
 ##Neutrality
 create_country_leader = {
-	name = "Nameless Clerk"
+	name = "Ahmed Bey"
 	desc = ""
-	picture = "Portrait_Arabia_Generic_land_3.dds"
+	picture = "Portrait_TUN_Ahmed_Bey.dds"
 	ideology = despotism
 	traits = {
 		#

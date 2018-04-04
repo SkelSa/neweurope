@@ -38,12 +38,10 @@ Generic_ne_foreign_policy = {
 			}
 					
 		
-			available = {
-			
+			available = {			
 				SPR = {
 					has_civil_war = yes				
 				}	
-				
 			}
 				
 			
@@ -89,8 +87,7 @@ Generic_ne_foreign_policy = {
 			}
 					
 		
-			available = {
-			
+		available = {			
 				SPR = {
 					has_civil_war = yes				
 				}	

@@ -2,7 +2,7 @@
 
 
  ##This is the localization for testing events. This is only a temporary storage for you loc!
- ##Simplify the option localisation!  
+ ##Simplify the option localization!  
    
  ##Main Main Menu; Options Menu (too much menu)
  ne_settings_intro.1.t:0 "Better Post-War Europe: Settings"
@@ -30,12 +30,12 @@
  ##Fourth Menu; Misc Settings 
  ne_settings_intro.4.t:0 "BPWE: Miscellaneous Settings"
  ne_settings_intro.4.d:0 "Here you can find some things to change which don't really belong to a specific category.\n\nBeneath you can read a description about what each setting does in detail:\n\n"SSRs become Puppets" - > The USSR will be split up into their individual Republics. Every former SSR will remain a puppet of the RFSFR though and a new faction will be founded to replace the Comintern. Mongolia and Tannu Tuva will only get a guarantee from Russia.\n\n"Additional Research Slot for all Majors" - > Every country which is considered to be a major by this game (Germany, Italy, France, UK, Soviet Union, United States, China and Japan)will get an additional research slot from the start. This will allow some countries to conduct better historical research but also leads to a 7 research slot USA. It's recommended to be enabled when playing with technology tree overhauls.\n"The Old Manager" - > You can ignore this for now\n"Enable Music for specific Events" - > Music will be played when a specific event in world history, like the start of the Sino-Japanese War, happens in your game. Currently, only a few events support this but more are definitely planned...\nAlso, hover over the buttons to see which option is enabled right now."
- ne_settings_intro.4.a:0 "Let the SSRs be puppets!"
- ne_settings_intro.4.a1:0 "Revert the change, implement direct rule from Moscow again!"
+ ne_settings_intro.4.a:0 "Enable SSR puppets!"
+ ne_settings_intro.4.a1:0 "Disable SSR puppets!"
  ne_settings_intro.4.b:0 "Give every major power an additional research slot!"
  ne_settings_intro.4.b1:0 "Remove the additional research slot!"
  ne_settings_intro.4.c:0 "Enable the old manager!"
- ne_settings_intro.4.c1:0 "Use the new manager instead!"
+ ne_settings_intro.4.c1:0 "Disable the old manager!"
  ne_settings_intro.4.e:0 "Enable music!"
  ne_settings_intro.4.e1:0 "Disable music!"
  ne_settings_intro.4.f:0 "Exit to Main Menu"
@@ -60,11 +60,11 @@
  ne_settings.1.d:0 "The historical settings aim to provide realistic and hsitorical flags, names and leaders. Through this event you can activate the historical accurate flags, country names and sometimes the color of several countries. In total around 25 countries will see a change, the most important ones will be Germany and Japan. Additionally, flag changes which happened historically between 1936 and 1948 will also happen via event.\nThe "Better Leaders" option will replace some head of states to more historical ones. For example, Boleslaw Bierut will now lead a Communist Poland.\nThe last option allows you to to change the communist names of the 14 Soviet Republics to end with SSR (Soviet Socialist Republic) either with their standard color or a reddish tone similar to that of the motherland. Just hover over the buttons to see a the full list of changes!"
  ne_settings.1.a:0 "Enable historical names and names!"
  ne_settings.1.a1:0 "Disable historical names and names!"
- ne_settings.1.b:0 "Enable Better Leaders!"
- ne_settings.1.b1:0 "Use the vanilla leaders instead!"
+ ne_settings.1.b:0 "Disable historical leaders!"
+ ne_settings.1.b1:0 "Disable historical leaders!"
  ne_settings.1.c:0  "Enable the SSR endings!"
  ne_settings.1.c1:0 "Disable the SSR endings!"
- ne_settings.1.e:0 "I'm not interested in changing these settings..."
+ ne_settings.1.e:0 "I'm not interested in these settings..."
  ne_settings.1.e1:0 "Return to the main menu"
  
  ##OPTIONS: USA and USSR Names
@@ -79,15 +79,15 @@
  ##OPTIONS: Neutrality settings
  ne_settings.3.t:0 "BPWE: Force some contries to stay neutral"
  ne_settings.3.d:0 "Currently in most games, neutral nations like Sinkiang, Switzerland or Turkey have no difficulties joining a faction even in historical mode once the world tension is high enough. This leads to unhistorical and unrealistic scenarios and usually screws up the flow of World War II.\nThe following option will give some nations like for instance Switzerland, Sweden or Turkey a neutrality spirit to avoid any faction joining during the war. The spirits will be removed should any country be dragged into a defensive conflict however.\nSpain is also handled via this though their neutrality is handled via events and world situation."
- ne_settings.3.a:0 "Make some countries neutral!"
- ne_settings.3.b:0 "I don't want these changes anymore!"
+ ne_settings.3.a:0 "Activate the neutrality spirits!"
+ ne_settings.3.b:0  "Deactivate the neutrality spirits!"
  ne_settings.3.c:0 "Return"
  
  ##OPTIONS: Faction Settings 
  ne_settings.4.t:0 "BPWE: Factions"
  ne_settings.4.d:0 "With the options below you can enable stricter join rules for NATO or the Warsaw Pact.\nThe stricter rules for NATO/WP are obviously only applied once NATO or the Warsaw pact are created and mean that not every democratic country can join NATO, for instance, instantly. Instead, they would have to achieve a lot of party popularity. Several national spirits help you to see when a country would be ready to join. If they are a great power, Players can invite some countries earlier into their faction via the diplomacy slots while any AI-only faction requires any potential new members to have a really high party popularity among some other minor conditions. Historical invitations are done via event however.\nChoose now what you want."
  ne_settings.4.a:0 "Enable historical NATO/PACT"
- ne_settings.4.a1:0 "Disable any special rules about NATO/WP"
+ ne_settings.4.a1:0 "Disable the special rules for joining NATO/PACT"
  #ne_settings.4.b:0 ""
  #ne_settings.4.b1:0 ""
  ne_settings.4.e:0 "Exit to Main Menu"
@@ -159,6 +159,16 @@
  ussr_usa_settings_b:0 "Soviet Union is renamed to "Union of Soviet Socialist Republics"\n\nUnited States is renamed to "United States of America""
  historical_settings_b1:0 "All communist Soviet Republics plus the Baltics gain a cosmetic tag, which changes their name to end with "SSR".\n\nExamples:\nLithuanian People's Republic -> Lithuanian SSR\nKazakh Soviet Socialist Republic -> Kazakh SSR"
  ussr_usa_settings_c:0 "The country names stay as they are. Return to menu without changes." 
+ 
+ ##Metaxas is dead!
+ ne_skelsa.90.t:0 "Prime Minister Metaxas has passed away!"
+ ne_skelsa.90.d:0 "After a long struggle against toxaemia our beloved Leader has died in Athens today. In the next days our people will mourn his death and say farewell. We have decided that the current governor of the Bank of Greece, Alexandros Koryzis, will be Metaxas' successor and serve as the Prime Minister of Greece. However, King George II will, as expected, remain our head of state and have the final say in all political decisions.\n Even though the death of Metaxas will be a setback, we are confident that the new government and our beloved King can maneuver the Greek nation through these difficult times of war."
+ ne_skelsa.90.a:0 "King George II will achieve victory for Greece!"
+ 
+ 
+ 
+ 
+ 
  
  
     

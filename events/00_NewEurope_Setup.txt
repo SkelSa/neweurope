@@ -214,31 +214,9 @@ news_event = {
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
 			add_popularity = { ideology = neutrality popularity = 0.90 } 
 		}
-		
-		SYR = {		
 
-			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 1 } 
-		}
-		
-		LEB = {		
+		##SYR and LEB country files were modified
 
-			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 1 } 
-		}
-		
-		MOR = {		
-
-			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 1 } 
-		}
-		
-		TUN = {		
-			
-			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 1 } 
-		}
-			
 		
 		##Adding state cores
 		CAN = {					

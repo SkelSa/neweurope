@@ -6,6 +6,43 @@
 add_namespace = ne_skelsa
 
 
+##ne_skelsa.90 is about Metaxas' death event chain
+
+##Metaxas dies (Before Fall of Athens)
+country_event = {
+	id = ne_skelsa.90
+	title = ne_skelsa.90.t
+	desc =  ne_skelsa.90.d
+	picture = GFX_metaxas_death
+
+	fire_only_once = yes
+
+	trigger = {
+	
+		tag = GRE
+		has_war_with = GER
+		has_war_with = ITA
+		surrender_progress > 0.15
+		has_country_leader = { name = "Ioannis Metaxas" }
+	
+	}
+	
+	
+	option = {	#stability loss (small)
+		name = ne_skelsa.90.a
+
+		##Effects
+		add_stability = -0.02
+		
+		kill_country_leader = yes
+		create_country_leader = { name = "George II of Greece" picture = "Portrait_GRE_George_II.dds" expire = "1965.1.1" ideology = moderatism traits = { } }
+		set_party_name = { ideology = neutrality name = GRE_House_of_Glucksburg }	
+	}
+
+	
+}
+
+
 ##Info concerning the annexation of the Baltic States: ne_skelsa.59
 country_event = {
 	id = ne_skelsa.59

@@ -18,7 +18,7 @@ country_event = {
 	option = {
 		name = ne.4.a         #1945	
 
-			##Germany
+			## Division of Germany
 			SAA = { 		
 				transfer_state = 783
 			}
@@ -61,31 +61,18 @@ country_event = {
 			}
 			
 					
-			FRA = {	
-				puppet = SAA
-				puppet = FOZ
-			}
-			
+			FRA = {	puppet = SAA  puppet = FOZ }			
 					
-			USA = {	
-				puppet = AOZ
-			}
-			
+			USA = {	puppet = AOZ }
+								
+			ENG = {	puppet = BOZ }
 					
-			ENG = {	
-				puppet = BOZ
-			}
+			SOV = {	puppet = SOZ }
 			
-					
-			SOV = {	
-				puppet = SOZ
-			}
-			POL = {
-				puppet = POZ
-			}
+			POL = { puppet = POZ }
 			
 			
-			##Italy 
+			##DIVISION OF ITALY##
 			
 			ENG = { 	
 				transfer_state = 273
@@ -140,7 +127,7 @@ country_event = {
 				transfer_state = 163			
 			}
 			
-			##hungary		
+			##Hungary			
 			HUN = { 		
 				transfer_state = 155
 				transfer_state = 154
@@ -149,8 +136,7 @@ country_event = {
 			}
 			
 			
-			##romania
-			
+			##Romania			
 			ROM = { 		
 				transfer_state = 46
 				transfer_state = 81
@@ -163,7 +149,7 @@ country_event = {
 			
 
 			
-			##bulgaria
+			##Bulgaria
 			
 			BUL = { 	
 				transfer_state = 77
@@ -171,22 +157,20 @@ country_event = {
 				transfer_state = 212
 				transfer_state = 48				
 			}
+					
 			
-		
-			##finland
-			
-			
+			##Finland
 			FIN = { 	
 				transfer_state = 145
 				transfer_state = 150
 				transfer_state = 149
 				transfer_state = 148
-				transfer_state = 111	
+				transfer_state = 111
+
+				transfer_state = 802 ##Hanko
 			}
 			
-			##england (fight bordergore on the isles)
-			
-			
+			##England (fight Border gore on the isles)
 			ENG = { 			
 				transfer_state = 122
 				transfer_state = 123
@@ -207,10 +191,14 @@ country_event = {
 				transfer_state = 121
 				transfer_state = 128
 				transfer_state = 129
+				
+				transfer_state = 809 ##Channel Islands				
+				transfer_state = 183 ##Cprus
+				transfer_state = 811 ##South Cyprus
 			}
 			
-			##soviets
 			
+			##Soviets			
 			SOV = { 		
 				transfer_state = 771
 				transfer_state = 78
@@ -236,7 +224,7 @@ country_event = {
 				transfer_state = 770
 				transfer_state = 91
 				transfer_state = 89
-				transfer_state = 209   ##territory from PLC
+				transfer_state = 209   ##territory from possible PLC
 				transfer_state = 198
 				transfer_state = 201
 				transfer_state = 202
@@ -251,6 +239,10 @@ country_event = {
 				transfer_state = 193
 				transfer_state = 224
 				transfer_state = 243
+				
+				transfer_state = 801 ##Kalastanjannero
+				transfer_state = 769 ##Porkkala
+				
 				
 				annex_country = { target = EST } 	
 				annex_country = { target = LAT }
@@ -294,9 +286,8 @@ country_event = {
 				transfer_state = 18	
 			}
 			
+			
 			##Poland
-			
-			
 			POL = { 
 				transfer_state = 98
 				transfer_state = 85
@@ -308,6 +299,8 @@ country_event = {
 				transfer_state = 92
 				transfer_state = 87
 				transfer_state = 86	
+				
+				transfer_state = 815 ##Suwalki Triangle
 			}
 
 			POZ = {
@@ -319,7 +312,7 @@ country_event = {
 				transfer_state = 67
 			}
 			
-			##yugoslavia		
+			##Yugoslavia		
 			YUG = { 
 				transfer_state = 108
 				transfer_state = 103
@@ -337,16 +330,41 @@ country_event = {
 				transfer_state =  45
 				transfer_state = 104
 				transfer_state = 780
-				transfer_state = 794		
+				transfer_state = 794
+				
+				transfer_state = 812 #Pormurska
+				transfer_state = 826 #Split
+				transfer_state = 813 # Ljubliana
+				transfer_state = 814 # Srem
+				
 			}
 			
-			##albania		
+			##Albania		
 			ALB = { 		
 				transfer_state = 44	
 			}
 			
 			
-			##greece		
+			##Ireland	
+			IRE = { 		
+				transfer_state = 113
+				transfer_state = 134	
+				transfer_state = 135					
+			}
+			
+			
+			#Portugal	
+			POR = { 
+				transfer_state = 112
+				transfer_state = 179	
+				transfer_state = 180
+				transfer_state = 181
+				transfer_state = 697
+				transfer_state = 698
+			}
+			
+			
+			##Greece		
 			GRE = { 	
 				transfer_state = 182
 				transfer_state = 164
@@ -356,7 +374,15 @@ country_event = {
 				transfer_state = 731
 				transfer_state = 184
 				transfer_state = 187
-				transfer_state = 164			
+				transfer_state = 164
+				
+				transfer_state = 819 #Lasihti (Eastern Crete)
+				transfer_state = 820 #Piraeus
+				transfer_state = 827 #Thessaloniki
+				transfer_state = 825 #North Aegean
+				transfer_state = 821 ##Small strip of land next to Evros
+				transfer_state = 829 ##Evros
+				
 			}
 					
 			##spain is left out
@@ -401,10 +427,10 @@ country_event = {
 				transfer_state = 144	
 			}
 			
-			##austria
 			
+			##DIVISION OF AUSTRIA##		
 			FRA = { 		
-				transfer_state = 153	#tyrol				
+				transfer_state = 153	#Tyrol				
 			}
 			
 			USA = { 	
@@ -412,7 +438,7 @@ country_event = {
 			}
 			
 			SOV = { 		
-				transfer_state = 4
+				transfer_state = 4 ##Vienna
 				transfer_state = 776							
 			}
 			
@@ -447,7 +473,8 @@ country_event = {
 			
 			
 			
-			SWI = { 	##switzerland			
+			#Switzerland	
+			SWI = { 	#		
 				transfer_state = 774
 				transfer_state = 775
 				transfer_state = 3
@@ -471,7 +498,15 @@ country_event = {
 				transfer_state = 355
 				transfer_state = 352
 				transfer_state = 345
-				transfer_state = 346			
+				transfer_state = 346
+
+				transfer_state = 810 ##Tekirdag (West of Istanbul)
+				transfer_state = 342
+				transfer_state = 343
+				transfer_state = 356
+				transfer_state = 49 ##Ankara
+
+				
 			}	
 		
 
@@ -498,15 +533,13 @@ country_event = {
 		name = ne.4.b
 
 	
-		##Germany
+		##Division of Germany
 
 		SAA = { 		
 			transfer_state = 783
 		}
 		
-		FRA = {
-			puppet = SAA
-		}
+		FRA = { puppet = SAA }
 		
 		WGR = { 
 			
@@ -584,15 +617,11 @@ country_event = {
 		}
 		
 		GRE = { 
-			
-			transfer_state = 164
-			
+			transfer_state = 164		
 		}
 		
-		TRI = { 
-			
-			transfer_state = 736
-			
+		TRI = { 			
+			transfer_state = 736		
 		}
 		
 		ETH = { 
@@ -610,7 +639,7 @@ country_event = {
 			
 		}
 		
-		##hungary		
+		##Hungary		
 		HUN = { 
 		
 			transfer_state = 155
@@ -621,7 +650,7 @@ country_event = {
 		}
 		
 		
-		##romania
+		##Romania
 		
 		ROM = { 	
 			transfer_state = 46
@@ -635,7 +664,7 @@ country_event = {
 		
 
 		
-		##bulgaria	
+		##Bulgaria	
 		BUL = { 	
 			transfer_state = 77
 			transfer_state = 211
@@ -644,7 +673,7 @@ country_event = {
 		}
 		
 	
-		##finland
+		##Finland
 		FIN = { 
 		
 			transfer_state = 145
@@ -653,6 +682,7 @@ country_event = {
 			transfer_state = 148
 			transfer_state = 111
 			
+			transfer_state = 802 ##Hanko	
 				
 		}
 		
@@ -681,7 +711,9 @@ country_event = {
 			transfer_state = 128
 			transfer_state = 129
 			
-		
+			transfer_state = 809 ##Channel Islands				
+			transfer_state = 183 ##Cprus
+			transfer_state = 811 ##South Cyprus		
 		}
 		
 		##CANADA get NFL and Labrador
@@ -737,6 +769,9 @@ country_event = {
 			transfer_state = 193
 			transfer_state = 224
 			transfer_state = 243
+			
+			transfer_state = 801 ##Kalastanjannero
+			transfer_state = 769 ##Porkkala
 			
 			annex_country = { target = EST } 	
 			annex_country = { target = LAT }
@@ -805,6 +840,8 @@ country_event = {
 			transfer_state = 92
 			transfer_state = 87
 			transfer_state = 86	
+			
+			transfer_state = 815 ##Suwalki Triangle
 		}
 		
 		
@@ -826,18 +863,40 @@ country_event = {
 			transfer_state =  45
 			transfer_state = 104
 			transfer_state = 780
-			transfer_state = 794			
+			transfer_state = 794
+
+			transfer_state = 812 #Pormurska
+			transfer_state = 826 #Split
+			transfer_state = 813 # Ljubliana
+			transfer_state = 814 # Srem		
 		}
 		
-		##albania
 		
+		##Albania		
 		ALB = { 		
 			transfer_state = 44	
 		}
 		
+		##Ireland	
+		IRE = { 		
+			transfer_state = 113
+			transfer_state = 134	
+			transfer_state = 135					
+		}
 		
-		##greece
 		
+		#Portugal	
+		POR = { 
+			transfer_state = 112
+			transfer_state = 179	
+			transfer_state = 180
+			transfer_state = 181
+			transfer_state = 697
+			transfer_state = 698
+		}
+		
+		
+		##Greece		
 		GRE = { 	
 			transfer_state = 182
 			transfer_state = 164
@@ -847,14 +906,21 @@ country_event = {
 			transfer_state = 731
 			transfer_state = 184
 			transfer_state = 187
-			transfer_state = 164			
+			transfer_state = 164
+
+			transfer_state = 819 #Lasihti (Eastern Crete)
+			transfer_state = 820 #Piraeus
+			transfer_state = 827 #Thessaloniki
+			transfer_state = 825 #North Aegean
+			transfer_state = 821 ##Small strip of land next to Evros
+			transfer_state = 829 ##Evros
 		}
 		
 		
-		##spain is left out
+		##Spain is left out
 		
 		
-		##benelux
+		##Benelux##
 		
 		HOL = { 		
 			transfer_state = 36
@@ -971,7 +1037,13 @@ country_event = {
 			transfer_state = 355
 			transfer_state = 352
 			transfer_state = 345
-			transfer_state = 346				
+			transfer_state = 346
+
+			transfer_state = 810 ##Tekirdag (West of Istanbul)
+			transfer_state = 342
+			transfer_state = 343
+			transfer_state = 356
+			transfer_state = 49 ##Ankara
 		}	
 		
 
@@ -1134,7 +1206,9 @@ country_event = {
 			transfer_state = 150
 			transfer_state = 149
 			transfer_state = 148
-			transfer_state = 111		
+			transfer_state = 111
+
+			transfer_state = 802 ##Hanko
 		}
 		
 		##england (fight border gore on the isles)
@@ -1160,6 +1234,10 @@ country_event = {
 			transfer_state = 121
 			transfer_state = 128
 			transfer_state = 129
+			
+			transfer_state = 809 ##Channel Islands				
+			transfer_state = 183 ##Cprus
+			transfer_state = 811 ##South Cyprus
 		}
 		
 		##CANADA gets newfoundland/labrador
@@ -1212,6 +1290,9 @@ country_event = {
 			transfer_state = 193
 			transfer_state = 224
 			transfer_state = 243
+			
+			transfer_state = 801 ##Kalastanjannero
+			transfer_state = 769 ##Porkkala
 			
 			annex_country = { target = EST } 	
 			annex_country = { target = LAT }
@@ -1276,13 +1357,13 @@ country_event = {
 			transfer_state = 784
 			transfer_state = 92
 			transfer_state = 87
-			transfer_state = 86		
+			transfer_state = 86	
+
+			transfer_state = 815 ##Suwalki Triangle
 		}
 		
 		
-		##yugoslavia
-		
-		
+		##Yugoslavia
 		YUG = { 		
 			transfer_state = 108
 			transfer_state = 103
@@ -1300,17 +1381,40 @@ country_event = {
 			transfer_state =  45
 			transfer_state = 104
 			transfer_state = 780
-			transfer_state = 794			
+			transfer_state = 794	
+
+			transfer_state = 812 #Pormurska
+			transfer_state = 826 #Split
+			transfer_state = 813 # Ljubliana
+			transfer_state = 814 # Srem
 		}
 		
-		##albania
+		##Albania
 		
 		ALB = { 		
 			transfer_state = 44			
 		}
 		
+		##Ireland	
+		IRE = { 		
+			transfer_state = 113
+			transfer_state = 134	
+			transfer_state = 135					
+		}
 		
-		##greece
+		
+		#Portugal	
+		POR = { 
+			transfer_state = 112
+			transfer_state = 179	
+			transfer_state = 180
+			transfer_state = 181
+			transfer_state = 697
+			transfer_state = 698
+		}
+		
+		
+		##Greece
 		
 		GRE = { 	
 			transfer_state = 182
@@ -1322,6 +1426,13 @@ country_event = {
 			transfer_state = 184
 			transfer_state = 187
 			transfer_state = 164	
+			
+			transfer_state = 819 #Lasihti (Eastern Crete)
+			transfer_state = 820 #Piraeus
+			transfer_state = 827 #Thessaloniki
+			transfer_state = 825 #North Aegean
+			transfer_state = 821 ##Small strip of land next to Evros
+			transfer_state = 829 ##Evros
 		}
 		
 		
@@ -1359,7 +1470,7 @@ country_event = {
 			release = ICE			
 		}
 		
-		##norway
+		##Norway
 		
 		NOR = { 	
 			transfer_state = 142
@@ -1368,10 +1479,10 @@ country_event = {
 			transfer_state = 144				
 		}
 		
-		##austria
+		##Austria
 		
 		FRA = { 		
-			transfer_state = 153	#tyrol				
+			transfer_state = 153	#Tyrol				
 		}
 		
 		USA = { 	
@@ -1400,7 +1511,7 @@ country_event = {
 		}
 		
 		
-		##sweden
+		##Sweden
 		
 		SWE = { 	
 			transfer_state = 666
@@ -1413,7 +1524,8 @@ country_event = {
 		}
 			
 		
-		SWI = {		##switzerland	
+		##Switzerland
+		SWI = {			
 			transfer_state = 774
 			transfer_state = 775
 			transfer_state = 3
@@ -1421,7 +1533,8 @@ country_event = {
 		}
 		
 		
-		TUR = { 	##turkey		
+		##Turkey
+		TUR = { 			
 			transfer_state = 341
 			transfer_state = 347
 			transfer_state = 340
@@ -1435,7 +1548,13 @@ country_event = {
 			transfer_state = 355
 			transfer_state = 352
 			transfer_state = 345
-			transfer_state = 346			
+			transfer_state = 346	
+
+			transfer_state = 810 ##Tekirdag (West of Istanbul)
+			transfer_state = 342
+			transfer_state = 343
+			transfer_state = 356
+			transfer_state = 49 ##Ankara
 		}
 		
 		

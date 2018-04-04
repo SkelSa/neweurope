@@ -78,9 +78,9 @@
  NE_bad_infrastructure_desc:0 "The further we advanced into the Chinese mainland we encountered worse roads, bridges and rail networks! This combined with several attacks by guerillas on our transports has led to a significant strain on our supply logistics."
  NE_ITA_incompetent_officers:0 "Italian General Staff"
  NE_ITA_incompetent_officers_desc:0 "The "Esercito Italiano" is plagued by incompetent officers and generals. Furthermore, among ill-equipped units and poor morale Mussolini and the rest of the fascist leadership dream of big conquest. A dream, many Italians are not interested in..."
- NE_civil_war_help_ger:0 "German Military Aid"
- NE_civil_war_help_ita:0 "Italian Military Aid"
- NE_civil_war_help_por:0 "Portuguese Military Aid"
+ NE_civil_war_help_ger:0 "German Military Assistance"
+ NE_civil_war_help_ita:0 "Italian Military Assistance"
+ NE_civil_war_help_por:0 "Portuguese Military Assistance"
  NE_civil_war_help_usa:0 "American Military Assistance"
  NE_civil_war_help_eng:0 "British Military Assistance"
  NE_civil_war_help_fra:0 "French Military Assistance"
@@ -576,10 +576,7 @@
  ne_skelsa.86.d:0 "While the Red Army is equipped with tens of thousands of tanks, most are just older T-26 or BT-5. In the Spanish Civil War they were tested in real combat and this was when our general staff realized that we have to invest heavily in new designs and models. Back in 1937 we tasked various scientists and tank designers, including Mikhail Koshkin, with developing new state-of-the-art tanks which should defeat any enemy they face.\nYesterday, after several prototypes and countless tests our designers have finally presented their latest blueprints. Both tank models, one being a medium tank and the other one a heavy, can be mass-produced, are easy to maintain and feature good armor, mobility and firepower. Model "T-34", which came out of the "A-32" prototype, has a sloped armor up to 45 mm thick, uses a 76 mm gun and two MGs and can reach a top speed of 53 km/h. Our new heavy tank, the "Kliment Voroshilov 1", ot "KV-1" is with 35 km/h slower, but has a front armor of 75 mm while using the same gun as the "T-34". It already came out last year but our tank designers made some significant improvements.\nMost tests have shown good results in the combat effectiveness but it's still unknown how well the new tanks will perform against a real enemy. While being superior in most aspects compared to German, French or British tanks, they still lack radios and the optics could be better. Additionally, several conservative elements in our government have voiced their concerns about the "T-34", criticizing the high production cost. Nevertheless, the tank plants "Kirov" and "Komintern Locomotive Factory" have already begun the production and delivered some tanks to the Red Army. Several other tank factories, like "Red October", have also announced to begin mass-production. Due to the vast amount of Soviet tank corps it will probably take some years to fully modernize them."
  ne_skelsa.86.a:0 "The true defenders of our Motherland!"
  
- ##Metaxas is dead!
- ne_skelsa.90.t:0 "Prime Minister Metaxas has passed away!"
- ne_skelsa.90.d:0 "After a long struggle against toxaemia our beloved Leader has died in Athens today. In the next days our people will mourn his death and say farewell. We have decided that the current governor of the Bank of Greece, Alexandros Koryzis, will be Metaxas' successor and serve as the Prime Minister of Greece. However, King George II will, as expected, remain our head of state and have the final say in all political decisions.\n Even though the death of Metaxas will be a setback, we are confident that the new government and our beloved King can maneuver the Greek nation through these difficult times of war."
- ne_skelsa.90.a:0 "King George II will achieve victory for Greece!"
+ 
  
  
  
@@ -927,7 +924,7 @@
  ne_news.46.c:0 "The mistakes of 1920 are undone!"
  ne_news.46.e:0 "This nation had no place in history anyways."
  
-  ##French Mandate for Syria and the Lebanon ##NATION IS PROBABLY OBSOLETE
+ ##French Mandate for Syria and the Lebanon ##NATION IS PROBABLY OBSOLETE
  #FSL_fascism:0 "French Levant"
  #FSL_fascism_DEF:0 "The French Levant"
  #FSL_democratic:0 "French Mandate for Syria and the Lebanon"

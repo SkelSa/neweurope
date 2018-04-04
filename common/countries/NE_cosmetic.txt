@@ -129,8 +129,8 @@ UKR_reichskommissariat = {
 }
 
 SPR_civil_war = {
-	color = rgb { 127 0 0 } ##200 100 31
-	color_ui = rgb { 127 0 0 } ##245 123 38
+	color = rgb { 200 100 31 } 
+	color_ui = rgb { 245 123 38 } 
 }
 
 GER_civil_war = {
@@ -214,26 +214,26 @@ NE_VICHY = {
 
 ##French Lebanon
 NE_LEB_FRA = {
-    color = rgb { 0 100 255 }
-    color_ui = rgb { 0 40 255 }
+    color = rgb { 127 0 0 }
+    color_ui = rgb { 0 185 255 }
 }
 
 ##French Syria
 NE_SYR_FRA = {
-    color = rgb { 0 100 255 }
-    color_ui = rgb { 0 40 255 }
+    color = rgb { 0 185 255 }
+    color_ui = rgb { 0 185 255 }
 }
 
 ##French Tunisia
 NE_TUN_FRA = {
-    color = rgb { 0 100 255 }
-    color_ui = rgb { 0 40 255 }
+    color = rgb { 0 185 255 }
+    color_ui = rgb { 0 185 255 }
 }
 
 ##French Morocco
 NE_MOR_FRA = {
-    color = rgb { 0 100 255 }
-    color_ui = rgb { 0 40 255 }
+    color = rgb { 0 185 255 }
+    color_ui = rgb { 0 185 255 }
 }
 
 ###########################
@@ -264,13 +264,13 @@ RAJ_UK = {
 	color_ui = rgb { 170  10  10 }
 }
 
-##Better West Germany Color
+##Better West Germany Color (Hoi3 )
 NE_WGR = {
     color = rgb { 104  153  126 } #{ 120 140 120 }
     color_ui = rgb { 120 140 120 }
 }
 
-##Better East Germany Color
+##Better East Germany Color (Hoi3 )
 NE_DDR = {
     color = rgb { 119  130  145 }#{ 130 135 140 }
     color_ui = rgb { 130 135 140 }

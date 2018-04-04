@@ -15,7 +15,7 @@ set_research_slots = 2
 
 set_convoys = 20
 
-##Cosmetic tag
+##Cosmetic tag for French Morocco
 set_cosmetic_tag = NE_MOR_FRA
 
 
@@ -138,20 +138,20 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 25
+			popularity = 5
 		}
 
 		fascism = {
-			popularity = 20
+			popularity = 5
 		}
 		
 		communism = {
-			popularity = 5
+			popularity = 0
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			popularity = 50
+			popularity = 90
 		}
 	}
 	
@@ -162,9 +162,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Mbarek Bekkay"
+	name = "Mohammed V"
 	desc = ""
-	picture = "Portrait_Arabia_Generic_neutrality1.dds"
+	picture = "Portrait_MOR_Mohammed_V.dds"
 	ideology = despotism
 	traits = {
 		#

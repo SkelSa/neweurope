@@ -137,7 +137,7 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 50
+			popularity = 80
 		}
 
 		fascism = {
@@ -145,12 +145,12 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 10 ##10
+			popularity = 5 ##10
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			popularity = 30 ##30
+			popularity = 5 ##30
 		}
 	}
 	
@@ -161,9 +161,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Hashim al-Atassi"
+	name = "Émile Eddé"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
+	picture = "Portrait_LEB_Emile_Edde.dds"
 	ideology = liberalism
 	traits = {
 		#
