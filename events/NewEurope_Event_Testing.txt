@@ -35,8 +35,8 @@ country_event = {
 		add_stability = -0.02
 		
 		kill_country_leader = yes
-		create_country_leader = { name = "George II of Greece" picture = "Portrait_GRE_George_II.dds" expire = "1965.1.1" ideology = moderatism traits = { } }
-		set_party_name = { ideology = neutrality name = GRE_House_of_Glucksburg }	
+		create_country_leader = { name = "George II of Greece" picture = "Portrait_GRE_George_II.dds" expire = "1965.1.1" ideology = despotism traits = { } }
+		set_party_name = { ideology = neutrality long_name = GRE_House_of_Glucksburg name = GRE_House_of_Glucksburg } 	
 	}
 
 	

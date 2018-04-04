@@ -214,8 +214,18 @@ news_event = {
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
 			add_popularity = { ideology = neutrality popularity = 0.90 } 
 		}
+		
+		TUN = {		
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 1 } 
+		}
+		
+		MOR = {		
+			set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 1 } 
+		}
 
-		##SYR and LEB country files were modified
+		##SYR and LEB country files were modified so no changes here!		
 
 		
 		##Adding state cores

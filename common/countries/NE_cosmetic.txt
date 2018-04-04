@@ -215,7 +215,7 @@ NE_VICHY = {
 ##French Lebanon
 NE_LEB_FRA = {
     color = rgb { 127 0 0 }
-    color_ui = rgb { 0 185 255 }
+    color_ui = rgb { 127 0 0 }
 }
 
 ##French Syria

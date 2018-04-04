@@ -3,14 +3,16 @@
 
 
 add_namespace = ne_historical
-add_namespace = ne_japan
+#add_namespace = ne_japan
+
 
 ##Most events are hidden
 ##historical focus is on check!
 
-#-Done in Germany's focus tree!
 
 ##GERMANY CAN ONLY DO "AROUND THE MAGINOT" AFTER POL HAS CAPITULATED##
+
+#-Done in Germany's focus tree!
 
 #	OR = {
 #		POL = { has_capitulated = yes }
@@ -47,6 +49,8 @@ add_namespace = ne_japan
 
 ##NO OPERATION TANNENBAUM IN HISTORICAL##
 
+#-Done in Germany's focus tree!
+
 
 #	ai_will_do = {
 #		factor = 1
@@ -59,6 +63,8 @@ add_namespace = ne_japan
 
 
 ##WAR WITH THE USSR ONLY AFTER MARCH 1941##
+
+#-Done in Germany's focus tree!
 
 
 #	historical_ai = {
