@@ -119,48 +119,29 @@
  ##Germany change its name back, when the power is lose. The event is hidden
 
  ##Anglo-Soviet invasion of Iran EVENTS
-  ne_conf.1.t:0 "Preventing the possible occupation of Iran's oil fields by Germany"
-  ne_conf.1.d:0 "Iran has long sympathized with Germany. With the renewal of friendly relations between the USSR and Great Britain and the beginning of the war between Germany and the USSR, it is necessary to solve the Iranian question"
-  ne_conf.1.a:0 "Start preparing for the invasion of Iran"
 
-  ne_misc.250.t:0 "Preventing the possible occupation of Iran's oil fields by Germany"
-  ne_misc.250.d:0 "We have prepared our troops and are ready to invade any minute"
-  ne_misc.250.a:0 "Start Invasion"
-
-  ne_misc.251.t:0 "Our allies began an invasion"  ##Allies or Soviet launched an attack
-  ne_misc.251.d:0 "Our allies began to invade with us. Together we will crush them!"
-  ne_misc.251.a:0 "The operation should not take much time..."
-
-  ne_misc.252.t:0 "Iran is giving up!"
-  ne_misc.252.d:0 "Iran suffered a crushing defeat: their army is running, the government is in flight, and their generals are on the side of the Allies!"
-  ne_misc.252.a:0 "Iran will not get an Axis!"
+  ne_conf.1.t:0 "Iran is giving up!"
+  ne_conf.1.d:0 "Iran suffered a crushing defeat: their army is running, the government is in flight, and their generals are on the side of the Allies!"
+  ne_conf.1.a:0 "Iran will not get an Axis!"
 
  ##Faroe and Iceland British invasion
-  ne_misc.253.t:0 "Invasion of the Faroe Islands"
-  ne_misc.253.d:0 "To prevent the invasion of Germany into Britain, we need to invade the Faroe Islands. Our command is already ready to invade."
-  ne_misc.253.a:0 "Start the invasion according to plan"
-
-  ne_misc.254.t:0 "The Faroe Islands were captured by Britain!"
-  ne_misc.254.d:0 "Sad news. The British overtook us and captured today the Faroe Islands."
-  ne_misc.254.a:0 "Hier ist Müll!"
+  ne_germany.2:0 "The Faroe Islands were captured by Britain!"
+  ne_germany.2:0 "Sad news. The British overtook us and captured today the Faroe Islands."
+  ne_germany.2:0 "Hier ist Müll!" ##hitler offended
   ##WTF :D ?
 
-  ne_misc.255.t:0 "Invasion of Iceland"
-  ne_misc.255.d:0 "We need to seize the strategically important Iceland. We are ready to begin the invasion. Their government may be dissatisfied."
-  ne_misc.255.a:0 "Start the invasion of Iceland"
+  ne_germany.3.t:0 "Iceland were captured by Britain!"
+  ne_germany.3.d:0 "The British once again beat us and captured an important island - Iceland."
+  ne_germany.3.a:0 "Zur Hölle mit Ihnen!" ##sad hitler
 
-  ne_misc.256.t:0 "Iceland were captured by Britain!"
-  ne_misc.256.d:0 "The British once again beat us and captured an important island - Iceland."
-  ne_misc.256.a:0 "Zur Hölle mit Ihnen!"
-
-  ne_misc.257.t:0 "Greenland goes under US control"
-  ne_misc.257.d:0 "Denmark provides us with Greenland from possible capture"
-  ne_misc.257.a:0 "Good"
+  ne_usa.1.t:0 "Greenland goes under US control"
+  ne_usa.1.d:0 "Denmark provides us with Greenland from possible capture"
+  ne_usa.1.a:0 "Good"
 
  ##Poland was attacked by Germany
-  ne_misc.259.t:0 "Military Assistance to Poland in the Aggression of Germany"
-  ne_misc.259.d:0 "Germany plans to attack Poland in a matter of days"
-  ne_misc.259.a:0 "Invite them to the alliance"
+  ne_uk.1.t:0 "Military Assistance to Poland in the Aggression of Germany"
+  ne_uk.1.d:0 "Germany plans to attack Poland in a matter of days"
+  ne_uk.1.a:0 "Invite them to the alliance"
 
  ##Poland annex its occupation zone event
   ne_misc.28.t:0 "Poland Occupation Zone Annexation"
@@ -362,3 +343,13 @@ SOV_crimea_transfer_desc:0 "Taking into account the commonality of the economy, 
 GRE_historical_metaxasline:0 "The Metaxas Line"
 GRE_metaxas_line:0 "Erection of Metaxas Line"
 GRE_metaxas_line_desc:0 "The Metaxas Line was a chain of fortifications constructed along the line of the Greco-Bulgarian border, designed to protect Greece in case of a Bulgarian invasion after the rearmament of Bulgaria. It was named after Ioannis Metaxas, then Prime Minister of Greece, and chiefly consists of tunnels that led to observatories, emplacements and machine-gun nests."
+##Faroe and Iceland British invasion
+ENG_inv_faroe:0 "Invasion of the Faroe Islands"
+ENG_inv_faroe_desc:0 "To prevent the invasion of Germany into Britain, we need to invade the Faroe Islands. Our command is already ready to invade."
+
+ENG_inv_iceland:0 "Invasion of Iceland"  ##Iceland
+ENG_inv_iceland_desc:0 "We need to seize the strategically important Iceland. We are ready to begin the invasion. Their government may be dissatisfied."
+##Iran British-Soviet invasion decision text
+NE_waroperation_iraqinvasion:0 "Operation Countenance" ##Category name
+NE_warop_iraqinvasion:0 "Preventing the possible occupation of Iran's oil fields by Germany"
+NE_warop_iraqinvasion_desc:0 "Iran has long sympathized with Germany. With the renewal of friendly relations between the USSR and Great Britain and the beginning of the war between Germany and the USSR, it is necessary to solve the Iranian question. We have prepared our troops and are ready to invade any minute"
