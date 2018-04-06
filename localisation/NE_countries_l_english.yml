@@ -2,17 +2,81 @@
 
 
 
- ##########################################
- ###NEW COSMETIC TAGS ADDED BY NEWEUROPE###
- ##########################################
+ ###########################
+ #### NEW COSMETIC TAGS ####
+ ###########################
  
- ##MOST WILL BE USED IN HISTORICAL SETTINGS##
+ 
+ ##EUROPE##
+ 
  ##Nazi Germany
  NE_DEU_fascism:0 "Deutsches Reich"
  NE_DEU_fascism_DEF:0 "Das Deutsche Reich" 
- ##Empire of Japan
- NE_EOJ_fascism:0 "Empire of Japan"
- NE_EOJ_fascism_DEF:0 "The Empire of Japan"
+ ##Greater German Reich
+ NE_DEU_REN_fascism:0 "Großdeutsches Reich"
+ NE_DEU_REN_fascism_DEF:0 "das Großdeutsches Reich"
+ ##Greater German Reich (Historical)
+ NE_DEU_REN_HISTORICAL_fascism:0 "Großdeutsches Reich"
+ NE_DEU_REN_HISTORICAL_fascism_DEF:0 "das Großdeutsche Reich"
+ ##ITA
+ NE_ITA_democratic:0 "Republic of Italy"
+ NE_ITA_democratic_DEF:0 "The Republic of Italy"
+ NE_ITA_fascism:0 "Kingdom of Italy"
+ NE_ITA_fascism_DEF:0 "The Kingdom of Italy"
+ ##ITS cosmetic
+ NE_ITS_fascism:0 "Italian Social Republic"
+ NE_ITS_fascism_DEF:0 "The Italian Social Republic"
+ ##Vichy France
+ NE_VICHY_fascism:0 "French State"
+ NE_VICHY_fascism_DEF:0 "The French State"
+ NE_VICHY_democratic:0 "Free France"
+ NE_VICHY_democratic_DEF:0 "Free France"
+ ##Spanish Republic (SPR)
+ NE_SPR_fascism:0 "Spanish State"
+ NE_SPR_fascism_DEF:0 "The Spanish State"
+ NE_SPR_communism:0 "Spanish Republic"
+ NE_SPR_communism_DEF:0 "The Spanish Republic"
+ NE_SPR_democratic:0 "Spanish Republic"
+ NE_SPR_democratic_DEF:0 "The Spanish Republic"
+ ##Spanish State (SPS)
+ NE_SPS_fascism:0 "Spanish State"
+ NE_SPS_fascism_DEF:0 "The Spanish State"
+ NE_SPS_communism:0 "Spanish Republic"
+ NE_SPS_communism_DEF:0 "The Spanish Republic"
+ NE_SPR_democratic:0 "Spanish Republic"
+ NE_SPR_democratic_DEF:0 "The Spanish Republic"
+ ##Romania
+ NE_ROM_fascism:0 "Kingdom of Romania"
+ NE_ROM_fascism_DEF:0 "The Kingdom of Romania"
+ NE_ROM_communism:0 "Socialist Republic of Romania"
+ NE_ROM_communism_DEF:0 "The Socialist Republic of Romania"
+ ##Bulgaria
+ NE_BUL_fascism:0 "Kingdom of Bulgaria"
+ NE_BUL_fascism_DEF:0 "The Kingdom of Bulgaria"
+ NE_BUL_communism:0 "People's Republic of Bulgaria"
+ NE_BUL_communism_DEF:0 "The People's Republic of Bulgaria"
+ ##Hungary
+ NE_HUN_fascism:0 "Kingdom of Hungary"
+ NE_HUN_fascism_DEF:0 "The Kingdom of Hungary"
+ NE_HUN_neutrality:0  "Kingdom of Hungary"
+ NE_HUN_neutrality_DEF:0 "The Kingdom of Hungary"
+ ##Serbia (Government of National Salvation)
+ NE_SER_GNS_fascism:0 "Government of National Salvation"
+ NE_SER_GNS_fascism_DEF:0 "The Government of National Salvation"
+ NE_SER_GNS_fascism_ADJ:0 "Serbian"
+ ##Greece
+ NE_GRE_fascism:0 "Greek State"
+ NE_GRE_fascism_DEF:0 "The Greek State"
+ NE_GRE_democratic:0 "Hellenic Republic"
+ NE_GRE_democratic_DEF:0 "The Hellenic Republic"
+ NE_GRE_neutrality:0 "Kingdom of Greece"
+ NE_GRE_neutrality_DEF:0 "The Kingdom of Greece"
+ ##Greece after becoming full communist
+ NE_GRE_1_communism:0 "Hellenic Commune"
+ NE_GRE_1_communism:0 "The Hellenic Commune" 
+ ##CZE better communist name
+ NE_CZE_communism:0 "Czechoslovak SR"
+ NE_CZE_communism_DEF:0 "The Czechoslovak SR"
  ##WGR and DDR cosmetic tags 
  NE_WGR_democratic:0 "Federal Republic of Germany"
  NE_WGR_democratic_DEF:0 "The Federal Republic of Germany "
@@ -21,126 +85,23 @@
  ##DDR gets their special flag
  NE_DDR_1_communism:0 "German Democratic Republic"
  NE_DDR_1_communism_DEF:0 "The German Democratic Republic" 
- ##Better Name South Korea
- NE_KOR_democratic:0 "Republic of Korea"
- NE_KOR_democratic_DEF:0 "The Republic of Korea"
- ##CZE better communist name
- NE_CZE_communism:0 "Czechoslovak SR"
- NE_CZE_communism_DEF:0 "The Czechoslovak SR"
- ##PRC
- NE_CSR_communism:0 "Chinese Soviet Republic"
- NE_CSR_communism_DEF:0 "The Chinese Soviet Republic"
- NE_CSR_fascism_ADJ:0 "Sino"
- NE_CSR_democratic_ADJ:0 "Sino"
- NE_CSR_neutrality_ADJ:0 "Sino"
- NE_CSR_communism_ADJ:0 "Sino"
- ##Greece
- NE_GRE_fascism:0 "Greek State"
- NE_GRE_fascism_DEF:0 "The Greek State"
- NE_GRE_democratic:0 "Hellenic Republic"
- NE_GRE_democratic_DEF:0 "The Hellenic Republic"
- NE_GRE_neutrality:0 "Kingdom of Greece"
- NE_GRE_neutrality_DEF:0 "The Kingdom of Greece"
- ##Russia
- NE_RUS_fascism:0 "Russian Empire"
- NE_RUS_fascism_DEF:0 "The Russian Empire"
- NE_RUS_democratic:0 "Russian Federation"
- NE_RUS_democratic_DEF:0 "Russian Federation"
- NE_RUS_neutrality:0 "Russia"
- NE_RUS_neutrality_DEF:0 "Russia"
- NE_RUS_communism:0 "Russian Soviet Federative Socialist Republic"
- NE_RUS_communism_DEF:0 "The Russian Soviet Federative Socialist Republic"
- NE_RUS_fascism_ADJ:0 "Russian"
- NE_RUS_democratic_ADJ:0 "Russian"
- NE_RUS_neutrality_ADJ:0 "Russian"
- NE_RUS_communism_ADJ:0 "Russian"
- ##Burma
- BUR_fascism:0 "The State of Burma"
- BUR_democratic:0 "Republic of the Union of Myanmar"
- BUR_communism:0 "Union of Burma"
- BUR_neutrality:0 "Burma"
- BUR_fascism_ADJ:0 "Burmese"
- BUR_democratic_ADJ:0 "Burmese"
- BUR_communism_ADJ:0 "Burmese"
- BUR_neutrality_ADJ:0 "Burmese"
-
- BUR_ENG_autonomy_satellite:0 "British Burma"
- BUR_ENG_autonomy_satellite_DEF:0 "British Burma"
- BUR_ENG_autonomy_dominion:0 "British Burma"
- BUR_ENG_autonomy_colony:0 "British Burma"
- BUR_ENG_autonomy_puppet:0 "British Burma"
- BUR_ENG_autonomy_integrated_puppet:0 "British Burma"
- BUR_ENG_autonomy_dominion_DEF:0 "The British Burma"
- BUR_ENG_autonomy_colony_DEF:0 "The British Burma"
- BUR_ENG_autonomy_puppet_DEF:0 "The British Burma"
- BUR_ENG_autonomy_integrated_puppet_DEF:0 "The British Burma"
-
- ##India
- NE_IND_BUR_fascism:0 "Indian Myanmar"
- NE_IND_BUR_democratic:0 "Indian Myanmar"
- NE_IND_BUR_communism:0 "Indian Myanmar"
- NE_IND_BUR_neutrality:0 "Indian Myanmar"
- NE_IND_BUR_fascism_ADJ:0 "Burmese"
- NE_IND_BUR_democratic_ADJ:0 "Burmese"
- NE_IND_BUR_communism_ADJ:0 "Burmese"
- NE_IND_BUR_neutrality_ADJ:0 "Burmese"
-
- NE_DEU_REN_fascism:0 "Großdeutsches Reich"
- NE_DEU_REN_fascism_DEF:0 "Das Großdeutsches Reich"
-
- ##Polish Occupation Zone
- POZ_fascism:0 "Polish Occupation Zone"
- POZ_fascism_DEF:0 "The Polish Occupation Zone"
- POZ_democratic:0 "Polish Occupation Zone"
- POZ_democratic_DEF:0 "The Polish Occupation Zone"
- POZ_neutrality:0 "Polish Occupation Zone"
- POZ_neutrality_DEF:0 "The Polish Occupation Zone"
- POZ_communism:0 "Polish Liberation Zone"
- POZ_communism_DEF:0 "The Polish Liberation Zone"
- POZ_fascism_ADJ:0 "Polish"
- POZ_democratic_ADJ:0 "Polish"
- POZ_neutrality_ADJ:0 "Polish"
- POZ_communism_ADJ:0 "Polish"
-
- ##Vlasov's Army
- ROA_fascism:0 "Committee for the Liberation of the Peoples of Russia"
- ROA_democratic:0 "Committee for the Liberation of the Peoples of Russia"
- ROA_communism:0 "Committee for the Liberation of the Peoples of Russia"
- ROA_neutrality:0 "Committee for the Liberation of the Peoples of Russia"
- ROA_fascism_ADJ:0 "Russian"
- ROA_democratic_ADJ:0 "Russian"
- ROA_communism_ADJ:0 "Russian"
- ROA_neutrality_ADJ:0 "Russian"
- ROA_neutrality_party:0 "KONR"
- ROA_neutrality_party_long:0 "Committee for the Liberation of the Peoples of Russia"
-
- ##Morocco
- MOR_fascism:0 "Morocco"
- MOR_democratic:0 "Morocco"
- MOR_communism:0 "Morocco"
- MOR_neutrality:0 "Kingdom of Morocco"
- MOR_fascism_ADJ:0 "Moroccan"
- MOR_democratic_ADJ:0 "Moroccan"
- MOR_communism_ADJ:0 "Moroccan"
- MOR_neutrality_ADJ:0 "Moroccan"
-
- ##USA/USSR NAMES - PLAYER CAN DECIDE WHICH NAME THE TWO SUPERPOWERS SHOULD HAVE##
- 
- ##USSR short
+ ##USSR Name short
  NE_USS_communism:0 "USSR"
  NE_USS_communism_DEF:0 "The USSR"
- ##USA short
- NE_USA_democratic:0 "USA"
- NE_USA_democratic_DEF:0 "The USA"
- ##USSR long
+ ##USSR Name long
  NE_USS_1_communism:0 "Union of Soviet Socialist Republics"
  NE_USS_1_communism_DEF:0 "The USSR"
- ##USA long
+ 
+ 
+ ##AMERICAS##
+ 
+ ##USA Name short
+ NE_USA_democratic:0 "USA"
+ NE_USA_democratic_DEF:0 "The USA" 
+ ##USA Name long
  NE_USA_1_democratic:0 "United States of America"
  NE_USA_1_democratic_DEF:0 "The United States"
- 
- 
- ##USA communist. They get an event when they're communist, but only if player chose historical settings. SOV chooses when USA is puppet <- This is NEW
+ ##USA communist. They get an event when they're communist, but only if player chose historical settings. SOV chooses when USA is puppet
  NE_USA_communism:0 "USASR"
  NE_USA_communism_DEF:0 "The USASR"
  NE_USA_1_communism:0 "United States of America Soviet Republics"
@@ -151,120 +112,202 @@
  NE_USA_3_communism_DEF:0 "The USSA"
  
  
- ##OCCUPATION ZONES##
- FOZ_fascism:0 "French Occupation Zone"
- FOZ_fascism_DEF:0 "The French Occupation Zone"
- FOZ_democratic:0 "French Occupation Zone"
- FOZ_democratic_DEF:0 "The French Occupation Zone"
- FOZ_neutrality:0 "French Occupation Zone"
- FOZ_neutrality_DEF:0 "The French Occupation Zone"
- FOZ_communism:0 "French Liberation Zone"
- FOZ_communism_DEF:0 "The French Liberation Zone"
- FOZ_fascism_ADJ:0 "French"
- FOZ_democratic_ADJ:0 "French"
- FOZ_neutrality_ADJ:0 "French"
- FOZ_communism_ADJ:0 "French"
- SOZ_fascism:0 "Russian Occupation Zone"
- SOZ_fascism_DEF:0 "The Russian Occupation Zone"
- SOZ_democratic:0 "Russian Occupation Zone"
- SOZ_democratic_DEF:0 "The Russian Occupation Zone"
- SOZ_neutrality:0 "Russian Occupation Zone"
- SOZ_neutrality_DEF:0 "The Russian Occupation Zone"
- SOZ_communism:0 "Soviet Occupation Zone"
- SOZ_communism_DEF:0 "The Soviet Occupation Zone"
- SOZ_fascism_ADJ:0 "Russian"
- SOZ_democratic_ADJ:0 "Russian"
- SOZ_neutrality_ADJ:0 "Russian"
- SOZ_communism_ADJ:0 "Soviet"
- BOZ_fascism:0 "British Occupation Zone"
- BOZ_fascism_DEF:0 "The British Occupation Zone"
- BOZ_democratic:0 "British Occupation Zone"
- BOZ_democratic_DEF:0 "The British Occupation Zone"
- BOZ_neutrality:0 "British Occupation Zone"
- BOZ_neutrality_DEF:0 "The British Occupation Zone"
- BOZ_communism:0 "British Liberation Zone"
- BOZ_communism_DEF:0 "The British Liberation Zone"
- BOZ_fascism_ADJ:0 "British"
- BOZ_democratic_ADJ:0 "British"
- BOZ_neutrality_ADJ:0 "British"
- BOZ_communism_ADJ:0 "British"
- AOZ_fascism:0 "American Occupation Zone"
- AOZ_fascism_DEF:0 "The American Occupation Zone"
- AOZ_democratic:0 "American Occupation Zone"
- AOZ_democratic_DEF:0 "The American Occupation Zone"
- AOZ_neutrality:0 "American Occupation Zone"
- AOZ_neutrality_DEF:0 "The American Occupation Zone"
- AOZ_communism:0 "American Liberation Zone"
- AOZ_communism_DEF:0 "The American Liberation Zone"
- AOZ_fascism_ADJ:0 "American"
- AOZ_democratic_ADJ:0 "American"
- AOZ_neutrality_ADJ:0 "American"
- AOZ_communism_ADJ:0 "American"
+ ##AFRICA##
+ 
+ ##Tunisia (French Protectorate)
+ NE_TUN_FRA_neutrality:0 "French Protectorate of Tunisia"
+ NE_TUN_FRA_neutrality_DEF:0 "The French Protectorate of Tunisia"
+ NE_TUN_FRA_democratic:0 "French Protectorate of Tunisia"
+ NE_TUN_FRA_democratic_DEF:0 "The French Protectorate of Tunisia"
+ NE_TUN_FRA_fascism:0 "French Protectorate of Tunisia"
+ NE_TUN_FRA_fascism_DEF:0 "The French Protectorate of Tunisia"
+ NE_TUN_FRA_communism:0 "French Protectorate of Tunisia"
+ NE_TUN_FRA_communism_DEF:0 "The French Protectorate of Tunisia"
+ NE_TUN_FRA_fascism_ADJ:0 "Tunisian"
+ NE_TUN_FRA_democratic_ADJ:0 "Tunisian"
+ NE_TUN_FRA_neutrality_ADJ:0 "Tunisian"
+ NE_TUN_FRA_communism_ADJ:0 "Tunisian"
+ ##Morocco (French Protectorate)
+ NE_MOR_FRA_neutrality:0 "French Protectorate in Morocco"
+ NE_MOR_FRA_neutrality_DEF:0 "The French Protectorate in Morocco"
+ NE_MOR_FRA_democratic:0 "French Protectorate in Morocco"
+ NE_MOR_FRA_democratic_DEF:0 "The French Protectorate in Morocco"
+ NE_MOR_FRA_fascism:0 "French Protectorate in Morocco"
+ NE_MOR_FRA_fascism_DEF:0 "The French Protectorate in Morocco"
+ NE_MOR_FRA_communism:0 "French Protectorate in Morocco"
+ NE_MOR_FRA_communism_DEF:0 "The French Protectorate in Morocco"
+ NE_MOR_FRA_fascism_ADJ:0 "Moroccan"
+ NE_MOR_FRA_democratic_ADJ:0 "Moroccan"
+ NE_MOR_FRA_neutrality_ADJ:0 "Moroccan"
+ NE_MOR_FRA_communism_ADJ:0 "Moroccan"
+ 
+ ##Indochina - name changes are different in French ##Indochinese Federation
+ NE_ICU_democratic:0 " Indochinese Union"
+ NE_ICU_democratic_DEF:0 "The  Indochinese Union"
+ NE_ICU_neutrality:0 " Indochinese Union"
+ NE_ICU_neutrality_DEF:0 "The  Indochinese Union"
+ NE_ICU_fascism:0 " Indochinese Union"
+ NE_ICU_fascism_DEF:0 "The Indochinese Union"
+ 
+ 
+ ##MIDDLE EAST##
+ 
+ ##State of Greater Lebanon (Mandate of France)
+ NE_LEB_FRA_fascism:0 "State of Greater Lebanon"
+ NE_LEB_FRA_fascism_DEF:0 "The State of Greater Lebanon"
+ NE_LEB_FRA_democratic:0 "State of Greater Lebanon"
+ NE_LEB_FRA_democratic_DEF:0 "The State of Greater Lebanon"
+ NE_LEB_FRA_neutrality:0 "State of Greater Lebanon"
+ NE_LEB_FRA_neutrality_DEF:0 "The State of Greater Lebanon"
+ NE_LEB_FRA_communism:0 "State of Greater Lebanon"
+ NE_LEB_FRA_communism_DEF:0 "The State of Greater Lebanon"
+ NE_LEB_FRA_fascism_ADJ:0 "Lebanese"
+ NE_LEB_FRA_democratic_ADJ:0 "Lebanese"
+ NE_LEB_FRA_neutrality_ADJ:0 "Lebanese"
+ NE_LEB_FRA_communism_ADJ:0 "Lebanese"
+ ##State of Greater Lebanon (Mandate of France)
+ NE_LEB_fascism:0 "Greater Lebanon"
+ NE_LEB_fascism_DEF:0 "Greater Lebanon"
+ NE_LEB_democratic:0 "Republic of Lebanon"
+ NE_LEB_democratic_DEF:0 "The Republic of Lebanon"
+ NE_LEB_neutrality:0 "Lebanon"
+ NE_LEB_neutrality_DEF:0 "Lebanon"
+ NE_LEB_communism:0 "Lebanese Socialist Republic"
+ NE_LEB_communism_DEF:0 "The Lebanese Socialist Republic"
+ NE_LEB_fascism_ADJ:0 "Lebanese"
+ NE_LEB_democratic_ADJ:0 "Lebanese"
+ NE_LEB_neutrality_ADJ:0 "Lebanese"
+ NE_LEB_communism_ADJ:0 "Lebanese"
+ ##French Syria (Mandate of France)
+ NE_SYR_FRA_fascism:0 "Syrian Republic"
+ NE_SYR_FRA_fascism_DEF:0 "The Syrian Republic"
+ NE_SYR_FRA_democratic:0 "Syrian Republic"
+ NE_SYR_FRA_democratic_DEF:0 "The Syrian Republic"
+ NE_SYR_FRA_neutrality:0 "Syrian Republic"
+ NE_SYR_FRA_neutrality_DEF:0 "The Syrian Republic"
+ NE_SYR_FRA_communism:0 "Syrian Republic"
+ NE_SYR_FRA_communism_DEF:0 "The Syrian Republic"
+ NE_SYR_FRA_fascism_ADJ:0 "Syrian"
+ NE_SYR_FRA_democratic_ADJ:0 "Syrian"
+ NE_SYR_FRA_neutrality_ADJ:0 "Syrian"
+ NE_SYR_FRA_communism_ADJ:0 "Syrian"
+ ##Syria
+ NE_SYR_fascism:0 "Syrian State"
+ NE_SYR_fascism_DEF:0 "The Syrian State"
+ NE_SYR_democratic:0 "Syrian Republic"
+ NE_SYR_democratic_DEF:0 "The Syrian Republic"
+ NE_SYR_neutrality:0 "Syrian Kingdom"
+ NE_SYR_neutrality_DEF:0 "Syrian Kingdom"
+ NE_SYR_communism:0 "Syrian People's Republic"
+ NE_SYR_communism_DEF:0 "The Syrian People's Republic"
+ NE_SYR_fascism_ADJ:0 "Syrian"
+ NE_SYR_democratic_ADJ:0 "Syrian"
+ NE_SYR_neutrality_ADJ:0 "Syrian"
+ NE_SYR_communism_ADJ:0 "Syrian"
+ 
+ 
+ ##ASIA##
 
- ##SSR##
- MOL_fascism:0 "State of Moldavia"
- MOL_fascism_DEF:0 "The State of Moldavia"
- MOL_democratic:0 "Republic of Moldavia"
- MOL_democratic_DEF:0 "The Republic of Moldavia"
- MOL_neutrality:0 "Moldavia"
- MOL_neutrality_DEF:0 "Moldavia"
- MOL_communism:0 "Moldavian Socialist Republic"
- MOL_communism_DEF:0 "Moldavian Socialist Republic"
- MOL_fascism_ADJ:0 "Moldavian"
- MOL_democratic_ADJ:0 "Moldavian"
- MOL_neutrality_ADJ:0 "Moldavian"
- MOL_communism_ADJ:0 "Moldavian"
- TAJ_fascism:0 "Nation of Tajikistan"
- TAJ_fascism_DEF:0 "The Nation of Tajikistan"
- TAJ_democratic:0 "Republic of Tajikistan"
- TAJ_democratic_DEF:0 "The Republic of Tajikistan"
- TAJ_neutrality:0 "Tajikistan"
- TAJ_neutrality_DEF:0 "Tajikistan"
- TAJ_communism:0 "Tajik Socialist Republic"
- TAJ_communism_DEF:0 "The Tajik Socialist Republic"
- TAJ_fascism_ADJ:0 "Tajik"
- TAJ_democratic_ADJ:0 "Tajik"
- TAJ_neutrality_ADJ:0 "Tajik"
- TAJ_communism_ADJ:0 "Tajik"
- TRK_fascism:0 "State of Turkmenistan"
- TRK_fascism_DEF:0 "The State of Turkmenistan"
- TRK_democratic:0 "Republic of Turkmenistan"
- TRK_democratic_DEF:0 "The Republic of Turkmenistan"
- TRK_neutrality:0 "Turkmenistan"
- TRK_neutrality_DEF:0 "Turkmenistan"
- TRK_communism:0 "Turkmen Socialist Republic"
- TRK_communism_DEF:0 "The Turkmen Socialist Republic"
- TRK_fascism_ADJ:0 "Turkmen"
- TRK_democratic_ADJ:0 "Turkmen"
- TRK_neutrality_ADJ:0 "Turkmen"
- TRK_communism_ADJ:0 "Turkmen"
- KGZ_fascism:0 "Nation of Kyrgyzstan"
- KGZ_fascism_DEF:0 "The Nation of Kyrgyzstan"
- KGZ_democratic:0 "Kyrgyzstan"
- KGZ_democratic_DEF:0 "Kyrgyzstan"
- KGZ_neutrality:0 "Kyrgyzstan"
- KGZ_neutrality_DEF:0 "Kyrgyzstan"
- KGZ_communism:0 "Kirghiz Socialist Republic"
- KGZ_communism_DEF:0 "The Kirghiz Socialist Republic"
- KGZ_fascism_ADJ:0 "Kirghiz"
- KGZ_democratic_ADJ:0 "Kirghiz"
- KGZ_neutrality_ADJ:0 "Kirghiz"
- KGZ_communism_ADJ:0 "Kirghiz"
- UZB_fascism:0 "State of Uzbekistan"
- UZB_fascism_DEF:0 "The State of Uzbekistan"
- UZB_democratic:0 "Uzbekistan"
- UZB_democratic_DEF:0 "Uzbekistan"
- UZB_neutrality:0 "Uzbekistan"
- UZB_neutrality_DEF:0 "Uzbekistan"
- UZB_communism:0 "Uzbek Socialist Republic"
- UZB_communism_DEF:0 "The Uzbek Socialist Republic"
- UZB_fascism_ADJ:0 "Uzbek"
- UZB_democratic_ADJ:0 "Uzbek"
- UZB_neutrality_ADJ:0 "Uzbek"
- UZB_communism_ADJ:0 "Uzbek"
+ ##Pakistan
+ NE_PAK_democratic:0 "Islamic Republic of Pakistan"
+ NE_PAK_democratic_DEF:0 "The Islamic Republic of Pakistan"
+ ##India
+ NE_IND_democratic:0 "Republic of India"
+ NE_IND_democratic_DEF:0 "The Republic of India"
+ ##British Ceylon (Name will go away after 1948)
+ NE_CEY_fascism:0 "Free Ceylon"
+ NE_CEY_fascism_DEF:0 "Free Ceylon"
+ NE_CEY_democratic:0 "British Ceylon"
+ NE_CEY_democratic_DEF:0 "British Ceylon"
+ NE_CEY_neutrality:0 "British Ceylon"
+ NE_CEY_neutrality_DEF:0 "British Ceylon"
+ NE_CEY_communism:0 "Autonomous Region of Sri Lanka"
+ NE_CEY_communism_DEF:0 "The Autonomous Region of Sri Lanka"
+ ##Indian Myanmar
+ NE_IND_BUR_fascism:0 "Indian Myanmar"
+ NE_IND_BUR_democratic:0 "Indian Myanmar"
+ NE_IND_BUR_communism:0 "Indian Myanmar"
+ NE_IND_BUR_neutrality:0 "Indian Myanmar"
+ ##China
+ NE_CHI_neutrality:0 "Republic of China"
+ NE_CHI_neutrality_DEF:0 "The Republic of China"
+ ##People's Republic of China (PRC)
+ NE_CSR_communism:0 "Chinese Soviet Republic"
+ NE_CSR_communism_DEF:0 "The Chinese Soviet Republic"
+ NE_CSR_fascism_ADJ:0 "Sino"
+ NE_CSR_democratic_ADJ:0 "Sino"
+ NE_CSR_neutrality_ADJ:0 "Sino"
+ NE_CSR_communism_ADJ:0 "Sino"
+ ##Yunnan
+ NE_YUN_neutrality:0 "Yunnan Clique"
+ NE_YUN_neutrality_DEF:0 "The Yunnan Clique"
+ ##South Korea better name
+ NE_KOR_democratic:0 "Republic of Korea"
+ NE_KOR_democratic_DEF:0 "The Republic of Korea"
+ ##Empire of Japan
+ NE_EOJ_fascism:0 "Empire of Japan"
+ NE_EOJ_fascism_DEF:0 "The Empire of Japan"
+ 
+ 
+ ##AHISTORICAL NATIONS COSMETIC TAGS##
+ 
+ ##Polish-Lithuanian Commonwealth
+ PLC_fascism:0 "Polish-Lithuanian Empire"
+ PLC_fascism_DEF:0 "The Polish-Lithuanian Empire"
+ PLC_democratic:0 "Polish-Lithuanian Republic"
+ PLC_democratic_DEF:0 "The Polish-Lithuanian Republic"
+ PLC_neutrality:0 "Polish-Lithuanian Commonwealth"
+ PLC_neutrality_DEF:0 "The Polish-Lithuanian Commonwealth"
+ PLC_communism:0 "United Republic of Poland and Lithuania"
+ PLC_communism_DEF:0 "The United Republic of Poland and Lithuania"
+ PLC_fascism_ADJ:0 "Polish-Lithuanian"
+ PLC_democratic_ADJ:0 "Polish-Lithuanian"
+ PLC_neutrality_ADJ:0 "Polish-Lithuanian"
+ PLC_communism_ADJ:0 "Polish-Lithuanian"
+ ##Scandinavian Empire
+ SCA_fascism:0 "Scandinavian Empire"
+ SCA_fascism_DEF:0 "The Scandinavian Empire"
+ SCA_democratic:0 "Scandinavia"
+ SCA_democratic_DEF:0 "Scandinavia"
+ SCA_neutrality:0 "Scandinavia"
+ SCA_neutrality_DEF:0 "Scandinavia"
+ SCA_communism:0 "People's United Union of Scandinavia"
+ SCA_communism_DEF:0 "The People's United Union of Scandinavia"
+ SCA_fascism_ADJ:0 "Scandinavian"
+ SCA_democratic_ADJ:0 "Scandinavian"
+ SCA_neutrality_ADJ:0 "Scandinavian"
+ SCA_communism_ADJ:0 "Scandinavian"
+ ##Denmark-Norway
+ DMN_fascism:0 "Denmark-Norway"
+ DMN_fascism_DEF:0 "Denmark-Norway"
+ DMN_democratic:0 "Denmark-Norway"
+ DMN_democratic_DEF:0 "Denmark-Norway"
+ DMN_neutrality:0 "Kingdom of Denmark-Norway"
+ DMN_neutrality_DEF:0 "The Kingdom of Denmark-Norway"
+ DMN_communism:0 "People's Republic of Denmark-Norway"
+ DMN_communism_DEF:0 "The People's Republic of Denmark-Norway"
+ DMN_fascism_ADJ:0 "Danish - Norwegian"
+ DMN_democratic_ADJ:0 "Danish - Norwegian"
+ DMN_neutrality_ADJ:0 "Danish - Norwegian"
+ DMN_communism_ADJ:0 "Danish - Norwegian"
+ ##Independent Czechia
+ CZR_fascism:0 "Bohemian Empire"
+ CZR_fascism_DEF:0 "The Bohemian Empire"
+ CZR_democratic:0 "Czech Republic"
+ CZR_democratic_DEF:0 "The Czech Republic"
+ CZR_neutrality:0 "Kingdom of the Czechs"
+ CZR_neutrality_DEF:0 "The Kingdom of the Czechs"
+ CZR_communism:0 "People's Republic of Czechia"
+ CZR_communism_DEF:0 "The People's Republic of Czechia"
+ CZR_fascism_ADJ:0 "Czech"
+ CZR_democratic_ADJ:0 "Czech"
+ CZR_neutrality_ADJ:0 "Czech"
+ CZR_communism_ADJ:0 "Czech"
+ 
  
  ##SOCIALIST REPUBLICS COSMETIC TAGS##
- ##COLOR VERSION##
+ 
+ ##Color version##
  NE_AZR_SSR_communism:1 "Azerbaijan SSR"
  NE_AZR_SSR_communism_DEF:1 "The Azerbaijan SSR"
  NE_GEO_SSR_communism:1 "Georgian SSR"
@@ -293,9 +336,21 @@
  NE_KGZ_SSR_communism_DEF:0 "The Kirghiz SSR"
  NE_UZB_SSR_communism:0 "Uzbek SSR"
  NE_UZB_SSR_communism_DEF:0 "The Uzbek SSR"
+ ##Russia
+ NE_RUS_fascism:0 "Russian Empire"
+ NE_RUS_fascism_DEF:0 "The Russian Empire"
+ NE_RUS_democratic:0 "Russian Federation"
+ NE_RUS_democratic_DEF:0 "Russian Federation"
+ NE_RUS_neutrality:0 "Russia"
+ NE_RUS_neutrality_DEF:0 "Russia"
+ NE_RUS_communism:0 "Russian Soviet Federative Socialist Republic"
+ NE_RUS_communism_DEF:0 "The Russian Soviet Federative Socialist Republic"
+ NE_RUS_fascism_ADJ:0 "Russian"
+ NE_RUS_democratic_ADJ:0 "Russian"
+ NE_RUS_neutrality_ADJ:0 "Russian"
+ NE_RUS_communism_ADJ:0 "Russian"
  
- ##SOCIALIST REPUBLICS COSMETIC TAGS##
- ##NON COLOR VERSION##
+ ##Non-color version##
  NE_AZR_SSR_1_communism:1 "Azerbaijan SSR"
  NE_AZR_SSR_1_communism_DEF:1 "The Azerbaijan SSR"
  NE_GEO_SSR_1_communism:1 "Georgian SSR"
@@ -324,13 +379,35 @@
  NE_KGZ_SSR_1_communism_DEF:0 "The Kirghiz SSR"
  NE_UZB_SSR_1_communism:0 "Uzbek SSR"
  NE_UZB_SSR_1_communism_DEF:0 "The Uzbek SSR"
- NE_NE_RUS_SSR_1_communism:0 "Russian SFSR"
- NE_NE_RUS_SSR_1_communism_DEF:0 "Russian SFSR"
- NE_NE_RUS_SSR_1_communism_ADJ:0 "Russian"
+ NE_RUS_SSR_1_communism:0 "Russian SFSR"
+ NE_RUS_SSR_1_communism_DEF:0 "Russian SFSR"
+ NE_RUS_SSR_1_communism_ADJ:0 "Russian"
+ 
+ 
+ 
+ #########################
+ #### AUTONOMY LEVELS ####
+ #########################
+ 
+ 
+ ##Burma as a British puppet
+ BUR_ENG_autonomy_satellite:0 "British Burma"
+ BUR_ENG_autonomy_satellite_DEF:0 "British Burma"
+ BUR_ENG_autonomy_dominion:0 "British Burma"
+ BUR_ENG_autonomy_colony:0 "British Burma"
+ BUR_ENG_autonomy_puppet:0 "British Burma"
+ BUR_ENG_autonomy_integrated_puppet:0 "British Burma"
+ BUR_ENG_autonomy_dominion_DEF:0 "The British Burma"
+ BUR_ENG_autonomy_colony_DEF:0 "The British Burma"
+ BUR_ENG_autonomy_puppet_DEF:0 "The British Burma"
+ BUR_ENG_autonomy_integrated_puppet_DEF:0 "The British Burma"
+ 
+ 
+ 
+ #######################
+ #### NEW COUNTRIES ####
+ #######################
 
- ########################################
- ####NEW COUNTRIES ADDED BY NEWEUROPE####
- ########################################
  
  ##Red Japan
  SRJ_fascism:0 "National Socialist Japan"
@@ -360,57 +437,43 @@
  DPR_communism_ADJ:0 "Korean"
  DPR_neutrality_ADJ:0 "Korean"
  
- ##Yugoslav nations
- KOS_fascism:0 "Free Kosovo"
- KOS_fascism_DEF:0 "Free Kosovo"
- KOS_democratic:0 "Republic of Kosovo"
- KOS_democratic_DEF:0 "Republic of Kosovo"
- KOS_neutrality:0 "Kosovo"
- KOS_neutrality_DEF:0 "Kosovo"
- KOS_communism:0 "Socialist Province of Kosovo"
- KOS_communism_DEF:0 "The Socialist Province of Kosovo"
- KOS_fascism_ADJ:0 "Kosovan"
- KOS_democratic_ADJ:0 "Kosovan"
- KOS_neutrality_ADJ:0 "Kosovan"
- KOS_communism_ADJ:0 "Kosovan"
- MAC_fascism:0 "State of Macedonia"
- MAC_fascism_DEF:0 "The State of Macedonia"
- MAC_democratic:0 "FYROM"
- MAC_democratic_DEF:0 "The FYROM"
- MAC_neutrality:0 "Macedonia"
- MAC_neutrality_DEF:0 "Macedonia"
- MAC_communism:0 "SR Macedonia"
- MAC_communism_DEF:0 "SR Macedonia"
- MAC_fascism_ADJ:0 "Macedonian"
- MAC_democratic_ADJ:0 "Macedonian"
- MAC_neutrality_ADJ:0 "Macedonian"
- MAC_communism_ADJ:0 "Macedonian"
- SVN_fascism:0 "Independent Nation of Slovenia"
- SVN_fascism_DEF:0 "Independent Nation of Slovenia"
- SVN_democratic:0 "Republic of Slovenia"
- SVN_democratic_DEF:0 "Republic of Slovenia"
- SVN_neutrality:0 "Slovenia"
- SVN_neutrality_DEF:0 "Slovenia"
- SVN_communism:0 "Socialist Republic of Slovenia"
- SVN_communism_DEF:0 "The Socialist Republic of Slovenia"
- SVN_fascism_ADJ:0 "Slovenian"
- SVN_democratic_ADJ:0 "Slovenian"
- SVN_neutrality_ADJ:0 "Slovenian"
- SVN_communism_ADJ:0 "Slovenian"
- BOS_fascism:0 "Free Nation of Bosnia"
- BOS_fascism_DEF:0 "Free Nation of Bosnia"
- BOS_democratic:0 "Republic of Bosnia and Herzegowina"
- BOS_democratic_DEF:0 "Republic of Bosnia and Herzegowina"
- BOS_neutrality:0 "Bosnia"
- BOS_neutrality_DEF:0 "Bosnia"
- BOS_communism:0 "Socialist Republic of Bosnia and Herzegowina"
- BOS_communism_DEF:0 "The Socialist Republic of Bosnia and Herzegowina"
- BOS_fascism_ADJ:0 "Bosnian"
- BOS_democratic_ADJ:0 "Bosnian"
- BOS_neutrality_ADJ:0 "Bosnian"
- BOS_communism_ADJ:0 "Bosnian"
+ ##Polish Occupation Zone
+ POZ_fascism:0 "Polish Occupation Zone"
+ POZ_fascism_DEF:0 "The Polish Occupation Zone"
+ POZ_democratic:0 "Polish Occupation Zone"
+ POZ_democratic_DEF:0 "The Polish Occupation Zone"
+ POZ_neutrality:0 "Polish Occupation Zone"
+ POZ_neutrality_DEF:0 "The Polish Occupation Zone"
+ POZ_communism:0 "Polish Liberation Zone"
+ POZ_communism_DEF:0 "The Polish Liberation Zone"
+ POZ_fascism_ADJ:0 "Polish"
+ POZ_democratic_ADJ:0 "Polish"
+ POZ_neutrality_ADJ:0 "Polish"
+ POZ_communism_ADJ:0 "Polish"
+
+ ##Vlasov's Army
+ ROA_fascism:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_democratic:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_communism:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_neutrality:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_fascism_ADJ:0 "Russian"
+ ROA_democratic_ADJ:0 "Russian"
+ ROA_communism_ADJ:0 "Russian"
+ ROA_neutrality_ADJ:0 "Russian"
+ ROA_neutrality_party:0 "KONR"
+ ROA_neutrality_party_long:0 "Committee for the Liberation of the Peoples of Russia"
+
+ ##Burma
+ BUR_fascism:0 "The State of Burma"
+ BUR_democratic:0 "Republic of the Union of Myanmar"
+ BUR_communism:0 "Union of Burma"
+ BUR_neutrality:0 "Burma"
+ BUR_fascism_ADJ:0 "Burmese"
+ BUR_democratic_ADJ:0 "Burmese"
+ BUR_communism_ADJ:0 "Burmese"
+ BUR_neutrality_ADJ:0 "Burmese"
  
- ##Danzig and Trieste
+ ##Danzig
  DAN_fascism:0 "State of Danzig"
  DAN_fascism_DEF:0 "The State of Danzig"
  DAN_democratic:0 "Danzig"
@@ -423,6 +486,8 @@
  DAN_democratic_ADJ:0 "Danzig"
  DAN_neutrality_ADJ:0 "Danzig"
  DAN_communism_ADJ:0 "Danzig"
+ 
+ ##Trieste
  TRI_fascism:0 "Nationalist Trieste"
  TRI_fascism_DEF:0 "Nationalist Trieste"
  TRI_democratic:0 "Free Territory of Trieste"
@@ -436,7 +501,365 @@
  TRI_neutrality_ADJ:0 "Triestan"
  TRI_communism_ADJ:0 "Triestan"
  
- ##Morgenthau and Roosevelt states
+ ##Morocco
+ MOR_fascism:0 "Morocco"
+ MOR_democratic:0 "Morocco"
+ MOR_communism:0 "Morocco"
+ MOR_neutrality:0 "Kingdom of Morocco"
+ MOR_fascism_ADJ:0 "Moroccan"
+ MOR_democratic_ADJ:0 "Moroccan"
+ MOR_communism_ADJ:0 "Moroccan"
+ MOR_neutrality_ADJ:0 "Moroccan"
+ 
+ ##Indochina (ICU)
+ ICU_fascism:0 "Indochinese State" 
+ ICU_fascism_DEF:0 "The Indochinese State"
+ ICU_democratic:0 "French Indochina"
+ ICU_democratic_DEF:0 "French Indochina" 
+ ICU_neutrality:0 "French Indochina"
+ ICU_neutrality_DEF:0 "French Indochina"
+ ICU_communism:0 "Socialist Republics of Indochina"
+ ICU_communism_DEF:0 "The Socialist Republics of Indochina"
+ ICU_fascism_ADJ:0 "Indochinese"
+ ICU_democratic_ADJ:0 "Indochinese"
+ ICU_neutrality_ADJ:0 "Indochinese"
+ ICU_communism_ADJ:0 "Indochinese"
+ 
+ ##Algeria
+ ALG_fascism:0 "Nation of Algeria" 
+ ALG_fascism_DEF:0 "Nation of Algeria"
+ ALG_democratic:0 "Algeria"
+ ALG_democratic_DEF:0 "Algeria"
+ ALG_neutrality:0 "Kingdom of Algeria"
+ ALG_neutrality_DEF:0 "The Kingdom of Algeria"
+ ALG_communism:0 "People's Democratic Republic of Algeria"
+ ALG_communism_DEF:0 "The People's Democratic Republic of Algeria"
+ ALG_fascism_ADJ:0 "Algerian"
+ ALG_democratic_ADJ:0 "Algerian"
+ ALG_neutrality_ADJ:0 "Algerian"
+ ALG_communism_ADJ:0 "Algerian"
+ 
+ ##Vichy-France
+ VCH_fascism:0 "Vichy France" 
+ VCH_fascism_DEF:0 "Vichy France"
+ VCH_democratic:0 "French Republic"
+ VCH_democratic_DEF:0 "The French Republic"
+ VCH_neutrality:0 "French Empire"
+ VCH_neutrality_DEF:0 "The French Empire"
+ VCH_communism:0 "Commune of France"
+ VCH_communism_DEF:0 "The Commune of France"
+ VCH_fascism_ADJ:0 "French"
+ VCH_democratic_ADJ:0 "French"
+ VCH_neutrality_ADJ:0 "French"
+ VCH_communism_ADJ:0 "French"
+ 
+ ##Hatay
+ HAT_fascism:0 "State of Hatay"
+ HAT_fascism_DEF:0 "The State of Hatay"
+ HAT_democratic:0 "Republic of Hatay"
+ HAT_democratic_DEF:0 "The Republic of Hatay"
+ HAT_neutrality:0 "State of Hatay"
+ HAT_neutrality_DEF:0 "The State of Hatay"
+ HAT_communism:0 "Communist Province of Hatay"
+ HAT_communism_DEF:0 "The Communist Province of Hatay"
+ HAT_fascism_ADJ:0 "Hatay"
+ HAT_democratic_ADJ:0 "Hatay"
+ HAT_neutrality_ADJ:0 "Hatay"
+ HAT_communism_ADJ:0 "Hatay"
+ 
+ ##Tunisia
+ TUN_fascism:0 "Tunisian State"
+ TUN_fascism_DEF:0 "Tunisian State"
+ TUN_democratic:0 "Republic of Tunisia"
+ TUN_democratic_DEF:0 "The Republic of Tunisia"
+ TUN_neutrality:0 "Tunisian Kingdom"
+ TUN_neutrality_DEF:0 "Tunisian Kingdom"
+ TUN_communism:0 "Socialist Republic of Tunisia"
+ TUN_communism_DEF:0 "The Socialist Republic of Tunisia"
+ TUN_fascism_ADJ:0 "Tunisian"
+ TUN_democratic_ADJ:0 "Tunisian"
+ TUN_neutrality_ADJ:0 "Tunisian"
+ TUN_communism_ADJ:0 "Tunisian"
+ 
+ ##Italian Social Republic
+ ITS_fascism:0 "Republic of Salò"
+ ITS_fascism_DEF:0 "The Republic of Salò"
+ ITS_democratic:0 "Republic of Italy"
+ ITS_democratic_DEF:0 "The Republic of Italy"
+ ITS_neutrality:0 "Italian Empire"
+ ITS_neutrality_DEF:0 "The Italian Empire"
+ ITS_communism:0 "Italian Union"
+ ITS_communism_DEF:0 "The Italian Union"
+ ITS_fascism_ADJ:0 "Italian"
+ ITS_democratic_ADJ:0 "Italian"
+ ITS_neutrality_ADJ:0 "Italian"
+ ITS_communism_ADJ:0 "Italian"
+
+ ##Senegal 
+ SEN_fascism:0 "Senegalese Empire"
+ SEN_fascism_DEF:0 "Senegalese Empire"
+ SEN_democratic:0 "Republic of Senegal"
+ SEN_democratic_DEF:0 "The Republic of Senegal"
+ SEN_neutrality:0 "Senegal"
+ SEN_neutrality_DEF:0 "Senegal"
+ SEN_communism:0 "SFR Senegal"
+ SEN_communism_DEF:0 "The SFR Senegal"
+ SEN_fascism_ADJ:0 "Senegalese"
+ SEN_democratic_ADJ:0 "Senegalese"
+ SEN_neutrality_ADJ:0 "Senegalese"
+ SEN_communism_ADJ:0 "Senegalese"
+ 
+ ##Ceylon name change to Sri Lanka only later
+ CEY_fascism:0 "State of Ceylon"
+ CEY_fascism_DEF:0 "The State of Ceylon"
+ CEY_democratic:0 "Dominion of Ceylon"
+ CEY_democratic_DEF:0 "The Dominion of Ceylon"
+ CEY_neutrality:0 "Ceylon"
+ CEY_neutrality_DEF:0 "Ceylon"
+ CEY_communism:0 "Democratic Socialist Republic of Sri Lanka"
+ CEY_communism_DEF:0 "The Democratic Socialist Republic of Sri Lanka"
+ CEY_fascism_ADJ:0 "Ceylonese"
+ CEY_democratic_ADJ:0 "Ceylonese"
+ CEY_neutrality_ADJ:0 "Ceylonese"
+ CEY_communism_ADJ:0 "Sri Lankan"
+ 
+ ##East-Turkestan Republic
+ ETR_fascism:0 "East Turkestan State"
+ ETR_fascism_DEF:0 "State of East Turkestan"
+ ETR_democratic:0 "East Turkestan Federation"
+ ETR_democratic_DEF:0 "East Turkestan Federation"
+ ETR_neutrality:0 "Northern Uyghuristan"
+ ETR_neutrality_DEF:0 "Northern Uyghuristan"
+ ETR_communism:0 "Second East Turkestan Republic"
+ ETR_communism_DEF:0 "The Second East Turkestan Republic"
+ ETR_fascism_ADJ:0 "Turkic"
+ ETR_democratic_ADJ:0 "Turkic"
+ ETR_neutrality_ADJ:0 "Turkic"
+ ETR_communism_ADJ:0 "Turkic"
+ 
+ ##Zambia (Northern Rhodesia)
+ ZAM_fascism:0 "Empire of Rhodesia"
+ ZAM_fascism_DEF:0 "The Empire of Rhodesia"
+ ZAM_democratic:0 "Rhodesian Federation"
+ ZAM_democratic_DEF:0 "The Rhodesian Federation"
+ ZAM_neutrality:0 "Kingdom of Rhodesia"
+ ZAM_neutrality_DEF:0 "Kingdom of Rhodesia"
+ ZAM_communism:0 "SFR Rhodesia"
+ ZAM_communism_DEF:0 "SFR Rhodesia"
+ ZAM_fascism_ADJ:0 "Rhodesian"
+ ZAM_democratic_ADJ:0 "Rhodesian"
+ ZAM_neutrality_ADJ:0 "Rhodesian"
+ ZAM_communism_ADJ:0 "Rhodesian"
+ 
+ ##North Vietnam
+ DRV_fascism:0 "State of Vietnam"
+ DRV_fascism_DEF:0 "State of Vietnam"
+ DRV_democratic:0 "Republic of Vietnam"
+ DRV_democratic_DEF:0 "The Republic of Vietnam"
+ DRV_neutrality:0 "Vietnam"
+ DRV_neutrality_DEF:0 "Vietnam"
+ DRV_communism:0 "Democratic Republic of Vietnam"
+ DRV_communism_DEF:0 "The Democratic Republic of Vietnam"
+ DRV_fascism_ADJ:0 "Vietnamese"
+ DRV_democratic_ADJ:0 "Vietnamese"
+ DRV_neutrality_ADJ:0 "Vietnamese"
+ DRV_communism_ADJ:0 "Vietnamese"
+ 
+ 
+ ##OCCUPATION ZONES##
+ 
+ ##French Occupation Zone
+ FOZ_fascism:0 "French Occupation Zone"
+ FOZ_fascism_DEF:0 "The French Occupation Zone"
+ FOZ_democratic:0 "French Occupation Zone"
+ FOZ_democratic_DEF:0 "The French Occupation Zone"
+ FOZ_neutrality:0 "French Occupation Zone"
+ FOZ_neutrality_DEF:0 "The French Occupation Zone"
+ FOZ_communism:0 "French Liberation Zone"
+ FOZ_communism_DEF:0 "The French Liberation Zone"
+ FOZ_fascism_ADJ:0 "French"
+ FOZ_democratic_ADJ:0 "French"
+ FOZ_neutrality_ADJ:0 "French"
+ FOZ_communism_ADJ:0 "French"
+ 
+ ##Soviet Occupation Zone
+ SOZ_fascism:0 "Russian Occupation Zone"
+ SOZ_fascism_DEF:0 "The Russian Occupation Zone"
+ SOZ_democratic:0 "Russian Occupation Zone"
+ SOZ_democratic_DEF:0 "The Russian Occupation Zone"
+ SOZ_neutrality:0 "Russian Occupation Zone"
+ SOZ_neutrality_DEF:0 "The Russian Occupation Zone"
+ SOZ_communism:0 "Soviet Occupation Zone"
+ SOZ_communism_DEF:0 "The Soviet Occupation Zone"
+ SOZ_fascism_ADJ:0 "Russian"
+ SOZ_democratic_ADJ:0 "Russian"
+ SOZ_neutrality_ADJ:0 "Russian"
+ SOZ_communism_ADJ:0 "Soviet"
+ 
+ ##British Occupation Zone
+ BOZ_fascism:0 "British Occupation Zone"
+ BOZ_fascism_DEF:0 "The British Occupation Zone"
+ BOZ_democratic:0 "British Occupation Zone"
+ BOZ_democratic_DEF:0 "The British Occupation Zone"
+ BOZ_neutrality:0 "British Occupation Zone"
+ BOZ_neutrality_DEF:0 "The British Occupation Zone"
+ BOZ_communism:0 "British Liberation Zone"
+ BOZ_communism_DEF:0 "The British Liberation Zone"
+ BOZ_fascism_ADJ:0 "British"
+ BOZ_democratic_ADJ:0 "British"
+ BOZ_neutrality_ADJ:0 "British"
+ BOZ_communism_ADJ:0 "British"
+ 
+ ##American Occupation Zone
+ AOZ_fascism:0 "American Occupation Zone"
+ AOZ_fascism_DEF:0 "The American Occupation Zone"
+ AOZ_democratic:0 "American Occupation Zone"
+ AOZ_democratic_DEF:0 "The American Occupation Zone"
+ AOZ_neutrality:0 "American Occupation Zone"
+ AOZ_neutrality_DEF:0 "The American Occupation Zone"
+ AOZ_communism:0 "American Liberation Zone"
+ AOZ_communism_DEF:0 "The American Liberation Zone"
+ AOZ_fascism_ADJ:0 "American"
+ AOZ_democratic_ADJ:0 "American"
+ AOZ_neutrality_ADJ:0 "American"
+ AOZ_communism_ADJ:0 "American"
+
+ 
+ ##SOVIET SOCIALIST REPUBLICS##
+ 
+ ##Moldavia
+ MOL_fascism:0 "State of Moldavia"
+ MOL_fascism_DEF:0 "The State of Moldavia"
+ MOL_democratic:0 "Republic of Moldavia"
+ MOL_democratic_DEF:0 "The Republic of Moldavia"
+ MOL_neutrality:0 "Moldavia"
+ MOL_neutrality_DEF:0 "Moldavia"
+ MOL_communism:0 "Moldavian Socialist Republic"
+ MOL_communism_DEF:0 "Moldavian Socialist Republic"
+ MOL_fascism_ADJ:0 "Moldavian"
+ MOL_democratic_ADJ:0 "Moldavian"
+ MOL_neutrality_ADJ:0 "Moldavian"
+ MOL_communism_ADJ:0 "Moldavian"
+ 
+ ##Tajikistan
+ TAJ_fascism:0 "Nation of Tajikistan"
+ TAJ_fascism_DEF:0 "The Nation of Tajikistan"
+ TAJ_democratic:0 "Republic of Tajikistan"
+ TAJ_democratic_DEF:0 "The Republic of Tajikistan"
+ TAJ_neutrality:0 "Tajikistan"
+ TAJ_neutrality_DEF:0 "Tajikistan"
+ TAJ_communism:0 "Tajik Socialist Republic"
+ TAJ_communism_DEF:0 "The Tajik Socialist Republic"
+ TAJ_fascism_ADJ:0 "Tajik"
+ TAJ_democratic_ADJ:0 "Tajik"
+ TAJ_neutrality_ADJ:0 "Tajik"
+ TAJ_communism_ADJ:0 "Tajik"
+ 
+ ##Turkmenistan
+ TRK_fascism:0 "State of Turkmenistan"
+ TRK_fascism_DEF:0 "The State of Turkmenistan"
+ TRK_democratic:0 "Republic of Turkmenistan"
+ TRK_democratic_DEF:0 "The Republic of Turkmenistan"
+ TRK_neutrality:0 "Turkmenistan"
+ TRK_neutrality_DEF:0 "Turkmenistan"
+ TRK_communism:0 "Turkmen Socialist Republic"
+ TRK_communism_DEF:0 "The Turkmen Socialist Republic"
+ TRK_fascism_ADJ:0 "Turkmen"
+ TRK_democratic_ADJ:0 "Turkmen"
+ TRK_neutrality_ADJ:0 "Turkmen"
+ TRK_communism_ADJ:0 "Turkmen"
+ 
+ ##Kyrgyzstan
+ KGZ_fascism:0 "Nation of Kyrgyzstan"
+ KGZ_fascism_DEF:0 "The Nation of Kyrgyzstan"
+ KGZ_democratic:0 "Kyrgyzstan"
+ KGZ_democratic_DEF:0 "Kyrgyzstan"
+ KGZ_neutrality:0 "Kyrgyzstan"
+ KGZ_neutrality_DEF:0 "Kyrgyzstan"
+ KGZ_communism:0 "Kirghiz Socialist Republic"
+ KGZ_communism_DEF:0 "The Kirghiz Socialist Republic"
+ KGZ_fascism_ADJ:0 "Kirghiz"
+ KGZ_democratic_ADJ:0 "Kirghiz"
+ KGZ_neutrality_ADJ:0 "Kirghiz"
+ KGZ_communism_ADJ:0 "Kirghiz"
+ 
+ ##Uzbekistan
+ UZB_fascism:0 "State of Uzbekistan"
+ UZB_fascism_DEF:0 "The State of Uzbekistan"
+ UZB_democratic:0 "Uzbekistan"
+ UZB_democratic_DEF:0 "Uzbekistan"
+ UZB_neutrality:0 "Uzbekistan"
+ UZB_neutrality_DEF:0 "Uzbekistan"
+ UZB_communism:0 "Uzbek Socialist Republic"
+ UZB_communism_DEF:0 "The Uzbek Socialist Republic"
+ UZB_fascism_ADJ:0 "Uzbek"
+ UZB_democratic_ADJ:0 "Uzbek"
+ UZB_neutrality_ADJ:0 "Uzbek"
+ UZB_communism_ADJ:0 "Uzbek"
+
+ 
+ ##YUGOSLAV REPUBLICS##
+ 
+ ##Kosovo
+ KOS_fascism:0 "Free Kosovo"
+ KOS_fascism_DEF:0 "Free Kosovo"
+ KOS_democratic:0 "Republic of Kosovo"
+ KOS_democratic_DEF:0 "Republic of Kosovo"
+ KOS_neutrality:0 "Kosovo"
+ KOS_neutrality_DEF:0 "Kosovo"
+ KOS_communism:0 "Socialist Province of Kosovo"
+ KOS_communism_DEF:0 "The Socialist Province of Kosovo"
+ KOS_fascism_ADJ:0 "Kosovan"
+ KOS_democratic_ADJ:0 "Kosovan"
+ KOS_neutrality_ADJ:0 "Kosovan"
+ KOS_communism_ADJ:0 "Kosovan"
+ 
+ ##Macedonia
+ MAC_fascism:0 "Macedonian Empire"
+ MAC_fascism_DEF:0 "The Macedonian Empire"
+ MAC_democratic:0 "FYROM"
+ MAC_democratic_DEF:0 "The FYROM"
+ MAC_neutrality:0 "Macedonia"
+ MAC_neutrality_DEF:0 "Macedonia"
+ MAC_communism:0 "SR Macedonia"
+ MAC_communism_DEF:0 "SR Macedonia"
+ MAC_fascism_ADJ:0 "Macedonian"
+ MAC_democratic_ADJ:0 "Macedonian"
+ MAC_neutrality_ADJ:0 "Macedonian"
+ MAC_communism_ADJ:0 "Macedonian"
+ 
+ ##Slovenia
+ SVN_fascism:0 "Independent Nation of Slovenia"
+ SVN_fascism_DEF:0 "Independent Nation of Slovenia"
+ SVN_democratic:0 "Republic of Slovenia"
+ SVN_democratic_DEF:0 "Republic of Slovenia"
+ SVN_neutrality:0 "Slovenia"
+ SVN_neutrality_DEF:0 "Slovenia"
+ SVN_communism:0 "Socialist Republic of Slovenia"
+ SVN_communism_DEF:0 "The Socialist Republic of Slovenia"
+ SVN_fascism_ADJ:0 "Slovenian"
+ SVN_democratic_ADJ:0 "Slovenian"
+ SVN_neutrality_ADJ:0 "Slovenian"
+ SVN_communism_ADJ:0 "Slovenian"
+ 
+ ##Bosnia
+ BOS_fascism:0 "Free Nation of Bosnia"
+ BOS_fascism_DEF:0 "Free Nation of Bosnia"
+ BOS_democratic:0 "Republic of Bosnia and Herzegovina"
+ BOS_democratic_DEF:0 "Republic of Bosnia and Herzegovina"
+ BOS_neutrality:0 "Bosnia"
+ BOS_neutrality_DEF:0 "Bosnia"
+ BOS_communism:0 "Socialist Republic of Bosnia and Herzegovina"
+ BOS_communism_DEF:0 "The Socialist Republic of Bosnia and Herzegovina"
+ BOS_fascism_ADJ:0 "Bosnian"
+ BOS_democratic_ADJ:0 "Bosnian"
+ BOS_neutrality_ADJ:0 "Bosnian"
+ BOS_communism_ADJ:0 "Bosnian"
+ 
+ 
+ ##MORGENTHAU AND ROOSEVELT STATES##
+ 
+ ##International Zones
  INT_fascism:0 "Nationalist Zones"
  INT_fascism_DEF:0 "The Nationalist Zones"
  INT_democratic:0 "International Zones"
@@ -449,6 +872,8 @@
  INT_democratic_ADJ:0 "International Zone"
  INT_neutrality_ADJ:0 "International Zone"
  INT_communism_ADJ:0 "International Zone"
+ 
+ ##Prussia
  PRS_fascism:0 "Prussian State"
  PRS_fascism_DEF:0 "The Prussian State"
  PRS_democratic:0 "Prussian Republic"
@@ -461,6 +886,8 @@
  PRS_democratic_ADJ:0 "Prussian"
  PRS_neutrality_ADJ:0 "Prussian"
  PRS_communism_ADJ:0 "Prussian"
+ 
+ ##Hannover
  HAN_fascism:0 "State of Hanover"
  HAN_fascism_DEF:0 "The State of Hanover"
  HAN_democratic:0 "Hanover"
@@ -473,6 +900,8 @@
  HAN_democratic_ADJ:0 "Hanoverian"
  HAN_neutrality_ADJ:0 "Hanoverian"
  HAN_communism_ADJ:0 "Hanoverian"
+ 
+ ##Hesse
  HES_fascism:0 "State of Hesse"
  HES_fascism_DEF:0 "The State of Hesse"
  HES_democratic:0 "Hesse"
@@ -485,6 +914,8 @@
  HES_democratic_ADJ:0 "Hessian"
  HES_neutrality_ADJ:0 "Hessian"
  HES_communism_ADJ:0 "Hessian"
+ 
+ ##Saarland
  SAA_fascism:0 "State of Saarland"
  SAA_fascism_DEF:0 "The State of State of Saarland"
  SAA_democratic:0 "Saarland"
@@ -497,6 +928,8 @@
  SAA_democratic_ADJ:0 "Saar"
  SAA_neutrality_ADJ:0 "Saar"
  SAA_communism_ADJ:0 "Saar"
+ 
+ ##North Germany
  NGR_fascism:0 "Union of North Germany"
  NGR_fascism_DEF:0 "The Union of North Germany"
  NGR_democratic:0 "Republic of North Germany"
@@ -509,6 +942,8 @@
  NGR_democratic_ADJ:0 "North German"
  NGR_neutrality_ADJ:0 "North German"
  NGR_communism_ADJ:0 "North German"
+ 
+ ##South Germany
  SGR_fascism:0 "State of South Germany"
  SGR_fascism_DEF:0 "The State of South Germany"
  SGR_democratic:0 "South Germany"
@@ -521,6 +956,8 @@
  SGR_democratic_ADJ:0 "South German"
  SGR_neutrality_ADJ:0 "South German"
  SGR_communism_ADJ:0 "South German"
+ 
+ ##Saxony
  SAX_fascism:0 "State of Saxony"
  SAX_fascism_DEF:0 "The State of Saxony"
  SAX_democratic:0 "Republic of Saxony"
@@ -533,6 +970,8 @@
  SAX_democratic_ADJ:0 "Saxon"
  SAX_neutrality_ADJ:0 "Saxon"
  SAX_communism_ADJ:0 "Saxon"
+ 
+ ##Bavaria
  BAV_fascism:0 "Free State of Bavaria"
  BAV_fascism_DEF:0 "The Free State of Bavaria"
  BAV_democratic:0 "Republic of Bavaria"
@@ -546,57 +985,13 @@
  BAV_neutrality_ADJ:0 "Bavarian"
  BAV_communism_ADJ:0 "Bavarian"
  
- ##Ahistorical nations
- PLC_fascism:0 "Polish-Lithuanian Empire"
- PLC_fascism_DEF:0 "The Polish-Lithuanian Empire"
- PLC_democratic:0 "Polish-Lithuanian Republic"
- PLC_democratic_DEF:0 "The Polish-Lithuanian Republic"
- PLC_neutrality:0 "Polish-Lithuanian Commonwealth"
- PLC_neutrality_DEF:0 "The Polish-Lithuanian Commonwealth"
- PLC_communism:0 "United Republic of Poland and Lithuania"
- PLC_communism_DEF:0 "The United Republic of Poland and Lithuania"
- PLC_fascism_ADJ:0 "Polish-Lithuanian"
- PLC_democratic_ADJ:0 "Polish-Lithuanian"
- PLC_neutrality_ADJ:0 "Polish-Lithuanian"
- PLC_communism_ADJ:0 "Polish-Lithuanian"
- SCA_fascism:0 "Scandinavian Empire"
- SCA_fascism_DEF:0 "The Scandinavian Empire"
- SCA_democratic:0 "Scandinavia"
- SCA_democratic_DEF:0 "Scandinavia"
- SCA_neutrality:0 "Scandinavia"
- SCA_neutrality_DEF:0 "Scandinavia"
- SCA_communism:0 "People's United Union of Scandinavia"
- SCA_communism_DEF:0 "The People's United Union of Scandinavia"
- SCA_fascism_ADJ:0 "Scandinavian"
- SCA_democratic_ADJ:0 "Scandinavian"
- SCA_neutrality_ADJ:0 "Scandinavian"
- SCA_communism_ADJ:0 "Scandinavian"
- DMN_fascism:0 "Denmark-Norway"
- DMN_fascism_DEF:0 "Denmark-Norway"
- DMN_democratic:0 "Denmark-Norway"
- DMN_democratic_DEF:0 "Denmark-Norway"
- DMN_neutrality:0 "Kingdom of Denmark-Norway"
- DMN_neutrality_DEF:0 "The Kingdom of Denmark-Norway"
- DMN_communism:0 "People's Republic of Denmark-Norway"
- DMN_communism_DEF:0 "The People's Republic of Denmark-Norway"
- DMN_fascism_ADJ:0 "Danish - Norwegian"
- DMN_democratic_ADJ:0 "Danish - Norwegian"
- DMN_neutrality_ADJ:0 "Danish - Norwegian"
- DMN_communism_ADJ:0 "Danish - Norwegian"
- CZR_fascism:0 "Bohemian Empire"
- CZR_fascism_DEF:0 "The Bohemian Empire"
- CZR_democratic:0 "Czech Republic"
- CZR_democratic_DEF:0 "The Czech Republic"
- CZR_neutrality:0 "Kingdom of the Czechs"
- CZR_neutrality_DEF:0 "The Kingdom of the Czechs"
- CZR_communism:0 "People's Republic of Czechia"
- CZR_communism_DEF:0 "The People's Republic of Czechia"
- CZR_fascism_ADJ:0 "Czech"
- CZR_democratic_ADJ:0 "Czech"
- CZR_neutrality_ADJ:0 "Czech"
- CZR_communism_ADJ:0 "Czech"
  
- ##FACTION NAMES##
+ 
+ #######################
+ #### FACTION NAMES ####
+ #######################
+
+
  warsaw_pact:0 "Warsaw Pact"
  nato:0 "NATO"
  soviet_union:0 "Union of Soviet States"

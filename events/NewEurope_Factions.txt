@@ -4,10 +4,460 @@ add_namespace = ne_nato
 
 ##Other Faction Stuff
 add_namespace = ne_faction
+add_namespace = namespace
 
 ##namespace 3 is in here!
 
-##Event for forming NATO####################################################################################################################################################################################
+##NE_FACTION##################################################
+
+##ne_strict_facton
+
+##NATO/WARSAW PACT was founded, stricter settings were enabled
+##DISTRIBUTE SPIRITS AND REDUCE DEMOCRATIC/COMMUNISM LEVEL  
+country_event = {
+	id = ne_faction.1
+	title = ne_faction.1.t
+	desc = ne_faction.1.d
+	picture = GFX_finnish_soldiers_snow
+
+	hidden = yes
+	fire_only_once = yes
+
+	
+	trigger = {
+	
+		has_global_flag = ne_strict_faction
+		has_global_flag = nato_founded
+		has_global_flag = warsaw_pact_founded
+		
+		USA = { 
+			is_faction_leader = yes 
+			has_government = democratic 
+		}
+		
+		SOV = { 
+			is_faction_leader = yes 
+			has_government = communism
+		}
+		
+	}
+	
+	
+	mean_time_to_happen = {	days = 12 }
+	
+	immediate = { 
+	
+		##democratic nations
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+					has_idea = NE_nato_member				
+				}
+				
+				has_government = democratic
+				democratic > 0.55				
+			}
+			
+			set_political_party = { ideology = democratic popularity = 0.52 } 
+			add_ideas = NE_align_west		
+		}
+		
+		##commies 
+		every_country = {
+			limit = {
+				NOT = {
+					tag = SOV
+					tag = PRC
+					tag = YUG
+					has_idea = NE_wp_member					
+				}
+				
+				has_government = communism
+				communism > 0.55				
+			}
+			
+			set_political_party = { ideology = communism popularity = 0.52 } 
+			add_ideas = NE_align_east		
+		}
+		
+	}
+	
+	
+	option = {
+		name = ne_faction.1.a
+		##placeholder		
+	}
+
+		
+}
+
+	##EVENT TO INFORM COUNTRY ABOUT NATIONAL SPIRIT (ne_align)!!!
+
+
+
+
+##Country gets ready to join nato/wp spirit
+country_event = {
+	id = ne_faction.2
+	title = ne_faction.2.t
+	desc =  ne_faction.2.d
+	picture = GFX_somepic
+	
+	trigger = {
+	
+		NOT = { has_country_flag = ne_event_ready_faction }
+	
+		OR = {
+		
+			AND = {
+				has_idea = NE_align_west
+				has_government = democratic
+				democratic > 0.70
+			}
+			
+			AND = {
+				has_idea = NE_align_east
+				has_government = communism
+				communism > 0.70
+			}
+			
+		}
+
+	}
+	
+	immediate = { set_country_flag = ne_event_ready_faction }
+
+	
+	option = {	# okay
+		name = ne_faction.2.a
+		
+		##Effects
+		add_political_power = 15
+		
+		if = { limit = { has_idea = NE_align_west } swap_ideas = { remove_idea = NE_align_west add_idea = NE_ready_nato } } 
+		if = { limit = { has_idea = NE_align_east } swap_ideas = { remove_idea = NE_align_east add_idea = NE_ready_wp } } 
+	
+	}
+	
+	
+}
+
+
+#####################################################
+####    AI JOIN FACTION/NO PLAYER INTERACTION    ####
+#####################################################
+
+
+####Country gets event when has spirit NE_Ready and popularity > 0.90####
+country_event = {
+	id = ne_faction.3
+	title = ne_faction.3.t
+	desc =  ne_faction.3.d
+	picture = GFX_somepic
+
+	fire_only_once = yes
+
+	trigger = {
+	
+		NOT = { has_country_flag = ne_join_event }
+		NOT = { is_in_faction = yes }
+		
+		AND = {
+			has_idea = NE_ready_nato
+			democratic > 0.90
+			has_government = democratic
+		}
+		
+		AND = {
+			has_idea = NE_ready_wp
+			communism > 0.90
+			has_government = communism			
+		}
+		
+		USA = {
+			exists = yes
+			is_faction_leader = yes
+			has_government = democratic	
+		}
+		
+		SOV = {
+			exists = yes
+			is_faction_leader = yes
+			has_government = communism	
+		}
+		
+	}
+	
+	
+	immediate = { 	
+		set_country_flag = ne_join_event 		
+	}
+	
+	
+	option = {	# join
+		name = ne_faction.3.a
+		ai_chance = {
+			factor = 75
+			
+		}
+		
+		if = {
+			limit = { 
+				has_government = democratic			
+			}
+			
+			USA = { country_event = { days = 3 id = ne_faction.4 } }		
+		}
+		
+		if = {
+			limit = { 
+				has_government = communism			
+			}
+			
+			SOV = { country_event = { days = 3 id = ne_faction.4 } }		
+		}
+	
+	}
+	
+	
+	option = {	#Don't join
+		name = ne_faction.3.b
+		ai_chance = {
+			factor = 25			
+		}
+		
+		##Lose popularity
+		if = { limit = { has_government = democratic } add_popularity = { ideology = democratic popularity = -0.25 } }
+		if = { limit = { has_government = communism } add_popularity = { ideology = communism popularity = -0.25 } }
+
+		hidden_effect = {
+			##debug event
+			country_event = { days = 100 id = ne_faction.7 }			
+		}
+	
+	}
+	
+	
+}
+
+
+##SOV/USA can now accept or decline!
+country_event = {
+	id = ne_faction.4
+	title = ne_faction.4.t
+	desc =  ne_faction.4.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	
+	immediate = { 	
+		#immediate effects here!		
+	}
+	
+	
+	option = {	# yes
+		name = ne_faction.4.a
+		ai_chance = { factor = 75 }
+
+		##Effects
+		add_political_power = 20		
+		FROM = {
+			country_event = { days = 1 id = ne_faction.5 }
+		}
+
+			
+	}
+	
+	
+	option = {	# no
+		name = ne_faction.4.b
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 100
+				FROM = { has_war = yes }	
+			}			
+		}
+		
+		##Effects
+		add_political_power = -20
+		FROM = {
+			country_event = { days = 1 id = ne_faction.6 }
+		}
+
+	}
+	
+	
+}
+
+
+##FROM: SOV/USA did let us join the alliance
+country_event = {
+	id = ne_faction.5
+	title = ne_faction.5.t
+	desc =  ne_faction.5.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#great
+		name = ne_faction.1.a
+		
+		##Effects
+		if = { limit = { has_government = democratic } swap_ideas = { remove_idea = NE_ready_nato add_idea = ne_nato_member } } 
+		if = { limit = { has_government = communism } swap_ideas = { remove_idea = NE_ready_wp add_idea = ne_nato_member } }
+
+		##actual membership
+		if = { limit = { has_government = democratic } USA = { add_to_faction = ROOT } } 
+		if = { limit = { has_government = communism } SOV = { add_to_faction = ROOT } } 
+		
+		hidden_effect = {		
+			country_event = { days = 100 id = ne_faction.7 }			
+		}
+			
+	}
+	
+	
+}
+
+
+##FROM: SOV/USA refused us entry!
+country_event = {
+	id = ne_faction.6
+	title = ne_faction.6.t
+	desc =  ne_faction.6.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#great
+		name = ne_faction.6.a
+		
+		##Effects
+		if = { limit = { has_government = democratic } add_opinion_modifier = { target = FROM modifier = refused_nato_membership }  }
+		if = { limit = { has_government = communism } add_opinion_modifier = { target = FROM modifier = refused_warsaw_pact_membership }  }
+		
+		hidden_effect = {		
+			country_event = { days = 200 id = ne_faction.7 }			
+		}			
+	}
+	
+	
+}
+
+
+
+##HIDDEN EVENT TO DELETE FLAG
+country_event = {
+	id = ne_faction.7
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = { 	
+		clr_country_flag = ne_join_event	
+	}
+	
+	
+	option = {	
+		#placholder		
+	}
+	
+	
+}
+
+
+
+
+#USING THE SLOTS#
+
+
+
+##Debug Event (HIDDEN)
+country_event = {
+	id = ne_faction.8	
+	title = "Message from [Root.getName]" #ne_faction.8.t; Do title even though it's hidden
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {	
+	
+		##Effects
+		if = { limit = { has_government = democratic } country_event = { days = 1 id = ne_nato.2 }  }
+		if = { limit = { has_government = communism } country_event = { days = 1 id = ne_wp.2 }  } 
+	
+	}
+	
+	
+}
+
+##SOV: Event to notify about the entry of Turkey
+country_event = {
+	id = namespace.1
+	title = namespace.1.t
+	desc =  namespace.1.d
+	picture = GFX_somepic
+
+	fire_only_once = yes
+	
+	trigger = {
+	
+		TUR = { is_in_faction_with = USA }
+		NOT = { SOV = { is_in_faction_with = USA } } 
+		
+		USA = { has_government = democratic }
+		SOV = { has_government = communism }
+	
+	}
+
+	
+	option = {	##We strongly condemn this
+		name = namespace.1.a
+		
+		##Effects (negative opinion modifier)
+		add_opinion_modifier = { target = TUR modifier = nato_neighbour } 
+		add_opinion_modifier = { target = USA modifier = first_nato_expansion } 
+		
+		
+		hidden_effect = {
+			USA = { country_event = { days = 1 id = namespace.2 }	}	
+			if = { limit = { NOR = { is_in_faction_with = USA } } add_opinion_modifier = { target = NOR modifier = nato_neighbour } }
+		}
+			
+	}
+	
+	
+}
+
+
+
+##USA: SOV condems our expansion
+country_event = {
+	id = namespace.2
+	title = namespace.2.t
+	desc =  namespace.2.d
+	picture = GFX_somepic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = {	#We don't care!
+		name = namespace.1.a		
+			
+	}
+	
+	
+}
+
+##FOUNDATION OF NATO##
 country_event = {
 	id = ne_nato.1
 	title = ne_nato.1.t
@@ -1033,7 +1483,7 @@ country_event = {
 	picture = GFX_report_event_soviet_invasion_map
 	
 	is_triggered_only = yes
-	#fire_only_once = yes; disabled, otherwise only one country gets the event
+	#fire_only_once is disabled, otherwise only one country gets the event
 
 	
 	option = {	# Great

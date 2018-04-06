@@ -1,6 +1,7 @@
 ﻿add_namespace = ne_misc
+add_namespace = ne_skelsa
 
-####################Hatay###################################################################################################################################################################################
+####################Hatay###
 
 ##France gets bid from Hatay, can now either allow or deny
 country_event = {
@@ -1762,7 +1763,8 @@ country_event = {
 	}
 }
 
-######################A Warning for a player###################### 
+####Warning for a player####
+
 country_event = {
 	id = ne_misc.27
 	title = ne_misc.27.t
@@ -1791,6 +1793,36 @@ country_event = {
 	
 	option = {
 		name = ne_misc.27.b
+		custom_effect_tooltip = warning_for_a_player_quit.1.tt
+		ai_chance = { factor = 0 }
+	
+		hidden_effect = { if = { limit ={ is_ai = no } LUX = { annex_country = { target = ROOT } } } }
+	}
+}
+
+
+##ne_skelsa.75: Player not in historical focus!
+country_event = {
+	id = ne_skelsa.75
+	title = ne_skelsa.75.t
+	desc = ne_skelsa.75.d
+	picture = GFX_no_historical_focuses
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = warning_no_historical 
+	}
+
+	option = {
+		name = ne_skelsa.75.a
+		custom_effect_tooltip = warning_for_a_player.1.tt
+		ai_chance = { factor = 1 }
+
+	}
+	
+	option = {
+		name = ne_skelsa.75.b
 		custom_effect_tooltip = warning_for_a_player_quit.1.tt
 		ai_chance = { factor = 0 }
 	
@@ -1836,6 +1868,253 @@ country_event = {
 
 	}
 
+}
+
+##SOV, CHI: Get spirit "desperate defense"
+country_event = {
+	id = ne_skelsa.87
+	title = ne_skelsa.87.t
+	desc =  ne_skelsa.87.d
+	picture = GFX_swedish_soldier
+
+	trigger = {
+	
+		OR = {
+			tag = SOV
+			tag = CHI
+		}
+	
+		NOT = { has_idea = NE_desperate_defense }
+		NOT = { has_country_flag = ne_desperate_defense }
+		surrender_progress > 0.60 
+		 
+	
+	}	
+	
+	
+	immediate = { set_country_flag = ne_desperate_defense }
+	
+	
+	option = {		##We will defend our home at all costs
+		name = ne_skelsa.87.a
+
+		##Effects
+		 	add_ideas = NE_desperate_defense 
+		add_political_power = -20		
+		add_manpower = 20000
+		add_war_support = 0.15
+		
+		if = {
+			limit = { has_stability < 50 }
+			
+		add_stability = 0.15
+					
+		}
+		
+		
+	}
+
+	
+}
+
+
+
+##SOV, CHI: Lose spirit "desperate defense"
+country_event = {
+	id = ne_skelsa.88
+	title = ne_skelsa.88.t
+	desc =  ne_skelsa.88.d
+	picture = GFX_swedish_soldier
+
+
+	trigger = {
+	
+		OR = {
+			tag = SOV
+			tag = CHI
+		}
+	
+		has_idea = NE_desperate_defense
+		#NOT = { has_country_flag = lost_desperate_defense } TEST
+		surrender_progress < 0.40 
+		 
+	
+	}
+
+	#immediate = { set_country_flag = lost_desperate_defense } TEST
+	
+	
+	option = {	#lose spirit
+		name = ne_skelsa.88.a
+
+		##Effects
+		remove_ideas = NE_desperate_defense
+			
+	}
+
+	
+}
+
+
+
+
+##Hidden Event for GRE and YUG so Axis lose their claims there
+country_event = {
+	id = ne_skelsa.89
+	
+	hidden = yes
+
+
+	trigger = {
+	
+		OR = {
+			tag = GRE
+			tag = YUG
+		}
+		
+		has_country_flag = ne_axis_occupied
+	
+		NOT = { has_country_flag = freed_from_axis_occupation } 
+		
+		surrender_progress < 0.05
+			 
+	
+	}
+
+	immediate = { set_country_flag = freed_from_axis_occupation } 
+	
+	
+	option = {	#Axis lose claims
+		#name = ne_skelsa.88.a
+
+		##Effects TESTING	
+		if = {
+			limit = { tag = GRE }
+		}
+		
+		every_state = {
+			limit = {
+				is_core_of = GRE
+				OR = {
+					is_claimed_by = GER
+					is_claimed_by = ITA
+					is_claimed_by = BUL
+					is_claimed_by = HUN
+					is_claimed_by = CRO
+				}
+			}
+			
+			every_country = {
+				limit = {
+					any_state = {
+						is_core_of = GRE
+						is_claimed_by = PREV				
+					}
+				
+				}
+			
+			remove_state_claim = PREV
+			}
+					
+		}
+
+		if = {
+			limit = { tag = YUG }
+		}
+		
+		every_state = {
+			limit = {
+				is_core_of = YUG
+				OR = {
+					is_claimed_by = GER
+					is_claimed_by = ITA
+					is_claimed_by = BUL
+					is_claimed_by = HUN
+					is_claimed_by = CRO
+				}
+			}
+			
+			every_country = {
+				limit = {
+					any_state = {
+						is_core_of = YUG
+						is_claimed_by = PREV				
+					}
+				
+				}
+			
+			remove_state_claim = PREV
+			}
+		}
+	}
+
+	
+}
+
+
+
+##India gets event about her independence
+country_event = {
+	id = ne_skelsa.7
+	title = ne_skelsa.7.t
+	desc =  ne_skelsa.7.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#AFTER ALL THESE CENTURIES WE'RE FREE!
+		name = ne_skelsa.7.a
+
+		##Effects
+		add_political_power = 125
+		add_stability = 0.10
+			
+	}
+
+	
+}
+
+
+
+##WW2 victims
+country_event = {
+	id = ne_skelsa.5
+	title = ne_skelsa.5.t
+	desc =  ne_skelsa.5.d
+	picture = GFX_somepic
+
+	fire_only_once = yes
+
+	
+	trigger = {
+				
+		GER = {
+			exists = yes
+			is_subject = no
+			is_faction_leader = yes 
+			has_government = fascism
+		}
+		
+		has_war_with = GER
+		
+	}
+	
+	
+	mean_time_to_happen = {	days = 1 }
+
+	
+	option = {	#dark times for our nation
+		name = ne_skelsa.5.a
+
+		##Effects
+		add_political_power = 15
+		set_country_flag = ww2_victim
+			
+	}
+
+	
 }
 
 

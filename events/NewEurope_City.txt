@@ -623,3 +623,32 @@ country_event = {
 	}
 	
 }
+
+##Vyborg (might need better id)
+country_event = {
+	id = ne_city.30
+	title = ne_city.30.t
+	desc = ne_city.30.d
+	picture = GFX_stalin_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = SOV
+		owns_state = 146		
+		NOT = { has_global_flag = renamed_vyborg }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ne_city.1.a
+		set_province_name = { id = 9206 name = vyborg }
+		set_global_flag = renamed_vyborg
+	}
+	
+}

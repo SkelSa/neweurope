@@ -1,0 +1,380 @@
+﻿##EVENTS CONCERNING GERMANY GO HERE - EAST AND WEST GERMANY AS WELL##
+
+add_namespace = ne_poland
+add_namespace = ne_skelsa
+
+##SOVIET INVASION OF POLAND (Only on Historical)
+country_event = {
+	id = ne_skelsa.200
+	title = ne_skelsa.200.t
+	desc =  ne_skelsa.200.d
+	picture = GFX_su_invasion_pol
+
+	fire_only_once = yes
+
+	
+	trigger = {
+		
+		tag = SOV
+		
+		has_global_flag = sov_yes_pact
+		is_historical_focus_on = yes
+		GER = { has_war_with = POL }
+		NOT = { GER = { has_war_with = SOV } }
+		NOT = { SOV = { has_war_with = POL } }
+		
+		POL = { surrender_progress > 0.20 }
+		
+	}
+	
+	immediate = { 
+	
+	hidden_effect = {
+	
+		POL = { add_timed_idea = { days = 50 idea = NE_alone  }  }
+		
+		every_country = {
+			limit = {
+				is_in_faction_with = POL
+				is_subject = no
+			}
+			
+			add_timed_idea = { days = 50 idea = NE_alone }				
+		}
+		
+		}
+		
+	}
+	
+	
+	option = {	# Invade POL
+		name = ne_skelsa.200.a
+		ai_chance = {
+			factor = 10
+			
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes	
+			}			
+		}
+
+		##Effects
+		add_political_power = 20		
+		declare_war_on = { target = POL } 
+		
+		
+		hidden_effect = {
+			set_global_flag = ne_soviet_invasion_poland
+			POL = { country_event = { days = 1 id = ne_skelsa.201 }}
+			GER = { country_event = { days = 1 id = ne_skelsa.202 }}
+			ENG = { country_event = { days = 1 id = ne_skelsa.204 }}
+			
+			
+		}
+			
+	}
+	
+	
+	option = {	# better not
+		name = ne_skelsa.200.b
+		ai_chance = {
+			factor = 90
+			
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes		
+			}			
+		}
+		
+		##Effects
+		add_political_power = -25
+		
+		hidden_effect = {
+			every_country = {
+			limit = {
+				is_in_faction_with = POL
+				is_subject = no
+			}
+			
+			remove_ideas = NE_alone				
+			}			
+		}
+		
+	}
+	
+	
+}
+
+
+
+##POL reacts
+country_event = {
+	id = ne_skelsa.201
+	title = ne_skelsa.201.t
+	desc =  ne_skelsa.201.d
+	picture = GFX_soviet_parade_lwow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#we are doomed!
+		name = ne_skelsa.201.a
+		
+		##Effects
+		add_political_power = -175
+		add_stability = -0.05
+			
+	}
+	
+	
+}
+
+
+
+##GER reacts
+country_event = {
+	id = ne_skelsa.202
+	title = ne_skelsa.202.t
+	desc =  ne_skelsa.202.d
+	picture = GFX_hitler_bridge
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#very good
+		name = ne_skelsa.202.a
+			
+	}
+	
+	
+}
+
+
+
+##ENG reacts
+country_event = {
+	id = ne_skelsa.204
+	title = ne_skelsa.204.t
+	desc =  ne_skelsa.204.d
+	picture = GFX_soviet_parade_lwow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#we can't have a war with both of them!
+		name = ne_skelsa.204.a
+		
+		add_political_power = -20
+			
+	}
+	
+	
+}
+
+
+##Poland collapses; Eastern Poland goes to the USSR, Rest is occupied by GER, whitepeace event between POL - SOV##
+country_event = {
+	id = ne_skelsa.203
+	#picture = GFX_polish_division
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes		##News event will trigger this event
+		
+	
+	##Poland falls apart
+	option = {
+		name = ne_skelsa.203.a
+
+		
+		##Transfer states to the SOV		
+		if = {
+			limit = {
+				97 = {					
+					is_owned_by = POL
+				}
+			}
+			SOV = { transfer_state = 97 }
+		}
+		
+		if = {
+			limit = {
+				96 = {					
+					is_owned_by = POL
+				}
+			}
+			SOV = { transfer_state = 96 }
+		}
+		
+		if = {
+			limit = {
+				95 = {					
+					is_owned_by = POL
+				}
+			}
+			SOV = { transfer_state = 95 }
+		}
+		
+		if = {
+			limit = {
+				94 = {					
+					is_owned_by = POL
+				}
+			}
+			SOV = { transfer_state = 94 }
+		}
+		
+		if = {
+			limit = {
+				93 = {					
+					is_owned_by = POL
+				}
+			}
+			SOV = { transfer_state = 93 }
+		}
+		
+		if = {
+			limit = {
+				91 = {					
+					is_owned_by = POL
+				}
+			}
+			SOV = { transfer_state = 91 }
+		}
+		
+		if = {
+			limit = {
+				764 = {					
+					is_owned_by = POL
+				}
+			}
+			SOV = { transfer_state = 764 }
+		}
+		
+		if = {
+			limit = {
+				770 = {					
+					is_owned_by = POL
+				}
+			}
+			SOV = { transfer_state = 770 }
+		}
+		
+		if = {
+			limit = {
+				89 = {					
+					is_owned_by = POL
+				}
+			}
+			SOV = { transfer_state = 89 }
+		}
+
+		
+		##GER occupies the rest
+		if = {
+			limit = {
+				85 = {					
+					is_owned_by = POL
+				}
+			}
+			GER = { set_state_controller = 85 }
+		}
+		
+		if = {
+			limit = {
+				86 = {					
+					is_owned_by = POL
+				}
+			}
+			GER = { set_state_controller = 86 }
+		}
+		
+		if = {
+			limit = {
+				87 = {					
+					is_owned_by = POL
+				}
+			}
+			GER = { set_state_controller = 87 }
+		}
+		
+		if = {
+			limit = {
+				98 = {					
+					is_owned_by = POL
+				}
+			}
+			GER = { set_state_controller = 98 }
+		}
+		
+		if = {
+			limit = {
+				10 = {					
+					is_owned_by = POL
+				}
+			}
+			GER = { set_state_controller = 10 }
+		}
+		
+		if = {
+			limit = {
+				92 = {					
+					is_owned_by = POL
+
+				}
+			}
+			GER = { set_state_controller = 92 }
+		}
+		
+		if = {
+			limit = {
+				88 = {					
+					is_owned_by = POL
+					
+				}
+			}
+			GER = { set_state_controller = 88 }
+		}
+		
+		if = {
+			limit = {
+				90 = {					
+					is_owned_by = POL
+					
+				}
+			}
+			GER = { set_state_controller = 90 }
+		}
+		
+		if = {
+			limit = {
+				72 = {					
+					is_owned_by = POL
+					
+				}
+			}
+			GER = { set_state_controller = 72 }
+		}
+		
+		##Annexing Danzig-Stadt
+		if = {
+			limit = {
+				784 = {					
+					is_owned_by = DAN
+				}
+				DAN = { is_puppet_of = POL }
+			}
+			GER = { transfer_state = 784 }
+		}
+		
+		##whitepeace between SOV and POL
+		SOV = { white_peace = POL }
+		
+		##Set Global FLAG
+		set_global_flag = POL_collapse
+		
+	}
+}

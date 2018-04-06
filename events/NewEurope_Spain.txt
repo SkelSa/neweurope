@@ -1,7 +1,8 @@
 ﻿add_namespace = ne_spain
+add_namespace = ne_skelsa
 
 
-# Spanish Civil War (modified by BPWE)
+# Spanish Civil War Begin (modified by BPWE)
 country_event = {
 	id = ne_spain.1
 	title = spain.1.t
@@ -15,13 +16,9 @@ country_event = {
 		tag = SPR
 		has_defensive_war = no
 		NOT = { has_government = fascism }
-		date > 1936.7.17 # Trigger at some point after 1936 elections (Historical start)
+		date > 1936.7.17 #Modified: Historical Start
 	}
 
-	#mean_time_to_happen = {
-	#	days = 151	# Historical outbreak time after elections
-	#}
-	
 	
 	option = { # Support Nationalists
 		name = spain.1.a
@@ -148,4 +145,344 @@ country_event = {
 		}
 		custom_effect_tooltip = republicans_chosen
 	}
+}
+
+
+
+##Democratic and  can assist Rep. Spain with guns
+country_event = {
+	id = ne_skelsa.115
+	title = ne_skelsa.115.t
+	desc =  ne_skelsa.115.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+
+	is_triggered_only = yes
+	
+	#NOT = { has_country_flag = ne_guns_for_spain }
+	
+	immediate = {
+	
+		set_country_flag = ne_guns_for_spain 
+		
+	}
+	
+	
+	option = {	#We will help them
+		name = ne_skelsa.115.a	
+		
+		##AI Chance
+		ai_chance = {
+			factor = 50
+					
+			modifier = {
+				factor = 100
+				
+				is_historical_focus_on = yes
+				OR = {
+					tag = MEX
+					tag = SOV				
+				}
+				
+			}
+
+			modifier = {
+				factor = 0
+				
+				is_historical_focus_on = yes
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = FRA	
+				}
+				
+			}
+			
+		}
+
+		##Effects
+		add_political_power = 10
+		
+		add_manpower = 5000	
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -2000 }
+						
+		custom_effect_tooltip = spain_civil_war_help
+		
+		
+		
+		every_country = {
+			limit = {
+				original_tag = SPR
+				has_government = communism
+			}
+			
+			country_event = { days = 1 id = ne_skelsa.117 }
+		}
+		
+			
+	}
+	
+	
+	option = {	#There's no reason for us to get involved
+		name = ne_skelsa.115.b
+		
+		##AI Chance
+		ai_chance = {
+			factor = 50
+					
+			modifier = {
+				factor = 100
+				
+				is_historical_focus_on = yes
+				OR = {
+					tag = USA
+					tag = FRA
+					tag = ENG
+				}
+			}			
+		}	
+
+		##Effects
+		add_political_power = 15
+		add_war_support = -0.02
+			
+	}
+
+	
+}
+
+
+
+##Fascist countries can support Franco with guns
+country_event = {
+	id = ne_skelsa.116
+	title = ne_skelsa.116.t
+	desc =  ne_skelsa.116.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	
+	is_triggered_only = yes
+	
+	##NOT = { has_country_flag = ne_guns_for_spain }
+	
+	immediate = {	
+		set_country_flag = ne_guns_for_spain 		
+	}
+	
+	
+	option = {	#We will help them
+		name = ne_skelsa.116.a	
+		
+		##AI Chance
+		ai_chance = {
+			factor = 50
+					
+			modifier = {
+				factor = 100
+				
+				is_historical_focus_on = yes
+				OR = {
+					tag = GER
+					tag = ITA
+					tag = SOV				
+				}
+			}			
+		}
+
+		##Effects
+		add_political_power = 10	
+
+		add_manpower = -5000	
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -2000 }
+		
+		custom_effect_tooltip = nat_spain_civil_war_help
+		
+		every_country = {
+			limit = {
+				original_tag = SPR
+				has_government = fascism
+			}
+			
+			country_event = { days = 1 id = ne_skelsa.117 }
+		}
+		
+			
+	}
+	
+	
+	option = {	#There's no reason for us to get involved
+		name = ne_skelsa.116.b
+		
+		##AI Chance
+		ai_chance = {
+			factor = 50
+					
+			modifier = {
+				factor = 0
+				
+				is_historical_focus_on = yes				
+			}			
+		}	
+
+		##Effects
+		add_political_power = 15
+		add_war_support = -0.05
+			
+	}
+
+	
+}
+
+
+
+##Spain gets event about Foreign Assistance
+country_event = {
+	id = ne_skelsa.117
+	title = ne_skelsa.117.t
+	
+	desc = {
+	text = ne_skelsa.117.d1
+		trigger = {
+			has_government = fascism
+		}
+	}
+	
+	desc = {
+	text = ne_skelsa.117.d
+		trigger = {
+			has_government = communism
+		}
+	}
+	
+	picture = report_event_spain_civil_war_soldiers
+
+	is_triggered_only = yes
+
+	
+	option = {	#Great
+		name = ne_skelsa.117.a
+		
+		##Effects
+		add_opinion_modifier = { target = FROM modifier = helped_spain_civil_war } 
+		
+		##Foreign Volunteers
+		add_manpower = 5000	
+		
+		##Requires some testing probably:
+		
+		##Soviet
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = SOV
+				}
+				
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = SOV } }
+				ROOT = { add_ideas = NE_civil_war_help_sov } 
+			}
+		
+		}
+		
+		##Mexico
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = MEX
+				}
+				
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = MEX } }
+				ROOT = { add_ideas = NE_civil_war_help_mex }
+			}
+		
+		}
+		
+		##US
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = USA
+				}
+				
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = USA } }
+				ROOT = { add_ideas = NE_civil_war_help_usa }
+			}
+		
+		}
+		
+		##FRA
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = FRA
+				}
+				
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = FRA } }
+				ROOT = { add_ideas = NE_civil_war_help_fra }
+			}
+		
+		}
+		
+		##ENG
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = ENG
+				}
+				
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ENG } }
+				ROOT = { add_ideas = NE_civil_war_help_eng }
+			}
+		
+		}
+		
+		##ITA
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = ITA
+				}
+				
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ITA } }
+				ROOT = { add_ideas = NE_civil_war_help_ita }
+			}
+		
+		}
+		
+		##POR
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = POR
+				}
+				
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = POR } }
+				ROOT = { add_ideas = NE_civil_war_help_por }
+			}
+		
+		}
+		
+		##GER
+		every_country = {
+			if = {
+				limit = {
+					tag = FROM
+					tag = GER
+				}
+				
+				ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = GER } }
+				ROOT = { add_ideas = NE_civil_war_help_ger }
+			}
+		
+		}
+		
+		
+			
+	}
+	
+	
 }

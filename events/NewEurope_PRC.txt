@@ -2,6 +2,7 @@
 # Chinese Events - Additions by New Europe!#
 ############################################
 add_namespace = ne_prc
+add_namespace = ne_skelsa
 
 
 
@@ -1155,6 +1156,58 @@ country_event = {
 		reverse_add_opinion_modifier = { target = FROM modifier = asked_return_territory}
 
 		}
+}
+
+
+##Brother Hao joins the PLA
+country_event = {
+	id = ne_skelsa.1
+	title = ne_skelsa.1.t
+	desc =  ne_skelsa.1.d
+	picture = GFX_brother_hao
+
+	fire_only_once = yes
+
+	
+	trigger = {
+		tag = PRC
+		
+		PRC = {
+			exists = yes
+			is_subject = no
+			has_government = communism
+			
+			date > 1947.1.11
+		}
+	
+	
+	}
+	
+	
+	mean_time_to_happen = {	days = 1 }
+	
+	immediate = { 
+		#
+	}
+	
+	
+	option = { #without the Communist Party, there will be no new China!
+		name = ne_skelsa.1.a
+		
+		create_corps_commander = { name = "Brother Hao" picture = "Portrait_PRC_General_Brother_Hao.dds" traits = { } skill = 4 } 
+		
+		if = {
+			limit = {
+				has_global_flag = ne_music_chosen
+				PRC = { is_ai = no }
+			}
+		
+		PRC = { sound_effect = communist_party }
+		}
+		
+		
+	}
+	
 }
 
 
