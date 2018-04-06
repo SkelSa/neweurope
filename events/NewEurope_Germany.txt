@@ -4,6 +4,7 @@
 add_namespace = ne_division_frg
 add_namespace = ne_saar
 add_namespace = ne_notes
+add_namespace = ne_germany
 
 
 ##Division of Germany/ Founding of FRG/DDR
@@ -1018,6 +1019,98 @@ country_event = {
 	}
 
             
+}
+
+country_event = {  ##Germany name change event
+	id = ne_germany.1
+	title = ne_germany.1.t
+	desc = ne_germany.1.d
+	picture = GFX_report_event_german_speech
+	
+	trigger = {
+		tag = GER
+		GER = {		
+			num_of_factories > 245
+			has_army_size = { size > 120 }
+			has_government = fascism
+			NOT = { has_country_flag = ne_deu_ren }
+			surrender_progress < 0.01
+			
+			controls_state = 16
+			controls_state = 10
+			controls_state = 206
+			controls_state = 194
+			
+		}
+	}
+
+	fire_only_once = no
+	
+	immediate = {
+		GER = { set_country_flag = ne_deu_ren }
+	}
+
+	option = {
+		name = ne_germany.1.a
+		ai_chance = { factor = 100 }
+		
+		##Without historical names
+		if = {
+			limit = {
+				NOT = { has_global_flag = names_chosen }	
+			}
+			
+		GER = { set_cosmetic_tag = NE_DEU_REN }			
+		}	
+		
+		##With historical names	
+		if = {
+			limit = {
+				has_global_flag = names_chosen			
+			}
+			
+		GER = { set_cosmetic_tag = NE_DEU_REN_HISTORICAL }			
+		}	
+		
+			
+		add_political_power = 120
+		custom_effect_tooltip = germany_change_its_name
+	}
+
+}
+
+country_event = {  ##Germany resents capture (britinvasioninislands)
+	id = ne_germany.2
+	title = ne_germany.2.t
+	desc = ne_germany.2.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ne_germany.2.a
+		GER = { add_political_power = -25 }
+	}
+
+}
+
+country_event = {  ##Germany resents capture again (britinvasioninislands)
+	id = ne_germany.3
+	title = ne_germany.3.t
+	desc = ne_germany.3.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ne_germany.3.a
+		GER = { add_political_power = -40 }
+	}
+
 }
 
 

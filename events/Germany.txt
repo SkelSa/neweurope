@@ -3440,7 +3440,7 @@ country_event = {
 		remove_state_claim = 86
 		
 		##New Europe
-		DAN = { country_event = { days = 1 id = ne_takee.4 } }	##Danzig can decide
+		DAN = { country_event = { days = 1 id = poland.13 } }	##Danzig can decide
 		
 		if = {
 			limit = {

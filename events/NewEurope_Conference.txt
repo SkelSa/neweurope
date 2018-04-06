@@ -1,1 +1,88 @@
-﻿
+﻿##PROPOSE THIS EVENT CATEGORY FOR ANY PEACE HISTORICAL CONFERENCES AND E.T.C##
+add_namespace = ne_conf
+
+country_event = {  ##Soviet, Allies and Iran peace conferention
+	id = ne_conf.1
+	title = ne_conf.1.t
+	desc = ne_conf.1.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	fire_only_once = yes
+
+	trigger = {
+
+		OR = {
+			tag = SOV
+			tag = ENG
+		}
+
+		PER = {
+			AND = {
+				has_war_with = SOV
+				has_war_with = ENG
+			}
+			OR = {
+				surrender_progress > 0.14
+				has_capitulated = yes
+			}
+		}
+
+		NOT = {
+			any_country = {
+				has_decision = NE_warop_iraqinvasion
+			}
+		}
+
+	}
+
+	option = {
+		name = ne_conf.1.a
+		if = {
+			limit = {
+				266 = { is_core_of = PER }
+				416 = { is_core_of = PER }
+				419 = { is_core_of = PER }
+				420 = { is_core_of = PER }
+				413 = { is_core_of = PER }
+				412 = { is_core_of = PER }
+			}
+			hidden_effect = {
+				SOV = {
+					transfer_state = 266
+					transfer_state = 416
+					transfer_state = 419
+					transfer_state = 420
+				}
+				ENG = {
+					transfer_state = 413
+					transfer_state = 412
+				}
+			}
+		}
+		if = {
+			limit = { PER = { has_war_with = SOV } }
+			PER = { white_peace = SOV }
+		}
+		if = {
+			limit = { PER = { has_war_with = ENG } }
+			PER = { white_peace = ENG }
+		}
+		if = {
+			limit = { PER = { has_war_with = AST } }
+			PER = { white_peace = AST }
+		}
+		if = {
+			limit = { PER = { has_war_with = RAJ } }
+			PER = { white_peace = RAJ }
+		}
+		PER = { 
+			add_stability = -0.3
+			add_war_support = -0.4
+			add_popularity = { ideology = communism popularity = 0.15 }
+			add_popularity = { ideology = democratic popularity = 0.15 }
+			add_popularity = { ideology = fascism popularity = -0.40 }
+		}
+		custom_effect_tooltip = iran_war_tooltip.4.tt
+	}
+
+}
