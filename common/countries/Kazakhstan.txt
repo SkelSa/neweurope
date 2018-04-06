@@ -7,3 +7,4 @@ graphical_culture = middle_eastern_gfx
 graphical_culture_2d = middle_eastern_2d
 
 color = rgb { 75  184  203 } #light blue/teal?
+color_ui = rgb { 75  184  203 } #light blue/teal?

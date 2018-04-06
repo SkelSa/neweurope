@@ -2343,7 +2343,7 @@ country_event = {
 				OR = {
 					tag = ENG
 					tag = USA
-					tag = SOV	
+					tag = FRA	
 				}
 				
 			}
@@ -2381,7 +2381,7 @@ country_event = {
 			factor = 50
 					
 			modifier = {
-				factor = 0
+				factor = 100
 				
 				is_historical_focus_on = yes
 				OR = {

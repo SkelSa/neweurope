@@ -3,4 +3,7 @@
 graphical_culture = african_gfx
 graphical_culture_2d = african_2d
 
-color = { 145 60 160 }
+color = rgb { 145  157  236 }
+color_ui = rgb { 145  157  236 }
+
+##145 60 160 is MD purple

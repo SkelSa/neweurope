@@ -88,8 +88,8 @@
  ne_settings.4.d:0 "With the options below you can enable stricter join rules for NATO or the Warsaw Pact.\nThe stricter rules for NATO/WP are obviously only applied once NATO or the Warsaw pact are created and mean that not every democratic country can join NATO, for instance, instantly. Instead, they would have to achieve a lot of party popularity. Several national spirits help you to see when a country would be ready to join. If they are a great power, Players can invite some countries earlier into their faction via the diplomacy slots while any AI-only faction requires any potential new members to have a really high party popularity among some other minor conditions. Historical invitations are done via event however.\nChoose now what you want."
  ne_settings.4.a:0 "Enable historical NATO/PACT"
  ne_settings.4.a1:0 "Disable the special rules for joining NATO/PACT"
- #ne_settings.4.b:0 ""
- #ne_settings.4.b1:0 ""
+ #ne_settings.4.b:0 "" ##Was Japan's Co-Prosperity Sphere
+ #ne_settings.4.b1:0 "" ##Was Japan's Co-Prosperity Sphere
  ne_settings.4.e:0 "Exit to Main Menu"
  
  ##It's possible to allow independent SSRs from the beginning or give every major an additional research slot from the start."
@@ -105,15 +105,15 @@
  ne_return_menu_no_changes:0 "Return to the main menu without any changes."
  
  ##Submenu: Flavor
- historical_flavor_menu_a:0 ""
- historical_flavor_menu_b: ""
+ historical_flavor_menu_a:0 "Allow historical names, flags and better colors, more historical leaders or better SSRs."
+ historical_flavor_menu_b: "Choose the names for the USA and Soviet Union."
 
  
  ##Submenu: neutrality
- neutrality_menu_a:0 ""
- neutrality_menu_b: ""
+ neutrality_menu_a:0 "Enable neutrality spirits for some countries"
+ neutrality_menu_b: "Activate stricter faction joining rules for NATO and the Warsaw Pact."
  
- 
+ ##Enable/Disable Tooltip
  ne_settings_enabled:0 "This is currently §Genabled§!."
  ne_settings_disabled:0 "This is currently §Rdisabled§!."
  
@@ -146,8 +146,8 @@
  reco_settings_a:0 "-Recommended Settings- are currently §Rdisabled§!."
  reco_settings_a1:0 "-Recommended Settings- are currently §Genabled§!."
  ##Exit Menu (option B)
- exit_settings_a:0 "You will return to the game §Rwithout§! any changes. Keep in mind that it's not possible to reopen this menu after closing it."
- exit_settings_a1:0 "You will return to the game now with your custom changes. Have fun!"
+ exit_settings_a:0 "You will return to the game now with your custom changes. Have fun!"
+ exit_settings_a1:0 "You will return to the game §Rwithout§! any changes. Keep in mind that it's not possible to reopen this menu after closing it."
  exit_settings_b:0 "If you click this option all of your changes are going back to the default. Are you sure?"
 
 
@@ -160,10 +160,7 @@
  historical_settings_b1:0 "All communist Soviet Republics plus the Baltics gain a cosmetic tag, which changes their name to end with "SSR".\n\nExamples:\nLithuanian People's Republic -> Lithuanian SSR\nKazakh Soviet Socialist Republic -> Kazakh SSR"
  ussr_usa_settings_c:0 "The country names stay as they are. Return to menu without changes." 
  
- ##Metaxas is dead!
- ne_skelsa.90.t:0 "Prime Minister Metaxas has passed away!"
- ne_skelsa.90.d:0 "After a long struggle against toxaemia our beloved Leader has sadly died in Athens today. In the next days our people will mourn his death and say farewell.\nWe have decided that the current governor of the Bank of Greece, Alexandros Koryzis, will be Metaxas' successor and serve as the Prime Minister of Greece. However, King George II will, as expected, remain our head of state and have the final say in all political decisions.\n Even though the death of Metaxas will be a setback, we are confident that the new government and our beloved King can maneuver the Greek nation through these difficult times of war."
- ne_skelsa.90.a:0 "King George II will achieve victory for Greece!"
+ 
  
  
  

@@ -88,7 +88,7 @@ country_event = {
 	id = ne_historical.1
 	title = ne_historical.1.t
 	desc =  ne_historical.1.d
-	picture = GFX_somepic
+	picture = GFX_report_event_bulgarian_soldiers
 
 	fire_only_once = yes
 
@@ -138,7 +138,7 @@ country_event = {
 		}
 		
 		hidden_effect = {	
-			BUL = { country_event  = { id = ne_historical.2 } }				
+			BUL = { country_event  = { days = 1 id = ne_historical.2 } }				
 		}
 			
 	}
@@ -168,7 +168,7 @@ country_event = {
 	id = ne_historical.2
 	title = ne_historical.2.t
 	desc =  ne_historical.2.d
-	picture = GFX_somepic
+	picture = GFX_report_event_bulgarian_soldiers
 
 	#hidden = yes
 	is_triggered_only = yes
@@ -197,7 +197,7 @@ country_event = {
 		add_stability = 0.05
 		
 		hidden_effect = {	
-			FROM = { country_event  = { id = ne_historical.3 } }				
+			FROM = { country_event  = {  days = 1 id = ne_historical.3 } }				
 		}
 			
 	}
@@ -218,7 +218,7 @@ country_event = {
 		add_stability = -0.05
 		
 		hidden_effect = {	
-			FROM = { country_event  = { id = ne_historical.4 } }					
+			FROM = { country_event  = {  days = 1 id = ne_historical.4 } }					
 		}	
 	
 	}
@@ -233,9 +233,8 @@ country_event = {
 	id = ne_historical.3
 	title = ne_historical.3.t
 	desc =  ne_historical.3.d
-	picture = GFX_somepic
+	picture = GFX_report_event_bulgarian_soldiers
 
-	#hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -259,9 +258,8 @@ country_event = {
 	id = ne_historical.4
 	title = ne_historical.4.t
 	desc =  ne_historical.4.d
-	picture = GFX_somepic
+	picture = GFX_report_event_bulgarian_soldiers
 
-	#hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	

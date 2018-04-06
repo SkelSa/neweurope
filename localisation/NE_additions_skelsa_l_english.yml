@@ -5,15 +5,12 @@
  ##Replace/Revise
  
  
- ne_news.1.t:0 "Better Post-War Europe"
- ne_news.1.d:0 "This mod aims to expand and enhance a historical playthrough as one of the Allied nations. Besides several new states to allow the recreation of a new world, BPWE features dozens of historical events and other content to allow the begin of the Cold War after the defeat of Nazi Germany and her allies.\nDue to the increasing lag in the lategame a focus was laid on events which happened before 1955 in our timeline. WW3 stuff is also included.\nThis mod was intended for historical playthroughs and thus ahistorical games will prevent a lot of content. Please try to keep this in mind.\nAnd now have fun!"
- ne_news.1.a:0 "Thanks for the info!"
+ 
  
  ##Test
  army_xp_more_than_10:0 "§H10§!£army_experience"
  army_xp_more_than_10_blocked:0 "§R10§!£army_experience"
  army_xp_more_than_10_tooltip:0 "It costs 10£army_experience to select this."
- 
  
  
  ##Misc
@@ -22,7 +19,7 @@
  ##Parties (by Pinkie Pie) - MOVE THEM TO THE SETTINGS, Command:  	set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party } 
  
  LEB_communism_party:0 "Syrian-Lebanese Communist Party"
- GRE_House_of_Glucksburg:0 "House of Glücksburg"
+
 
  
  ##VANILLA EVENTS WITH PETSAMO IN IT
@@ -73,7 +70,7 @@
  NE_alone:0 "No Allied Help"
  NE_alone_desc:0 "Allies are useless anyways.\nThis is a debug national spirit to ensure that no allies join this war."
  NE_desperate_defense:0 "Desperate Defense"
- NE_alone_desc:0 "Most of our cities are occupied, millions of civilians are dead and losses are staggering. Now the time has come for our citizens to fight against the invader till the last breath. Not only to defend the future of this nation but to save their families and loved ones!\nWe must not lose."
+ NE_desperate_defense_desc:0 "Most of our cities are occupied, millions of civilians are dead and losses are staggering. Now the time has come for our citizens to fight against the invader till the last breath. Not only to defend the future of this nation but to save their families and loved ones!\nWe must not lose."
  NE_bad_infrastructure:0 "Bad Infrastructure"
  NE_bad_infrastructure_desc:0 "The further we advanced into the Chinese mainland we encountered worse roads, bridges and rail networks! This combined with several attacks by guerillas on our transports has led to a significant strain on our supply logistics."
  NE_ITA_incompetent_officers:0 "Italian General Staff"

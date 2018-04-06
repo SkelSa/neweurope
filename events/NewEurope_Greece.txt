@@ -2,7 +2,55 @@
 ####    ALL EVENTS CONCERNING GREECE GO HERE    #####
 #####################################################
 
+add_namespace = ne_greece
 add_namespace = ne_civil_war
+
+
+###########################################
+####    Metaxas Death Event Chain      ####
+###########################################
+
+
+##Metaxas dies (Before Fall of Athens)
+country_event = {
+	id = ne_greece.1
+	title = ne_greece.1.t
+	desc =  ne_greece.1.d
+	picture = GFX_metaxas_death
+
+	fire_only_once = yes
+
+	trigger = {
+	
+		tag = GRE
+		has_war_with = GER
+		has_war_with = ITA
+		surrender_progress > 0.15
+		has_country_leader = { name = "Ioannis Metaxas" }
+	
+	}
+	
+	
+	option = {	#stability loss (small)
+		name = ne_greece.1.a
+
+		##Effects
+		add_stability = -0.02
+		
+		kill_country_leader = yes
+		create_country_leader = { name = "George II of Greece" picture = "Portrait_GRE_George_II.dds" expire = "1965.1.1" ideology = despotism traits = { } }
+		set_party_name = { ideology = neutrality long_name = GRE_House_of_Glucksburg name = GRE_House_of_Glucksburg } 	
+	}
+
+	
+}
+
+
+
+
+
+
+
 
 ###########################################
 ####    Greek Civil War (1946-1949)    ####

@@ -4,4 +4,4 @@ graphical_culture_2d = western_european_2d
 color = { 128  182  133 }
 color_ui = rgb { 128  182  133 }
 
-##Old color for the ITS: 115 245 130 (looked more like neon green )
+##Old color for the ITS: 115 245 130 (looked more like neon green ). Current color is from Hoi3

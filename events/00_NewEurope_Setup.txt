@@ -217,15 +217,35 @@ news_event = {
 		
 		TUN = {		
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 1 } 
+			set_political_party = { ideology = democratic popularity = 6 } 
+			set_political_party = { ideology = fascism popularity = 4 } 
+			set_political_party = { ideology = communism popularity = 10 } 
+			set_political_party = { ideology = neutrality popularity = 80 } 
 		}
 		
 		MOR = {		
 			set_politics = { ruling_party = neutrality elections_allowed = no } 
-			add_popularity = { ideology = neutrality popularity = 1 } 
+			set_political_party = { ideology = democratic popularity = 5 } 
+			set_political_party = { ideology = fascism popularity = 5 } 
+			set_political_party = { ideology = communism popularity = 0 } 
+			set_political_party = { ideology = neutrality popularity = 90 } 
 		}
 
-		##SYR and LEB country files were modified so no changes here!		
+		LEB = {		
+			set_politics = { ruling_party = democratic elections_allowed = yes } 
+			set_political_party = { ideology = democratic popularity = 80 } 
+			set_political_party = { ideology = fascism popularity = 10 } 
+			set_political_party = { ideology = communism popularity = 5 } 
+			set_political_party = { ideology = neutrality popularity = 5 } 
+		}
+
+		SYR = {		
+			set_politics = { ruling_party = democratic elections_allowed = yes } 
+			set_political_party = { ideology = democratic popularity = 80 } 
+			set_political_party = { ideology = fascism popularity = 10 } 
+			set_political_party = { ideology = communism popularity = 5 } 
+			set_political_party = { ideology = neutrality popularity = 5 }  
+		}		
 
 		
 		##Adding state cores

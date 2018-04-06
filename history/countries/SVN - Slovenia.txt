@@ -4,7 +4,7 @@
 ##REQUIRES 1936 AND 1939 INFO!##
 
 
-capital = 813 ##Italian Slovenia (Check what state Lbubliana is in)
+capital = 813 ##Italian Slovenia (Ljubliana)
 
 oob = "SVN_1936"
 
