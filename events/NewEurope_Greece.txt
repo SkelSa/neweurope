@@ -1,15 +1,15 @@
-﻿#####################################################
-####    ALL EVENTS CONCERNING GREECE GO HERE    #####
-#####################################################
+﻿#################################################
+####  ALL EVENTS CONCERNING GREECE GO HERE  #####
+#################################################
 
 add_namespace = ne_greece
-add_namespace = ne_civil_war
-add_namespace = ne_greece
+add_namespace = ne_greek_civil_war
 
 
-###########################################
-####    Metaxas Death Event Chain      ####
-###########################################
+
+#####################################
+####  Metaxas Death Event Chain  ####
+#####################################
 
 
 ##Metaxas dies (Before Fall of Athens)
@@ -47,9 +47,10 @@ country_event = {
 }
 
 
-###########################################
-####           Metaxas Line            ####
-###########################################
+
+########################
+####  Metaxas Line  ####
+########################
 
 
 country_event = {  ##Metaxas Line Event
@@ -148,16 +149,333 @@ country_event = {  ##Metaxas Line Event
 
 
 
+###############################
+####  PARTITION OF GREECE  ####
+###############################
 
 
-###########################################
-####    Greek Civil War (1946-1949)    ####
-###########################################
+##GER: Event to partition Greece among its allies (WILL BE ne_greece.3 and .4)
+country_event = {
+	id = ne_skelsa.77
+	title = ne_skelsa.77.t
+	desc = ne_skelsa.77.d
+	picture = GFX_greece_split
+
+	trigger = {
+
+		tag = GER
+		is_historical_focus_on = yes
+	
+		GER = {
+			exists = yes
+			has_government = fascism
+			has_war_with = ENG
+			is_faction_leader = yes
+			is_in_faction_with = ITA
+		}
+	
+	
+		GRE = {
+			exists = yes
+			has_capitulated = yes
+			has_war_with = GER
+			has_war_with = ITA		
+		}
+		
+		
+		47 = {
+			is_owned_by = GRE
+			OR = { 
+				is_controlled_by = GER
+				any_country = { is_in_faction_with = GER  controls_state = PREV }
+			}	
+		}
+		
+		731 = {
+			is_owned_by = GRE
+			OR = { 
+				is_controlled_by = GER
+				any_country = { is_in_faction_with = GER  controls_state = PREV }
+			}	
+		}
+		
+
+	}
+	
+
+	option = {		##Let's partition it (set_state_controller)
+		name = ne_skelsa.77.a
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes	
+			}			
+		}
+			
+		##Add country flag to Greece
+		GRE = { set_country_flag = ne_axis_occupied }
+			
+			##GERMANY
+
+			if = {
+				limit = {
+					821 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 821		add_state_claim = 821 }
+			}
+
+			if = {
+				limit = {
+					187 = {
+						is_owned_by = GRE
+							#OR = {		####Aegean islands are not always occupied!
+							#	is_controlled_by = GER
+							#	any_country = { is_in_faction_with = GER  controls_state = PREV }
+							#}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 187		add_state_claim = 187 }
+			}
+			
+			if = {
+				limit = {
+					184 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 184		add_state_claim = 184 }
+			}
+			
+			if = {
+				limit = {
+					731 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 731		add_state_claim = 731 }
+			}
+			
+			##Piraeus
+			if = {
+				limit = {
+					820 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 820		add_state_claim = 820 }
+			}
+			
+			##Thessaloniki
+			if = {
+				limit = {
+					827 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 827		add_state_claim = 827 }
+			}
+			
+			##Northern Aegean
+			if = {
+				limit = {
+					825 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				GER = { set_state_controller = 825		add_state_claim = 825 }
+			}
+			
+			
+			##BULGARIA
+
+			##Evros
+			if = {
+				limit = {
+					829 = {
+						is_owned_by = GRE
+							OR = { 
+								is_controlled_by = GER
+								any_country = { is_in_faction_with = GER  controls_state = PREV }
+							}	
+					}						
+				
+				}
+			
+				BUL = { set_state_controller = 829		add_state_claim = 829 }
+			}
+
+			if = {
+				limit = {
+					BUL = {
+						exists = yes
+						is_in_faction_with = GER
+					}
+				}
+				
+					
+				if = {
+					limit = {
+						184 = {
+							is_owned_by = GRE
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					BUL = { set_state_controller = 184		add_state_claim = 184 }
+				}
+				
+			}
+			
+			
+			##ITALY
+			if = {
+				limit = {
+					ITA = {
+						exists = yes
+						is_in_faction_with = GER
+					}
+				}
+				
+					
+				if = {
+					limit = {
+						47 = {
+							is_owned_by = GRE
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					ITA = { set_state_controller = 47		add_state_claim = 47 }
+				}
+				
+				if = {
+					limit = {
+						186 = {
+							is_owned_by = GRE
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					ITA = { set_state_controller = 186		add_state_claim = 186 }
+				}
+				
+				if = {
+					limit = {
+						185 = {
+							is_owned_by = GRE
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					ITA = { set_state_controller = 185		add_state_claim = 186 }
+				}
+				
+				if = {
+					limit = {
+						819 = {
+							is_owned_by = GRE
+								OR = { 
+									is_controlled_by = GER
+									any_country = { is_in_faction_with = GER  controls_state = PREV }
+								}	
+						}						
+					
+					}
+				
+					ITA = { set_state_controller = 819		add_state_claim = 819 }
+				}
+				
+				
+			}
+	
+
+	}
+	
+	option = {		##No
+		name = ne_skelsa.77.b
+		ai_chance = {
+			factor = 50
+			
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}			
+		}
+		
+		add_political_power = -25
+
+	}
+}
+
+
+
+
+#######################################
+####  Greek Civil War (1946-1949)  ####
+#######################################
 
 
 ##1944 December clash events
 country_event = {
-	id = ne_civil_war.1
+	id = ne_greek_civil_war.1
 	title = ne_skelsa_civil_war.1.t
 	desc =  ne_skelsa_civil_war.1.d
 	picture = GFX_somepic

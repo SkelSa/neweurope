@@ -1,0 +1,141 @@
+[img]http://i.imgur.com/qNvgZNd.jpg[/img]
+
+[h1]INTRODUCTION[/h1]
+
+Since Paradox is unable to give us proper post-war borders/states of Europe even one year after release, I decided to create this modification. Besides 30 new states and countless other map changes, there're also several events like the reunification/division of Germany, the Korean War or city name changes to only name a few.
+The most powerful tool you get with this mod is a complex manager to change the face of Europe (and East Asia) to either recreate the historical outcome of the war or complete wackiness (like restoring Austria-Hungary or the PLC).
+
+This mod should enhance a somehow historical playthrough with the defeat of the Axis and the begin of the Cold War. For a complete list of changes, just scroll down.
+
+
+
+
+[h1]CONTENT:[/h1]
+
+[b]State, border and country changes[/b]
+[list]
+[*]In total there are 30 new states  from Bremen to Fezzan!
+[*]Recreation of the Oder-Neisse border between GER and POL
+[*]Smoother borders between the USSR and Poland, while also staying historical
+[*]Partition of East Prussia
+[*]Revised primarily provinces and states 
+[*]Remodelled Berlin and thus capital will be split up between the two Germanies
+[*]Scaled down Gibraltar, Zara, Hongkong, Singapore and Macau; they were WAY too huge
+[*]Seperated Northern Serbia from Serbia, so you can recreate Austro-Hungary
+(I didn't edit their events, though you can create A-H with the post-war manager!)
+[*]Redrew the DMZ in Korea while also adding the borders of 1950 and '53
+[*]Bonn now becomes capital of West Germany
+[*]Added North and South Korea with their leaders respectively 
+[*]Historical partition of Istria between Yugoslavia and Italy
+[*]Partitioning of Switzerland
+[*]Japan can be partitioned and also divided with a communist country in the North and democratic in the South
+[/list]
+
+[b]Releasables and countries[/b]
+[list]
+[*]Added 20 new releasables to the game 
+[*]All Yugoslav nations, such as Slovenia, Bosnia and Macedonia
+[*]All SSRs, including the Stan countries
+[*]Danzig and Egypt will be there from game start!
+[*]Smaller German states from the Morgenthau- and Roosevelt-Plan
+[*]The DPRK as an own state and the Socialist Republic of Japan for alternate history
+[*]Free City of Trieste, which can be released during the post-war events
+[/list]
+
+[b]Events[/b]
+[list]
+[*]Changed some events like the Yalta conference, the partition of Poland through M-R Pact, surrender of Bessarabia and the events of the Soviet NF concerning Poland
+[*]A [u]dynamic[/u] manager to alter the borders of Europe and Korea and Japan
+[*]The manager can change the borders of almost every European country with historical outcomes or ahistorical weirdness (e.g. Megali idea, A-H, dissolving the USSR, ...)
+[*]Morgenthau- and Roosevelt Plan are available  as alternatives to history
+[*]Events for a 1950 unification of Germany (Stalin Notes)
+[*]18 new news events
+[*]Dissolving the Allies and Comintern and creating the Warsaw Pact or NATO
+[*]Dynamic events for Mao's China to demand NE China and Dalian
+[*]Port Arthur leasing and return
+[*]Event chain to decide what to do with the defeated Japan
+[*]Negotiating the future of Korea
+[*]Korean war + cease-fire
+[*]City renaming (7 new cities currently)
+[/list]
+
+[b]Miscellaneous stuff and fixes[/b]
+[list]
+[*]Historical (communist) leaders of Poland, Albania and Romania
+[*]Several flag and localization changes to fix the basegame's stupidity (can be chosen upon game start)
+[*]It's highly unlikely that Nat. Spain will join the Axis (I removed Germany's ability to delete Spain's spirit "Recovering from Civil War"
+[*]Option to enable a neutrality national spirit for some countries so they won't join factions early on
+[*]Communist China starts with correct flag and name and gets dynamic events to annex Sinkiang, Tibet and Manchuria and eventually proclaim their country!
+[/list]
+
+[i]This is all I can think of..maybe something minor I forgot to mention...[/i]
+
+[b]TL;DR:[/b] BPWE adds in several new states, events, countries and other small enhancements. The goal is to let the player create a historical map. It DOES NOT add a new timeline,national foci, technologies, units or...music, thus it's NOT a new scenario or Cold War overhaul. You will start with the vanilla bookmarks and have to defeat the Germans, Italians or Japanese to descend the Iron Curtain. Or you use console commands. Which is easier...
+
+
+
+[h1]LINKS:[/h1]
+
+Each big topic is now an own "discussion" entry to ease the work of updating the description. Just click on the box below to get to the respective topic!
+
+
+[code][h1][url=http://steamcommunity.com/workshop/filedetails/discussion/958449698/1471967615857909347/]Events and Event ID List[/url][/h1][/code]
+[code][h1][url=http://steamcommunity.com/workshop/filedetails/discussion/958449698/1471967615858322978/]Frequently Asked Questions[/url][/h1][/code]
+[code][h1][url=http://steamcommunity.com/workshop/filedetails/discussion/958449698/2579854400752497919/]Compatibility[/url][/h1][/code]
+
+
+
+[h1]CONCERNING SUGGESTIONS:[/h1]
+
+If you have any suggestions just post them under "Suggestions" (duh!). Please keep the original idea in mind and don't ask for NF trees or new technologies. Changing the map to represent our timeline will get the most attention.
+
+
+
+[h1]PLANNED FOR NEXT UPDATE:[/h1]
+
+[b]-[/b]X Sino-Soviet split (border wars)
+[b]-[/b]✔ Enlargement for NATO + WP
+[b]-[/b]X Greek civil war
+[b]-[/b]✔ Lend-lease events for China; nations in civil war
+[b]-[/b]X Decolonization events and wars in North Africa/Middle East 
+[b]-[/b]# Tweaking borders
+[b]-[/b]# Bug fixes and optimization 
+
+✔  = Done
+X  = In Work
+#  = Always in Work
+
+
+[h1]FUTURE PLANS:[/h1]
+
+[b]-[/b]Decolonization events and civil wars
+[b]-[/b]Possible Vietnam stuff concerning the independence wars
+[b]-[/b]Bug fixes + optimization
+[b]-[/b]More events and tweaks
+
+
+
+[h1]OTHER PROJECTS:[/h1]
+
+[list]
+[*]Make Peace, Not War - A Conditional Surrender Mod for Hearts of Iron -> [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1133300976] LINK[/url]
+[*]Cold War and WW3 Music - OSTs from WiC + SA, Defcon, East vs. West ->  [url=http://steamcommunity.com/sharedfiles/filedetails/?id=973566315] LINK[/url]
+[*]Soundtrack of the Starmedia documentation Soviet Storm: WWII in the East ->  [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1114121936] LINK[/url]
+[*]Small fix for Hungary not joining the Axis without Death or Dishonor ->  [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1118455786] LINK[/url]
+[*]Trotsky's Coup - Replaces Stalin with Trotsky without a civil war ->  [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1118472997] LINK[/url]
+[*]Hearts of Iron IV: Friendship is Magic (My Little Pony modification) - currently in development
+[*]Whitepeace for Tokyo - currently in development
+[/list]
+
+
+
+[h1]SPECIAL THANKS TO:[/h1]
+
+[list]
+[*][i]Alfactor29[/i], for the French translation!
+[*][i]ghaussst[/i] and [i]Teymur Bagir-zade[/i], for the Russian translation! 
+[*][i]Chairman Meow[/i] for the 'Flickering Flags Fix' mod! 
+[/list]
+
+
+[i]Hopefully Paradox will someday implemement the same changes this mod does... [/i] 

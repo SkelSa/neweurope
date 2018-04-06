@@ -30,6 +30,10 @@ news_event = {
 			add_ideas = NE_ITA_incompetent_officers
 		}
 		
+		GRE = {		
+			set_capital = 863
+		}
+		
 		GER = {		
 			diplomatic_relation = { country = POL relation = non_aggression_pact } 
 		}

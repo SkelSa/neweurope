@@ -901,20 +901,20 @@ country_event = {
 					}
 					
 					#Manual Azana, Spain (as communist)
-					SPR = {
+	#				SPR = {
 					
-						create_country_leader = {
-							name = "Manuel Azana"
-							desc = "POLITICS_MANUEL_AZANA_DESC"
-							picture = "Portrait_Spain_Manuel_Azana.dds"
-							expire = "1965.1.1"
-							ideology = anarchist_communism
-							traits = {
-								#
-							}
-						}
-
-					}
+	#					create_country_leader = {
+	#						name = "Manuel Azana"
+	#						desc = "POLITICS_MANUEL_AZANA_DESC"
+	#						picture = "Portrait_Spain_Manuel_Azana.dds"
+	#						expire = "1965.1.1"
+	#						ideology = anarchist_communism
+	#						traits = {
+	#							#
+	#						}
+	#					}
+#
+					#}
 					
 					##Borat, Kazakhstan
 					KAZ = {

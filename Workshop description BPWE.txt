@@ -1,3 +1,5 @@
+##THIS DESCRIPTION HAS BEEN PUT ON HOLD. DON'T USE OR MODIFY IT! INSTEAD EDIT THE DESCRIPTION DIRECTLY ON THE WORKSHOP PAGE##
+
 [img]http://i.imgur.com/qNvgZNd.jpg[/img]
 
 [h1]INTRODUCTION[/h1]
@@ -96,7 +98,7 @@ If you have any suggestions just post them under "Suggestions" (duh!). Please ke
 
 [b]-[/b]X Sino-Soviet split (border wars)
 [b]-[/b]✔ Enlargement for NATO + WP
-[b]-[/b]✔ Greek civil war
+[b]-[/b]X Greek civil war
 [b]-[/b]✔ Lend-lease events for China; nations in civil war
 [b]-[/b]X Decolonization events and wars in North Africa/Middle East 
 [b]-[/b]# Tweaking borders
@@ -135,7 +137,7 @@ X  = In Work
 [list]
 [*][i]Alfactor29[/i], for the French translation!
 [*][i]ghaussst[/i] and [i]Teymur Bagir-zade[/i], for the Russian translation! 
-[*][i]Chairman Meow[/i] for 'Flickering Flags Fix' mod! 
+[*][i]Chairman Meow[/i] for the 'Flickering Flags Fix' mod! 
 [/list]
 
 

@@ -1,4 +1,6 @@
-##Decisions for the Soviet Union
+##########################################
+####  DECISIONS FOR THE SOVIET UNION  ####
+##########################################
 
 
 
@@ -32,13 +34,13 @@ SOV_the_red_army = {
 		
 		available = {
 			always = yes
-			
+			has_government = neutrality##debug
 			
 		}
 		
 		
 		visible = {
-			
+			has_government = neutrality##debug
 			
 		}
 		

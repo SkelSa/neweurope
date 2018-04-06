@@ -1,14 +1,34 @@
-﻿Here are some formalities for Modding now: 
+﻿#############################
+####  RULES FOR MODDING  ####
+#############################
+
+
 - Decision Category files will have the format "CAT_DEC_NE_countryname". 
 - Decision files will be "DEC_NE_countryname". Event files, as usual NewEurope_countryname.
 - Portraits are named like this "Portrait_[TAG]_[leadername]"; Generals are "Portrait_[TAG]_[General/Admiral]_[leadername]"
 - When doing decisions and events, they go into into the file of the country which the event/decision is ABOUT. E.g. the Newfoundland
   event chain starts with Britain but is about Canada primarily. So this event goes into NewEurope_Canada. 
 - When doing events and decisions, always write in a comment above it who gets the event. E.g. ##Soviet: Annexation of the Baltics
+- Always put events/decisions to their corresponding country file. There are still some left overs, like NewEurope_EasternBloc or so. They will be reduced over time.
 
-And always put events/decisions to their corresponding country file. There are still some left overs, like NewEurope_EasternBloc or so. They will be reduced over time.
 
-25.03.2018, Notices
+
+This is a headline for most event chains:
+
+
+
+##############################
+####  YOUR HEADLINE HERE  ####
+##############################
+
+
+#3 lines free above and 2 lines free beneath. Make sure that the box is a rectangle
+
+
+
+
+##TEST GAME RESULTS##
+
 
 I did a little test game. Here are my Notices:
 

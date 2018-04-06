@@ -1,0 +1,33 @@
+﻿################################################
+####  ALL EVENTS CONCERNING INDIA GO HERE  #####
+################################################
+
+add_namespace = ne_india
+
+
+
+
+##India gets event about her independence
+country_event = {
+	id = ne_skelsa.7
+	title = ne_skelsa.7.t
+	desc =  ne_skelsa.7.d
+	picture = GFX_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	
+	option = {	#AFTER ALL THESE CENTURIES WE'RE FREE!
+		name = ne_skelsa.7.a
+
+		##Effects
+		add_political_power = 125
+		add_stability = 0.10
+			
+	}
+
+	
+}
+
+

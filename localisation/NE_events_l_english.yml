@@ -1,22 +1,4 @@
 ﻿l_english:
-
-
-
- ######################
- ###POST-WAR MANAGER###
- ######################
- 
- 
- ##Manager for Europe
- ne_intro.1.t:0 "The Creation of a New Europe"
- ne_intro.1.d:0 "After the defeat of the fascist menace in Europe, the victorious powers now have to redraw the borders of a devastated continent. \n If you enter the Post-War Manager, several options are available to either create an OTL Europe or drift from history.\nI highly suggest to PAUSE the game while altering country borders!"
- ne_intro.1.a:0 "Take me there!"
- ne_intro.1.b:0 "No thanks!"
- ##Manager for Asia
- ne_intro.3.t:0 "Redrawing the map of Asia"
- ne_intro.3.d:0 "Japanese ambitions in the Pacific were finally stopped and the Home islands are occupied. Now a new fate awaits Korea, Siam, several colonies and Japan itself."
- ne_intro.3.a:0 "Start the Pacific-Manager "
- ne_intro.3.b:0 "No thanks!"
  
  
  
@@ -112,339 +94,6 @@
  #ne_settings.4.b:0 "" ##Was Japan's Co-Prosperity Sphere
  #ne_settings.4.b1:0 "" ##Was Japan's Co-Prosperity Sphere
  ne_settings.4.e:0 "Exit to Main Menu"
- 
- 
- 
- #############################
- ###EVENT MANAGER MAIN MENU###
- #############################
- 
- 
- ne.1.t:0 "Post-War Manager"
- ne.1.d:0 "You can now create a historical Europe or use some of the alternative ways of some countries. It's possible to edit every country which was involved in WW2. \nIMPORTANT: If you click 'close' you can only return to this menu with "event ne.1"!"
- ne.1.a:0 "Deal with the fascist dogs"
- ne.1.b:0 "Reorganize the rest of Europe" # War spoils for the victorious powers + Reward the countries who had to suffer
- ne.1.c:0 "Descend the Iron Curtain NOW!"
- ne.1.e:0 "Close and go back to the game"
- 
- 
- 
- ##################################
- ###EVENT MANAGER - AXIS NATIONS###
- ##################################
- 
- 
- ne.2.t:0 "The Axis Powers"
- ne.2.d:0 "With Hitler and Mussolini dead, Germany and Italy will face severe consequences for killing millions of people, a genocide against "undesirables" and brutally occupying a whole continent from Bordeaux to the outskirts of Moscow. Nevertheless their population has already suffered enough and urgently need foreign aid. It's now our mission to root out fascism and make sure that Germany or Italy will never again disturb the peace of the world..."
- ne.2.a:0 "Partition Krautland"
- ne.2.b:0 "Fall of the "Novus Imperium Romanum""   
- ne.2.c:0 "Deal with Germany's allies in the east"
- ne.2.e:0 "Exit to main menu"
- 
- ne.20.t:0 "Nazi Germany"
- ne.20.d:0 "The Führer is dead and American, British and Soviet troops now occupy every inch of German soil. Several plans were brought up to restructure Germany. Which one should be used?"
- ne.20.a:0 "(Historical) France, the UK, the United States and the Soviets all deserve a chunk!"
- ne.20.b:0 "Morgenthau and Roosevelt's ideas would be optimal"
- ne.20.c:0 "There should be two Germanies to fit Europe's ideological division!"
- ne.20.e:0 "Return to the Axis menu"
- 
- ne.201.t:0 "The Plans of Morgenthau and Roosevelt"
- ne.201.d:0 "The American Finance Minister Henry Morgenthau and Franklin Roosevelt have both issued plans to weaken Germany for the unforseeable future. The "Morgenthau-Plan" divides Germany into two states and an international zone, while some territory will be ceded to her neighbours. Roosevelt wants to divide the former Third Reich into even more states like Prussia, Bavaria and Saxony. Which plan is the most ideal one?"
- ne.201.a:0 "Morgenthau's idea sounds good"
- ne.201.b:0 "The plan from Roosevelt will guarantee peace in Europe"
- ne.201.c:0 "Scrap those plans (return to Germany's menu)..."
- 
- ne.21.t:0 "Kingdom of Italy"
- ne.21.d:0 "The Italians proved to be a burden to Hitler's Germany and dragged him into several other conflicts. In the last days of the war, Mussolini's own people killed him and thus fascist rule over the peninsula finally ended. Some nations have already expressed their claims on Italian territory, however we have the final say. What should happen to Italy?"
- ne.21.a:0 "(Historical) Care about their colonies, let the UN handle Trieste and give Yugoslavia their claims"
- ne.21.b:0 "Restore Italy's prewar territory and colonies, but release Ethiopia"
- ne.21.c:0 "Cut them down to size; give every country their claim!"
- ne.21.e:0 "Return to the Axis menu"
- 
- ne.22.t:0 "Smaller Axis Nations"
- ne.22.d:0 "The smaller Eastern European countries joined the Axis in 1940 and 1941 to escape the growing Soviet threat in the East. During the last years of the war they fell very quickly after their soil was eventually reached and ultimately backstabbed the Germans by switching to the Allied side. \n Several treaties were made concerning territorial concessions. We, as the winners of the war, can now either declare them null and void, accept them or enforce our own plans..."
- ne.22.a:0 "Let's deal with Hungary!"
- ne.22.b:0 "The Romanians had to give up a lot of territory; we need to take a look!"
- ne.22.c:0 "Redraw Bulgaria's borders!"
- ne.22.e:0 "Let's discuss Finland's future!"
- ne.22.f:0 "Return to the Axis menu"
- 
- 
- 
- ##########################################
- ###EVENT MANAGER - SMALLER AXIS NATIONS###
- ##########################################
- 
- 
- ne.221.t:0 "Dealing with Hungary"
- ne.221.d:0 "Hungary gained a lot of older territory during the war like Vojvodina from Serbia, Transylvania from Romania during the Second Vienna Award and some southern territories when Czechoslovaia was carved up by Germany. We now decide over their borders..."
- ne.221.a:0 "Give them their 1937 borders and Burgenland from Austria!"
- ne.221.b:0 "(Historical) Cut them down to size, borders of 1937 only!"
- ne.221.c:0 "Declare the 2nd Vienna Award official!"
- ne.221.e:0 "Why not Austria-Hungary? Surely this won't lead to any ethical tensions..."
- ne.221.f:0 "Return to the Axis menu"
- 
- ne.222.t:0 "The Fate of Romania"
- ne.222.d:0 "Romania lost unlike Hungary a lot of states they gained after the First World War. We can either let them keep their current borders or declare several German treaties null and void and reshape them again..."
- ne.222.a:0 "(Historical) They should only get Transylvania from Hungary, nothing else! "
- ne.222.b:0 "Restore Romania's prewar borders from 1937!"
- ne.222.c:0 "We won't give them any territory"
- ne.222.e:0 "Return to the Axis menu"
- 
- ne.223.t:0 "A New Bulgaria"
- ne.223.d:0 "The Bulgarians did join the Axis but only participated in the Invasion of Greece and were more or less forced to do this. However, the Treaty of craiova gave them Dobrudja from Romania, which they lost in the Second Balkan War several decades ago. Several options are now available: Keep the status quo, give back Dobrudja to the Romanians or let them even keep Thrace and Macedonia..."
- ne.223.a:0 "(Historical) Let them keep Dobrudja, nothing else"
- ne.223.b:0 "Declare craiova null and void!"
- ne.223.c:0 "Bulgaria may keep their territories they claim"
- ne.223.e:0 "Return to the Axis menu"
- 
- ne.224.t:0 "Negotiating Finland's Future"
- ne.224.d:0 "While the Finns successfully defended their homeland during the Winter War and impressed the world, they did lose some territory in the Treaty of Mosocow though. During the Continuation War Finland regained its lost territories but eventually lost them again with the German failure to conquer the Soviet Union. Just recently, several talks and debates were held to discuss Fnnland's new position in this world..."
- ne.224.a:0 "Borders of 1937 should keep them happy"
- ne.224.b:0 "(Historical) Finland stays independent, but must cede Petsamo, Salla and Karelia!"
- ne.224.c:0 "The Soviets can have it. All of it"
- ne.224.e:0 "Return to the Axis menu"
-
- 
- 
- #####################################################
- ###EVENT MANAGER - VP POWERS AND CONQUERED NATIONS###
- #####################################################
- 
- 
- ne.3.t:0 "Redraw the Rest of Europe"
- ne.3.d:0 "Over the course of the war several nations fought until the bitter end and had to suffer under occupation eventually. We can now reward them with territory to cut the former Axis down to size, let them annex territory they have a claim on or simply liberate them. The Victorious Powers could be also rewarded of course..."
- ne.3.a:0 "The Brits, French and Soviets have the first word"
- ne.3.b:0 "The former occupied European nations deserve our attention"
- ne.3.c:0 "(Optional) Some neutral nations weren't neutral at all"
- ne.3.e:0 "Exit to main menu"
- 
- ne.30.t:0 "The European Big Three"
- ne.30.d:0 "The United Kingdom held out for years while fighting the Luftwaffe and the Kriegsmarine. The French thought the Germans would never touch Belgium again and thus paid with her capitulation in 28 days. The Soviets lost millions of men and suffered enourmously, while beating back the German invaders and dealing crushing blows to them. \n The German war machine is after all these years finally destroyed and therefore every hope for German Imperialism. Europe is now a liberated, but devastated continent. A lot of countries need financial and economic help to revitalize their economy and American and Soviet help would be grateful. The new face of Europe, be it in borders, ideology or economy now lies in the hands of four leaders..."
- ne.30.a:0 "The Brits should be rewarded for their courage"
- ne.30.b:0 "Russia controls large swaths of Eastern Europe, let's negotiate!"
- ne.30.c:0 "France could use some territory, especially colonies"
- ne.30.e:0 "Return to the previous menu"
- 
- ne.31.t:0 "The Fate of Axis-occupied Nations Page 1"
- ne.31.d:0 "Poland was invaded in 1939 because it refused to give up Danzig. The Benelux countries were occupied to go around the Maginot Line. Austria became part of the Reich in 1938 and Czechoslovakia was a victim of Chamberlain's appeasement policy. Denmark was crushed due to its control between North and Baltic Sea while Norway was later invaded to secure German iron trade from Sweden. Mussolini failed to wage war against Greece and consequently forced Germany to also invade. Albania was invaded after King Zog declined the Italian ultimatum. And Yugoslavia originally joined the Axis, but a coup led to a diplomatic cut and thus a German declaration of war. \n During the occupation several partisan troops fought bravely to chase the occupier out of their homeland. With the defeat of the Axis, we can now finally help to create a new future for them."
- ne.31.a:0 "We need to compensate the Poles!"
- ne.31.b:0 "Tito and his men fought hard to regain Yugoslavia, let's not keep them waiting!"
- ne.31.c:0 "Albania will be independent again!"
- ne.31.e:0 "Page 1/3"
- ne.31.f:0 "Return to the previous menu"
- 
- ne.32.t:0 "The Fate of Axis-occupied Nations Page 2"
- ne.32.d:0 "This is the second page featuring Greece, Rep. Spain and the Benelux"
- ne.32.a:0 ""The Greek soldier, above all, fought with the most courage!""
- ne.32.b:0 "The Spaniards deserve peace once and for all..."
- ne.32.c:0 "Belgium, Luxemburg and the Netherlands won't be forgotten"
- ne.32.e:0 "Page 2/3"
- ne.32.f:0 "Return to the previous menu"
- 
- ne.33.t:0 "The Fate of Axis-occupied Nations Page 3"
- ne.33.d:0 "This is the last page to deal with the Danes, Norwegians, Austrians and the Czechs + Slovaks"
- ne.33.a:0 "Denmark will get our attention first"
- ne.33.b:0 "Norway also deserves freedom"
- ne.33.c:0 "We need to take a look into Austria"
- ne.33.e:0 "The future of Czechoslovakia is very important too"
- ne.33.f:0 "Page 3/3"
- ne.33.g:0 "Return to the previous menu"
- 
- ne.34.t:0 "Dealing with the neutral nations"
- ne.34.d:0 "The following listed countries stayed neutral, but our power through a won world war allows us to adjust their borders a little bit. Of course these negotiations don't need to happen, they're completely optional..."
- ne.34.a:0 "Sweden delivered iron ore to Hitler, let's punish them for this!"
- ne.34.b:0 "Switzerland stayed neutral for far too long, this won't save them from our wrath though..."
- ne.34.c:0 "Turkey controls the Bospororous and so do we!"
- ne.34.e:0 "Return to the previous menu"
- 
- 
- 
- ##################################################
- ###EVENT MANAGER - THE BIG THREE: ENG, SOV, FRA###
- ##################################################
- 
- 
- ne.301.t:0 "The United Kingdom"
- ne.301.d:0 "The British people experienced bombings, rocket attacks and the fear of a potential German landing. Now that the war is finally over, the British Empire has emerged victorious but weakened as one of the Victorious Powers. /n Is it time to let the sun set on the Empire or should their overseas territories even more expand..."
- ne.301.a:0 "Just restore the British Isles"
- ne.301.b:0 "Ireland should get the NI back, Labrador and NFL to Canada!"
- ne.301.c:0 "The ruling of empires has ended. Free all colonies and return every claim!"
- ne.301.e:0 "Return to the previous menu"
- 
- ne.302.t:0 "Treaties with the Soviets"
- ne.302.d:0 "While the West was quickly overrun, the Soviet people were forced to fight for survival in a four year struggle against the fascist invaders just one year later. Losing was never an option as this would have been your certain death. After millions of casualties and thousands of destroyed villages and cities, in the end the Soviets turned the tide in this war of extermination and drove the Germans finally to Berlin. They're now occupying Poland and the Balkans and have emerged as a superpower with a giant land army, an effective air force and a fearsome industry output. Negotiations might come in their favor ..."
- ne.302.a:0 "(Historical) Give the Soviets the territory they desire!"
- ne.302.b:0 "Every territory they gained through the Pact is null!"
- ne.302.c:0 "The whole country is plagued by corruption and instability. Dissolve the USSR!"
- ne.302.e:0 "Democratise the USSR and found a new faction for all of them!"
- ne.302.f:0 "Return to the previous menu"
- 
- ne.303.t:0 "Concessions to France"
- ne.303.d:0 "While everyone assumed that France and Germany would fight until the bitter end with millions of casualties, the French Army surrendered in just 28 days. Just in 1944 France was liberated by the combined power of the Allies, primarily the US, UK and Canada. After four years of Nazi occupation, it's time to rebuild this once prosperous nation. Should there be any territorial changes as a war spoil?..."
- ne.303.a:0 "(Historical) Make sure to restore Metropolitan France!"
- ne.303.b:0 "The people in Indochina are revolting, grant SE Asia independence!"
- ne.303.c:0 "Annex parts of Belgium and Luxemburg, annex also Zaire!"
- ne.303.e:0 "Return to the previous menu"
- 
- 
- 
- ##############################################
- ###EVENT MANAGER - CONQUERED NATIONS PAGE 1###
- ##############################################
- 
- 
- ne.311.t:0 "Future of Poland"
- ne.311.d:0 "Even though the Poles were defeated in a month and lost 17% of their population during the war, several of them made it to the UK and fought the Germans and Italians alongside the Brits, French and later Americans. After the Soviets reached Polish ground several new armies were formed to reinforce the Eastern Front. The Polish State is now under the Soviet sphere of influence and the Russians are willing to compensate them for human and territorial loss. German territory could be split up for this..."
- ne.311.a:0 "(Historical) Create some artificial borders"
- ne.311.b:0 "Restore prewar Poland, ignore the Soviets!"
- ne.311.c:0 "Maybe some kind of Polish-Lithuanian Commonwealth?"
- ne.311.e:0 "Return to the previous menu"
- 
- ne.312.t:0 "The Yugoslavian nation"
- ne.312.d:0 "This multiethnic state was defeated in just a week and eventually experienced a harsh occupation policy. During the course of the war, Yugoslavia's communist partisans led by Josip Broz Tito would go down in history as the most effective underground forces of the Second World War. With only little help, Tito managed to liberate almost the whole country and though they're in the Soviet sphere, Yugoslavia did not submit to the USSR. Should they additionally receive territory as a reward for their courage?"
- ne.312.a:0 "(Historical) Recreate this multinational state and give them eastern Istria and Zara!"
- ne.312.b:0 "Balkanize them!"
- ne.312.c:0 "Unite them with Bulgaria!"
- ne.312.e:0 "Return to the previous menu"
- 
- ne.313.t:0 "Albania"
- ne.313.d:0 "The Albanians became victims of Italian imperialism before WW2 started and were occupied rather quick after King Zog denied the ultimatum. Now with Italy's defeat Albania's fate lies in our hands. What should happen to them?"
- ne.313.a:0 "(Historical) Grant them independence..."
- ne.313.b:0 "Let's give them Kosovo as a reward for their courage"
- ne.313.c:0 "The Italian annexation is now official!"
- ne.313.e:0 "Return to the previous menu"
- 
- 
- 
- ##############################################
- ###EVENT MANAGER - CONQUERED NATIONS PAGE 2###
- ##############################################
- 
- 
- ne.321.t:0 "Negotiating with the Greeks"
- ne.321.d:0 "The first nation to defeat an Axis power was...Greece! Even after the Italians planned thoroughly for a massive offensive Mussolini was again driven back into Albania. Only after Germany and Bulgaria also declared war, this tiny and brave nation fell.\n They're now finally liberated and await a decision from us..."
- ne.321.a:0 "(Historical) Let's give them Rhodes and the Dodecanese"
- ne.321.b:0 "Prewar is sufficient, the UK takes Rhodes as a base"
- ne.321.c:0 "Let them realize the Megali-idea and also give them Cyprus!"
- ne.321.e:0 "Return to the previous menu"
- 
- ne.322.t:0 "New Borders for Spain?"
- ne.322.d:0 "Spain already suffered enormously in their three year long civil war and the war against the Germans forced them to break down. Now after our troops landed in Bilbao and saved the Spaniards from Nazi-occupation, it's time to determine Spain's new place in this world..."
- ne.322.a:0 "(Historical) Keep the Status Quo/fight bordergore (for Republican Spain)"
- ne.322.b:0 "(Optional) Give them Gibraltar back"
- ne.322.c:0 "(Historical) Restore Franco's Spain (Only works if Franco won and the SCW was the 1. civil war!)"
- ne.322.e:0 "Return to the previous menu"
- 
- ne.323.t:0 "Dealing with the Benelux-countries"
- ne.323.d:0 "France's Maginot was a death sentence for these three small Western European countries. However, they're free now and deserve our judgement for a fair new start in this world..."
- ne.323.a:0 "(Historical) Change nothing"
- ne.323.b:0 "Zaire and the DEI shall be independent (might conflict with Japan occupying them!)"
- ne.323.c:0 "Unite them under Luxemburg's government!"
- ne.323.e:0 "Return to the previous menu"
- 
- 
- 
- ##############################################
- ###EVENT MANAGER - CONQUERED NATIONS PAGE 3###
- ##############################################
- 
- 
- ne.331.t:0 "A small country named Denmark"
- ne.331.d:0 "To reach Norway and close off the Baltic Sea the Germans had to capture Denmark and secure Copenhagen. While the Danes were no real match for the German war machine, they did show resistance though even if this war lasted just some hours. Now, they do still hold some colonies like Greenland or Iceland and maybe it's about time to grant them independence..."
- ne.331.a:0 "(Historical) Liberate Denmark and grant independence to Iceland!"
- ne.331.b:0 "Keep the Status quo"
- ne.331.c:0 "Gift them Schleswig-Holstein but cede Greenland to Canada!"
- ne.331.e:0 "Return to the previous menu"
- 
- ne.332.t:0 "Lesser Sweden (Norway)"
- ne.332.d:0 "Hitler never really wanted to attack Norway as he saw in them fellow allies, especially if one considers the racial thoughts of the NSDAP. The iron ore delivered through Narvik from Sweden and a possible British invasion changed the plans of the Heeresleitung. The invasion was costly, especially for the Kriegsmarine and forced 600000 Germans to stay there until Berlin fell.\n Should their government in exile return or are there any other plans for Scandinavia?"
- ne.332.a:0 "(Historical) Just liberate them"
- ne.332.b:0 "Create Denmark-Norway, just for the sake of it!"
- ne.332.c:0 "Denmark-Norway is still too small, unite all of Scandinavia!"
- ne.332.e:0 "Return to the previous menu"
- 
- ne.333.t:0 "Future of Austria"
- ne.333.d:0 "Even though the Treaty of Versailles strictly prohibited a unification between Austria and Germany, Hitler simply integrated his home country just mere 20 years later. Several intelligent heads have already drawn up some plans, one even suggests to divide them like some plans for the greater brother. Which plan should be enforced?"
- ne.333.a:0 "(Historical) Divide them into four zones of occupation!"
- ne.333.b:0 "Just release them as a neutral country, Germany is to be punished!"
- ne.333.c:0 "Give them South Tyrol and grant them independence"
- ne.333.e:0 "Return to the previous menu"
- 
- ne.334.t:0 "Freeing the Czech people"
- ne.334.d:0 "The goddamn war could have been over in just two years if the French and Brits didn't appease Nazi Germany to take whatever they want. It's even more furious if one considers the fact that the Nazis fully exploited this properous nad booming nation to feed their own demands. Sadly it's not possible to change the past so now we need to decide very well so Czechoslovakia will stay stable... "
- ne.334.a:0 "(Historical) Restore them, with the exception of Carpathian Ruthenia"
- ne.334.b:0 "Restore their prewar borders of 1937"
- ne.334.c:0 "Found two new nations: Czechia and Slovakia"
- ne.334.e:0 "Return to the previous menu"
- 
- 
- 
- #####################################
- ###EVENT MANAGER - NEUTRAL NATIONS###
- #####################################
- 
- 
- ne.341.t:0 "What about Sweden?"
- ne.341.d:0 "Though the Swedish nation did not join either the Allies or Axis, they still delivered crucial iron ore to Germany and thus helped the German war machine. It's not neccessary to touch them but we could use this argument to question Swedish neutrality..."
- ne.341.a:0 "(Historical) Don't interfere"
- ne.341.b:0 "Force them to cede some territory to Norway and Denmark!"
- ne.341.c:0 "Unite Sweden with Aland!"
- ne.341.e:0 "Return to the previous menu"
- 
- ne.342.t:0 "Partitioning of Switzerland?"
- ne.342.d:0 "Though the Swiss would have certainly faced a visit from the German Reich if the Allies and Soviets were gone, it would have been very bloody for the Wehrmacht. Facing guns behind every blade of grass, mountain fortresses and massive infrastructure/supply problems, "Operation Tannenbaum" would have proven to be an embarassment for the "unstoppable" Wehrmacht. Switzerland, however, survived this war and maintained their neutrality once again but maybe it would be better to partition them between Germany, France and Italy? This would be a drastic decision without a doubt..."
- ne.342.a:0 "(Historical) Scrap ALL of these ideas!"
- ne.342.b:0 "Yes, partition them between Germany, France and Italy"
- ne.342.c:0 "Partition them, but leave out the Germans"
- ne.342.e:0 "Return to the previous menu"
- 
- ne.343.t:0 "Requesting territory from Turkey?"
- ne.343.d:0 "Istanbul lies on the Bosporous Strait and whoever controls it, controls the Black Sea and access to countries like Russia, Bulgaria or Romania. In these turbolent times "evidence" could be brought up to burden the Turkish government with claims of e.g. Axis collaboration and eventually force them to cede territory.\nShould this kind of "evidence" be created or is the status quo more important?"
- ne.343.a:0 "(Historical) No, such ideas do not fit our principles!"
- ne.343.b:0 "Let the Soviets have their claims on their four states around the straits!"
- ne.343.c:0 "We don't need "evidence"! Force them to submit to our power! Partition them completely!"
- ne.343.e:0 "Forget it!"
- 
-
- 
- ne.4.t:0 "Historical Partition of Europe"
- ne.4.d:0 "Though the Western Allies and the Soviets worked together to defeat the Nazis, there have always been uneasy relations since the Russian Civil War. Since the common enemy is now defeated, first signs of 'coolness' have again appeared between the wartime allies.  Over the last few years, democracy and communism liberated Europe from fascism and recently met on the Elbe river. The USA and the USSR have now emerged as the most powerful nations on this planet while the United Kingdom has to face huge economic problems and France has to rebuild her wartorn nation. While France, Great Britain and the USA still control huge swathes of Europe, the presence of the Soviets in Central and Eastern Europe is like a thorn in the eye for them. It is unclear how the situation will develop in the following years, but it's very likely that Europe will be divided between two ideologies...\n ("Descend the Iron Curtain" adds all changes from neweurope.1 - neweurope.3 - In case you don't want to look at every country. It's also even more historical when you select the "puppet version"!"
- ne.4.a:0 "Descend the Iron Curtain now (1945)!"
- ne.4.b:0 "Descend the Iron Curtain! (1949 FRG/GDR)"
- ne.4.c:0 "Descend the Iron Curtain! (1949/ historical puppets)"
- ne.4.e:0 "Return to main menu"
- 
- 
- #################
- ###ASIA EVENTS###
- #################
- 
- ##MANAGER FOR ASIA##
- ne_asia.1.t:0 "Manager for Japan and Asia"
- ne_asia.1.d:0 "It's now possible for you to determine how Asia should look like. Remember that most Chinese events will trigger for the country itself\nIMPORTANT: If you click 'close' you can only return to this menu with 'event ne_asia.1'!"
- ne_asia.1.a:0 "The Japanese must pay for their crimes!"
- ##"The people in the colonies saw that we couldn't protect them; they're revolting!"
- ne_asia.1.b:0 "PLACEHOLDER, DO NOT CLICK [CLOSES MENU]"
- ne_asia.1.c:0 "The Korean people were supressed for far too long..."
- ne_asia.1.e:0 "Close and go back to the game"
- 
- ##Fate of Japan
- ne_asia.2.t:0 "Fate of Japan"
- ne_asia.2.d:0 "Japan has capitulated under the might of the USA, USSR, Great Britain and China. With their defeat the Japanese will lose any territorial gains they made since they annexed Korea in 1910. What should be done to make sure that the Japanese will never threaten Asia again?"
- ne_asia.2.a:0 "The Republic of China, Soviet Union, UK and USA all get a chunk to control!"
- ne_asia.2.b:0 "It's better to split Japan into a communist and a democratic state..."
- ne_asia.2.c:0 "The PRC, USSR, UK and USA occupy them for now!"
- ne_asia.2.e:0 "It's better to split Japan into a communist and a democratic state..."
- ne_asia.2.f:0 "Return to main menu"
- 
- ##Fate of Korea
- ne_asia.4.t:0 "Plans for Korea"
- ne_asia.4.d:0 "Korea is finally free from Japanese dependence and occupation but their independence could fuel for new conflict. In the last months of the war, the Soviets occupied the northern part of the peninsula and with the Japanese capitulation, America requested the same for the south. This ideological split across the peninsula has to be resolved somehow."
- ne_asia.4.a:0 "Divide the peninsula along the 38th parallel!"
- ne_asia.4.b:0 "(Historical) The USSR and USA should continue control"
- ne_asia.4.c:0 "Decrease tensions by creating a random border and enforce demilitarization!"
- ne_asia.4.e:0 "Return to main menu"
  
  
  
@@ -625,7 +274,7 @@
  ne_uni_austria.6.d:0 "[From.GetNameDef] has just announced to keep the Austrian soil they currently have troops on and thus won't return it to it's rightful owner!"
  ne_uni_austria.6.a:0 "But why?!"
  
-  ##DIVISION OF JAPAN##
+ ##DIVISION OF JAPAN##
  ##USA asks other occupiers to give up occupation. SOV can decline or not be invited. They can then found their own Japan and ask PRC, or PRC can give up territory voluntarily
  ne_division_jap.1.t:0 "A new Japan?"
  ne_division_jap.1.d:0 "We occupy Japan now for several months and we managed to free the Japanese from their fanaticism. Our ministers think that a new Japan is long overdue and we need to recreate the Isles. Let's ask our allies to participate!"
@@ -731,7 +380,7 @@
  ne_division_frg.2.b:0 "Yes, but we keep the Saarland"
  ne_division_frg.2.c:0 "This is outrageous!"
  
- ##Britsh gets event
+ ##British gets event
  ne_division_frg.3.t:0 "The Founding of the Federal Republic of Germany"
  ne_division_frg.3.d:0 "The United States has announced to give up its occupation zone and create a loyal German state to counter any Soviet influence. In conclusion, this also means that France and our splendid nation should cede German territory to its rightful people. However we can refuse but doing so would not be profitable..."
  ne_division_frg.3.a:0 "Of course, we will accept!"
@@ -752,7 +401,7 @@
  ne_division_frg.6.d:0 "[From.GetNameDef] has just announced to keep their occupation zone and denied any unification process!"
  ne_division_frg.6.a:0 "They will sooner or later agree!"
  
- ##SOV will found the gdr here!
+ ##SOV will found the GDR here!
  ne_division_frg.7.t:0 "Founding of the "German Democratic Republic""
  ne_division_frg.7.d:0 "The Western Powers have, after a long debate, ended their occupation and created a German puppet state, the "Federal Republic of Germany". The Politburo had plans for a German satellite for a while now too and most people believe it's about time to create a new socialist German nation. So, do we finally establish the "German Democratic Republic"?"
  ne_division_frg.7.a:0 "Yes, another ally is always welcome!"
@@ -817,14 +466,7 @@
  ne_division_kor.7.d:0 "Moscow has just told our ambassadors that our current plan for the Korean peninsula is unacceptable for them."
  ne_division_kor.7.a:0 "Maybe another idea will fit the Kremlin's interests..."
 
- 
- 
- 
 
- 
- 
-
- 
  
  #############################
  ###COMMUNIST CHINESE STUFF###
@@ -1479,29 +1121,7 @@
  
  
  
- ##Soviet Victory
- ne_news.25.t:0 "The Western Allies has surrendered!"
- ne_news.25.d:0 ""
- ne_news.25.a:0 ""
- ne_news.25.b:0 ""
- ne_news.25.c:0 ""
- ne_news.25.e:0 ""
  
- ##American Victory
- ne_news.26.t:0 "Soviet Union and Allies surrender!"
- ne_news.26.d:0 "While many foreign powers tried to conquer Russia, only a handful were successful while the others suffered a crushing defeat in the end. Until today. The Soviet authorities have agreed to terms of unconditional surrender this morning and the cessation of all hostilities."
- ne_news.26.a:0 ""
- ne_news.26.b:0 ""
- ne_news.26.c:0 ""
- ne_news.26.e:0 ""
- 
- ##Soviets enter German soil
- ne_news.27.t:0 "Red Army enters German soil"
- ne_news.27.d:0 "After several years of brutal fighting in the East, numerous bloody battles and staggering losses, Soviet forces have finally entered German territory for the first time since the start of the war. While several territories annexed by Germany during the war were already captured, this time the Soviets entered the borders of Germany from 1937.\nWhile this marks an important step towards Germany’s defeat, many atrocities committed by soldiers of the Red Army have already taken place against German civilians. Cases such as rape, looting and the destruction of houses as revenge for German atrocities are becoming more common. Stavka has not yet made a statement concerning this but it’s very likely that these crimes will not go unpunished in the future."
- ne_news.27.a:0 "Next stop: Berlin!"
- ne_news.27.b:0 "Is this the end of the Third Reich?"
- ne_news.27.c:0 "Cheers to our Soviet allies!"
- ne_news.27.e:0 "They will regret setting foot on our homeland!"
  
  
  
@@ -1747,6 +1367,30 @@
  ne_news.24.c:0 "It does not concern us."
  ne_news.24.e:0 "This wall is a wall of shame!"
  ne_news.24.f:0 "We will protect our people from harmful influence!"
+ 
+ ##Soviet Victory
+ ne_news.25.t:0 "The Western Allies has surrendered!"
+ ne_news.25.d:0 ""
+ ne_news.25.a:0 ""
+ ne_news.25.b:0 ""
+ ne_news.25.c:0 ""
+ ne_news.25.e:0 ""
+ 
+ ##American Victory
+ ne_news.26.t:0 "Soviet Union and Allies surrender!"
+ ne_news.26.d:0 "While many foreign powers tried to conquer Russia, only a handful were successful while the others suffered a crushing defeat in the end. Until today. The Soviet authorities have agreed to terms of unconditional surrender this morning and the cessation of all hostilities."
+ ne_news.26.a:0 ""
+ ne_news.26.b:0 ""
+ ne_news.26.c:0 ""
+ ne_news.26.e:0 ""
+ 
+ ##Soviets enter German soil
+ ne_news.27.t:0 "Red Army enters German soil"
+ ne_news.27.d:0 "After several years of brutal fighting in the East, numerous bloody battles and staggering losses, Soviet forces have finally entered German territory for the first time since the start of the war. While several territories annexed by Germany during the war were already captured, this time the Soviets entered the borders of Germany from 1937.\nWhile this marks an important step towards Germany’s defeat, many atrocities committed by soldiers of the Red Army have already taken place against German civilians. Cases such as rape, looting and the destruction of houses as revenge for German atrocities are becoming more common. Stavka has not yet made a statement concerning this but it’s very likely that these crimes will not go unpunished in the future."
+ ne_news.27.a:0 "Next stop: Berlin!"
+ ne_news.27.b:0 "Is this the end of the Third Reich?"
+ ne_news.27.c:0 "Cheers to our Soviet allies!"
+ ne_news.27.e:0 "They will regret setting foot on our homeland!"
 
  ##HATAY##
  ne_news.28.t:0 "The Annexation of Hatay"

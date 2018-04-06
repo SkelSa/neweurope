@@ -932,74 +932,7 @@ country_event = {
 
 
 
-##YUG has capitulated, Tito and partisans cause havoc
-country_event = {
-	id = ne_misc.12
-	title = ne_misc.12.t
-	desc =  ne_misc.12.d
-	picture = GFX_report_event_yugoslavia_partisans
 
-	fire_only_once = yes
-
-	trigger = {
-	
-		tag = YUG
-		
-		YUG = { 
-			has_capitulated = yes
-			NOT = { has_government = communism }
-		}
-
-	}
-	
-	
-	mean_time_to_happen = {	days = 10 }
-	
-	
-	option = { # gain spirit
-		name = ne_misc.12.a
-
-		add_ideas = NE_titos_partisans
-	}
-
-		
-}
-
-
-##YUG is socialist, lose spirit
-country_event = {
-	id = ne_misc.13
-	title = ne_misc.13.t
-	desc =  ne_misc.13.d
-	picture = GFX_report_event_soviet_invasion_map
-
-	fire_only_once = yes
-
-	trigger = {
-	
-		tag = YUG
-		
-		YUG = { 
-			has_war = no
-			has_government = communism 
-			communism > 0.7 
-		}
-
-	}
-	
-	
-	mean_time_to_happen = {	days = 30 }
-
-	
-	option = { # lose spirit, add new one
-		name = ne_misc.13.a
-
-		swap_ideas = { remove_idea = NE_titos_partisans add_idea = NE_sfr_yugoslavia }
-		
-	}
-
-		
-}
 
 
 ##TRIESTE'S FATE##
@@ -1763,7 +1696,7 @@ country_event = {
 	}
 }
 
-####Warning for a player####
+####Warning for a player#### (Maybe move them to Setup)
 
 country_event = {
 	id = ne_misc.27
@@ -2050,32 +1983,6 @@ country_event = {
 
 	
 }
-
-
-
-##India gets event about her independence
-country_event = {
-	id = ne_skelsa.7
-	title = ne_skelsa.7.t
-	desc =  ne_skelsa.7.d
-	picture = GFX_
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	
-	option = {	#AFTER ALL THESE CENTURIES WE'RE FREE!
-		name = ne_skelsa.7.a
-
-		##Effects
-		add_political_power = 125
-		add_stability = 0.10
-			
-	}
-
-	
-}
-
 
 
 ##WW2 victims

@@ -366,7 +366,12 @@ spriteTypes = {
 		name = "GFX_exit_settings"
 		texturefile = "gfx/event_pictures/report_event_exit_settings.dds"
 	}
-
+	
+	##Greece is split
+	spriteType = {		
+		name = "GFX_greece_split"
+		texturefile = "gfx/event_pictures/report_event_greece_split.dds"
+	}
 	
 	##UNUSED##
 	spriteType = {		
@@ -380,6 +385,8 @@ spriteTypes = {
 		name = "GFX_"
 		texturefile = "gfx/event_pictures/report_event_.dds"
 	}
+	
+	
 
 	
 	
