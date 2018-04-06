@@ -85,7 +85,7 @@
  
  ##OPTIONS: Faction Settings 
  ne_settings.4.t:0 "BPWE: Factions"
- ne_settings.4.d:0 "With the options below you can enable stricter join rules for NATO or the Warsaw Pact.\nThe stricter rules for NATO/WP are obviously only applied once NATO or the Warsaw pact are created and mean that not every democratic country can join NATO, for instance, instantly. Instead, they would have to achieve a lot of party popularity. Several national spirits help you to see when a country would be ready to join. If they are a great power, Players can invite some countries earlier into their faction via the diplomacy slots while any AI-only faction requires any potential new members to have a really high party popularity among some other minor conditions. Historical invitations are done via event however.\nChoose now what you want."
+ ne_settings.4.d:0 "With the options below you can enable stricter join rules for NATO or the Warsaw Pact.\nThe stricter rules for NATO/WP are obviously only applied once NATO or the Warsaw Pact are created and mean that not every democratic country can join NATO, for instance, instantly. Instead, they would have to achieve a lot of party popularity. Several national spirits help you to see when a country would be ready to join. If they are a great power, Players can invite some countries earlier into their faction via the diplomacy slots while any AI-only faction requires any potential new members to have a really high party popularity among some other minor conditions. Historical invitations are done via event however.\nChoose now what you want."
  ne_settings.4.a:0 "Enable historical NATO/PACT"
  ne_settings.4.a1:0 "Disable the special rules for joining NATO/PACT"
  #ne_settings.4.b:0 "" ##Was Japan's Co-Prosperity Sphere

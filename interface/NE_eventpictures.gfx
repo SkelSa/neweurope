@@ -288,7 +288,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_metaxas_death.dds"
 	}
 	
-	
+	##Metaxas Line
+	spriteType = {		
+		name = "GFX_metaxas_line"
+		texturefile = "gfx/event_pictures/metaxas_line.dds"
+	}
+
 	
 	#Development of the T-34 and KV-1
 	
@@ -310,28 +315,66 @@ spriteTypes = {
 	}
 	
 	
-	#Settings Menu
+	#Settings Menu 
 	
 	spriteType = {		
 		name = "GFX_ne_settings_main"
 		texturefile = "gfx/event_pictures/report_event_ne_settings_main.dds"
 	}
 	
-	
 	spriteType = {		
-		name = "GFX_misc_settings"
-		texturefile = "gfx/event_pictures/report_event_.dds"
+		name = "GFX_menu_historical_usa_ussr_settings"
+		texturefile = "gfx/event_pictures/report_event_menu_historical_usa_ussr_settings.dds"
 	}
 	
 	spriteType = {		
 		name = "GFX_historical_settings"
-		texturefile = "gfx/event_pictures/report_event_.dds"
+		texturefile = "gfx/event_pictures/report_event_historical_settings.dds"
+	}
+	
+	spriteType = {		
+		name = "GFX_ussr_usa_name_settings"
+		texturefile = "gfx/event_pictures/report_event_menu_ussr_usa_settings.dds"
 	}
 
 	spriteType = {		
-		name = "GFX_metaxas_line"
-		texturefile = "gfx/event_pictures/metaxas_line.dds"
+		name = "GFX_menu_neutrality_faction_settings"
+		texturefile = "gfx/event_pictures/report_event_menu_neutrality_faction_settings.dds"
 	}
+	
+	spriteType = {		
+		name = "GFX_neutrality_settings"
+		texturefile = "gfx/event_pictures/report_event_neutrality_settings.dds"
+	}
+
+	spriteType = {		
+		name = "GFX_faction_settings"
+		texturefile = "gfx/event_pictures/report_event_faction_settings.dds"
+	}
+	
+	spriteType = {		
+		name = "GFX_misc_settings"
+		texturefile = "gfx/event_pictures/report_event_misc_settings.dds"
+	}
+	
+	spriteType = {		
+		name = "GFX_recommended_settings"
+		texturefile = "gfx/event_pictures/report_event_recommended_settings.dds"
+	}
+	
+	spriteType = {		
+		name = "GFX_exit_settings"
+		texturefile = "gfx/event_pictures/report_event_exit_settings.dds"
+	}
+	
+	
+	##TEMPLATE
+	spriteType = {		
+		name = "GFX_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	
 	
 	
 	

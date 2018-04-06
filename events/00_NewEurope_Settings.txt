@@ -8,7 +8,7 @@ add_namespace = ne_settings
 ##HIDDEN event to start the settings menu
 country_event = {
 	id = ne_settings_intro.0
-	title = "Settings Menu debug"
+	title = "Settings Menu Debug"
 
 	hidden = yes
 	is_triggered_only = yes
@@ -101,7 +101,7 @@ country_event = {
 	id = ne_settings_intro.2
 	title = ne_settings_intro.2.t
 	desc =  ne_settings_intro.2.d
-	picture = GFX_report_event_soviet_invasion_map
+	picture = GFX_menu_historical_usa_ussr_settings
 
 	is_triggered_only = yes
 
@@ -145,7 +145,7 @@ country_event = {
 	id = ne_settings_intro.3
 	title = ne_settings_intro.3.t
 	desc =  ne_settings_intro.3.d
-	picture = GFX_report_event_soviet_invasion_map
+	picture = GFX_menu_neutrality_faction_settings
 
 	is_triggered_only = yes
 
@@ -189,7 +189,7 @@ country_event = {
 	id = ne_settings_intro.4
 	title = ne_settings_intro.4.t
 	desc =  ne_settings_intro.4.d
-	picture = GFX_report_event_soviet_invasion_map
+	picture = GFX_misc_settings
 	
 	is_triggered_only = yes
 	
@@ -344,7 +344,7 @@ country_event = {
 	id = ne_settings.1                
 	title = ne_settings.1.t   
 	desc =  ne_settings.1.d   
-	picture = GFX_report_event_soviet_invasion_map
+	picture = GFX_historical_settings
 
 	is_triggered_only = yes
 
@@ -492,7 +492,7 @@ country_event = {
 	id = ne_settings.2
 	title = ne_settings.2.t
 	desc =  ne_settings.2.d
-	picture = GFX_report_event_soviet_invasion_map
+	picture = GFX_ussr_usa_name_settings
 	
 	is_triggered_only = yes
 	
@@ -592,12 +592,12 @@ country_event = {
 
 
 
-##############Neutrality Settings and Faction Settings#####################
+##############Neutrality Settings#####################
 country_event = {
 	id = ne_settings.3
 	title = ne_settings.3.t
 	desc =  ne_settings.3.d
-	picture = GFX_report_event_soviet_invasion_map
+	picture = GFX_neutrality_settings
 	
 	is_triggered_only = yes
 	
@@ -653,7 +653,7 @@ country_event = {
 	id = ne_settings.4
 	title = ne_settings.4.t
 	desc =  ne_settings.4.d
-	picture = GFX_report_event_soviet_invasion_map
+	picture = GFX_faction_settings
 	
 	is_triggered_only = yes
 
@@ -711,7 +711,7 @@ country_event = {
 	id = ne_settings_intro.5
 	title = ne_settings_intro.5.t
 	desc =  ne_settings_intro.5.d
-	picture = GFX_somepic
+	picture = GFX_recommended_settings
 
 	is_triggered_only = yes
 
@@ -793,7 +793,7 @@ country_event = {
 	id = ne_settings_intro.6
 	title = ne_settings_intro.6.t
 	desc =  ne_settings_intro.6.d
-	picture = GFX_report_event_soviet_invasion_map
+	picture = GFX_exit_settings
 
 	is_triggered_only = yes
 
