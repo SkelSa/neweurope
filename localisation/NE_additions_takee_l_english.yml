@@ -162,6 +162,11 @@
   ne_misc.259.d:0 "Germany plans to attack Poland in a matter of days"
   ne_misc.259.a:0 "Invite them to the alliance"
 
+ ##Poland annex its occupation zone event
+  ne_misc.28.t:0 "Poland Occupation Zone Annexation"
+  ne_misc.28.d:0 "We are given some territory of the defeated Germany. At the moment it is our occupation zone"
+  ne_misc.28.a:0 "Annex the Occupation Zone"
+
  ##The Metaxas Line event
   ne_greece.2.t:0 "Erection of Metaxas Line"
   ne_greece.2.d:0 "The Metaxas Line was a chain of fortifications constructed along the line of the Greco-Bulgarian border, designed to protect Greece in case of a Bulgarian invasion after the rearmament of Bulgaria. It was named after Ioannis Metaxas, then Prime Minister of Greece, and chiefly consists of tunnels that led to observatories, emplacements and machine-gun nests."

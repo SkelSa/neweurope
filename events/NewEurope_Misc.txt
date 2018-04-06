@@ -1798,6 +1798,46 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = ne_misc.28
+	title = ne_misc.28.t
+	desc = ne_misc.28.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	mean_time_to_happen = { days = 31 }
+
+	trigger = {
+		tag = POL
+		POZ = {
+			AND = { 
+				exists = yes 
+				is_puppet_of = FROM
+			}
+		}
+	}
+
+	option = {
+		name = ne_misc.28.a
+		every_state = {
+			if = {
+				limit = { 
+					is_core_of = POZ 
+				}
+				add_core_of = POL
+			}
+		}
+		
+		POZ = {
+			every_unit_leader = {
+				set_nationality = POL
+			}
+		}
+		annex_country = { target = POZ transfer_troops = yes }
+
+	}
+
+}
+
 
 
 
