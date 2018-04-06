@@ -54,7 +54,76 @@
  NE_RUS_democratic_ADJ:0 "Russian"
  NE_RUS_neutrality_ADJ:0 "Russian"
  NE_RUS_communism_ADJ:0 "Russian"
- 
+ ##Burma
+ BUR_fascism:0 "The State of Burma"
+ BUR_democratic:0 "Republic of the Union of Myanmar"
+ BUR_communism:0 "Union of Burma"
+ BUR_neutrality:0 "Burma"
+ BUR_fascism_ADJ:0 "Burmese"
+ BUR_democratic_ADJ:0 "Burmese"
+ BUR_communism_ADJ:0 "Burmese"
+ BUR_neutrality_ADJ:0 "Burmese"
+
+ BUR_ENG_autonomy_satellite:0 "British Burma"
+ BUR_ENG_autonomy_satellite_DEF:0 "British Burma"
+ BUR_ENG_autonomy_dominion:0 "British Burma"
+ BUR_ENG_autonomy_colony:0 "British Burma"
+ BUR_ENG_autonomy_puppet:0 "British Burma"
+ BUR_ENG_autonomy_integrated_puppet:0 "British Burma"
+ BUR_ENG_autonomy_dominion_DEF:0 "The British Burma"
+ BUR_ENG_autonomy_colony_DEF:0 "The British Burma"
+ BUR_ENG_autonomy_puppet_DEF:0 "The British Burma"
+ BUR_ENG_autonomy_integrated_puppet_DEF:0 "The British Burma"
+
+ ##India
+ NE_IND_BUR_fascism:0 "Indian Myanmar"
+ NE_IND_BUR_democratic:0 "Indian Myanmar"
+ NE_IND_BUR_communism:0 "Indian Myanmar"
+ NE_IND_BUR_neutrality:0 "Indian Myanmar"
+ NE_IND_BUR_fascism_ADJ:0 "Burmese"
+ NE_IND_BUR_democratic_ADJ:0 "Burmese"
+ NE_IND_BUR_communism_ADJ:0 "Burmese"
+ NE_IND_BUR_neutrality_ADJ:0 "Burmese"
+
+ NE_DEU_REN_fascism:0 "Großdeutsches Reich"
+ NE_DEU_REN_fascism_DEF:0 "Das Großdeutsches Reich"
+
+ ##Polish Occupation Zone
+ POZ_fascism:0 "Polish Occupation Zone"
+ POZ_fascism_DEF:0 "The Polish Occupation Zone"
+ POZ_democratic:0 "Polish Occupation Zone"
+ POZ_democratic_DEF:0 "The Polish Occupation Zone"
+ POZ_neutrality:0 "Polish Occupation Zone"
+ POZ_neutrality_DEF:0 "The Polish Occupation Zone"
+ POZ_communism:0 "Polish Liberation Zone"
+ POZ_communism_DEF:0 "The Polish Liberation Zone"
+ POZ_fascism_ADJ:0 "Polish"
+ POZ_democratic_ADJ:0 "Polish"
+ POZ_neutrality_ADJ:0 "Polish"
+ POZ_communism_ADJ:0 "Polish"
+
+ ##Vlasov's Army
+ ROA_fascism:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_democratic:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_communism:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_neutrality:0 "Committee for the Liberation of the Peoples of Russia"
+ ROA_fascism_ADJ:0 "Russian"
+ ROA_democratic_ADJ:0 "Russian"
+ ROA_communism_ADJ:0 "Russian"
+ ROA_neutrality_ADJ:0 "Russian"
+ ROA_neutrality_party:0 "KONR"
+ ROA_neutrality_party_long:0 "Committee for the Liberation of the Peoples of Russia"
+
+ ##Morocco
+ MOR_fascism:0 "Morocco"
+ MOR_democratic:0 "Morocco"
+ MOR_communism:0 "Morocco"
+ MOR_neutrality:0 "Kingdom of Morocco"
+ MOR_fascism_ADJ:0 "Moroccan"
+ MOR_democratic_ADJ:0 "Moroccan"
+ MOR_communism_ADJ:0 "Moroccan"
+ MOR_neutrality_ADJ:0 "Moroccan"
+
  ##USA/USSR NAMES - PLAYER CAN DECIDE WHICH NAME THE TWO SUPERPOWERS SHOULD HAVE##
  
  ##USSR short

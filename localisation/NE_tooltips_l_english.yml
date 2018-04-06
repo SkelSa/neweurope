@@ -1,3 +1,15 @@
 ﻿l_english:
  prc_demand_nechina:0 "Every country who controls territory in NE China will get an ultimatum to return it. If Manchuria resembles however a battlefield, countries are less likely to accept..."
- 
+ stalins_death_soc_countries_relations_worse.1.tt:0 "§R\nAfter Stalin's death, the opinion of the countries of the Socialist camp about us and the stability of these countries will become worse.§!\n"
+ berias_conspiracy_chance.1.tt:0 "With some probability, this decision can be of great importance."
+ peking_plan_warning.1.tt:0 "§RWe risk losing all our advanced destroyers!§!"
+ peking_plan.1.tt:0 "§GGet transmitted Poland destroyers.§!"
+ warning_for_a_player.1.tt:0 "§RYou will miss out a lot of stuff if you decide to continue this game...§!\n\n"
+ warning_for_a_player_quit.1.tt:0 "§RThis option will open the country end screen from which the current game can be quit§!"
+ condition_for_the_around_maginot_tt:1 "You must control Poland, or make a compromise with it, or be its ally."
+ germany_change_its_name:0 "§G[Root.GetName]§! now will be called §GGroßdeutsches Reich§!"
+ iran_war_tooltip.1.tt:0 "§M[Root.GetAdjective]§! will begin planning an §Rinvasion of Iran§!. The process will last about §Rtwo months§!."
+ iran_war_tooltip.2.tt:0 "§YThe invasion of Iran will begin§!"
+ iran_war_tooltip.3.tt:0 "§MThe Allies§! will launch an invasion of Iran with us."
+ iran_war_tooltip.4.tt:0 "Iran will be §Ydivided§! into §Rtwo§! spheres of §Yinfluence§!."
+ anglo_guarantee_tooltip.1.tt:0 "§GPoland will be protected in the war with Germany.§!"

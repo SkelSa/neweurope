@@ -12,3 +12,32 @@
  ne_template.0.a:0 ""
  ne_template.0.b:0 ""
  
+ ##########################################
+ ##########   CATEGOIRES   ################
+ ##########################################
+ENG_historical_military_operations:0 "Secret Intelligence Service"
+GRE_historical_metaxasline:0 "The Metaxas Line"
+NE_waroperation_iraqinvasion:0 "Operation Countenance" ##Category name
+SOV_the_crimea_transfer:0 "Administrative actions of the Presidium of the Supreme Soviet of the Soviet Union"
+########################################## 
+##########################################
+ENG_the_peking_plan:0 "The Peking Plan"
+ENG_the_peking_plan_desc:0 "The Peking Plan (or Operation Peking) was an operation in which three destroyers of the Polish Navy, the Burza ("Storm"), Błyskawica ("Lightning"), and Grom ("Thunder"), were evacuated to the United Kingdom in late August and early September 1939 prior to the outbreak of war. They were ordered to travel to British ports and assist the British Royal Navy in the event of a war with Nazi Germany. The plan was successful and allowed the ships to avoid certain destruction or capture in the German invasion."
+####Military Assistance to Poland###
+ENG_historical_missions_ne:0 "Secret Intelligence Service Tasks"
+ENG_the_english_poland_alliance:0 "Military Assistance to Poland"
+ENG_the_english_poland_alliance_desc:0 "We are compelled to defend Poland if Germany declares war on it."
+##Crimea is Ukraine (not anymore)
+SOV_crimea_transfer:0 "The transfer of the Crimean Oblast"
+SOV_crimea_transfer_desc:0 "Taking into account the commonality of the economy, the territorial proximity and close economic and cultural ties between the Crimean region and the Ukrainian SSR, the Presidium of the Supreme Soviet of the Union of Soviet Socialist Republics decides: Approve the joint presentation of the Presidium of the Supreme Soviet of the RSFSR and the Presidium of the Supreme Soviet of the Ukrainian SSR on the transfer of the Crimean region from the Russian Soviet Federated Socialist Republic to the Ukrainian Soviet Socialist Republic."
+####Metaxas Line Decision####
+GRE_metaxas_line:0 "Erection of Metaxas Line"
+GRE_metaxas_line_desc:0 "The Metaxas Line was a chain of fortifications constructed along the line of the Greco-Bulgarian border, designed to protect Greece in case of a Bulgarian invasion after the rearmament of Bulgaria. It was named after Ioannis Metaxas, then Prime Minister of Greece, and chiefly consists of tunnels that led to observatories, emplacements and machine-gun nests."
+##Faroe and Iceland British invasion
+ENG_inv_faroe:0 "Invasion of the Faroe Islands"
+ENG_inv_faroe_desc:0 "To prevent the invasion of Germany into Britain, we need to invade the Faroe Islands. Our command is already ready to invade."
+ENG_inv_iceland:0 "Invasion of Iceland"  ##Iceland
+ENG_inv_iceland_desc:0 "We need to seize the strategically important Iceland. We are ready to begin the invasion. Their government may be dissatisfied."
+##Iran British-Soviet invasion decision text
+NE_warop_iraqinvasion:0 "Preventing the possible occupation of Iran's oil fields by Germany"
+NE_warop_iraqinvasion_desc:0 "Iran has long sympathized with Germany. With the renewal of friendly relations between the USSR and Great Britain and the beginning of the war between Germany and the USSR, it is necessary to solve the Iranian question. We have prepared our troops and are ready to invade any minute"

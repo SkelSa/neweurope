@@ -173,6 +173,55 @@
  ne_news.18.e:0 "No one can stop us now!"
  ne_news.18.f:0 "Maybe, NOW we should join NATO..."
 
+ ##Stalin's Death
+ ne_news.19.t:0 "Joseph Stalin is dead!"
+ ne_news.19.d:0 "Joseph Stalin, leader of the Soviet Union since 1924, died in Moscow. Like his right-wing counterpart, Hitler, who was born in Austria, Joseph Stalin was not a native of the country he ruled with an iron fist. Isoeb Dzhugashvili was born in 1889 in Georgia, then part of the old Russian empire. The son of a drunk who beat him mercilessly and a pious washerwoman mother, Stalin learned Russian, which he spoke with a heavy accent all his life, in an Orthodox Church-run school. While studying to be a priest at Tiflis Theological Seminary, he began secretly reading Karl Marx and other left-wing revolutionary thinkers. The “official” communist story is that he was expelled from the seminary for this intellectual rebellion; in reality, it may have been because of poor health."
+ ne_news.19.a:0 "This is a huge mourning for our entire socialist camp!"
+ ne_news.19.b:0 "Russians mourn for the man who killed millions of his own people..."
+ ne_news.19.c:0 "We hope that this will discharge the tense situation in the world"
+ ne_news.19.e:0 "We do not care about the death of this vile animal"
+
+ ##Hatay
+ ne_news.28.t:0 "The Annexation of Hatay"
+ ne_news.28.d:0 "Today Hatay was annexed by Turkey."
+ ne_news.28.a:0 "This is a grain of sand compared to the current events in Europe"
+ ne_news.28.b:0 "This is our land!"
+ ne_news.28.c:0 "At the moment, we do not care about this"
+
+ ##Elbe Day
+ ne_news.29.t:0 "East meets West!"
+ ne_news.29.d:0 "This morning, American and British forces met soldiers of the Red Army for the first time in Germany. Troops from both fronts were happy to see each other and exchanged cigarettes, beverages and handshakes before raising their countries’ flag to mark another major victory for the Allies.\nLater in the evening, London, Moscow and Washington reaffirmed the determination of the three Allied powers to complete the destruction of Hitler’s Germany.\nWith the Eastern and Western front united, Germany is effectively cut in two. Most people already predict the end of the war in Europe before the end of this year."
+ ne_news.29.a:0 "Each day, Germany’s end draws closer..."
+ ne_news.29.b:0 "True companionship!" 
+ ne_news.29.c:0 "Let’s celebrate this day with our Soviet friends!" 
+ ne_news.29.e:0 "Let’s celebrate this day with our Western friends!"
+ ne_news.29.f:0 "How could this happen?!"
+ ne_news.29.g:0 "This day will go down in history."
+
+ ##Newfoundland
+ ne_news.30.t:0 "Transfer of Newfoundland to Canada"
+ ne_news.30.d:0 "A referendum was held on the future of the colony, where an insignificant majority (52%) was defeated by supporters of joining the Canadian Federation"
+ ne_news.30.a:0 "Welcome to Canada!"
+ ne_news.30.b:0 "Britain lost another dominion!"
+ ne_news.30.c:0 "The British Empire is significantly weakening every year!"
+
+ ##Auschwitz ####UNUSED  -  DON'T TRANSLATE####
+ ##ne_news.31.t:0 "Concentration camp "Auschwitz" is liberated by allied forces!"
+ ##ne_news.31.d:0 "Concentration camp "Auschwitz" is liberated by allied forces. According to reports, hundreds of thousands of Polish people, as well as Jews from a number of other European countries, have been held prisoner there in appalling conditions and many have been killed in the gas chambers."
+ ##ne_news.31.a:0 "This is a crime of the Nazis against all mankind!"
+ ##ne_news.31.b:0 "Once again, all the brutality of fascism is proved!"
+
+ ##Alaska. New state of the USA
+ ne_news.32.t:0 "Alaska. New state of the USA"
+ ne_news.32.d:0 "Once a Russian colony, Alaska became the 49th US state after the referendum!"
+ ne_news.32.a:0 "Add another star on our flag!"
+
+ ##Hawaii. New state of the USA
+ ne_news.33.t:0 "Hawaii. New state of the USA"
+ ne_news.33.d:0 "The Hawaiian Islands became our new state after the referendum!"
+ ne_news.33.a:0 "Add another star on our flag!"
+
+
  ##Stalin's death (ne_news.19)
  
  
@@ -1007,36 +1056,162 @@
  ne_korean_war.4.d:0 "Both Koreas are now fighting for months and neither we nor they have gained any significant advantages. The front resembles the First World War and our country lies in poverty; destroyed by war. [DPR.GetLeader] has sent us an offer for a simple cease-fire so the Korean people can escape the suffering for a few weeks probably. Do we accept?"
  ne_korean_war.4.a:0 "Our people will thank us..."
  ne_korean_war.4.b:0 "They are almost destroyed, no way!"
- 
 
 
+########################################
+####EVENTS FROM THE ADDITIONAL FILES####
+########################################
+
+##Stalin events
+
+ ne_stalin.1.t:0 "The great leader is dead!"
+ ne_stalin.1.d:0 "The heart of the comrade-in-arms and the genius continuer of the cause of Lenin, the wise leader and teacher of the Communist Party and the Soviet people, Joseph Vissarionovich Stalin, ceased to beat. The name STALIN is infinitely expensive for our party, for the Soviet people, for the working people of the whole world. Together with Lenin, Comrade Stalin created a powerful Communist Party, educated and tempered it; Together with Lenin, Comrade Stalin was the inspiration and leader of the Great October Socialist Revolution, the founder of the world's first socialist state. Continuing Lenin's immortal cause, Comrade STALIN led the Soviet people to the world-historic victory of socialism in our country. Comrade STALIN led our country to victory over fascism in the Second World War, which radically changed the entire international situation. Comrade STALIN armed the party and all the people with a great and clear program of building communism in the USSR."
+ ne_stalin.1.a:0 "What a great man's loss!"
  
+ ne_stalin.2.t:0 "The beginning of the struggle for power after Stalin's death. Conspiracy against Beria"
+ ne_stalin.2.d:0 "Lavrenty Pavlovich Beria poses a real threat to the integrity of our party and our entire state. The members of our entire party need to unite and prepare undeniable facts for his arrest and elimination. This person is not beneficial to anyone!"
+ ne_stalin.2.a:0 "Prepare evidence for arrest"
+ ne_stalin.2.b:0 "Objection! Beria poses no danger!"
  
+ ne_stalin.3.t:0 "The post-Stalin struggle for power. Beria was arrested"
+ ne_stalin.3.d:0 "By joint efforts of our party members, Beria was accused of espionage in favor of Great Britain and other countries, in striving to eliminate the Soviet workers 'and peasants' system, to restore capitalism and restore the rule of the bourgeoisie, as well as moral decay, abuse of power, and the falsification of thousands of criminal affairs on their colleagues in Georgia and Transcaucasia and in organizing illegal repression."
+ ne_stalin.3.a:0 "Serves him right!"
+
+ ne_stalin.4.t:0 "The post-Stalin struggle for power. Beria became the new head of the USSR."
+ ne_stalin.4.d:0 "Taking advantage of the internal conflict in the party and with the support of the USSR Ministry of Internal Affairs, Lavrentiy Beria won the struggle for power and came to power in the USSR"
+ ne_stalin.4.a:0 "Glory to the new leader!"
  
+ ne_stalin.5.t:0 "The post-Stalin struggle for power. Khrushchev became the new head of the USSR."
+ ne_stalin.5.d:0 "Having heard the report of Comrade. Khrushchev NS about Comrade. Malenkov GM and fully approving the proposals of the Presidium of the Central Committee on this issue, the Plenum of the Central Committee of the CPSU believes that Comrade Malenkov does not ensure the proper performance of the duties of the Chairman of the Council of Ministers of the USSR. Not having the necessary knowledge and experience of economic activity, as well as the experience of local Soviet bodies, Comrade Malenkov poorly organizes the work of the Council of Ministers, does not ensure serious and timely preparation of questions for meetings of the Council of Ministers. When considering many acute questions, Comrade Malenkov shows indecision, without taking a definite position. These shortcomings in the business qualities of Comrade Malenkov are extremely detrimental to the work of the Council of Ministers."
+ ne_stalin.5.a:0 "Khrushchev becomes Chairman of the Council of Ministers of the USSR"
+
+##The Berlin Wall
+ ne_ssrwb.1.t:0 "Erection of the Berlin Wall"
+ ne_ssrwb.1.d:0 "On the recommendation of the meeting of the secretaries of the communist and workers' parties of the Warsaw Treaty countries and on the basis of the decision of the People's Chamber of the GDR, it was decided to erect a wall in East Berlin to prevent the influence of Western capitalism"
+ ne_ssrwb.1.a:0 "Build the wall"
+ ne_ssrwb.1.b:0 "Cancel idea and all resolutions"
+ ne_ssrwb.1.c:0 "Erect a wall, declare an embargo of the West Germany and the declare the second blockade of West Berlin"
+
+##The Trieste event
+ ne_misc.14.t:0 "The transfer of the city of Trieste after the war"
+ ne_misc.14.d:0 "Since 1382, Trieste and the surrounding territories were part of Austria and had a mixed population, consisting mainly of Italians in the city and Slovenes and Croats in rural suburbs. In 1921, Italy annexed Trieste, where, after the establishment of the fascist regime, repression began against the Slavic population, triggering a terrorist response from the TIGR organization. In 1943, after the capitulation of Italy, the city was occupied by Germany, and on May 1, 1945 it was liberated simultaneously by parts of the Yugoslav and British armies."
+ ne_misc.14.a:0 "Return Trieste Italy"
+ ne_misc.14.b:0 "Give Trieste to Yugoslavia"
  
+ ne_misc.15.t:0 "The transfer of the city of Trieste after the war"
+ ne_misc.15.d:0 "The city of Trieste is now under the control of our state"
+ ne_misc.15.a:0 "Welcome!"
  
+##August Storm
+ ne_misc.18.t:0 "Soviet invasion of Manchuria"
+ ne_misc.18.d:0 "After the defeat of Germany, we need to strike at the last fascist contagion - Japan, and their main satellite - Manchuria. The Allies also expect us to act against them"
+ ne_misc.18.a:0 "Declare war on Japan and their satellite - Manchuria, and strike!"
+ ne_misc.18.b:0 "Dormant and continue to respect the Neutrality Pact"
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+##Soviet-Japanese Pact
+ ne_misc.19.t:0 "Soviet–Japanese Neutrality Pact"
+ ne_misc.19.d:0 "To prevent war on two fronts - in the East and West with the Axis countries, it is necessary to conclude a non-aggression pact with the Japanese"
+ ne_misc.19.a:0 "Sign the non-aggression pact"
+ ne_misc.19.b:0 "Refuse to sign this pact"
+
+##Soviet-Japanese Pact. Act of Japan
+ ne_misc.20.t:0 "Soviet–Japanese Neutrality Pact"
+ ne_misc.20.d:0 "The neutrality pact with the Soviet Union will secure our borders in Manchuria and enable us to fight for the Great East Asia against the Allied countries, but it will worsen our relations with our current allies"
+ ne_misc.20.a:0 "Sign the non-aggression pact"
+ ne_misc.20.b:0 "Refuse to sign this pact"
+
+##Soviet-Japanese Pact. Allies reaction
+ ne_misc.21.t:0 "Soviet–Japanese Neutrality Pact"
+ ne_misc.21.d:0 "The Soviet Union signed a non-aggression pact with Japan, thereby unleashing her hands. We can respond with sanctions"
+ ne_misc.21.a:0 "Declare the sanctions of the USSR"
+ ne_misc.21.b:0 "Do not take any action against the USSR"
+
+##Peking Plan
+ ne_misc.22.t:0 "The transfer of our destroyers of Britain"
+ ne_misc.22.d:0 "To save our destroyers from imminent death, we can send them to Britain. The effectiveness of destroyers under our command is extremely small"
+ ne_misc.22.a:0 "Send our advanced destroyers of Britain"
+ ne_misc.22.b:0 "Refuse to transfer. We will lose our naval pride!"
+
+##Succesful transfer
+ ne_misc.23.t:0 "The transfer of Poland destroyers"
+ ne_misc.23.d:0 "Poland agreed to give us their destroyers and now they are under our control!"
+ ne_misc.23.a:0 "Take control"
+
+##Succesful transfer
+ ne_misc.24.t:0 "The transfer of Poland destroyers"
+ ne_misc.24.d:0 "The destroyers we sent are now controlled by Britain"
+ ne_misc.24.a:0 "We hope that they will help in the coming war"
+
+##Takee events :3
+ ne_misc.25.t:0 "Global Demobilization After The War"
+ ne_misc.25.d:0 "After the Second World War, the participating countries, including the state [Root.GetName], began to demobilize their troops as a result of the lack of necessity"
+ ne_misc.25.a:0 "Demobilize troops"
+
+ ne_misc.26.t:0 "Demilitarization Of The Economy After The War"
+ ne_misc.26.d:0 "The war was over. We no longer have such a need for heavy industry, it is necessary to restore our medium and light industry"
+ ne_misc.26.a:0 "Go to the beginning of the demilitarization of the economy"
+
+##A warning for a player
+ ne_misc.27.t:0 "Your Country is not supported by this Mod!"
+ ne_misc.27.d:0 "You are currently playing as the [Root.GetName], a fascist nation. Please keep in mind that "Better Post-War Europe" was designed as a historical mod and thus almost all events and decisions require an Allied victory. While ahistorical playthroughs are still possible you will miss out a lot of content! It's strongly recommended to play as one of the countries displayed in the country selection screen."
+ ne_misc.27.a:0 "I don't care."
+ ne_misc.27.b:0 "I will start a new game then."
+
+##Danzig is fucked
+ poland.13.t:0 "Poland surrenders us to Germany!"
+ poland.13.d:0 "The Polish government decided to transfer the ownership of our city to the Germans. We will from now on be a Reichsgau of [GER.GetName]."
+ poland.13.a:0 "Reunited with Germany at last!"
+ poland.13.b:0 "We will never be part of Germany!"
+
+##6th research slot for the USSR ##You might want to rename the comment, takee! Thanks for this note!-Ed
+ ne_sov.1.t:0 "The fate of the captured German scientists"
+ ne_sov.1.d:0 "It is necessary to decide the fate of scientists caught in the territory controlled by our troops"
+ ne_sov.1.a:0 "Our country needs new minds!"
+ ne_sov.1.b:0 "Abandon scientists"
+ ne_sov.1.c:0 "Execute all scientists as enemies of the Soviet people"
+
+##Russian Liberation Army formation
+#ne_takee.6.t:0
+
+##Germany changes its name
+ ne_germany.1.t:0 "A Greater German Reich"
+ ne_germany.1.d:0 "We have risen above the other powers, becoming one of the most powerful countries. It's finally time to rename our country to Großdeutsches Reich!"
+ ne_germany.1.a:0 "Glory to the Vaterland!"
+
+##Germany change its name back, when the power is lose. The event is hidden
+
+##Anglo-Soviet invasion of Iran EVENTS
+
+ ne_conf.1.t:0 "Iran is giving up!"
+ ne_conf.1.d:0 "Iran suffered a crushing defeat: their army is running, the government is in flight, and their generals are on the side of the Allies!"
+ ne_conf.1.a:0 "Iran will not get an Axis!"
+
+##Faroe and Iceland British invasion
+ ne_germany.2:0 "The Faroe Islands were captured by Britain!"
+ ne_germany.2:0 "Sad news. The British overtook us and captured today the Faroe Islands."
+ ne_germany.2:0 "Hier ist Müll!" ##hitler offended
+ ##WTF :D ?
+
+ ne_germany.3.t:0 "Iceland were captured by Britain!"
+ ne_germany.3.d:0 "The British once again beat us and captured an important island - Iceland."
+ ne_germany.3.a:0 "Zur Hölle mit Ihnen!" ##sad hitler
+
+ ne_usa.1.t:0 "Greenland goes under US control"
+ ne_usa.1.d:0 "Denmark provides us with Greenland from possible capture"
+ ne_usa.1.a:0 "Good"
+
+##Poland was attacked by Germany
+ ne_uk.1.t:0 "Military Assistance to Poland in the Aggression of Germany"
+ ne_uk.1.d:0 "Germany plans to attack Poland in a matter of days"
+ ne_uk.1.a:0 "Invite them to the alliance"
+
+##Poland annex its occupation zone event
+ ne_misc.28.t:0 "Poland Occupation Zone Annexation"
+ ne_misc.28.d:0 "We are given some territory of the defeated Germany. At the moment it is our occupation zone"
+ ne_misc.28.a:0 "Annex the Occupation Zone"
+
+##The Metaxas Line event
+ ne_greece.2.t:0 "Erection of Metaxas Line"
+ ne_greece.2.d:0 "The Metaxas Line was a chain of fortifications constructed along the line of the Greco-Bulgarian border, designed to protect Greece in case of a Bulgarian invasion after the rearmament of Bulgaria. It was named after Ioannis Metaxas, then Prime Minister of Greece, and chiefly consists of tunnels that led to observatories, emplacements and machine-gun nests."
+ ne_greece.2.a:0 "Erect the building"
+ ne_greece.2.b:0 "We don't need those buildings!"
