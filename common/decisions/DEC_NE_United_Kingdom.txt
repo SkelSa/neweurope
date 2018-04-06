@@ -173,7 +173,7 @@ ENG_historical_military_operations = {
 		complete_effect = {                    
 			ENG = { transfer_state = 337 }
 			hidden_effect = {
-				GER = { country_event = { hours = 5 id = ne_takee.14 } } 
+				GER = { country_event = { hours = 5 id = ne_germany.2 } } 
 				ENG = { load_oob = "ENG_faroe_invasion" }
 			}
 		}
@@ -290,7 +290,7 @@ ENG_historical_military_operations = {
 		complete_effect = {                    
 			ENG = { transfer_state = 100 }
 			hidden_effect = {
-				GER = { country_event = { hours = 5 id = ne_takee.16 } } 
+				GER = { country_event = { hours = 5 id = ne_germany.3 } } 
 				ENG = { load_oob = "ENG_iceland_invasion" }
 			}
 		}

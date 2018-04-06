@@ -135,6 +135,7 @@ X  = In Work
 [list]
 [*][i]Alfactor29[/i], for the French translation!
 [*][i]ghaussst[/i] and [i]Teymur Bagir-zade[/i], for the Russian translation! 
+[*][i]Chairman Meow[/i] for 'Flickering Flags Fix' mod! 
 [/list]
 
 

@@ -4,6 +4,7 @@
 
 add_namespace = ne_greece
 add_namespace = ne_civil_war
+add_namespace = ne_greece
 
 
 ###########################################
@@ -157,4 +158,98 @@ country_event = {
 	}
 	
 	
+}
+
+country_event = {  ##Metaxas Line Event
+	id = ne_greece.1
+	title = ne_greece.1.t
+	desc = ne_greece.1.d
+	picture = GFX_metaxas_line ##replace for metaxas line image
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }
+
+	trigger = {
+		tag = GRE
+		has_country_leader = { name = "Ioannis Metaxas" }
+		NOT = {
+			OR = {
+				is_in_faction_with = BUL
+				BUL = { exists = no }
+				BUL = { is_puppet_of = GRE }
+				is_puppet_of = BUL
+			}
+			184 = { 
+				bunker > 0
+			}
+			731 = {
+				bunker > 0
+			}
+		}
+	}
+
+	option = {
+		name = ne_greece.1.a
+		ai_chance = { 
+			factor = 60
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+		731 = {
+			add_building_construction = {
+				type = bunker 
+				province = 3526 
+				level = 1
+				instant_build = yes
+			} 
+		}
+		184 = {
+			add_building_construction = {
+				type = bunker 
+				province = 6990 
+				level = 1 
+				instant_build = yes 
+			} 
+			add_building_construction = {
+				type = bunker 
+				province = 9930 
+				level = 1 
+				instant_build = yes 
+			}
+		}
+		add_stability = 0.15
+		add_war_support = 0.2
+		add_ideas = NE_metaxas_line
+		activate_targeted_decision = { target = FROM decision = GRE_metaxas_line }
+	}
+
+	option = {
+		name = ne_greece.1.b
+		ai_chance = { 
+			factor = 40
+			modifier = {
+				factor = -200
+				is_historical_focus_on = yes
+			}
+		}
+		BUL = {
+			add_ai_strategy = {
+				type = conquer
+				id = "GRE"
+				value = 200
+			}
+		}
+		BUL = {
+			add_ai_strategy = {
+				type = antagonize
+				id = "GRE"
+				value = 200
+			}
+		}
+		add_timed_idea = { idea = NE_metaxas_line_decline days = 730 }
+	}
+
 }

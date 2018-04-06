@@ -1536,6 +1536,268 @@ country_event = {
 	}
 }
 
+######################The Demobilization Event######################
+country_event = {
+	id = ne_misc.25
+	title = ne_misc.25.t
+	desc = ne_misc.25.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+##	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+
+		OR = {
+			has_global_flag = germany_partitioned
+			has_global_flag = germany_divided
+			has_global_flag = germany_unified
+		}
+		
+##		any_country = {
+##			has_government = democratic
+##			NOT = { 
+##				has_war_with = SOV
+##			}
+##		}
+
+		has_war = no
+	}
+
+	option = {  ##Demobilization for the secondary countries. Most of the countries will continue to have compulsory military service, like in the history
+		name = ne_misc.25.a
+		if = {
+			limit = {
+				NOT = {
+					has_government = democratic
+					AND = { 
+						tag = GER
+						tag = ITA
+						tag = HUN
+						tag = JAP
+						tag = BUL
+						tag = ROM
+					}
+				}
+				OR = {
+					has_idea = extensive_conscription
+					has_idea = service_by_requirement
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
+			random_list = { 
+				65 = { add_ideas = extensive_conscription }
+				15 = { add_ideas = volunteer_only }
+				15 = { add_ideas = disarmed_nation }
+				10 = { }
+			}
+		}
+		if = { 
+			limit = {
+				OR = {
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
+			add_ideas = service_by_requirement
+		}
+		if = { ##Demobilization for the democratic countries. Most of the countries will continue to have compulsory military service, like in the history (until the end of the 20th century)
+			limit = { 
+				has_government = democratic
+			}
+			random_list = { 
+				65 = { add_ideas = extensive_conscription }
+				35 = { add_ideas = volunteer_only }
+			}
+		}
+		if = { ##Special Demobilization for the communists
+			limit = {
+				OR = {
+					AND = {
+						has_government = communism
+						is_in_faction_with = SOV
+					}
+					tag = SOV
+				}
+			}
+			random_list = { 
+				90 = { add_ideas = extensive_conscription }
+				5 = { add_ideas = volunteer_only }
+				5 = { }
+			}
+		}
+
+		set_global_flag = global_demobilization
+		hidden_effect = { country_event = { days = 4 id = ne_misc.26 } }
+		
+	}
+}
+
+######################The Demilitarization Event######################
+country_event = {
+	id = ne_misc.26
+	title = ne_misc.26.t
+	desc = ne_misc.26.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {  ##Demilitarization for the secondary countries
+		name = ne_misc.26.a
+		if = {
+			limit = {
+				NOT = {
+					has_government = democratic
+					AND = { 
+						tag = GER
+						tag = ITA
+						tag = HUN
+						tag = JAP
+						tag = BUL
+						tag = ROM
+					}
+				}
+				OR = {
+					has_idea = partial_economic_mobilisation
+					has_idea = war_economy
+					has_idea = low_economic_mobilisation
+					has_idea = tot_economic_mobilisation
+				}
+			}
+			random_list = { 
+				55 = { add_ideas = low_economic_mobilisation }
+				35 = { add_ideas = civilian_economy }
+				10 = { }
+			}
+		}
+		if = { 
+			limit = {
+				OR = {
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
+			add_ideas = service_by_requirement
+		}
+		if = { ##Demilitarization for the democratic countries
+			limit = { 
+				has_government = democratic
+			}
+			random_list = { 
+				40 = { add_ideas = partial_economic_mobilisation }
+				25 = { add_ideas = low_economic_mobilisation }
+				25 = { add_ideas = civilian_economy }
+				10 = { }
+			}
+			add_timed_idea = { idea = demilitarization_democratic days = 365 }
+		}
+		if = { ##Demilitarization for the communists
+			limit = {
+				OR = {
+					AND = {
+						has_government = communism
+						is_in_faction_with = SOV
+					}
+					tag = SOV
+				}
+			}
+			add_timed_idea = { idea = demilitarization_communists days = 365 }
+		}
+		if = {
+			limit = { 
+				any_owned_state = {
+					arms_factory > 40
+					dockyard > 15
+				} 
+			}
+			###############Arms factory###############
+			random_owned_state = { limit = { arms_factory > 10 } remove_building = { type = arms_factory level = 5 } }
+			random_owned_state = { limit = { arms_factory > 8 } remove_building = { type = arms_factory level = 4 } }
+			random_owned_state = { limit = { arms_factory > 6 } remove_building = { type = arms_factory level = 4 } }
+			random_owned_state = { limit = { arms_factory > 2 } remove_building = { type = arms_factory level = 1 } }
+			###############Dockyards##################
+			random_owned_state = { limit = { dockyard > 5 } remove_building = { type = dockyard level = 2 } }
+			random_owned_state = { limit = { dockyard > 2 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+		}
+		if = {
+			limit = { 
+				any_owned_state = {
+					arms_factory > 25
+					dockyard > 10
+				} 
+			}
+			###############Arms factory###############
+			random_owned_state = { limit = { arms_factory > 5 } remove_building = { type = arms_factory level = 2 } }
+			random_owned_state = { limit = { arms_factory > 5 } remove_building = { type = arms_factory level = 2 } }
+			random_owned_state = { limit = { arms_factory > 2 } remove_building = { type = arms_factory level = 1 } }
+			random_owned_state = { limit = { arms_factory > 2 } remove_building = { type = arms_factory level = 1 } }
+			###############Dockyards##################
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+		}
+		if = {
+			limit = { 
+				any_owned_state = {
+					arms_factory < 15
+					dockyard < 10
+				} 
+			}
+			###############Arms factory###############
+			random_owned_state = { limit = { arms_factory > 2 } remove_building = { type = arms_factory level = 1 } }
+			random_owned_state = { limit = { arms_factory > 2 } remove_building = { type = arms_factory level = 1 } }
+			random_owned_state = { limit = { arms_factory > 1 } remove_building = { type = arms_factory level = 1 } }
+			random_owned_state = { limit = { arms_factory > 1 } remove_building = { type = arms_factory level = 1 } }
+			###############Dockyards##################
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+			random_owned_state = { limit = { dockyard > 1 } remove_building = { type = dockyard level = 1 } }
+		}
+	}
+}
+
+######################A Warning for a player###################### 
+country_event = {
+	id = ne_misc.27
+	title = ne_misc.27.t
+	desc = ne_misc.27.d
+	picture = GFX_fascist_selected
+	
+	is_triggered_only = yes
+	
+	immediate  = {
+		set_country_flag = warning_unsupported_country
+	}
+
+	option = {
+		name = ne_misc.27.a	
+		##JUMP
+		custom_effect_tooltip = warning_for_a_player.1.tt
+		add_political_power = -1
+		
+		ai_chance = { factor = 1 }
+		
+		
+		
+		
+		
+	}
+	
+	option = {
+		name = ne_misc.27.b
+		custom_effect_tooltip = warning_for_a_player_quit.1.tt
+		ai_chance = { factor = 0 }
+	
+		hidden_effect = { if = { limit ={ is_ai = no } LUX = { annex_country = { target = ROOT } } } }
+	}
+}
+
 
 
 

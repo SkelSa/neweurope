@@ -630,3 +630,29 @@ country_event = {
 	}
 
 }
+
+country_event = {  ##New Europe. The Danzig decision
+	id = poland.13
+	title = poland.13.t
+	desc = poland.13.d
+	picture = GFX_report_event_german_polish_border
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = poland.13.a
+		ai_chance = { factor = 100 }
+		GER = { transfer_state = 85 }
+		GER = { annex_country = { target = DAN transfer_troops = yes } }
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	
+	##Added by SkelSa, Player can be Danzig and refuse. Will lead to massive gang bang
+	option = {
+		name = poland.13.b
+		GER = { declare_war_on = { target = DAN type = annex_everything }   }
+		custom_effect_tooltip = GAME_OVER_TT ## Why did not you remove the tool tip effect? :D
+	}
+
+}
