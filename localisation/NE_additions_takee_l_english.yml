@@ -163,10 +163,10 @@
   ne_misc.259.a:0 "Invite them to the alliance"
 
  ##The Metaxas Line event
-  ne_misc.260.t:0 "Erection of Metaxas Line"
-  ne_misc.260.d:0 "The Metaxas Line was a chain of fortifications constructed along the line of the Greco-Bulgarian border, designed to protect Greece in case of a Bulgarian invasion after the rearmament of Bulgaria. It was named after Ioannis Metaxas, then Prime Minister of Greece, and chiefly consists of tunnels that led to observatories, emplacements and machine-gun nests."
-  ne_misc.260.a:0 "Erect the building"
-  ne_misc.260.b:0 "no, right.!? where is yes?!"
+  ne_greece.2.t:0 "Erection of Metaxas Line"
+  ne_greece.2.d:0 "The Metaxas Line was a chain of fortifications constructed along the line of the Greco-Bulgarian border, designed to protect Greece in case of a Bulgarian invasion after the rearmament of Bulgaria. It was named after Ioannis Metaxas, then Prime Minister of Greece, and chiefly consists of tunnels that led to observatories, emplacements and machine-gun nests."
+  ne_greece.2.a:0 "Erect the building"
+  ne_greece.2.b:0 "We don't need those buildings!"
 
  ######################################################################################################################################
  ########################################################SOME SMALL IDEAS AND E.T.C..##################################################
