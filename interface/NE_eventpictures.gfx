@@ -51,7 +51,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/potsdam_conference.dds"
 	}
 	
-	##Stalin Notes successful and not use the same picture!
+	##Stalin Notes successful and not successful use the same picture!
 	
 	spriteType = {
 		name = "GFX_stalin_notes"
@@ -365,6 +365,13 @@ spriteTypes = {
 	spriteType = {		
 		name = "GFX_exit_settings"
 		texturefile = "gfx/event_pictures/report_event_exit_settings.dds"
+	}
+
+	
+	##UNUSED##
+	spriteType = {		
+		name = "GFX_torn_swastika"
+		texturefile = "gfx/event_pictures/report_event_torn_swastika.dds"
 	}
 	
 	

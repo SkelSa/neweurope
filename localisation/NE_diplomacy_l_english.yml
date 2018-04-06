@@ -9,15 +9,25 @@
  freed_us:0 "They freed us!"
  NE_lend_lease:0 "They gave us lend-lease!"
  NE_denied_lend_lease:0 "They refused to assist us!"
+ 
  ##Hatay transfer
  hatay_transfer_refused:0 "Refused to give up Hatay"
  hatay_transfer_accepted:0 "Seceded Hatay"
+ 
  ##Warsaw Pact
  refused_warsaw_pact:0 "Refused to join the Warsaw Pact"
+ 
  ##NATO
  dissolved_allies:0 "Dissolved the Allies to make room for a new alliance!"
  refused_nato_founding:0 "Refused to create a new faction"
  refused_nato:0 "Refused to join NATO"
+ first_nato_expansion:0 "First NATO Expansion"
+ second_nato_expansion:0 "First NATO Expansion"
+ refused_nato_membership:0 "Refused NATO membership to us!"
+ nato_neighbour:0 "NATO member on our border"
+ 
+ ##League of Nations
+ 
  ##Unification of Austria
  accepted_austrian_reunification:0 "Gave up the occupation of Austria"
  refused_austrian_reunification:0 "Refused to give up rightful Austrian clay"
@@ -38,13 +48,16 @@
  not_invited:0 "The Americans didn't invite us!"
  sided_soviets:0 "They sided with the Soviets!"
  sided_americans:0 "They sided with the Americans!"
+ 
  ##Stalin Notes
  accepted_notes:0 "Accepted the Notes"
  refused_notes:0 "Refused the Notes and thus German reunification!"
+ 
  ##Port Arthur
  leased_dalian:0 "Port Arthur was leased"
  returned_dalian:0 "Port Arthur was returned!"
  refused_dalian:0 "They refused to return Port Arthur!"
+ 
  ##NFL and Labrador
  accepted_nfl:0 "Accepted the return of NFL and Labrador"
  refused_nfl:0 "Denied the return of NFL and Labrador!"
@@ -53,6 +66,21 @@
  found_solution_korea:0 "Solved the Korea problem"
  occupies_korea:0 "Decided to occupy Korea"
 
+ ally_fight_against_bolshevism:0 "Partner in our war against the USSR"
+ refused_to_help:0 "They decided not to help us!"
+ lost_finnish_territories:0 "The Soviets took rightful Finnish territory from us!"
+ forced_lease_hanko:0 "Hanko is Soviet"
+ forced_lease_porkalla:0 "Porkalla is Soviet"
+ forced_lease_hanko_porkalla:0 "Hanko and Porkalla are Soviet"
+ moscow_armistice:0 "USSR and Finland agreed to make peace!"
+ refused_warsaw_pact_membership:0 "Refused Warsaw pact membership to us!"
+ together_against_the_allies:0 "Together against the Allies!"
+ baltic_annexation:0 "Condemns the Annexation of the Baltics"
+ betrayed_us:0 "They betrayed us!"
+ helped_spain_civil_war:0 "Helped us during the Civil War"
+ kicked_out_lon:0 "They kicked us out of the League of Nations"
+ illegal_offensive_war:0 "Illegal Offensive Actions"
+ 
  
  ##################################################
  ##THREATS---------------------------------------##
@@ -60,7 +88,8 @@
  
  threat_ne_korean_war:0 "War in Korea"
  threat_ne_korea_cf:0 "Ceasefire in Korea"
- 
- 
+ threat_ne_korea_no_cf:0 "No Ceasefire in Korea!"
+ threat_ne_continuation_war:0 "Continuation War"
+ threat_ne_finland_neutrality:0 "Finland stays neutral"
  
  
