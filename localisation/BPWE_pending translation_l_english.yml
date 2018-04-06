@@ -8,12 +8,6 @@
 ##REWORKED LOCALISATION##########################################
 
 
- ne_news.1.t:0 "Better Post-War Europe"
- ne_news.1.d:0 "This mod aims to expand and enhance a historical playthrough as one of the Allied nations. Besides several new states to allow the recreation of a new world, BPWE features dozens of historical events and other content to allow the begin of the Cold War after the defeat of Nazi Germany and her allies.\nDue to the increasing lag in the lategame a focus was laid on events which happened before 1955 in our timeline. WW3 stuff is also included.\nThis mod was intended for historical playthroughs and thus ahistorical games will prevent a lot of content. Please try to keep this in mind.\nAnd now have fun!"
- ne_news.1.a:0 "Thanks for the info!"
-
-
-
 
 
  ##REPLACE FOLDER#################################################
@@ -43,7 +37,7 @@
  
  
  ####party_names####
- GRE_House_of_Glucksburg:0 "House of Glücksburg"
+ 
 
 
  ####NE_events####
@@ -53,12 +47,8 @@
  
  
  ##Metaxas is dead!
- ne_greece.1.t:0 "Prime Minister Metaxas has passed away!"
- ne_greece.1.d:0 "After a long struggle against toxaemia our beloved Leader has sadly died today. Metaxas passed away in his villa at 6 AM this morning though our best doctors tried their best to keep him alive. The people of Greece will attend the Prime Minister's funeral in the next days and mourn for him.\nWe have decided that the current governor of the Bank of Greece, Alexandros Koryzis, will be Metaxas' successor and serve as the Prime Minister of Greece. However, King George II will, as expected, remain our head of state and have the final say in all political decisions.\n Even though the death of Metaxas will be a setback, we are confident that the new government and our beloved King can maneuver the Greek nation through these difficult times of war."
- ne_greece.1.a:0 "King George II will achieve victory for Greece!"
  
 
- 
  
 
  ####NE_ideas####

@@ -14,12 +14,12 @@
  
  
  ##Misc
- ne_strict_faction:0 "Stricter Faction Rules were enabled"
+
  
  ##Parties (by Pinkie Pie) - MOVE THEM TO THE SETTINGS, Command:  	set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party } 
  
  LEB_communism_party:0 "Syrian-Lebanese Communist Party"
-
+ GRE_House_of_Glucksburg:0 "House of Glücksburg"
 
  
  ##VANILLA EVENTS WITH PETSAMO IN IT
@@ -41,48 +41,12 @@
  
  
  ##Cities
- VICTORY_POINTS_3631:0 "Ljubljana"
- VICTORY_POINTS_12156:0 "Xi'an"
-
- Vyborg:0 "Vyborg"
+ 
  
  
  ##IDEAS
 
- NE_reparations:0 "War Reparations"
- NE_reparations_desc:0 "Europe is still in ruins. To repair and rebuild the damage the Germans caused from Bordeaux to Stalingrad, heavy war reparations against Germany were imposed by the Victorious Powers. Additionally, they will also guarantee that the Germans will never be able to disturb the peace of the world."
- NE_align_west:0 "Aligned with the West"
- NE_align_west_desc:0 "Good relations and trade with the West are key aspects in this country's foreign policy."
- NE_align_east:0 "Aligned with the East"
- NE_align_east_desc:0 "Despising Western imperialism and capitalism, this nation prefers to work together with the USSR and its allies and thus aligns itself with the "Second World"."
- NE_ready_nato:0 "Ready to join NATO"
- NE_ready_nato_desc:0 "Just a few more talks are needed and an entry into the North Atlantic Treaty Organisation could become reality."
- NE_ready_wp:0 "Ready to join the Warsaw Pact"
- NE_ready_wp_desc:0 "A revolution has turned this nation socialist some time ago. Excellent relations with Moscow and the common vision of a socialist planet could lead to an entry into the Warsaw Pact..."
- NE_nato_member:0 "Member of NATO"
- NE_nato_member_desc:0 "As a member of NATO, this country is obliged to defend its allies in case of an invasion but can also expect to get help should a foreign country declare war on them. Additionally, all members share military intelligence, hold joint operations and use a similar command structure." 
- NE_wp_member:0 "Member of the Warsaw Pact"
- NE_wp_member_desc:0 "Together with the USSR and its allies this nation will defend the cause of socialism with their whole military might. Like NATO, a declaration of war against this fellow country is the same as a declaration against the whole alliance."
- NE_titos_partisans:0 "Yugoslavian Partisans"
- NE_titos_partisans_desc:0 "Though the nation itself fell rather quick, the Yugoslavian people are still fighting against the German and Italian fascists. Especially the communist partisan forces under the command of Josip Tito cause nightmares for the occupiers."
- NE_sfr_yugoslavia:0 "A Socialist Republic"
- NE_sfr_yugoslavia_desc:0 "We are not Croats, Serbs or Slovenes anymore. We are all Yugoslavs. Together we shall create a socialist welfare state in which no one has to live in poverty or be hungry. Let us pave the road to a properous future for our children!"
- NE_alone:0 "No Allied Help"
- NE_alone_desc:0 "Allies are useless anyways.\nThis is a debug national spirit to ensure that no allies join this war."
- NE_desperate_defense:0 "Desperate Defense"
- NE_desperate_defense_desc:0 "Most of our cities are occupied, millions of civilians are dead and losses are staggering. Now the time has come for our citizens to fight against the invader till the last breath. Not only to defend the future of this nation but to save their families and loved ones!\nWe must not lose."
- NE_bad_infrastructure:0 "Bad Infrastructure"
- NE_bad_infrastructure_desc:0 "The further we advanced into the Chinese mainland we encountered worse roads, bridges and rail networks! This combined with several attacks by guerillas on our transports has led to a significant strain on our supply logistics."
- NE_ITA_incompetent_officers:0 "Italian General Staff"
- NE_ITA_incompetent_officers_desc:0 "The "Esercito Italiano" is plagued by incompetent officers and generals. Furthermore, among ill-equipped units and poor morale Mussolini and the rest of the fascist leadership dream of big conquest. A dream, many Italians are not interested in..."
- NE_civil_war_help_ger:0 "German Military Assistance"
- NE_civil_war_help_ita:0 "Italian Military Assistance"
- NE_civil_war_help_por:0 "Portuguese Military Assistance"
- NE_civil_war_help_usa:0 "American Military Assistance"
- NE_civil_war_help_eng:0 "British Military Assistance"
- NE_civil_war_help_fra:0 "French Military Assistance"
- NE_civil_war_help_mex:0 "Mexican Military Assistance"
- NE_civil_war_help_sov:0 "Soviet Military Assistance"
+
  
  
  
@@ -95,45 +59,20 @@
  ne_join_wp_desc:0 "Invite new countries to the Warsaw Pact. At least one foreign country needs to have the spirit "Ready to join the Pact""
  ne_idle:0 "No Current Action"
  ne_idle_desc:0 "No Action Currently Enabled"
- 
- 
- ##Autonomy Names
- autonomy_satellite_sov:0 "Soviet Satellite"
- autonomy_puppet_sov:0 "Soviet Puppet"
- autonomy_ssr:0 "SSR"
+
  
  
  ##Tooltips
- spain_civil_war_help:0 "Military Equipment will be sent to support the Spanish Republic in their struggle."
- nat_spain_civil_war_help:0 "Military Equipment will be sent to support the Spanish State in their struggle."
+ 
 
  ##DIPLOMACY
  
  ##Headline
- ally_fight_against_bolshevism:0 "Partner in our war against the USSR"
- refused_to_help:0 "They decided not to help us!"
- lost_finnish_territories:0 "The Soviets took rightful Finnish territory from us!"
- forced_lease_hanko:0 "Hanko is Soviet"
- forced_lease_porkalla:0 "Porkalla is Soviet"
- forced_lease_hanko_porkalla:0 "Hanko and Porkalla are Soviet"
- moscow_armistice:0 "USSR and Finland agreed to make peace!"
- refused_warsaw_pact_membership:0 "Refused Warsaw pact membership to us!"
- refused_nato_membership:0 "Refused NATO membership to us!"
- first_nato_expansion:0 "First NATO Expansion"
- second_nato_expansion:0 "First NATO Expansion"
- nato_neighbour:0 "NATO member on our border"
- together_against_the_allies:0 "Together against the Allies!"
- baltic_annexation:0 "Condemns the Annexation of the Baltics"
- betrayed_us:0 "They betrayed us!"
- helped_spain_civil_war:0 "Helped us during the Civil War"
- kicked_out_lon:0 "They kicked us out of the League of Nations"
- illegal_offensive_war:0 "Illegal Offensive Actions"
+ 
  
  ##Threats:
  
- threat_ne_korea_no_cf:0 "No Ceasefire in Korea!"
- threat_ne_continuation_war:0 "Continuation War"
- threat_ne_finland_neutrality:0 "Finland stays neutral"
+ 
  
  ####REAL COUNTRIES####
  
@@ -476,16 +415,7 @@
  NE_GRE_1_communism:0 "Hellenic Commune"
  NE_GRE_1_communism:0 "The Hellenic Commune" 
  
- 
- 
- ##Tech Sharing Groups
- ne_nato_research:0 "NATO Research"
- ne_nato_research_desc:0 "The United States and her Allies research technologies together."
- ne_wp_research:0 "Warsaw Pact Research"
- ne_wp_research_desc:0 "Members of the Warsaw Pact cooperate in R&D."
 
- 
- 
  
 ############################################################
 ####    REGULAR EVENTS                                  ####
@@ -719,6 +649,10 @@
  ne_skelsa.69.a:0 "We welcome them!"
  ne_skelsa.69.b:0 "They should stay our puppet."
  
+ ne_greece.1.t:0 "Prime Minister Metaxas has passed away!"
+ ne_greece.1.d:0 "After a long struggle against toxaemia our beloved Leader has sadly died today. Metaxas passed away in his villa at 6 AM this morning though our best doctors tried their best to keep him alive. The people of Greece will attend the Prime Minister's funeral in the next days and mourn for him.\nWe have decided that the current governor of the Bank of Greece, Alexandros Koryzis, will be Metaxas' successor and serve as the Prime Minister of Greece. However, King George II will, as expected, remain our head of state and have the final say in all political decisions.\n Even though the death of Metaxas will be a setback, we are confident that the new government and our beloved King can maneuver the Greek nation through these difficult times of war."
+ ne_greece.1.a:0 "King George II will achieve victory for Greece!"
+ 
  ##REDO LOC
  
  ##Spanish Support ## There's not much Intel about it besides that Spain is in complete disarray and chaos right now.\nSome of our people have already joined the fight to support the Republican government and 
@@ -920,19 +854,3 @@
  ne_news.46.b:0 "And again Poland vanishes from Europe..."
  ne_news.46.c:0 "The mistakes of 1920 are undone!"
  ne_news.46.e:0 "This nation had no place in history anyways."
- 
- ##French Mandate for Syria and the Lebanon ##NATION IS PROBABLY OBSOLETE
- #FSL_fascism:0 "French Levant"
- #FSL_fascism_DEF:0 "The French Levant"
- #FSL_democratic:0 "French Mandate for Syria and the Lebanon"
- #FSL_democratic_DEF:0 "The French Mandate for Syria and the Lebanon"
- #FSL_neutrality:0 "French Mandate for Syria and the Lebanon"
- #FSL_neutrality_DEF:0 "The French Mandate for Syria and the Lebanon"
- #FSL_communism:0 "French Mandate for Syria and the Lebanon"
- #FSL_communism_DEF:0 "The French Mandate for Syria and the Lebanon"
- #FSL_fascism_ADJ:0 "Levantine"
- #FSL_democratic_ADJ:0 "Levantine"
- #FSL_neutrality_ADJ:0 "Levantine"
- #FSL_communism_ADJ:0 "Levantine"
- 
- 

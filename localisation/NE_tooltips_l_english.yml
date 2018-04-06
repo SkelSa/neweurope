@@ -1,3 +1,71 @@
 ﻿l_english:
  prc_demand_nechina:0 "Every country who controls territory in NE China will get an ultimatum to return it. If Manchuria resembles however a battlefield, countries are less likely to accept..."
+ spain_civil_war_help:0 "Military Equipment will be sent to support the Spanish Republic in their struggle."
+ nat_spain_civil_war_help:0 "Military Equipment will be sent to support the Spanish State in their struggle."
+ 
+ #################
+ ##Settings Menu##
+ #################
+ 
+ 
+ historical_settings_a:0 "If you enable this, following changes will happen:\n\nGermany is renamed to "Deutsches Reich" and gets their correct flag\n\nJapan is renamed to "Empire of Japan" and gets their historical flag\n\nGreece is renamed to "Kingdom of Greece" and gets their historical flag\n\nWest Germany is renamed to "Federal Republic of Germany" instead of "FRG"\n\nEast Germany is renamed to "German Democratic Republic" instead of "GDR""
+ historical_settings_b:0 "All communist Soviet Republics plus the Baltics gain a cosmetic tag, which changes their name to end with "SSR".\n\nExamples:\nLithuanian People's Republic -> Lithuanian SSR\nKazakh Soviet Socialist Republic -> Kazakh SSR"
+ historical_settings_c:0 "Hover over the two buttons above this one to see all changes"
+ ussr_usa_settings_a:0 "Soviet Union is renamed to "USSR"\n\nUnited States is renamed to "USA""
+ ussr_usa_settings_b:0 "Soviet Union is renamed to "Union of Soviet Socialist Republics"\n\nUnited States is renamed to "United States of America""
+ historical_settings_b1:0 "All communist Soviet Republics plus the Baltics gain a cosmetic tag, which changes their name to end with "SSR".\n\nExamples:\nLithuanian People's Republic -> Lithuanian SSR\nKazakh Soviet Socialist Republic -> Kazakh SSR"
+ ussr_usa_settings_c:0 "The country names stay as they are. Return to menu without changes." 
+ 
+ main_menu_a:0 "The flavour options of BPWE aim to enhance the current nations with historical names and flags. Additionally, it's now possible to give countries like Poland or Romania their historical leaders."
+ main_menu_b:0 "Ever wanted to force a nation to stay neutral and not join WW2? Then you might want to check these settings out! The faction rules for joining NATO or the Warsaw Pact are also here."
+ main_menu_c:0 "Some additional stuff you can change doesn't belong to a category and thus you can find them here."
+ main_menu_e:0 "The recommended settings are a quick way to enable all options which will help to improve a historical playthrough. More infos are inside."
+ main_menu_f:0 "Apply all of your changes to the current game and quit the settings menu."
+ 
+ ne_return_menu:0 "Go back to the main menu."
+ ne_return_menu_no_changes:0 "Return to the main menu without any changes."
+ 
+ ##Submenu: Flavor
+ historical_flavor_menu_a:0 "Allow historical names, flags and better colors, more historical leaders or better SSRs."
+ historical_flavor_menu_b: "Choose the names for the USA and Soviet Union."
+
+ 
+ ##Submenu: neutrality
+ neutrality_menu_a:0 "Enable neutrality spirits for some countries"
+ neutrality_menu_b: "Activate stricter faction joining rules for NATO and the Warsaw Pact."
+ 
+ ##Enable/Disable Tooltip
+ ne_settings_enabled:0 "This is currently §Genabled§!."
+ ne_settings_disabled:0 "This is currently §Rdisabled§!."
+ 
+ ##Historical Settings
+ hist_settings_a:0 "-Historical Flags and Names- are currently §Rdisabled§!."
+ hist_settings_a1:0 "-Historical Flags and Names- are currently §Genabled§!."
+ hist_settings_b:0 "-Historical Leaders- are currently §Rdisabled§!."
+ hist_settings_b1:0 "-Historical Leaders- are currently §Genabled§!."
+ hist_settings_c:0 "-Better SSR Names- are currently §Rdisabled§!."
+ hist_settings_c1:0 "-Better SSR Names- are currently §Genabled§!."
+ ##Misc. Settings
+ misc_settings_a:0 "-SSRs are Puppets- is currently §Rdisabled§!."
+ misc_settings_a1:0 "-SSRs are Puppets- is currently §Genabled§!."
+ misc_settings_b:0 "-Additional Research Slot for Majors- is currently §Rdisabled§!."
+ misc_settings_b1:0 "-Additional Research Slot for Majors- is currently §Genabled§!."
+ misc_settings_c:0 ""The Old Manager" is currently §Rdisabled§!."
+ misc_settings_c1:0 ""The Old Manager" is currently §Genabled§!."
+ ##Event Music
+ misc_settings_e:0 ""Music for specific Events" is currently §Rdisabled§!."
+ misc_settings_e1:0 ""Music for specific Events" is currently §Genabled§!."
+ ##Neutrality Settings
+ hist_settings_a:0 "-Neutrality Options- are currently §Rdisabled§!."
+ hist_settings_a1:0 "-Neutrality Options- are currently §Genabled§!."
+ ##Stricter Faction Rules
+ fact_settings_a:0 "-Stricter Faction Rules- are currently §Rdisabled§!."
+ fact_settings_a1:0 "-Stricter faction Rules- are currently §Genabled§!."
+ ##SkelSa Recommended Settings
+ reco_settings_a:0 "-Recommended Settings- are currently §Rdisabled§!."
+ reco_settings_a1:0 "-Recommended Settings- are currently §Genabled§!."
+ ##Exit Menu (option B)
+ exit_settings_a:0 "You will return to the game now with your custom changes. Have fun!"
+ exit_settings_a1:0 "You will return to the game §Rwithout§! any changes. Keep in mind that it's not possible to reopen this menu after closing it."
+ exit_settings_b:0 "If you click this option all of your changes are going back to the default. Are you sure?"
  

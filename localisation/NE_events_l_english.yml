@@ -8,9 +8,9 @@
  
  
  ##INTRO FOR MOD##
- #ne_news.1.t:0 "Introduction to Better Post-War Europe"
- #ne_news.1.d:0 "Hi and thanks for subscribing to my mod. BPWE enhances and guarantees a more realistic Europe in a somehow historical playthrough. Besides some fixes like flags and names, this mod also adds around 30 various states so you can recreate the borders of Europe after the Nazi defeat. \n Additionally I've included several events to correct any bordergore and some other tweaks. All events are now dynamic and will trigger without any issues during a somehow historical playthrough.Also the mighty post-war manager is optional and you can always click them away and let horrible borders haunt you. \n And now have fun, I've already talked too much..."
- #ne_news.1.a:0 "Thanks for the info!"
+ ne_news.1.t:0 "Better Post-War Europe"
+ ne_news.1.d:0 "This mod aims to expand and enhance a historical playthrough as one of the Allied nations. Besides several new states to allow the recreation of a new world, BPWE features dozens of historical events and other content to allow the begin of the Cold War after the defeat of Nazi Germany and her allies.\nDue to the increasing lag in the lategame a focus was laid on events which happened before 1955 in our timeline. WW3 stuff is also included.\nThis mod was intended for historical playthroughs and thus ahistorical games will prevent a lot of content. Please try to keep this in mind.\nAnd now have fun!"
+ ne_news.1.a:0 "Thanks for the info!"
  
  ##PRC-PROCLAMATION##
  ne_news.2.t:0 "The Proclamation of the PRC"
@@ -77,6 +77,7 @@
  ne_news.7.e1:0 "Our people will never be one again..."
  
  ##FATE OF KOREA##
+ 
  ##Korea divided 1950
  ne_news.8.t:0 "The Division of Korea"
  ne_news.8.d:0 "After Japan was defeated, the [SOV.GetAdjective] and [USA.GetAdjective] military briefly occupied Korea, which was annexed by Japan in 1910. Since two weeks, several talks between both superpowers should define a future for the Korean peninsula and its people, but due to the frosty relation between the former allies, there has been no success.\nYesterday, a simple solution was drawn up, which suggests a division along the 38th parallel to give each nation an equal amount of territory.\nBecause of the current tensions, both parties finally agreed to split the peninsula along the 38th parallel but dismissed any ideas of a neutral, united Korea. Instead, the North and South will each get an own nation with a different ideological mindset."
@@ -108,8 +109,8 @@
  ne_news.11.c:0 "As long as they stay neutral..."
  ne_news.11.e:0 "Our new nation will thank both countries!"
  
- 
  ##KOREAN WAR##
+ 
  ##Korean War Start!
  ne_news.12.t:0 "War in Korea!"
  ne_news.12.d:0 "Several reports from Korea indicate gunfire and artillery explosions along the border of North and South Korea. According to the South Korean Defense Ministry, the DPRK has launched a large scale-offensive across the 38th parallel to "free their southern brothers". \nMultiple defenses were hastily constructed near the border, but most garrison troops are apparently already encircled. It's unclear if the [KOR.GetName] can stop the invasion, though the UN has already announced its support and American and British troops will arrive in some weeks. However, it remains unclear how the war on the peninsula will play out..."
@@ -155,7 +156,7 @@
  
  
  ##FOUNDING OF THE NEW BLOCS##
- ##Nato
+ ##NATO
  ne_news.17.t:0 "The Founding of NATO"
  ne_news.17.d:0 "Yesterday, several democratic nations met in Washington D.C., to discuss the founding of a new military defense alliance against the "Red Threat". Fearing a possible invasion of Western Europe, several nations seek protection from the US, as the [ENG.GetName] is still devastated by the last major war. In the end, 12 states agreed to be a member in this new Western alliance, called "NATO", to work together in a case of conflict with the [SOV.GetName].\nFollowing the founding of this new anti-communist alliance, [SOV.GetLeader] showed disinterest and merely stated, that NATO all in all is just a symbolic move by the western Allies to deter invented "Soviet aggression".\nMost experts expect an Eastern counterpart and additional members for the Western alliance, but this remains to be seen."
  ne_news.17.a:0 "The West stand determined..."
@@ -177,6 +178,7 @@
  
  
  ##ADD rewards and remove neutrality idea for finishing peace (Korea war!)
+ 
  
  
  ###################
@@ -304,13 +306,26 @@
  
  
  #################
- ###OTHER STUFF###
+ ###MISC  STUFF###
  #################
  
- 
+ ##Angry Hitler
  hitler_enraged_desc:0 "The Führer is now complete insane and in RAGE. Steiner hasn't carried out his counteroffensive and now the Führer is sitting in his bunker in Berlin. Will he magically turn the tide in this war or fail miserably? "
  enraged_hitler:0 "Hitler has seen better days"
-
+ 
+ ##country or global flag explanation
+ ne_strict_faction:0 "Stricter Faction Rules were enabled"
+ 
+ ##Autonomy Names
+ autonomy_satellite_sov:0 "Soviet Satellite"
+ autonomy_puppet_sov:0 "Soviet Puppet"
+ autonomy_ssr:0 "SSR"
+ 
+ ##Tech Sharing Groups
+ ne_nato_research:0 "NATO Research"
+ ne_nato_research_desc:0 "The United States and her Allies research technologies together."
+ ne_wp_research:0 "Warsaw Pact Research"
+ ne_wp_research_desc:0 "Members of the Warsaw Pact cooperate in R&D."
  
  
  ###################
@@ -334,9 +349,95 @@
  ###SETTINGS###########
  ######################
  
- ##
  
- ##
+ ##Main Main Menu; Options Menu (too much menu)
+ ne_settings_intro.1.t:0 "Better Post-War Europe: Settings"
+ ne_settings_intro.1.d:0 "Since some things I wanted to add are not suited or liked by everyone, "Better Post-War Europe" offers you the possibility to adjust the mod to your convenience. Currently, there are only a handful of options though this might change in the future. Most settings have a tooltip when you hover with the mouse over them in addition to the event descriptions so there should be no problem to know what each one does.\nIt's recommended to check out the following settings as they will be permanent throughout your game and could make your playthrough more enjoyable..."
+ ne_settings_intro.1.a:0 "Flavour Settings"
+ ne_settings_intro.1.b:0 "Neutrality and Faction Settings"
+ ne_settings_intro.1.c:0 "Misc. Settings"
+ ne_settings_intro.1.e:0 "Recommended Settings"
+ ne_settings_intro.1.f:0 "Exit"
+ 
+ #Second menu; Choose between historical Names and USA/USSR
+ ne_settings_intro.2.t:0 "BPWE: Historical Names and Flags and Alternative Names for the USA/USSR"
+ ne_settings_intro.2.d:0 "This is the submenu of flavor settings. You can now choose between name changes for the USA/USSR or historical names/flags for some countries. Which one do you want to change first?"
+ ne_settings_intro.2.a:0 "Historical Options"
+ ne_settings_intro.2.b:0 "Names of the USSR/USA"
+ ne_settings_intro.2.c:0 "Return to the menu"
+ 
+ #Third Menu; choose between neutrality and factions
+ ne_settings_intro.3.t:0 "BPWE: Neutrality and Faction Settings"
+ ne_settings_intro.3.d:0 "In this submenu you can decide over various neutrality and faction settings! Which one do you want to change first?"
+ ne_settings_intro.3.a:0 "Neutrality Settings"
+ ne_settings_intro.3.b:0 "Faction Settings"
+ ne_settings_intro.3.c:0 "Return to the menu"
+ 
+ ##Fourth Menu; Misc Settings 
+ ne_settings_intro.4.t:0 "BPWE: Miscellaneous Settings"
+ ne_settings_intro.4.d:0 "Here you can find some things to change which don't really belong to a specific category.\n\nBeneath you can read a description about what each setting does in detail:\n\n"SSRs become Puppets" - > The USSR will be split up into their individual Republics. Every former SSR will remain a puppet of the RFSFR though and a new faction will be founded to replace the Comintern. Mongolia and Tannu Tuva will only get a guarantee from Russia.\n\n"Additional Research Slot for all Majors" - > Every country which is considered to be a major by this game (Germany, Italy, France, UK, Soviet Union, United States, China and Japan)will get an additional research slot from the start. This will allow some countries to conduct better historical research but also leads to a 7 research slot USA. It's recommended to be enabled when playing with technology tree overhauls.\n"The Old Manager" - > You can ignore this for now\n"Enable Music for specific Events" - > Music will be played when a specific event in world history, like the start of the Sino-Japanese War, happens in your game. Currently, only a few events support this but more are definitely planned...\nAlso, hover over the buttons to see which option is enabled right now."
+ ne_settings_intro.4.a:0 "Enable SSR puppets!"
+ ne_settings_intro.4.a1:0 "Disable SSR puppets!"
+ ne_settings_intro.4.b:0 "Give every major power an additional research slot!"
+ ne_settings_intro.4.b1:0 "Remove the additional research slot!"
+ ne_settings_intro.4.c:0 "Enable the old manager!"
+ ne_settings_intro.4.c1:0 "Disable the old manager!"
+ ne_settings_intro.4.e:0 "Enable music!"
+ ne_settings_intro.4.e1:0 "Disable music!"
+ ne_settings_intro.4.f:0 "Exit to Main Menu"
+ 
+ #Fifth Menu; SKELSAS RECOMMENDED CHANGES
+ ne_settings_intro.5.t:0 "BPWE: Recommended Settings"
+ ne_settings_intro.5.d:0 "This is a quick way to enable some recommended settings by the mod author to have an authentic and somewhat historical playthrough. If you wish to deactivate them after you clicked the first option you might go to Exit > Revert all Changes.\n\n\nAll of the following will be enabled:\n\n- Historical Flags and Names for Countries\n\n- Historical Leaders\n\n- Long Country Names for the USSR and USA\n\n- Neutrality Spirits\n\n- Stricter Faction Rules for joining NATO or the Warsaw Pact\n\n- Music for some specific Events\n\n- Additional Research Slot for all Major Nations\n\n"
+ ne_settings_intro.5.a:0 "Enable the recommended settings!"
+ ne_settings_intro.5.b:0 "Disable the recommended settings!"
+ ne_settings_intro.5.c:0 "Exit to Main Menu"
+ 
+ #Sixth menu; EXIT MENU
+ ne_settings_intro.6.t:0 "BPWE: Exit"
+ ne_settings_intro.6.d:0 "Here you can now apply all the changes you did and return to the game or reset the settings to default. Please keep in mind that it's not possible to revert most stuff once you continue playing."
+ ne_settings_intro.6.a:0 "Apply the changes and return to the game!"
+ ne_settings_intro.6.a1:0 "Return to the game with no changes!"
+ ne_settings_intro.6.b:0 "Revert all adjustments I did"
+ ne_settings_intro.6.c:0 "Go back, I'm not finished yet!"
+ 
+ ##OPTIONS: Flags and names 
+ ne_settings.1.t:0 "BPWE: Historical Flavour"
+ ne_settings.1.d:0 "The historical settings aim to provide realistic and hsitorical flags, names and leaders. Through this event you can activate the historical accurate flags, country names and sometimes the color of several countries. In total around 25 countries will see a change, the most important ones will be Germany and Japan. Additionally, flag changes which happened historically between 1936 and 1948 will also happen via event.\nThe "Better Leaders" option will replace some head of states to more historical ones. For example, Boleslaw Bierut will now lead a Communist Poland.\nThe last option allows you to to change the communist names of the 14 Soviet Republics to end with SSR (Soviet Socialist Republic) either with their standard color or a reddish tone similar to that of the motherland. Just hover over the buttons to see a the full list of changes!"
+ ne_settings.1.a:0 "Enable historical names and names!"
+ ne_settings.1.a1:0 "Disable historical names and names!"
+ ne_settings.1.b:0 "Disable historical leaders!"
+ ne_settings.1.b1:0 "Disable historical leaders!"
+ ne_settings.1.c:0  "Enable the SSR endings!"
+ ne_settings.1.c1:0 "Disable the SSR endings!"
+ ne_settings.1.e:0 "I'm not interested in these settings..."
+ ne_settings.1.e1:0 "Return to the main menu"
+ 
+ ##OPTIONS: USA and USSR Names
+ ne_settings.2.t:0 "BPWE: Names of the USSR and USA"
+ ne_settings.2.d:0 "Due to the indecisiveness of this mod's creator towards country names, you can now choose the country names for the USA and USSR. Hover over the buttons to see what each button does. Keep in mind that the long country names may overlap in news events, while the short versions can look weird on the political map.\nSo it's your choice!"
+ ne_settings.2.a:0 "Choose abbreviations!"
+ ne_settings.2.b:0 "Choose long country names!"
+ ne_settings.2.c:0 "Keep vanilla!"
+ ne_settings.2.c1:0 "Return to the main menu"
+ ne_settings.2.e:0 "Revert to vanilla!"
+ 
+ ##OPTIONS: Neutrality settings
+ ne_settings.3.t:0 "BPWE: Force some contries to stay neutral"
+ ne_settings.3.d:0 "Currently in most games, neutral nations like Sinkiang, Switzerland or Turkey have no difficulties joining a faction even in historical mode once the world tension is high enough. This leads to unhistorical and unrealistic scenarios and usually screws up the flow of World War II.\nThe following option will give some nations like for instance Switzerland, Sweden or Turkey a neutrality spirit to avoid any faction joining during the war. The spirits will be removed should any country be dragged into a defensive conflict however.\nSpain is also handled via this though their neutrality is handled via events and world situation."
+ ne_settings.3.a:0 "Activate the neutrality spirits!"
+ ne_settings.3.b:0  "Deactivate the neutrality spirits!"
+ ne_settings.3.c:0 "Return"
+ 
+ ##OPTIONS: Faction Settings 
+ ne_settings.4.t:0 "BPWE: Factions"
+ ne_settings.4.d:0 "With the options below you can enable stricter join rules for NATO or the Warsaw Pact.\nThe stricter rules for NATO/WP are obviously only applied once NATO or the Warsaw Pact are created and mean that not every democratic country can join NATO, for instance, instantly. Instead, they would have to achieve a lot of party popularity. Several national spirits help you to see when a country would be ready to join. If they are a great power, Players can invite some countries earlier into their faction via the diplomacy slots while any AI-only faction requires any potential new members to have a really high party popularity among some other minor conditions. Historical invitations are done via event however.\nChoose now what you want."
+ ne_settings.4.a:0 "Enable historical NATO/PACT"
+ ne_settings.4.a1:0 "Disable the special rules for joining NATO/PACT"
+ #ne_settings.4.b:0 "" ##Was Japan's Co-Prosperity Sphere
+ #ne_settings.4.b1:0 "" ##Was Japan's Co-Prosperity Sphere
+ ne_settings.4.e:0 "Exit to Main Menu"
+ 
  
  
  #############################
@@ -350,7 +451,6 @@
  ne.1.b:0 "Reorganize the rest of Europe" # War spoils for the victorious powers + Reward the countries who had to suffer
  ne.1.c:0 "Descend the Iron Curtain NOW!"
  ne.1.e:0 "Close and go back to the game"
- 
  
  
  
