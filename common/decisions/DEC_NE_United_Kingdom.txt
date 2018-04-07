@@ -1,6 +1,6 @@
 ENG_historical_military_operations = { 
 
-	ENG_the_peking_plan = {
+	ENG_the_peking_plan = {  ##The Peking Plan Event
 	
 		icon = eng_poland_flag
 
@@ -21,7 +21,6 @@ ENG_historical_military_operations = {
 				POL = { has_opinion = { target = FROM value > 39 } }
 			}
 			hidden_trigger = { 
-				GER = { focus_progress = { focus = GER_danzig_or_war progress > 0.85 } }
 				NOT = { POL = { has_war_with = GER } }
 			}
 		}
@@ -40,7 +39,7 @@ ENG_historical_military_operations = {
 	
 		visible = {
 			GER = {
-				focus_progress = { focus = GER_danzig_or_war progress > 0.01 }
+				focus_progress = { focus = GER_danzig_or_war progress > 0.8 }
 				OR = {
 					NOT = { is_in_faction_with = POL }
 					NOT = { is_in_faction_with = ENG }
@@ -65,7 +64,7 @@ ENG_historical_military_operations = {
 		}
 		
 		complete_effect = {
-			POL = { country_event = { days = 1 id = ne_misc.22 } }
+			POL = { country_event = { id = ne_misc.22 hours = 12 } }
 		}
 	}
 
@@ -298,7 +297,9 @@ ENG_historical_military_operations = {
     }
 
 }
-
+##############################################
+########New Europe Historical Missions########
+##############################################
 ENG_historical_missions_ne = { ##New Europe Historical Missions
 
     ENG_the_english_poland_alliance = {
@@ -317,7 +318,7 @@ ENG_historical_missions_ne = { ##New Europe Historical Missions
 						is_in_faction_with = FROM
 						has_guaranteed = POL
 					}
-					FROM = { has_guaranteed = POL }
+					has_guaranteed = POL
 				}
 				
 			}
