@@ -1,4 +1,8 @@
 ﻿#testing stuff
+##Takee, write down here sth: 
+##SkelSa, write down here sth: 
+##Takee, write down here sth again: 
+
 add_namespace = netest
 add_namespace = wtt_news
 
