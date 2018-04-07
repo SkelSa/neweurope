@@ -5430,6 +5430,7 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			has_government = fascism
+			hidden_trigger = { is_historical_focus_on = no }
 		}
 		x = 47
 		y = 0
