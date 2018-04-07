@@ -23,6 +23,7 @@ news_event = {
 	
 }
 
+##Check this event in MP
 news_event = {
 	id = ne_news.2
 	title = ne_news.2.t  #PRC Proclamation
@@ -35,7 +36,11 @@ news_event = {
 	trigger = {
 	
 		PRC = { has_completed_focus = PRC_proclaim_the_peoples_republic }
+		NOT = { has_global_flag = ne_prc_proclaimed }
+	}
 	
+	immediate = {
+		has_global_flag = ne_prc_proclaimed	
 	}
 	
 	option = {
@@ -75,7 +80,7 @@ news_event = {
 
 news_event = {
 	id = ne_news.3
-	title = ne_news.3.t  #Nazi dead
+	title = ne_news.3.t  #Hitler is dead
 	desc = ne_news.3.d
 	picture = GFX_hitler_dead
 	

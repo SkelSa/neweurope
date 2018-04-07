@@ -3,5 +3,5 @@
 graphical_culture = african_gfx
 graphical_culture_2d = commonwealth_2d
 
-color = { 80  75  255 }
-color_ui = { 80  75  255 }
+color = rgb { 80  75  255 }
+color_ui = rgb { 80  75  255 }

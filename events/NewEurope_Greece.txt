@@ -549,7 +549,7 @@ country_event = {
 
 ##KKE responds
 country_event = {
-	id = ne_civil_war.2
+	id = ne_greek_civil_war.2
 	title = event.1.t
 	desc =  "[GetDate]"
 	picture = GFX_somepic
