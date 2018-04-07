@@ -1,4 +1,4 @@
-state={
+﻿state={
 	id=820
 	name="STATE_820"
 	manpower=1382352
@@ -10,7 +10,7 @@ state={
 	history={
 		owner = GRE
 		victory_points = {
-			13227 10
+			13227 8
 		}
 		victory_points = {
 			4109 10
