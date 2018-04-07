@@ -40,7 +40,7 @@ news_event = {
 	}
 	
 	immediate = {
-		has_global_flag = ne_prc_proclaimed	
+		set_global_flag = ne_prc_proclaimed	
 	}
 	
 	option = {

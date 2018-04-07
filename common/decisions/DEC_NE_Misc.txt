@@ -1,4 +1,54 @@
 ##Misc. Decisions come here
+
+
+
+##Test Event
+NE_test_decision = {
+
+
+	test_decision = {		
+			
+			
+			icon = GFX_somepic		
+			cost = 1
+		
+		
+			ai_will_do = {
+				factor = 0
+				
+			}
+	
+	
+			allowed = {
+				tag = PRC			
+			}
+					
+		
+			available = {
+				always = yes
+				
+			}
+				
+			
+			visible = {
+				always = yes
+								
+			}
+		
+
+			complete_effect = {
+				complete_national_focus = PRC_proclaim_the_peoples_republic 
+			}
+								
+
+	}
+	
+	
+	
+}
+
+
+
 Generic_ne_demilitariz = {
 
 	ne_dimilitarization = {

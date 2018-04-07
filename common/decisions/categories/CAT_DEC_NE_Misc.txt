@@ -1,4 +1,14 @@
 ##Different types of decisions for different countries
+
+######################NE_Test_Decisions###################
+NE_test_decision = {
+
+	allowed = {
+		always = yes
+	}
+	
+}
+
 ######################Iran Invasion###################
 NE_waroperation_iraqinvasion = {
 
