@@ -179,44 +179,6 @@ country_event = {
 }
 
 
-# PRC - PRC declared
-news_event = {
-	id = wtt_news.37
-	title = wtt_news.37.t
-	desc = wtt_news.37.desc
-	picture = GFX_hitler_dead
-
-	is_triggered_only = yes
-	hidden = yes
-	
-	option = {
-		name = wtt_news.37.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.37.b
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				original_tag = PRC
-			}
-		}
-	}
-	option = {
-		name = wtt_news.37.d
-		trigger = {
-			NOT = {
-				original_tag = CHI
-				original_tag = PRC
-				is_literally_china = yes
-			}
-		}
-	}
-}
-
-
 ##Random event executed at game start
 country_event = {
 
