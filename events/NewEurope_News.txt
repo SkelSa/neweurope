@@ -23,24 +23,24 @@ news_event = {
 	
 }
 
-##Check this event in MP
+
 news_event = {
 	id = ne_news.2
 	title = ne_news.2.t  #PRC Proclamation
 	desc = ne_news.2.d
 	picture = GFX_prc_proclamation
 	
-	major = yes
+	#major = yes
 	#fire_only_once = yes
 	
 	trigger = {
 	
 		PRC = { has_completed_focus = PRC_proclaim_the_peoples_republic }
-		NOT = { has_global_flag = ne_prc_proclaimed }
+		NOT = { has_country_flag = ne_prc_proclaimed }
 	}
 	
 	immediate = {
-		set_global_flag = ne_prc_proclaimed	
+		set_country_flag = ne_prc_proclaimed	
 	}
 	
 	option = {
@@ -77,6 +77,7 @@ news_event = {
 	}
 	
 }
+
 
 news_event = {
 	id = ne_news.3
