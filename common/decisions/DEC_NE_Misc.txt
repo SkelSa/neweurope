@@ -6,6 +6,7 @@
 NE_test_decision = {
 
 
+	##Test-Event 1
 	test_decision = {		
 			
 			
@@ -25,14 +26,13 @@ NE_test_decision = {
 					
 		
 			available = {
-				always = yes
+				has_government = fascism		
 				
 			}
 				
 			
 			visible = {
-				always = yes
-								
+				has_government = fascism								
 			}
 		
 
@@ -44,15 +44,7 @@ NE_test_decision = {
 	}
 	
 	
-	
-}
-
-
-
-##Test Event
-NE_test_decision = {
-
-
+	##Test Event 2
 	test_decision_2 = {		
 			
 			fire_only_once = yes
@@ -62,7 +54,7 @@ NE_test_decision = {
 		
 		
 			ai_will_do = {
-				factor = 100
+				factor = 0
 				
 			}
 	
@@ -73,13 +65,13 @@ NE_test_decision = {
 					
 		
 			available = {
-				always = yes
-				
+				has_government = neutrality
+				is_puppet = no
 			}
 				
 			
 			visible = {
-				always = yes
+				has_government = neutrality
 								
 			}
 		
@@ -94,10 +86,6 @@ NE_test_decision = {
 	
 	
 }
-
-
-
-
 
 
 

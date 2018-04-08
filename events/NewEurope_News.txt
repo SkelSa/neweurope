@@ -24,9 +24,10 @@ news_event = {
 }
 
 
+#PRC Proclamation
 news_event = {
 	id = ne_news.2
-	title = ne_news.2.t  #PRC Proclamation
+	title = ne_news.2.t  
 	desc = ne_news.2.d
 	picture = GFX_prc_proclamation
 	
@@ -36,12 +37,16 @@ news_event = {
 	trigger = {
 	
 		PRC = { has_completed_focus = PRC_proclaim_the_peoples_republic }
+		
 		NOT = { has_global_flag = ne_prc_proclaimed }
 	}
+	
 	
 	immediate = {
 		set_global_flag = ne_prc_proclaimed	
 	}
+	
+	mean_time_to_happen = { days = 2 }
 	
 	option = {
 		name = ne_news.2.a
@@ -79,9 +84,56 @@ news_event = {
 }
 
 
+
+#TEST NEWS EVENT
+news_event = {
+	id = ne_news.105
+	title = ne_news.105.t
+	desc = ne_news.105.d
+	picture = GFX_news_event_french_parade
+	
+	major = yes
+	
+	trigger = {
+		2 = { is_controlled_by = FRA }
+		2 = { is_owned_by = ITA }
+		FRA = { has_war_with = ITA }
+		NOT = { has_global_flag = fall_of_rome_bhu }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_rome_bhu
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.105.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+				TAG = ITA
+			}
+		}
+	}
+	option = {
+		name = ne_news.105.b
+		trigger = { TAG = FRA }
+	}
+	option = {
+		name = ne_news.105.c
+		trigger = { TAG = ITA }
+	}
+}
+
+
+
+ #The Fuhrer is dead
 news_event = {
 	id = ne_news.3
-	title = ne_news.3.t  #Hitler is dead
+	title = ne_news.3.t 
 	desc = ne_news.3.d
 	picture = GFX_hitler_dead
 	
@@ -180,52 +232,6 @@ news_event = {
 		}
 	}
 }
-
-#TEST NEWS EVENT
-news_event = {
-	id = ne_news.105
-	title = ne_news.105.t
-	desc = ne_news.105.d
-	picture = GFX_news_event_french_parade
-	
-	major = yes
-	
-	trigger = {
-		2 = { is_controlled_by = FRA }
-		2 = { is_owned_by = ITA }
-		FRA = { has_war_with = ITA }
-		NOT = { has_global_flag = fall_of_rome_bhu }
-	}
-	
-	immediate = {
-		set_global_flag = fall_of_rome_bhu
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = news.105.a
-		trigger = {
-			NOT = {
-				TAG = FRA
-				TAG = ITA
-			}
-		}
-	}
-	option = {
-		name = ne_news.105.b
-		trigger = { TAG = FRA }
-	}
-	option = {
-		name = ne_news.105.c
-		trigger = { TAG = ITA }
-	}
-}
-
-
-
 
 
 ##Führer is in RAGE
@@ -358,14 +364,7 @@ news_event = {
 	option = {
 		name = ne_news.5.a
 		trigger = { 
-		
-		#OR = {
-		#	has_government = fascism
-		#	has_government = neutrality
-		#	has_government = communism
-		#	has_government = democratic
-		#}
-		
+
 		
 		NOT = {	
 			tag = WGR
@@ -404,7 +403,7 @@ news_event = {
 
 		
 	}
-	##soviets
+	##Soviets
 	option = {
 		name = ne_news.5.c
 			
@@ -418,7 +417,7 @@ news_event = {
 
 	}
 	
-	##Germans
+	##German nations
 	option = {
 		name = ne_news.5.e
 			
@@ -548,7 +547,7 @@ news_event = {
 	title = ne_news.7.t  
 	desc = ne_news.7.d
 	
-	##Alternative description for Trotsky
+	##Alternative title and description for Trotsky
 	title = {
 		text =  ne_news.7.tt
 		trigger = {
@@ -567,21 +566,13 @@ news_event = {
 	
 	picture = GFX_stalin_notes
 	
-	major = yes
-	
+	major = yes	
 	is_triggered_only = yes
 
 	##generic
 	option = {
 		name = ne_news.7.a
 		trigger = { 
-		
-		#OR = {
-		#	has_government = fascism
-		#	has_government = neutrality
-		#	has_government = communism
-		#	has_government = democratic
-		#}
 		
 		
 			NOT = {		
@@ -636,7 +627,7 @@ news_event = {
 
 	}
 	
-	##germans
+	##Germans
 	option = {
 		name = ne_news.7.e
 			
@@ -675,7 +666,6 @@ news_event = {
 		}
 	
 	major = yes
-	
 	is_triggered_only = yes
 
 	##generic
@@ -776,7 +766,6 @@ news_event = {
 	picture = GFX_korea_1950
 	
 	major = yes
-	
 	is_triggered_only = yes
 
 	##generic
@@ -951,8 +940,7 @@ news_event = {
 	desc = ne_news.11.d
 	picture = GFX_korea_unified
 	
-	major = yes
-	
+	major = yes	
 	is_triggered_only = yes
 
 	##generic
@@ -1040,8 +1028,7 @@ news_event = {
 	desc = ne_news.10.d
 	picture = GFX_korea_occupation
 	
-	major = yes
-	
+	major = yes	
 	is_triggered_only = yes
 
 	##generic
@@ -1087,7 +1074,7 @@ news_event = {
 
 		
 	}
-	##soviets + brother nations
+	##soviets + comintern/wp nations
 	option = {
 		name = ne_news.10.c
 			
@@ -1117,8 +1104,7 @@ news_event = {
 	desc = ne_news.12.d
 	picture = GFX_korea_war_start
 	
-	major = yes
-	
+	major = yes	
 	is_triggered_only = yes
 
 	##generic
@@ -1194,8 +1180,7 @@ news_event = {
 	desc = ne_news.13.d
 	picture = GFX_korea_war_ceasefire
 	
-	major = yes
-	
+	major = yes	
 	is_triggered_only = yes
 	
 	immediate = {
@@ -1229,7 +1214,7 @@ news_event = {
 		
 	}
 	
-	##south koreans
+	##south Koreans
 	option = {
 		name = ne_news.13.b
 			
@@ -1259,7 +1244,7 @@ news_event = {
 
 	}
 	
-	## north koreans
+	## north Koreans
 	option = {
 		name = ne_news.13.e
 			
@@ -1434,7 +1419,7 @@ news_event = {
 
 	}
 	
-	##communists
+	##Communists
 	option = {
 		name = ne_news.15.c
 			
@@ -1445,7 +1430,7 @@ news_event = {
 
 	}
 	
-	## north koreans
+	## north Koreans
 	option = {
 		name = ne_news.15.e
 			
@@ -1546,7 +1531,7 @@ news_event = {
 
 	}
 	
-	## south koreans
+	## south Koreans
 	option = {
 		name = ne_news.16.e
 			
@@ -1582,7 +1567,6 @@ news_event = {
 	picture = GFX_nato
 	
 	major = yes
-	
 	is_triggered_only = yes
 
 	##generic
@@ -1668,7 +1652,6 @@ news_event = {
 	picture = GFX_warsaw_pact
 	
 	major = yes
-	
 	is_triggered_only = yes
 
 	##generic
@@ -1813,6 +1796,8 @@ news_event = {
 			has_global_flag = germany_divided
 			has_global_flag = germany_partitioned
 		}
+		
+		NOT = { has_global_flag = ww3_soviets }
 	}
 	
 	immediate = {
@@ -1888,6 +1873,8 @@ news_event = {
 			has_global_flag = germany_divided
 			has_global_flag = germany_partitioned
 		}
+		
+		NOT = { has_global_flag = ww3_americans }
 	}
 	
 	immediate = {
@@ -2117,7 +2104,13 @@ news_event = {
 			}
 			is_faction_leader = no
 		}
+		
+		NOT = { has_global_flag = news_event_communist_victory }
 
+	}
+	
+	immediate = {	
+		set_global_flag = news_event_communist_victory
 	}
 	
 	
@@ -2196,8 +2189,15 @@ news_event = {
 				has_government = democratic			
 			}
 		}
+		
+		NOT = { has_global_flag = news_event_democratic_victory }
 	
 	}
+	
+	immediate = {	
+		set_global_flag = news_event_democratic_victory
+	}
+	
 	
 	option = {	##neutrality and fascists
 		name = ne_news.26.a
@@ -2267,8 +2267,16 @@ news_event = {
 			#SOV = { has_full_control_of_state = PREV }
 			#divisions_in_state = { state = 605 size > 0 } 
 		}
+		
+		NOT = { has_global_flag = news_event_soviets_german_soil }
 	
 	}
+	
+	
+	immediate = {	
+		set_global_flag = news_event_soviets_german_soil
+	}
+	
 	
 	option = {	##neutrality and fascists
 		name = ne_news.27.a
@@ -2401,10 +2409,16 @@ news_event = {
 			
 		}
 
-	
+		NOT = { has_global_flag = news_event_elbe_day }
 		
 	}
+	
+	
+	immediate = {
+		set_global_flag = news_event_elbe_day	
+	}
 
+	
 	option = {
 		name = ne_news.29.a
 		trigger = {
@@ -2464,7 +2478,6 @@ news_event = {
 	# picture = GFX_newfoundland_transfer
 	
 	is_triggered_only = yes
-
 	major = yes
 	
 	option = {
@@ -2504,7 +2517,7 @@ news_event = {
 	id = ne_news.31
 	title = ne_news.31.t
 	desc = ne_news.31.d
-	# picture = GFX_naziarefuckedup
+	# picture = GFX_Auschwitz
 	
 	major = yes
 	is_triggered_only = yes
@@ -2596,7 +2609,7 @@ news_event = {
 	}
 }
 
-####SOVIETS LAND IN AMERICA####
+####Soviets land in the US####
 
 ####Fall of Moscow Allies/vanilla event####
 
@@ -2637,6 +2650,7 @@ news_event = {
 		
 		}
 		has_global_flag = ne_soviet_invasion_poland
+		
 		NOT = { has_global_flag = ne_polish_collapse }
 
 	}
@@ -2721,6 +2735,8 @@ news_event = {  ##The Academy Awards aka 'Oscar'
 	
 	mean_time_to_happen = { days = 269 } ## 1936.3.6 - 3 months (90 days + 6 days in March); 365-96=269
 
+	fire_only_once = yes
+	
 	trigger = {
 		tag = USA
 		date > 1936.3.1
