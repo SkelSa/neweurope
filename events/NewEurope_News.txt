@@ -30,17 +30,17 @@ news_event = {
 	desc = ne_news.2.d
 	picture = GFX_prc_proclamation
 	
-	#major = yes
+	major = yes
 	#fire_only_once = yes
 	
 	trigger = {
 	
 		PRC = { has_completed_focus = PRC_proclaim_the_peoples_republic }
-		NOT = { has_country_flag = ne_prc_proclaimed }
+		NOT = { has_global_flag = ne_prc_proclaimed }
 	}
 	
 	immediate = {
-		set_country_flag = ne_prc_proclaimed	
+		set_global_flag = ne_prc_proclaimed	
 	}
 	
 	option = {
