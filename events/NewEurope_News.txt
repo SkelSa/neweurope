@@ -2689,6 +2689,153 @@ news_event = {
 ##ne_news.48: Communists win the Civil War
 ##ne_news.49: Royalists win the Civil War
 
+news_event = {  ##TWA Flight 1 Crash
+	id = ne_news.50
+	title = ne_news.50.t  
+	desc = ne_news.50.d
+	picture = GFX_news_event_twa_crash ##an image will be added in the future
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1936.4.8
+		date < 1936.5.1  ##unfortunately, hoi can't trigger an event instantly, so the dates of the news events are pretty unhistorical 
+	}
+
+	option = {
+		name = ne_news.50.a
+	}
+
+	
+}
+
+#########################################
+news_event = {  ##The Academy Awards aka 'Oscar'
+	id = ne_news.51
+	title = ne_news.51.t  
+	desc = ne_news.51.d  ##descriptionplease
+	picture = GFX_news_event_oscar ##an image will be added in the future
+	
+	mean_time_to_happen = { days = 269 } ## 1936.3.6 - 3 months (90 days + 6 days in March); 365-96=269
+
+	trigger = {
+		tag = USA
+		date > 1936.3.1
+	}
+
+	option = {
+		name = ne_news.51.a
+	}
+
+	
+}
+
+#########################################
+news_event = {  ##General Motors sit-down strike started
+	id = ne_news.52
+	title = ne_news.52.t  
+	desc = ne_news.52.d ##descriptionplease
+	picture = GFX_news_event_zabastovka ##an image will be added in the future
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1936.12.25
+		date < 1937.1.28
+	}
+
+	option = {
+		name = ne_news.52.a
+		add_war_support = -0.01
+		add_stability = -0.01
+	}
+
+	
+}
+
+#########################################
+news_event = {  ##General Motors sit-down strike finished
+	id = ne_news.53
+	title = ne_news.53.t  
+	desc = ne_news.53.d ##descriptionplease
+	picture = GFX_news_event_zabastovka ##an image will be added in the future
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1937.2.10
+		date < 1937.3.11
+	}
+
+	option = {
+		name = ne_news.53.a
+		add_war_support = 0.01
+		add_stability = 0.01
+	}
+
+
+}
+
+#########################################
+news_event = {  ##The Golden Gate Bridge opened in San Francisco
+	id = ne_news.54
+	title = ne_news.54.t  
+	desc = ne_news.54.d ##descriptionplease
+	picture = GFX_news_event_golden_bridge ##an image will be added in the future
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1937.5.26
+		date < 1937.6.28
+		378 = { is_controlled_by = USA }
+	}
+
+	option = {
+		name = ne_news.54.a
+		add_stability = 0.04
+		hidden_effect = {
+			378 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		custom_effect_tooltip = the_golden_gate_bridge
+	}
+
+	
+}
+
+#########################################
+news_event = {  ##Orson Welles performed a broadcast of The War of the Worlds (the best prank in history)
+	id = ne_news.55
+	title = ne_news.55.t  
+	desc = ne_news.55.d
+	picture = GFX_news_event_warofthelords ##an image will be added in the future
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1938.10.29
+		date < 1938.12.1
+	}
+
+	option = {
+		name = ne_news.55.a
+		add_stability = -0.01
+		add_war_support = -0.04
+	}
+
+	
+}
 
 
 

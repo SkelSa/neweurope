@@ -1439,4 +1439,27 @@
  ne_news.46.b:0 "And again Poland vanishes from Europe..."
  ne_news.46.c:0 "The mistakes of 1920 are undone!"
  ne_news.46.e:0 "This nation had no place in history anyways."
- 
+
+ ne_news.50.t:0 "Trans World Airlines 1 crash"  ##TWA Flight 1 Crash
+ ne_news.50.d:0 "Transcontinental and Western Airways Flight 1 (TWA 1), a Douglas DC-2, crashed into Cheat Mountain, near Uniontown, Pennsylvania, approximately 10:20 a.m. Eastern Standard Time on April 7, 1936, killing 12 of the 14 passengers and crew aboard. Pilot Otto Ferguson lost contact with the airport's radio navigation signal, and tracked several miles in a southwestern line off course. Fearing icing conditions, he descended in an attempt to find visual landmarks for navigation. When the plane crashed it was aiming in a northern flight direction indicating that the pilot finally realized he had tracked south of his flightplan and may have been trying to correct it (the flight should have been aimed due west not north or hours prior south-southwest)."
+ ne_news.50.a:0 "We should pay more attention to this"
+
+ ne_news.51.t:0 "The Academy Awards"  ##The Academy Awards aka 'Oscar'
+ ne_news.51.d:0 "The Academy Awards are a set of 24 awards for artistic and technical merit in the American film industry, given annually by the Academy of Motion Picture Arts and Sciences (AMPAS), to recognize excellence in cinematic achievements as assessed by the Academy's voting membership. The various category winners are awarded a copy of a golden statuette, officially called the "Academy Award of Merit", which has become commonly known by its nickname "Oscar". The sculpture was created by George Stanley. The awards, first presented in 1929 at the Hollywood Roosevelt Hotel, are overseen by AMPAS."
+ ne_news.51.a:0 "Good"
+
+ ne_news.52.t:0 "General Motors sit-down strike"  ##General Motors sit-down strike started
+ ne_news.52.d:0 "In one of the first sit-down strikes in the United States, autoworkers occupy the General Motors Fisher Body Plant Number One in Flint, Michigan. The autoworkers were striking to win recognition of the United Auto Workers (UAW) as the only bargaining agent for GM’s workers; they also wanted to make the company stop sending work to non-union plants and to establish a fair minimum wage scale, a grievance system and a set of procedures that would help protect assembly-line workers from injury."
+ ne_news.52.a:0 "The union must be recognized"
+
+ ne_news.53.t:0 "General Motors sit-down strike"  ##General Motors sit-down strike finished
+ ne_news.53.d:0 "Sitting strikes ended with the union of the UAE"
+ ne_news.53.a:0 "Good"
+
+ ne_news.54.t:0 "The Golden Gate Bridge opened in San Francisco"  ##The Golden Gate Bridge opened in San Francisco
+ ne_news.54.d:0 "San Francisco’s Golden Gate Bridge, a stunning technological and artistic achievement, opens to the public after five years of construction. On opening day–“Pedestrian Day”–some 200,000 bridge walkers marveled at the 4,200-foot-long suspension bridge, which spans the Golden Gate Strait at the entrance to San Francisco Bay and connects San Francisco and Marin County."
+ ne_news.54.a:0 "Okay"
+
+ ne_news.55.t:0 "War Of The Worlds - Radio Broadcast"  ##Orson Welles performed a broadcast of The War of the Worlds (the best prank in history)
+ ne_news.55.d:0 "Orson Welles causes a nationwide panic with his broadcast of “War of the Worlds”—a realistic radio dramatization of a Martian invasion of Earth. Orson Welles was only 23 years old when his Mercury Theater company decided to update H.G. Wells’ 19th-century science fiction novel War of the Worlds for national radio. Despite his age, Welles had been in radio for several years, most notably as the voice of “The Shadow” in the hit mystery program of the same name. “War of the Worlds” was not planned as a radio hoax, and Welles had little idea of the havoc it would cause."
+ ne_news.55.a:0 "Poor people"

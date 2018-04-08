@@ -385,7 +385,31 @@ spriteTypes = {
 		name = "GFX_"
 		texturefile = "gfx/event_pictures/report_event_.dds"
 	}
-	
+
+	spriteType = {		
+		name = "GFX_news_event_twa_crash"
+		texturefile = "gfx/event_pictures/news_event_twa_crash.dds"
+	}
+
+	spriteType = {		
+		name = "GFX_news_event_oscar"
+		texturefile = "gfx/event_pictures/news_event_oscar.dds"
+	}
+
+	spriteType = {		
+		name = "GFX_news_event_zabastovka"
+		texturefile = "gfx/event_pictures/news_event_zabastovka.dds"
+	}
+
+	spriteType = {		
+		name = "GFX_news_event_golden_bridge"
+		texturefile = "gfx/event_pictures/news_event_golden_bridge.dds"
+	}
+
+	spriteType = {		
+		name = "GFX_news_event_warofthelords"
+		texturefile = "gfx/event_pictures/news_event_warofthelords.dds"
+	}
 	
 
 	
