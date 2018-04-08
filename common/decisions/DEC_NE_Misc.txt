@@ -14,7 +14,7 @@ NE_test_decision = {
 		
 		
 			ai_will_do = {
-				factor = 100
+				factor = 0
 				
 			}
 	
@@ -46,6 +46,58 @@ NE_test_decision = {
 	
 	
 }
+
+
+
+##Test Event
+NE_test_decision = {
+
+
+	test_decision_2 = {		
+			
+			fire_only_once = yes
+			
+			icon = GFX_somepic		
+			cost = 1
+		
+		
+			ai_will_do = {
+				factor = 100
+				
+			}
+	
+	
+			allowed = {
+				tag = PAR			
+			}
+					
+		
+			available = {
+				always = yes
+				
+			}
+				
+			
+			visible = {
+				always = yes
+								
+			}
+		
+
+			complete_effect = {			
+				news_event = { id = ne_news.6 } 
+			}
+								
+
+	}
+	
+	
+	
+}
+
+
+
+
 
 
 
