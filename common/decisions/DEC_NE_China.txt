@@ -82,7 +82,7 @@ war_measures = {
 					limit = {
 						NOT = { tag = CHI }
 					}
-					add_opinion_modifier = { target = CHI modifier = potop_world }
+					add_opinion_modifier = { target = CHI modifier = potop_jap }
 					news_event = { hours = 6 id = ne_news.56 }
 				}
 			}
