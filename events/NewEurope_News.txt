@@ -188,7 +188,7 @@ news_event = {
 	
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 2 }
 	
 	option = {
 		name = ne_news.3.a
@@ -275,7 +275,7 @@ news_event = {
 	
 	}
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 2 }
 	
 	##rest of the world
 	option = {
@@ -360,6 +360,8 @@ news_event = {
 		set_global_flag = occupation_germany	
 	}
 	
+	mean_time_to_happen = { days = 2 }
+
 	##generic
 	option = {
 		name = ne_news.5.a
@@ -1365,7 +1367,7 @@ news_event = {
 	picture = GFX_korea_war_dprk
 	
 	major = yes
-	
+
 	trigger = {
 	
 		has_global_flag = korean_war_dprk
@@ -1391,6 +1393,8 @@ news_event = {
 	immediate = {	
 		set_global_flag = news_event_dprk_victory
 	}
+
+	mean_time_to_happen = { days = 2 }
 
 	##generic
 	option = {
@@ -1490,6 +1494,8 @@ news_event = {
 		set_global_flag = news_event_kor_victory
 	
 	}
+
+	mean_time_to_happen = { days = 2 }
 
 	##generic
 	option = {
@@ -1804,6 +1810,8 @@ news_event = {
 		set_global_flag = ww3_soviets
 	}
 	
+	mean_time_to_happen = { days = 2 }
+
 	option = {	##neutrality and fascists
 		name = ne_news.20.a
 		trigger = {
@@ -1880,7 +1888,9 @@ news_event = {
 	immediate = {
 		set_global_flag = ww3_americans
 	}
-		
+	
+	mean_time_to_happen = { days = 2 }
+	
 	option = {	##neutrality and fascists
 		name = ne_news.21.a
 		trigger = {
@@ -2113,6 +2123,7 @@ news_event = {
 		set_global_flag = news_event_communist_victory
 	}
 	
+	mean_time_to_happen = { days = 2 }
 	
 	option = {	##neutrality and fascists
 		name = ne_news.25.a
@@ -2198,6 +2209,7 @@ news_event = {
 		set_global_flag = news_event_democratic_victory
 	}
 	
+	mean_time_to_happen = { days = 2 }
 	
 	option = {	##neutrality and fascists
 		name = ne_news.26.a
@@ -2277,6 +2289,7 @@ news_event = {
 		set_global_flag = news_event_soviets_german_soil
 	}
 	
+	mean_time_to_happen = { days = 2 }
 	
 	option = {	##neutrality and fascists
 		name = ne_news.27.a
@@ -2569,8 +2582,10 @@ news_event = {
 			463 = { is_controlled_by = USA }
 		}
 		date > 1959.1.3
-		date < 1959.1.4
+		date < 1959.1.14
 	}
+
+	mean_time_to_happen = { days = 2 }
 
 	option = {
 		name = ne_news.32.a
@@ -2597,8 +2612,10 @@ news_event = {
 			629 = { is_controlled_by = USA }
 		}
 		date > 1959.8.21
-		date < 1959.8.22
+		date < 1959.9.6
 	}
+
+	mean_time_to_happen = { days = 2 }
 
 	option = {
 		name = ne_news.33.a
@@ -2662,6 +2679,8 @@ news_event = {
 		}
 	}
 
+	mean_time_to_happen = { days = 2 }
+
 	option = {
 		name = ne_news.46.a
 		
@@ -2719,31 +2738,35 @@ news_event = {  ##TWA Flight 1 Crash
 		date < 1936.5.1  ##unfortunately, hoi can't trigger an event instantly, so the dates of the news events are pretty unhistorical 
 	}
 
+	mean_time_to_happen = { days = 2 }
+
 	option = {
 		name = ne_news.50.a
+		hidden_effect = { add_political_power = -10 }
+		custom_effect_tooltip = usa_air_crash.1.tt
 	}
 
 	
 }
 
 #########################################
-news_event = {  ##The Academy Awards aka 'Oscar'
+news_event = {  ##The Academy Awards aka 'Oscar', 1936
 	id = ne_news.51
 	title = ne_news.51.t  
 	desc = ne_news.51.d  ##descriptionplease
 	picture = GFX_news_event_oscar ##an image will be added in the future
 	
-	mean_time_to_happen = { days = 269 } ## 1936.3.6 - 3 months (90 days + 6 days in March); 365-96=269
-
-	fire_only_once = yes
-	
 	trigger = {
 		tag = USA
 		date > 1936.3.1
+		date < 1936.3.16
 	}
+
+	mean_time_to_happen = { days = 2 } ## 1936.3.6 - 3 months (90 days + 6 days in March); 365-96=269
 
 	option = {
 		name = ne_news.51.a
+		hidden_effect = { country_event = { id = ne_news.51 days = 365 } }
 	}
 
 	
@@ -2761,8 +2784,10 @@ news_event = {  ##General Motors sit-down strike started
 	trigger = {
 		tag = USA
 		date > 1936.12.25
-		date < 1937.1.28
+		date < 1937.1.8
 	}
+
+	mean_time_to_happen = { days = 2 }
 
 	option = {
 		name = ne_news.52.a
@@ -2785,8 +2810,10 @@ news_event = {  ##General Motors sit-down strike finished
 	trigger = {
 		tag = USA
 		date > 1937.2.10
-		date < 1937.3.11
+		date < 1937.2.21
 	}
+
+	mean_time_to_happen = { days = 2 }
 
 	option = {
 		name = ne_news.53.a
@@ -2809,9 +2836,11 @@ news_event = {  ##The Golden Gate Bridge opened in San Francisco
 	trigger = {
 		tag = USA
 		date > 1937.5.26
-		date < 1937.6.28
+		date < 1937.6.8
 		378 = { is_controlled_by = USA }
 	}
+
+	mean_time_to_happen = { days = 2 }
 
 	option = {
 		name = ne_news.54.a
@@ -2843,8 +2872,10 @@ news_event = {  ##Orson Welles performed a broadcast of The War of the Worlds (t
 	trigger = {
 		tag = USA
 		date > 1938.10.29
-		date < 1938.12.1
+		date < 1938.11.8
 	}
+
+	mean_time_to_happen = { days = 2 }
 
 	option = {
 		name = ne_news.55.a
@@ -2855,7 +2886,20 @@ news_event = {  ##Orson Welles performed a broadcast of The War of the Worlds (t
 	
 }
 
+#########################################
+news_event = {  ##1938 Yellow River flood
+	id = ne_news.56
+	title = ne_news.56.t  
+	desc = ne_news.56.d
+	picture = GFX_yr_potop_event ##need image!
+	
+	fire_only_once = yes
 
+	is_triggered_only = yes
 
+	option = {
+		name = ne_news.56.a
+	}
 
 	
+}

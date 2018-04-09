@@ -48,3 +48,6 @@ NE_rla_form_desc:0 "In connection with the failures in military operations and h
 ##RLA improve army
 NE_rla_improve:0 "Expand the Russian Liberation Army"
 NE_rla_improve_desc:0 "We are in despair: the enemy is moving closer and closer to the interior of the Reich and to stop it is becoming more and more difficult and at the same time we are losing more and more of our soldiers. In order to rebuff the enemy, we can declare a set in the Russian Liberation Army, consisting of soldiers of Slavic nationality, fighting against the communist regime."
+##Yellow River
+CHI_yellow_river:0 "Yellow River"
+CHI_yellow_river_desc:0 "We could arrange a flood on the Yellow River for an attempt to stop the advance of Japanese troops."

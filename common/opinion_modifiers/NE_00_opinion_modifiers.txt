@@ -167,6 +167,8 @@ opinion_modifiers = {
 	kicked_out_lon = { value = -5 }
 	
 	illegal_offensive_war = { value = -5 }
+
+	potop_jap = { value = -50 }
 	
 	
 }	
