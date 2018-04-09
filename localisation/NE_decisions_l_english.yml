@@ -15,6 +15,7 @@
  ##########################################
  ##########   CATEGOIRES   ################
  ##########################################
+NE_rla_dec:0 "The Russian Liberation Army"
 ENG_historical_military_operations:0 "Secret Intelligence Service"
 GRE_historical_metaxasline:0 "The Metaxas Line"
 NE_waroperation_iraqinvasion:0 "Operation Countenance" ##Category name
@@ -41,3 +42,9 @@ ENG_inv_iceland_desc:0 "We need to seize the strategically important Iceland. We
 ##Iran British-Soviet invasion decision text
 NE_warop_iraqinvasion:0 "Preventing the possible occupation of Iran's oil fields by Germany"
 NE_warop_iraqinvasion_desc:0 "Iran has long sympathized with Germany. With the renewal of friendly relations between the USSR and Great Britain and the beginning of the war between Germany and the USSR, it is necessary to solve the Iranian question. We have prepared our troops and are ready to invade any minute"
+##RLA foundation
+NE_rla_form:0 "Form the Russian Liberation Army"
+NE_rla_form_desc:0 "In connection with the failures in military operations and high guerrilla resistance, we can reconsider our 'Racial Laws' and form the Russian Liberation Army to suppress small resistance cells"
+##RLA improve army
+NE_rla_improve:0 "Expand the Russian Liberation Army"
+NE_rla_improve_desc:0 "We are in despair: the enemy is moving closer and closer to the interior of the Reich and to stop it is becoming more and more difficult and at the same time we are losing more and more of our soldiers. In order to rebuff the enemy, we can declare a set in the Russian Liberation Army, consisting of soldiers of Slavic nationality, fighting against the communist regime."

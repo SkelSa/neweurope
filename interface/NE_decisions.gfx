@@ -25,4 +25,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_picture_historical_metaxasline.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decision_rus_lib_army"
+		texturefile = "gfx/interface/decisions/decision_rus_lib_army.dds"
+	}
+
 }
