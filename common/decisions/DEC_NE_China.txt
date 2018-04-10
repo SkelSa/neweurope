@@ -2,7 +2,7 @@
 war_measures = {
 
 	CHI_yellow_river = {
-		icon = GFX_yr_potop ##will add in the future
+		icon = GFX_decision_potop ##will add in the future
 		available = {
 			any_country = {
 				OR = {
@@ -44,9 +44,11 @@ war_measures = {
 				}
 				AND = {
 					controls_state = 606
-					NOT = { 
-						controls_state = 613
-						controls_state = 749
+					NOT = {
+						OR = {
+							controls_state = 613
+							controls_state = 749
+						}
 					}
 				}
 			}
