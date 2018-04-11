@@ -1,3 +1,4 @@
+
 state={
 	id=51
 	name="STATE_51"
@@ -7,11 +8,9 @@ state={
 
 	history={
 		owner = GER
-		
 		victory_points = {
-			13205 5
+			13205 5 
 		}
-		
 		victory_points = {
 			6469 5 
 		}
@@ -22,17 +21,14 @@ state={
 			infrastructure = 8
 			arms_factory = 3
 			industrial_complex = 1
-			
 
 		}
 		add_core_of = GER
-		
 		set_demilitarized_zone = yes
 		1936.3.7 = {
 			set_demilitarized_zone = no
 
 		}
-		
 		1939.1.1 = {
 			buildings = {
 				radar_station = 1
@@ -44,7 +40,7 @@ state={
 	}
 
 	provinces={
-		587 3444 3512 3547 6469 6570 9482 9522 13205
+		587 3444 3512 3547 6469 6570 9482 9522 13205 
 	}
 	manpower=6144750
 	buildings_max_level_factor=1.000

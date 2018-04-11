@@ -38,6 +38,7 @@ news_event = {
 			diplomatic_relation = { country = POL relation = non_aggression_pact } 
 		}
 		
+		
 		##Danzig puppet	
 		POL = {		
 			if = {			
@@ -56,39 +57,36 @@ news_event = {
 				
 			}			
 											
-		}		
-		
-		##Soviet puppets
-		SOV	= {
-		
-			if = {			
-				limit = {
-					has_dlc = "Together for Victory"
-				}
-				
-				set_autonomy = {
-					target = TAN
-					autonomous_state = autonomy_satellite_sov
-				}
-				
-				set_autonomy = {
-					target = MON
-					autonomous_state = autonomy_satellite_sov
-				}
-						
-				else = {
-		
-				puppet = TAN
-				puppet = MON
-			
-				}		
-						
-						
-			}
-		
-			
-			
 		}
+		
+
+		##Soviet puppets
+		#SOV = {	
+
+		#	if = {			
+		#		limit = {
+		#			has_dlc = "Together for Victory"
+		#		}
+				
+		#		set_autonomy = {
+		#			target = TUR
+		#			autonomous_state = autonomy_colony
+		#		}
+		#		
+		#		set_autonomy = {
+		#			target = FIN
+		#			autonomous_state = autonomy_dominion
+		#		}
+		#		
+		#		else = {
+		#			puppet = TUR
+		#			puppet = FIN	
+		#		}	
+		#		
+		#	}
+	#
+		#}
+		
 		
 		##American puppet Liberia, Philippines
 		USA = {	
@@ -114,10 +112,9 @@ news_event = {
 				}	
 				
 			}
-			
-			
-			
+	
 		}
+		
 		
 		##French puppets (Tunisia, Syria, Lebanon, Morocco)
 		FRA = {	
@@ -154,11 +151,11 @@ news_event = {
 					puppet = SYR
 				}
 				
-			}
-			
+			}			
 			
 			
 		}
+		
 		
 		##British puppets: OMA, NEP, BHU				
 		ENG = {		
@@ -215,6 +212,7 @@ news_event = {
 			diplomatic_relation = { country = BEL relation = guarantee active = yes }
 			
 		}
+		
 		
 		##Further changes for new puppets	
 		EGY = {
