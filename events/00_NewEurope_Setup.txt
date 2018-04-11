@@ -452,7 +452,7 @@ country_event = {
 		}
 
 	
-		##remove unnneccessary cores	
+		##remove unnecessary cores	
 		if = {
 			limit = {
 				NOT = { country_exists = WGR }					
