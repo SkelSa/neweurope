@@ -50,9 +50,12 @@ news_event = {
 					autonomous_state = autonomy_integrated_puppet
 				}
 
-			}
-			
-			puppet = DAN								
+				else = {
+					puppet = DAN
+				}	
+				
+			}			
+											
 		}		
 		
 		##Soviet puppets
@@ -72,10 +75,18 @@ news_event = {
 					target = MON
 					autonomous_state = autonomy_satellite_sov
 				}
+						
+				else = {
+		
+				puppet = TAN
+				puppet = MON
+			
+				}		
+						
+						
 			}
 		
-			puppet = TAN
-			puppet = MON
+			
 			
 		}
 		
@@ -96,10 +107,15 @@ news_event = {
 					target = PHI
 					autonomous_state = autonomy_dominion
 				}
+				
+				else = {
+					puppet = LIB
+					puppet = PHI
+				}	
+				
 			}
 			
-			puppet = LIB
-			puppet = PHI
+			
 			
 		}
 		
@@ -130,12 +146,17 @@ news_event = {
 					target = SYR
 					autonomous_state = autonomy_dominion
 				}
+				
+				else = {
+					puppet = TUN
+					puppet = MOR
+					puppet = LEB
+					puppet = SYR
+				}
+				
 			}
 			
-			puppet = TUN
-			puppet = MOR
-			puppet = LEB
-			puppet = SYR
+			
 			
 		}
 		
@@ -165,13 +186,18 @@ news_event = {
 					target = BHU
 					autonomous_state = autonomy_dominion
 				}
+				
+				else = {
+					puppet = EGY
+					puppet = OMA
+					puppet = NEP
+					puppet = BHU			
+				}
+				
+				
+				
 			}
-		
-			puppet = EGY
-			puppet = OMA
-			puppet = NEP
-			puppet = BHU
-			
+				
 			add_to_faction = IRQ
 			
 			if = {
