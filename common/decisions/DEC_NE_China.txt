@@ -1,0 +1,94 @@
+##Decisions for China go here:
+war_measures = {
+
+	CHI_yellow_river = {
+		icon = GFX_decision_potop ##will add in the future
+		available = {
+			any_country = {
+				OR = {
+					AND = {
+						is_in_faction_with = JAP
+						has_defensive_war_with = CHI
+					}
+					tag = JAP
+				}
+				OR = {
+					controls_state = 613
+					controls_state = 749
+				}
+			}
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {			
+			CHI = { 
+				has_defensive_war_with = JAP
+				surrender_progress > 0.04
+			}
+			any_country = {
+				OR = {
+					AND = {
+						is_in_faction_with = CHI
+						has_defensive_war_with = JAP
+					}
+					tag = CHI
+				}
+				AND = {
+					controls_state = 606
+					NOT = {
+						OR = {
+							controls_state = 613
+							controls_state = 749
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				749 = {
+					damage_building = { type = infrastructure damage = 0.8 }
+					damage_building = { type = industrial_complex damage = 0.8 }
+					damage_building = { type = arms_factory damage = 0.8 }
+					remove_building = { type = infrastructure level = 2 }
+					remove_building = { type = arms_factory level = 1 }
+					remove_building = { type = industrial_complex level = 1 }
+				}
+				613 = {
+					damage_building = { type = infrastructure damage = 0.5 }
+					damage_building = { type = industrial_complex damage = 0.5 }
+					damage_building = { type = arms_factory damage = 0.5 }
+					remove_building = { type = infrastructure level = 1 }
+					remove_building = { type = industrial_complex level = 1 }
+				}
+				JAP = {
+					add_manpower = -56000
+					add_war_support = -0.08
+				}
+				CHI = {
+					add_manpower = -89000
+					add_stability = -0.25
+					add_war_support = -0.15
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = CHI }
+					}
+					add_opinion_modifier = { target = CHI modifier = potop_jap }
+					news_event = { hours = 6 id = ne_news.56 }
+				}
+			}
+			custom_effect_tooltip = CHI_potop_mozhet_pomoch
+		}
+	}
+}

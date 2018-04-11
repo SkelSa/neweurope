@@ -126,6 +126,8 @@ country_event = {
 
 	}
 	
+	mean_time_to_happen = { days = 2 }
+
 	immediate = { set_country_flag = ne_event_ready_faction }
 
 	

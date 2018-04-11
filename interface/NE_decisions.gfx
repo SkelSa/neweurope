@@ -30,4 +30,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_rus_lib_army.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decision_potop"
+		texturefile = "gfx/interface/decisions/decision_potop.dds"
+	}
+
 }

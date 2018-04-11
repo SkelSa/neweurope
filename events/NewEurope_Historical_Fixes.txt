@@ -423,6 +423,8 @@ country_event = {
 	
 	}
 	
+	mean_time_to_happen = { days = 2 }
+
 	option = {	#Oh well...
 		name = ne_historical.5.a
 		
@@ -489,6 +491,8 @@ country_event = {
 
 	}
 	
+	mean_time_to_happen = { days = 2 }
+
 	option = {	#Very Good
 		name = ne_historical.6.a
 		

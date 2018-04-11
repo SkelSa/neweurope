@@ -1382,6 +1382,8 @@ country_event = {  ##Germany name change event
 
 	fire_only_once = no
 	
+	mean_time_to_happen = { days = 2 }
+
 	immediate = {
 		GER = { set_country_flag = ne_deu_ren }
 	}
