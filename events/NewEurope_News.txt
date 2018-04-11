@@ -55,7 +55,6 @@ news_event = {
 			OR = {	
 				has_government = fascism
 				has_government = neutrality				
-				tag = PRC
 			}
 			
 		}
@@ -77,6 +76,15 @@ news_event = {
 		trigger {		
 			has_government = communism
 			NOT = { tag = PRC }
+		}
+
+	}
+	
+	option = {
+		name = ne_news.2.e
+			
+		trigger {		
+			tag = PRC 
 		}
 
 	}

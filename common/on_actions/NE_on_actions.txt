@@ -5,16 +5,16 @@ on_actions = {
 	
 		effect = {		
 			#Intro Event
-				every_country = {
-					limit = { is_ai = no }
-					country_event = { id = ne_news.1 }				
-				}
+			every_country = {
+				limit = { is_ai = no }
+				country_event = { id = ne_news.1 }				
+			}
 			
-			#setup
-				every_country = {
-					limit = { tag = DAN }
-					country_event = { id = ne_setup.1 }				
-				}
+			#Setup
+			every_country = {
+				limit = { tag = DAN }
+				country_event = { id = ne_setup.1 }				
+			}
 			
 			
 			##check if some players are fascist	DOESNT WORK
