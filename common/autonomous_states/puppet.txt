@@ -34,7 +34,11 @@ autonomy_state = {
 
 	allowed = {
 	
-		NOT = { has_government = communism }
+		if = {
+			limit = { has_dlc = "Together for Victory" }
+			NOT = { has_government = communism }		
+		}
+
 		
 		if = {
 			limit = { has_dlc = "Death or Dishonor" }
