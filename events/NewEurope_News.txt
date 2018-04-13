@@ -2888,7 +2888,7 @@ news_event = {  ##Orson Welles performed a broadcast of The War of the Worlds (t
 	option = {
 		name = ne_news.55.a
 		add_stability = -0.01
-		add_war_support = -0.04
+		add_war_support = -0.02
 	}
 
 	

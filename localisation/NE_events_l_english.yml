@@ -812,6 +812,12 @@
  ne_skelsa.75.t:0 "We're free from British Rule!"
  ne_skelsa.75.d:0 "We're finally free from British Yoke!"
  ne_skelsa.75.a:0 "This is a new era for our country!"
+
+ ##Battle of Cable Street
+ ne_uk.2.t:0 "Battle of Cable Street"
+ ne_uk.2.d:0 "Today, there was a skirmish between the English Black Shirts of the British Union of Fascists and guarding their march the police, on the one hand and anti-fascist demonstrators on the other. We can break their march to prevent the spread of fascism."
+ ne_uk.2.a:0 "Let them go"
+ ne_uk.2.b:0 "Disrupt the march!"
  
  ##WARNING: Historical Focus not on!
  ne_skelsa.75.t:0 "Warning: Historical Focus Setting Not On!"

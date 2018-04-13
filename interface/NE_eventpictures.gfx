@@ -142,6 +142,12 @@ spriteTypes = {
 		name = "GFX_ukrainian_crimea"
 		texturefile = "gfx/event_pictures/ukrainian_crimea.dds"
 	}
+
+	##Battle of Cable Street
+	spriteType = {
+		name = "GFX_cable_street"
+		texturefile = "gfx/event_pictures/cable_street.dds"
+	}
 	
 	##Brother Hao is amazing!
 	spriteType = {
