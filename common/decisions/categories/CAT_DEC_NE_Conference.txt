@@ -1,0 +1,12 @@
+GRE_historical_metaxasline = { 
+	icon = generic_economy
+
+	picture = GFX_decision_cat_picture_historical_metaxasline
+
+	allowed = {
+		AND = {
+			original_tag = GRE
+			is_historical_focus_on = yes
+		}
+	}
+}

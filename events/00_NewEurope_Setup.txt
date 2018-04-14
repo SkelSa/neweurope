@@ -1,4 +1,7 @@
-﻿#setup stuff triggered by on_startup
+﻿###############################
+####    SETUP THE GAME    #####
+###############################
+
 add_namespace = ne_setup
 
 
@@ -31,11 +34,25 @@ news_event = {
 		}
 		
 		GRE = {		
-			set_capital = 863
+			set_capital = 820
 		}
 		
 		GER = {		
 			diplomatic_relation = { country = POL relation = non_aggression_pact } 
+		}
+		
+		
+		ICE = {		
+			create_country_leader = {
+				name = "Sveinn Björnsson"
+				desc = ""
+				picture = "gfx/leaders/ICE/portrait_ice_sveinn_bjornsson.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					#
+				}
+			} 
 		}
 		
 		
@@ -176,7 +193,7 @@ news_event = {
 				
 				set_autonomy = {
 					target = NEP
-					autonomous_state = autonomy_puppet
+					autonomous_state = autonomy_dominion
 				}
 				
 				set_autonomy = {
@@ -273,7 +290,17 @@ news_event = {
 			set_political_party = { ideology = fascism popularity = 10 } 
 			set_political_party = { ideology = communism popularity = 5 } 
 			set_political_party = { ideology = neutrality popularity = 5 }  
-		}		
+		}
+
+		MON = {		
+			set_politics = { ruling_party = communism elections_allowed = no } 
+			set_political_party = { ideology = communism popularity = 100 }
+		}	
+		
+		TAN = {		
+			set_politics = { ruling_party = communism elections_allowed = no }  
+			set_political_party = { ideology = communism popularity = 100 }  
+		}	
 
 		
 		##Adding state cores

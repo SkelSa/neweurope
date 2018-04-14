@@ -1,6 +1,6 @@
-﻿#####################################################
-####  ALL EVENTS CONCERNING YUGOSLAVIA GO HERE  #####
-#####################################################
+﻿#########################################################
+####    ALL EVENTS CONCERNING YUGOSLAVIA GO HERE    #####
+#########################################################
 
 add_namespace = ne_yugoslavia
 add_namespace = ne_skelsa
