@@ -392,6 +392,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_.dds"
 	}
 
+	##NEWS EVENTS
+
 	spriteType = {		
 		name = "GFX_news_event_twa_crash"
 		texturefile = "gfx/event_pictures/news_event_twa_crash.dds"
@@ -415,6 +417,11 @@ spriteTypes = {
 	spriteType = {		
 		name = "GFX_news_event_warofthelords"
 		texturefile = "gfx/event_pictures/news_event_warofthelords.dds"
+	}
+
+	spriteType = {		
+		name = "GFX_news_event_jarrowmarch"
+		texturefile = "gfx/event_pictures/news_event_jarrowmarch.dds"
 	}
 	
 

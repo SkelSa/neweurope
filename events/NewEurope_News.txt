@@ -2791,8 +2791,8 @@ news_event = {  ##General Motors sit-down strike started
 
 	trigger = {
 		tag = USA
-		date > 1936.12.25
-		date < 1937.1.8
+		date > 1936.12.18
+		date < 1936.12.28
 	}
 
 	mean_time_to_happen = { days = 2 }
@@ -2801,6 +2801,7 @@ news_event = {  ##General Motors sit-down strike started
 		name = ne_news.52.a
 		add_war_support = -0.01
 		add_stability = -0.01
+		hidden_effect = { USA = { set_country_flag = gm_strike } }
 	}
 
 	
@@ -2819,6 +2820,7 @@ news_event = {  ##General Motors sit-down strike finished
 		tag = USA
 		date > 1937.2.10
 		date < 1937.2.21
+		USA = { has_country_flag = gm_strike }
 	}
 
 	mean_time_to_happen = { days = 2 }
@@ -2827,6 +2829,7 @@ news_event = {  ##General Motors sit-down strike finished
 		name = ne_news.53.a
 		add_war_support = 0.01
 		add_stability = 0.01
+		clr_country_flag = gm_strike
 	}
 
 
@@ -2907,6 +2910,37 @@ news_event = {  ##1938 Yellow River flood
 
 	option = {
 		name = ne_news.56.a
+	}
+
+	
+}
+
+country_event = {  ##Jarrow March
+	id = ne_news.57
+	title = ne_news.57.t  
+	desc = ne_news.57.d
+	picture = GFX_news_event_jarrowmarch ##an image will be added in the future
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		date > 1938.10.2
+		date < 1938.10.18
+		NOT = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+				has_idea = partial_economic_mobilisation
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = ne_news.57.a
+		add_stability = -0.01
 	}
 
 	

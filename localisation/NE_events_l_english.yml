@@ -1474,3 +1474,7 @@
  ne_news.56.t:0 "Yellow River flood"  ##Yellow River flood
  ne_news.56.d:0 "In [GetDate], Chinese Nationalist armies under the command of Chiang Kai-shek breached the Yellow River’s dikes at Huayuankou in Henan province in a desperate attempt to block a Japanese military advance. For the next nine years, the Yellow River’s waters spread southeast into the Huai River system via its tributaries, inundating vast quantities of land in Henan, Anhui, and Jiangsu provinces. Perhaps the single most environmentally damaging act of warfare in world history, the strategic interdiction threw long-established water control infrastructure into disarray."
  ne_news.56.a:0 "It is unacceptable!"
+
+ ne_news.57.t:0 "The Jarrow March"  ##General Motors sit-down strike finished
+ ne_news.57.d:0 "Today around 200 men (or "Crusaders" as they preferred to be referred to) marched from Jarrow to London, carrying a petition to the British government requesting the re-establishment of industry in the town following the closure in 1934 of its main employer, Palmer's shipyard. The petition was received by the House of Commons but not debated, and the march produced few immediate results. The Jarrovians went home believing that they had failed."
+ ne_news.57.a:0 "The march brought insignificant results"
