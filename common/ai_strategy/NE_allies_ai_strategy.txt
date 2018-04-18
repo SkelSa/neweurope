@@ -120,7 +120,7 @@ ne_eng_pol_guarantee = {
 	}
 	
 	ai_strategy = {
-		type = protect ##in this case means that english will guarantee independence poland
+		type = protect ##in this case means that england will guarantee independence poland
 		id = "POL"
 		value = 200
 	}

@@ -216,3 +216,27 @@ country_event = {
 	}
 
 }
+
+country_event = {
+
+	id = netest.651                    
+	title = "NE_TEST.651"
+	desc =  "Taste my description"
+
+	picture = GFX_report_event_soviet_invasion_map
+
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+	
+	option = {
+		name = netest.651.a 
+		SOV = {
+			transfer_state = 417
+		}
+		PER = {
+			transfer_state = 410
+		}
+	}
+
+}
