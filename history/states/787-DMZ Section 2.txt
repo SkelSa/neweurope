@@ -2,7 +2,7 @@ state={
 	id=787
 	name="STATE_787"
 	
-	state_category=town
+	state_category=enclave
 	
 	history={
 		owner = JAP

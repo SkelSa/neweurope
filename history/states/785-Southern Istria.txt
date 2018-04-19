@@ -2,7 +2,7 @@ state={
 	id=785
 	name="STATE_785"
 	
-	state_category = town
+	state_category = rural
 	
 	history={
 		owner = ITA

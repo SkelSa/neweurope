@@ -5,7 +5,7 @@ state={
 	provinces={
 		332 11251 
 	}
-	state_category = town
+	state_category = rural
 
 	history=
 	{
