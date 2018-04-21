@@ -17,8 +17,5 @@ state={
 		add_core_of = YUG
 		add_core_of = SVN
 		
-		victory_points = {
-			3631 2
-		}
 	}
 }

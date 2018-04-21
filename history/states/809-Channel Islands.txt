@@ -13,7 +13,13 @@ state={
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = ENG		
+		add_core_of = ENG
+		victory_points = {
+			13225 1
+		}	
+		victory_points = {
+			1201 1
+		}
 	}
 	
 }
