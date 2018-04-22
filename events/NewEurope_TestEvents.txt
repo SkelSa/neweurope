@@ -231,12 +231,7 @@ country_event = {
 	
 	option = {
 		name = netest.651.a 
-		SOV = {
-			transfer_state = 417
-		}
-		PER = {
-			transfer_state = 410
-		}
+		delete_unit_template_and_units = { division_template = "PREV" }
 	}
 
 }
