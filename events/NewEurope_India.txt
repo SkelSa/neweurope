@@ -30,4 +30,32 @@ country_event = {
 	
 }
 
+##Remove Agrarian Society for India once it gets 115 factories and >60 divisions
+country_event = {
+	id = ne_india.1
+	title = ne_india.1.t
+	desc =  ne_india.1.d
+	picture = GFX_india_factagr
+
+	trigger = {
+		tag = RAJ
+		num_divisions > 59
+		num_of_factories > 114
+		has_idea = RAJ_agrarian_society
+		has_dlc = "Together for Victory"
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = ne_india.1.a
+		if = {
+			limit = { has_dlc = "Together for Victory" }
+			remove_ideas = {
+				RAJ_agrarian_society
+			}
+		}
+	}
+}
+
 

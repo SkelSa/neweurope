@@ -740,6 +740,10 @@
 
 ##Germany change its name back, when the power is lose. The event is hidden
 
+##Indian Events
+ ne_india.1.t:0 "Down with the Agrarian Society!"
+ ne_india.1.d:0 "We have already outgrown the agricultural economy. It's time to abandon these ideas."
+ ne_india.1.a:0 "Okay"
 ##Anglo-Soviet invasion of Iran EVENTS
 
  ne_conf.1.t:0 "Iran is giving up!"

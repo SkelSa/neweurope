@@ -11,10 +11,6 @@ state={
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
-			11968 = {
-				naval_base = 3
-
-			}
 
 		}
 		add_core_of = RAJ
@@ -24,7 +20,7 @@ state={
 	provinces={
 		997 1075 7179 7634 11968 
 	}
-	manpower=8451279
+	manpower=5216228
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
