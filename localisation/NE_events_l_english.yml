@@ -711,6 +711,18 @@
  ne_misc.26.d:0 "The war was over. We no longer have such a need for heavy industry, it is necessary to restore our medium and light industry"
  ne_misc.26.a:0 "Go to the beginning of the demilitarization of the economy"
 
+ ne_misc.29.t:0 "war against equador"
+ ne_misc.29.d:0 "let's declare war against equador"
+ ne_misc.29.a:0 "okay"
+
+ ne_misc.30.t:0 "war against equador"
+ ne_misc.30.d:0 "equador lose the war against us. we will annex some territory"
+ ne_misc.30.a:0 "good"
+
+ ne_misc.31.t:0 "war against equador"
+ ne_misc.31.d:0 "oh no we lose against equador"
+ ne_misc.31.a:0 "okay"
+
 ##A warning for a player
  ne_misc.27.t:0 "Your Country is not supported by this Mod!"
  ne_misc.27.d:0 "You are currently playing as the [Root.GetName], a fascist nation. Please keep in mind that "Better Post-War Europe" was designed as a historical mod and thus almost all events and decisions require an Allied victory. While ahistorical playthroughs are still possible you will miss out a lot of content! It's strongly recommended to play as one of the countries displayed in the country selection screen."

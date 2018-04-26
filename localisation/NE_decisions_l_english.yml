@@ -51,3 +51,6 @@ NE_rla_improve_desc:0 "We are in despair: the enemy is moving closer and closer 
 ##Yellow River
 CHI_yellow_river:0 "Yellow River"
 CHI_yellow_river_desc:0 "We could arrange a flood on the Yellow River for an attempt to stop the advance of Japanese troops."
+##Ecuador-Peru war
+SA_ecu_pru_war:0 "Pastaza Claims"
+SA_ecu_pru_war_desc:0 "We have some claims from Ecuador territory and we could finish it by annexing."

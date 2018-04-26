@@ -1,0 +1,42 @@
+political_actions = { 
+
+	SA_ecu_pru_war = {  ##Ecuadorian–Peruvian War
+	
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			tag = PRU
+		}
+
+		fire_only_once = yes
+
+		cost = 60
+
+		ai_will_do = {
+			base = 45
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	
+		visible = {
+			date > 1941.01.01
+			490 = { is_controlled_by = ECU }
+			NOT = {
+				490 = { is_controlled_by = PRU }
+				ECU = {
+					OR = {
+						is_in_faction_with = PRU
+						is_puppet_of = PRU
+					}
+				}
+			}
+		}
+		
+		complete_effect = {
+			country_event = { id = ne_misc.29 days = 2 }
+		}
+	}
+
+}
