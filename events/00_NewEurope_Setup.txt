@@ -294,12 +294,24 @@ news_event = {
 
 		MON = {		
 			set_politics = { ruling_party = communism elections_allowed = no } 
-			set_political_party = { ideology = communism popularity = 100 }
+			set_political_party = { ideology = democratic popularity = 0 } 
+			set_political_party = { ideology = fascism popularity = 0 } 
+			set_political_party = { ideology = communism popularity = 100 } 
+			set_political_party = { ideology = neutrality popularity = 0 }  
 		}	
 		
 		TAN = {		
-			set_politics = { ruling_party = communism elections_allowed = no }  
-			set_political_party = { ideology = communism popularity = 100 }  
+			set_political_party = { ideology = democratic popularity = 0 } 
+			set_political_party = { ideology = fascism popularity = 0 } 
+			set_political_party = { ideology = communism popularity = 100 } 
+			set_political_party = { ideology = neutrality popularity = 0 }   
+		}
+
+		LIB = {		
+			set_political_party = { ideology = democratic popularity = 100 } 
+			set_political_party = { ideology = fascism popularity = 0 } 
+			set_political_party = { ideology = communism popularity = 0 } 
+			set_political_party = { ideology = neutrality popularity = 0 }  
 		}	
 
 		
