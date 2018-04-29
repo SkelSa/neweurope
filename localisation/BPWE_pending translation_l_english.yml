@@ -57,6 +57,9 @@
 
  ####NE_state_names####
 
+ STATE_835:0 "Acre"
+ STATE_836:0 "Rondonia"
+ STATE_837:0 "Roraima and Amapa"
 
 
  ####NE_tooltips####

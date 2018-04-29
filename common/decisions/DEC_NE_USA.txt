@@ -1,1 +1,38 @@
 ##Decisions for the United States go here:
+foreign_support = { 
+
+	USA_Marshall_Plan = {  ##Marshall Plan
+	
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = USA
+		}
+
+		fire_only_once = yes
+
+		available = {
+			##later
+		}
+
+	
+
+		cost = 60
+
+		ai_will_do = {
+			base = 50
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	
+		visible = {
+			has_global_flag = ne_cold_war
+			##later
+		}
+		
+		complete_effect = {
+			set_global_flag = ne_marshall_plan
+		}
+	}
