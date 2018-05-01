@@ -60,6 +60,8 @@
  STATE_835:0 "Acre"
  STATE_836:0 "Rondonia"
  STATE_837:0 "Roraima and Amapa"
+ STATE_838:0 "Lesotho"
+ STATE_839:0 "Swazi"
 
 
  ####NE_tooltips####
@@ -67,6 +69,9 @@
 
 
  ####NE_victory_points####
+
+ VICTORY_POINTS_7900:0 "Mbabane"
+ VICTORY_POINTS_4556:0 "Maseru"
 
 
 
