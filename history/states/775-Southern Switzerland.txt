@@ -10,7 +10,7 @@ state={
 
 		}
 		add_core_of = SWI
-		add_core_of = ITA
+		#add_core_of = ITA  ##The Swiss have a strong national identity
 
 	}
 
