@@ -25,7 +25,7 @@ country_event = {
 	title = ne_division_kor.1.t
 	desc =  ne_division_kor.1.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_kor.1" }
 	
 	trigger = {	
 	
@@ -150,7 +150,7 @@ country_event = {
 	title = ne_division_kor.2.t
 	desc =  ne_division_kor.2.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_kor.2" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -215,7 +215,7 @@ country_event = {
 	title = ne_division_kor.3.t
 	desc =  ne_division_kor.3.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_kor.3" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -282,7 +282,7 @@ country_event = {
 	title = ne_division_kor.4.t
 	desc =  ne_division_kor.4.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_kor.4" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -358,7 +358,7 @@ country_event = {
 	title = ne_division_kor.5.t
 	desc =  ne_division_kor.5.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_kor.5" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -418,7 +418,7 @@ country_event = {
 	title = ne_division_kor.6.t
 	desc =  ne_division_kor.6.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_kor.6" }
 	is_triggered_only = yes
 	#fire_only_once = yes
 
@@ -444,7 +444,7 @@ country_event = {
 	title = ne_division_kor.7.t
 	desc =  ne_division_kor.7.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_kor.7" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -475,7 +475,7 @@ country_event = {
 	title = ne_korea.1.t
 	desc =  ne_korea.1.d
 	picture = GFX_somepic
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_korea.1" }
 	hidden = yes
 	fire_only_once = yes
 
@@ -532,7 +532,7 @@ country_event = {
 	title = ne_korean_war.1.t 
 	desc =  ne_korean_war.1.d  
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_korean_war.1" }
 	fire_only_once = yes
 	
 	
@@ -645,7 +645,7 @@ country_event = {
 	title = ne_korean_war.2.t 
 	desc =  ne_korean_war.2.d  
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_korean_war.2" }
 	is_triggered_only = yes	
 	fire_only_once = yes
 		
@@ -701,9 +701,8 @@ country_event = {
 	id = ne_korean_war.3                      
 	title = ne_korean_war.3.t 
 	desc =  ne_korean_war.3.d  
-
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_korean_war.3" }
 	fire_only_once = yes
 	
 	
@@ -779,7 +778,7 @@ country_event = {
 	title = ne_korean_war.4.t 
 	desc =  ne_korean_war.4.d  
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_korean_war.4" }
 	is_triggered_only = yes	
 	fire_only_once = yes
 

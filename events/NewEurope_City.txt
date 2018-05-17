@@ -9,7 +9,7 @@ country_event = {
 	title = ne_city.1.t
 	desc = ne_city.1.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.1" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -40,7 +40,7 @@ country_event = {
 	title = ne_city.1.t
 	desc = ne_city.1.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.4" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -68,7 +68,7 @@ country_event = {
 	title = ne_city.1.t
 	desc = ne_city.1.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.5" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -97,7 +97,7 @@ country_event = {
 	title = ne_city.1.t
 	desc = ne_city.1.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.6" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -126,7 +126,7 @@ country_event = {
 	title = ne_city.1.t
 	desc = ne_city.1.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.7" }
 	fire_only_once = yes
 	
 	trigger = {	
@@ -154,7 +154,7 @@ country_event = {
 	title = ne_city.1.t
 	desc = ne_city.1.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.8" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -185,7 +185,7 @@ country_event = {
 	title = ne_city.1.t
 	desc = ne_city.1.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.9" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -215,7 +215,7 @@ country_event = {
 	title = ne_city.1.t
 	desc = ne_city.1.d1
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.10" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -247,7 +247,7 @@ country_event = {
 	title = ne_city.2.t
 	desc = ne_city.2.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.2" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -382,7 +382,7 @@ country_event = {
 	title = ne_city.3.t
 	desc = ne_city.3.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.3" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -496,7 +496,7 @@ country_event = {
 	title = ne_city.11.t
 	desc = ne_city.11.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.11" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -536,7 +536,7 @@ country_event = {
 	title = ne_city.12.t
 	desc = ne_city.12.d
 	picture = GFX_report_event_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.12" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -576,6 +576,7 @@ country_event = {
 country_event = {
 	id = ne_city.13
 	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.13" }
 	fire_only_once = yes
 	hidden = yes
 	
@@ -601,7 +602,7 @@ country_event = {
 ##Renaming east and west berlin (hidden), DDR wins
 country_event = {
 	id = ne_city.14
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.14" }
 	fire_only_once = yes
 	hidden = yes
 	
@@ -630,7 +631,7 @@ country_event = {
 	title = ne_city.30.t
 	desc = ne_city.30.d
 	picture = GFX_stalin_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_city.30" }
 	fire_only_once = yes
 	
 	trigger = {

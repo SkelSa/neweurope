@@ -14,7 +14,7 @@ country_event = {
 	title = ne_division_jap.1.t
 	desc =  ne_division_jap.1.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_jap.1" }
 	#is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -271,7 +271,7 @@ country_event = {
 	id = ne_division_jap.3
 	#title = ne_division_jap.3.t
 	#desc =  ne_division_jap.3.d
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_jap.3" }
 	title = {
 		text = ne_division_jap.3.t
 		trigger = {
@@ -517,7 +517,7 @@ country_event = {
 	title = ne_division_jap.2.t
 	desc =  ne_division_jap.2.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_jap.2" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
@@ -668,7 +668,7 @@ country_event = {
 	title = ne_division_jap.4.t
 	desc =  ne_division_jap.4.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_jap.4" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
@@ -773,7 +773,7 @@ country_event = {
 	title = ne_division_jap.5.t
 	desc =  ne_division_jap.5.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_jap.5" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
@@ -823,7 +823,7 @@ country_event = {
 	title = ne_division_jap.6.t
 	desc =  ne_division_jap.6.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_jap.6" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
@@ -889,7 +889,7 @@ country_event = {
 	title = ne_division_jap.7.t
 	desc =  ne_division_jap.7.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_jap.7" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
@@ -936,7 +936,7 @@ country_event = {
 	title = ne_division_jap.8.t
 	desc =  ne_division_jap.8.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_jap.8" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
@@ -988,7 +988,7 @@ country_event = {
 	title = ne_division_jap.9.t
 	desc =  ne_division_jap.9.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_jap.9" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
@@ -1056,7 +1056,7 @@ country_event = {
 	title = ne_division_jap.10.t
 	desc =  ne_division_jap.10.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_division_jap.10" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	

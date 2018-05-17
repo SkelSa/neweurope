@@ -5,7 +5,7 @@ add_namespace = ne_hidden
 ##STALIN IS DED
 country_event = {
 	id = ne_hidden.1
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_hidden.1" }
 	hidden = yes
 	fire_only_once = yes
 
@@ -34,7 +34,7 @@ country_event = {
 ##KOREA flag event (HIDDEN)
 country_event = {
 	id = ne_hidden.2
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_hidden.2" }
 	hidden = yes	
 	is_triggered_only = yes
 	
@@ -53,7 +53,7 @@ country_event = {
 ##Best Korea is more democratic than usual
 country_event = {
 	id = ne_hidden.3
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_hidden.3" }
 	fire_only_once = yes	
 	hidden = yes
 	
@@ -85,7 +85,7 @@ country_event = {
 ##KOR has found the true path to communism
 country_event = {
 	id = ne_hidden.4
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_hidden.4" }
 	hidden = yes	
 	fire_only_once = yes
 	
@@ -117,7 +117,7 @@ country_event = {
 ##NEWS EVENT: Battle of Berlin (WW3) two outcomes
 country_event = {
 	id = ne_hidden.5
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_hidden.5" }
 	hidden = yes	
 	fire_only_once = yes
 	
@@ -168,7 +168,7 @@ country_event = {
 ##Play track when Sino-Japanese War starts
 country_event = {
 	id = ne_hidden.8
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_hidden.8" }
 	hidden = yes
 	fire_only_once = yes
 
@@ -200,7 +200,7 @@ country_event = {
 
 country_event = {
 	id = ne_hidden.9
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_hidden.9" }
 	hidden = yes
 
 	trigger = {
@@ -231,7 +231,7 @@ country_event = {
 
 country_event = {
 	id = ne_hidden.10
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_hidden.10" }
 	hidden = yes
 
 	trigger = {
@@ -265,7 +265,7 @@ country_event = {
 ##EDIT: Hungary loses it's greater Hungary upon doing that focus! (Proclaim greater Hungary is shit anyways)
 country_event = {
 	id = ne_hidden.11
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_hidden.11" }
 	hidden = yes
 	is_triggered_only = yes
 	
@@ -293,7 +293,7 @@ country_event = {
 ##BATTLE EVENTS (Hidden trigger when Kursk falls!)
 country_event = {
 	id = ne_hidden.12
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_hidden.12" }
 	hidden = yes
 
 	trigger = {

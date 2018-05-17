@@ -10,7 +10,7 @@ country_event = {
 	title = ne_uni_austria.1.t
 	desc =  ne_uni_austria.1.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_uni_austria.1" }
 	#is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -94,7 +94,7 @@ country_event = {
 	title = ne_uni_austria.2.t
 	desc =  ne_uni_austria.2.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_uni_austria.2" }
 	is_triggered_only = yes
 	#fire_only_once = yes
 
@@ -140,7 +140,7 @@ country_event = {
 	title = ne_uni_austria.3.t
 	desc =  ne_uni_austria.3.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_uni_austria.3" }
 	is_triggered_only = yes	
 	#fire_only_once = yes
 
@@ -183,7 +183,7 @@ country_event = {
 	title = ne_uni_austria.4.t
 	desc =  ne_uni_austria.4.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_uni_austria.4" }
 	is_triggered_only = yes
 	#fire_only_once = yes
 
@@ -231,7 +231,7 @@ country_event = {
 	title = ne_uni_austria.5.t
 	desc =  ne_uni_austria.5.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_uni_austria.5" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
@@ -256,7 +256,7 @@ country_event = {
 	title = ne_uni_austria.6.t
 	desc =  ne_uni_austria.6.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_uni_austria.6" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	

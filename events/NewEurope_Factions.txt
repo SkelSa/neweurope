@@ -19,7 +19,7 @@ country_event = {
 	title = ne_faction.1.t
 	desc = ne_faction.1.d
 	picture = GFX_finnish_soldiers_snow
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_faction.1" }
 	hidden = yes
 	fire_only_once = yes
 
@@ -103,7 +103,7 @@ country_event = {
 	title = ne_faction.2.t
 	desc =  ne_faction.2.d
 	picture = GFX_somepic
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_faction.2" }
 	trigger = {
 	
 		NOT = { has_country_flag = ne_event_ready_faction }
@@ -157,7 +157,7 @@ country_event = {
 	title = ne_faction.3.t
 	desc =  ne_faction.3.d
 	picture = GFX_somepic
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_faction.3" }
 	fire_only_once = yes
 
 	trigger = {
@@ -250,7 +250,7 @@ country_event = {
 	title = ne_faction.4.t
 	desc =  ne_faction.4.d
 	picture = GFX_somepic
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_faction.4" }
 	is_triggered_only = yes
 	
 	immediate = { 	
@@ -301,7 +301,7 @@ country_event = {
 	title = ne_faction.5.t
 	desc =  ne_faction.5.d
 	picture = GFX_somepic
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_faction.5" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -333,7 +333,7 @@ country_event = {
 	title = ne_faction.6.t
 	desc =  ne_faction.6.d
 	picture = GFX_somepic
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_faction.6" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -358,7 +358,7 @@ country_event = {
 ##HIDDEN EVENT TO DELETE FLAG
 country_event = {
 	id = ne_faction.7
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_faction.1" }
 	hidden = yes
 	is_triggered_only = yes
 	
@@ -385,7 +385,7 @@ country_event = {
 country_event = {
 	id = ne_faction.8	
 	title = "Message from [Root.getName]" #ne_faction.8.t; Do title even though it's hidden
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_faction.8" }
 	hidden = yes
 	is_triggered_only = yes
 
@@ -406,7 +406,7 @@ country_event = {
 	title = namespace.1.t
 	desc =  namespace.1.d
 	picture = GFX_somepic
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: namespace.1" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -446,7 +446,7 @@ country_event = {
 	title = namespace.2.t
 	desc =  namespace.2.d
 	picture = GFX_somepic
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: namespace.2" }
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -465,7 +465,7 @@ country_event = {
 	title = ne_nato.1.t
 	desc =  ne_nato.1.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_nato.1" }
 	fire_only_once = yes
 	
 	trigger {
@@ -529,7 +529,7 @@ country_event = {
 	title = ne_nato.11.t
 	desc =  ne_nato.11.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_nato.11" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -578,7 +578,7 @@ country_event = {
 	title = ne_nato.12.t
 	desc =  ne_nato.12.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_nato.12" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 	
@@ -753,7 +753,7 @@ country_event = {
 	title = ne_nato.13.t
 	desc =  ne_nato.13.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_nato.13" }
 	is_triggered_only = yes	
 	fire_only_once = yes
 
@@ -778,7 +778,7 @@ country_event = {
 	title = ne_nato.2.t
 	desc =  ne_nato.2.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_nato.2" }
 	is_triggered_only = yes
 	#fire_only_once = yes; disabled, otherwise only one country gets the invitation
 
@@ -847,7 +847,7 @@ country_event = {
 	title = ne_nato.3.t
 	desc =  ne_nato.3.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_nato.3" }
 	is_triggered_only = yes
 	
 	# Great
@@ -867,7 +867,7 @@ country_event = {
 	title = ne_nato.4.t
 	desc =  ne_nato.4.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_nato.4" }
 	is_triggered_only = yes
 
 	
@@ -892,7 +892,7 @@ country_event = {
 	title = ne_nato.5.t
 	desc =  ne_nato.5.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_nato.5" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -1032,7 +1032,7 @@ country_event = {
 	title = ne_nato.6.t
 	desc =  ne_nato.6.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_nato.6" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -1108,7 +1108,7 @@ country_event = {
 	title = namespace.3.t
 	desc =  namespace.3.d
 	picture = GFX_somepic
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: namespace.3" }
 	trigger = {
 	
 		WGR = {
@@ -1158,7 +1158,7 @@ country_event = {
 	title = ne_wp.1.t
 	desc =  ne_wp.1.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_wp.1" }
 	fire_only_once = yes
 	
 	trigger {
@@ -1408,7 +1408,7 @@ country_event = {
 	title = ne_wp.2.t
 	desc =  ne_wp.2.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_wp.2" }
 	is_triggered_only = yes
 
 	
@@ -1483,7 +1483,7 @@ country_event = {
 	title = ne_wp.3.t
 	desc =  ne_wp.3.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_wp.3" }
 	is_triggered_only = yes
 	#fire_only_once is disabled, otherwise only one country gets the event
 
@@ -1504,7 +1504,7 @@ country_event = {
 	title = ne_wp.4.t
 	desc =  ne_wp.4.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_wp.4" }
 	is_triggered_only = yes
 	
 	

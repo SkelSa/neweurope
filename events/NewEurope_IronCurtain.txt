@@ -11,7 +11,7 @@ country_event = {
 	title = ne.4.t 
 	desc =  ne.4.d  
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne.4" }
 	is_triggered_only = yes
 	
 	

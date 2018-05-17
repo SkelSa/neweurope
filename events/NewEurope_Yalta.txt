@@ -9,7 +9,7 @@ country_event = {
 	title = germany.118.t
 	desc = germany.118.d
 	picture = GFX_report_event_generic_sign_treaty2
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: germany.118" }
 	fire_only_once = yes
 
 	trigger = {
@@ -295,7 +295,7 @@ country_event = {
 	title = germany.119.t
 	desc = germany.119.d
 	picture = GFX_report_event_generic_sign_treaty2
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: germany.119" }
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -531,7 +531,7 @@ country_event = {
 	title = germany.120.t
 	desc = germany.120.d
 	picture = GFX_report_event_generic_sign_treaty1
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: germany.120" }
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -546,7 +546,7 @@ country_event = {
 	title = germany.121.t
 	desc = germany.121.d
 	picture = GFX_report_event_generic_sign_treaty2
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: germany.121" }
 	fire_only_once = yes
 
 	trigger = {
