@@ -6,7 +6,7 @@ country_event = {  ##(Greenland?) transfer event
 	title = ne_usa.1.t
 	desc = ne_usa.1.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_usa.1" }
 	mean_time_to_happen = { days = 345 }
 
 	fire_only_once = yes

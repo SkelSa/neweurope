@@ -14,7 +14,7 @@ news_event = {
 	
 	
 	immediate = {
-
+	log = "[GetDateText]: [Root.GetName] executed following event: id = ne_setup.1"
 			
 		##Stuff for game		
 		GER = {set_capital = 768 }
@@ -354,7 +354,7 @@ country_event = {
 
 	
 	immediate = {
-	
+	log = "[GetDateText]: [Root.GetName] executed following event: id = ne_setup.2"
 		##set capitals:	
 		if = {
 			limit = {
@@ -851,7 +851,7 @@ country_event = {
 
 	
 	immediate = {
-	
+	log = "[GetDateText]: [Root.GetName] executed following event: id = ne_setup.3"
 		##SRJ
 		if = {
 			limit = {

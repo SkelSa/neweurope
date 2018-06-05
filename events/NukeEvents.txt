@@ -10,7 +10,7 @@ add_namespace = nuke_dropped
 news_event = {
 	id = nuke_dropped.0
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.0" }
 	major = yes
 
 	is_triggered_only = yes
@@ -42,7 +42,7 @@ news_event = {
 	title = nuke_dropped.1.t
 	desc = nuke_dropped.1.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.1" }
 	major = yes
 
 	is_triggered_only = yes
@@ -91,7 +91,7 @@ news_event = {
 	title = nuke_dropped.2.t
 	desc = nuke_dropped.2.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.2" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -121,7 +121,7 @@ news_event = {
 	title = nuke_dropped.3.t
 	desc = nuke_dropped.3.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.3" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -151,7 +151,7 @@ news_event = {
 	title = nuke_dropped.4.t
 	desc = nuke_dropped.4.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.4" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -194,7 +194,7 @@ news_event = {
 	title = nuke_dropped.5.t
 	desc = nuke_dropped.5.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.5" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -224,7 +224,7 @@ news_event = {
 	title = nuke_dropped.6.t
 	desc = nuke_dropped.6.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.6" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -254,7 +254,7 @@ news_event = {
 	title = nuke_dropped.7.t
 	desc = nuke_dropped.7.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.7" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -284,7 +284,7 @@ news_event = {
 	title = nuke_dropped.8.t
 	desc = nuke_dropped.8.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.8" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -314,7 +314,7 @@ news_event = {
 	title = nuke_dropped.9.t
 	desc = nuke_dropped.9.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.9" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -344,7 +344,7 @@ news_event = {
 	title = nuke_dropped.10.t
 	desc = nuke_dropped.10.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.10" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -374,7 +374,7 @@ news_event = {
 	title = nuke_dropped.11.t
 	desc = nuke_dropped.11.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.11" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -404,7 +404,7 @@ news_event = {
 	title = nuke_dropped.12.t
 	desc = nuke_dropped.12.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.12" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -453,7 +453,7 @@ news_event = {
 	title = nuke_dropped.13.t
 	desc = nuke_dropped.13.d
 	picture = GFX_news_event_nuke
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = nuke_dropped.13" }
 	is_triggered_only = yes
 
 	fire_only_once = yes

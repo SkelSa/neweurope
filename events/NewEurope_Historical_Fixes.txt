@@ -89,7 +89,7 @@ country_event = {
 	title = ne_historical.1.t
 	desc =  ne_historical.1.d
 	picture = GFX_report_event_bulgarian_soldiers
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_historical.1" }
 	fire_only_once = yes
 
 	
@@ -169,7 +169,7 @@ country_event = {
 	title = ne_historical.2.t
 	desc =  ne_historical.2.d
 	picture = GFX_report_event_bulgarian_soldiers
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_historical.2" }
 	#hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -234,7 +234,7 @@ country_event = {
 	title = ne_historical.3.t
 	desc =  ne_historical.3.d
 	picture = GFX_report_event_bulgarian_soldiers
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_historical.3" }
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -259,7 +259,7 @@ country_event = {
 	title = ne_historical.4.t
 	desc =  ne_historical.4.d
 	picture = GFX_report_event_bulgarian_soldiers
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_historical.4" }
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -392,7 +392,7 @@ country_event = {
 	title = ne_historical.5.t
 	desc =  ne_historical.5.d
 	picture = GFX_report_event_japanese_transport_soldiers
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_historical.5" }
 	
 	trigger = {		##Triggers when China has lost a significant amount of land
 		
@@ -443,7 +443,7 @@ country_event = {
 	title = ne_historical.6.t
 	desc =  ne_historical.6.d
 	picture = GFX_report_event_japanese_transport_soldiers
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_historical.6" }
 	
 	trigger = {		##Triggers when China has lost a significant amount of land
 		
@@ -515,7 +515,7 @@ country_event = {
 
 	hidden = yes
 	fire_only_once = yes
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_historical.7" }
 	trigger = {
 	
 		ROM = {

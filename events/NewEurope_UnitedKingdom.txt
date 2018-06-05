@@ -5,7 +5,7 @@ country_event = {  ##Anglo-Polish military alliance
 	title = ne_uk.1.t
 	desc = ne_uk.1.d
 	picture = GFX_report_event_generic_conference
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_uk.1" }
 	fire_only_once = yes
 
 	is_triggered_only = no
@@ -44,7 +44,7 @@ country_event = {  ##1936 Battle of Cable Street
 	title = ne_uk.2.t  
 	desc = ne_uk.2.d
 	picture = GFX_cable_street
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_uk.2" }
 	fire_only_once = yes
 
 	trigger = {

@@ -12,7 +12,7 @@ country_event = {
 	title = germany.4.t
 	desc = germany.4.d
 	picture = GFX_report_event_german_speech
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.4" }
 	is_triggered_only = yes
 	
 	option = {
@@ -73,7 +73,7 @@ country_event = {
 	title = germany.5.t
 	desc = germany.5.d
 	picture = GFX_report_event_japan_europe_pact
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.5" }
 	is_triggered_only = yes
 	
 	option = {
@@ -120,7 +120,7 @@ country_event = {
 	title = germany.6.t
 	desc = germany.6.d
 	picture = GFX_report_event_hitler_croatia_handshake
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.6" }
 
 	is_triggered_only = yes
 	
@@ -150,7 +150,7 @@ country_event = {
 	title = germany.11.t
 	desc = germany.11.d
 	picture = GFX_report_event_molotov_ribentrop_handshake
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.11" }
 	is_triggered_only = yes
 	
 	option = {
@@ -236,7 +236,7 @@ country_event = {
 	title = germany.12.t
 	desc = germany.12.d
 	picture = GFX_report_event_molotov_signing_pact
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.12" }
 	is_triggered_only = yes
 	
 	option = {
@@ -262,7 +262,7 @@ country_event = {
 	title = germany.13.t
 	desc = germany.13.d
 	picture = GFX_report_event_stalin_01
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.13" }
 	is_triggered_only = yes
 	
 	option = {
@@ -280,7 +280,7 @@ country_event = {
 	title = germany.20.t
 	desc = germany.20.d
 	picture = GFX_report_event_vienna_award_hungary
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.20" }
 	is_triggered_only = yes
 	
 	option = { # Give Hungary Northern Transylvania
@@ -348,7 +348,7 @@ country_event = {
 	title = germany.21.t
 	desc = germany.21.d
 	picture = GFX_report_event_vienna_award_hungary
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.21" }
 	is_triggered_only = yes
 	
 	option = {
@@ -367,7 +367,7 @@ country_event = {
 	title = germany.22.t
 	desc = germany.22.d
 	picture = GFX_report_event_vienna_award_hungary
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.22" }
 	is_triggered_only = yes
 	
 	option = {
@@ -387,7 +387,7 @@ country_event = {
 	title = germany.23.t
 	desc = germany.23.d
 	picture = GFX_report_event_lithuania_army
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.23" }
 	is_triggered_only = yes
 	
 	option = {
@@ -409,7 +409,7 @@ country_event = {
 	title = germany.24.t
 	desc = germany.24.d
 	picture = GFX_report_event_hitler_china
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.24" }
 	is_triggered_only = yes
 	
 	option = { # Agree
@@ -455,7 +455,7 @@ country_event = {
 	title = germany.25.t
 	desc = germany.25.d
 	picture = GFX_report_event_chinese_army_training
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.25" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -486,7 +486,7 @@ country_event = {
 	title = germany.26.t
 	desc = germany.26.d
 	picture = GFX_report_event_german_detained_china
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.26" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -517,7 +517,7 @@ country_event = {
 	title = germany.27.t
 	desc = germany.27.d
 	picture = GFX_report_event_bunker_01
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.27" }
 	is_triggered_only = yes
 	
 	option = {
@@ -575,7 +575,7 @@ country_event = {
 	title = germany.28.t
 	desc = germany.28.d
 	picture = GFX_report_event_hitler_parade
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.28" }
 	is_triggered_only = yes
 	
 	option = { # Accept
@@ -654,7 +654,7 @@ country_event = {
 	title = germany.29.t
 	desc = germany.29.d
 	picture = GFX_report_event_german_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.29" }
 	is_triggered_only = yes
 	
 	option = {
@@ -685,7 +685,7 @@ country_event = {
 		trigger = { has_war_with = GER }
 	}
 	picture = GFX_report_event_german_politician_speech
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.40" }
 	is_triggered_only = yes
 	
 	option = { # Abandon the Czechs
@@ -803,7 +803,7 @@ country_event = {
 	title = germany.40.t
 	desc = germany.41.d
 	picture = GFX_report_event_chamberlain_announce
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.41" }
 	is_triggered_only = yes
 	
 	option = { # Follow Britain's lead
@@ -1002,7 +1002,7 @@ country_event = {
 	title = germany.40.t
 	desc = germany.42.d
 	picture = GFX_report_event_czech_soldiers_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.42" }
 	is_triggered_only = yes
 	
 	#Support
@@ -1119,7 +1119,7 @@ country_event = {
 	title = germany.43.t
 	desc = germany.43.d
 	picture = GFX_report_event_french_british_officers
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.43" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1136,7 +1136,7 @@ country_event = {
 	title = germany.40.t
 	desc = germany.44.d
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.44" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1159,7 +1159,7 @@ country_event = {
 	title = germany.40.t
 	desc = germany.45.d
 	picture = GFX_report_event_chamberlain_announce
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.45" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1182,7 +1182,7 @@ country_event = {
 	title = germany.46.t
 	desc = germany.46.d
 	picture = GFX_report_event_czech_soldiers_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.46" }
 	is_triggered_only = yes
 	
 	option = { # Surrender the Sudetenland
@@ -1275,7 +1275,7 @@ country_event = {
 	title = germany.40.t
 	desc = germany.47.d
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.47" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1300,7 +1300,7 @@ country_event = {
 	title = germany.40.t
 	desc = germany.48.d
 	picture = GFX_report_event_chamberlain_announce
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.48" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1324,7 +1324,7 @@ country_event = {
 	title = germany.40.t
 	desc = germany.49.d
 	picture = GFX_report_event_czech_soldiers_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.49" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1356,7 +1356,7 @@ country_event = {
 	title = germany.40.t
 	desc = germany.50.d
 	picture = GFX_report_event_german_politician_speech
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.50" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1402,7 +1402,7 @@ country_event = {
 	title = germany.51.t
 	desc = germany.51.d
 	picture = GFX_report_event_vienna_award_negotiations
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.51" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1417,7 +1417,7 @@ country_event = {
 	title = germany.52.t
 	desc = germany.52.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.52" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1433,7 +1433,7 @@ country_event = {
 	title = germany.53.t
 	desc = germany.53.d
 	picture = GFX_report_event_german_politician_speech
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.53" }
 	is_triggered_only = yes
 	
 	option = { # Agree
@@ -1604,7 +1604,7 @@ country_event = {
 	title = germany.54.t
 	desc = germany.54.d
 	picture = GFX_report_event_czech_soldiers_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.54" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1645,7 +1645,7 @@ country_event = {
 		trigger = { NOT = { has_global_flag = end_of_czechoslovakia } }
 	}
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.55" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1867,7 +1867,7 @@ country_event = {
 		trigger = { NOT = { has_global_flag = end_of_czechoslovakia } }
 	}
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.56" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1911,7 +1911,7 @@ country_event = {
 	title = germany.57.t
 	desc = germany.57.d
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.57" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2022,7 +2022,7 @@ country_event = {
 	title = germany.58.t
 	desc = germany.58.d
 	picture = GFX_report_event_german_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.58" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2040,7 +2040,7 @@ country_event = {
 	title = germany.60.t
 	desc = germany.60.d
 	picture = GFX_report_event_german_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.60" }
 	is_triggered_only = yes
 	
 	option = { # This means war!
@@ -2119,7 +2119,7 @@ country_event = {
 	title = germany.60.t
 	desc = germany.61.d
 	picture = GFX_report_event_german_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.61" }
 	is_triggered_only = yes
 	
 	option = { # War out of the question
@@ -2190,7 +2190,7 @@ country_event = {
 	title = germany.60.t
 	desc = germany.62.d
 	picture = GFX_report_event_german_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.62" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2211,7 +2211,7 @@ country_event = {
 	title = germany.63.t
 	desc = germany.63.d
 	picture = GFX_report_event_chamberlain_announce
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.63" }
 	is_triggered_only = yes
 	
 	option = { # Push Ahead
@@ -2273,7 +2273,7 @@ country_event = {
 	title = germany.64.t
 	desc = germany.64.d
 	picture = GFX_report_event_british_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.64" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2314,7 +2314,7 @@ country_event = {
 	title = germany.65.t
 	desc = germany.65.d
 	picture = GFX_report_event_british_artillery
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.65" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2404,7 +2404,7 @@ country_event = {
 	title = germany.66.t
 	desc = germany.66.d
 	picture = GFX_report_event_degaulle_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.66" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2480,7 +2480,7 @@ country_event = {
 	title = germany.67.t
 	desc = germany.67.d
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.67" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2501,7 +2501,7 @@ country_event = {
 	title = germany.68.t
 	desc = germany.68.d
 	picture = GFX_report_event_french_liberation
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.68" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2517,7 +2517,7 @@ country_event = {
 	title = germany.70.t
 	desc = germany.70.d
 	picture = GFX_report_event_german_reichstag_gathering
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.70" }
 	fire_only_once = yes
 
 	trigger = {
@@ -2567,7 +2567,7 @@ country_event = {
 	title = germany.71.t
 	desc = germany.71.d
 	picture = GFX_report_event_europe_funeral
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.71" }
 	is_triggered_only = yes
 	
 	option = { # Himmler
@@ -2614,7 +2614,7 @@ country_event = {
 	title = germany.72.t
 	desc = germany.72.d
 	picture = GFX_report_event_hitler_parade
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.72" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2632,7 +2632,7 @@ country_event = {
 	title = germany.73.t
 	desc = germany.73.d
 	picture = GFX_report_event_german_reichstag_bombed
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.73" }
 	is_triggered_only = yes
 	
 	option = { # Side with the Rebels
@@ -2769,7 +2769,7 @@ country_event = {
 	title = germany.74.t
 	desc = germany.74.d
 	picture = GFX_report_event_fascist_speech
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.74" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2784,7 +2784,7 @@ country_event = {
 	title = germany.75.t
 	desc = germany.75.d
 	picture = GFX_report_event_physics_lab_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.75" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2832,7 +2832,7 @@ country_event = {
 	title = germany.76.t
 	desc = germany.76.d
 	picture = GFX_report_event_physics_lab_02
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.76" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2862,7 +2862,7 @@ country_event = {
 	title = germany.77.t
 	desc = germany.77.d
 	picture = GFX_report_event_physics_lab_02
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.77" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2877,7 +2877,7 @@ country_event = {
 	title = germany.78.t
 	desc = germany.78.d
 	picture = GFX_report_event_radar_01
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.78" }
 	is_triggered_only = yes
 	
 	option = {
@@ -2898,7 +2898,7 @@ country_event = {
 	title = germany.79.t
 	desc = germany.79.d
 	picture = GFX_report_event_german_turkish_pact
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.79" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3012,7 +3012,7 @@ country_event = {
 	title = germany.80.t
 	desc = germany.80.d
 	picture = GFX_report_event_german_polish_border
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.80" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3097,7 +3097,7 @@ country_event = {
 	title = germany.81.t
 	desc = germany.81.d
 	picture = GFX_report_event_german_polish_border
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.81" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3162,7 +3162,7 @@ country_event = {
 	title = germany.82.t
 	desc = germany.82.d
 	picture = GFX_report_event_polish_army
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.82" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3181,7 +3181,7 @@ country_event = {
 	title = germany.83.t
 	desc = germany.83.d
 	picture = GFX_report_event_japan_europe_pact
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.83" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3211,7 +3211,7 @@ country_event = {
 	title = germany.84.t
 	desc = germany.84.d
 	picture = GFX_report_event_soviet_tanks
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.84" }
 	is_triggered_only = yes
 
 	#immediate = {
@@ -3284,7 +3284,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_soviet_tanks
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.85" }
 	is_triggered_only = yes
 	
 	#immediate = {
@@ -3340,7 +3340,7 @@ country_event = {
 	title = germany.86.t
 	desc = germany.86.d
 	picture = GFX_report_event_german_troops
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.86" }
 	is_triggered_only = yes
 
 	trigger = {
@@ -3432,7 +3432,7 @@ country_event = {
 	title = germany.87.t
 	desc = germany.87.d
 	picture = GFX_report_event_german_polish_border
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.87" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3475,7 +3475,7 @@ country_event = {
 	title = germany.88.t
 	desc = germany.88.d
 	picture = GFX_report_event_polish_tanks_02
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.88" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3540,7 +3540,7 @@ country_event = {
 	title = germany.89.t
 	desc = germany.89.d
 	picture = GFX_report_event_molotov_ribbentrop_stalin_pact
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.89" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3626,7 +3626,7 @@ country_event = {
 	title = germany.90.t
 	desc = germany.90.d
 	picture = GFX_report_event_stalin_02
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.90" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3646,7 +3646,7 @@ country_event = {
 	title = germany.91.t
 	desc = germany.91.d
 	picture = GFX_report_event_fascist_gathering
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.91" }
 	is_triggered_only = yes
 		
 	option = {
@@ -3684,7 +3684,7 @@ country_event = {
 	title = germany.92.t
 	desc = germany.92.d
 	picture = GFX_report_event_worried_french
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.92" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3705,7 +3705,7 @@ country_event = {
 		trigger = { has_global_flag = FRA_abandoned_yugoslavia }
 	}
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.92" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3728,7 +3728,7 @@ country_event = {
 	title = germany.94.t
 	desc = germany.94.d
 	picture = GFX_report_event_german_politician_speech
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.94" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3747,7 +3747,7 @@ country_event = {
 	title = germany.95.t
 	desc = germany.95.d
 	picture = GFX_report_event_german_politician_speech
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.95" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3769,7 +3769,7 @@ country_event = {
 	title = germany.96.t
 	desc = germany.96.d
 	picture = GFX_report_event_german_politician_speech
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.96" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3791,7 +3791,7 @@ country_event = {
 	title = germany.97.t
 	desc = germany.97.d
 	picture = GFX_report_event_german_politician_speech
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.97" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3815,7 +3815,7 @@ country_event = {
 		text = germany.98.d
 	}
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.98" }
 	is_triggered_only = yes
 	
 	option = {
@@ -4054,7 +4054,7 @@ country_event = {
 	desc = germany.99.d
 
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.99" }
 	is_triggered_only = yes
 
 	option = {
@@ -4109,7 +4109,7 @@ country_event = {
 	desc = germany.100.d
 
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.100" }
 	is_triggered_only = yes
 
 	option = {
@@ -4147,7 +4147,7 @@ country_event = {
 	desc = germany.101.d
 
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.101" }
 	is_triggered_only = yes
 
 	immediate = {
@@ -4221,7 +4221,7 @@ country_event = {
 	desc = germany.102.d
 
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.102" }
 	is_triggered_only = yes
 
 	option = {
@@ -4243,7 +4243,7 @@ country_event = {
 	desc = germany.103.d
 
 	picture = GFX_report_event_german_inspect_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.103" }
 	is_triggered_only = yes
 
 	option = {
@@ -4265,7 +4265,7 @@ country_event = {
  
  
 	picture = GFX_report_event_german_italian_pact
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.104" }
 	is_triggered_only = yes
 
 	# Italy gets 1 state Savoy
@@ -4356,7 +4356,7 @@ country_event = {
 	title = germany.105.t
 	desc = germany.105.d
 	picture = GFX_report_event_german_italian_pact
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.105" }
 	is_triggered_only = yes
 	
 	option = { 
@@ -4380,7 +4380,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_vienna_award_hungary
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.106" }
 	is_triggered_only = yes
 	
 	option = { # Give Bulgaria state 77
@@ -4438,7 +4438,7 @@ country_event = {
 	title = germany.107.t
 	desc = germany.107.d
 	picture = GFX_report_event_airplane_crash
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.107" }
 	is_triggered_only = yes
 	
 	immediate = { 
@@ -4462,7 +4462,7 @@ country_event = {
 	title = germany.108.t
 	desc = germany.108.d
 	picture = GFX_report_event_airplane_crash
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.108" }
 	is_triggered_only = yes
 	
 	immediate = { 
@@ -4486,7 +4486,7 @@ country_event = {
 	title = germany.107.t
 	desc = germany.109.d
 	picture = GFX_report_event_hindenburg_flames
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.109" }
 	is_triggered_only = yes
 	
 	immediate = { 
@@ -4510,7 +4510,7 @@ country_event = {
 	title = germany.108.t
 	desc = germany.110.d
 	picture = GFX_report_event_hindenburg_flames
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.110" }
 	is_triggered_only = yes
 	
 	immediate = { 
@@ -4534,7 +4534,7 @@ country_event = {
 	title = germany.111.t
 	desc = germany.111.d
 	picture = GFX_report_event_german_troops
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.111" }
 	is_triggered_only = yes
 	
 	option = {
@@ -4569,7 +4569,7 @@ country_event = {
 	title = germany.113.t
 	desc = germany.113.d
 	picture = GFX_report_event_german_troops
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.113" }
 	is_triggered_only = yes
 
 	#Demand Danzig for aid
@@ -4588,7 +4588,7 @@ country_event = {
 	title = germany.114.t
 	desc = germany.114.d
 	picture = GFX_report_event_polish_tanks_01
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.114" }
 	trigger = {
 		has_country_flag = GER_POL_danzig_promised
 		has_civil_war = no
@@ -4647,7 +4647,7 @@ country_event = {
 	title = germany.115.t
 	desc = germany.115.d
 	picture = GFX_report_event_polish_tanks_01
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.115" }
 	is_triggered_only = yes
 
 	option = {
@@ -4664,7 +4664,7 @@ country_event = {
 	title = germany.116.t
 	desc = germany.116.d
 	picture = GFX_report_event_polish_tanks_02
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.116" }
 	is_triggered_only = yes
 	
 	option = {
@@ -4694,7 +4694,7 @@ country_event = {
 	title = germany.117.t
 	desc = germany.117.d
 	picture = GFX_report_event_german_troops
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.117" }
 	is_triggered_only = yes
 
 	# This is a German struggle
@@ -4712,7 +4712,7 @@ country_event = {
 	title = germany.122.t
 	desc = germany.122.d
 	picture = GFX_report_event_german_speech
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.122" }
 	is_triggered_only = yes
 
 	option = {
@@ -4774,7 +4774,7 @@ country_event = {
 	title = germany.123.t
 	desc = germany.123.d
 	picture = GFX_report_event_czech_soldiers_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.123" }
 	is_triggered_only = yes
 
 	option = {
@@ -4813,7 +4813,7 @@ country_event = {
 	title = germany.124.t
 	desc = germany.124.d
 	picture = GFX_report_event_german_reichstag_gathering
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.124" }
 	is_triggered_only = yes
 
 	option = {
@@ -4831,7 +4831,7 @@ country_event = {
 	title = germany.126.t
 	desc = germany.126.d
 	picture = GFX_report_event_german_reichstag_gathering
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.126" }
 	is_triggered_only = yes
 
 	option = {
@@ -4897,7 +4897,7 @@ country_event = {
 	title = germany.127.t
 	desc = germany.127.d
 	picture = GFX_report_event_soviet_tanks
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.127" }
 	is_triggered_only = yes
 
 	# Create faction (if none) and send requests to join faction (members leave other faction)
@@ -4933,7 +4933,7 @@ country_event = {
 	title = germany.128.t
 	desc = germany.128.d
 	picture = GFX_report_event_soviet_tanks
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.128" }
 	is_triggered_only = yes
 
 	# Join faction (if none) and send requests to join faction (members leave other faction)
@@ -4963,7 +4963,7 @@ country_event = {
 	title = germany.999.t
 	desc = germany.999.desc
 	picture = GFX_report_event_german_reichstag_gathering
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.999" }
 	fire_only_once = yes
 
 	trigger = {
@@ -5001,7 +5001,7 @@ country_event = {
 	title = germany.1000.t
 	desc = germany.1000.desc
 	picture = GFX_report_event_german_reichstag_gathering
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = germany.1000" }
 	hidden = yes
 
 	trigger = {
