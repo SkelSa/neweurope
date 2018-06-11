@@ -35,7 +35,7 @@ country_event = {
 	title = ne_settings_intro.1.t
 	desc =  ne_settings_intro.1.d
 	picture = GFX_ne_settings_main
-	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_settings_intro.0" }
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_settings_intro.1" }
 	is_triggered_only = yes
 
 	

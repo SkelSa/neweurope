@@ -503,11 +503,10 @@ news_event = {
 		trigger {
 		
 			OR = {
-			tag = USA
-			tag = ENG
-			tag = ENG
-			tag = CAN
-			
+				tag = USA
+				tag = ENG
+				tag = ENG
+				tag = CAN			
 			}
 
 		}
