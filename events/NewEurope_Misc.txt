@@ -9,7 +9,7 @@ country_event = {
 	title = ne_misc.1.t
 	desc =  ne_misc.1.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.1" }
 	#is_triggered_only = yes	
 	fire_only_once = yes
 
@@ -61,7 +61,7 @@ country_event = {
 	title = ne_misc.2.t
 	desc =  ne_misc.2.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.2" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -110,7 +110,7 @@ country_event = {
 	title = ne_misc.3.t
 	desc =  ne_misc.3.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.3" }
 
 	trigger = {
 
@@ -224,7 +224,7 @@ country_event = {
 	title = ne_misc.4.t
 	desc =  ne_misc.4.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.4" }
 	#has to be yes; event is triggered through another
 	is_triggered_only = yes
 
@@ -265,7 +265,7 @@ country_event = {
 	title = ne_misc.5.t
 	desc =  ne_misc.5.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.5" }
 	is_triggered_only = yes
 
 	#ok
@@ -292,7 +292,7 @@ country_event = {
 	title = ne_misc.6.t
 	desc =  ne_misc.6.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.6" }
 	trigger = {
 	
 		NOT = { has_government = fascism }
@@ -381,7 +381,7 @@ country_event = {
 	title = ne_misc.7.t
 	desc =  ne_misc.7.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.7" }
 	is_triggered_only = yes
 	
 	
@@ -489,7 +489,7 @@ country_event = {
 			title = ne_misc.8.t
 			desc =  ne_misc.8.d
 			picture = GFX_report_event_soviet_invasion_map
-
+			immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.8" }
 			is_triggered_only = yes
 			
 			
@@ -513,7 +513,7 @@ country_event = {
 	title = ne_misc.9.t
 	desc =  ne_misc.9.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.9" }
 	is_triggered_only = yes
 	
 	
@@ -537,7 +537,7 @@ country_event = {
 	title = ne_misc.10.t
 	desc = ne_misc.10.d
 	picture = GFX_report_event_worker_protests
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.10" }
 	trigger = {
 	
 		SOV = { exists = yes has_government = communism }	
@@ -596,7 +596,7 @@ country_event = {
 	title = ne_misc.11.t
 	desc = ne_misc.11.d
 	picture = GFX_report_event_worker_protests
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.11" }
 	is_triggered_only = yes
 
 	
@@ -941,7 +941,7 @@ country_event = {
 	title = ne_misc.14.t
 	desc =  ne_misc.14.d
 	picture = GFX_report_a_trieste_choice
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.14" }
 	fire_only_once = yes
 
 	mean_time_to_happen = { days = 365 }
@@ -1052,7 +1052,7 @@ country_event = {
 	title = ne_misc.17.t
 	desc =  ne_misc.17.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.17" }
 	title = {
 		text = ne_misc.17.t1
 		trigger = {
@@ -1131,7 +1131,7 @@ country_event = {
 	title = ne_misc.18.t
 	desc = ne_misc.18.d
     picture = GFX_report_event_soviet_soldiers_tank ##Let's leave the default icons for now
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.18" }
 	fire_only_once = yes			
 
 	mean_time_to_happen	= { days = 120 }
@@ -1273,7 +1273,7 @@ country_event = { ##Soviet-Japanese Pact
 	title = ne_misc.19.t
 	desc = ne_misc.19.d
     picture = GFX_report_event_generic_sign_treaty1
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.19" }
 	fire_only_once = yes
 
 	trigger	= {
@@ -1317,7 +1317,7 @@ country_event = { ##Soviet-Japanese Pact. Act of Japan
 	title = ne_misc.20.t
 	desc = ne_misc.20.d
     picture = GFX_report_event_generic_sign_treaty1
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.20" }
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -1349,7 +1349,7 @@ country_event = { ##Allies reaction
 	title = ne_misc.21.t
 	desc = ne_misc.21.d
     picture = GFX_report_event_generic_sign_treaty1
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.21" }
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -1373,7 +1373,7 @@ country_event = {
 	title = ne_misc.22.t
 	desc = ne_misc.22.d
     picture = GFX_poland_grom
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.22" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1424,7 +1424,7 @@ country_event = {
 	title = ne_misc.23.t
 	desc = ne_misc.23.d
     picture = GFX_poland_grom
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.23" }
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -1460,7 +1460,7 @@ country_event = {
 	title = ne_misc.24.t
 	desc = ne_misc.24.d
 	picture = GFX_peking_plan
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.24" }
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -1476,7 +1476,7 @@ country_event = {
 	title = ne_misc.25.t
 	desc = ne_misc.25.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.25" }
 ##	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -1575,7 +1575,7 @@ country_event = {
 	title = ne_misc.26.t
 	desc = ne_misc.26.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.26" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -1703,7 +1703,7 @@ country_event = {
 	title = ne_misc.27.t
 	desc = ne_misc.27.d
 	picture = GFX_fascist_selected
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.27" }
 	is_triggered_only = yes
 	
 	immediate  = {
@@ -1740,7 +1740,7 @@ country_event = {
 	title = ne_skelsa.75.t
 	desc = ne_skelsa.75.d
 	picture = GFX_no_historical_focuses
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.75" }
 	is_triggered_only = yes
 
 	immediate = {
@@ -1768,7 +1768,7 @@ country_event = {
 	title = ne_misc.28.t
 	desc = ne_misc.28.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.28" }
 	mean_time_to_happen = { days = 31 }
 
 	trigger = {
@@ -1809,7 +1809,7 @@ country_event = {
 	title = ne_skelsa.87.t
 	desc =  ne_skelsa.87.d
 	picture = GFX_swedish_soldier
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.87" }
 	trigger = {
 	
 		OR = {
@@ -1859,7 +1859,7 @@ country_event = {
 	title = ne_skelsa.88.t
 	desc =  ne_skelsa.88.d
 	picture = GFX_swedish_soldier
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.88" }
 
 	trigger = {
 	
@@ -1919,7 +1919,7 @@ country_event = {
 
 	mean_time_to_happen = { days = 2 }
 
-	immediate = { set_country_flag = freed_from_axis_occupation } 
+	immediate = { set_country_flag = freed_from_axis_occupation log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.89" } 
 	
 	
 	option = {	#Axis lose claims
@@ -1996,7 +1996,7 @@ country_event = {
 	title = ne_skelsa.5.t
 	desc =  ne_skelsa.5.d
 	picture = GFX_somepic
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.5" }
 	fire_only_once = yes
 
 	
@@ -2034,7 +2034,7 @@ country_event = {
 	title = ne_misc.29.t
 	desc = ne_misc.29.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.29" }
 	is_triggered_only = yes
 
 	option = {
@@ -2050,7 +2050,7 @@ country_event = {  ##ecuador is fucked up
 	title = ne_misc.30.t
 	desc = ne_misc.30.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.30" }
 	trigger = {
 		tag = PRU
 		PRU = { 
@@ -2087,7 +2087,7 @@ country_event = {  ##peru fail
 	title = ne_misc.31.t
 	desc = ne_misc.31.d
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.31" }
 	trigger = {
 		tag = PRU
 		PRU = { 

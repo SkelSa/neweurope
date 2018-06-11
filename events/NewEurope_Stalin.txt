@@ -7,7 +7,7 @@ country_event = {
 	title = ne_stalin.1.t
 	desc = ne_stalin.1.d
 	picture = GFX_report_event_stalinrip
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_stalin.1" }
 	fire_only_once = yes
 
 	trigger = {
@@ -57,7 +57,7 @@ country_event = {
 	title = ne_stalin.2.t
 	desc = ne_stalin.2.d
 	picture = GFX_powerstruggle_stalin
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_stalin.2" }
 	fire_only_once = yes
 
 	trigger = {
@@ -105,7 +105,7 @@ country_event = {
 	title = ne_stalin.3.t
 	desc = ne_stalin.3.d
 	picture = GFX_powerstruggle_stalin
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_stalin.3" }
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -131,7 +131,7 @@ country_event = {
 	title = ne_stalin.4.t
 	desc = ne_stalin.4.d
 	picture = GFX_powerstruggle_stalin
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_stalin.4" }
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -169,7 +169,7 @@ country_event = {
 	title = ne_stalin.5.t
 	desc = ne_stalin.5.d
 	picture = GFX_powerstruggle_stalin
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_stalin.5" }
 	fire_only_once = yes
 
 	trigger = {

@@ -4,17 +4,20 @@ war_measures = {
 	CHI_yellow_river = {
 		icon = GFX_decision_potop ##will add in the future
 		available = {
-			any_country = {
-				OR = {
-					AND = {
-						is_in_faction_with = JAP
-						has_defensive_war_with = CHI
+			custom_trigger_tooltip = {
+				tooltip = CHI_potop_trigger_tooltip
+				any_country = {
+					OR = {
+						AND = {
+							is_in_faction_with = JAP
+							has_defensive_war_with = CHI
+						}
+						tag = JAP
 					}
-					tag = JAP
-				}
-				OR = {
-					controls_state = 613
-					controls_state = 749
+					OR = {
+						controls_state = 613
+						controls_state = 749
+					}
 				}
 			}
 		}

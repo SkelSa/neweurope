@@ -17,7 +17,8 @@
  nat_spain_civil_war_help:0 "Military Equipment will be sent to support the Spanish State in their struggle."
  the_golden_gate_bridge:0 "§BThe bridge will be built that will add 1 infrastructure to the state of California§!."
  usa_air_crash.1.tt:0 "§BRevision and development of a new air traffic control system will cost us§! §R-10§! §Bpolitical power§!."
- CHI_potop_mozhet_pomoch:0 "Destruction of the dam can help stop the rapid advance of Japanese troops"
+ CHI_potop_mozhet_pomoch:0 "§YDestruction of the dam can help stop the rapid advance of Japanese troops§!"
+ CHI_potop_trigger_tooltip:0 "§YWe need to wait for the moment when the enemy will go deeper into our country, occupying at least the Huangshan or the Shanghai states completely§!"
  
  #################
  ##Settings Menu##

@@ -12,7 +12,7 @@ country_event = {
 	title = poland.1.t
 	desc = poland.1.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.1" }
 	is_triggered_only = yes
 	
 	option = {
@@ -37,7 +37,7 @@ country_event = {
 	title = poland.2.t
 	desc = poland.2.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.2" }
 	is_triggered_only = yes
 	
 	option = {
@@ -121,7 +121,7 @@ country_event = {
 	title = poland.3.t
 	desc = poland.3.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.3" }
 	is_triggered_only = yes
 	
 	option = {
@@ -213,7 +213,7 @@ country_event = {
 	title = poland.4.t
 	desc = poland.4.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.4" }
 	is_triggered_only = yes
 	
 	option = {
@@ -233,7 +233,7 @@ country_event = {
 	title = poland.5.t
 	desc = poland.5.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.5" }
 	is_triggered_only = yes
 	
 	option = {
@@ -313,7 +313,7 @@ country_event = {
 	title = poland.6.t
 	desc = poland.6.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.6" }
 	is_triggered_only = yes
 	
 	option = {
@@ -378,7 +378,7 @@ country_event = {
 	title = poland.7.t
 	desc = poland.7.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.7" }
 	is_triggered_only = yes
 	
 	option = {
@@ -397,7 +397,7 @@ country_event = {
 	title = poland.8.t
 	desc = poland.8.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.8" }
 	trigger = {
 		POL = { has_country_flag = POL_accepted_soviet_protection }
 		tag = POL
@@ -464,7 +464,7 @@ country_event = {
 	title = poland.8.t
 	desc = poland.8.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.9" }
 	is_triggered_only = yes
 	
 	option = {
@@ -546,7 +546,7 @@ country_event = {
 	title = poland.10.t
 	desc = poland.10.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.10" }
 	is_triggered_only = yes
 
 	option = {
@@ -560,7 +560,7 @@ country_event = {
 	title = poland.11.t
 	desc = poland.11.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.11" }
 	is_triggered_only = yes
 
 	option = {
@@ -577,7 +577,7 @@ country_event = {
 	title = poland.12.t
 	desc = poland.12.d
 	picture = GFX_report_event_polish_tanks_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.12" }
 	trigger = {
 		tag = POL
 		has_completed_focus = POL_artillery_modernisation
@@ -636,7 +636,7 @@ country_event = {  ##New Europe. The Danzig decision
 	title = poland.13.t
 	desc = poland.13.d
 	picture = GFX_report_event_german_polish_border
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = poland.13" }
 	is_triggered_only = yes
 	fire_only_once = yes
 

@@ -10,14 +10,14 @@ country_event = {
 	title = ne_skelsa.86.t
 	desc =  ne_skelsa.86.d
 	picture = GFX_t34
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.86" }
 	trigger = {
 		tag = SOV
 		date > 1940.1.31 
 		
 		#Conditions might need a check
 		NOT = { has_tech = improved_medium_tank  }
-		NOT = {  has_tech = basic_heavy_tank  }
+		NOT = {  has_tech = improved_heavy_tank  }
 	
 	}
 	
@@ -29,11 +29,32 @@ country_event = {
 
 		##Effects
 		army_experience = 15
-		add_equipment_to_stockpile = { type = medium_tank_equipment_2  amount = 117 producer = SOV } 
-		add_equipment_to_stockpile = { type = heavy_tank_equipment_1  amount = 50 producer = SOV }
-		
 		set_technology = { improved_medium_tank = 1 } 
-		set_technology = { basic_heavy_tank = 1 } 
+		set_technology = { improved_heavy_tank = 1 }
+		hidden_effect = {
+			country_event = { id = ne_skelsa.98 }		
+		}
+		
+	}
+
+	
+}
+
+country_event = {
+	id = ne_skelsa.98
+	title = ne_skelsa.86.t
+	desc =  ne_skelsa.86.d
+	picture = GFX_t34
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.98" }
+
+	is_triggered_only = yes
+	
+	option = {	#gain army experience, 150 tanks and tech
+		name = ne_skelsa.86.a
+
+		##Effects
+		add_equipment_to_stockpile = { type = medium_tank_equipment_2  amount = 117 producer = SOV } 
+		add_equipment_to_stockpile = { type = heavy_tank_equipment_2  amount = 50 producer = SOV }
 		
 	}
 
@@ -47,7 +68,7 @@ country_event = {
 	title = ne_skelsa.85.t
 	desc =  ne_skelsa.85.d
 	picture = GFX_lon
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.85" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -88,7 +109,7 @@ country_event = { ##A new research slot for the USSR
 	title = ne_sov.1.t
 	desc = ne_sov.1.d
 	picture = GFX_report_event_generic_research_lab
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_sov.1" }
 	fire_only_once = yes
 
 	trigger = {

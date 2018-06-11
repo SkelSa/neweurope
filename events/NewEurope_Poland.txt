@@ -9,7 +9,7 @@ country_event = {
 	title = ne_skelsa.200.t
 	desc =  ne_skelsa.200.d
 	picture = GFX_su_invasion_pol
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.200" }
 	fire_only_once = yes
 
 	
@@ -113,7 +113,7 @@ country_event = {
 	title = ne_skelsa.201.t
 	desc =  ne_skelsa.201.d
 	picture = GFX_soviet_parade_lwow
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.201" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -138,7 +138,7 @@ country_event = {
 	title = ne_skelsa.202.t
 	desc =  ne_skelsa.202.d
 	picture = GFX_hitler_bridge
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.202" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -159,7 +159,7 @@ country_event = {
 	title = ne_skelsa.204.t
 	desc =  ne_skelsa.204.d
 	picture = GFX_soviet_parade_lwow
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.204" }
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -179,7 +179,7 @@ country_event = {
 country_event = {
 	id = ne_skelsa.203
 	#picture = GFX_polish_division
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_skelsa.203" }
 	hidden = yes
 	fire_only_once = yes
 	is_triggered_only = yes		##News event will trigger this event

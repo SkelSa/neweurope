@@ -7,7 +7,7 @@ news_event = {
 	title = ne_news.1.t  
 	desc = ne_news.1.d
 	picture = GFX_new_europe
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.1" }
 	is_triggered_only = yes
 	
 	option = {	#I understand
@@ -30,7 +30,7 @@ news_event = {
 	title = ne_news.2.t  
 	desc = ne_news.2.d
 	picture = GFX_prc_proclamation
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.2" }
 	major = yes
 	#fire_only_once = yes
 	
@@ -99,7 +99,7 @@ news_event = {
 	title = ne_news.105.t
 	desc = ne_news.105.d
 	picture = GFX_news_event_french_parade
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.105" }
 	major = yes
 	
 	trigger = {
@@ -144,7 +144,7 @@ news_event = {
 	title = ne_news.3.t 
 	desc = ne_news.3.d
 	picture = GFX_hitler_dead
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.3" }
 	major = yes
 	
 	trigger = {	
@@ -249,7 +249,7 @@ news_event = {
 	title = ne_news.4.t 
 	desc = ne_news.4.d
 	picture = GFX_Fuhrious
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.4" }
 	major = yes
 	
 	#is_triggered_only = yes
@@ -345,7 +345,7 @@ news_event = {
 	title = ne_news.5.t  
 	desc = ne_news.5.d
 	picture = GFX_germany_partitioned
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.5" }
 	major = yes
 	
 	trigger = {
@@ -457,7 +457,7 @@ news_event = {
 	title = ne_news.6.t  
 	desc = ne_news.6.d
 	picture = GFX_germany_divided
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.6" }
 	major = yes	
 	is_triggered_only = yes
 	#fire_only_once = yes
@@ -555,7 +555,7 @@ news_event = {
 	id = ne_news.7
 	title = ne_news.7.t  
 	desc = ne_news.7.d
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.7" }
 	##Alternative title and description for Trotsky
 	title = {
 		text =  ne_news.7.tt
@@ -667,7 +667,7 @@ news_event = {
 	title = ne_news.7.t1 
 	desc = ne_news.7.d1
 	picture = GFX_stalin_notes
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.70" }
 	desc = {
 		text = ne_news.7.dt1
 		trigger = {
@@ -773,7 +773,7 @@ news_event = {
 	title = ne_news.8.t
 	desc = ne_news.8.d
 	picture = GFX_korea_1950
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.8" }
 	major = yes
 	is_triggered_only = yes
 
@@ -858,7 +858,7 @@ news_event = {
 	title = ne_news.9.t
 	desc = ne_news.9.d
 	picture = GFX_korea_1953
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.9" }
 	major = yes
 	is_triggered_only = yes
 
@@ -948,7 +948,7 @@ news_event = {
 	title = ne_news.11.t
 	desc = ne_news.11.d
 	picture = GFX_korea_unified
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.11" }
 	major = yes	
 	is_triggered_only = yes
 
@@ -1036,7 +1036,7 @@ news_event = {
 	title = ne_news.10.t
 	desc = ne_news.10.d
 	picture = GFX_korea_occupation
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.10" }
 	major = yes	
 	is_triggered_only = yes
 
@@ -1112,7 +1112,7 @@ news_event = {
 	title = ne_news.12.t
 	desc = ne_news.12.d
 	picture = GFX_korea_war_start
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.12" }
 	major = yes	
 	is_triggered_only = yes
 
@@ -1188,7 +1188,7 @@ news_event = {
 	title = ne_news.13.t
 	desc = ne_news.13.d
 	picture = GFX_korea_war_ceasefire
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.13" }
 	major = yes	
 	is_triggered_only = yes
 	
@@ -1298,7 +1298,7 @@ news_event = {
 	title = ne_news.14.t
 	desc = ne_news.14.d
 	picture = GFX_korea_war_continues
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.14" }
 	major = yes	
 	is_triggered_only = yes
 
@@ -1372,7 +1372,7 @@ news_event = {
 	title = ne_news.15.t
 	desc = ne_news.15.d
 	picture = GFX_korea_war_dprk
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.15" }
 	major = yes
 
 	trigger = {
@@ -1470,7 +1470,7 @@ news_event = {
 	title = ne_news.16.t
 	desc = ne_news.16.d
 	picture = GFX_korea_war_rok
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.16" }
 	major = yes
 	
 	trigger = {
@@ -1578,7 +1578,7 @@ news_event = {
 	title = ne_news.17.t
 	desc = ne_news.17.d
 	picture = GFX_nato
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.17" }
 	major = yes
 	is_triggered_only = yes
 
@@ -1663,7 +1663,7 @@ news_event = {
 	title = ne_news.18.t
 	desc = ne_news.18.d
 	picture = GFX_warsaw_pact
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.18" }
 	major = yes
 	is_triggered_only = yes
 
@@ -1748,7 +1748,7 @@ news_event = {
 	title = ne_news.19.t
 	desc = ne_news.19.d
 	picture = GFX_news_stalin_rip
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.19" }
 	major = yes	
 	is_triggered_only = yes
 	
@@ -1785,7 +1785,7 @@ news_event = {
 	title = ne_news.20.t
 	desc = ne_news.20.d
 	picture = GFX_ww3_start
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.20" }
 	major = yes
 	
 	trigger = {
@@ -1865,7 +1865,7 @@ news_event = {
 	title = ne_news.21.t
 	desc = ne_news.21.d
 	picture = GFX_ww3_start
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.21" }
 	major = yes
 	
 	trigger = {
@@ -1944,7 +1944,7 @@ news_event = {
 	title = ne_news.22.t
 	desc = ne_news.22.d
 	picture = GFX_battle_berlin
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.22" }
 	major = yes	
 	is_triggered_only = yes
 	
@@ -1991,7 +1991,7 @@ news_event = {
 	title = ne_news.23.t
 	desc = ne_news.23.d
 	picture = GFX_battle_berlin
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.23" }
 	major = yes	
 	is_triggered_only = yes
 	
@@ -2037,7 +2037,7 @@ news_event = {
 	title = ne_news.24.t
 	desc = ne_news.24.d
 	picture = GFX_news_berlin_wall
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.24" }
 	major = yes	
 	is_triggered_only = yes
 	
@@ -2088,7 +2088,7 @@ news_event = {
 	title = ne_news.25.t
 	desc = ne_news.25.d
 	#picture = GFX_news_berlin_wall
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.25" }
 	major = yes	
 	
 	trigger = {		##those conditions might need another look
@@ -2176,7 +2176,7 @@ news_event = {
 	title = ne_news.26.t
 	desc = ne_news.26.d
 	#picture = GFX_news_berlin_wall
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.26" }
 	major = yes	
 	
 	trigger = {		##those conditions might need another look
@@ -2262,7 +2262,7 @@ news_event = {
 	title = ne_news.27.t
 	desc = ne_news.27.d
 	#picture = GFX_news_berlin_wall
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.27" }
 	major = yes	
 	
 	trigger = {		
@@ -2341,7 +2341,7 @@ news_event = {
 	title = ne_news.28.t
 	desc = ne_news.28.d
 	# picture = GFX_hatai_transfer
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.28" }
 	major = yes	
 	is_triggered_only = yes
 	
@@ -2382,7 +2382,7 @@ news_event = {
 	title = ne_news.29.t
 	desc = ne_news.29.d
 	picture = GFX_elbe_day
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.29" }
 	major = yes	
 	fire_only_once = yes
 	
@@ -2496,7 +2496,7 @@ news_event = {
 	title = ne_news.30.t
 	desc = ne_news.30.d
 	# picture = GFX_newfoundland_transfer
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.30" }
 	is_triggered_only = yes
 	major = yes
 	
@@ -2538,7 +2538,7 @@ news_event = {
 	title = ne_news.31.t
 	desc = ne_news.31.d
 	# picture = GFX_Auschwitz
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.31" }
 	major = yes
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -2579,7 +2579,7 @@ news_event = {
 	title = ne_news.32.t
 	desc = ne_news.32.d
 	# picture = GFX_usalaska
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.32" }
 	fire_only_once = yes
 
 	trigger = {
@@ -2609,7 +2609,7 @@ news_event = {
 	title = ne_news.33.t
 	desc = ne_news.33.d
 	# picture = GFX_usahawaii
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.33" }
 	fire_only_once = yes
 
 	trigger = {
@@ -2661,7 +2661,7 @@ news_event = {
 	title = ne_news.46.t
 	desc = ne_news.46.d
 	picture = GFX_polish_division_ger_sov
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.46" }
 	major = yes
 
 	trigger = {
@@ -2736,7 +2736,7 @@ news_event = {  ##TWA Flight 1 Crash
 	title = ne_news.50.t  
 	desc = ne_news.50.d
 	picture = GFX_news_event_twa_crash ##an image will be added in the future
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.50" }
 	fire_only_once = yes
 
 	trigger = {
@@ -2762,7 +2762,7 @@ news_event = {  ##The Academy Awards aka 'Oscar', 1936
 	title = ne_news.51.t  
 	desc = ne_news.51.d  ##descriptionplease
 	picture = GFX_news_event_oscar ##an image will be added in the future
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.51" }
 	trigger = {
 		tag = USA
 		date > 1936.3.1
@@ -2785,7 +2785,7 @@ news_event = {  ##General Motors sit-down strike started
 	title = ne_news.52.t  
 	desc = ne_news.52.d ##descriptionplease
 	picture = GFX_news_event_zabastovka ##an image will be added in the future
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.52" }
 	fire_only_once = yes
 
 	trigger = {
@@ -2812,7 +2812,7 @@ news_event = {  ##General Motors sit-down strike finished
 	title = ne_news.53.t  
 	desc = ne_news.53.d ##descriptionplease
 	picture = GFX_news_event_zabastovka ##an image will be added in the future
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.53" }
 	fire_only_once = yes
 
 	trigger = {
@@ -2840,7 +2840,7 @@ news_event = {  ##The Golden Gate Bridge opened in San Francisco
 	title = ne_news.54.t  
 	desc = ne_news.54.d ##descriptionplease
 	picture = GFX_news_event_golden_bridge ##an image will be added in the future
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.54" }
 	fire_only_once = yes
 
 	trigger = {
@@ -2876,7 +2876,7 @@ news_event = {  ##Orson Welles performed a broadcast of The War of the Worlds (t
 	title = ne_news.55.t  
 	desc = ne_news.55.d
 	picture = GFX_news_event_warofthelords ##an image will be added in the future
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.55" }
 	fire_only_once = yes
 
 	trigger = {
@@ -2902,7 +2902,7 @@ news_event = {  ##1938 Yellow River flood
 	title = ne_news.56.t  
 	desc = ne_news.56.d
 	picture = GFX_yr_potop_event ##need image!
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.56" }
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -2919,7 +2919,7 @@ country_event = {  ##Jarrow March
 	title = ne_news.57.t  
 	desc = ne_news.57.d
 	picture = GFX_news_event_jarrowmarch ##an image will be added in the future
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_news.57" }
 	fire_only_once = yes
 
 	trigger = {

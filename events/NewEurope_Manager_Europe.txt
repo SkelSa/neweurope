@@ -8,7 +8,7 @@ country_event = {
 	title = ne_intro.1.t  	#Start Manager
 	desc =  ne_intro.1.d   	#Go to manager or not
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_intro.1" }
 	fire_only_once = yes
 	
 	trigger = {
@@ -73,7 +73,7 @@ country_event = {
 	desc =  ne.1.d  #Talk about mod stuff
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.1" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -114,7 +114,7 @@ country_event = {
 	desc =  ne.2.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.2" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -156,7 +156,7 @@ country_event = {
 	desc =  ne.20.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.20" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -294,7 +294,7 @@ country_event = {
 	desc =  ne.201.d  #
 
 	picture = GFX_report_event_soviet_invasion_map 
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.201" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -500,7 +500,7 @@ country_event = {
 	desc =  ne.21.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.21" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -733,7 +733,7 @@ country_event = {
 	desc =  ne.22.d  #description
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.22" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -781,7 +781,7 @@ country_event = {
 	title = ne.221.t 
 	desc =  ne.221.d  
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.221" }
 	is_triggered_only = yes
 	
 	option = {
@@ -912,7 +912,7 @@ country_event = {
 	title = ne.222.t 
 	desc =  ne.222.d  
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.222" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -1023,7 +1023,7 @@ country_event = {
 	desc =  ne.223.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.223" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -1107,7 +1107,7 @@ country_event = {
 	desc =  ne.224.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.224" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -1217,7 +1217,7 @@ country_event = {
 	title = ne.3.t 
 	desc =  ne.3.d 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.3" }
 	is_triggered_only = yes
 	
 	option = {
@@ -1258,7 +1258,7 @@ country_event = {
 	desc =  ne.30.d  #description
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.30" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -1300,7 +1300,7 @@ country_event = {
 	desc =  ne.301.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.301" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -1615,7 +1615,7 @@ country_event = {
 	title = ne.302.t 
 	desc =  ne.302.d  
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.302" }
 	is_triggered_only = yes
 
 	
@@ -2235,7 +2235,7 @@ country_event = {
 	desc =  ne.303.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.303" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -2339,7 +2339,7 @@ country_event = {
 	desc =  ne.31.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.31" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -2396,7 +2396,7 @@ country_event = {
 	desc =  ne.311.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.311" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -2573,7 +2573,7 @@ country_event = {
 	desc =  ne.312.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.312" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -2738,7 +2738,7 @@ country_event = {
 	desc =  ne.313.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.313" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -2814,7 +2814,7 @@ country_event = {
 	desc =  ne.32.d  #description
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.32" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -2863,7 +2863,7 @@ country_event = {
 	desc =  ne.321.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.321" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -2986,7 +2986,7 @@ country_event = {
 	desc =  ne.322.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.322" }
 	is_triggered_only = yes
 	
 	option = {
@@ -3088,7 +3088,7 @@ country_event = {
 	desc =  ne.323.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.323" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -3203,7 +3203,7 @@ country_event = {
 	desc =  ne.33.d  #description
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.33" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -3259,7 +3259,7 @@ country_event = {
 	desc =  ne.331.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.331" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -3333,7 +3333,7 @@ country_event = {
 	desc =  ne.332.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.332" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -3435,7 +3435,7 @@ country_event = {
 	desc =  ne.333.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.333" }
 	is_triggered_only = yes
 
 	
@@ -3530,7 +3530,7 @@ country_event = {
 	desc =  ne.334.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.334" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -3633,7 +3633,7 @@ country_event = {
 	desc =  ne.34.d  #description
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.34" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -3677,7 +3677,7 @@ country_event = {
 	desc =  ne.341.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.341" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -3760,7 +3760,7 @@ country_event = {
 	desc =  ne.342.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.342" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes
@@ -3853,7 +3853,7 @@ country_event = {
 	desc =  ne.343.d  
 
 	picture = GFX_report_event_soviet_invasion_map
-
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne.343" }
 	is_triggered_only = yes
 
 	#fire_only_once = yes

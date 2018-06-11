@@ -13,7 +13,7 @@ country_event = {
 	title = spain.2.t
 	desc = spain.2.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = spain.2" }
 	is_triggered_only = yes
 
 	trigger = {
@@ -51,7 +51,7 @@ country_event = {
 	title = spain.2.t
 	desc = spain.3.d
 	picture = GFX_report_event_spain_civil_war_volunteers
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = spain.3" }
 	is_triggered_only = yes
 
 	trigger = {
@@ -88,7 +88,7 @@ country_event = {
 	title = spain.4.t
 	desc = spain.4.d
 	picture = GFX_report_event_spain_civil_war_soldiers
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = spain.4" }
 	is_triggered_only = yes
 
 	trigger = {
@@ -113,7 +113,7 @@ country_event = {
 	title = spain.5.t
 	desc = spain.5.d
 	picture = GFX_report_event_spain_civil_war_volunteers_02
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = spain.5" }
 	is_triggered_only = yes
 
 	trigger = {
@@ -138,7 +138,7 @@ country_event = {
 	title = spain.6.t
 	desc = spain.6.d
 	picture = GFX_report_event_finnish_letter
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = spain.6" }
 	trigger = {
 		has_country_flag = promised_help_nationalist_spain
 		SPR = { has_civil_war = yes }
@@ -172,7 +172,7 @@ country_event = {
 	title = spain.7.t
 	desc = spain.7.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = spain.7" }
 	trigger = {
 		has_country_flag = promised_help_republican_spain
 		SPR = { has_civil_war = yes }
@@ -196,7 +196,7 @@ country_event = {
 	title = spain.8.t
 	desc = spain.8.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = spain.8" }
 	trigger = {
 		original_tag = SPR
 		has_government = fascism
@@ -227,7 +227,7 @@ country_event = {
 	title = spain.9.t
 	desc = spain.9.d
 	picture = GFX_report_event_election_vote
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = spain.9" }
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -265,7 +265,7 @@ country_event = {
 	title = spain.1.t
 	desc = spain.10.d
 	picture = GFX_report_event_spain_civil_war_soldiers
-	
+	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = spain.10" }
 	fire_only_once = yes
 	
 	trigger = {
