@@ -2035,17 +2035,56 @@ country_event = {
 	desc = ne_misc.29.d
 	picture = GFX_report_event_soviet_invasion_map
 	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.29" }
-	is_triggered_only = yes
+	trigger = {
+		date > 1941.01.01
+		tag = PRU
+		any_country = {
+			NOT = { 
+				tag = PRU
+				is_in_faction_with = PRU
+				is_puppet_of = PRU
+			}
+			490 = { is_controlled_by = PREV }
+		}		
+	}
 
 	option = {
 		name = ne_misc.29.a
-		FROM = { declare_war_on = { target = ECU type = annex_everything } }
-		hidden_effect = { set_country_flag = ne_per_ecu_war }
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		PRU = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ECU
+				generator = { 490 }
+			}
+			490 = { add_claim_by = PRU }
+			490 = { add_core_of = PRU }
+			add_war_support = 0.2
+			add_popularity = 0.15
+		}
+
+	}
+
+	option = {
+		name = ne_misc.29.b
+		add_popularity = -0.2
+		add_war_support = -0.25
+		PRU = { 
+			remove_state_claim = 490
+			remove_state_core = 490
+		}
 	}
 
 }
 
-country_event = {  ##ecuador is fucked up
+country_event = {
 	id = ne_misc.30
 	title = ne_misc.30.t
 	desc = ne_misc.30.d
@@ -2053,74 +2092,52 @@ country_event = {  ##ecuador is fucked up
 	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.30" }
 	trigger = {
 		tag = PRU
-		PRU = { 
-			has_country_flag = ne_per_ecu_war
-			has_offensive_war_with = ECU
+		any_country = {
+			AND = {
+				has_defensive_war_with = PRU
+				owns_state = 490
+				OR = {
+					has_capitulated = yes
+					surrender_progress > 0.02
+				}
+			}
 		}
-		ECU = {
+		490 = {
 			OR = {
-				has_capitulated = yes
-				surrender_progress > 0.04
+				is_claimed_by = PRU
+				is_core_of = PRU
 			}
 		}
 	}
-
-	mean_time_to_happen = { days = 2 }
-
-	fire_only_once = yes
 
 	option = {
 		name = ne_misc.30.a
-		white_peace = ECU
-		transfer_state = 490
-		ECU = { add_stability = -0.4 }
-		hidden_effect = { 
-			clr_country_flag = ne_per_ecu_war
-			ECU = { add_state_claim = 490 }
+		every_country = {
+			limit = {
+				has_defensive_war_with = PRU
+				owns_state = 490
+			}
+			transfer_state = 490
 		}
+		white_peace = PREV
 	}
 
-}
-
-country_event = {  ##peru fail
-	id = ne_misc.31
-	title = ne_misc.31.t
-	desc = ne_misc.31.d
-	picture = GFX_report_event_soviet_invasion_map
-	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: id = ne_misc.31" }
-	trigger = {
-		tag = PRU
-		PRU = { 
-			has_country_flag = ne_per_ecu_war
-			has_offensive_war_with = ECU
-		}
-		PRU = {
-			OR = {
-				has_capitulated = yes
-				surrender_progress > 0.04
+	option = {
+		name = ne_misc.30.b
+		random_list = {
+			35 = {
+				every_country = {
+					limit = { 
+						has_defensive_war_with = PRU
+						owns_state = 490
+					}
+					add_to_war = { 
+					    targeted_alliance = USA 
+					    enemy = PRU 
+					    hostility_reason = asked_to_join
+					}
+				}
 			}
 		}
 	}
-
-	mean_time_to_happen = { days = 2 }
-
-	fire_only_once = yes
-
-	option = {
-		name = ne_misc.31.a
-		white_peace = ECU
-		add_war_support = -0.6
-		add_stability = -0.5
-		hidden_effect = { clr_country_flag = ne_per_ecu_war }
-	}
-
 }
-
-
-
-
-
-
-
-
-
