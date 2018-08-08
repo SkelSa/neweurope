@@ -20,6 +20,23 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+
+		modernization_germ_ne = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				experience_gain_army_factor = -1
+			}
+
+		}
 		
 		general_staff = {
 			

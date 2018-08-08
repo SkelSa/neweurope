@@ -241,6 +241,7 @@ add_to_faction = GER
 
 
 add_ideas = {
+	modernization_germ_ne
 	sour_loser
 	general_staff
 	limited_exports
