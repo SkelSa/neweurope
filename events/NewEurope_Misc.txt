@@ -2039,13 +2039,16 @@ country_event = {
 		date > 1941.01.01
 		tag = PRU
 		any_country = {
-			NOT = { 
-				tag = PRU
-				is_in_faction_with = PRU
-				is_puppet_of = PRU
+			AND = {
+				controls_state = 490
+				NOT = {
+					OR = {
+						is_in_faction_with = PRU
+						is_puppet_of = PRU
+					}
+				}
 			}
-			490 = { is_controlled_by = PREV }
-		}		
+		}
 	}
 
 	option = {
@@ -2067,18 +2070,16 @@ country_event = {
 			490 = { add_claim_by = PRU }
 			490 = { add_core_of = PRU }
 			add_war_support = 0.2
-			add_popularity = 0.15
 		}
 
 	}
 
 	option = {
 		name = ne_misc.29.b
-		add_popularity = -0.2
-		add_war_support = -0.25
 		PRU = { 
 			remove_state_claim = 490
 			remove_state_core = 490
+			add_war_support = -0.25
 		}
 	}
 
@@ -2098,7 +2099,7 @@ country_event = {
 				owns_state = 490
 				OR = {
 					has_capitulated = yes
-					surrender_progress > 0.02
+					surrender_progress > 0.01
 				}
 			}
 		}
@@ -2117,9 +2118,9 @@ country_event = {
 				has_defensive_war_with = PRU
 				owns_state = 490
 			}
-			transfer_state = 490
+			white_peace = PRU
 		}
-		white_peace = PREV
+		transfer_state = 490
 	}
 
 	option = {
@@ -2131,13 +2132,16 @@ country_event = {
 						has_defensive_war_with = PRU
 						owns_state = 490
 					}
-					add_to_war = { 
-					    targeted_alliance = USA 
-					    enemy = PRU 
-					    hostility_reason = asked_to_join
+					USA = {
+						add_to_war = { 
+						    targeted_alliance = PREV 
+						    enemy = PRU 
+						    hostility_reason = asked_to_join
+						}
 					}
 				}
 			}
+			65 = { }
 		}
 	}
 }
