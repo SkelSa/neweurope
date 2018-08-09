@@ -1489,13 +1489,15 @@ country_event = {
 		    is_locked = no
 		}
 		set_country_flag = germany_ends_modernization
+		remove_ideas = modernization_germ_ne
 	}
 
 	option = {
 		name = ne_germany.4.a
-		remove_ideas = modernization_germ_ne
-		army_experience = 50
-		set_country_flag = germany_ends_modernization
+		set_variable = {
+		    var = germ_modernization_exp_var
+		    value = 50
+		}
 	}
 
 }
@@ -1538,13 +1540,16 @@ country_event = {
 		    is_locked = no
 		}
 		set_country_flag = germany_ends_modernization
+		remove_ideas = modernization_germ_ne
 	}
 
 	option = {
 		name = ne_germany.5.b
-		remove_ideas = modernization_germ_ne
-		army_experience = 100
-		set_country_flag = germany_ends_modernization
+		add_to_variable = {
+		    var = germ_modernization_exp_var
+		    value = 100
+		}
+
 	}
 
 }
@@ -1587,13 +1592,17 @@ country_event = {
 		    is_locked = no
 		}
 		set_country_flag = germany_ends_modernization
+		remove_ideas = modernization_germ_ne
 	}
 
 	option = {
 		name = ne_germany.6.b
+		add_to_variable = {
+		    var = germ_modernization_exp_var
+		    value = 150
+		}
 		remove_ideas = modernization_germ_ne
-		army_experience = 150
-		set_country_flag = germany_ends_modernization
+		country_event = { hours = 4 id = ne_germany.7 }
 	}
 
 }
@@ -1605,16 +1614,16 @@ country_event = {
 	picture = GFX_report_event_soviet_invasion_map
 	immediate = { log = "[GetDateText]: [Root.GetName] executed following event: ne_germany.4" }
 	
-	trigger = { 
-		tag = GER
-		date > 1939.1.1
-		NOT = { has_country_flag = germany_ends_modernization }
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	option = {
 		name = ne_germany.7.a
+		add_to_variable = {
+		    var = germ_modernization_exp_var
+		    value = 200
+		}
 		set_division_template_lock = {
 		    division_template = "Infanterie-Division"
 		    is_locked = no
@@ -1636,7 +1645,7 @@ country_event = {
 		    is_locked = no
 		}
 		set_country_flag = germany_ends_modernization
-		remove_ideas = modernization_germ_ne
+		army_experience = var:germ_modernization_exp_var
 	}
 
 }
