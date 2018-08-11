@@ -1,0 +1,651 @@
+focus_tree = {
+	id = generic
+	country = {
+		factor = 1
+	}
+	default = yes
+	focus = {
+		id = army_focus
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		cost = 10,00
+		x = 1
+		y = 0
+
+	}
+	focus = {
+		id = education
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 5,00
+		x = 6
+		y = 0
+
+	}
+	focus = {
+		id = nazisti1
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 12,00
+		mutually_exclusive = {
+			focus = monarcia1
+			focus = monarcia1
+			focus = democrat1
+			focus = comunisti1
+			focus = democrat1
+			focus = comunisti1
+		}
+		x = 17
+		y = 0
+
+	}
+	focus = {
+		id = comunisti1
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 12,00
+		mutually_exclusive = {
+			focus = nazisti1
+			focus = monarcia1
+			focus = democrat1
+			focus = democrat1
+			focus = monarcia1
+			focus = nazisti1
+		}
+		x = 21
+		y = 0
+
+	}
+	focus = {
+		id = democrat1
+		icon = GFX_goal_support_democracy
+		cost = 12,00
+		mutually_exclusive = {
+			focus = nazisti1
+			focus = monarcia1
+			focus = monarcia1
+			focus = nazisti1
+			focus = comunisti1
+			focus = comunisti1
+		}
+		x = 23
+		y = 0
+
+	}
+	focus = {
+		id = monarcia1
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 12,00
+		mutually_exclusive = {
+			focus = nazisti1
+			focus = nazisti1
+			focus = democrat1
+			focus = comunisti1
+			focus = democrat1
+			focus = comunisti1
+		}
+		x = 19
+		y = 0
+
+	}
+	focus = {
+		id = defense_focus
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10,00
+		prerequisite = {
+			focus = army_focus
+		}
+		mutually_exclusive = {
+			focus = attack_focus
+			focus = attack_focus
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = attack_focus
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = army_focus
+		}
+		mutually_exclusive = {
+			focus = defense_focus
+			focus = defense_focus
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = education_one
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 26,00
+		prerequisite = {
+			focus = education
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = education_two
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 26,00
+		prerequisite = {
+			focus = education_one
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = industrialization
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = education_two
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = infrastcr
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = industrialization
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = civil_factories
+		icon = GFX_goal_generic_air_production
+		cost = 10,00
+		prerequisite = {
+			focus = industrialization
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = education_three
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 26,00
+		prerequisite = {
+			focus = education_two
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = education_four
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 26,00
+		prerequisite = {
+			focus = education_three
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = education_five
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 20,00
+		prerequisite = {
+			focus = education_four
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = education_small_insitute
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10,00
+		prerequisite = {
+			focus = education_three
+		}
+		x = 8
+		y = 4
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = education_university
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10,00
+		prerequisite = {
+			focus = education_four
+		}
+		x = 8
+		y = 5
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = education_academy
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 20,00
+		prerequisite = {
+			focus = education_five
+		}
+		x = 8
+		y = 6
+			completion_reward = {
+					add_research_slot = 2
+				}
+
+	}
+	focus = {
+		id = zakoni_n1
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10,00
+		prerequisite = {
+			focus = nazisti1
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = zakoni_m1
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10,00
+		prerequisite = {
+			focus = monarcia1
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = zakoni_c1
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10,00
+		prerequisite = {
+			focus = comunisti1
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = militarizobsh1
+		icon = GFX_focus_generic_military_mission
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_n1
+			focus = zakoni_m1
+			focus = zakoni_c1
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = militarizobsh2
+		icon = GFX_focus_generic_military_academy
+		cost = 25,00
+		prerequisite = {
+			focus = militarizobsh1
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = militarizobsh3
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 40,00
+		prerequisite = {
+			focus = militarizobsh2
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = strengthen_protectionism
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_n1
+			focus = zakoni_m1
+			focus = zakoni_c1
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = economic_reforms
+		icon = GFX_goal_generic_air_production
+		cost = 30,00
+		prerequisite = {
+			focus = strengthen_protectionism
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = zakoni_n2
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_n1
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = interstate_military_support
+		icon = GFX_goal_generic_alliance
+		cost = 15,00
+		prerequisite = {
+			focus = zakoni_n2
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = ideologic_union
+		icon = GFX_goal_continuous_increase_nu
+		cost = 15,00
+		prerequisite = {
+			focus = interstate_military_support
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = zakoni_n3
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_n2
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = zakoni_m2
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_m1
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = zakoni_m3
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_m2
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = zakoni_c2
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_c1
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = zakoni_c3
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_c2
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = zakoni_d1
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10,00
+		prerequisite = {
+			focus = democrat1
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = zakoni_d2
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_d1
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = zakoni_d3
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_d2
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = peacekeeping_war_operations
+		icon = GFX_focus_generic_little_entente
+		cost = 20,00
+		prerequisite = {
+			focus = zakoni_d2
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = democratic_union
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 35,00
+		prerequisite = {
+			focus = peacekeeping_war_operations
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = capitalism_dev
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_d1
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = foreign_investors
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = capitalism_dev
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = mil_factrs1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = civil_factories
+		}
+		prerequisite = {
+			focus = infrastcr
+		}
+		mutually_exclusive = {
+			focus = nav_factrs
+			focus = nav_factrs
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = nav_factrs
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10,00
+		prerequisite = {
+			focus = infrastcr
+		}
+		prerequisite = {
+			focus = civil_factories
+		}
+		mutually_exclusive = {
+			focus = mil_factrs1
+			focus = mil_factrs1
+		}
+		x = 2
+		y = 5
+
+	}
+	focus = {
+		id = infrastcr_1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = nav_factrs
+		}
+		prerequisite = {
+			focus = mil_factrs1
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = civ_fact1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = mil_factrs1
+		}
+		prerequisite = {
+			focus = nav_factrs
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = nav_factrs1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10,00
+		prerequisite = {
+			focus = infrastcr_1
+		}
+		prerequisite = {
+			focus = civ_fact1
+		}
+		mutually_exclusive = {
+			focus = mil_factrs2
+			focus = mil_factrs2
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = mil_factrs2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = civil_factories
+		}
+		prerequisite = {
+			focus = infrastcr
+		}
+		prerequisite = {
+			focus = infrastcr_1
+		}
+		prerequisite = {
+			focus = civ_fact1
+		}
+		mutually_exclusive = {
+			focus = nav_factrs
+			focus = nav_factrs
+			focus = nav_factrs1
+			focus = nav_factrs1
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = {
+		id = postindustrial
+		icon = GFX_focus_generic_industry_2
+		cost = 15,00
+		prerequisite = {
+			focus = nav_factrs1
+		}
+		prerequisite = {
+			focus = mil_factrs2
+		}
+		prerequisite = {
+			focus = education_five
+		}
+		x = 5
+		y = 8
+
+	}
+	focus = {
+		id = attract_immigrants
+		icon = GFX_focus_generic_concessions
+		cost = 10,00
+		prerequisite = {
+			focus = zakoni_d1
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = political_refuge
+		icon = GFX_focus_prc_infiltration
+		cost = 10,00
+		prerequisite = {
+			focus = attract_immigrants
+		}
+		x = 29
+		y = 3
+
+	}
+}
