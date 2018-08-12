@@ -1,18 +1,21 @@
-﻿capital = 271
+﻿capital = 316
 
-oob = "ETH_1936"
+complete_national_focus = education
 
-complete_national_focus = army_focus
+oob = "COS_1936"
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_mountaineers = 1
 }
-
-set_convoys = 1
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 10
 
 1939.1.1 = {
+
+	add_political_power = 1198
+	
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -24,11 +27,16 @@ set_convoys = 1
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
+	oob = "COS_1939"
 	set_technology = {
+		infantry_weapons1 = 1
 
 		#doctrines
+		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -48,93 +56,73 @@ set_convoys = 1
 		dispersed_industry2 = 1
 	}
 }
+
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 98
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 2
 		}
 		
 		communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
-		
-		neutrality = { 
-			popularity = 100
-		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = democratic
+	last_election = "1932.2.14"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Haile Selassie"
-	desc = "POLITICS_HAILE_SELASSIE_DESC"
-	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	name = "Ricardo Jiménez Oreamuno"
+	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
+	picture = "GFX_portrait_costa_rica_ricardo_jiminez_oreamuno"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = liberalism
 	traits = {
 		#
 	}
 }
 
-create_country_leader = {
-	name = "Fitawrari Yeebio Woldai"
-	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
-	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-
-#Now a colony of Italy  However, if independent it would have
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
-			popularity = 0
-		}
+			democratic = { 
+				popularity = 95
+			}
 
-		fascism = {
-			popularity = 0
+			fascism = {
+				popularity = 0
+			}
+			
+			communism = {
+				popularity = 5
+				#banned = no #default is no
+			}
 		}
 		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-		
-		ruling_party = neutrality
-		last_election = "1936.1.1"
+		ruling_party = democratic
+		last_election = "1936.2.9"
 		election_frequency = 48
-		elections_allowed = no
+		elections_allowed = yes
 	}
-}
 
-create_corps_commander = {
-	name = "Seyoum Mengesha"
-	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
-	traits = {  desert_fox }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
+	create_country_leader = {
+		name = "León Cortés Castro"
+		desc = "POLITICS_LEON_CORTES_CASTRO_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+		expire = "1965.1.1"
+		ideology = liberalism
+		traits = {
+			#
+		}
+	}
 }

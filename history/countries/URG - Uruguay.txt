@@ -1,18 +1,25 @@
-﻿capital = 271
+﻿capital = 300
 
-oob = "ETH_1936"
+complete_national_focus = education
 
-complete_national_focus = army_focus
+oob = "URG_1936"
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
 }
+set_country_flag = monroe_doctrine
 
-set_convoys = 1
+set_convoys = 5
 
 1939.1.1 = {
+
+	add_political_power = 1198
+	
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -24,11 +31,18 @@ set_convoys = 1
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
+	oob = "URG_1939"
 	set_technology = {
+		infantry_weapons1 = 1
+		support_weapons = 1
 
 		#doctrines
+		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -48,11 +62,12 @@ set_convoys = 1
 		dispersed_industry2 = 1
 	}
 }
+
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 97
 		}
 
 		fascism = {
@@ -60,81 +75,60 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 0
+			popularity = 3
 			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = democratic
+	last_election = "1934.4.19"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Haile Selassie"
-	desc = "POLITICS_HAILE_SELASSIE_DESC"
-	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	name = "Gabriel Terra"
+	desc = "POLITICS_GABRIEL_TERRA_DESC"
+	picture = "GFX_portrait_uruguay_portrait_gabriel_terra"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = liberalism
 	traits = {
 		#
 	}
 }
 
-create_country_leader = {
-	name = "Fitawrari Yeebio Woldai"
-	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
-	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-
-#Now a colony of Italy  However, if independent it would have
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
-			popularity = 0
-		}
+			democratic = { 
+				popularity = 97
+			}
 
-		fascism = {
-			popularity = 0
+			fascism = {
+				popularity = 0
+			}
+			
+			communism = {
+				popularity = 2
+				#banned = no #default is no
+			}
 		}
 		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-		
-		ruling_party = neutrality
-		last_election = "1936.1.1"
+		ruling_party = democratic
+		last_election = "1938.3.28"
 		election_frequency = 48
-		elections_allowed = no
+		elections_allowed = yes
 	}
-}
 
-create_corps_commander = {
-	name = "Seyoum Mengesha"
-	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
-	traits = {  desert_fox }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
+	create_country_leader = {
+		name = "Alfredo Baldomir Ferrari"
+		desc = "POLITICS_ALFREDO_BALDOMIR_FERRARI_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+		expire = "1965.1.1"
+		ideology = liberalism
+		traits = {
+			#
+		}
+	}
 }
