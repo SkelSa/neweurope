@@ -26,6 +26,52 @@ ideas = {
 				production_speed_arms_factory_factor = -0.5 
 			}
 		}
+
+		education_reformat = {	
+
+			picture = GFX_goal_tfv_generic_tech_sharing
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				research_time_factor = -0.001
+				conscription = -0.05
+			}
+		}
+
+		ne_industrial = {	
+
+			picture = GFX_goal_tfv_generic_tech_sharing
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				production_factory_max_efficiency_factor = 0.15
+				local_resources_factor = 0.1
+				consumer_goods_factor = 0.3
+			}
+		}
+
+		ne_postindustrial = {	
+
+			picture = GFX_goal_tfv_generic_tech_sharing
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				production_factory_max_efficiency_factor = 0.20
+				local_resources_factor = 0.15
+				stability_factor = 0.25
+			}
+		}
 		
 		
 		NE_align_west = {
