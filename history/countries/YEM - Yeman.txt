@@ -3,7 +3,6 @@
 oob = "YEM_1936"
 
 complete_national_focus = education
-complete_national_focus = education_one
 
 # Starting tech
 set_technology = {
